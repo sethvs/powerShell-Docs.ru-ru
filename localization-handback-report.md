@@ -1,11 +1,27 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\images\Pull.png](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/dsc/images/Pull.png) | InSyncHandedBackSuccess | [Details](#86d829b1fcdd41e648ed0594eaf337b3726c143c27)
 
 ## Item Details
+##### <a name='86d829b1fcdd41e648ed0594eaf337b3726c143c27'></a> Source: [dsc\images\Pull.png](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/dsc/images/Pull.png)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\images\Pull.png](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/3b9b0359bae6e96024bfe0866e8cd5c03e3d5e6a/dsc/images/Pull.png)
+* Handoff File: [86d829b1fcdd41e648ed0594eaf337b3726c143c.png](https://github.com/PowerShell/powerShell-Docs.handoff/blob/bf936b7eeea4145101333d163889a0ed3757ba45/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/86d829b1fcdd41e648ed0594eaf337b3726c143c.png)
+* Handoff Datetime: 2016-03-11 01:04:17
+* Handoff Reason: IsDependency
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [86d829b1fcdd41e648ed0594eaf337b3726c143c.png](https://github.com/PowerShell/powerShell-Docs.handback/blob/90c847b2f08c7ff17765e74e291cdfe7fdc86a7f/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/86d829b1fcdd41e648ed0594eaf337b3726c143c.png)
+* Handback Datetime: 2016-03-17 16:45:12
+* Dependency From: dsc\enactingConfigurations.md
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

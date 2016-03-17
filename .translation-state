@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "dc5696c9540352c5382d57cb8aed3df8f119d091",
-  "LastTranslatedCommit": "447d0b0c25b5ecb6a89054ccb6fef5bad1461c7c",
+  "LastTranslatedCommit": "3b9b0359bae6e96024bfe0866e8cd5c03e3d5e6a",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -441,14 +441,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "3b9b0359bae6e96024bfe0866e8cd5c03e3d5e6a",
+      "TargetFilePath": "dsc\\images\\Pull.png",
+      "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\86d829b1fcdd41e648ed0594eaf337b3726c143c.png",
+      "HandbackFileCommit": "90c847b2f08c7ff17765e74e291cdfe7fdc86a7f",
+      "HandbackDateTime": "2016-03-17T16:45:12.3777017Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-03-17T16:45:12.3777017Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
       "ArchiveFileDateTime": "0001-01-01T00:00:00",
