@@ -1,11 +1,29 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\authoringResourceClass.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/authoringResourceClass.md) | OutofSyncHandedBackSuccess | [Details](#aab3ccc2a95b5e1b2e450f38e0f81ec1c4727c307)
 
 ## Item Details
+##### <a name='aab3ccc2a95b5e1b2e450f38e0f81ec1c4727c307'></a> Source: [dsc\authoringResourceClass.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/authoringResourceClass.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [authoringResourceClass.3603134df9ad1cad202d10769ff631a083cc3aae.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/b1cf66f277cf7e20c0b12ad903257a32f4cf85a7/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceClass.3603134df9ad1cad202d10769ff631a083cc3aae.ru-ru.xlf)
+* Handoff Datetime: 2016-03-24 22:09:46
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [dsc\authoringResourceClass.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/1e511affa126dca0745847022052a07e643ef815/dsc/authoringResourceClass.md)
+* Current Handback File: [authoringResourceClass.3603134df9ad1cad202d10769ff631a083cc3aae.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/e457cd196ad604e44413c1f4d8e670172ddcfff0/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceClass.3603134df9ad1cad202d10769ff631a083cc3aae.ru-ru.xlf)
+* Current Handback Datetime: 2016-03-24 20:17:46
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
