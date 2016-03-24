@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 152
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 6
+[ Handoff Success Files ](#handoff-success-list)| 3
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 20
-[ In Sync Handback Files ](#insync-handback-success-list)| 118
+[ In Sync Handback Files ](#insync-handback-success-list)| 121
 [ Ignored Files ](#ignored-list)| 8
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -21,9 +21,6 @@
  [dsc\images\CredentialEncryptionDiagram1.png](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/dsc/images/CredentialEncryptionDiagram1.png) | HandedOffSuccess | [Details](#d9f53a805041164f5070845c0fd216b63d17ae5824)
  [dsc\pullServerSMB.md](https://github.com/PowerShell/powerShell-Docs/blob/0a303e872e91ac5f8eff4f9f84a25237ab0e8fb2/dsc/pullServerSMB.md) | HandedOffSuccess | [Details](#f1dfcb2e422869686b457b9c080d3165031fafcd52)
  [dsc\runAsUser.md](https://github.com/PowerShell/powerShell-Docs/blob/22ee8b62b9107e26360466330f82809d4a150f46/dsc/runAsUser.md) | HandedOffSuccess | [Details](#53ace617daf20d1375838e7021771af0e8b2919358)
- [wmf\images\DscResourceDebugging.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/DscResourceDebugging.jpg) | HandedOffSuccess | [Details](#ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d125)
- [wmf\images\Import-DscResource-Modversion.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/Import-DscResource-Modversion.jpg) | HandedOffSuccess | [Details](#e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc126)
- [wmf\images\MOF_Encryption.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/MOF_Encryption.jpg) | HandedOffSuccess | [Details](#9a44a53029d37d4165bbffbdcaa79d9be76e5fac127)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
@@ -154,6 +151,9 @@
  [wmf\feedback_nonewline.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/feedback_nonewline.md) | InSyncHandedBackSuccess | [Details](#24969d20cd4500db4e8dc27c16cac84c0f3dc696122)
  [wmf\feedback_symbolic.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/feedback_symbolic.md) | InSyncHandedBackSuccess | [Details](#fcafa99f4a7b9cefcb98a7e159a5adf03e7ac17f123)
  [wmf\feedback_tempfile.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/feedback_tempfile.md) | InSyncHandedBackSuccess | [Details](#2741204c16027d7e8e8f785b90b9cc301880a262124)
+ [wmf\images\DscResourceDebugging.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/DscResourceDebugging.jpg) | InSyncHandedBackSuccess | [Details](#ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d125)
+ [wmf\images\Import-DscResource-Modversion.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/Import-DscResource-Modversion.jpg) | InSyncHandedBackSuccess | [Details](#e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc126)
+ [wmf\images\MOF_Encryption.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/MOF_Encryption.jpg) | InSyncHandedBackSuccess | [Details](#9a44a53029d37d4165bbffbdcaa79d9be76e5fac127)
  [wmf\informationstream_overview.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/informationstream_overview.md) | InSyncHandedBackSuccess | [Details](#20254315c2503d46e6160593fb822391c5db2dd4128)
  [wmf\install.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/install.md) | InSyncHandedBackSuccess | [Details](#91d23a0045c6d7a1200caae6df64368dd8f3ecee129)
  [wmf\jea_endpoint.md](https://github.com/PowerShell/powerShell-Docs/blob/743c597c721d4abe67d657eaabd03ecc5cf19690/wmf/jea_endpoint.md) | InSyncHandedBackSuccess | [Details](#061fb3a39191f7aaf3f5e51b12f56cac84031f49130)
@@ -1750,41 +1750,41 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d125'></a> Source: [wmf\images\DscResourceDebugging.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/DscResourceDebugging.jpg)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [wmf\images\DscResourceDebugging.jpg](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/37226a11493a7fcc2d944272cab8b3e612c30c7c/wmf/images/DscResourceDebugging.jpg)
 * Handoff File: [ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d.jpg](https://github.com/PowerShell/powerShell-Docs.handoff/blob/bf936b7eeea4145101333d163889a0ed3757ba45/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d.jpg)
 * Handoff Datetime: 2016-03-11 01:04:17
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d.jpg](https://github.com/PowerShell/powerShell-Docs.handback/blob/ae23e8ecdc996720b08c01495dda5410aa644c81/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d.jpg)
+* Handback Datetime: 2016-03-24 16:28:02
 * Dependency From: wmf\dsc_resourcedebugging.md
 * [Back to Top](#report-top)
 
 ##### <a name='e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc126'></a> Source: [wmf\images\Import-DscResource-Modversion.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/Import-DscResource-Modversion.jpg)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [wmf\images\Import-DscResource-Modversion.jpg](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/37226a11493a7fcc2d944272cab8b3e612c30c7c/wmf/images/Import-DscResource-Modversion.jpg)
 * Handoff File: [e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc.jpg](https://github.com/PowerShell/powerShell-Docs.handoff/blob/bf936b7eeea4145101333d163889a0ed3757ba45/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc.jpg)
 * Handoff Datetime: 2016-03-11 01:04:17
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc.jpg](https://github.com/PowerShell/powerShell-Docs.handback/blob/ae23e8ecdc996720b08c01495dda5410aa644c81/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc.jpg)
+* Handback Datetime: 2016-03-24 16:28:02
 * Dependency From: wmf\dsc_importdscresource.md
 * [Back to Top](#report-top)
 
 ##### <a name='9a44a53029d37d4165bbffbdcaa79d9be76e5fac127'></a> Source: [wmf\images\MOF_Encryption.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/MOF_Encryption.jpg)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [wmf\images\MOF_Encryption.jpg](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/37226a11493a7fcc2d944272cab8b3e612c30c7c/wmf/images/MOF_Encryption.jpg)
 * Handoff File: [9a44a53029d37d4165bbffbdcaa79d9be76e5fac.jpg](https://github.com/PowerShell/powerShell-Docs.handoff/blob/bf936b7eeea4145101333d163889a0ed3757ba45/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/9a44a53029d37d4165bbffbdcaa79d9be76e5fac.jpg)
 * Handoff Datetime: 2016-03-11 01:04:17
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [9a44a53029d37d4165bbffbdcaa79d9be76e5fac.jpg](https://github.com/PowerShell/powerShell-Docs.handback/blob/ae23e8ecdc996720b08c01495dda5410aa644c81/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/9a44a53029d37d4165bbffbdcaa79d9be76e5fac.jpg)
+* Handback Datetime: 2016-03-24 16:28:02
 * Dependency From: wmf\dsc_encryptedmof.md
 * [Back to Top](#report-top)
 
