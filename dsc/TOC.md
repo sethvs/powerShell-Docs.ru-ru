@@ -26,6 +26,7 @@
 ### [Настраиваемые ресурсы на основе классов](authoringResourceClass.md)
 ### [Составные ресурсы](authoringResourceComposite.md)
 ### [Отладка ресурсов DSC](debugResource.md)
+### [Контрольный список для создания ресурсов](resourceAuthoringChecklist.md)
 
 # [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
 ## [Настройка LCM в PowerShell 4.0](metaConfig4.md)
@@ -52,4 +53,4 @@
 ### [Ресурс nxService](lnxServiceResource.md)
 ### [Ресурс nxSshAuthorizedKeys](lnxSshAuthorizedKeysResource.md)
 ### [Ресурс nxUser](lnxUserResource.md)
-<!--HONumber=Feb16_HO4-->
+<!--HONumber=Mar16_HO1-->
