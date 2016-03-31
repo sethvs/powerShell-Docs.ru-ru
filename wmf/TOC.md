@@ -39,7 +39,6 @@
 #### [Настройка узла с помощью нескольких фрагментов конфигурации](dsc_partialconfig.md)
 ##### [Поддержка смешанного режима RefreshMode](dsc_partialconfig_mixedmode.md)
 #### [Настройка подсистемы DSC с помощью нового атрибута](dsc_metaconfiguration.md)
-#### [Смешение и сопоставление режимов PUSH и PULL](dsc_mixedrefreshmode.md)
 #### [Подробные сведения о состоянии LCM](dsc_lcmstate.md)
 #### [Частоты для RefreshMode и ConfigurationMode не должны быть кратными друг другу](dsc_freqnomultiple.md)
 #### [Дополнительное значение для свойства RefreshMode](dsc_refreshmode.md)
@@ -98,4 +97,8 @@
 
 # [Известные проблемы и ограничения](limitation_overview.md)
 ## [Известные проблемы с настройкой требуемого состояния (DSC)](limitation_dsc.md)
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Mar16_HO3-->
+
+
