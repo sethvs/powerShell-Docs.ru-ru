@@ -1,59 +1,27 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/dsc/reportServer.md) | OutofSyncHandedBackSuccess | [Details](#34ec900d1b7960e5a8180336968d2dfdbf6ef68b55)
- [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/dsc/secureMOF.md) | OutofSyncHandedBackSuccess | [Details](#c44d8f0f02ca735a1d545dba99f6b1fa78b2110f60)
- [wmf\dsc_testconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/wmf/dsc_testconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#df6b5db79c8c165e7fb3c1570838ac7a696b5a55108)
+ [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/31a2dc0a505a2e25c284881901aa88276f2c6662/dsc/pullServer.md) | OutofSyncHandedBackSuccess | [Details](#df17a2af726925e59275f2ecabf702c105b0cdc851)
 
 ## Item Details
-##### <a name='34ec900d1b7960e5a8180336968d2dfdbf6ef68b55'></a> Source: [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/dsc/reportServer.md)
+##### <a name='df17a2af726925e59275f2ecabf702c105b0cdc851'></a> Source: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/31a2dc0a505a2e25c284881901aa88276f2c6662/dsc/pullServer.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/279f8b4f1f0847f92db060d47818a0c91e08bcf9/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 16:21:44
+* Handoff File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/3b25e33c3f9f1c7c169a9b46cc8bf3b172a99fc3/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf)
+* Handoff Datetime: 2016-03-31 20:18:41
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/3904b8240c7a2fdbfd25d233dc44d2378658246f/dsc/reportServer.md)
-* Current Handback File: [reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/fc55db3b785372663eda05fb6bf7280033cf64a1/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ru-ru.xlf)
-* Current Handback Datetime: 2016-03-29 19:39:46
-* [Back to Top](#report-top)
-
-##### <a name='c44d8f0f02ca735a1d545dba99f6b1fa78b2110f60'></a> Source: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/dsc/secureMOF.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/279f8b4f1f0847f92db060d47818a0c91e08bcf9/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 16:21:44
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/3904b8240c7a2fdbfd25d233dc44d2378658246f/dsc/secureMOF.md)
-* Current Handback File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/fc55db3b785372663eda05fb6bf7280033cf64a1/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
-* Current Handback Datetime: 2016-03-29 19:39:46
-* [Back to Top](#report-top)
-
-##### <a name='df6b5db79c8c165e7fb3c1570838ac7a696b5a55108'></a> Source: [wmf\dsc_testconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/183dddd89bd4d152de12e2ca122fc0305b420cb4/wmf/dsc_testconfiguration.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [dsc_testconfiguration.b0e5afe2c8f173ebe49c97c9ea9a2f11d81ea5fa.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/279f8b4f1f0847f92db060d47818a0c91e08bcf9/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/dsc_testconfiguration.b0e5afe2c8f173ebe49c97c9ea9a2f11d81ea5fa.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 16:21:44
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [wmf\dsc_testconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/9bd504b9047d7f0a0bdaa2e68938b44bf3f5c3eb/wmf/dsc_testconfiguration.md)
-* Current Handback File: [dsc_testconfiguration.b0e5afe2c8f173ebe49c97c9ea9a2f11d81ea5fa.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/f6691c71294d940e2fe05193652693cc8e328314/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/dsc_testconfiguration.b0e5afe2c8f173ebe49c97c9ea9a2f11d81ea5fa.ru-ru.xlf)
-* Current Handback Datetime: 2016-03-24 08:52:45
+* Current Target File: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/f9f3054e9ada8fa5a847160ce1b5c6e85d106e91/dsc/pullServer.md)
+* Current Handback File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/5919007fcc1dc5b0407a028294b497da00bdd6db/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf)
+* Current Handback Datetime: 2016-03-24 08:48:51
 * [Back to Top](#report-top)
 
 
