@@ -8,9 +8,6 @@
   "aab3ccc2a95b5e1b2e450f38e0f81ec1c4727c30": [
     "dsc\\authoringResourceClass.md"
   ],
-  "09fdf376a7001ef6e43d4c4a6b8d14516b616fc5": [
-    "dsc\\authoringResourceClass.md"
-  ],
   "4af3a1c0d7491552cfa1d22daa6718803e762698": [
     "dsc\\authoringResourceComposite.md"
   ],
@@ -26,9 +23,6 @@
   "042a29099cc4abd044b3e9fb4f3281d80f5b8b02": [
     "dsc\\builtInResource.md"
   ],
-  "e3243caa7ec8682a4010e25a4ae0b2359c2d7866": [
-    "dsc\\builtInResource.md"
-  ],
   "291278563679354d4a21858157c0679914131dd3": [
     "dsc\\configData.md"
   ],
@@ -39,9 +33,6 @@
     "dsc\\configurations.md"
   ],
   "0959c2576a82b63e814b73a95a085e5512c0726f": [
-    "dsc\\debugResource.md"
-  ],
-  "5740ae503616927c717ce17ce3d1ae146a88c411": [
     "dsc\\debugResource.md"
   ],
   "03159221013064b2c1d77211c88bb8e1c9a9fcb1": [
@@ -74,9 +65,6 @@
   "ba98768c88f78fec890f115053d8f4a343e8417a": [
     "dsc\\lnxBuiltInResources.md"
   ],
-  "e4d20bc0f083c463514e2044ce86679041263075": [
-    "dsc\\lnxBuiltInResources.md"
-  ],
   "ef0812e4b382b5efb6e6f42d8671fab3ab663a4b": [
     "dsc\\lnxEnvironmentResource.md"
   ],
@@ -87,12 +75,6 @@
     "dsc\\lnxFileResource.md"
   ],
   "4e6495b5c237c43240fc6cc30c3d435c1b8e0cbf": [
-    "dsc\\lnxGettingStarted.md"
-  ],
-  "29971a21ce4c9a894b4cdc11149264dc83e51d15": [
-    "dsc\\lnxGettingStarted.md"
-  ],
-  "80f9982f3c02f488d4ad0bba9a4eec8d266a4203": [
     "dsc\\lnxGettingStarted.md"
   ],
   "9bda555be3a52c574eccfa66b114883e2f543c70": [
@@ -119,9 +101,6 @@
   "22147ef6b4045c44d80dc1025ac989e02763a698": [
     "dsc\\metaConfig.md"
   ],
-  "5131f7b51bde9c714fe249e14addaea8b05b80b3": [
-    "dsc\\metaConfig.md"
-  ],
   "ef2664b6dd61bd55898971adf7e4a57f92be88cc": [
     "dsc\\metaConfig4.md"
   ],
@@ -134,9 +113,6 @@
   "da7b4dad0811bf0dc4745b6482c74731448edbdd": [
     "dsc\\partialConfigs.md"
   ],
-  "3f1843e8a1335617c562084ce69fc82ae7c2c694": [
-    "dsc\\partialConfigs.md"
-  ],
   "3e61149f7b05f74d662d3038233013ffdcbed1a3": [
     "dsc\\images\\PartialConfig1.jpg"
   ],
@@ -146,46 +122,19 @@
   "43046f30990060dc287bbef5571e099a538c2e1f": [
     "dsc\\pullClient.md"
   ],
-  "4cb0a0836e56ca31f9e101be81e1427493cbbcd5": [
-    "dsc\\pullClient.md"
-  ],
   "c113ad890c30be1c801fca78ec6781b2fd8e6ef8": [
-    "dsc\\pullClientConfigID.md"
-  ],
-  "54bb78b313c4f0c721862910496c5154ed5444ef": [
     "dsc\\pullClientConfigID.md"
   ],
   "d0beb3d04da2488302a56f714d8d8a5b9e5ac6f9": [
     "dsc\\pullClientConfigID4.md"
   ],
-  "3714670bd9ded38e54c1f2e3f64658950c6d3f40": [
-    "dsc\\pullClientConfigID4.md"
-  ],
   "f19b27aa466532d9cf5c660552eccca808139b3f": [
-    "dsc\\pullClientConfigNames.md"
-  ],
-  "95b94afd8267d2b0db6b37c5858b848b202dc472": [
-    "dsc\\pullClientConfigNames.md"
-  ],
-  "42c9a0b9ad1f9073bb9c927e68baa7e9d7b77d95": [
     "dsc\\pullClientConfigNames.md"
   ],
   "df17a2af726925e59275f2ecabf702c105b0cdc8": [
     "dsc\\pullServer.md"
   ],
   "3a0ad4ab86a570279e8ebdec35edb9dafc69e9bf": [
-    "dsc\\pullServer.md"
-  ],
-  "e5527efe7581726bdd80ca3e47b04227c0d78082": [
-    "dsc\\pullServer.md"
-  ],
-  "7ef25cdbad291b10234fe2fd2755c3e1d5858a86": [
-    "dsc\\pullServer.md"
-  ],
-  "51a5cd22cc00e59db2acc910dcfbd6e56fe55d95": [
-    "dsc\\pullServer.md"
-  ],
-  "0ef3dedfc2ca50e9edf86f8bb8931d778c3005c4": [
     "dsc\\pullServer.md"
   ],
   "fc1456c57ade6862957e54ee53f18f189785848a": [
@@ -203,12 +152,6 @@
   "40b0aa8dee0fb9578649c0ec92a5a2cb027a137d": [
     "dsc\\reportServer.md"
   ],
-  "40b91da10381a075d5a91d98496061d7ce268a6e": [
-    "dsc\\reportServer.md"
-  ],
-  "6753e6cbb4745a5da02aa68190d815383b552e12": [
-    "dsc\\reportServer.md"
-  ],
   "df54abe3d92ffaff2998e9fb3157b42cf83143c2": [
     "dsc\\resources.md"
   ],
@@ -221,15 +164,6 @@
   "c3b61e7f85bc59833548873a73b6ce9559dcea3a": [
     "dsc\\secureMOF.md"
   ],
-  "55174e36ce3a481f953978604ce4f06d2a5eefd2": [
-    "dsc\\secureMOF.md"
-  ],
-  "eee564201a4bd5943c9101a394993b2b1ee0948a": [
-    "dsc\\secureMOF.md"
-  ],
-  "14cf6c2005eb756200e7fd065b61e4120d84c02e": [
-    "dsc\\secureMOF.md"
-  ],
   "2290a81a8dbc82b7881d2b6006d70a90578f9a56": [
     "dsc\\secureServer.md"
   ],
@@ -237,15 +171,6 @@
     "dsc\\serviceResource.md"
   ],
   "3dc3c9067740310415daef415dc0b44310aeb473": [
-    "dsc\\TOC.md"
-  ],
-  "d5e4fab6455346dc3bcebe3d0aef628ee37f3a56": [
-    "dsc\\TOC.md"
-  ],
-  "01e28aa359257770548224cef97ec8375c5a1461": [
-    "dsc\\TOC.md"
-  ],
-  "27331b4f0508ef9006203e82329e7c8065d619ad": [
     "dsc\\TOC.md"
   ],
   "d571a7562bd23e3bca78127732dd4fccb88fee1c": [
@@ -261,9 +186,6 @@
     "dsc\\windowsProcessResource.md"
   ],
   "c21a8247aac04887b4454122eb9b42476b40a543": [
-    "dsc\\resourceAuthoringChecklist.md"
-  ],
-  "291df6b35ab58b5616aebbe412362ef8cc4c2279": [
     "dsc\\resourceAuthoringChecklist.md"
   ],
   "2160a4b932075c98df6806c61d263d30f650b9f4": [
@@ -398,9 +320,6 @@
   "24a680a5f41f6b6cb150226f347e90a2c5eafb25": [
     "wmf\\dsc_waitfor.md"
   ],
-  "d24d5d5b83c758103c685a1ed010988a08eae035": [
-    "wmf\\dsc_waitfor.md"
-  ],
   "59206d28411ca6d4591cff5b3f158f4f5b78cc6a": [
     "wmf\\dsc_wow64.md"
   ],
@@ -507,9 +426,6 @@
     "wmf\\releasenotes.md"
   ],
   "02ce3d08b01e58d6d9506f90142f92cc16304e64": [
-    "wmf\\requirements.md"
-  ],
-  "5645dfa6c1baace3dcaf5655b6aaf52edad7ddf6": [
     "wmf\\requirements.md"
   ],
   "edc1a0383cebfbe89b18b0238a13bb28e4d25c5a": [
