@@ -4,6 +4,7 @@
 ## [Применение конфигураций](enactingConfigurations.md)
 ## [Данные конфигурации](configData.md)
 ### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
+### [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Защита MOF-файла конфигурации](secureMOF.md)
 ## [Частичные конфигурации](partialConfigs.md)
 # [Ресурсы](resources.md)
@@ -33,6 +34,7 @@
 
 # Модель опроса DSC
 ## [Настройка опрашивающего веб-сервера](pullServer.md)
+## [Настройка опрашивающего SMB-сервера DSC](pullServerSMB.md)
 ## [Настройка опрашивающего клиента](pullClient.md)
 ### [Настройка опрашивающего клиента с помощью имен конфигураций](pullClientConfigNames.md)
 ### [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md)
@@ -53,4 +55,8 @@
 ### [Ресурс nxService](lnxServiceResource.md)
 ### [Ресурс nxSshAuthorizedKeys](lnxSshAuthorizedKeysResource.md)
 ### [Ресурс nxUser](lnxUserResource.md)
-<!--HONumber=Mar16_HO1-->
+
+
+<!--HONumber=Mar16_HO3-->
+
+
