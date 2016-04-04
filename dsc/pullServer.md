@@ -63,7 +63,7 @@ configuration Sample_xDscWebService
 1. Запустите конфигурацию, передав отпечаток созданного самозаверяющего сертификата в параметре **certificateThumbPrint**:
 
 ```powershell
-PS:\>$myCert = Get-ChildItem CERT: | Where-Object {$_.Subject -eq 'CN=PSDSCPullServerCert'}
+PS:\>$myCert = Get-ChildItem CERT:\LocalMachine\My | Where-Object {$_.Subject -eq 'CN=PSDSCPullServerCert'}
 PS:\>Sample_xDSCService -certificateThumbprint $myCert.Thumbprint 
 ```
 
@@ -87,6 +87,10 @@ MOF-файл конфигурации необходимо сопоставит�
 
 ## См. также:
 * [Общие сведения о службе настройки требуемого состояния Windows PowerShell](overview.md)
-* [Активированные конфигурации](enactingConfigurations.md)
+* [Применение конфигураций](enactingConfigurations.md)
 * [Извлечение сведений об узле с опрашивающего сервера DSC](retrieveNodeInfo.md)
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=Mar16_HO1-->
+
+
