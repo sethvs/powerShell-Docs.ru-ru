@@ -1,27 +1,59 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs/blob/8a039df18b65d0f3af59c575bbd8a038ff91c9e8/wmf/productincompat.md) | OutofSyncHandedBackSuccess | [Details](#7cf46669ea41d4e9929d162df31f646e12a5a06a320)
+ [dsc\partialConfigs.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/partialConfigs.md) | OutofSyncHandedBackSuccess | [Details](#826fa37544f408a817e0cdea1557c2b00f3a6e5166)
+ [dsc\pullClientConfigNames.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/pullClientConfigNames.md) | OutofSyncHandedBackSuccess | [Details](#aa586b7e1cd14692ed4731f0da3cc4227abc6f0670)
+ [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/secureMOF.md) | OutofSyncHandedBackSuccess | [Details](#28230bc884a61491eedc5e803b8b73fa7370b62780)
 
 ## Item Details
-##### <a name='7cf46669ea41d4e9929d162df31f646e12a5a06a320'></a> Source: [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs/blob/8a039df18b65d0f3af59c575bbd8a038ff91c9e8/wmf/productincompat.md)
+##### <a name='826fa37544f408a817e0cdea1557c2b00f3a6e5166'></a> Source: [dsc\partialConfigs.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/partialConfigs.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/0e38598fc377fd861561f3eb6b8bccdd191faa08/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf)
-* Handoff Datetime: 2016-04-12 23:05:26
+* Handoff File: [partialConfigs.f483ab7fa1511b557780a02b5b807245f730c1b6.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/9d072e5b54ab7a4bab0aa9cab9230a745940c062/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/partialConfigs.f483ab7fa1511b557780a02b5b807245f730c1b6.ru-ru.xlf)
+* Handoff Datetime: 2016-04-14 23:40:00
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/9bd504b9047d7f0a0bdaa2e68938b44bf3f5c3eb/wmf/productincompat.md)
-* Current Handback File: [productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/f6691c71294d940e2fe05193652693cc8e328314/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf)
-* Current Handback Datetime: 2016-03-24 08:52:45
+* Current Target File: [dsc\partialConfigs.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a86f0fa71d36ae36a41c01c6defbb6b862f1e7a6/dsc/partialConfigs.md)
+* Current Handback File: [partialConfigs.f483ab7fa1511b557780a02b5b807245f730c1b6.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4c12b11cfd5fb62a67d2681fbd4fa77da6d634bd/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/partialConfigs.f483ab7fa1511b557780a02b5b807245f730c1b6.ru-ru.xlf)
+* Current Handback Datetime: 2016-04-04 11:09:40
+* [Back to Top](#report-top)
+
+##### <a name='aa586b7e1cd14692ed4731f0da3cc4227abc6f0670'></a> Source: [dsc\pullClientConfigNames.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/pullClientConfigNames.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [pullClientConfigNames.90531abb3b29bfd751ad2f3a115a4ba02024827e.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/9d072e5b54ab7a4bab0aa9cab9230a745940c062/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/pullClientConfigNames.90531abb3b29bfd751ad2f3a115a4ba02024827e.ru-ru.xlf)
+* Handoff Datetime: 2016-04-14 23:40:00
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [dsc\pullClientConfigNames.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a86f0fa71d36ae36a41c01c6defbb6b862f1e7a6/dsc/pullClientConfigNames.md)
+* Current Handback File: [pullClientConfigNames.90531abb3b29bfd751ad2f3a115a4ba02024827e.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4c12b11cfd5fb62a67d2681fbd4fa77da6d634bd/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/pullClientConfigNames.90531abb3b29bfd751ad2f3a115a4ba02024827e.ru-ru.xlf)
+* Current Handback Datetime: 2016-04-04 11:09:40
+* [Back to Top](#report-top)
+
+##### <a name='28230bc884a61491eedc5e803b8b73fa7370b62780'></a> Source: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/31a220c332d5aeaa4c4d82cfc66e7e27f4c5569a/dsc/secureMOF.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/9d072e5b54ab7a4bab0aa9cab9230a745940c062/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
+* Handoff Datetime: 2016-04-14 23:40:00
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a86f0fa71d36ae36a41c01c6defbb6b862f1e7a6/dsc/secureMOF.md)
+* Current Handback File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4c12b11cfd5fb62a67d2681fbd4fa77da6d634bd/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
+* Current Handback Datetime: 2016-04-04 11:09:40
 * [Back to Top](#report-top)
 
 
