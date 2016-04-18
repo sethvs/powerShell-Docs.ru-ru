@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [scripting\Token\ise_2_md.md](https://github.com/PowerShell/powerShell-Docs/blob/7221b5bd5ba90da32836d8c4e2bddb18c8f02ba6/scripting/Token/ise_2_md.md) | InSyncHandedBackSuccess | [Details](#bb1a3878b5188ee6cd7ec890ff6f5ea926a4161298)
+ [scripting\Token\mshgraphicalhostshort_md.md](https://github.com/PowerShell/powerShell-Docs/blob/8cdfa1ed6ef3d37681a48daeb19ec00f0ff08fa6/scripting/Token/mshgraphicalhostshort_md.md) | InSyncHandedBackSuccess | [Details](#bb1a3878b5188ee6cd7ec890ff6f5ea926a41612106)
 
 ## Item Details
+##### <a name='bb1a3878b5188ee6cd7ec890ff6f5ea926a4161298'></a> Source: [scripting\Token\ise_2_md.md](https://github.com/PowerShell/powerShell-Docs/blob/7221b5bd5ba90da32836d8c4e2bddb18c8f02ba6/scripting/Token/ise_2_md.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\Token\ise_2_md.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/b55c5397d55bfdbb231e97aeadc4dbdd74045f8b/scripting/Token/ise_2_md.md)
+* Handoff File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/589f046336be5dc258e7096725a43d815271ec92/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Handoff Datetime: 2016-04-05 17:34:09
+* Handoff Reason: Include
+* Archive File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/1b97bc44408b2890f4a21d23ba9a75c53f2b52b3/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Archive Datetime: 2016-04-15 00:53:59
+* Handback File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b35857744be2e4b2d431559e1de91ec44ef0f2d3/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Handback Datetime: 2016-04-18 23:23:07
+* [Back to Top](#report-top)
+
+##### <a name='bb1a3878b5188ee6cd7ec890ff6f5ea926a41612106'></a> Source: [scripting\Token\mshgraphicalhostshort_md.md](https://github.com/PowerShell/powerShell-Docs/blob/8cdfa1ed6ef3d37681a48daeb19ec00f0ff08fa6/scripting/Token/mshgraphicalhostshort_md.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\Token\ise_2_md.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/b55c5397d55bfdbb231e97aeadc4dbdd74045f8b/scripting/Token/ise_2_md.md)
+* Handoff File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/589f046336be5dc258e7096725a43d815271ec92/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Handoff Datetime: 2016-04-05 17:34:09
+* Handoff Reason: Include
+* Archive File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/1b97bc44408b2890f4a21d23ba9a75c53f2b52b3/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Archive Datetime: 2016-04-15 00:53:59
+* Handback File: [ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b35857744be2e4b2d431559e1de91ec44ef0f2d3/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/ise_2_md.7cd09f5e75c2059825ff2e0d5ef408886609e513.ru-ru.xlf)
+* Handback Datetime: 2016-04-18 23:23:07
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
