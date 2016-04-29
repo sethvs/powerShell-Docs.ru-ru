@@ -27,6 +27,7 @@
 ### [Настраиваемые ресурсы на основе классов](authoringResourceClass.md)
 ### [Составные ресурсы](authoringResourceComposite.md)
 ### [Отладка ресурсов DSC](debugResource.md)
+### [Запись ресурса DSC с одним экземпляром (рекомендуется)](singleInstance.md)
 ### [Контрольный список для создания ресурсов](resourceAuthoringChecklist.md)
 
 # [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
@@ -57,6 +58,6 @@
 ### [Ресурс nxUser](lnxUserResource.md)
 
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=Apr16_HO1-->
 
 
