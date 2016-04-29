@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "de26331f806ebedbf5e763f40024a5738527d2c4",
+  "LastProcessedCommit": "64e3dcf6955cb2a50b17614b6765fb41761403d5",
   "LastTranslatedCommit": "e7efb47593042771696e98a5694f417b6a1f75ce",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
@@ -12581,6 +12581,93 @@
       "ArchiveFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\archive\\TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf",
       "ArchiveFileCommit": "2ea4d9201b3d60283faa7a33b938a8789301e155",
       "ArchiveFileDateTime": "2016-04-29T00:26:40.1477785Z",
+      "ArchiveException": null
+    },
+    "918f7ebd3f6973cb17db4bdada7babf5dc716c3c": {
+      "FileHash": "918f7ebd3f6973cb17db4bdada7babf5dc716c3c",
+      "SourceFileCommit": "826a2f2909bef6645030a8a9e899bbc7de1a452c",
+      "SourceFilePath": "dsc\\configHelp.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "dsc\\configHelp.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\configHelp.640c1514ba89b533fcd70fb36da2f349eced1926.ru-ru.xlf",
+      "HandoffFileCommit": "b6026b98256af629fb4443cc0fbb7f94d6bc70c4",
+      "HandoffDateTime": "2016-04-29T22:42:10.7040609Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "36eb67cfb8a17de40d1e826807f0386c5eb488f4": {
+      "FileHash": "36eb67cfb8a17de40d1e826807f0386c5eb488f4",
+      "SourceFileCommit": "49416135900c0960b79ccd43f64d38f2d4e0d0aa",
+      "SourceFilePath": "dsc\\nanoDsc.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "dsc\\nanoDsc.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\nanoDsc.aab436599c769befa85e33015714db23e0d73ae6.ru-ru.xlf",
+      "HandoffFileCommit": "b6026b98256af629fb4443cc0fbb7f94d6bc70c4",
+      "HandoffDateTime": "2016-04-29T22:42:10.7040609Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "8a1b3001e3db183d6cef1f7f7bdcb9c685268fac": {
+      "FileHash": "8a1b3001e3db183d6cef1f7f7bdcb9c685268fac",
+      "SourceFileCommit": "826a2f2909bef6645030a8a9e899bbc7de1a452c",
+      "SourceFilePath": "dsc\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "dsc\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf",
+      "HandoffFileCommit": "b6026b98256af629fb4443cc0fbb7f94d6bc70c4",
+      "HandoffDateTime": "2016-04-29T22:42:10.7040609Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
       "ArchiveException": null
     }
   }
