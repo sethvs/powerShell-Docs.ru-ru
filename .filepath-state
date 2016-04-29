@@ -164,9 +164,6 @@
   "df17a2af726925e59275f2ecabf702c105b0cdc8": [
     "dsc\\pullServer.md"
   ],
-  "3a0ad4ab86a570279e8ebdec35edb9dafc69e9bf": [
-    "dsc\\pullServer.md"
-  ],
   "fc1456c57ade6862957e54ee53f18f189785848a": [
     "dsc\\queryServerNodes.md"
   ],
@@ -174,15 +171,6 @@
     "dsc\\registryResource.md"
   ],
   "e8e890b02530d6abf3e6fecf18f6779e81c84eec": [
-    "dsc\\reportServer.md"
-  ],
-  "500775f223a550a8edf78198a2cb5912eaff90fa": [
-    "dsc\\reportServer.md"
-  ],
-  "34ec900d1b7960e5a8180336968d2dfdbf6ef68b": [
-    "dsc\\reportServer.md"
-  ],
-  "40b0aa8dee0fb9578649c0ec92a5a2cb027a137d": [
     "dsc\\reportServer.md"
   ],
   "df54abe3d92ffaff2998e9fb3157b42cf83143c2": [
@@ -212,9 +200,6 @@
   "c44d8f0f02ca735a1d545dba99f6b1fa78b2110f": [
     "dsc\\secureMOF.md"
   ],
-  "c3b61e7f85bc59833548873a73b6ce9559dcea3a": [
-    "dsc\\secureMOF.md"
-  ],
   "2290a81a8dbc82b7881d2b6006d70a90578f9a56": [
     "dsc\\secureServer.md"
   ],
@@ -234,9 +219,6 @@
     "dsc\\TOC.md"
   ],
   "6a65e1ac34595c1f0207785b63b7760ece43172c": [
-    "dsc\\TOC.md"
-  ],
-  "3dc3c9067740310415daef415dc0b44310aeb473": [
     "dsc\\TOC.md"
   ],
   "d571a7562bd23e3bca78127732dd4fccb88fee1c": [
@@ -378,9 +360,6 @@
     "wmf\\dsc_sxsresource.md"
   ],
   "df6b5db79c8c165e7fb3c1570838ac7a696b5a55": [
-    "wmf\\dsc_testconfiguration.md"
-  ],
-  "71dcfe5d8a56f707ee9a05cdb07d2fda4bbcd573": [
     "wmf\\dsc_testconfiguration.md"
   ],
   "64101be0217053e685f39cd6aebf4447df700c7f": [
