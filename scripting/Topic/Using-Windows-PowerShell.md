@@ -23,7 +23,7 @@ ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
 
 -   [Интегрированная среда сценариев Windows PowerShell &#40;ISE&#41;](../Topic/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md). Документация по интегрированной среде сценариев [!INCLUDE[wps_2](../Token/wps_2_md.md)], графическому редактору сценариев [!INCLUDE[wps_2](../Token/wps_2_md.md)] и консоли.
 
--   [Общие сведения о службе настройки требуемого состояния (DSC) Windows PowerShell](assetId:///04c9e716-822c-40f0-8fdf-f2dda8abd888). Общие сведения о новом компоненте для [!INCLUDE[wps_2](../Token/wps_2_md.md)] 4.0 — службе настройки требуемого состояния Windows PowerShell (DSC). Служба настройки требуемого состояния может помочь получить соответствующие конфигурации в средах Windows и на таких устройствах, как сетевые коммутаторы.
+-   [Общие сведения о службе настройки требуемого состояния (DSC) Windows PowerShell](https://technet.microsoft.com/en-us/library/04c9e716-822c-40f0-8fdf-f2dda8abd888). Общие сведения о новом компоненте для [!INCLUDE[wps_2](../Token/wps_2_md.md)] 4.0 — службе настройки требуемого состояния Windows PowerShell (DSC). Служба настройки требуемого состояния может помочь получить соответствующие конфигурации в средах Windows и на таких устройствах, как сетевые коммутаторы.
 
 -   [Справка по командной строке PowerShell.exe](../Topic/PowerShell.exe-Command-Line-Help.md). Запуск [!INCLUDE[wps_2](../Token/wps_2_md.md)] из командной строки Windows и выполнение основных команд [!INCLUDE[wps_2](../Token/wps_2_md.md)].
 
@@ -38,7 +38,7 @@ ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
 
 -   [Веб-службы Windows PowerShell (расширение IIS OData для управления)](http://msdn.microsoft.com/library/windows/desktop/hh880865.aspx). Веб-службы [!INCLUDE[wps_2](../Token/wps_2_md.md)] — это платформа для простого предоставления командлетов [!INCLUDE[wps_2](../Token/wps_2_md.md)] через веб-службу на основе OData, которая выполняется на веб-сервере (IIS).
 
--   [Начало работы с настройкой требуемого состояния Windows PowerShell](assetId:///c134aa32-b085-4656-9a89-955d8ff768d0). Служба настройки требуемого состояния [!INCLUDE[wps_2](../Token/wps_2_md.md)], представленная в [!INCLUDE[psversion4](../Token/psversion4_md.md)], является новой платформой управления в [!INCLUDE[wps_2](../Token/wps_2_md.md)], которая позволяет развертывать данные конфигурации для программных служб и среды, в которой они выполняются, и управлять ими. Служба настройки требуемого состояния предоставляет набор расширений языка, новых командлетов и ресурсов [!INCLUDE[wps_2](../Token/wps_2_md.md)], которые можно использовать для декларативного указания способа настройки программной среды.
+-   [Начало работы с настройкой требуемого состояния Windows PowerShell](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0). Служба настройки требуемого состояния [!INCLUDE[wps_2](../Token/wps_2_md.md)], представленная в [!INCLUDE[psversion4](../Token/psversion4_md.md)], является новой платформой управления в [!INCLUDE[wps_2](../Token/wps_2_md.md)], которая позволяет развертывать данные конфигурации для программных служб и среды, в которой они выполняются, и управлять ими. Служба настройки требуемого состояния предоставляет набор расширений языка, новых командлетов и ресурсов [!INCLUDE[wps_2](../Token/wps_2_md.md)], которые можно использовать для декларативного указания способа настройки программной среды.
 
 -   [Предварительная версия Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) включает обновления [!INCLUDE[wps_2](../Token/wps_2_md.md)], интегрированной среды сценариев [!INCLUDE[wps_2](../Token/wps_2_md.md)], веб-служб [!INCLUDE[wps_2](../Token/wps_2_md.md)] (расширение OData IIS для управления), службы удаленного управления Windows (WinRM), инфраструктуры управления Windows (WMI), поставщика WMI диспетчера серверов и нового компонента для версии 4.0, службы настройки требуемого состояния [!INCLUDE[wps_2](../Token/wps_2_md.md)]. Предварительная версия Windows Management Framework 4.0 позволяет установить и использовать эти технологии на компьютерах под управлением [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)] с пакетом обновления 1 (SP1) и [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] с пакетом обновления 1 (SP1).
 
@@ -74,6 +74,6 @@ ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

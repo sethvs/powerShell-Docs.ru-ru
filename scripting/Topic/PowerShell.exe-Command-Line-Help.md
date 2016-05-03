@@ -72,7 +72,7 @@ PowerShell[.exe] -Help | -? | /?
 Определяет формат выходных данных Windows PowerShell. Допустимые значения: "Text" (текстовые строки) или "XML" (сериализованный формат CLIXML).
 
 ### -PSConsoleFile <FilePath>
-Загружает указанный файл консоли Windows PowerShell. Введите путь и имя файла консоли. Для создания файла консоли используйте командлет [Export-Console](assetId:///4bab1c02-9e61-4aaf-9957-11d1934ef4ef) в Windows PowerShell.
+Загружает указанный файл консоли Windows PowerShell. Введите путь и имя файла консоли. Для создания файла консоли используйте командлет [Export-Console](https://technet.microsoft.com/en-us/library/4bab1c02-9e61-4aaf-9957-11d1934ef4ef) в Windows PowerShell.
 
 ### -Sta
 Запускает Windows PowerShell с использованием многопотокового подразделения. В [!INCLUDE[psversion3](../Token/psversion3_md.md)] по умолчанию используется однопотоковое подразделение (STA). В [!INCLUDE[psversion2](../Token/psversion2_md.md)] по умолчанию используется многопотоковое подразделение (MTA).
@@ -82,7 +82,7 @@ PowerShell[.exe] -Help | -? | /?
 
 Если [!INCLUDE[psversion3](../Token/psversion3_md.md)] не установлен, допустимо только значение "2.0". Другие значения игнорируются.
 
-Дополнительные сведения см. в разделе "Установка Windows PowerShell" статьи [Начало работы с Windows PowerShell [СТАРЫЙ MSDN]](assetId:///69555d95-b481-43e1-86e7-b46d68b3e2dd).
+Дополнительные сведения см. в разделе "Установка Windows PowerShell" статьи [Начало работы с Windows PowerShell [СТАРЫЙ MSDN]](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd).
 
 ### -WindowStyle <Window style>
 Задает стиль окна для сеанса. Допустимые значения: Normal, Minimized, Maximized и Hidden.
@@ -130,6 +130,6 @@ powershell.exe -encodedCommand $encodedCommand
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

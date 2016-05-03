@@ -22,12 +22,12 @@ ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 
 -   [Установка Windows PowerShell в основных серверных компонентах](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnServerCore)
 
--   [Развертывание Windows PowerShell Web Access](assetId:///639d0eff-98a3-4124-b52c-26921ebd98b0)
+-   [Развертывание Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/639d0eff-98a3-4124-b52c-26921ebd98b0)
 
 -   [Установка подсистемы Windows PowerShell 2.0](../Topic/Installing-the-Windows-PowerShell-2.0-Engine.md)
 
 ## <a name="BKMK_InstallingOnWindows8andWindowsServer2012"></a>Установка Windows PowerShell в Windows 8 и Windows Server 2012
-[!INCLUDE[psversion3](../Token/psversion3_md.md)] предоставляется установленной, настроенной и готовой к использованию. [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)] установлена и включена. Дополнительные сведения о запуске [!INCLUDE[mshshort](../Token/mshshort_md.md)] см. в статьях [Starting Windows PowerShell on Windows 8](assetId:///d7be1668-8617-4890-ad90-dd9765fbd2c3) (Запуск Windows PowerShell в Windows 8) и [Starting Windows PowerShell on Windows Server 2012](assetId:///4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968) (Запуск Windows PowerShell в Windows Server 2012).
+[!INCLUDE[psversion3](../Token/psversion3_md.md)] предоставляется установленной, настроенной и готовой к использованию. [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)] установлена и включена. Дополнительные сведения о запуске [!INCLUDE[mshshort](../Token/mshshort_md.md)] см. в статьях [Starting Windows PowerShell on Windows 8](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3) (Запуск Windows PowerShell в Windows 8) и [Starting Windows PowerShell on Windows Server 2012](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968) (Запуск Windows PowerShell в Windows Server 2012).
 
 ## <a name="BKMK_InstallingOnWindows7andWindowsServer2008R2"></a>Установка Windows PowerShell в Windows 7 и Windows Server 2008 R2
 Эти инструкции описывают установку [!INCLUDE[psversion3](../Token/psversion3_md.md)] на компьютерах под управлением [!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)] с пакетом обновления 1 (SP1) и [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] с пакетом обновления 1 (SP1). Ниже приведены отдельные инструкции по установке для компьютеров под управлением [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] с установкой основных серверных компонентов.
@@ -96,10 +96,10 @@ ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 
 ## См. также
 [Требования к системе для Windows PowerShell](../Topic/Windows-PowerShell-System-Requirements.md)
-[Запуск Windows PowerShell [ps]](assetId:///8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+[Запуск Windows PowerShell [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

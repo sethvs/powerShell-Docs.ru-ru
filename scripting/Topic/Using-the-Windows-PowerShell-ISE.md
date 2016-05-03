@@ -31,10 +31,10 @@ ms.assetid: 64fb5f37-90a8-4b89-9fc8-c6b8fcc0c7d0
 ## См. также
 [Обзор интегрированной среды сценариев Windows PowerShell](../Topic/Exploring-the-Windows-PowerShell-ISE.md)
 [Специальные возможности в интегрированной среде сценариев Windows PowerShell](../Topic/Accessibility-in-Windows-PowerShell-ISE.md)
-[Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](assetId:///69b047d0-da79-413e-b948-8e45d05d1f85)
+[Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/69b047d0-da79-413e-b948-8e45d05d1f85)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

@@ -13,7 +13,7 @@ ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
 Эти разделы можно отобразить в командной строке или просмотреть их последние обновленные версии в библиотеке Microsoft TechNet Library. Многие рабочие программы Windows PowerShell, например интегрированная среда сценариев Windows PowerShell, содержат дополнительные компоненты справки, например контекстную справку и скомпилированные файлы справки (CHM).
 
 ## Получение справки для командлетов
-Для получения справки о командлетах Windows PowerShell используйте командлет [Get-Help [m2]](assetId:///2d7fe1b4-0025-4580-a911-d81922dd6cd2). Например, для получения справки о командлете [Get-ChildItem [m2]](assetId:///4b270d63-c995-45b8-b5b4-3f8887efbfcc), введите следующее:
+Для получения справки о командлетах Windows PowerShell используйте командлет [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2). Например, для получения справки о командлете [Get-ChildItem [m2]](https://technet.microsoft.com/en-us/library/4b270d63-c995-45b8-b5b4-3f8887efbfcc), введите следующее:
 
 ```
 get-help get-childitem
@@ -126,7 +126,7 @@ get-help c:\ps-test\TestScript.ps1
 
 Параметры вывода справки по командлетам, в том числе *Detailed*, *Full*, *Examples* и *Parameter*, работают для вывода справки по сценариям и функциям. Однако при выводе всех разделов справки с помощью команды "get-help *" справка по функциям и сценариям не выводится.
 
-Сведения о написании разделов справки для функций и сценариев см. в статьях [about_Functions [m2]](assetId:///61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](assetId:///7dc08334-dcfe-450b-b949-0554855623af) и [about_Comment_Based_Help](assetId:///99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf).
+Сведения о написании разделов справки для функций и сценариев см. в статьях [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af) и [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf).
 
 ## Получение справки в Интернете
 Если локальный компьютер подключен к Интернету, лучше всего использовать разделы справки в Интернете. Поскольку разделы справки в Интернете легко обновлять, в них обычно содержится самая актуальная информация.
@@ -163,16 +163,16 @@ get-help add-computer
 Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 ```
 
-Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](assetId:///99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf), и "How to Write Cmdlet Help" (Как писать справку для командлетов) ([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415)) — в библиотеке MSDN.
+Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf), и "How to Write Cmdlet Help" (Как писать справку для командлетов) ([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415)) — в библиотеке MSDN.
 
 ## См. также
-[about_Functions [m2]](assetId:///61d40692-5300-4de9-a9b5-bae31815e105)
-[about_Scripts](assetId:///7dc08334-dcfe-450b-b949-0554855623af)
-[about_Comment_Based_Help](assetId:///99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
-[Get-Help [m2]](assetId:///2d7fe1b4-0025-4580-a911-d81922dd6cd2)
+[about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
+[about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
+[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
+[Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 
