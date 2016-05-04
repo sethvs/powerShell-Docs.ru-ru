@@ -22,11 +22,11 @@ ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 Например, введите `get-process -` и нажмите клавишу TAB несколько раз для отображения параметров командлета по очереди.
 
 ## См. также
-[Использование интегрированной среды сценариев Windows PowerShell](assetId:///777ea82b-dd73-4269-b61a-69a17e6ff16f)
-[Создание вкладки PowerShell](assetId:///c57fc210-19c8-47b1-9171-26a2144c907c)
+[Использование интегрированной среды сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/777ea82b-dd73-4269-b61a-69a17e6ff16f)
+[Создание вкладки PowerShell](https://technet.microsoft.com/en-us/library/c57fc210-19c8-47b1-9171-26a2144c907c)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 
