@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [wmf\limitation_overview.md](https://github.com/PowerShell/powerShell-Docs/blob/ac27b0155177a013965fbf9c761fc712daf16af2/wmf/limitation_overview.md) | OutofSyncHandedBackSuccess | [Details](#35cdbfab22a0fa00480012fed0a2cf32ffa11f8d323)
 
 ## Item Details
-##### <a name='35cdbfab22a0fa00480012fed0a2cf32ffa11f8d323'></a> Source: [wmf\limitation_overview.md](https://github.com/PowerShell/powerShell-Docs/blob/ac27b0155177a013965fbf9c761fc712daf16af2/wmf/limitation_overview.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [limitation_overview.6cc9c8c028f5912636637d836aed7db0614de522.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/e6cb4ed07b7d949a60781aaa18ef1d63600657c9/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/limitation_overview.6cc9c8c028f5912636637d836aed7db0614de522.ru-ru.xlf)
-* Handoff Datetime: 2016-05-06 13:50:24
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [wmf\limitation_overview.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/9bd504b9047d7f0a0bdaa2e68938b44bf3f5c3eb/wmf/limitation_overview.md)
-* Current Handback File: [limitation_overview.6cc9c8c028f5912636637d836aed7db0614de522.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/f6691c71294d940e2fe05193652693cc8e328314/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/limitation_overview.6cc9c8c028f5912636637d836aed7db0614de522.ru-ru.xlf)
-* Current Handback Datetime: 2016-03-24 08:52:45
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
