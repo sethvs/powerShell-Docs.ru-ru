@@ -29,9 +29,6 @@
   "3e887680203d836b4161a1e54b6bc60bb20dc6c8": [
     "dsc\\builtInResource.md"
   ],
-  "042a29099cc4abd044b3e9fb4f3281d80f5b8b02": [
-    "dsc\\builtInResource.md"
-  ],
   "291278563679354d4a21858157c0679914131dd3": [
     "dsc\\configData.md"
   ],
@@ -510,9 +507,6 @@
     "dsc\\runAsUser.md"
   ],
   "f617844fdfc22c15e23687a911cfe75876abc43e": [
-    "dsc\\singleInstance.md"
-  ],
-  "adda311ae522a0b165380a2f277c30a03a06a03e": [
     "dsc\\singleInstance.md"
   ],
   "0de7828832edd3e4c1d073dc62c3866e10c13e88": [
