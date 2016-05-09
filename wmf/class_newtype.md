@@ -124,7 +124,7 @@ hashtable new(int capacity, float loadFactor)
 
 ## Методы
 
-Метод класса Windows PowerShell реализуется как ScriptBlock, имеющий только конечный блок. Все методы являются открытыми. Ниже приведен пример определения метода с именем **DoSomething**.
+Метод класса Windows PowerShell реализуется как ScriptBlock, имеющий только конечный блок. Все методы являются открытыми. Ниже приведен пример определения метода с именем **DoSomething**..
 
 ```powershell
 class MyClass
@@ -168,7 +168,7 @@ $b.DoSomething(42)
 
 ## Атрибуты
 
-Добавлены четыре новых атрибута **DscResource**, **DscResourceKey**, **DscResourceMandatory** и **DscResourceOut**.
+Добавлены два новых атрибута — **DscResource** и **DscProperty**.
 
 ## Лексическая область переменных
 
@@ -324,4 +324,8 @@ function Style
 # and then returns the resulting type.
 #
 function Html ([HTML] $doc) { return $doc }
-```<!--HONumber=Mar16_HO2-->
+```
+
+<!--HONumber=Apr16_HO5-->
+
+
