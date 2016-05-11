@@ -3,7 +3,16 @@
  
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Ресурс **Script** в DSC Windows PowerShell предоставляет механизм запуска блоков сценариев на целевых узлах.
+Ресурс **Script** в DSC Windows PowerShell предоставляет механизм запуска блоков сценариев на целевых узлах. Ресурс `Script` имеет свойства `GetScript`, `SetScript` и `TestScript`. Эти свойства должны быть заданы для блоков сценария, выполняемых на каждом целевом узле. 
+
+Блок сценария `GetScript` должен возвращать хэш-таблицу, представляющую состояние текущего узла. Выходные значения этого блока необязательны. DSC не выполняет никаких действий с выходными данными этого блока сценария.
+
+Блок сценария `TestScript` должен определять, требуется ли изменение текущего узла. Он должен возвращать значение `$true`, если состояние узла актуально. Он должен возвращать значение `$false`, если конфигурация узла устарела и должна быть обновлена блоком сценария `SetScript`. Блок сценария `TestScript` вызывается DSC.
+
+Блок сценария `SetScript` должен изменить узел. Он вызывается DSC, если блок `TestScript` возвращает значение `$false`.
+
+Если необходимо использовать переменные из сценария конфигурации в блоках сценария `GetScript`, `TestScript` или `SetScript`, используйте область `$using:` (см. пример ниже).
+
 
 ## Синтаксис
 
@@ -28,7 +37,7 @@ Script [string] #ResourceName
 | Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.
 
-## Пример
+## Пример 1
 ```powershell
 Script ScriptExample
 {
@@ -42,4 +51,35 @@ Script ScriptExample
 }
 ```
 
-<!--HONumber=Feb16_HO4-->
+## Пример 2.
+```powershell
+$version = Get-Content 'version.txt'
+Script UpdateConfigurationVersion
+{
+    GetScript = { 
+        $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+        return @{ 'Version' = $currentVersion }
+    }          
+    TestScript = { 
+        $state = GetScript
+        if( $state['Version'] -eq $using:version )
+        {
+            Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
+            return $true
+        }
+        Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
+        return $false
+    }
+    SetScript = { 
+        $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+    }
+}
+```
+
+Этот ресурс записывает версию конфигурации в текстовый файл. Эта версия доступна на клиентском компьютере, но не на узлах, поэтому ее необходимо передать во все блоки сценария ресурса `Script` с помощью области PowerShell `using`. При создании MOF-файла узла значение переменной `$version` считывается из текстового файла на клиентском компьютере. DSC заменяет переменные `$using:version` в каждом блоке сценария значением переменной `$version`.
+
+
+
+<!--HONumber=Apr16_HO2-->
+
+

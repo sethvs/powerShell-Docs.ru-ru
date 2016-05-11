@@ -44,7 +44,7 @@
 ### [Навигация Windows PowerShell](Topic/Windows-PowerShell-Navigation.md)
 #### [Управление текущим расположением](Topic/Managing-Current-Location.md)
 #### [Управление дисками Windows PowerShell](Topic/Managing-Windows-PowerShell-Drives.md)
-#### [Работа с файлами, папками и разделами реестра](Topic/Working-With-Files,-Folders-and-Registry-Keys.md)
+#### [Работа с файлами, папками и разделами реестра](Topic/Working-With-Files-Folders-and-Registry-Keys.md)
 #### [Прямое управление элементами](Topic/Manipulating-Items-Directly.md)
 ### [Работа с объектами](Topic/Working-with-Objects.md)
 #### [Получение объектов WMI "Get-WmiObject"](Topic/Getting-WMI-Objects--Get-WmiObject-.md)
@@ -67,6 +67,8 @@
 #### [Работа с разделами реестра](Topic/Working-with-Registry-Keys.md)
 #### [Работа с записями реестра](Topic/Working-with-Registry-Entries.md)
 #### [Выполнение удаленных команд](Topic/Running-Remote-Commands.md)
+## Безопасность Windows PowerShell
+### [Вопросы обеспечения безопасности удаленного взаимодействия PowerShell](Topic/WinRMSecurity.md)
 ## [Новые возможности Windows PowerShell 5](Topic/What-s-New-in-Windows-PowerShell.md)
 ### [Псевдонимы совместимости](Topic/Appendix-1---Compatibility-Aliases.md)
 ### [Создание настраиваемого ярлыка PowerShell](Topic/Appendix-2---Creating-a-Custom-PowerShell-Shortcut.md)
@@ -74,6 +76,6 @@
 ## [Глоссарий Windows PowerShell](Topic/Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -2,11 +2,14 @@
 
 # [Конфигурации](configurations.md)
 ## [Применение конфигураций](enactingConfigurations.md)
+## [Использование ресурсов с несколькими версиями](sxsResource.md)
+## [Указание межузловых зависимостей](crossNodeDependencies.md)
 ## [Данные конфигурации](configData.md)
 ### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
 ### [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Защита MOF-файла конфигурации](secureMOF.md)
 ## [Частичные конфигурации](partialConfigs.md)
+
 # [Ресурсы](resources.md)
 ## [Встроенные ресурсы](builtInResource.md)
 ### [Ресурс Archive](archiveResource.md)
@@ -27,6 +30,7 @@
 ### [Настраиваемые ресурсы на основе классов](authoringResourceClass.md)
 ### [Составные ресурсы](authoringResourceComposite.md)
 ### [Отладка ресурсов DSC](debugResource.md)
+### [Прямой вызов методов ресурсов DSC](directCallResource.md)
 ### [Запись ресурса DSC с одним экземпляром (рекомендуется)](singleInstance.md)
 ### [Контрольный список для создания ресурсов](resourceAuthoringChecklist.md)
 
@@ -44,6 +48,8 @@
 
 # [Устранение неполадок в DSC](troubleshooting.md)
 
+# [Использование DSC на сервере Nano Server](nanoDsc.md)
+
 # DSC в Linux
 ## [Начало работы с DSC в Linux](lnxGettingStarted.md)
 ## [Встроенные ресурсы для Linux](lnxBuiltInResources.md)
@@ -57,7 +63,32 @@
 ### [Ресурс nxSshAuthorizedKeys](lnxSshAuthorizedKeysResource.md)
 ### [Ресурс nxUser](lnxUserResource.md)
 
+# Справочник по MOF-файлам DSC
+## [Класс MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager.md)
+### [Метод ApplyConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-applyconfiguration.md)
+### [Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)
+### [Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)
+### [Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-getconfiguration.md)
+### [Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)
+### [Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)
+### [Метод GetMetaConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)
+### [Метод PerformRequiredConfigurationChecks класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)
+### [Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-removeconfiguration.md)
+### [Метод ResourceGet класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-resourceget.md)
+### [Метод ResourceSet класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-resourceset.md)
+### [Метод ResourceTest класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-resourcetest.md)
+### [Метод RollBack класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-rollback.md)
+### [Метод SendConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-sendconfiguration.md)
+### [Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)
+### [Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)
+### [Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)
+### [Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-stopconfiguration.md)
+### [Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager](msft-dsclocalconfigurationmanager-testconfiguration.md)
 
-<!--HONumber=Apr16_HO1-->
+# Дополнительные ресурсы
+## [Технические документы](whitepapers.md)
+
+
+<!--HONumber=Apr16_HO4-->
 
 

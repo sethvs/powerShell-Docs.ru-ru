@@ -49,24 +49,154 @@ DSC сообщает целевым узлам об их конфигураци�
 >расширенного использования ключа.
   
 Для защиты учетных данных DSC можно использовать любой существующий сертификат на _целевом узле_, удовлетворяющий этим критериям.
- 
+
 ## Создание сертификата
 
-Закрытый ключ следует хранить в тайне, поскольку он используется для расшифровки MOF. Это проще всего сделать, создав сертификат закрытого ключа на *целевом узле* и скопировав сертификат открытого ключа 
-на компьютер, используемый для компиляции конфигурации DSC в MOF-файл. Следующий пример создает сертификат, экспортирует открытый ключ, а затем импортирует открытый ключ
-в корень локального хранилища сертификатов.
+Существует два способа создания и использования обязательного сертификата шифрования (пары открытого и закрытого ключей).
+
+1. Создание сертификата на **целевом узле** и экспорт только открытого ключа на **узел разработки**
+2. Создание сертификата на **узле разработки** и экспорт всей пары ключей на **целевой узел**
+
+Рекомендуется первый способ, поскольку закрытый ключ, используемый для расшифровки учетных данных в MOF-файле, не покидает целевой узел.
+
+
+### Создание сертификата на целевом узле
+
+Закрытый ключ следует хранить в тайне, поскольку он используется для расшифровки MOF-файла на **целевом узле**.
+Проще всего это сделать, создав сертификат закрытого ключа на **целевом узле** и скопировав **сертификат открытого ключа** на компьютер, используемый для разработки конфигурации DSC в MOF-файле.
+В следующем примере
+ 1. сертификат создается на **целевом узле**;
+ 2. сертификат открытого ключа экспортируется на **целевой узел**;
+ 3. сертификат открытого ключа импортируется в хранилище сертификатов **my** на **узле разработки**.
+
+#### На целевом узле: создание и экспорт сертификата
+>Узел разработки: Windows Server 2016 и Windows 10
 
 ```powershell
-# create the cert
-$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' 
-# export the cert’s public key
-$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer"  -Force                                                              
-# import the cert’s public key as a trusted root certificate authority so that it is trusted
-Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\Root > $null
+# note: These steps need to be performed in an Administrator PowerShell session
+$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256
+# export the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+```
+После экспорта файл ```DscPublicKey.cer``` потребуется скопировать на **узел разработки**.
+
+>Узел разработки: Windows Server 2012 R2 или Windows 8.1 и более ранних версий
+
+Поскольку командлет New-SelfSignedCertificate в операционных системах Windows, предшествующих Windows 10 и Windows Server 2016, не поддерживает параметр **Type**, для таких операционных систем необходим альтернативный способ создания этого сертификата.
+В этом случае можно использовать для создания сертификата программу ```makecert.exe``` или ```certutil.exe```.
+
+Альтернативным способом является [загрузка сценария New-SelfSignedCertificateEx.ps1 из центра сценариев Майкрософт](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6) и использование этого файла для создания сертификата:
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+# and in the folder that contains New-SelfSignedCertificateEx.ps1
+. .\New-SelfSignedCertificateEx.ps1
+New-SelfsignedCertificateEx `
+    -Subject "CN=${ENV:ComputerName}" `
+    -EKU 'Document Encryption' `
+    -KeyUsage 'KeyEncipherment, DataEncipherment' `
+    -SAN ${ENV:ComputerName} `
+    -FriendlyName 'DSC Credential Encryption certificate' `
+    -Exportable `
+    -StoreLocation 'LocalMachine' `
+    -StoreName 'My' `
+    -KeyLength 2048 `
+    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `
+    -AlgorithmName 'RSA' `
+    -SignatureAlgorithm 'SHA256'
+# Locate the newly created certificate
+$Cert = Get-ChildItem -Path cert:\LocalMachine\My `
+    | Where-Object {
+        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `
+        -and ($_.Subject -eq "CN=${ENV:ComputerName}")
+    } | Select-Object -First 1
+# export the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+```
+После экспорта файл ```DscPublicKey.cer``` потребуется скопировать на **узел разработки**.
+
+#### На узле разработки: импорт открытого ключа сертификата
+```powershell
+# Import to the my store
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
 ```
 
-Другой вариант — создать сертификат закрытого ключа на компьютере, который используется для компиляции файла конфигурации DSC, экспортировать его с закрытым ключом и затем импортировать на _целевой узел_. 
-Это текущий метод шифрования учетных данных DSC на сервере Nano. Во время передачи закрытый ключ должен находиться в безопасности.
+### Создание сертификата на узле разработки
+Кроме того, сертификат шифрования можно создать на **узле разработки**, экспортировать его с **закрытым ключом** в виде PFX-файла, а затем импортировать на **целевой узел**.
+Это текущий метод реализации шифрования учетных данных DSC в системе _Nano Server_.
+Несмотря на то что PFX-файл защищен паролем, необходимо обеспечить его безопасность во время передачи.
+В следующем примере
+ 1. сертификат создается на **узле разработки**;
+ 2. сертификат, включая закрытый ключ, экспортируется на **узел разработки**;
+ 3. закрытый ключ удаляется с **узла разработки**, однако сертификат открытого ключа сохраняется в хранилище **my**;
+ 4. сертификат открытого ключа импортируется в корневое хранилище сертификатов на **целевом узле разработки**.
+   - Его необходимо добавить в корневое хранилище, чтобы **целевой узел** считал его надежным.
+
+#### На узле разработки: создание и экспорт сертификата
+>Целевой узел: Windows Server 2016 и Windows 10
+
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256
+# export the private key certificate
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+$cert | Export-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -Password $mypwd -Force
+# remove the private key certificate from the node but keep the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+$cert | Remove-Item -Force
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
+```
+После экспорта файл ```DscPrivateKey.cer``` потребуется скопировать на **целевой узел**.
+
+>Целевой узел: Windows Server 2012 R2 или Windows 8.1 и более ранних версий
+
+Поскольку командлет New-SelfSignedCertificate в операционных системах Windows, предшествующих Windows 10 и Windows Server 2016, не поддерживает параметр **Type**, для таких операционных систем необходим альтернативный способ создания этого сертификата.
+В этом случае можно использовать для создания сертификата программу ```makecert.exe``` или ```certutil.exe```.
+
+Альтернативным способом является [загрузка сценария New-SelfSignedCertificateEx.ps1 из центра сценариев Майкрософт](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6) и использование этого файла для создания сертификата:
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+# and in the folder that contains New-SelfSignedCertificateEx.ps1
+. .\New-SelfSignedCertificateEx.ps1
+New-SelfsignedCertificateEx `
+    -Subject "CN=${ENV:ComputerName}" `
+    -EKU 'Document Encryption' `
+    -KeyUsage 'KeyEncipherment, DataEncipherment' `
+    -SAN ${ENV:ComputerName} `
+    -FriendlyName 'DSC Credential Encryption certificate' `
+    -Exportable `
+    -StoreLocation 'LocalMachine' `
+    -StoreName 'My' `
+    -KeyLength 2048 `
+    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `
+    -AlgorithmName 'RSA' `
+    -SignatureAlgorithm 'SHA256'
+# Locate the newly created certificate
+$Cert = Get-ChildItem -Path cert:\LocalMachine\My `
+    | Where-Object {
+        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `
+        -and ($_.Subject -eq "CN=${ENV:ComputerName}")
+    } | Select-Object -First 1
+# export the public key certificate
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+$cert | Export-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -Password $mypwd -Force
+# remove the private key certificate from the node but keep the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+$cert | Remove-Item -Force
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
+```
+
+#### На целевом узле: импорт закрытого ключа сертификата в качестве доверенного корневого сертификата
+```powershell
+# Import to the root store so that it is trusted
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+Import-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -CertStoreLocation Cert:\LocalMachine\Root -Password $mypwd > $null
+```
+
+Примечание. Если целевым узлом является сервер _Nano Server_, для импорта сертификата закрытого ключа необходимо использовать приложение CertOC.exe, так как командлет ```Import-PfxCertificate``` недоступен.
+```powershell
+# Import to the root store so that it is trusted
+certoc.exe -ImportPFX -p YOUR_PFX_PASSWD Root c:\temp\DscPrivateKey.pfx
+```
 
 ## Данные конфигурации
 
@@ -197,7 +327,7 @@ Start-DscConfiguration .\CredentialEncryptionExample -wait -Verbose
 В этом примере конфигурация DSC будет принудительно отправляться на целевой узел.
 Конфигурацию DSC также можно применить с помощью опрашивающего сервера DSC, если он доступен.
 
-Дополнительные сведения о применении конфигурации DSC с помощью опрашивающего сервера DSC приведены на [этой странице](PullClient.md).
+Дополнительные сведения о применении конфигурации DSC с помощью опрашивающего сервера DSC см. в статье [Setting up a DSC pull client](pullClient.md) (Настройка опрашивающего клиента DSC).
 
 ## Пример модуля шифрования учетных данных
 
@@ -318,6 +448,6 @@ Start-CredentialEncryptionExample
 ```
 
 
-<!--HONumber=Mar16_HO5-->
+<!--HONumber=Apr16_HO3-->
 
 

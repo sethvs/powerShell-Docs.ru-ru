@@ -1,0 +1,72 @@
+---
+DCS.appliesToProduct: 'WindowsServer\_Dev'
+Description: 'Отправка документа конфигурации на управляемый узел и его проверка относительно текущей конфигурации.'
+MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_testconfiguration'
+MSHAttr: 'PreferredLib:/library'
+title: 'Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager'
+---
+
+# Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
+
+Отправляет документ конфигурации на управляемый узел и проверяет соответствие текущей конфигурации документу.
+
+Синтаксис
+------
+
+```mof
+uint32 TestConfiguration(
+  [in]  uint8                          configurationData[],
+  [out] boolean                        InDesiredState,
+  [out] MSFT_ResourceInDesiredState    ResourcesInDesiredState[],
+  [out] MSFT_ResourceNotInDesiredState ResourcesNotInDesiredState[]
+);
+```
+
+Параметры
+----------
+
+*configurationData* \[in\]  
+Данные среды для конфигурации.
+
+*InDesiredState* \[out\]  
+В выходных данных указывает, находится ли управляемый узел в состоянии, указанном в документе конфигурации.
+
+*ResourcesInDesiredState* \[out\]  
+Выходные данные содержат встроенный экземпляр класса **MSFT_ResourceInDesiredState**, указывающий ресурсы, которые находятся в нужном состоянии.
+
+*ResourcesNotInDesiredState* \[out\]  
+Выходные данные содержат встроенный экземпляр класса **MSFT_ResourceNotInDesiredState**, указывающий ресурсы, которые не находятся в нужном состоянии.
+
+## Возвращаемое значение
+------------
+
+Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+
+## Замечания
+
+Это статический метод.
+
+## Требования
+------------
+>**MOF-файл:** DscCore.mof
+
+>**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
+
+
+## См. также:
+
+
+[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+
+
+ 
+
+ 
+
+
+
+
+
+<!--HONumber=Apr16_HO2-->
+
+

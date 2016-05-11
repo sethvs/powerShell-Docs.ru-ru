@@ -29,4 +29,8 @@ $result = Invoke-DscResource -Name File -Method Get -Property @{
                             Contents='This file is create by Invoke-DscResource'} -Verbose
 $result.ItemValue | fl
 ```
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Apr16_HO4-->
+
+
