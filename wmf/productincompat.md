@@ -7,8 +7,13 @@
 - Microsoft SharePoint Server 2013
 - Microsoft SharePoint Server 2010
 - System Center 2012 Virtual Machine Manager
+- System Center 2012 R2 Service Management Automation
 
 **WMF 5.0 теперь можно запускать на серверах, где выполняются следующие приложения:**
 
 - System Center 2012 Configuration Manager
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Apr16_HO2-->
+
+

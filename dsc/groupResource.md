@@ -32,7 +32,7 @@ Group [string] #ResourceName
 | MembersToInclude| Указывает пользователей, которые должны входить в группу.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-## Пример
+## Пример 1
 
 Следующий пример показывает, как проверить, что группа с именем TestGroup не существует. 
 
@@ -45,4 +45,36 @@ Group GroupExample
     GroupName = "TestGroup"
 }
 ```
-<!--HONumber=Feb16_HO4-->
+## Пример 2.
+Следующий пример демонстрирует добавление пользователя Active Directory в группу локальных администраторов в лабораторной сборке с несколькими компьютерами, в которой уже используется объект PSCredential для учетной записи локального администратора. Поскольку этот объект также используется для учетной записи администратора домена (после повышения роли домена), нам потребуется преобразовать этот существующий объект PSCredential в понятные учетные данные домена, чтобы можно было добавить пользователя домена в группу локальных администраторов на рядовом сервере.
+
+```powershell
+@{
+    AllNodes = @(
+        @{
+            NodeName = '*';
+            DomainName = 'SubTest.contoso.com';
+         }
+     @{
+            NodeName = 'Box2';
+            AdminAccount = 'Admin-Dave_Alexanderson'   
+      }    
+    )
+}
+                  
+$domain = $node.DomainName.split('.')[0]
+$DCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ("$domain\$($credential.Username)", $Credential.Password)
+
+Group AddADUserToLocalAdminGroup
+        {
+            GroupName='Administrators'   
+            Ensure= 'Present'             
+            MembersToInclude= "$domain\$($Node.AdminAccount)"
+            Credential = $dCredential    
+            PsDscRunAsCredential = $DCredential
+        }
+```
+
+<!--HONumber=Apr16_HO3-->
+
+
