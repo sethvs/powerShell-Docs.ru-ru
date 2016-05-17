@@ -1,3 +1,14 @@
+---
+title:   Разделение данных конфигурации и данных среды
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Разделение данных конфигурации и данных среды
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -207,4 +218,9 @@ configuration MyConfiguration
 ```
 
 Полный пример входит в [модуль xWebAdministration](https://powershellgallery.com/packages/xWebAdministration).
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

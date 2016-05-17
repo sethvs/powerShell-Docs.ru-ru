@@ -3,12 +3,13 @@
 # [Конфигурации](configurations.md)
 ## [Применение конфигураций](enactingConfigurations.md)
 ## [Использование ресурсов с несколькими версиями](sxsResource.md)
+## [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Указание межузловых зависимостей](crossNodeDependencies.md)
 ## [Данные конфигурации](configData.md)
 ### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
-### [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Защита MOF-файла конфигурации](secureMOF.md)
 ## [Частичные конфигурации](partialConfigs.md)
+## [Запись поддержки конфигураций DSC](configHelp.md)
 
 # [Ресурсы](resources.md)
 ## [Встроенные ресурсы](builtInResource.md)
@@ -89,6 +90,7 @@
 ## [Технические документы](whitepapers.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=May16_HO3-->
 
 

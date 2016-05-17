@@ -1,12 +1,15 @@
 ---
-title: Получение сведений о командах
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
+title:  Получение сведений о командах
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
 ---
+
 # Получение сведений о командах
 Командлет **Get-Command** Windows PowerShell возвращает все команды, доступные в текущем сеансе. При вводе **Get-Command** в командной строке Windows PowerShell появятся выходные данные, аналогичные следующим:
 
@@ -78,6 +81,6 @@ Get-Command -CommandType Script
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

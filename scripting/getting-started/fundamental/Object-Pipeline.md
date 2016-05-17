@@ -1,12 +1,15 @@
 ---
-title: Конвейер объектов
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
+title:  Конвейер объектов
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  523d8ae4-d743-47a4-b79a-806130ca688a
 ---
+
 # Конвейер объектов
 Конвейеры представляют собой последовательность соединенных сегментов канала. Элементы, перемещающиеся по конвейеру, проходят через каждый сегмент. Для создания конвейера в Windows PowerShell команды соединяются друг с другом с помощью оператора канала "|". Результат каждой команды используется в качестве входных данных для следующей.
 
@@ -16,6 +19,6 @@ ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

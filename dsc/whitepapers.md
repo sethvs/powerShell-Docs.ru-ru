@@ -1,3 +1,14 @@
+---
+title:   Технические документы
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Технические документы
 
 Опубликованы следующие технические документы, которые содержат дополнительные сведения по темам, связанным со службой настройки требуемого состояния PowerShell (DSC).
@@ -7,6 +18,8 @@
 
 **[Скачать PDF](http://aka.ms/thereleasepipelinemodelpdf)**
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=May16_HO3-->
 
 

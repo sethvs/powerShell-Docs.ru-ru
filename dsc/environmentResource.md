@@ -1,3 +1,14 @@
+---
+title:   Ресурс Environment в DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс Environment в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -38,4 +49,9 @@ Environment EnvironmentExample
     Value = "TestValue"
 }
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

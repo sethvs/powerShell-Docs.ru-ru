@@ -1,12 +1,15 @@
 ---
-title: Основы Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+title:  Основы Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6b3cbbc8-060c-4877-b00b-7300dbbe4e28
 ---
+
 # Основы Windows PowerShell
 В графических пользовательских интерфейсах используются общие концепции, знакомые большинству пользователей. Пользователи полагаются на эти привычные интерфейсы для выполнения задач. Операционные системы предлагают пользователю графическое представление элементов, которые можно просматривать, при этом раскрывающиеся меню обычно используются для доступа к конкретной функциональности, а контекстные меню — к контекстной функциональности.
 
@@ -28,6 +31,6 @@ Windows PowerShell ориентирована на использование и
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

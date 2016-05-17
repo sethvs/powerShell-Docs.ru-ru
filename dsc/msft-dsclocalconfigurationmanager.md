@@ -1,4 +1,13 @@
-
+---
+title:  
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
 
 # Класс MSFT_DSCLocalConfigurationManager
 
@@ -69,6 +78,6 @@ class MSFT_DSCLocalConfigurationManager
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

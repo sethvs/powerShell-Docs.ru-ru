@@ -1,3 +1,14 @@
+---
+title:   Настройка опрашивающего клиента DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Настройка опрашивающего клиента DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -10,9 +21,10 @@
 * [Настройка опрашивающего клиента с помощью имен конфигураций](pullClientConfigNames.md)
 * [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md)
 
-> <ctype="x-NOTFOUND" mdpre="**" mdpost="**">Примечание</ctype="x-NOTFOUND">. Эти разделы относятся к PowerShell 5.0. Сведения о настройке опрашивающего клиента в PowerShell 4.0 см. в разделе <ctype="x-NOTFOUND" mdpre="[" mdpost="](pullClientConfigID4.md)">Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0</ctype="x-NOTFOUND">.
+> **Примечание**. Эти разделы относятся к PowerShell 5.0. Сведения о настройке опрашивающего клиента в PowerShell 4.0 см. в разделе [Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0](pullClientConfigID4.md).
 
 
-<!--HONumber=Mar16_HO4-->
+
+<!--HONumber=May16_HO3-->
 
 

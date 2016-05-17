@@ -1,3 +1,14 @@
+---
+title:   Ресурс Script в DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс Script в DSC
 
  
@@ -80,6 +91,6 @@ Script UpdateConfigurationVersion
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

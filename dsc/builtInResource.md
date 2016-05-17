@@ -1,3 +1,14 @@
+---
+title:   Встроенные ресурсы настройки требуемого состояния Windows PowerShell
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Встроенные ресурсы настройки требуемого состояния Windows PowerShell
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -18,6 +29,7 @@
 * [Ресурс WindowsProcess](windowsProcessResource.md)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

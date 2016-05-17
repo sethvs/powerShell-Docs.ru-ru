@@ -1,3 +1,14 @@
+---
+title:   Ресурс WindowsProcess в DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс WindowsProcess в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -33,4 +44,9 @@ WindowsProcess [string] #ResourceName
 | StandardInputPath| Указывает расположение стандартного ввода.| 
 | StandardOutputPath| Указывает расположение стандартного вывода. Все существующие файлы в этом каталоге будут перезаписаны.| 
 | WorkingDirectory| Указывает расположение, которое будет использоваться в качестве текущего рабочего каталога для процесса.| 
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

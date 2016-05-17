@@ -1,3 +1,14 @@
+---
+title:   Ресурс nxUser в DSC для Linux
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс nxUser в DSC для Linux
 
 Ресурс **nxUser** в DSC PowerShell предоставляет механизм управления локальными пользователями на узле Linux.
@@ -61,4 +72,9 @@ nxGroup GroupExample{
 }
 }
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

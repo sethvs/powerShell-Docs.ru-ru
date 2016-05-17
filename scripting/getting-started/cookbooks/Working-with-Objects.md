@@ -1,12 +1,15 @@
 ---
-title: Работа с объектами
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7ecc94a4-015c-4459-ae58-85289ea09030
+title:  Работа с объектами
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  7ecc94a4-015c-4459-ae58-85289ea09030
 ---
+
 # Работа с объектами
 Мы рассмотрели, как Windows PowerShell использует объекты для передачи данных между командлетами, и продемонстрировали несколько способов для получения сведений об объектах, используя командлеты Get-Member и Format для просмотра определенных свойств объектов.
 
@@ -14,6 +17,6 @@ ms.assetid: 7ecc94a4-015c-4459-ae58-85289ea09030
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

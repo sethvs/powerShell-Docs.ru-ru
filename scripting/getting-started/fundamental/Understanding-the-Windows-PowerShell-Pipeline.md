@@ -1,12 +1,15 @@
 ---
-title: Общие сведения о конвейере Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
+title:  Общие сведения о конвейере Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6be50926-7943-4ef7-9499-4490d72a63fb
 ---
+
 # Общие сведения о конвейере Windows PowerShell
 Конвейер участвует в работе практически всех аспектов Windows PowerShell. Хотя вы видите текст на экране, Windows PowerShell не передает текст между командами. Вместо этого он передает объекты.
 
@@ -62,6 +65,6 @@ C:\
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,3 +1,14 @@
+---
+title:   Ресурс Package в DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс Package в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -47,4 +58,9 @@ Package PackageExample
     ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
 } 
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

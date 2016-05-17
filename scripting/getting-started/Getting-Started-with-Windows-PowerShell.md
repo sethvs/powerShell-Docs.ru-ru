@@ -1,12 +1,15 @@
 ---
-title: Начало работы с Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
+title:  Начало работы с Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  b0e2ad92-875f-421d-b612-f624e644aa69
 ---
+
 # Начало работы с Windows PowerShell
 Windows PowerShell — это новая оболочка командной строки, предназначенная специально для системных администраторов. Windows PowerShell содержит интерактивное приглашение и среду сценариев, которые можно использовать отдельно или вместе.
 
