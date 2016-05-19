@@ -17,13 +17,13 @@
 ## Использование ресурса xWebService
 Самый простой способ настроить опрашивающий веб-сервер — использовать ресурс xWebService, включенный в модуль xPSDesiredStateConfiguration. В следующих действиях показано, как использовать ресурс в конфигурации, которая настраивает веб-службу.
 
-1. Вызовите командлет [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx), чтобы установить модуль **xPSDesiredStateConfiguration**. **Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0. Вы можете скачать модуль **PowerShellGet**для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186). 
+1. Вызовите командлет [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx), чтобы установить модуль **xPSDesiredStateConfiguration**. **Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0. Вы можете скачать модуль **PowerShellGet** для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186).. 
 1. Получите SSL-сертификат для опрашивающего сервера DSC из доверенного центра сертификации (публичного или входящего в состав вашей организации). Сертификат, полученный от центра сертификации, обычно имеет формат PFX. Установите сертификат на узле, который должен стать опрашивающим сервером DSC, в расположении по умолчанию (CERT:\LocalMachine\My). Запишите отпечаток сертификата.
 1. Выберите идентификатор GUID для использования в качестве ключа регистрации. Для его создания с помощью PowerShell введите следующую команду в командной строке PS и нажмите клавишу ВВОД: "``` [guid]::newGuid()```". Этот ключ будет использоваться клиентскими узлами в качестве общего ключа для проверки подлинности во время регистрации. Дополнительные сведения см. в разделе [Ключ регистрации](#RegKey) ниже.
 1. В PowerShell ISE запустите (нажав клавишу F5) следующий сценарий конфигурации (включенный в пример папки модуля **xPSDesiredStateConfiguration** в качестве Sample_xDscWebService.ps1). Этот сценарий настраивает опрашивающий сервер.
   
 ```powershell
-configuration Sample_xDscWebService 
+configuration Sample_xDscPullServer
 { 
     param  
     ( 
@@ -44,27 +44,26 @@ configuration Sample_xDscWebService
      { 
          WindowsFeature DSCServiceFeature 
          { 
-             Ensure = "Present" 
-             Name   = "DSC-Service"             
+             Ensure = 'Present'
+             Name   = 'DSC-Service'             
          } 
- 
  
          xDscWebService PSDSCPullServer 
          { 
-             Ensure                  = "Present" 
-             EndpointName            = "PSDSCPullServer" 
+             Ensure                  = 'Present' 
+             EndpointName            = 'PSDSCPullServer' 
              Port                    = 8080 
              PhysicalPath            = "$env:SystemDrive\inetpub\PSDSCPullServer" 
              CertificateThumbPrint   = $certificateThumbPrint          
              ModulePath              = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Modules" 
-             ConfigurationPath       = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration"             
-             State                   = "Started" 
-             DependsOn               = "[WindowsFeature]DSCServiceFeature"                         
+             ConfigurationPath       = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration" 
+             State                   = 'Started'
+             DependsOn               = '[WindowsFeature]DSCServiceFeature'                         
          } 
 
         File RegistrationKeyFile
         {
-            Ensure          ='Present'
+            Ensure          = 'Present'
             Type            = 'File'
             DestinationPath = "$env:ProgramFiles\WindowsPowerShell\DscService\RegistrationKeys.txt"
             Contents        = $RegistrationKey
@@ -82,7 +81,10 @@ configuration Sample_xDscWebService
 dir Cert:\LocalMachine\my
 
 # Then include this thumbprint when running the configuration
-Sample_xDSCService -certificateThumbprint 'A7000024B753FA6FFF88E966FD6E19301FAE9CCC' -RegistrationKey '140a952b-b9d6-406b-b416-e0f759c9c0e4' -OutpuPath c:\Configs\PullServer
+Sample_xDSCPullServer -certificateThumbprint 'A7000024B753FA6FFF88E966FD6E19301FAE9CCC' -RegistrationKey '140a952b-b9d6-406b-b416-e0f759c9c0e4' -OutpuPath c:\Configs\PullServer
+
+# Run the compiled configuration to make the target node a DSC Pull Server
+Start-DscConfiguration -Path c:\Configs\PullServer -Wait -Verbose
 ```
 
 ## Ключ регистрации
@@ -99,22 +101,22 @@ configuration PullClientConfigID
     {
         Settings
         {
-            RefreshMode = 'Pull'
+            RefreshMode          = 'Pull'
             RefreshFrequencyMins = 30 
-            RebootNodeIfNeeded = $true
+            RebootNodeIfNeeded   = $true
         }
         
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            RegistrationKey = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
+            ServerURL          = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey    = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
             ConfigurationNames = @('ClientConfig')
         }   
         
         ReportServerWeb CONTOSO-PullSrv
         {
-            ServerURL         = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            RegistrationKey   = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
+            ServerURL       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
         }
     }
 }
@@ -168,6 +170,6 @@ MOF-файл конфигурации необходимо сопоставит�
 * [Использование сервера отчетов DSC](reportServer.md)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

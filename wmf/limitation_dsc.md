@@ -173,40 +173,26 @@ WindowsOptionalFeature недоступен в Windows 7
 
 Ресурс DSC WindowsOptionalFeature недоступен в Windows 7. Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.
 
+Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось   
+------------------------------------------------------------------------------------------
+Если у узла компиляции нескольких версий модуля ресурса DSC на основе класса, `Import-DscResource -ModuleVersion` не может получить указанную версию и вызывает следующую ошибку компиляции.
 
-Выполнение DscLocalConfigurationManager для настройки метаконфигурации на работу со сборками WMF 4.0 или WMF 5.0 Production Preview не работает
----------------------------------------------------------------------------------------------------------------------------------------
-
-При выполнении Set-DscLocalConfiguration для предыдущих выпусков WMF существует проблема обратной совместимости. Вы увидите следующую ошибку о том, что недавно добавленный параметр -Force недоступен на конечном компьютере.
-```powershell
-Set-DscLocalConfigurationManager -Path . -Verbose -ComputerName WIN-3B576EM3669
-VERBOSE: Performing the operation "Start-DscConfiguration: SendMetaConfigurationApply" on target "MSFT_DSCLocalConfigurationManager".
-VERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = SendMetaConfigurationApply,'className' = MSFT_DSCLocalConfigurationManager,'namespaceName' = root/Microsoft/Windows/DesiredStateConfiguration'.
-The WinRM client cannot process the request. The object contains an unrecognized argument: "Force". Verify that the spelling of the argument name is correct.
-+ CategoryInfo : MetadataError: (root/Microsoft/...gurationManager:String) [], CimException
-+ FullyQualifiedErrorId : HRESULT 0x803381e1
-+ PSComputerName : WIN-3B576EM3669
-VERBOSE: Operation 'Invoke CimMethod' complete.
-VERBOSE: Set-DscLocalConfigurationManager finished in 0.121 seconds.
 ```
-**Решение.** Выполните следующие действия, чтобы напрямую вызвать базовый метод CIM с помощью Invoke-CimMethod для задания метаконфигурации.
-```powershell
-$computerName = "WIN-3B576EM3669"
-$mofPath = "C:\$computerName.meta.mof"
-$configurationData = [Byte[]][System.IO.File]::ReadAllBytes($mofPath)
-$totalSize = [System.BitConverter]::GetBytes($configurationData.Length + 4 )
-$configurationData = $totalSize + $configurationData
-Invoke-CimMethod -Namespace root/microsoft/windows/desiredstateconfiguration -Class MSFT_DSCLocalConfigurationManager -Name SendMetaConfigurationApply -Arguments @{ConfigurationData = [Byte[]]$configurationData} -Verbose -ComputerName $computerName
-VERBOSE: Performing the operation "Invoke-CimMethod: SendMetaConfigurationApply" on target "MSFT_DSCLocalConfigurationManager".
-VERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = SendMetaConfigurationApply,'className' = MSFT_DSCLocalConfigurationManager,'namespaceName' = root/microsoft/windows/desiredstateconfiguration'.
-VERBOSE: An LCM method call arrived from computer WIN-3B576EM3669 with user sid S-1-5-21-2127521184-1604012920-1887927527-5557045.
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Set ]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Resource ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Set ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Set ] [MSFT_DSCMetaConfiguration] in 0.4060 seconds.
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Resource ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Set ] in 0.4807 seconds.
-VERBOSE: Operation 'Invoke CimMethod' complete.
+ImportClassResourcesFromModule : Exception calling "ImportClassResourcesFromModule" with "3" argument(s): "Keyword 'MyTestResource' already defined in the configuration."
+At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguration\PSDesiredStateConfiguration.psm1:2035 char:35
++ ... rcesFound = ImportClassResourcesFromModule -Module $mod -Resources $r ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ImportClassResourcesFromModule], MethodInvocationException
+    + FullyQualifiedErrorId : PSInvalidOperationException,ImportClassResourcesFromModule
 ```
 
-<!--HONumber=Mar16_HO2-->
+**Решение**. Импортируйте требуемую версию, определив объект *ModuleSpecification* для `-ModuleName` с ключом `RequiredVersion`, указанным следующим образом:
+``` PowerShell  
+Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
+```  
+
+
+
+<!--HONumber=May16_HO1-->
+
+
