@@ -86,7 +86,7 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
  [Объект ISEMenuItemCollection](The-ISEMenuItemCollection-Object.md) 
  [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
  [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Иерархия объектных моделей интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+ [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
 
   
 
