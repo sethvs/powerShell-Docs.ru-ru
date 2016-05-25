@@ -1740,9 +1740,9 @@
 * Archive Datetime: 2016-05-17 13:26:49
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\core-powershell\core-modules.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a8de2851201fda38322c90e80dfdc6ae651b9c42/scripting/core-powershell/core-modules.md)
-* Current Handback File: [core-modules.704485ba8e24c04a46b61fa4b4be5fb4b56d985f.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/654e9ad5fe2442621c2b11b7a1dc00975ec3b52b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/core-modules.704485ba8e24c04a46b61fa4b4be5fb4b56d985f.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-23 19:08:56
+* Current Target File: [scripting\core-powershell\core-modules.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/ff41b53153e77544cc08ac6e1cc464830a6d409a/scripting/core-powershell/core-modules.md)
+* Current Handback File: [core-modules.704485ba8e24c04a46b61fa4b4be5fb4b56d985f.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/6b161c54261ee59d501d0d301e1bd8c18081888d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/core-modules.704485ba8e24c04a46b61fa4b4be5fb4b56d985f.ru-ru.xlf)
+* Current Handback Datetime: 2016-05-25 02:05:41
 * [Back to Top](#report-top)
 
 ##### <a name='249a0ece77a11fd9aa54a6ff4170e44f42b377c9101'></a> Source: [scripting\core-powershell\core-modules\Microsoft.PowerShell.Archive-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/core-modules/Microsoft.PowerShell.Archive-Module.md)
@@ -2145,9 +2145,9 @@
 * Archive Datetime: 2016-05-17 13:26:49
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\core-powershell\ise\Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a8de2851201fda38322c90e80dfdc6ae651b9c42/scripting/core-powershell/ise/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-* Current Handback File: [Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.0b72c76c2a89652b43b66f9e87694dc03c4a27cd.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/654e9ad5fe2442621c2b11b7a1dc00975ec3b52b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.0b72c76c2a89652b43b66f9e87694dc03c4a27cd.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-23 19:08:56
+* Current Target File: [scripting\core-powershell\ise\Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/ff41b53153e77544cc08ac6e1cc464830a6d409a/scripting/core-powershell/ise/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+* Current Handback File: [Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.0b72c76c2a89652b43b66f9e87694dc03c4a27cd.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/6b161c54261ee59d501d0d301e1bd8c18081888d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.0b72c76c2a89652b43b66f9e87694dc03c4a27cd.ru-ru.xlf)
+* Current Handback Datetime: 2016-05-25 02:05:41
 * [Back to Top](#report-top)
 
 ##### <a name='811cdcc3466d366f89fe43b90f928019d7405039131'></a> Source: [scripting\core-powershell\ise\The-ISEAddOnToolCollection-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/ise/The-ISEAddOnToolCollection-Object.md)
@@ -3315,9 +3315,9 @@
 * Archive Datetime: 2016-05-17 13:26:49
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\getting-started\fundamental\Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/a8de2851201fda38322c90e80dfdc6ae651b9c42/scripting/getting-started/fundamental/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)
-* Current Handback File: [Windows-PowerShell-Integrated-Scripting-Environment--ISE-.e04b905878b8b2ba1a7a20acc1d05db96a71a631.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/654e9ad5fe2442621c2b11b7a1dc00975ec3b52b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.e04b905878b8b2ba1a7a20acc1d05db96a71a631.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-23 19:08:56
+* Current Target File: [scripting\getting-started\fundamental\Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/ff41b53153e77544cc08ac6e1cc464830a6d409a/scripting/getting-started/fundamental/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)
+* Current Handback File: [Windows-PowerShell-Integrated-Scripting-Environment--ISE-.e04b905878b8b2ba1a7a20acc1d05db96a71a631.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/6b161c54261ee59d501d0d301e1bd8c18081888d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.e04b905878b8b2ba1a7a20acc1d05db96a71a631.ru-ru.xlf)
+* Current Handback Datetime: 2016-05-25 02:05:41
 * [Back to Top](#report-top)
 
 ##### <a name='b3b97b9dcf01094fe1fadbac355c92df35feaee2194'></a> Source: [scripting\getting-started\fundamental-concepts.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental-concepts.md)
