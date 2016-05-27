@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Отключение отладочной конфигурации DSC.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_disabledebugconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
@@ -51,6 +54,6 @@ uint32 DisableDebugConfiguration();
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

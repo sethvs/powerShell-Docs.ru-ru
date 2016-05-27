@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Запускает проверку согласованности.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_performrequiredconfigurationchecks'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод PerformRequiredConfigurationChecks класса MSFT_DSCLocalConfigurationManager'
+title: Метод PerformRequiredConfigurationChecks класса MSFT_DSCLocalConfigurationManager 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод PerformRequiredConfigurationChecks класса MSFT_DSCLocalConfigurationManager
 
@@ -62,6 +66,6 @@ uint32 PerformRequiredConfigurationChecks(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

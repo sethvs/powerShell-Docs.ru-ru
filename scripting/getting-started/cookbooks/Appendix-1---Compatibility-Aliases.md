@@ -1,12 +1,15 @@
 ---
-title: Приложение 1. Псевдонимы совместимости
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8
+title:  Приложение 1. Псевдонимы совместимости
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  96ad921e-1a57-463e-8e60-424faf8b6ef8
 ---
+
 # Приложение 1. Псевдонимы совместимости
 Windows PowerShell имеет несколько псевдонимов перехода, позволяющих пользователям UNIX и Cmd применять знакомые команды в Windows PowerShell. Наиболее распространенные псевдонимы приведены в таблице ниже, также там указана команда Windows PowerShell для псевдонима и стандартный псевдоним Windows PowerShell, если он существует.
 
@@ -34,6 +37,6 @@ Alias           cls                             Clear-Host
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

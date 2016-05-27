@@ -1,12 +1,15 @@
 ---
-title: Сведения о Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
+title:  Сведения о Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  979654ae-7994-47f8-be43-d79e7a140143
 ---
+
 # Сведения о Windows PowerShell
 Windows PowerShell помогает улучшить среду командной строки и сценариев за счет устранения застарелых проблем и добавления новых функций.
 
@@ -14,19 +17,18 @@ Windows PowerShell помогает улучшить среду командно
 Windows PowerShell упрощает обнаружение своих возможностей. Например, чтобы получить список командлетов для просмотра и изменения служб Windows, введите следующее:
 
 ```
-get-command *-service
+Get-Command *-Service
 ```
 
 Узнав, какой командлет выполняет задачу, можно получить дополнительные сведения о нем с помощью командлета Get-Help. Например, для отображения справки по командлету Get-Service введите:
 
 ```
-get-help get-service
+Get-Help Get-Service
 ```
-
-Чтобы полностью понять выходные данные этого командлета, передайте их в командлет Get-Member. Например, следующая команда отображает сведения об элементах выходных данных объекта с помощью командлета Get-Service.
+Большинство командлетов выводят объекты, которые могут быть обработаны и преобразованы в текст для просмотра. Чтобы полностью понять выходные данные этого командлета, передайте их в командлет Get-Member. Например, следующая команда отображает сведения об элементах выходных данных объекта с помощью командлета Get-Service.
 
 ```
-get-service | get-member
+Get-Service | Get-Member
 ```
 
 ## Consistency
@@ -51,6 +53,6 @@ Windows PowerShell облегчает переход от интерактивн
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

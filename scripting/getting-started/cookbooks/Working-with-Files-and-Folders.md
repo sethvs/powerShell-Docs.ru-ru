@@ -1,12 +1,15 @@
 ---
-title: Работа с файлами и папками
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
+title:  Работа с файлами и папками
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  c0ceb96b-e708-45f3-803b-d1f61a48f4c1
 ---
+
 # Работа с файлами и папками
 Просмотр содержимого дисков Windows PowerShell и управление хранящимися на них элементами аналогично управлению файлами и папками на физических дисках Windows. В этом разделе мы обсудим выполнение отдельных задач управления файлами и папками.
 
@@ -140,6 +143,6 @@ $Computers = Get-Content -Path C:\temp\DomainMembers.txt
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

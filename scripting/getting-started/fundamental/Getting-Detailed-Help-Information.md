@@ -1,12 +1,15 @@
 ---
-title: Получение подробной справки
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
+title:  Получение подробной справки
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6fb4daf7-8607-4a3e-b692-f77631adc1b9
 ---
+
 # Получение подробной справки
 В Windows PowerShell входят подробные разделы справки, объясняющие концепции Windows PowerShell и язык Windows PowerShell. Разделы справки существуют для каждого командлета и поставщика, а также для многих функций и сценариев.
 
@@ -173,6 +176,6 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

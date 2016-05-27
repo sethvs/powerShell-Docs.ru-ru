@@ -1,19 +1,26 @@
-# Известные несовместимости продукта
+# Состояние совместимости продуктов
 
-**Windows Management Framework 5.0 пока не следует запускать на системах, где выполняются следующие серверные приложения:**
+## Совместимые:
+> Windows Management Framework 5.0 **можно запускать** в системах, в которых выполняются следующие серверные приложения:
+
+- Microsoft SharePoint Server 2013
+- System Center 2012 Configuration Manager
+
+## Не тестировались:
+> Работа Windows Management Framework 5.0 **не тестировалась** в системах, в которых выполняются следующие серверные приложения:
+
+- Microsoft SharePoint Server 2010
+- System Center 2012 Virtual Machine Manager
+
+## Несовместимые:
+> Windows Management Framework 5.0 **не следует запускать** в системах, в которых выполняются следующие серверные приложения:
 
 - Microsoft Exchange Server 2013
 - Microsoft Exchange Server 2010 с пакетом обновления 3 (SP3)
-- Microsoft SharePoint Server 2013
-- Microsoft SharePoint Server 2010
-- System Center 2012 Virtual Machine Manager
 - System Center 2012 R2 Service Management Automation
 
-**WMF 5.0 теперь можно запускать на серверах, где выполняются следующие приложения:**
-
-- System Center 2012 Configuration Manager
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -1,12 +1,15 @@
 ---
-title: Списки с множественным выбором
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f74cd5d9-da57-4802-b614-0b194a7bc8f8
+title:  Списки с множественным выбором
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  f74cd5d9-da57-4802-b614-0b194a7bc8f8
 ---
+
 # Списки с множественным выбором
 Используйте Windows PowerShell 3.0 и более поздние версии для создания списка с множественным выбором в настраиваемой форме Windows Form.
 
@@ -177,12 +180,12 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## См. также
-[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)?](http://go.microsoft.com/fwlink/?LinkId=506644)
 [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
 [Windows PowerShell Tip of the Week: Multi-Select List Boxes – And More! (Совет недели для Windows PowerShell: списки с множественным выбором и многое другое)](http://technet.microsoft.com/library/ff730950.aspx)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

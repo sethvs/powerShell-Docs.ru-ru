@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Получение журнала состояния конфигурации.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_getconfigurationstatus'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager'
+title:  Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager
@@ -24,8 +27,7 @@ uint32 GetConfigurationStatus(
 ----------
 
 *All* \[in\]  
-Значение **true**, если этот метод должен возвращать сведения обо всех запусках конфигурации на компьютере, включая
-применение конфигурации и проверку согласованности.
+Значение **true**, если этот метод должен возвращать сведения обо всех запусках конфигурации на компьютере, включая применение конфигурации и проверку согласованности.
 
 *configurationStatus* \[out\]  
 Выходные данные содержат встроенный экземпляр класса **MSFT_DSCConfigurationStatus**, который определяет параметры.
@@ -60,6 +62,6 @@ uint32 GetConfigurationStatus(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

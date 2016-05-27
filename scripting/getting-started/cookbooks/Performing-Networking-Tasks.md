@@ -1,12 +1,15 @@
 ---
-title: Выполнение задач по работе с сетями
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5
+title:  Выполнение задач по работе с сетями
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a43cc55f-70c1-45c8-9467-eaad0d57e3b5
 ---
+
 # Выполнение задач по работе с сетями
 Большая часть задач администрирования низкоуровневых сетевых протоколов связана с протоколом TCP/IP, поскольку это наиболее распространенный сетевой протокол. В этом разделе описано использование Windows PowerShell и WMI для выполнения этих задач.
 
@@ -21,19 +24,11 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 <pre>IPAddress
 ---------
-{192.168.1.80}
-{192.168.148.1}
-{192.168.171.1}
-{0.0.0.0}</pre>
+{192.168.1.80} {192.168.148.1} {192.168.171.1} {0.0.0.0}</pre>
 
 Чтобы понять причину появления скобок, используйте командлет Get-Member для изучения свойства **IPAddress**:
 
-<pre>PS> Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -ComputerName . | Get-Member -Name IPAddress
-TypeName: System.Management.ManagementObject#root\cimv2\Win32_NetworkAdapter
-Конфигурация
-Name      MemberType Definition
-----      ---------- ----------
-IPAddress Property   System.String[] IPAddress {get;}</pre>
+<pre>PS> Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -ComputerName . | Get-Member -Name IPAddress TypeName: System.Management.ManagementObject#root\cimv2\Win32_NetworkAdapter Configuration Name      MemberType Definition ----      ---------- ---------- IPAddress Property   System.String[] IPAddress {get;}</pre>
 
 Свойство IPAddress каждого сетевого адаптера в действительности представляет собой массив. Фигурные скобки в определении указывают на то, что свойство **IPAddress** содержит не значение типа **System.String**, а массив значений типа **System.String**.
 
@@ -157,8 +152,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true a
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true and DHCPEnabled=true" -ComputerName . | Where-Object -FilterScript {$_.DHCPServer -contains "192.168.1.254"} | ForEach-Object -Process {$_.ReleaseDHCPLease()}
 ```
 
-> [!NOTE]
-> Если эти методы применяются на удаленном компьютере, возможна потеря доступа к удаленной системе, которая подключена через адаптер с отмененной или обновленной арендой.
+> [!NOTE] Если эти методы применяются на удаленном компьютере, возможна потеря доступа к удаленной системе, которая подключена через адаптер с отмененной или обновленной арендой.
 
 #### Отмена и обновление аренды адресов DHCP для всех адаптеров
 Отменить или обновить аренду адресов DHCP сразу для всех адаптеров можно с помощью методов **Win32_NetworkAdapterConfiguration** — **ReleaseDHCPLeaseAll** и **RenewDHCPLeaseAll**. Однако эту команду следует применять к классу WMI, а не к отдельному адаптеру, поскольку глобальная отмена и обновление аренды осуществляется на уровне класса, а не отдельного адаптера.
@@ -225,6 +219,6 @@ net use B: \\FPS01\users
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

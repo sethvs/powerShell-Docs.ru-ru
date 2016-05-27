@@ -1,3 +1,14 @@
+---
+title:   Ресурс nxScript в DSC для Linux
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс nxScript в DSC для Linux
 
 Ресурс **nxScript** в DSC PowerShell предоставляет механизм управления сценариями Linux на узле Linux.
@@ -61,4 +72,9 @@ fi
 } 
 }
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

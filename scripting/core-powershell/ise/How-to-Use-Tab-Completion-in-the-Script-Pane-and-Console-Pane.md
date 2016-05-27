@@ -1,12 +1,15 @@
 ---
-title: Использование заполнения нажатием клавиши TAB в областях сценариев и консоли
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
+title:  Использование заполнения нажатием клавиши TAB в областях сценариев и консоли
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 ---
+
 # Использование заполнения нажатием клавиши TAB в областях сценариев и консоли
 Заполнение нажатием клавиши TAB предоставляет автоматическую справку при вводе в области сценариев или команд. Чтобы воспользоваться этой функцией, выполните следующие действия:
 
@@ -24,6 +27,7 @@ ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 ## См. также
 [Использование интегрированной среды сценариев Windows PowerShell](using-the-windows-powershell-ise.md)
 [Создание вкладки PowerShell](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
+
 
 
 <!--HONumber=May16_HO2-->

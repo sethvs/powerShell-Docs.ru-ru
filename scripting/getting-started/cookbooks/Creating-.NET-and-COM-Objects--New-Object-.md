@@ -1,12 +1,15 @@
 ---
-title: Создание объектов .NET и COM (New-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2057b113-efeb-465e-8b44-da2f20dbf603
+title:  Создание объектов .NET и COM с помощью New-Object 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  2057b113-efeb-465e-8b44-da2f20dbf603
 ---
+
 # Создание объектов .NET и COM (New-Object)
 Существуют программные компоненты с интерфейсами платформы .NET Framework и COM, которые позволяют выполнять множество задач системного администрирования. Windows PowerShell позволяет использовать эти компоненты, поэтому доступные задачи не ограничиваются только применением командлетов. Множество командлетов в первом выпуске Windows PowerShell не работают с удаленными компьютерами. Мы покажем, как преодолеть это ограничение при управлении журналами событий с помощью класса **System.Diagnostics.EventLog** .NET Framework непосредственно из Windows PowerShell.
 
@@ -175,20 +178,11 @@ $Home\Desktop\PSHome.lnk
 
 В переменной **$lnk** теперь хранится новая ссылка на ярлык. Чтобы просмотреть элементы переменной, ее можно передать по конвейеру в **Get-Member**. Выходные данные (см. ниже) показывают все элементы, необходимые, чтобы завершить создание ярлыка:
 
-<pre>PS> $lnk | Get-Member
-TypeName: System.__ComObject#{f935dc23-1cf0-11d0-adb9-00c04fd58a0b}
-Name             MemberType   Definition
-----             ----------   ----------
-...
-Save             Method       void Save ()
-...
-TargetPath       Property     string TargetPath () {get} {set}
-...</pre>
+<pre>PS> $lnk | Get-Member TypeName: System.__ComObject#{f935dc23-1cf0-11d0-adb9-00c04fd58a0b} Name             MemberType   Definition ----             ----------   ---------- ... Save             Method       void Save () ... TargetPath       Property     string TargetPath () {get} {set} ...</pre>
 
 Осталось определить свойство **TargetPath**, указывающее путь к папке Windows PowerShell, и вызвать метод **Save**, чтобы сохранить **$lnk** ярлыка. Путь к папке Windows PowerShell хранится в переменной **$PSHome**, поэтому это можно сделать, введя следующее:
 
-<pre>$lnk.TargetPath = $PSHome
-$lnk.Save()</pre>
+<pre>$lnk.TargetPath = $PSHome $lnk.Save()</pre>
 
 ### Использование Internet Explorer из Windows PowerShell
 С помощью СОМ-объектов можно автоматизировать многие приложения (включая семейство приложений Microsoft Office и Internet Explorer). На примере Internet Explorer можно рассмотреть некоторые типичные приемы и тонкости, связанные с работой приложений, основанных на СОМ-технологии.
@@ -266,6 +260,6 @@ At line:1 char:17
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

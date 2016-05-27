@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Удаление файлов конфигурации'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_removeconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
@@ -65,6 +68,6 @@ uint32 RemoveConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

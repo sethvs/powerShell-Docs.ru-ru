@@ -1,12 +1,15 @@
 ---
-title: Выполнение удаленных команд
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
+title:  Выполнение удаленных команд
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
 ---
+
 # Выполнение удаленных команд
 Вы можете запускать команды на одном или сотнях компьютеров одной командой Windows PowerShell. Windows PowerShell поддерживает удаленное вычисление с помощью разных технологий, включая WMI, RPC и WS-Management.
 
@@ -46,8 +49,7 @@ get-command | where { $_.parameters.keys -contains "ComputerName" -and $_.parame
 
 Чтобы использовать службу удаленного взаимодействия Windows PowerShell, удаленный компьютер должен быть настроен для удаленного управления. Дополнительные сведения, в том числе инструкции, см. в разделе [about_Remote_Requirements](https://technet.microsoft.com/en-us/library/dd315349.aspx).
 
-После настройки службы удаленного взаимодействия Windows PowerShell вам станут доступны многие стратегии удаленного взаимодействия. В остальной части этого документа перечислены только некоторые из них. Дополнительные сведения см. в разделе [about_Remote](https://technet.microsoft.com/en-us/library/dd347744.aspx) и 
-[about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd347744.aspx).
+После настройки службы удаленного взаимодействия Windows PowerShell вам станут доступны многие стратегии удаленного взаимодействия. В остальной части этого документа перечислены только некоторые из них. Дополнительные сведения см. в разделах [about_Remote](https://technet.microsoft.com/en-us/library/dd347744.aspx) и [about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd347744.aspx).
 
 ### Запуск интерактивного сеанса
 Чтобы запустить интерактивный сеанс с одним удаленным компьютером, используйте командлет [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx). Например, чтобы запустить интерактивный сеанс с удаленным компьютером Server01, введите:
@@ -64,8 +66,7 @@ enter-pssession Server01
 exit-pssession
 ```
 
-Дополнительные сведения о командлетах Enter-PSSession и Exit-PSSession см. в разделах [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) 
-и [Exit-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx).
+Дополнительные сведения о командлетах Enter-PSSession и Exit-PSSession см. в статьях [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) и [Exit-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx).
 
 ### Выполнение удаленной команды
 Чтобы выполнить любую команду на одном или нескольких удаленных компьютеров, используйте командлет [Invoke-Command](https://technet.microsoft.com/en-us/library/dd347578.aspx).
@@ -124,8 +125,7 @@ invoke-command -session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"
 Это и есть служба удаленного взаимодействия Windows PowerShell. Используя командлеты, установленные с Windows PowerShell, можно установить и настроить удаленные сеансы с локальных и удаленных компьютеров, создать настраиваемые и ограниченные сеансы, разрешить пользователям импортировать команды из удаленного сеанса, которые могут неявно выполняться в удаленном сеансе, настроить безопасность удаленного сеанса и многое другое.
 
 Для упрощения настройки в PowerShell включен поставщик WSMan. Диск WSMAN:, созданный поставщиком, позволяет перемещаться по иерархии параметров конфигурации на локальном и удаленном компьютерах.
- Дополнительные сведения о поставщике WSMan см. в разделе [WSMan Provider](https://technet.microsoft.com/en-us/library/dd819476.aspx) и
-  [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/dd819481.aspx). Кроме того, можно ввести в консоли Windows PowerShell команду get-help wsman.
+ Дополнительные сведения о поставщике WSMan см. в разделах [WSMan Provider](https://technet.microsoft.com/en-us/library/dd819476.aspx) и   [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/dd819481.aspx) или введите команду get-help wsman в консоли Windows PowerShell.
 
 Дополнительная информация:
 - [about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd315359.aspx)
@@ -149,6 +149,6 @@ invoke-command -session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

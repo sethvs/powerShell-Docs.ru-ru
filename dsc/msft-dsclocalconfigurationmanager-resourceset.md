@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Выполнение метода Set непосредственно в поставщике'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_resourceset'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод ResourceSet класса MSFT_DSCLocalConfigurationManager'
+title:  Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
 
@@ -32,8 +36,7 @@ uint32 ResourceSet(
 Имя модуля, содержащего вызываемый ресурс.
 
 *resourceProperty* \[in\]  
-Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте
-командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
+Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
 
 *RebootRequired* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
@@ -67,6 +70,6 @@ uint32 ResourceSet(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Отправка документа конфигурации на управляемый узел и использование агента конфигурации для применения конфигурации.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendconfigurationapply'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager'
+title:  Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager
 
@@ -59,6 +63,6 @@ uint32 SendConfigurationApply(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

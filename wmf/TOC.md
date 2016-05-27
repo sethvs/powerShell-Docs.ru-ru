@@ -2,7 +2,7 @@
 
 # [Сведения об установке](requirements.md)
 
-# [Известные несовместимости продукта](productincompat.md)
+# [Состояние совместимости продуктов](productincompat.md)
 
 # [Отзывы](feedback.md)
 
@@ -99,6 +99,6 @@
 ## [Известные проблемы с настройкой требуемого состояния (DSC)](limitation_dsc.md)
 
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO4-->
 
 

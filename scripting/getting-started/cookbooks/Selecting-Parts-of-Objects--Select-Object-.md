@@ -1,12 +1,15 @@
 ---
-title: Выбор частей объектов (Select-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92
+title:  Выбор частей объектов с помощью Select-Object 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  72e64b1a-d351-4500-9da3-24d8a71d7a92
 ---
+
 # Выбор частей объектов (Select-Object)
 Командлет **Select-Object** позволяет создать новые пользовательские объекты Windows PowerShell со свойствами, выбранными из объектов, которые используются для их создания. Введите следующую команду, чтобы создать новый объект, который содержит только свойства Name и FreeSpace класса WMI Win32_LogicalDisk:
 
@@ -46,6 +49,6 @@ C:                                                                48317.7265625
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

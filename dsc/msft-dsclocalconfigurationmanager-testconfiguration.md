@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Отправка документа конфигурации на управляемый узел и его проверка относительно текущей конфигурации.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_testconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -67,6 +71,6 @@ uint32 TestConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

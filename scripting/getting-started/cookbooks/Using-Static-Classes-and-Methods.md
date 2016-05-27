@@ -1,12 +1,15 @@
 ---
-title: Использование статических классов и методов
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 418ad766-afa6-4b8c-9a44-471889af7fd9
+title:  Использование статических классов и методов
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  418ad766-afa6-4b8c-9a44-471889af7fd9
 ---
+
 # Использование статических классов и методов
 Не все классы .NET Framework можно создать с помощью **New-Object**. Например, при попытке создать объект **System.Environment** или **System.Math** с помощью **New-Object** вы получите следующие сообщения об ошибке:
 
@@ -113,8 +116,7 @@ False
 ### Математические операции с помощью System.Math
 Статический класс System.Math полезен для выполнения некоторых математических операций. Важными элементами **System.Math** являются главным образом методы, которые можно отобразить с помощью **Get-Member**.
 
-> [!NOTE]
-> System.Math имеет несколько методов с одинаковым именем, но они различаются по типу параметров.
+> [!NOTE] System.Math имеет несколько методов с одинаковым именем, но они различаются по типу параметров.
 
 Введите следующую команду, чтобы получить список методов для класса **System.Math**.
 
@@ -182,6 +184,6 @@ PS> [System.Math]::Truncate(-9.3)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

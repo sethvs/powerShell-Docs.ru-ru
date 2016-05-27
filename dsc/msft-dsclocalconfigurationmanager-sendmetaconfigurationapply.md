@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Задание параметров локального диспетчера конфигураций, которые используются для управления агентом конфигурации.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendmetaconfigurationapply'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager'
+title: Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager
@@ -59,6 +62,6 @@ uint32 SendMetaConfigurationApply(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

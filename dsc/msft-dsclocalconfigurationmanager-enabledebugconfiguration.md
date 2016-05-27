@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Включение отладочной конфигурации DSC'
-MS-HAID: 'cimwin32a.msft\_dsclocalconfigurationmanager\_enabledebugconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -53,6 +57,6 @@ uint32 EnableDebugConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,12 +1,15 @@
 ---
-title: Управление дисками Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
+title:  Управление дисками Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  bd809e38-8de9-437a-a250-f30a667d11b4
 ---
+
 # Управление дисками Windows PowerShell
 *Диск Windows PowerShell* — это расположение хранилища данных, доступ к которому можно получить так же, как к диску файловой системы в Windows PowerShell. Поставщики Windows PowerShell создают несколько дисков, например диски файловой системы (включая C: и D:), диски реестра (HKCU: и HKLM:) и диск сертификата (Cert:), а вы можете создать собственные диски Windows PowerShell. Эти диски очень полезны, но они доступны только в Windows PowerShell. К ним невозможно получить доступ с помощью других средств Windows, например проводника или Cmd.exe.
 
@@ -56,20 +59,11 @@ D          FileSystem    D:\
 
 Чтобы просмотреть диски Windows PowerShell, представляющие кусты реестра, используйте параметр **PSProvider** для отображения только тех дисков Windows PowerShell, которые поддерживаются поставщиком реестра Windows PowerShell:
 
-<pre>PS> Get-PSDrive -PSProvider Registry
-Name       Provider      Root                                   CurrentLocation
-----       --------      ----                                   ---------------
-HKCU       Registry      HKEY_CURRENT_USER
-HKLM       Registry      HKEY_LOCAL_MACHINE</pre>
+<pre>PS> Get-PSDrive -PSProvider Registry Name       Provider      Root                                   CurrentLocation ----       --------      ----                                   --------------- HKCU       Registry      HKEY_CURRENT_USER HKLM       Registry      HKEY_LOCAL_MACHINE</pre>
 
 С дисками Windows PowerShell также можно использовать стандартные командлеты расположения:
 
-<pre>PS> Set-Location HKLM:\SOFTWARE
-PS> Push-Location .\Microsoft
-PS> Get-Location
-путь
-----
-HKLM:\SOFTWARE\Microsoft</pre>
+<pre>PS> Set-Location HKLM:\SOFTWARE PS> Push-Location .\Microsoft PS> Get-Location Path ---- HKLM:\SOFTWARE\Microsoft</pre>
 
 ### Добавление новых дисков Windows PowerShell (New-PSDrive)
 Добавить собственные диски Windows PowerShell можно с помощью команды **New-PSDrive**. Чтобы получить синтаксис для команды **New-PSDrive**, введите команду **Get-Command** с параметром **Syntax**:
@@ -101,18 +95,13 @@ Name       Provider      Root                                   CurrentLocation
 Office     FileSystem    C:\Program Files\Microsoft Offic...
 ```
 
-> [!NOTE]
-> Обычно пути не зависят от регистра.
+> [!NOTE] Обычно пути не зависят от регистра.
 
 Ссылка на новый диск Windows PowerShell, как и на все диски Windows PowerShell, указывается по его имени, за которым следует двоеточие (**:**).
 
 Диск Windows PowerShell может упростить множество задач. Например, некоторые наиболее важные разделы в реестре Windows содержат слишком длинные пути, что делает их громоздкими и сложными для запоминания. Критически важные сведения о конфигурации находятся в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion**. Чтобы просмотреть и изменить элементы в разделе реестра CurrentVersion, можно создать диск Windows PowerShell, корень которого находится в этом разделе, введя:
 
-<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W
-indows\CurrentVersion
-Name       Provider      Root                                   CurrentLocation
-----       --------      ----                                   ---------------
-cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
+<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W indows\CurrentVersion Name       Provider      Root                                   CurrentLocation ----       --------      ----                                   --------------- cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
 
 После этого можно изменить расположение на диск **cvkey:** (как и для любого другого диска):
 
@@ -120,10 +109,7 @@ cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
 
 или:
 
-<pre>PS> Set-Location cvkey: -PassThru
-путь
-----
-cvkey:\</pre>
+<pre>PS> Set-Location cvkey: -PassThru Path ---- cvkey:\</pre>
 
 Командлет New-PsDrive добавляет новый диск только в текущий сеанс Windows PowerShell. Если закрыть окно Windows PowerShell, новый диск будет потерян. Чтобы сохранить диск Windows PowerShell, используйте командлет Export-Console для экспорта текущего сеанса Windows PowerShell, а затем используйте параметр **PSConsoleFile** PowerShell.exe для импорта. Также можно добавить новый диск в профиль Windows PowerShell.
 
@@ -157,6 +143,6 @@ Windows PowerShell обнаруживает диски файловой сист
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

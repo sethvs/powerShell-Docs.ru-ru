@@ -1,12 +1,15 @@
 ---
-title: Повторение задачи для нескольких объектов (ForEach-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6697a12d-2470-4ed6-b5bb-c35e5d525eb6
+title:  Повторение задачи для нескольких объектов с помощью ForEach-Object 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6697a12d-2470-4ed6-b5bb-c35e5d525eb6
 ---
+
 # Повторение задачи для нескольких объектов (ForEach-Object)
 Командлет **ForEach-Object** использует блоки сценариев и дескриптор $_ текущего объекта конвейера, чтобы вы могли выполнить команду для каждого объекта в конвейере. Это можно использовать для выполнения некоторых сложных задач.
 
@@ -49,6 +52,6 @@ eeSpace = ($_.FreeSpace)/1024.0/1024.0}
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

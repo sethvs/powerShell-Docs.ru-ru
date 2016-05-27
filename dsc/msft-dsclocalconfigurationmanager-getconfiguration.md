@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Отправка документа конфигурации на управляемый узел и использование агента конфигурации для применения конфигурации с помощью метода Get.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_getconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager
@@ -57,6 +60,6 @@ uint32 GetConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

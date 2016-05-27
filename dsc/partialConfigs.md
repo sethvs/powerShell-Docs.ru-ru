@@ -1,3 +1,14 @@
+---
+title:   Частичные конфигурации службы настройки требуемого состояния PowerShell
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Частичные конфигурации службы настройки требуемого состояния PowerShell
 
 >Область применения: Windows PowerShell 5.0
@@ -146,10 +157,11 @@ PartialConfigDemo
 ##См. также 
 
 **Концепции**
-[Опрашивающие серверы настройки требуемого состояния Windows PowerShell](pullServer.md) 
+[Опрашивающие серверы службы настройки требуемого состояния Windows PowerShell](pullServer.md) 
 [Настройка локального диспетчера конфигураций Windows](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

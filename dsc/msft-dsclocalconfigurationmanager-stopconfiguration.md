@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Остановка выполняющейся конфигурации.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_stopconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager'
+title:  Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager
@@ -55,6 +58,6 @@ uint32 StopConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

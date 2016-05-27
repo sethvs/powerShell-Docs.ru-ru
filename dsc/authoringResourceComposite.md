@@ -1,3 +1,8 @@
+---
+title: Составные ресурсы: использование DSC как ресурса ms.date:  2016-05-16 keywords:  powershell,DSC description:  
+ms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell
+---
+
 # Составные ресурсы: использование DSC как ресурса
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -181,4 +186,9 @@ configuration RenameVM
 ### Концепции
 * [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md)
 * [Начало работы с настройкой требуемого состояния Windows PowerShell](overview.md)
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

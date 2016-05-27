@@ -1,12 +1,15 @@
 ---
-title: Управление процессами с помощью командлетов Process
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
+title:  Управление процессами с помощью командлетов Process
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  5038f612-d149-4698-8bbb-999986959e31
 ---
+
 # Управление процессами с помощью командлетов Process
 Командлеты Process в Windows PowerShell позволяют управлять локальными и удаленными процессами в Windows PowerShell.
 
@@ -174,6 +177,6 @@ Windows PowerShell также имеет командлеты для запус�
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

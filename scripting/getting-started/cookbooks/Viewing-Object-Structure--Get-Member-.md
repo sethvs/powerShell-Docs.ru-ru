@@ -1,12 +1,15 @@
 ---
-title: Просмотр структуры объектов (Get-Member)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
+title:  Просмотр структуры объектов с помощью Get-Member 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a1819ed2-2ef3-453a-b2b0-f3589c550481
 ---
+
 # Просмотр структуры объектов (Get-Member)
 Поскольку объекты играют ключевую роль в Windows PowerShell, существует несколько собственных команд для работы с произвольными типами объектов. Наиболее важной является команда **Get-Member**.
 
@@ -57,8 +60,7 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 ...
 ```
 
-> [!NOTE]
-> Для MemberType разрешены следующие значения: AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet и All.
+> [!NOTE] Для MemberType разрешены следующие значения: AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet и All.
 
 Для процесса существует более шестидесяти свойств. Windows PowerShell часто показывает лишь небольшое число свойств для известного объекта, так как в противном случае выдается не поддающийся управлению объем информации.
 
@@ -69,6 +71,6 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

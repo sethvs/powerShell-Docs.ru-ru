@@ -1,3 +1,13 @@
+---
+title: Метод ApplyConfiguration класса MSFT_DSCLocalConfigurationManager 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
 
 # Метод ApplyConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -50,6 +60,6 @@ uint32 ApplyConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,3 +1,14 @@
+---
+title:   Ресурс nxFile в DSC для Linux
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Ресурс nxFile в DSC для Linux
 
 Ресурс **nxFile** в настройке требуемого состояния PowerShell предоставляет механизм управления файлами и каталогами на узле Linux.
@@ -147,4 +158,8 @@ nxFile FileExample
 }
 ```
 
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=May16_HO3-->
+
+

@@ -1,3 +1,14 @@
+---
+title:   Создание пользовательских ресурсов настройки требуемого состояния Windows PowerShell
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Создание пользовательских ресурсов настройки требуемого состояния Windows PowerShell
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -9,7 +20,13 @@
 Ресурс DSC — это модуль Windows PowerShell. Модуль содержит схему (определение настраиваемых свойств) и реализацию (код, выполняющий заданную конфигурацией работу) для ресурса. Схема ресурсов DSC может быть определена в MOF-файле, а реализация выполняется модулем сценариев. С добавлением поддержки классов PowerShell в версии 5 появилась возможность определять схему и реализацию в классе. Более подробные инструкции по созданию ресурсов DSC см. в следующих статьях:
 
 * [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md) 
-* [Реализация ресурса DSC на языке C#](authoringResourceMofCS.md) 
+* [Реализация ресурса DSC на C#](authoringResourceMofCS.md) 
 * [Написание пользовательских ресурсов DSC с использованием классов PowerShell](authoringResourceClass.md) 
-* [Составные ресурсы: использование конфигурации DSC как ресурса](authoringResourceComposite.md) 
-* [Использование конструктора ресурсов](authoringResourceMofDesigner.md) <!--HONumber=Feb16_HO4-->
+* [Составные ресурсы: использование DSC как ресурса](authoringResourceComposite.md) 
+* [Использование конструктора ресурсов](authoringResourceMofDesigner.md) 
+
+
+
+<!--HONumber=May16_HO3-->
+
+

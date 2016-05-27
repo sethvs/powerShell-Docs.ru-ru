@@ -1,12 +1,15 @@
 ---
-title: Работа с файлами, папками и разделами реестра
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
+title:  Работа с файлами, папками и разделами реестра
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
 ---
+
 # Работа с файлами, папками и разделами реестра
 Windows PowerShell использует существительное **Item**, чтобы ссылаться на элементы, найденные на диске Windows PowerShell. При работе с поставщиком FileSystem Windows PowerShell **Item** может быть файлом, папкой или диском Windows PowerShell. Создание списков элементов и работа с ними является критически важной задачей в большинстве административных учреждений, поэтому необходимо подробно обсудить ее.
 
@@ -118,19 +121,7 @@ Get-ChildItem -Path C:\Windows\[xz]*
 
 Выражение **w\&#42;32\&#42;.dll** найдет все библиотеки DLL, удовлетворяющие условию, но может также вернуть библиотеки Windows 95 и библиотеки, совместимые с 16-разрядной версией Windows, в именах которых содержится "95" или "16". Файлы с такими числами в именах можно пропустить, используя параметр **Exclude** с шаблоном **\&#42;\[9516]\&#42;**:
 
-<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]*
-Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32
-Mode                LastWriteTime     Length Name
-----                -------------     ------ ----
--a---        2004-08-04   8:00 AM     174592 w32time.dll
--a---        2004-08-04   8:00 AM      22016 w32topl.dll
--a---        2004-08-04   8:00 AM     101888 win32spl.dll
--a---        2004-08-04   8:00 AM     172032 wldap32.dll
--a---        2004-08-04   8:00 AM     264192 wow32.dll
--a---        2004-08-04   8:00 AM      82944 ws2_32.dll
--a---        2004-08-04   8:00 AM      42496 wsnmp32.dll
--a---        2004-08-04   8:00 AM      22528 wsock32.dll
--a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
+<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]* Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32 Mode                LastWriteTime     Length Name ----                -------------     ------ ---- -a---        2004-08-04   8:00 AM     174592 w32time.dll -a---        2004-08-04   8:00 AM      22016 w32topl.dll -a---        2004-08-04   8:00 AM     101888 win32spl.dll -a---        2004-08-04   8:00 AM     172032 wldap32.dll -a---        2004-08-04   8:00 AM     264192 wow32.dll -a---        2004-08-04   8:00 AM      82944 ws2_32.dll -a---        2004-08-04   8:00 AM      42496 wsnmp32.dll -a---        2004-08-04   8:00 AM      22528 wsock32.dll -a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
 
 #### Смешение параметров Get-ChildItem
 В одной команде можно использовать несколько параметров **Get-ChildItem**. Перед тем как комбинировать параметры, убедитесь, что понимаете принципы сопоставления подстановочных знаков. Например, следующая команда не возвращает результатов:
@@ -163,6 +154,6 @@ Mode                LastWriteTime     Length Name
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

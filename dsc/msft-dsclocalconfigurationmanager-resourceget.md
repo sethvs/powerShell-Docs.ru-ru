@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Выполнение метода Get непосредственно в поставщике.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_resourceget'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод ResourceGet класса MSFT_DSCLocalConfigurationManager'
+title: Метод ResourceGet класса MSFT_DSCLocalConfigurationManager 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод ResourceGet класса MSFT_DSCLocalConfigurationManager
@@ -32,8 +35,7 @@ uint32 ResourceGet(
 Имя модуля, содержащего вызываемый ресурс.
 
 *resourceProperty* \[in\]  
-Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте
-командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
+Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
 
 *configurations* \[out\]  
 Выходные данные содержат встроенный экземпляр конфигураций.
@@ -68,6 +70,6 @@ uint32 ResourceGet(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

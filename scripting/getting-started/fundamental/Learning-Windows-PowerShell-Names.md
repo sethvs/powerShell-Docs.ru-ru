@@ -1,12 +1,15 @@
 ---
-title: Изучение имен Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
+title:  Изучение имен Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  b4d0fd22-8298-4ee6-82ae-9b6f2907c986
 ---
+
 # Изучение имен Windows PowerShell
 В большинстве интерфейсов командной строки должно уделяться значительное время изучению имен команд и их параметров. Проблема заключается в том, что существует очень мало шаблонов имени, поэтому единственным способом изучить команды является запоминание каждой команды и каждого параметра, которые приходится регулярно использовать.
 
@@ -92,6 +95,6 @@ Function        Clear-Host                      $spaceType = [System.Managem...
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

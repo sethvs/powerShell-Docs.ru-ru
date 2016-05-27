@@ -1,12 +1,15 @@
 ---
-title: Использование знакомых имен команд
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
+title:  Использование знакомых имен команд
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  021e2424-c64e-4fa5-aa98-aa6405758d5d
 ---
+
 # Использование знакомых имен команд
 Благодаря механизму *присвоения псевдонима* Windows PowerShell позволяет пользователям ссылаться на команды с помощью альтернативных имен. За счет присвоения псевдонима пользователи, обладающие опытом работы с другими оболочками, могут повторно использовать уже известные им общие имена команд для выполнения схожих операций в Windows PowerShell. Хотя мы не намереваемся подробно рассматривать псевдонимы Windows PowerShell, их можно использовать с самого начала работы с Windows PowerShell.
 
@@ -59,13 +62,11 @@ Set-Alias -Name gcm -Value Get-Command
 
 Внутренний механизм оболочки Windows PowerShell использует подобного рода команды во время установки, но эти псевдонимы нельзя изменить. При попытке действительного выполнения одной из этих команд выдается сообщение об ошибке, поясняющее, что псевдоним не может быть изменен. Например:
 
-<pre>PS> Set-Alias -Name gi -Value Get-Item
-Set-Alias : Alias is not writeable because alias gi is read-only or constant and cannot be written to.
-At line:1 char:10
-+ Set-Alias  <<<< -Name gi -Value Get-Item</pre>
+<pre>PS> Set-Alias -Name gi -Value Get-Item Set-Alias : Псевдоним gi не подлежит записи, так как он является постоянным или доступен только для чтения, и запись в него не может быть выполнена.
+At line:1 char:10 + Set-Alias  <<<< -Name gi -Value Get-Item</pre>
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

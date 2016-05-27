@@ -1,12 +1,15 @@
 ---
-title: Приложение 2. Создание настраиваемого ярлыка PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
+title:  Приложение 2. Создание настраиваемого ярлыка PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  5d4fd421-5d43-4ec7-86fd-acfe887b066e
 ---
+
 # Приложение 2. Создание настраиваемого ярлыка PowerShell
 Следующая процедура описывает создание ярлыка для Windows PowerShell, в котором уже заданы нужные параметры.
 
@@ -38,6 +41,6 @@ ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

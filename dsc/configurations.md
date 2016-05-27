@@ -1,3 +1,14 @@
+---
+title:   Конфигурации DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Конфигурации DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -37,9 +48,9 @@ Configuration MyDscConfiguration {
 Configuration MyDscConfiguration {
 
     param(
-        [string[]]$computerName="localhost"
+        [string[]]$ComputerName="localhost"
     )
-    Node $computerName {
+    Node $ComputerName {
         WindowsFeature MyFeatureInstance {
             Ensure = "Present"
             Name =  "RSAT"
@@ -52,7 +63,7 @@ Configuration MyDscConfiguration {
 }
 ```
 
-В данном примере вы указываете имя узла, передавая его как параметр $computerName при [компиляции конфигурации] (# Compiling the configuration). По умолчанию используется имя localhost.
+В данном примере вы указываете имя узла, передавая его как параметр $ComputerName при [компиляции конфигурации](# Compiling the configuration). По умолчанию используется имя localhost.
 
 ## Компиляция конфигурации
 Прежде чем активировать конфигурацию, необходимо скомпилировать ее в MOF-документ. Для этого нужно вызвать конфигурацию так же, как функцию PowerShell.
@@ -80,7 +91,7 @@ Mode                LastWriteTime         Length Name
 
 ```powershell
 PS C:\users\default\Documents\DSC Configurations> . .\MyDscConfiguration.ps1
-PS C:\users\default\Documents\DSC Configurations> MyDscConfiguration -computerName 'MyTestNode'
+PS C:\users\default\Documents\DSC Configurations> MyDscConfiguration -ComputerName 'MyTestNode'
     Directory: C:\users\default\Documents\DSC Configurations\MyDscConfiguration
 Mode                LastWriteTime         Length Name                                                                                              
 ----                -------------         ------ ----                                                                                         
@@ -121,6 +132,7 @@ Configuration DependsOnExample {
 * [Настройка локального диспетчера конфигураций](metaConfig.md)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

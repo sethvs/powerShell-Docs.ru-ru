@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Получение выходных данных агента конфигурации, относящихся к определенному заданию'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_getconfigurationresultoutput'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager'
+title:  Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
@@ -62,6 +65,6 @@ uint32 GetConfigurationResultOutput(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

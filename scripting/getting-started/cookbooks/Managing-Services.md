@@ -1,12 +1,15 @@
 ---
-title: Управление службами
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
+title:  Управление службами
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  7a410e4d-514b-4813-ba0c-0d8cef88df31
 ---
+
 # Управление службами
 Существует восемь основных командлетов Service, предназначенных для широкого спектра задач обслуживания. Мы рассмотрим только вывод и изменение состояния выполнения для служб, но список командлетов Service можно получить с помощью **Get-Help &#42;-Service**, а сведения о каждом из них можно найти с помощью **Get-Help<имя_командлета>**, например **Get-Help New-Service**.
 
@@ -146,6 +149,6 @@ Invoke-Command -ComputerName Server01 {Restart-Service Spooler}
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

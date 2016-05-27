@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Отправка документа конфигурации на управляемый узел и запуск агента конфигурации для применения конфигурации. Для получения выходных данных используется метод GetConfigurationResultOutput.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendconfigurationapplyasync'
-MSHAttr: 'PreferredLib:/library'
-title: 'Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager'
+title:  Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager
 
@@ -63,6 +67,6 @@ uint32 SendConfigurationApplyAsync(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 
