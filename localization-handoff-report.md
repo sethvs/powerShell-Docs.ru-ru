@@ -1,27 +1,40 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/a5f3025ff222d4a27c0da074df9e84d82c51a46f/dsc/pullServer.md) | OutofSyncHandedBackSuccess | [Details](#7bbfc31fdebdde83ac1784373b51af40b1dc949276)
+ [wmf\overview.md](https://github.com/PowerShell/powerShell-Docs/blob/f607ecb2049b53cb6a8fb1f8e77bbf2af8f3ba3f/wmf/overview.md) | HandedOffSuccess | [Details](#bc379559eff2640a3ae01cc2220c7aaefe8d4e44305)
+ [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs/blob/6462873e1dde8822c96c2863b5462a7e0ca40875/wmf/productincompat.md) | OutofSyncHandedBackSuccess | [Details](#5998288f1a82980b5988eb6d4fff1833ba5067e1306)
 
 ## Item Details
-##### <a name='7bbfc31fdebdde83ac1784373b51af40b1dc949276'></a> Source: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/a5f3025ff222d4a27c0da074df9e84d82c51a46f/dsc/pullServer.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='bc379559eff2640a3ae01cc2220c7aaefe8d4e44305'></a> Source: [wmf\overview.md](https://github.com/PowerShell/powerShell-Docs/blob/f607ecb2049b53cb6a8fb1f8e77bbf2af8f3ba3f/wmf/overview.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/a3fd11a0accc5f4144a0f1818bb99f7304e8257a/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf)
-* Handoff Datetime: 2016-05-27 16:56:18
+* Handoff File: [overview.5d8d4f81b61bf972b61748f2ca91152277a963d0.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/226492c063e88f6cf7f63e7787fec68d19e204ea/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/overview.5d8d4f81b61bf972b61748f2ca91152277a963d0.ru-ru.xlf)
+* Handoff Datetime: 2016-05-27 20:55:42
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/93a7d66d6f4979dcc8662e0a65a56812c17e41c6/dsc/pullServer.md)
-* Current Handback File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/15397d59c8874b4ac4fe34feb5fa557bb2bbc246/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-25 00:42:06
+* [Back to Top](#report-top)
+
+##### <a name='5998288f1a82980b5988eb6d4fff1833ba5067e1306'></a> Source: [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs/blob/6462873e1dde8822c96c2863b5462a7e0ca40875/wmf/productincompat.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/226492c063e88f6cf7f63e7787fec68d19e204ea/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf)
+* Handoff Datetime: 2016-05-27 20:55:42
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [wmf\productincompat.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/0d76c6e1d4e6bc8cc9dac15afbb873bda85a4590/wmf/productincompat.md)
+* Current Handback File: [productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4e8f11305a869b7c849f64557fd5cac860e28623/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/productincompat.62bb00299c0283b5297001553476a745e28a49cb.ru-ru.xlf)
+* Current Handback Datetime: 2016-05-27 16:31:29
 * [Back to Top](#report-top)
 
 
