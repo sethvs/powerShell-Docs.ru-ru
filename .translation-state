@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a520e457c8e50656536b345b6d7ff9623b4ed584",
+  "LastProcessedCommit": "738c5170a5f525547d61f786ccebcecfc42659a3",
   "LastTranslatedCommit": "0d76c6e1d4e6bc8cc9dac15afbb873bda85a4590",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
@@ -23977,6 +23977,36 @@
       "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf",
       "HandoffFileCommit": "e7c759b0ea5cdcf1fec4e532b950c105fc7ccec7",
       "HandoffDateTime": "2016-05-27T16:25:33.0804952Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "7bbfc31fdebdde83ac1784373b51af40b1dc9492": {
+      "FileHash": "7bbfc31fdebdde83ac1784373b51af40b1dc9492",
+      "SourceFileCommit": "a5f3025ff222d4a27c0da074df9e84d82c51a46f",
+      "SourceFilePath": "dsc\\pullServer.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "dsc\\pullServer.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\pullServer.4b925b277da29998394af746bdbdd508fda48909.ru-ru.xlf",
+      "HandoffFileCommit": "a3fd11a0accc5f4144a0f1818bb99f7304e8257a",
+      "HandoffDateTime": "2016-05-27T16:56:18.4192876Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
