@@ -152,16 +152,77 @@ PartialConfigDemo
 
 Обратите внимание, что режим **RefreshMode**, указанный в блоке "Настройки", — это "Режим запросов", а режим **RefreshMode** для частичной конфигурации OSInstall — "Принудительная отправка".
 
-Документы конфигурации следует именовать и располагать в соответствии с их режимами обновления. Вызовите **Publish-DSCConfiguration**, чтобы опубликовать частичную конфигурацию, и дождитесь извлечения конфигурации OSInstall из опрашивающего сервера или выполните принудительное обновление, вызвав [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
+MOF-файлы конфигурации следует именовать и располагать в соответствии с их режимами обновления, как описано выше. Вызовите **Publish-DSCConfiguration**, чтобы опубликовать частичную конфигурацию`SharePointInstall`, и дождитесь извлечения конфигурации `OSInstall` из опрашивающего сервера или выполните принудительное обновление, вызвав [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
 
+## Пример конфигурации частичного OSInstall
+
+```powershell
+Configuration OSInstall
+{
+    Param (
+        [Parameter(Mandatory,
+                   HelpMessage="Domain credentials required to add domain\sharepoint_svc to the local Administrators group.")]
+        [ValidateNotNullOrEmpty()]
+        [pscredential]$Credential
+    )
+
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+
+
+    Node localhost
+    {
+        Group LocalAdmins
+        {
+            GroupName = 'Administrators'
+            MembersToInclude = 'domain\sharepoint_svc',
+                               'admins@example.domain'
+            Ensure = 'Present'
+            Credential = $Credential
+            
+        }
+
+        WindowsFeature Telnet
+        {
+            Name = 'Telnet-Server'
+            Ensure = 'Absent'
+        }
+    }
+}
+OSInstall
+
+```
+## Пример конфигурации частичного SharePointConfig
+```powershell
+Configuration SharePointConfig
+{
+    Param (
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [pscredential]$ProductKey
+    )
+
+    Import-DscResource -ModuleName xSharePoint
+
+    Node localhost
+    {
+        xSPInstall SharePointDefault
+        {
+            Ensure = 'Present'
+            BinaryDir = '\\FileServer\Installers\Sharepoint\'
+            ProductKey = $ProductKey
+        }
+    }
+}
+SharePointConfig
+```
 ##См. также 
 
 **Концепции**
-[Опрашивающие серверы службы настройки требуемого состояния Windows PowerShell](pullServer.md) 
-[Настройка локального диспетчера конфигураций Windows](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+[Опрашивающие серверы настройки требуемого состояния Windows PowerShell](pullServer.md) 
+[Настройка ОС Windows локального диспетчера конфигураций](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=May16_HO4-->
 
 
