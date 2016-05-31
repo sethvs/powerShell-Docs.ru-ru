@@ -19,7 +19,8 @@
             "open_to_public_contributors": "true",
             "type_mapping": {
                 "Conceptual": "Content"
-            },
+            }
+        },    
         {
             "docset_name": "PowerShell_PowerShell-docs_wmf",
             "build_output_subfolder": "scripting",
