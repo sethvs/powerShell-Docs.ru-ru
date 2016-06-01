@@ -22,7 +22,7 @@
             }
         },    
         {
-            "docset_name": "PowerShell_PowerShell-docs_wmf",
+            "docset_name": "PowerShell_PowerShell-docs_scripting",
             "build_output_subfolder": "scripting",
             "locale": "ru-ru",
             "version": 0,
