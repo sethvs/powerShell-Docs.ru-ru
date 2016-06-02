@@ -156,7 +156,7 @@ AdditionalData       : {}
 По умолчанию отчеты сортируются по **JobID**. Чтобы получить последний отчет, отчеты можно отсортировать по убыванию значения свойства **StartTime**, а затем возвратить первый элемент массива:
 
 ```powershell
-$reportsByStartTime = $reports | Sort-Object -Property StartTime -Descending
+$reportsByStartTime = $reports | Sort-Object {$_."StartTime" -as [DateTime] } -Descending
 $reportMostRecent = $reportsByStartTime[0]
 ```
 
@@ -225,6 +225,6 @@ InDesiredState    : True
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=May16_HO4-->
 
 
