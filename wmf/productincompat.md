@@ -17,6 +17,9 @@
 
 - Microsoft Exchange Server 2013
 - Microsoft Exchange Server 2010 с пакетом обновления 3 (SP3)
+- Skype для бизнеса Server 2015
+- Microsoft Lync Server 2013
+- Microsoft Lync Server 2010
 - System Center 2012 R2 Service Management Automation
 
 
