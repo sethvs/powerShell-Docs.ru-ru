@@ -566,9 +566,6 @@
   "75d41569b18e61342809eebcc76b7899ec6363fa": [
     "scripting\\core-powershell\\Running-Remote-Commands.md"
   ],
-  "b68341b6e94bb02882dad27a4acb1627b197674c": [
-    "scripting\\core-powershell\\Running-Remote-Commands.md"
-  ],
   "7fe92c1266593dd98ab6933fb408558effda5ccb": [
     "dsc\\msft-dsclocalconfigurationmanager.md"
   ],

@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "dfa1b62e1f20808bf11ad8613e185e6ca56d76b0",
-  "LastTranslatedCommit": "983199ed8d3841a3a6101fa8e34be0000722d2d9",
+  "LastTranslatedCommit": "422b102e9a11077b29f339346cdc55cb5b025c03",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -27100,14 +27100,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "422b102e9a11077b29f339346cdc55cb5b025c03",
+      "TargetFilePath": "scripting\\core-powershell\\Running-Remote-Commands.md",
+      "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf",
+      "HandbackFileCommit": "a1fa9570f8090d64c7310e61c37104cd8386ca49",
+      "HandbackDateTime": "2016-06-08T07:20:35.4848406Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-08T07:20:35.4848406Z",
       "ArchiveFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\archive\\Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf",
       "ArchiveFileCommit": "9f70d3c108c0935f75724eb323b8d26b0f1f1260",
       "ArchiveFileDateTime": "2016-05-31T13:22:06.4302736Z",

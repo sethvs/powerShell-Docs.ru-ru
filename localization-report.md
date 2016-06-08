@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 1
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 91
-[ In Sync Handback Files ](#insync-handback-success-list)| 213
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 90
+[ In Sync Handback Files ](#insync-handback-success-list)| 214
 [ Ignored Files ](#ignored-list)| 16
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -86,7 +86,6 @@
  [scripting\core-powershell\ise\Windows-PowerShell-ISE-Object-Model-Reference.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/ise/Windows-PowerShell-ISE-Object-Model-Reference.md) | OutofSyncHandedBackSuccess | [Details](#9bfb74ba438dd27fc2799263fc12a20edd2bb8cb149)
  [scripting\core-powershell\ise-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/ise-guide.md) | OutofSyncHandedBackSuccess | [Details](#053a4fd734b1e86c5f8ca22c8197ce4e80b6fce6122)
  [scripting\core-powershell\language-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/language-guide.md) | OutofSyncHandedBackSuccess | [Details](#9c1136db524ba52d47db94c68571c6892bdfdbe9150)
- [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md) | OutofSyncHandedBackSuccess | [Details](#75d41569b18e61342809eebcc76b7899ec6363fa151)
  [scripting\core-powershell\scripting-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/scripting-guide.md) | OutofSyncHandedBackSuccess | [Details](#d90e1aea0bc395320669bb58bb2e5b58708126d3152)
  [scripting\core-powershell\web-access.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/web-access.md) | OutofSyncHandedBackSuccess | [Details](#bdd57c989f4787e402b0334782db3ab9f5b42161153)
  [scripting\core-powershell\web-access\authorization-rules-and-security-features-of-windows-powershell-web-access.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/web-access/authorization-rules-and-security-features-of-windows-powershell-web-access.md) | OutofSyncHandedBackSuccess | [Details](#ed586e55f4533ce5be7c68564e5cc537fed05016154)
@@ -210,6 +209,7 @@
  [dsc\windowsProcessResource.md](https://github.com/PowerShell/powerShell-Docs/blob/6477ae8575c83fc24150f9502515ff5b82bc8198/dsc/windowsProcessResource.md) | InSyncHandedBackSuccess | [Details](#d7bd873cde4a4bda12490d69acdd5e2b0ba8cdec95)
  [scripting\core-powershell\console\Using-Tab-Expansion.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/console/Using-Tab-Expansion.md) | InSyncHandedBackSuccess | [Details](#644dbbb51e98efda9735f0ff23489e936f6b28a2103)
  [scripting\core-powershell\ise\How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/ise/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) | InSyncHandedBackSuccess | [Details](#07f7fb6b4e5d94de31551566ca8faff263817383126)
+ [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md) | InSyncHandedBackSuccess | [Details](#75d41569b18e61342809eebcc76b7899ec6363fa151)
  [scripting\getting-started\cookbooks\Appendix-1---Compatibility-Aliases.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Appendix-1---Compatibility-Aliases.md) | InSyncHandedBackSuccess | [Details](#38a6cb1b0402825b307652e6747ea65baafd1d8b164)
  [scripting\getting-started\cookbooks\Appendix-2---Creating-a-Custom-PowerShell-Shortcut.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Appendix-2---Creating-a-Custom-PowerShell-Shortcut.md) | InSyncHandedBackSuccess | [Details](#24e9b67cf51b99156db3f0bdfb446996b9d3df76165)
  [scripting\getting-started\cookbooks\Changing-Computer-State.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Changing-Computer-State.md) | InSyncHandedBackSuccess | [Details](#13b1fd65b9dddf2570e7ab9c5420c0a6d18ce35e167)
@@ -2340,18 +2340,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='75d41569b18e61342809eebcc76b7899ec6363fa151'></a> Source: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/422b102e9a11077b29f339346cdc55cb5b025c03/scripting/core-powershell/Running-Remote-Commands.md)
 * Handoff File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/e7c759b0ea5cdcf1fec4e532b950c105fc7ccec7/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
 * Handoff Datetime: 2016-05-27 16:25:33
 * Handoff Reason: Include
 * Archive File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/9f70d3c108c0935f75724eb323b8d26b0f1f1260/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
 * Archive Datetime: 2016-05-31 13:22:06
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/0d76c6e1d4e6bc8cc9dac15afbb873bda85a4590/scripting/core-powershell/Running-Remote-Commands.md)
-* Current Handback File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4e8f11305a869b7c849f64557fd5cac860e28623/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-27 16:31:29
+* Handback File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/a1fa9570f8090d64c7310e61c37104cd8386ca49/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
+* Handback Datetime: 2016-06-08 07:20:35
 * [Back to Top](#report-top)
 
 ##### <a name='d90e1aea0bc395320669bb58bb2e5b58708126d3152'></a> Source: [scripting\core-powershell\scripting-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/core-powershell/scripting-guide.md)

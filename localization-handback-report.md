@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md) | InSyncHandedBackSuccess | [Details](#75d41569b18e61342809eebcc76b7899ec6363fa151)
 
 ## Item Details
+##### <a name='75d41569b18e61342809eebcc76b7899ec6363fa151'></a> Source: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/422b102e9a11077b29f339346cdc55cb5b025c03/scripting/core-powershell/Running-Remote-Commands.md)
+* Handoff File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/e7c759b0ea5cdcf1fec4e532b950c105fc7ccec7/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
+* Handoff Datetime: 2016-05-27 16:25:33
+* Handoff Reason: Include
+* Archive File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/9f70d3c108c0935f75724eb323b8d26b0f1f1260/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
+* Archive Datetime: 2016-05-31 13:22:06
+* Handback File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/a1fa9570f8090d64c7310e61c37104cd8386ca49/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ru-ru.xlf)
+* Handback Datetime: 2016-06-08 07:20:35
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
