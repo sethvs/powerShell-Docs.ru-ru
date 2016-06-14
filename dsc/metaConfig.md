@@ -22,7 +22,7 @@ ms.prod:  powershell
 
 Использование специального типа конфигурации при настройке LCM для решения каждой из этих задач. Настройка LCM описывается в следующих разделах.
 
-> **Примечание**. Этот раздел относится к LCM, впервые представленному в Windows PowerShell 5.0. Сведения о настройке LCM в Windows PowerShell 4.0 см. в статье [Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0](metaconfig4.md).
+> **Примечание**. Этот раздел относится к LCM, впервые представленному в Windows PowerShell 5.0. Сведения о настройке LCM в Windows PowerShell 4.0 см. в разделе [Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0](metaconfig4.md).
 
 ## Написание и применение конфигурации НОК
 
@@ -42,7 +42,7 @@ configuration LCMConfig
 } 
 ```
 
-Эта конфигурация вызывается и запускается для создания MOF конфигурации точно так же, как и обычная (сведения о создании MOF конфигурации см. в статье [Компиляция конфигурации](configurations#compiling-the-configuration)). В отличие от обычных конфигураций конфигурация LCM не применяется с помощью командлета [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). Вместо этого вызовите командлет [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx), указав в качестве параметра путь к MOF конфигурации. После применения конфигурации можно просмотреть свойства LCM, вызвав командлет [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx).
+Эта конфигурация вызывается и запускается для создания MOF конфигурации точно так же, как и обычная (сведения о создании MOF конфигурации см. в статье [Компиляция конфигурации](configurations.md#compiling-the-configuration)). В отличие от обычных конфигураций конфигурация LCM не применяется с помощью командлета [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). Вместо этого вызовите командлет [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx), указав в качестве параметра путь к MOF конфигурации. После применения конфигурации можно просмотреть свойства LCM, вызвав командлет [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx).
 
 Конфигурация LCM может содержать блоки лишь для ограниченного набора ресурсов. В предыдущем примере вызывался только ресурс **Settings**. Другие доступные ресурсы:
 
@@ -148,7 +148,7 @@ configuration LCMConfig
 
 ## См. также 
 
-### Основные понятия
+### Концепции
 [Общие сведения о службе настройки требуемого состояния Windows PowerShell](overview.md)
  
 [Настройка опрашивающего сервера DSC](pullServer.md) 
@@ -162,6 +162,6 @@ configuration LCMConfig
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 
