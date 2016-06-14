@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [dsc\authoringResourceComposite.md](https://github.com/PowerShell/powerShell-Docs/blob/48cfed9e0c31e24c441eafb388a799bd7fc7415f/dsc/authoringResourceComposite.md) | InSyncHandedBackSuccess | [Details](#6631d60d7d82e71c315c26a0196aa3e4c1b60b158)
 
 ## Item Details
-##### <a name='6631d60d7d82e71c315c26a0196aa3e4c1b60b158'></a> Source: [dsc\authoringResourceComposite.md](https://github.com/PowerShell/powerShell-Docs/blob/48cfed9e0c31e24c441eafb388a799bd7fc7415f/dsc/authoringResourceComposite.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [dsc\authoringResourceComposite.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/c2cc3bd0cfdd3f39a3f7759a7fcd4050c6108eb0/dsc/authoringResourceComposite.md)
-* Handoff File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/d6c15adecc8796c624285eac46f6cfaa4209c6d4/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
-* Handoff Datetime: 2016-06-07 18:33:13
-* Handoff Reason: Include
-* Archive File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/034a49f89628785e00d7789cda6f3d2791cc8f1e/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
-* Archive Datetime: 2016-06-14 13:17:31
-* Handback File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/5d8464d7d6e6baee1104128adb7814f5dfba596d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
-* Handback Datetime: 2016-06-14 19:39:32
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
