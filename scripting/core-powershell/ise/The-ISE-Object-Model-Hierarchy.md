@@ -1,12 +1,15 @@
 ---
-title: Иерархия объектной модели интегрированной среды сценариев
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
+title:  Иерархия объектной модели интегрированной среды сценариев
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  bc3300e4-9c17-4f00-a621-c8867126e3b3
 ---
+
 # Иерархия объектной модели интегрированной среды сценариев
   В этом разделе демонстрируется иерархия объектов, которые входят в состав интегрированной среды сценариев Windows PowerShell (ISE). Интегрированная среда сценариев Windows PowerShell входит в состав Windows PowerShell 3.0 и Windows PowerShell 4.0. Щелкните объект, чтобы перейти к справочной документации для класса, определяющего объект.
 
@@ -206,8 +209,9 @@ ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
  Объект **$PsISE.PowerShellTabs** является экземпляром класса [PowerShellTabCollection](The-PowerShellTabCollection-Object.md). Это коллекция всех открытых вкладок PowerShell, представляющих доступные среды выполнения Windows PowerShell на локальном компьютере или на подключенных удаленных компьютерах. Каждый элемент в коллекции является экземпляром класса [PowerShellTab](The-PowerShellTab-Object.md).
 
 ## См. также
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ [Объектная модель интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
  [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+
 
 
 <!--HONumber=May16_HO2-->

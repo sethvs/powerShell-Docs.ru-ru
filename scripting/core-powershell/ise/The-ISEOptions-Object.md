@@ -1,12 +1,15 @@
 ---
-title: Объект ISEOptions
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 75e2a76f-f3d1-490b-ad5d-e3829946aabb
+title:  Объект ISEOptions
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  75e2a76f-f3d1-490b-ad5d-e3829946aabb
 ---
+
 # Объект ISEOptions
   Объект **ISEOptions** представляет различные параметры для интегрированной среды сценариев Windows PowerShell. Он является экземпляром класса **Microsoft.PowerShell.Host.ISE.ISEOptions**.
 
@@ -142,7 +145,7 @@ $psISE.Options.RestoreDefaultTokenColors()
 ###  <a name="rdxtc"></a> RestoreDefaultXmlTokenColors()
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Восстанавливает значения по умолчанию для цветов маркеров XML-элементов, отображаемых в интегрированной среде сценариев Windows PowerShell. См. также [XmlTokenColors](#xtc)..
+ Восстанавливает значения по умолчанию для цветов маркеров XML-элементов, отображаемых в интегрированной среде сценариев Windows PowerShell. См. также [XmlTokenColors](#xtc).
 
 ```
 # Changes the color of the comments in XML data to red and then restores it to its default value.
@@ -163,7 +166,7 @@ $psISE.Options.AutoSaveMinuteInterval = 3
 ```
 
 ###  <a name="cpbc"></a> CommandPaneBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#conpbc)..
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#conpbc).
 
  Задает цвет фона для области команд. Это экземпляр класса **System.Windows.Media.Color**.
 
@@ -356,7 +359,7 @@ $psISE.Options.MruCount = 5
 ```
 
 ###  <a name="opbc"></a> OutputPaneBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#conpbc)..
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#conpbc).
 
  Свойство для чтения и записи, которое получает или задает цвет фона самой области вывода. Это экземпляр класса **System.Windows.Media.Color**.
 
@@ -367,7 +370,7 @@ $psISE.Options.OutputPaneForegroundColor = "gold"
 ```
 
 ###  <a name="optfc"></a> OutputPaneTextForegroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneForegroundColor](#conpfc)..
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneForegroundColor](#conpfc).
 
  Свойство для чтения и записи, которое изменяет цвет переднего плана текста в области вывода в интегрированной среде сценариев Windows PowerShell 2.0.
 
@@ -378,7 +381,7 @@ $psISE.Options.OutputPaneTextForegroundColor  = "blue"
 ```
 
 ###  <a name="optbc"></a> OutputPaneTextBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneTextBackgroundColor](#conptbc)..
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneTextBackgroundColor](#conptbc).
 
  Свойство для чтения и записи, которое изменяет цвет фона текста в области вывода.
 
@@ -429,7 +432,7 @@ $psISE.Options.SelectedScriptPaneState = "Maximized"
 ###  <a name="sds"></a> ShowDefaultSnippets
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, содержит ли список фрагментов **CTRL+J** начальный набор, который включен в Windows PowerShell. Если задано значение **$false**, в списке **CTRL+J** отображаются только определенные пользователем фрагменты. Значение по умолчанию — **$true**..
+ Указывает, содержит ли список фрагментов **CTRL+J** начальный набор, который включен в Windows PowerShell. Если задано значение **$false**, в списке **CTRL+J** отображаются только определенные пользователем фрагменты. По умолчанию используется значение **$true**.
 
 ```
 # Hide the default snippets from the CTRL+J list.
@@ -439,7 +442,7 @@ $psISe.Options.ShowDefaultSnippets = $false
 ###  <a name="siicp"></a> ShowIntellisenseInConsolePane
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, предлагает ли IntelliSense синтаксис, параметры и значения в области консоли. Значение по умолчанию — **$true**..
+ Указывает, предлагает ли IntelliSense синтаксис, параметры и значения в области консоли. По умолчанию используется значение **$true**.
 
 ```
 # Turn off IntelliSense in the console pane.
@@ -449,7 +452,7 @@ $psISe.Options.ShowIntellisenseInConsolePane = $false
 ###  <a name="siisp"></a> ShowIntellisenseInScriptPane
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, предлагает ли IntelliSense синтаксис, параметры и значения в области сценариев. Значение по умолчанию — **$true**..
+ Указывает, предлагает ли IntelliSense синтаксис, параметры и значения в области сценариев. По умолчанию используется значение **$true**.
 
 ```
 # Turn off IntelliSense in the Script pane.
@@ -459,7 +462,7 @@ $psISe.Options.ShowIntellisenseInScriptPane = $false
 ###  <a name="sln"></a> ShowLineNumbers
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, отображаются ли в левом поле области сценариев номера строк. Значение по умолчанию — **$true**..
+ Указывает, отображаются ли в левом поле области сценариев номера строк. По умолчанию используется значение **$true**.
 
 ```
 # Turn off line numbers in the Script pane.
@@ -469,7 +472,7 @@ $psISe.Options.ShowLineNumbers = $false
 ###  <a name="so"></a> ShowOutlining
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, отображаются ли в области сценариев расширяемые и свертываемые скобки рядом с фрагментами кода в левом поле. Когда они отображаются, можно щелкнуть значок "минус" (-) рядом с блоком текста, чтобы свернуть, или значок "плюс" (+), чтобы развернуть блок текста. Значение по умолчанию — **$true**..
+ Указывает, отображаются ли в области сценариев расширяемые и свертываемые скобки рядом с фрагментами кода в левом поле. Когда они отображаются, можно щелкнуть значок "минус" (-) рядом с блоком текста, чтобы свернуть, или значок "плюс" (+), чтобы развернуть блок текста. По умолчанию используется значение **$true**.
 
 ```
 # Turn off outlining in the Script pane.
@@ -479,7 +482,7 @@ $psISe.Options.ShowOutlining = $false
 ###  <a name="stb"></a> ShowToolBar
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
- Указывает, отображается ли в верхней части окна интегрированной среды сценариев Windows PowerShell панель инструментов ISE. Значение по умолчанию — **$true**..
+ Указывает, отображается ли в верхней части окна интегрированной среды сценариев Windows PowerShell панель инструментов ISE. По умолчанию используется значение **$true**.
 
 ```
 # Show the toolbar.
@@ -489,7 +492,7 @@ $psISe.Options.ShowToolBar = $true
 ###  <a name="swbsor"></a> ShowWarningBeforeSavingOnRun
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
- Указывает, отображается ли предупреждение, когда сценарий сохраняется автоматически перед запуском. Значение по умолчанию — **$true**..
+ Указывает, отображается ли предупреждение, когда сценарий сохраняется автоматически перед запуском. По умолчанию используется значение **$true**.
 
 ```
 # Enable the warning message when an attempt
@@ -501,7 +504,7 @@ $psISE.Options.ShowWarningBeforeSavingOnRun=$true
 ###  <a name="swfdf"></a> ShowWarningForDuplicateFiles
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
- Указывает, отображается ли предупреждение при открытии одного и того же файла на разных вкладках PowerShell. Если задано значение **$true**, при открытии одного файла на нескольких вкладках отображается сообщение: "Копия данного файла открыта на другой вкладке Windows PowerShell. Изменения, внесенные в данный файл, отразятся на всех его открытых копиях". Значение по умолчанию — **$true**..
+ Указывает, отображается ли предупреждение при открытии одного и того же файла на разных вкладках PowerShell. Если задано значение **$true**, при открытии одного файла на нескольких вкладках отображается сообщение: "Копия данного файла открыта на другой вкладке Windows PowerShell. Изменения, внесенные в данный файл, отразятся на всех его открытых копиях". По умолчанию используется значение **$true**.
 
 ```
 # Enable the warning message when a file is
@@ -526,7 +529,7 @@ $psISE.Options.TokenColors["Keyword"] = "magenta"
 ###  <a name="uetsicpi"></a> UseEnterToSelectInConsolePaneIntellisense
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, можно ли использовать клавишу ВВОД для выбора варианта, предложенного IntelliSense, в области консоли. Значение по умолчанию — **$true**..
+ Указывает, можно ли использовать клавишу ВВОД для выбора варианта, предложенного IntelliSense, в области консоли. По умолчанию используется значение **$true**.
 
 ```
 # Turn off using the ENTER key to select an IntelliSense provided option in the Console pane.
@@ -537,7 +540,7 @@ $psISE.Options.UseEnterToSelectInConsolePaneIntellisense=$false
 ###  <a name="uetsispi"></a> UseEnterToSelectInScriptPaneIntellisense
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, можно ли использовать клавишу ВВОД для выбора варианта, предложенного IntelliSense, в области сценариев. Значение по умолчанию — **$true**..
+ Указывает, можно ли использовать клавишу ВВОД для выбора варианта, предложенного IntelliSense, в области сценариев. По умолчанию используется значение **$true**.
 
 ```
 # Turn on using the Enter key to select an IntelliSense provided option in the Console pane.
@@ -601,7 +604,7 @@ $psISE.Options.WarningForegroundColor =”yellow”
 ###  <a name="xtc"></a> XmlTokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает объект словаря, который содержит пары "имя-значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors()](#rdxtc)..
+ Указывает объект словаря, который содержит пары "имя-значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors()](#rdxtc).
 
 ```
 # Sets the color of XML element names to green.
@@ -622,8 +625,9 @@ $psISE.Options.Zoom = 200
 ```
 
 ## См. также
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ [Объектная модель интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
  [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+
 
 
 <!--HONumber=May16_HO2-->

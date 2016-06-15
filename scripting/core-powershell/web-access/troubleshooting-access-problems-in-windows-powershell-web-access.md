@@ -1,3 +1,14 @@
+---
+title:  Устранение неполадок с доступом в Windows PowerShell Web Access
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+---
+
 #  Устранение неполадок с доступом в Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
@@ -27,7 +38,7 @@
 <td><p>Сбой может возникать по любой из следующих причин.</p>
 <ul>
 <li><p>Отсутствуют правило авторизации, которое позволяет пользователю получить доступ к компьютеру, или конкретная конфигурация сеанса на удаленном компьютере. Безопасность Windows PowerShell Web Access является ограничивающей. Пользователям необходимо явным образом предоставлять доступ к удаленным компьютерам с помощью правил авторизации. Дополнительные сведения о создании правил авторизации см. в разделе <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Правила авторизации и средства безопасности Windows PowerShell Web Access</a> данного руководства.</p></li>
-<li><p>У пользователя отсутствует авторизованный доступ к целевому компьютеру. Это определяется списками управления доступом. Дополнительные сведения см. в разделе "Вход в Windows PowerShell Web Access" в статье <a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">Использование веб-консоли Windows PowerShell</a> или в <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">блоге группы разработчиков для Windows PowerShell.</a>.</p>
+<li><p>У пользователя отсутствует авторизованный доступ к целевому компьютеру. Это определяется списками управления доступом. Дополнительные сведения см. в разделе "Вход в Windows PowerShell Web Access" в статье <a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">Использование веб-консоли Windows PowerShell</a> или в <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">блоге группы Windows PowerShell</a>.</p>
 <ul>
 <li><p>Возможно, удаленное управление Windows PowerShell не включено на целевом компьютере. Убедитесь, что оно включено на компьютере, к которому пытается подключиться пользователь. Дополнительные сведения см. в разделе "Инструкции по настройке удаленных операций" в описании <a href="https://technet.microsoft.com/library/dd315349.aspx">about_Remote_Requirements</a> в разделах справки "О программе" Windows PowerShell.</p></li>
 </ul></li>
@@ -37,17 +48,17 @@
 <td><p>При попытке войти в Windows PowerShell Web Access в окне Internet Explorer пользователи видят страницу <strong>Внутренняя ошибка сервера</strong> или Internet Explorer перестает реагировать на запросы. Эта проблема специфична для Internet Explorer.</p></td>
 <td><p>Она может возникнуть, если пользователь вошел в систему с именем домена, содержащим китайские символы, или если такие символы встречаются в имени сервера шлюза. Чтобы обойти эту проблему, пользователю нужно <a href="http://ie.microsoft.com/testdrive/info/downloads/Default.html">установить и запустить Internet Explorer 10</a>, а затем выполнить следующие действия.</p>
 <ol>
-<li><p>Заменить <strong>Режим документов</strong> в Internet Explorer на <strong>Стандарты IE10.</strong>.</p>
+<li><p>Измените <strong>Режим документа</strong> в Internet Explorer на <strong>Стандарты IE10</strong>.</p>
 <ol>
 <li><p>Нажать клавишу <strong>F12</strong>, чтобы открыть консоль "Средства разработчика".</p></li>
-<li><p>В Internet Explorer 10 щелкнуть <strong>Режим браузера</strong> и выбрать <strong>Internet Explorer 10.</strong>.</p></li>
-<li><p>Щелкнуть <strong>Режим документов</strong> и выбрать <strong>Стандарты IE10.</strong>.</p></li>
+<li><p>В Internet Explorer 10 щелкните <strong>Режим браузера</strong> и выберите <strong>Internet Explorer 10</strong>.</p></li>
+<li><p>Щелкните <strong>Режим документа</strong> и выберите <strong>Стандарты IE10</strong>.</p></li>
 <li><p>Снова нажать клавишу <strong>F12</strong>, чтобы закрыть консоль "Средства разработчика".</p></li>
 </ol></li>
 <li><p>Отключить автоматическую конфигурацию прокси.</p>
 <ol>
-<li><p>В Internet Explorer 10 в меню <strong>Сервис</strong> выбрать <strong> Свойства браузера.</strong>.</p></li>
-<li><p>В диалоговом окне <strong>Свойства браузера</strong> на вкладке <strong>Подключения</strong> выбрать <strong> Настройка сети.</strong>.</p></li>
+<li><p>В Internet Explorer 10 в щелкните <strong>Сервис</strong> и затем <strong>Свойства браузера</strong>.</p></li>
+<li><p>В диалоговом окне <strong>Свойства браузера</strong> на вкладке <strong>Подключения</strong> выберите <strong> Настройка сети</strong>.</p></li>
 <li><p>Снять флажок <strong>Автоматическое определение параметров</strong>. Нажать кнопку <strong>ОК</strong>, а затем нажать кнопку <strong>ОК</strong> еще раз, чтобы закрыть диалоговое окно <strong>Свойства браузера</strong>.</p></li>
 </ol></li>
 </ol></td>
@@ -116,7 +127,7 @@
 </tr>
 <tr class="even">
 <td><p>Не удается войти на конечный компьютер, указанный в правилах авторизации под IPv6-адресом с доменом.</p></td>
-<td><p>Правила авторизации не поддерживают IPv6-адреса в форме имени домена. Чтобы указать конечный компьютер с помощью IPv6-адреса, используйте в правиле авторизации исходный IPv6-адрес (содержащий двоеточия). IPv6-адреса в форме имени домена и в числовой форме (с двоеточиями) поддерживаются в качестве имени конечного компьютера на странице входа в Windows PowerShell Web Access, но не в правилах авторизации. Дополнительные сведения об IPv6-адресах см. в статье <a href="https://technet.microsoft.com/library/cc781672.aspx"> Принципы работы IPv6</a>.</p></td>
+<td><p>Правила авторизации не поддерживают IPv6-адреса в форме имени домена. Чтобы указать конечный компьютер с помощью IPv6-адреса, используйте в правиле авторизации исходный IPv6-адрес (содержащий двоеточия). IPv6-адреса в форме имени домена и в числовой форме (с двоеточиями) поддерживаются в качестве имени конечного компьютера на странице входа в Windows PowerShell Web Access, но не в правилах авторизации. Дополнительные сведения об IPv6-адресах см. в статье <a href="https://technet.microsoft.com/library/cc781672.aspx">Принцип работы IPv6</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -133,23 +144,19 @@
 <span>Демонстрация: </span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
-Да
-Нет
+Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500 </span> символов</span>
-Отправить
-Пропустить
+<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
 
-<span class="stdr-thankyou">Спасибо! </span> <span class="stdr-appreciate"> Мы ценим ваши отзывы.</span>
+<span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
 [Управление профилем](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Отзыв о сайте</a>
-Отзыв о сайте
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Отзыв о сайте</a> Отзыв о сайте
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
@@ -157,11 +164,11 @@
 
 Быстро ли загрузилась страница?
 
-<span> Да <span> </span></span> <span> Нет<span> </span></span>
+<span> Да<span> </span></span> <span> Нет<span> </span></span>
 
 Вам нравится дизайн страницы?
 
-<span> Да <span> </span></span> <span> Нет<span> </span></span>
+<span> Да<span> </span></span> <span> Нет<span> </span></span>
 
 Расскажите подробнее
 
@@ -182,6 +189,7 @@
 
 Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN http://www.asp.net/ajaxlibrary/CDN.ashx.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
+
 
 
 <!--HONumber=May16_HO2-->

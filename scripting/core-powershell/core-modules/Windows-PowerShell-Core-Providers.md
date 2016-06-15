@@ -1,16 +1,19 @@
 ---
-title: Поставщики в модуле  Windows PowerShell Core
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6e24bf6d-4c70-4edf-956a-1e8e4779ba10
+title:  Поставщики в модуле  Windows PowerShell Core
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6e24bf6d-4c70-4edf-956a-1e8e4779ba10
 ---
+
 # Поставщики в модуле  Windows PowerShell Core
 В этом разделе содержится справочная информация о поставщиках Windows PowerShell в модуле **Microsoft.PowerShell.Core**.
 
-Поставщики Windows PowerShell — это программы .NET, которые предоставляют пользователям Windows PowerShell доступ к данным, содержащимся в специализированных хранилищах, позволяя легко просматривать эти данные и управлять ими. Данные, предлагаемые поставщиком, представлены на диске аналогично тому, как представлены данные в файловой системе на диске. Дополнительные сведения см. в разделе [about_Providers [v4]](https://technet.microsoft.com/en-us/library/2d9b3f32-be78-49ad-a547-21231c803242)..
+Поставщики Windows PowerShell — это программы .NET, которые предоставляют пользователям Windows PowerShell доступ к данным, содержащимся в специализированных хранилищах, позволяя легко просматривать эти данные и управлять ими. Данные, предлагаемые поставщиком, представлены на диске аналогично тому, как представлены данные в файловой системе на диске. Дополнительные сведения см. в разделе [about_Providers [v4]](https://technet.microsoft.com/en-us/library/2d9b3f32-be78-49ad-a547-21231c803242).
 
 |Поставщик|Описание|
 |------------|---------------|
@@ -22,7 +25,7 @@ ms.assetid: 6e24bf6d-4c70-4edf-956a-1e8e4779ba10
 |[Поставщик Variable [v3]](https://technet.microsoft.com/en-us/library/78dbcbbd-7946-4b9b-b75b-146f247f821c)|Предоставляет доступ к переменным Windows PowerShell и их значениям.|
 
 ## См. также
-[Поставщик Certificate [v3]](https://technet.microsoft.com/en-us/library/3f743541-d0c6-4670-809a-b16fb01f7c4d)
+[Сертификат поставщика [v3]](https://technet.microsoft.com/en-us/library/3f743541-d0c6-4670-809a-b16fb01f7c4d)
 [Поставщик WSMan [v3]](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)
 [about_Providers [v4]](https://technet.microsoft.com/en-us/library/2d9b3f32-be78-49ad-a547-21231c803242)
 [Модуль Microsoft.PowerShell.Core](Microsoft.PowerShell.Core-Module.md)

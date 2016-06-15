@@ -1,16 +1,19 @@
 ---
-title: Требования к системе для Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
+title:  Требования к системе для Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
 ---
+
 # Требования к системе для Windows PowerShell
 В этой статье описаны системные требования для Windows PowerShell 3.0 и Windows PowerShell 4.0, а также специальные функции, такие как интегрированная среда сценариев (ISE) Windows PowerShell, команды CIM и рабочие процессы.
 
-WindowsÂ® 8.1 и ServerÂ Windows® 2012 R2 включают все необходимые программы. Эта статья предназначена для пользователей более ранних версий Windows.
+Windows® 8.1 и Windows Server® 2012 R2 включают все необходимые программы. Эта статья предназначена для пользователей более ранних версий Windows.
 
 ## Требования к операционной системе
 Windows PowerShell 4.0 выполняется в следующих версиях Windows:
@@ -19,9 +22,9 @@ Windows PowerShell 4.0 выполняется в следующих верси�
 
 -   Windows Server 2012 R2, устанавливается по умолчанию
 
--   WindowsÂ® 7 с пакетом обновления 7 (SP1), установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) для запуска Windows PowerShell 4.0
+-   Windows® 7 с пакетом обновления 1 (SP1), установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) для запуска Windows PowerShell 4.0
 
--   Windows ServerÂ® 2008 R2 с пакетом обновления 7 (SP1), установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) для запуска Windows PowerShell 4.0
+-   Windows Server® 2008 R2 с пакетом обновления 1 (SP1), установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) для запуска Windows PowerShell 4.0
 
 Windows PowerShell 3.0 выполняется в следующих версиях Windows:
 
@@ -29,9 +32,9 @@ Windows PowerShell 3.0 выполняется в следующих верси�
 
 -   Windows Server 2012, устанавливается по умолчанию
 
--   WindowsÂ® 7 с пакетом обновления 7 (SP1), установите [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) для запуска Windows PowerShell 3.0
+-   Windows® 7 с пакетом обновления 1 (SP1), установите [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) для запуска Windows PowerShell 3.0
 
--   Windows ServerÂ® 2008 R2 с пакетом обновления 7 (SP1), установите [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) для запуска Windows PowerShell 3.0
+-   Windows Server® 2008 R2 с пакетом обновления 1 (SP1), установите [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) для запуска Windows PowerShell 3.0
 
 -   Windows Server 2008 R2 с пакетом обновления 2, установите [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) для запуска Windows PowerShell 3.0
 
@@ -74,7 +77,7 @@ Windows PowerShell — это основанное на консоли прил
 
     1.  Параметр **ShowWindow** командлета [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a).
 
-    2.  Параметр **ShowSecurityDescriptorUi** командлетов [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) и [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea).
+    2.  Параметр **ShowSecurityDescriptorUI** командлетов [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) и [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea).
 
 ## Требования к подсистеме Windows PowerShell
 Windows PowerShell 4.0 предназначен для обратной совместимости с Windows PowerShell 3.0 и Windows PowerShell 2.0. Командлеты, поставщики, оснастки, модули и сценарии, написанные для Windows PowerShell 2.0 и Windows PowerShell 3.0, выполняются в Windows PowerShell 4.0 без изменений.
@@ -83,7 +86,7 @@ Windows PowerShell 4.0 предназначен для обратной сов�
 
 Подсистеме Windows PowerShell 2.0 требуется Microsoft .NET Framework версии не ниже 2.0.50727. Этому требованию удовлетворяет Microsoft .NET Framework 3.5 с пакетом обновления 1 (SP1). Этому требованию не удовлетворяет Microsoft .NET Framework 4 и более поздних версий.
 
-Дополнительные сведения о добавлении или установке подсистемы Windows PowerShell 2.0 и требуемых версий Microsoft .NET Framework см. в статье [Установка подсистемы Windows PowerShell 2.0](Installing-the-Windows-PowerShell-2.0-Engine.md). Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md)..
+Дополнительные сведения о добавлении или установке подсистемы Windows PowerShell 2.0 и требуемых версий Microsoft .NET Framework см. в статье [Установка подсистемы Windows PowerShell 2.0](Installing-the-Windows-PowerShell-2.0-Engine.md). Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md).
 
 ## Среда предустановки Windows
 Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 выполняются в среде предустановки Windows (Windows PE). Однако не поддерживаются следующие командлеты:
@@ -92,18 +95,20 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 вы
 
 -   [Get-EventLog](https://technet.microsoft.com/en-us/library/b4985b11-82bf-487d-928d-becd96fc0419)
 
--   [Get-WinEvent[PSITPro5_Diagnostic]](https://technet.microsoft.com/en-us/library/5fe94870-ed6b-4ce2-9500-93846cc65c95)
+-   [Get-WinEvent](https://technet.microsoft.com/en-us/library/5fe94870-ed6b-4ce2-9500-93846cc65c95)
 
 -   [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa)
 
 -   [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545)
 
-Кроме того, в Windows PE отсутствует служба **WinRm**.
+Кроме того, в Windows PE отсутствует служба **WinRM**.
 
 ## См. также
 [Начало работы с Windows PowerShell](../getting-started/Getting-Started-with-Windows-PowerShell.md)
+
 [Установка Windows PowerShell](Installing-Windows-PowerShell.md)
-[Запуск Windows PowerShell [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+
+[Запуск Windows PowerShell](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 
 
 

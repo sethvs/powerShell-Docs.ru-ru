@@ -1,12 +1,15 @@
 ---
-title: Объект ISEAddOnTool
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
+title:  Объект ISEAddOnTool
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
 ---
+
 # Объект ISEAddOnTool
   Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев ISE. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Показать настройку Command**. После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
 
@@ -164,7 +167,8 @@ Commands
  [Объект ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
  [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
  [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
- [Иерархия объектных моделей интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+ [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+
 
 
 <!--HONumber=May16_HO2-->

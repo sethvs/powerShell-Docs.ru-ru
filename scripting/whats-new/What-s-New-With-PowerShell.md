@@ -1,3 +1,14 @@
+---
+title:  Новые возможности PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Новые возможности PowerShell
 Windows PowerShell® 5.0 включает несколько важных новых функций, расширяющих возможности использования и позволяющих более просто и полно контролировать среды на основе Windows и управлять ими.
 
@@ -16,6 +27,7 @@ Windows PowerShell 5.0 устанавливается по умолчанию �
 
 -   New features in Windows PowerShell 3.0
 -->
+
 
 
 <!--HONumber=May16_HO2-->
