@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/0dc83a1b69f26a25874c819a2f3a027ed7966895/dsc/secureMOF.md) | InSyncHandedBackSuccess | [Details](#f0aed5bb627825b74fe4df29cbe2f0bc53f90c2385)
 
 ## Item Details
+##### <a name='f0aed5bb627825b74fe4df29cbe2f0bc53f90c2385'></a> Source: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs/blob/0dc83a1b69f26a25874c819a2f3a027ed7966895/dsc/secureMOF.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/bbdc7b21641ce12f49e65a2f4801fa0e817e593d/dsc/secureMOF.md)
+* Handoff File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/d6c15adecc8796c624285eac46f6cfaa4209c6d4/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
+* Handoff Datetime: 2016-06-07 18:33:13
+* Handoff Reason: Include
+* Archive File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/034a49f89628785e00d7789cda6f3d2791cc8f1e/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
+* Archive Datetime: 2016-06-14 13:17:31
+* Handback File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/8f7c8ab631266bbafa0dc9268bcc693fc041e8fc/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ru-ru.xlf)
+* Handback Datetime: 2016-06-15 14:15:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
