@@ -30,10 +30,10 @@
 #### [Ресурс на основе MOF-файла в C#](authoringResourceMofCS.md)
 ### [Настраиваемые ресурсы на основе классов](authoringResourceClass.md)
 ### [Составные ресурсы](authoringResourceComposite.md)
-### [Отладка ресурсов DSC](debugResource.md)
-### [Прямой вызов методов ресурсов DSC](directCallResource.md)
 ### [Запись ресурса DSC с одним экземпляром (рекомендуется)](singleInstance.md)
 ### [Контрольный список для создания ресурсов](resourceAuthoringChecklist.md)
+## [Отладка ресурсов DSC](debugResource.md)
+## [Прямой вызов методов ресурсов DSC](directCallResource.md)
 
 # [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
 ## [Настройка LCM в PowerShell 4.0](metaConfig4.md)
@@ -91,6 +91,6 @@
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 
