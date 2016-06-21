@@ -543,8 +543,8 @@
 * Archive Datetime: 2016-06-21 13:13:46
 * Handback File: [configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/346963a420a679108e611e0cb8e9799b0b84881b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf)
 * Handback Datetime: 2016-06-21 15:06:26
-* Bilingual File: [configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/052944758ac02f768f7d3f0016a61a087158d11c/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-16 14:33:12
+* Bilingual File: [configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/346963a420a679108e611e0cb8e9799b0b84881b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/configData.51d01a46dd9af8b425788cc485523b09f8470b95.ru-ru.xlf)
+* Bilingual Datetime: 2016-06-21 15:08:09
 * [Back to Top](#report-top)
 
 ##### <a name='a750fb208e73ce2ebffb2fa86a55c825169d8ad814'></a> Source: [dsc\configDataCredentials.md](https://github.com/PowerShell/powerShell-Docs/blob/6477ae8575c83fc24150f9502515ff5b82bc8198/dsc/configDataCredentials.md)
@@ -1628,8 +1628,8 @@
 * Archive Datetime: 2016-06-21 13:13:46
 * Handback File: [TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/346963a420a679108e611e0cb8e9799b0b84881b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf)
 * Handback Datetime: 2016-06-21 15:06:26
-* Bilingual File: [TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/052944758ac02f768f7d3f0016a61a087158d11c/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-16 14:33:12
+* Bilingual File: [TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/346963a420a679108e611e0cb8e9799b0b84881b/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ru-ru.xlf)
+* Bilingual Datetime: 2016-06-21 15:08:09
 * [Back to Top](#report-top)
 
 ##### <a name='95e75bd95552a9bcfa41adee74ef5ceacb3ea33b91'></a> Source: [dsc\troubleshooting.md](https://github.com/PowerShell/powerShell-Docs/blob/6477ae8575c83fc24150f9502515ff5b82bc8198/dsc/troubleshooting.md)
