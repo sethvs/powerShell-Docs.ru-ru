@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [wmf\requirements.md](https://github.com/PowerShell/powerShell-Docs/blob/02b9b25c505adbf49630145bc0543d6436edae0b/wmf/requirements.md) | InSyncHandedBackSuccess | [Details](#02ce3d08b01e58d6d9506f90142f92cc16304e64318)
 
 ## Item Details
-##### <a name='02ce3d08b01e58d6d9506f90142f92cc16304e64318'></a> Source: [wmf\requirements.md](https://github.com/PowerShell/powerShell-Docs/blob/02b9b25c505adbf49630145bc0543d6436edae0b/wmf/requirements.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [wmf\requirements.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/2c69cdd1dc4fb1f796c219115aaf26a6ed946943/wmf/requirements.md)
-* Handoff File: [requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/cf9999f148177e2870a5551bfb778210a1dbfa27/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf)
-* Handoff Datetime: 2016-03-23 21:11:48
-* Handoff Reason: Include
-* Archive File: [requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/46e90bfd2ec3cfd27d208ce17bcf771e2bf85cd9/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf)
-* Archive Datetime: 2016-03-29 13:12:06
-* Handback File: [requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/2a52bb977e7c3999f62134094336892578425a81/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf)
-* Handback Datetime: 2016-06-22 18:59:01
-* Bilingual File: [requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/2a52bb977e7c3999f62134094336892578425a81/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/requirements.ef8332f358d65b1759bfd4c7336b11d1dc8c2d46.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-22 19:00:37
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
