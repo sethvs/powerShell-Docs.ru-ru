@@ -37,6 +37,6 @@ Test-DscConfiguration   -ReferenceConfiguration <string>
 ```
 
 
-<!--HONumber=Mar16_HO5-->
+<!--HONumber=Jun16_HO4-->
 
 

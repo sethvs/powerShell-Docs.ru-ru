@@ -15,4 +15,8 @@ Compress-Archive [-Path] <String[]> [-DestinationPath] <String> [-Update] [-Comp
 Expand-Archive -LiteralPath <String> [-DestinationPath] <String>
 Expand-Archive [-Path] <String> [-DestinationPath] <String>
 ```
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

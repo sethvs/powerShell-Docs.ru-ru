@@ -1,12 +1,16 @@
 ---
-title:   Ресурс Script в DSC
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Ресурс Script в DSC"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 801a0491746c17061d14d6d4938e7182650f6ff3
+
 ---
 
 # Ресурс Script в DSC
@@ -91,6 +95,7 @@ Script UpdateConfigurationVersion
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,20 +1,23 @@
 ---
-title:   Конфигурации DSC
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Конфигурации DSC"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 29676d0bf51adf9176753d0056efe76687a40600
+
 ---
 
 # Конфигурации DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Конфигурации DSC — это сценарии PowerShell, определяющие особый тип функции. 
-Для определения конфигурации используйте ключевое слово PowerShell __Configuration__.
+Конфигурации DSC — это сценарии PowerShell, определяющие особый тип функции. Для определения конфигурации используйте ключевое слово PowerShell __Configuration__.
 
 ```powershell
 Configuration MyDscConfiguration {
@@ -121,8 +124,7 @@ Configuration DependsOnExample {
 
 ## Использование новых ресурсов в конфигурации
 Выполняя предыдущие примеры, вы могли заметить предупреждение о том, что используемый ресурс не импортирован.
-Сейчас DSC поставляется с модулем PSDesiredStateConfiguration, в который входят 12 ресурсов. Другие ресурсы во внешних модулях необходимо добавлять в `$env:PSModulePath` в том порядке, в котором LCM должен будет их распознать. Определить, какие ресурсы установлены в системе и доступны для использования LCM, позволяет новый командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx). 
-После добавления в `$env:PSModulePath` и правильного распознавания командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) эти модули нужно будет загрузить в конфигурацию. __Import-DscResource__ — это динамическое ключевое слово, распознаваемое только в блоке __Configuration__ (т. е. оно не является командлетом). __Import-DscResource__ поддерживает два параметра:
+Сейчас DSC поставляется с модулем PSDesiredStateConfiguration, в который входят 12 ресурсов. Другие ресурсы во внешних модулях необходимо добавлять в `$env:PSModulePath` в том порядке, в котором LCM должен будет их распознать. Определить, какие ресурсы установлены в системе и доступны для использования LCM, позволяет новый командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx). После добавления в `$env:PSModulePath` и правильного распознавания командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) эти модули нужно будет загрузить в конфигурацию. __Import-DscResource__ — это динамическое ключевое слово, распознаваемое только в блоке __Configuration__ (т. е. оно не является командлетом). __Import-DscResource__ поддерживает два параметра:
 * Параметр __ModuleName__ — рекомендуемый способ применения __Import-DscResource__. Он принимает имя модуля, содержащего ресурсы для импорта (а также массив строк с именами модулей). 
 * Параметр __Name__ — имя импортируемого ресурса. Это не то понятное имя, которое возвращается командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), а имя класса, используемое при определении схемы ресурса (возвращается как параметр __ResourceType__ командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)). 
 
@@ -133,6 +135,7 @@ Configuration DependsOnExample {
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,12 +1,16 @@
 ---
-title:   Отладка ресурсов DSC
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Отладка ресурсов DSC"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: f5290e085c8949f6b3cdf23f3244a7142da6248d
+
 ---
 
 # Отладка ресурсов DSC
@@ -18,8 +22,7 @@ ms.prod:  powershell
 ## Включение отладки DSC
 Перед отладкой ресурса необходимо включить отладку с помощью командлета [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx). Он принимает обязательный параметр **BreakAll**. 
 
-Убедитесь, что отладка включена, вызвав командлет [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) и проверив результат. 
-Следующие выходные данные PowerShell демонстрируют результат включения отладки:
+Убедитесь, что отладка включена, вызвав командлет [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) и проверив результат. Следующие выходные данные PowerShell демонстрируют результат включения отладки:
 
 
 ```powershell
@@ -106,6 +109,7 @@ Debug-Runspace -Id 9
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

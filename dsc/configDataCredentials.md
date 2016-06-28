@@ -1,12 +1,16 @@
 ---
-title:   Параметры учетных данных в данных конфигурации
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Параметры учетных данных в данных конфигурации"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: a750fb208e73ce2ebffb2fa86a55c825169d8ad8
+
 ---
 
 # Параметры учетных данных в данных конфигурации
@@ -197,6 +201,7 @@ $cd = @{
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

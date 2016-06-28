@@ -1,12 +1,16 @@
 ---
-title:   Создание ресурса DSC на языке C`
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Создание ресурса DSC на языке C`"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 644d08a69a8bb70f49e12c1504aa46c4b57a51fc
+ms.openlocfilehash: 991a324945289b2eff0b706d093b2d345352fb15
+
 ---
 
 # Создание ресурса DSC на языке C`#`
@@ -285,6 +289,7 @@ $env: psmodulepath (folder)
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -41,4 +41,8 @@
 Теперь вы можете подключиться к любому процессу на компьютере компьютера, в котором загружен Windows PowerShell. Это можно сделать, перейдя в интерактивный сеанс с процессом, по аналогии со входом в интерактивный удаленный сеанс с помощью командлета Enter-PSSession:
 
 -   Enter-PSHostProcess
--   Exit-PSHostProcess<!--HONumber=Mar16_HO2-->
+-   Exit-PSHostProcess
+
+<!--HONumber=Jun16_HO4-->
+
+
