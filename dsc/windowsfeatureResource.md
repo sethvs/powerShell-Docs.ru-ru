@@ -1,12 +1,16 @@
 ---
-title:   Ресурс WindowsFeature в DSC
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Ресурс WindowsFeature в DSC"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 522dbea958a60f76e98abe32e11e6491ea6d457c
+
 ---
 
 # Ресурс WindowsFeature в DSC
@@ -54,6 +58,7 @@ WindowsFeature RoleExample
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
