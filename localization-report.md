@@ -481,7 +481,7 @@
 * Archive File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/845b12a941d0d119ca18734f51fce56e4da7eaab/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/archive/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
 * Archive Datetime: 2016-06-28 13:30:40
 * Handback File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/5d8464d7d6e6baee1104128adb7814f5dfba596d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
-* Handback Datetime: 2016-06-28 15:47:15
+* Handback Datetime: 2016-06-28 16:17:26
 * Handback Error: [handback_transform_failed](#6631d60d7d82e71c315c26a0196aa3e4c1b60b158handback_transform_failed)
 * Bilingual File: [authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/5d8464d7d6e6baee1104128adb7814f5dfba596d/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf)
 * Bilingual Datetime: 2016-06-16 14:33:12
