@@ -26,9 +26,7 @@
 | r, F                            | PendingReboot        | Успех    | $true         | $null                        | r                              |
 
 ^
-S<sub>i</sub>: ряд ресурсов, которые успешно применены.
-F<sub>i</sub>: ряд ресурсов, которые применены с ошибкой.
-r: ресурс, который требует перезагрузку.
+S<sub>i</sub>: ряд ресурсов, которые успешно применены F<sub>i</sub>: ряд ресурсов, которые применены неудачно r: ресурс, который требует перезагрузку
 \*
 
 ```powershell
@@ -105,4 +103,8 @@ LCM State: Idle,
 LCM State: Busy, LCM is performing a consistency check.
 LCM State: Idle,
 ```
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

@@ -211,7 +211,7 @@ InstalledLocation : C:\\Users\\manikb\\Documents\\WindowsPowerShell\\Scripts
 Installed script file is immediately available for usage.
 ```
 
-Для его получения можно также использовать Get-Command –Name &lt;имя_установленного_файла_сценария&gt;. При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.
+Для его получения можно также использовать Get-Command –Name &lt;InstalledScriptFileName&gt;. При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -676,4 +676,8 @@ PackageManagementProvider : NuGet
 AdditionalMetadata : {description, developmentDependency, tags, PackageManagementProvider...}
 ```
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

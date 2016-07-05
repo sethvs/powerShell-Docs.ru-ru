@@ -1,17 +1,21 @@
 ---
-title:  Сортировка объектов
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  8530caa8-3ed4-4c56-aed7-1295dd9ba199
+title: "Сортировка объектов"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 8530caa8-3ed4-4c56-aed7-1295dd9ba199
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 72d0c66e8fe1c87561af89821e16032f25c3b1b5
+
 ---
 
 # Сортировка объектов
-Можно упорядочить отображаемые данные с помощью командлета **Sort-Object** для упрощения их проверки. **Sort-Object** принимает имя одного или нескольких свойств, по значениям которых выполняется сортировка, и возвращает отсортированные данные.
+Можно упорядочить отображаемые данные с помощью командлета **Sort\-Object** для упрощения их проверки. **Sort\-Object** принимает имя одного или нескольких свойств, по значениям которых выполняется сортировка, и возвращает отсортированные данные.
 
 Рассмотрим проблему перечисления экземпляров Win32\_SystemDriver. Если требуется отсортировать по **State** и затем по **Name**, можно ввести:
 
@@ -53,6 +57,7 @@ Wanarp         Running    True Remote Access IP ARP Driver
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

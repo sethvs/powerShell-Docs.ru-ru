@@ -1,20 +1,24 @@
 ---
-title:  Управление службами
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  7a410e4d-514b-4813-ba0c-0d8cef88df31
+title: "Управление службами"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: a9d6ece1df3b66090b2abf9d85019fee4db946b5
+
 ---
 
 # Управление службами
-Существует восемь основных командлетов Service, предназначенных для широкого спектра задач обслуживания. Мы рассмотрим только вывод и изменение состояния выполнения для служб, но список командлетов Service можно получить с помощью **Get-Help &#42;-Service**, а сведения о каждом из них можно найти с помощью **Get-Help<имя_командлета>**, например **Get-Help New-Service**.
+Существует восемь основных командлетов Service, предназначенных для широкого спектра задач обслуживания. Мы рассмотрим только вывод и изменение состояния выполнения для служб, но список командлетов Service можно получить с помощью **Get\-Help \&#42;\-Service**, а сведения о каждом из них можно найти с помощью **Get\-Help<имя\-командлета>**, например **Get\-Help New\-Service**.
 
 ## Получение служб
-Получить службы на локальном или удаленном компьютере можно с помощью командлета **Get-Service**. Как и в случае с **Get-Process**, использование команды **Get-Service** без параметров возвращает все службы. Можно фильтровать по имени, даже используя звездочку как подстановочный знак:
+Получить службы на локальном или удаленном компьютере можно с помощью командлета **Get\-Service**. Как и в случае с **Get\-Process**, использование команды **Get\-Service** без параметров возвращает все службы. Можно фильтровать по имени, даже используя звездочку как подстановочный знак:
 
 ```
 PS> Get-Service -Name se*
@@ -43,16 +47,16 @@ Running  lanmanserver       Server
 Stopped  ServiceLayer       ServiceLayer
 ```
 
-Параметр ComputerName командлета Get-Service можно использовать для получения служб на удаленных компьютерах. Параметр ComputerName принимает несколько значений и подстановочные знаки, что позволяет получить службы на нескольких компьютерах с помощью одной команды. Например, приведенная ниже команда получает службы на удаленном компьютере Server01.
+Параметр ComputerName командлета Get\-Service можно использовать для получения служб на удаленных компьютерах. Параметр ComputerName принимает несколько значений и подстановочные знаки, что позволяет получить службы на нескольких компьютерах с помощью одной команды. Например, приведенная ниже команда получает службы на удаленном компьютере Server01.
 
 ```
 Get-Service -ComputerName Server01
 ```
 
 ## Получение необходимых и зависимых служб
-Командлет Get-Service имеет два параметра, которые удобно использовать при администрировании служб. Параметр DependentServices получает службы, которые зависят от данной службы. Параметр RequiredServices получает службы, от которых зависит данная служба.
+Командлет Get\-Service имеет два параметра, которые удобно использовать при администрировании служб. Параметр DependentServices получает службы, которые зависят от данной службы. Параметр RequiredServices получает службы, от которых зависит данная служба.
 
-Эти параметры просто отображают значения свойств DependentServices и ServicesDependedOn (псевдоним RequiredServices) объекта System.ServiceProcess.ServiceController, возвращаемого Get-Service, но они упрощают работу с командами и получение этой информации.
+Эти параметры просто отображают значения свойств DependentServices и ServicesDependedOn (псевдоним\=RequiredServices) объекта System.ServiceProcess.ServiceController, возвращаемого Get\-Service, но они упрощают работу с командами и получение этой информации.
 
 Приведенная ниже команда получает службы, необходимые службе LanmanWorkstation.
 
@@ -78,7 +82,7 @@ Stopped  Browser            Computer Browser
 Running  BITS               Background Intelligent Transfer Ser...
 ```
 
-Вы даже можете получить все службы, имеющие зависимости. Следующая команда делает именно это, а затем она использует командлет Format-Table для отображения свойств Status, Name, RequiredServices и DependentServices для служб на компьютере.
+Вы даже можете получить все службы, имеющие зависимости. Следующая команда делает именно это, а затем она использует командлет Format\-Table для отображения свойств Status, Name, RequiredServices и DependentServices для служб на компьютере.
 
 ```
 Get-Service -Name * | where {$_.RequiredServices -or $_.DependentServices} | Format-Table -Property Status, Name, RequiredServices, DependentServices -auto
@@ -103,7 +107,7 @@ Start-Service -Name spooler
 Suspend-Service -Name spooler
 ```
 
-Командлет **Restart-Service** работает так же, как другие командлеты Service, но для него будет приведено несколько более сложных примеров. В самом простом случае указывается имя службы:
+Командлет **Restart\-Service** работает так же, как другие командлеты Service, но для него будет приведено несколько более сложных примеров. В самом простом случае указывается имя службы:
 
 ```
 PS> Restart-Service -Name spooler
@@ -128,16 +132,16 @@ WARNING: Waiting for service 'Print Spooler (Spooler)' to finish starting...
 WARNING: Waiting for service 'Print Spooler (Spooler)' to finish starting...
 ```
 
-У этих командлетов Service нет параметра ComputerName, но их можно выполнить на удаленном компьютере с помощью командлета Invoke-Command. Например, приведенная ниже команда перезапускает службу очередь печати принтера на удаленном компьютере Server01.
+У этих командлетов Service нет параметра ComputerName, но их можно выполнить на удаленном компьютере с помощью командлета Invoke\-Command. Например, приведенная ниже команда перезапускает службу очередь печати принтера на удаленном компьютере Server01.
 
 ```
 Invoke-Command -ComputerName Server01 {Restart-Service Spooler}
 ```
 
 ## Задание свойств служб
-Командлет Set-Service изменяет свойства службы на локальном или удаленном компьютере. Так как состояние службы является свойством, этот командлет можно использовать для запуска, остановки и приостановки службы. Командлет Set-Service также имеет параметр StartupType, позволяющий изменять тип запуска службы.
+Командлет Set\-Service изменяет свойства службы на локальном или удаленном компьютере. Так как состояние службы является свойством, этот командлет можно использовать для запуска, остановки и приостановки службы. Командлет Set\-Service также имеет параметр StartupType, позволяющий изменять тип запуска службы.
 
-Чтобы использовать командлет Set-Service в Windows Vista и более поздних версиях Windows, откройте среду Windows PowerShell, используя параметр "Запуск от имени администратора".
+Чтобы использовать командлет Set\-Service в Windows Vista и более поздних версиях Windows, откройте среду Windows PowerShell, используя параметр "Запуск от имени администратора".
 
 Дополнительные сведения см. в статье [Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3).
 
@@ -149,6 +153,7 @@ Invoke-Command -ComputerName Server01 {Restart-Service Spooler}
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

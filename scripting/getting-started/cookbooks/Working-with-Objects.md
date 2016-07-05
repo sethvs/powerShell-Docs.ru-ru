@@ -1,22 +1,27 @@
 ---
-title:  Работа с объектами
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  7ecc94a4-015c-4459-ae58-85289ea09030
+title: "Работа с объектами"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 7ecc94a4-015c-4459-ae58-85289ea09030
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: a25734261fdcf657d0b97b1f037580f89b04881d
+
 ---
 
 # Работа с объектами
-Мы рассмотрели, как Windows PowerShell использует объекты для передачи данных между командлетами, и продемонстрировали несколько способов для получения сведений об объектах, используя командлеты Get-Member и Format для просмотра определенных свойств объектов.
+Мы рассмотрели, как Windows PowerShell использует объекты для передачи данных между командлетами, и продемонстрировали несколько способов для получения сведений об объектах, используя командлеты Get\-Member и Format для просмотра определенных свойств объектов.
 
 Преимущество объектов в том, что они предоставляют доступ к большому количеству сложных данных, которые уже связаны между собой. Применив несколько простых методик, вы можете расширить спектр операций с объектами и выполнять больше задач. В этой главе мы рассмотрим некоторые типы объектов и способы работы с ними.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

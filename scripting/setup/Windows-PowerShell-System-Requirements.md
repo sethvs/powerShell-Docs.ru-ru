@@ -1,13 +1,17 @@
 ---
-title:  Требования к системе для Windows PowerShell
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
+title: "Требования к системе для Windows PowerShell"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
+translationtype: Human Translation
+ms.sourcegitcommit: 1ae9150b226147c039acf0738690de4da8686a71
+ms.openlocfilehash: e2e129c1c90ab7561861a7d9c71fb654569d5712
+
 ---
 
 # Требования к системе для Windows PowerShell
@@ -43,12 +47,12 @@ Windows PowerShell 4.0 требует полной установки Microsoft
 
 Windows PowerShell 3.0 требует полной установки Microsoft .NET Framework 4. Windows 8 и Windows Server 2012 содержат Microsoft .NET Framework 4.5 по умолчанию, что удовлетворяет этому требованию.
 
-Для установки Microsoft .NET Framework 4.5 (dotNetFx45_Full_setup.exe) см. статью [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkID=242919) в Центре загрузки Майкрософт.
+Для установки Microsoft .NET Framework 4.5 (dotNetFx45Fullsetup\_Full\_setup.exe) см. статью [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkID=242919) в Центре загрузки Майкрософт.
 
-Для установки полной версии Microsoft .NET Framework 4 (dotNetFx40_Full_setup.exe) см. статью [Microsoft .NET Framework 4 (веб-установщик)](http://go.microsoft.com/fwlink/?LinkID=212931) в Центре загрузки Майкрософт.
+Для установки полной версии Microsoft .NET Framework 4 (dotNetFx40Fullsetup\_Full\_setup.exe) см. статью [Microsoft .NET Framework 4 (веб-установщик)](http://go.microsoft.com/fwlink/?LinkID=212931) в Центре загрузки Майкрософт.
 
-## WS-Management 3.0
-Windows PowerShell 3.0 и Windows PowerShell 4.0 требуют наличия WS-Management 3.0, поддерживающей службу WinRM и протокол WSMan. Эта программа входит в Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 и Windows Management Framework 3.0.
+## WS\-Management 3.0
+Windows PowerShell 3.0 и Windows PowerShell 4.0 требуют наличия WS\-Management 3.0, поддерживающей службу WinRM и протокол WSMan. Эта программа входит в Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 и Windows Management Framework 3.0.
 
 ## Инструментарий управления Windows 3.0
 Windows PowerShell 3.0 и Windows PowerShell 4.0 требуют инструментарий управления Windows (WMI) 3.0. Эта программа входит в Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 и Windows Management Framework 3.0. Если эта программа не установлена на компьютере, компоненты, нуждающиеся в инструментарии WMI, например команды CIM, не выполняются.
@@ -57,7 +61,7 @@ Windows PowerShell 3.0 и Windows PowerShell 4.0 требуют инструм
 Windows PowerShell 3.0 и Windows PowerShell 4.0 компилируются для среды CLR 4.0.
 
 ## Требования к графическому пользовательскому интерфейсу
-Windows PowerShell — это основанное на консоли приложение, для работы которого не требуется графический пользовательский интерфейс. Поэтому оно хорошо подходит для компьютеров без экранов или мониторов либо пользовательского интерфейса, таких как Windows Server 2012 R2 или Windows Server 2012, с установкой основных серверных компонентов.
+Windows PowerShell — это основанное на консоли\-приложение, для работы которого не требуется графический пользовательский интерфейс. Поэтому оно хорошо подходит для компьютеров без экранов или мониторов либо пользовательского интерфейса, таких как Windows Server 2012 R2 или Windows Server 2012, с установкой основных серверных компонентов.
 
 Однако некоторым элементам, например приведенным ниже, графический пользовательский интерфейс необходим. Дополнительные сведения см. в разделе справки для каждого элемента.
 
@@ -80,7 +84,7 @@ Windows PowerShell — это основанное на консоли прил
     2.  Параметр **ShowSecurityDescriptorUI** командлетов [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) и [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea).
 
 ## Требования к подсистеме Windows PowerShell
-Windows PowerShell 4.0 предназначен для обратной совместимости с Windows PowerShell 3.0 и Windows PowerShell 2.0. Командлеты, поставщики, оснастки, модули и сценарии, написанные для Windows PowerShell 2.0 и Windows PowerShell 3.0, выполняются в Windows PowerShell 4.0 без изменений.
+Windows PowerShell 4.0 предназначен для обратной совместимости с Windows PowerShell 3.0 и Windows PowerShell 2.0. Командлеты, поставщики, оснастки\-, модули и сценарии, написанные для Windows PowerShell 2.0, выполняются и в Windows PowerShell 3.0, и Windows PowerShell 4.0 без изменений.
 
 Однако из-за изменений в политике активации среды выполнения в Microsoft .NET Framework 4 основные программы Windows PowerShell, написанные для Windows PowerShell 2.0 и скомпилированные с помощью среды CLR 2.0, не могут выполняться без изменения в Windows PowerShell 3.0, которые компилируются в среде CLR 4.0.
 
@@ -112,6 +116,7 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 вы
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

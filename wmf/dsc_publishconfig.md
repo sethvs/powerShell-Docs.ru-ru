@@ -1,10 +1,9 @@
 # Доставка документа конфигурации без применения
 
-Командлет **Publish-DscConfiguration** копирует MOF-файл на целевой узел без применения конфигурации. Она применяется во время следующей проверки согласованности или при запуске командлета `Update-DscConfiguration`.
+Командлет [Publish-DscConfiguration](https://technet.microsoft.com/library/mt517875.aspx) копирует MOF-файл на целевой узел без применения конфигурации. Конфигурация применяется во время следующей проверки согласованности или при запуске командлета [Update-DscConfiguration](https://technet.microsoft.com/library/mt143541.aspx).
 
-```powershell
-Publish-DscConfiguration [-Path] <string> [[-ComputerName] <string[]>] [-Force] [-Credential <pscredential>] [-ThrottleLimit <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
 
-Publish-DscConfiguration [-Path] <string> -CimSession <CimSession[]> [-Force] [-ThrottleLimit <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-<!--HONumber=Mar16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
+
+

@@ -38,8 +38,11 @@
 - Установлен самый последний пакет обновления.
 - Установлен [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855).
 
-*Зависимость от WinRM.*
-Служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, запустите **Set-WSManQuickConfig** в сеансе с повышенными привилегиями Windows PowerShell.
+*Зависимость от WinRM:* служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, запустите **Set-WSManQuickConfig** в сеансе с повышенными привилегиями Windows PowerShell.
 
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

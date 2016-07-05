@@ -1,12 +1,16 @@
 ---
-title:  Устранение неполадок с доступом в Windows PowerShell Web Access
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
+title: "Устранение неполадок с доступом в Windows PowerShell Web Access"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 6366ec9c49f721b758b6a520f68cf2b3c5ee0caf
+
 ---
 
 #  Устранение неполадок с доступом в Windows PowerShell Web Access
@@ -65,7 +69,7 @@ ms.prod:  powershell
 </tr>
 <tr class="odd">
 <td><p>Невозможно подключиться к удаленному компьютеру в рабочей группе</p></td>
-<td><p>Если целевой компьютер входит в рабочую группу, используйте следующий синтаксис, чтобы указать имя пользователя и войти на компьютер: &lt;<em>имя_рабочей_группы</em>&gt;\&lt;<em> имя_пользователя.</em>&gt;</p></td>
+<td><p>Если целевой компьютер входит в рабочую группу, используйте следующий синтаксис, чтобы указать имя пользователя и войти на компьютер: &lt;<em>имя_рабочей_группы</em>&gt;\&lt;<em>имя_пользователя</em>&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Невозможно найти инструменты управления веб-сервера (IIS), даже если роль была установлена</p></td>
@@ -192,6 +196,7 @@ ms.prod:  powershell
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
