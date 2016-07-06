@@ -1,13 +1,17 @@
 ---
-title:  Списки с множественным выбором
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  f74cd5d9-da57-4802-b614-0b194a7bc8f8
+title: "Списки с множественным выбором"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: f74cd5d9-da57-4802-b614-0b194a7bc8f8
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 84030be8564e10ce33e15c21f41bda79ea8fad7d
+
 ---
 
 # Списки с множественным выбором
@@ -186,6 +190,7 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

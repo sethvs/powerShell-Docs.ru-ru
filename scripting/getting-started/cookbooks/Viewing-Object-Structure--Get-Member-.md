@@ -1,19 +1,23 @@
 ---
-title:  Просмотр структуры объектов с помощью Get-Member 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a1819ed2-2ef3-453a-b2b0-f3589c550481
+title: "Просмотр структуры объектов с помощью Get-Member"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8cd074bc4314aeb8d50fa31d74d9a1b2d2a37469
+
 ---
 
 # Просмотр структуры объектов (Get-Member)
-Поскольку объекты играют ключевую роль в Windows PowerShell, существует несколько собственных команд для работы с произвольными типами объектов. Наиболее важной является команда **Get-Member**.
+Поскольку объекты играют ключевую роль в Windows PowerShell, существует несколько собственных команд для работы с произвольными типами объектов. Наиболее важной является команда **Get\-Member**.
 
-Объекты, возвращаемые командой, проще всего проанализировать, передав ее выходные данные в командлет **Get-Member**. Командлет **Get-Member** показывает формальное имя типа объекта и полный список его элементов. Количество возвращаемых элементов иногда может быть просто огромным. Например, объект процесса может иметь более ста элементов.
+Объекты, возвращаемые командой, проще всего проанализировать, передав ее выходные данные в командлет **Get\-Member**. Командлет **Get\-Member** показывает формальное имя типа объекта и полный список его элементов. Количество возвращаемых элементов иногда может быть просто огромным. Например, объект процесса может иметь более ста элементов.
 
 Чтобы просмотреть все элементы объекта процесса и вывести все выходные данные, введите:
 
@@ -38,7 +42,7 @@ add_Disposed                   Method         System.Void add_Disposed(Event...
 ...
 ```
 
-Этот длинный перечень сведений можно сделать гораздо удобнее, отфильтровав нужные элементы. Команда **Get-Member** позволяет вывести только те элементы, которые являются свойствами. Существует несколько форм свойств. Командлет отображает свойства любого типа, если для параметра **Get-MemberMemberType** задано значение **Properties**. Полученный список по-прежнему очень длинный, но работать с ним немного удобнее:
+Этот длинный перечень сведений можно сделать гораздо удобнее, отфильтровав нужные элементы. Команда **Get\-Member** позволяет вывести только те элементы, которые являются свойствами. Существует несколько форм свойств. Командлет отображает свойства любого типа, если для параметра **Get\-MemberMemberType** задано значение **Properties**. Полученный список по-прежнему очень длинный, но работать с ним немного удобнее:
 
 ```
 PS> Get-Process | Get-Member -MemberType Properties
@@ -60,7 +64,8 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 ...
 ```
 
-> [!NOTE] Для MemberType разрешены следующие значения: AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet и All.
+> [!NOTE]
+> Для MemberType разрешены следующие значения: AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet и All.
 
 Для процесса существует более шестидесяти свойств. Windows PowerShell часто показывает лишь небольшое число свойств для известного объекта, так как в противном случае выдается не поддающийся управлению объем информации.
 
@@ -71,6 +76,7 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

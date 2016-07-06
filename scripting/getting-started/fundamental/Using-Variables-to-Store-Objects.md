@@ -1,13 +1,17 @@
 ---
-title:  Использование переменных для хранения объектов
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  b1688d73-c173-491e-9ba6-6d0c1cc852de
+title: "Использование переменных для хранения объектов"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c3bcf9dc6f70383e971d9c1ae75ec78860111de9
+
 ---
 
 # Использование переменных для хранения объектов
@@ -39,7 +43,7 @@ Path
 C:\temp
 ```
 
-**Get-Member** можно использовать для отображения сведений о содержимом переменных. Передача $loc в Get-Member покажет, что это объект **PathInfo**, так же как и выходные данные Get-Location:
+**Get\-Member** можно использовать для отображения сведений о содержимом переменных. Передача $loc в Get\-Member покажет, что это объект **PathInfo**, так же как и выходные данные Get\-Location:
 
 ```
 PS> $loc | Get-Member -MemberType Property
@@ -61,7 +65,7 @@ Windows PowerShell предоставляет несколько команд д
 Get-Command -Noun Variable | Format-Table -Property Name,Definition -AutoSize -Wrap
 ```
 
-Кроме переменных, создаваемых в текущем сеансе Windows PowerShell, существует несколько системных переменных. Можно использовать командлет **Remove-Variable**, чтобы очистить все переменные, которые не управляются Windows PowerShell. Введите следующую команду для очистки всех переменных:
+Кроме переменных, создаваемых в текущем сеансе Windows PowerShell, существует несколько системных переменных. Можно использовать командлет **Remove\-Variable**, чтобы очистить все переменные, которые не управляются Windows PowerShell. Введите следующую команду для очистки всех переменных:
 
 ```
 Remove-Variable -Name * -Force -ErrorAction SilentlyContinue
@@ -77,7 +81,7 @@ Performing operation "Remove Variable" on Target "Name: Error".
 (default is "Y"):A
 ```
 
-Если вы запустите командлет **Get-Variable**, то увидите остальные переменные Windows PowerShell. Поскольку существует и переменный диск Windows PowerShell, можно также отобразить все переменные Windows PowerShell, введя следующее:
+Если вы запустите командлет **Get\-Variable**, то увидите остальные переменные Windows PowerShell. Поскольку существует и переменный диск Windows PowerShell, можно также отобразить все переменные Windows PowerShell, введя следующее:
 
 ```
 Get-ChildItem variable:
@@ -90,7 +94,7 @@ Get-ChildItem variable:
 Get-ChildItem env:
 ```
 
-Хотя стандартные командлеты переменных не предназначены для работы с переменными **env:**, их все равно можно использовать, указав префикс **env:**. Например, для просмотра корневого каталога операционной системы можно использовать переменную **% SystemRoot %** командной оболочки из Windows PowerShell, введя следующее:
+Хотя стандартные командлеты переменных не предназначены для работы с переменными **env:**, их все равно можно использовать, указав префикс **env:**. Например, для просмотра корневого каталога операционной системы можно использовать переменную **%SystemRoot%** командной оболочки из Windows PowerShell, введя следующее:
 
 ```
 PS> $env:SystemRoot
@@ -101,6 +105,7 @@ C:\WINDOWS
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,13 +1,17 @@
 ---
-title:  Приложение 2. Создание настраиваемого ярлыка PowerShell
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  5d4fd421-5d43-4ec7-86fd-acfe887b066e
+title: "Приложение 2. Создание настраиваемого ярлыка PowerShell"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 24e9b67cf51b99156db3f0bdfb446996b9d3df76
+
 ---
 
 # Приложение 2. Создание настраиваемого ярлыка PowerShell
@@ -41,6 +45,7 @@ ms.assetid:  5d4fd421-5d43-4ec7-86fd-acfe887b066e
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

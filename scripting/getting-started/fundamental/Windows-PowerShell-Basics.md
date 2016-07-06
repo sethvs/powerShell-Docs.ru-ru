@@ -1,13 +1,17 @@
 ---
-title:  Основы Windows PowerShell
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+title: "Основы Windows PowerShell"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8d4a801c534075db568cb38eb51cb11db40cce15
+
 ---
 
 # Основы Windows PowerShell
@@ -19,18 +23,19 @@ ms.assetid:  6b3cbbc8-060c-4877-b00b-7300dbbe4e28
 
 Windows PowerShell ориентирована на использование имеющихся у пользователей знаний об интерфейсах CLI. В этой главе мы рассмотрим некоторые основные средства и концепции, помогающие быстро освоить Windows PowerShell. в том числе:
 
--   Использование Get-Command
+-   Использование Get\-Command
 
 -   Использование команд Cmd.exe и UNIX
 
 -   Использование внешних команд
 
--   Использование Tab-Completion
+-   Использование Tab\-Completion
 
--   Использование Get-Help
+-   С помощью запроса Get\-Help
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

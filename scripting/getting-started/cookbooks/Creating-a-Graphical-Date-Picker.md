@@ -1,13 +1,17 @@
 ---
-title:  Создание графического элемента управления "Выбор даты"
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  c1cb722c-41e9-4baa-be83-59b4653222e9
+title: "Создание графического элемента управления \"Выбор даты\""
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: c1cb722c-41e9-4baa-be83-59b4653222e9
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: f359254900dce0ef0a28af3e16b8ef4095e85309
+
 ---
 
 # Создание графического элемента управления "Выбор даты"
@@ -140,6 +144,7 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

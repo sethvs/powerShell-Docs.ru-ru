@@ -1,13 +1,17 @@
 ---
-title:  Объект ISEEditor
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  0101daf8-4e31-4e4c-ab89-01d95dcb8f46
+title: "Объект ISEEditor"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 4812092dea24fa61245af7e06d1c5924ec812218
+
 ---
 
 # Объект ISEEditor
@@ -15,7 +19,7 @@ ms.assetid:  0101daf8-4e31-4e4c-ab89-01d95dcb8f46
 
 ## Методы
 
-### Clear()
+### Очистить\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Удаляет текст в редакторе.
@@ -26,7 +30,7 @@ $psIse.CurrentPowerShellTab.ConsolePane.Clear()
 
 ```
 
-### EnsureVisible(int lineNumber)
+### EnsureVisible\(int lineNumber\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Прокручивает редактор таким образом, чтобы отображалась строка, соответствующая значению параметра **lineNumber**. Метод создает исключение, если указанный номер строки находится за пределами диапазона 1, последнего номера строки, который определяет допустимые номера строк.
@@ -40,7 +44,7 @@ $psIse.CurrentFile.Editor.EnsureVisible(5)
 
 ```
 
-### Focus()
+### Focus\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Помещает редактор в фокус.
@@ -50,7 +54,7 @@ $psIse.CurrentFile.Editor.EnsureVisible(5)
 $psISE.CurrentPowerShellTab.ConsolePane.Focus()
 ```
 
-### GetLineLength(int lineNumber )
+### GetLineLength\(int lineNumber \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Получает длину строки (в виде целого числа) по указанному номеру строки.
@@ -66,40 +70,40 @@ $psISE.CurrentPowerShellTab.ConsolePane.Focus()
 $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ```
 
-### GoToMatch()
+### GoToMatch\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
- Перемещает курсор в соответствующий символ, если свойство **CanGoToMatch** объекта редактора имеет значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е (, [, { ) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. ), ], } ).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий. См. раздел [CanGoToMatch](#cangotomatch).
+ Перемещает курсор в соответствующий символ, если свойство **CanGoToMatch** объекта редактора имеет значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е \- \(,\[,{ \-) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. \- \),\], } ).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий. См. раздел [CanGoToMatch](#cangotomatch).
 
 ```
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
 ```
 
-### InsertText( text )
+### InsertText\( text \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Заменяет выделенную область текстом или вставляет текст в текущей позиции курсора.
 
- **text** \- String  Вставляемый текст.
+ **text** \- String Вставляемый текст.
 
  См. [пример сценария](#example) далее в этом разделе.
 
-### Select( startLine, startColumn, endLine, endColumn )
+### Select\( startLine, startColumn, endLine, endColumn \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Выделяет текст в области, определяемой параметрами **startLine**, **startColumn**, **endLine** и **endColumn**.
 
- **startLine** \- Integer  Строка, в которой начинается выделение.
+ **startLine** \- Integer Строка, в которой начинается выделение.
 
- **startColumn** \- Integer  Столбец в строке, в которой начинается выделение.
+ **startColumn** \- Integer Столбец в строке, в которой начинается выделение.
 
- **endLine** \- Integer  Строка, в которой заканчивается выделение.
+ **endLine** \- Integer Строка, в которой заканчивается выделение.
 
- **endColumn** \- Integer  Столбец в строке, в которой заканчивается выделение.
+ **endColumn** \- Integer Столбец в строке, в которой заканчивается выделение.
 
  См. [пример сценария](#example) далее в этом разделе.
 
-### SelectCaretLine()
+### SelectCaretLine\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Выделяет всю строку текста, в которой в данный момент находится курсор.
@@ -112,21 +116,21 @@ $psIse.CurrentFile.Editor.SelectCaretLine()
 
 ```
 
-### SetCaretPosition( lineNumber, columnNumber )
+### SetCaretPosition\( lineNumber, columnNumber \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Задает положение курсора по номеру строки и номеру столбца. Метод создает исключение, если номер строки или номер столбца курсора находятся вне соответствующих допустимых диапазонов.
 
- **lineNumber** \- Integer  Номер строки курсора.
+ **lineNumber** \- Integer Номер строки курсора.
 
- **columnNumber** \- Integer  Номер столбца курсора.
+ **columnNumber** \- Integer Номер столбца курсора.
 
 ```
 # Set the CaretPosition.
 $psIse.CurrentFile.Editor.SetCaretPosition(5,1)
 ```
 
-### ToggleOutliningExpansion()
+### ToggleOutliningExpansion\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Выполняет свертывание или развертывание всех разделов структуры.
@@ -142,7 +146,7 @@ $psIse.CurrentFile.Editor.ToggleOutliningExpansion()
 ###  <a name="CanGoToMatch"></a> CanGoToMatch
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
- Логическое свойство только для чтения, которое указывает, находится ли курсор рядом с круглой, квадратной или фигурной скобкой. Если курсор находится непосредственно перед открывающим символом или сразу после парного закрывающего символа, то это свойство имеет значение **$true**. В противном случае оно имеет значение **$false**.
+ Логическое свойство только для чтения, которое указывает, находится ли курсор рядом с круглой, квадратной или фигурной скобкой — \(\), \[\], {}. Если курсор находится непосредственно перед открывающим символом или сразу после парного закрывающего символа, то это свойство имеет значение **$true**. В противном случае оно имеет значение **$false**.
 
 ```
 # Test to see if the caret is next to a parenthesis, bracket, or brace
@@ -248,6 +252,7 @@ $myEditor.InsertText($selection.ToLower())
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

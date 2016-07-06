@@ -1,13 +1,17 @@
 ---
-title:  Начало работы с Windows PowerShell
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  b0e2ad92-875f-421d-b612-f624e644aa69
+title: "Начало работы с Windows PowerShell"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: bee671bf537a100bd8ad407f34ccd5fe63c7f9a8
+
 ---
 
 # Начало работы с Windows PowerShell
@@ -33,6 +37,7 @@ Windows PowerShell — это новая оболочка командной с
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
