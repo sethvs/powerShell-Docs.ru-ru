@@ -3131,8 +3131,8 @@
 * Archive Datetime: 2016-06-28 13:30:40
 * Handback File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/89232af1a662fd197d72937b8fe8ad8311d84153/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf)
 * Handback Datetime: 2016-07-06 10:48:45
-* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4e8f11305a869b7c849f64557fd5cac860e28623/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-16 14:33:12
+* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/89232af1a662fd197d72937b8fe8ad8311d84153/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ru-ru.xlf)
+* Bilingual Datetime: 2016-07-06 10:49:45
 * [Back to Top](#report-top)
 
 ##### <a name='84030be8564e10ce33e15c21f41bda79ea8fad7d189'></a> Source: [scripting\getting-started\cookbooks\Multiple-selection-List-Boxes.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Multiple-selection-List-Boxes.md)
@@ -3507,8 +3507,8 @@
 * Archive Datetime: 2016-06-28 13:30:40
 * Handback File: [Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/89232af1a662fd197d72937b8fe8ad8311d84153/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf)
 * Handback Datetime: 2016-07-06 10:48:45
-* Bilingual File: [Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/052944758ac02f768f7d3f0016a61a087158d11c/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-16 14:33:12
+* Bilingual File: [Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/89232af1a662fd197d72937b8fe8ad8311d84153/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/Object-Pipeline.c54b9454055c11d1724d28868c454225b4ecbf01.ru-ru.xlf)
+* Bilingual Datetime: 2016-07-06 10:49:45
 * [Back to Top](#report-top)
 
 ##### <a name='0148f4631e34e65a4336c5d1d50e313fb6639748216'></a> Source: [scripting\getting-started\fundamental\Scripting-with-Windows-PowerShell.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
