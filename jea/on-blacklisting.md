@@ -8,6 +8,7 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "о запрещенных списках"
 ms.technology: powershell
+translationtype: Human Translation
 ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
 ms.openlocfilehash: 8892e5e08a763fbc66d782bbc9252d1f3a7dcfcf
 
@@ -35,6 +36,6 @@ JEA может предупредить вас при предоставлени
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
