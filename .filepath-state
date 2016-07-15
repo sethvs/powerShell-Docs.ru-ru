@@ -329,6 +329,9 @@
   "edc1a0383cebfbe89b18b0238a13bb28e4d25c5a": [
     "wmf\\5.0\\sil_overview.md"
   ],
+  "7d220ac11459b24a6e28f58fc5ab93fbb256a21d": [
+    "wmf\\TOC.md"
+  ],
   "75cb9979ed85239448c50445465aaf0b62be1382": [
     "wmf\\TOC.md"
   ],
@@ -1257,6 +1260,9 @@
   "dfba55f1eae5468df95309e14b3ee256511badf4": [
     "wmf\\5.1\\features-scenarios-cache\\template.md"
   ],
+  "e09cfe0994ac523fd10658955731a93b6c176c88": [
+    "wmf\\5.1\\features-scenarios-cache\\using-module.md"
+  ],
   "ec5a425d17b841f24e94167be946cf9e2daf3316": [
     "wmf\\5.1\\features-scenarios-cache\\using-module.md"
   ],
@@ -1265,6 +1271,9 @@
   ],
   "5a7aa50eb4ad5ea2788dc2cbdd189d5632f5c15f": [
     "wmf\\5.1\\install-configure.md"
+  ],
+  "387ebc0467b9f154444292f391af0f4b77123639": [
+    "wmf\\5.1\\known-issues.md"
   ],
   "4b69bb012270dac936549e0e133731a53064629e": [
     "wmf\\5.1\\known-issues.md"
@@ -1278,6 +1287,9 @@
   "a4a59cefde5bac004dc07d7b5bfc6ad091eaf8ea": [
     "wmf\\5.1\\release-notes.md"
   ],
+  "01d7ac9815a8650f36150e36b4f6942f451dc368": [
+    "wmf\\5.1\\scenarios-features.md"
+  ],
   "bc58ff634458e9c8d218d4ac44ee02e64b8a5dcf": [
     "wmf\\5.1\\scenarios-features.md"
   ],
@@ -1287,7 +1299,50 @@
   "a7ef0ddf4d093a89f32f3484dfbef78fb159f0c2": [
     "wmf\\README.md"
   ],
+  "dd7905bfd221201919d028ec158cd5ef349335e2": [
+    "wmf\\5.1\\features-scenarios-cache\\PesterUpdates.md"
+  ],
   "d4cd4b828089caf47b32a405a68a3f357958f37e": [
     "wmf\\5.1\\features-scenarios-cache\\PesterUpdates.md"
+  ],
+  "90d57af0c8b90e709769525455ae39557b9c7176": [
+    "wmf\\5.1\\bugfixes.md"
+  ],
+  "221b8095c15a810c032bd93aafe8ec886af233d9": [
+    "wmf\\5.1\\console-improvements.md"
+  ],
+  "1f00f2706f3c3ece783590f3a2b0bdb6734402b0": [
+    "wmf\\5.1\\DSC-improvements.md"
+  ],
+  "0e876b291075458a089c8a550bcee84b6e06b393": [
+    "wmf\\5.1\\engine-improvements.md"
+  ],
+  "7ca0f3b5a6655a8b7fd5371ad8d6a91be3d5e9a1": [
+    "wmf\\5.1\\features-scenarios-cache\\catalog-cmdlets.md"
+  ],
+  "c86a3513d44b4996b98562e25ae0cae61cf69f32": [
+    "wmf\\5.1\\features-scenarios-cache\\DSCPartialConfigNaming.md"
+  ],
+  "7505e063fad84999af786f2af0602d204ed973b7": [
+    "wmf\\5.1\\features-scenarios-cache\\DSCRunAsCredentialCompositeResources.md"
+  ],
+  "2e278eeea1ea99b8a273c093b7bac5af618f8b2a": [
+    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations_1.md",
+    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations_2.md"
+  ],
+  "b24e70c1e1aaf71487b00fbccaf6edb0f375b888": [
+    "wmf\\5.1\\features-scenarios-cache\\Improved-dsc-classresource.md"
+  ],
+  "33c3fcffdeb281b205ecc48f7cdd470b79e9e068": [
+    "wmf\\5.1\\features-scenarios-cache\\Improved-dsc-resourcedebugging.md"
+  ],
+  "8bb3f7173559c349d033d175f5784d80b7a16ed0": [
+    "wmf\\5.1\\features-scenarios-cache\\improved-pullclient-security.md"
+  ],
+  "d9f7dea63e6541b673ac6be5ccad59368b301440": [
+    "wmf\\5.1\\features-scenarios-cache\\Improved-PullServer-Registration.md"
+  ],
+  "1d0bd545b52ef56045f2ec740b05c4e0fd93bb67": [
+    "wmf\\5.1\\features-scenarios-cache\\improvements-oneget.md"
   ]
 }
