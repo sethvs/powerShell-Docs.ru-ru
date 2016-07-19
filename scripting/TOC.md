@@ -75,8 +75,6 @@
 ### [Где можно найти дополнительные справочные материалы?](getting-started/more-powershell-learning.md)
 
 ## [Основы PowerShell](core-powershell/core-powershell.md)
-### [Руководство по созданию сценариев](core-powershell/scripting-guide.md)
-### [Руководство по языку](core-powershell/language-guide.md)
 ### [Основные модули](core-powershell/core-modules.md)
 ####  [Модуль Archive](core-powershell/core-modules/Microsoft.PowerShell.Archive-Module.md)
 ####  [Модуль Core](core-powershell/core-modules/Microsoft.PowerShell.Core-Module.md)
@@ -112,6 +110,8 @@
 ####  [Введение в интегрированную среду сценариев PowerShell](core-powershell/ise/Introducing-the-Windows-PowerShell-ISE.md)
 ####  [Модуль интегрированной среды сценариев](core-powershell/ise/ISE-Module.md)
 ####  [Сочетания клавиш для интегрированной среды сценариев PowerShell](core-powershell/ise/Keyboard-Shortcuts-for-the-Windows-PowerShell-ISE.md)
+####  [Объект PowerShellTab](core-powershell/ise/The-PowerShellTab-Object.md)
+####  [Объект PowerShellTabCollection](core-powershell/ise/The-PowerShellTabCollection-Object.md)
 ####  [Назначение объектной модели сценариев интегрированной среды сценариев PowerShell](core-powershell/ise/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 ####  [Иерархия объектной модели интегрированной среды сценариев](core-powershell/ise/The-ISE-Object-Model-Hierarchy.md)
 ####  [Объект ISEAddOnTool](core-powershell/ise/The-ISEAddOnTool-Object.md)
@@ -124,8 +124,6 @@
 ### [Консоль](core-powershell/console-guide.md)
 ####  [Справочник по командной строке консоли](core-powershell/console/PowerShell.exe-Command-Line-Help.md)
 ####  [Использование заполнения нажатием клавиши TAB в областях сценариев и консоли](core-powershell/ise/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)
-####  [Объект PowerShellTab](core-powershell/ise/The-PowerShellTab-Object.md)
-####  [Объект PowerShellTabCollection](core-powershell/ise/The-PowerShellTabCollection-Object.md)
 ####  [Расширение по клавише TAB](core-powershell/console/Using-Tab-Expansion.md)
 
 ### [Выполнение удаленных команд](core-powershell/Running-Remote-Commands.md)
@@ -144,6 +142,6 @@
 ## [Глоссарий PowerShell](Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

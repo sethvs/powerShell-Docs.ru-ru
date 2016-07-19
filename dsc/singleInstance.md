@@ -1,12 +1,16 @@
 ---
-title:   Запись ресурса DSC с одним экземпляром (рекомендуется)
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Запись ресурса DSC с одним экземпляром (рекомендуется)"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 4b1e8a6d3fb4feca426a9d7861c40d194e612c22
+
 ---
 
 # Запись ресурса DSC с одним экземпляром (рекомендуется)
@@ -48,8 +52,7 @@ Configuration SetTimeZone
 
 Это вызвано особенностями в работе ключей ресурсов DSC. Ресурс должен иметь по крайней мере одно свойство ключа. Экземпляр ресурса считается уникальным, если сочетание значений всех его свойств ключа является уникальным. В предыдущей реализации ресурс [xTimeZone](https://github.com/PowerShell/xTimeZone) имел только одно свойство — **TimeZone**, которое должно было быть ключом. По этой причине такая конфигурация, как приведенная выше, компилируется и выполняется без предупреждения. Каждый из блоков ресурсов **xTimeZone** считается уникальным. Это приводит к многократному применению конфигурации к узлу с циклическим изменением часового пояса вперед и назад.
 
-Чтобы гарантировать, что конфигурация может задать часовой пояс для целевого узла всего один раз, для ресурса было добавлено второе свойство — **IsSingleInstance**, которое стало свойством ключа. 
-**IsSingleInstance** было ограничено единственным значением "Yes" с помощью **ValueMap**. Старая MOF-схема для ресурса:
+Чтобы гарантировать, что конфигурация может задать часовой пояс для целевого узла всего один раз, для ресурса было добавлено второе свойство — **IsSingleInstance**, которое стало свойством ключа. **IsSingleInstance** было ограничено единственным значением "Yes" с помощью **ValueMap**. Старая MOF-схема для ресурса:
 
 ```powershell
 [ClassVersion("1.0.0.0"), FriendlyName("xTimeZone")]
@@ -225,6 +228,7 @@ At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
    
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,13 +1,17 @@
 ---
-title:  Поставщики в модуле  Windows PowerShell Core
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6e24bf6d-4c70-4edf-956a-1e8e4779ba10
+title: "Поставщики в модуле  Windows PowerShell Core"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6e24bf6d-4c70-4edf-956a-1e8e4779ba10
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: f6b1ca1a3253c941c76826c6644079a14f19ddcf
+
 ---
 
 # Поставщики в модуле  Windows PowerShell Core
@@ -32,6 +36,7 @@ ms.assetid:  6e24bf6d-4c70-4edf-956a-1e8e4779ba10
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

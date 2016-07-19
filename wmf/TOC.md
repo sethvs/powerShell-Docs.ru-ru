@@ -99,6 +99,6 @@
 ## [Известные проблемы с настройкой требуемого состояния (DSC)](limitation_dsc.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 
