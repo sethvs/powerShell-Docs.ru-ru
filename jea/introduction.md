@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "введение"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 46f4e5b231d09952f11387cec7c80fbfce9f9d4b
+translationtype: Human Translation
+ms.sourcegitcommit: e6b5107b7222708dcceff14bc26f0e12ef98d728
+ms.openlocfilehash: 00d568234b1453b9161b60d20117374ee4111ab3
 
 ---
 
@@ -34,6 +35,6 @@ ms.openlocfilehash: 46f4e5b231d09952f11387cec7c80fbfce9f9d4b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

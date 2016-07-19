@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "файл README"
 ms.technology: powershell
-ms.sourcegitcommit: 47593773fb0f34e0b52d35617522d7b1db7f48e6
-ms.openlocfilehash: 1cecf1b6bf5a55ed785c8ff43bdd4a0a41e96cd0
+translationtype: Human Translation
+ms.sourcegitcommit: d4e46653ff31ea7cda71f1c92b12ce5f2811b8a7
+ms.openlocfilehash: e24757029fd3ac9a70f710a7a755c35f440f087c
 
 ---
 
@@ -91,6 +92,6 @@ JEA разрабатывается параллельно с будущим вы
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

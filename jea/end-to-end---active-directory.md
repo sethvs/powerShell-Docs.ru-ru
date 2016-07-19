@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "от начала до конца — Active Directory"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 0a262e2c83174db7041d3cf35d97542b1cac4386
+translationtype: Human Translation
+ms.sourcegitcommit: 5954eb797df43de6f132a434ecad7049ee0221fb
+ms.openlocfilehash: 204909c16d5e3e2099f6ba4247929d61445cd654
 
 ---
 
@@ -88,19 +89,19 @@ ms.openlocfilehash: 0a262e2c83174db7041d3cf35d97542b1cac4386
 
 ### Шаг 3. Контроль работы задач с JEA
 Фактически в ограниченной среде JEA эти командлеты можно оптимизировать.
-JEA выполняется в режиме *без языка*, что, кроме прочего, не дает пользователям использовать переменные.
+JEA выполняется в режиме *NoLanguage*, что, помимо прочего, не дает пользователям применять переменные.
 Для удобства конечных пользователей необходимо проверить несколько моментов.
 
 Возьмем, например, команду `Set-ADAccountPassword`.
-Параметр "-NewPassword" требует защищенной строки.
+Параметр -NewPassword требует защищенной строки.
 Часто пользователи создают защищенную строку и передают ее как переменную (как показано ниже):
 
 ```PowerShell
-$newPassword = (Read-Host -Prompt "Specify a new password" -AsSecureString)
+$newPassword = Read-Host -Prompt "Specify a new password" -AsSecureString
 Set-ADAccountPassword -Identity mollyd -NewPassword $newPassword -Reset
 ```
 
-Но режим без языка не позволяет использовать переменные.
+Но режим *NoLanguage* не позволяет использовать переменные.
 Это ограничение можно обойти двумя способами.
 
 1.  Вы можете потребовать, чтобы пользователи выполняли команду без назначения переменных.
@@ -124,7 +125,7 @@ Set-ADAccountPassword -Identity mollyd -NewPassword (Read-Host -Prompt "Specify 
 
 1. В интегрированной среде сценариев PowerShell откройте файл Contoso_AD_Module.psm1.
 ```PowerShell
-ISE 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\Contoso_AD_Module.psm1'
+ise 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\Contoso_AD_Module.psm1'
 ```
 
 2. Нажмите клавиши CTRL+J, чтобы открыть меню фрагментов кода.
@@ -165,7 +166,7 @@ Set-ADUser -Identity $Identity -ChangePasswordAtLogon
 В разделе [Создание возможностей роли](#role-capability-creation) вы создали пустой файл возможностей роли.
 В этом разделе мы заполним его значениями.
 
-Сначала откройте файл возможностей роли в интегрированной среде сценариев.
+Сначала откройте файл возможностей роли в интегрированной среде сценариев PowerShell.
 ```PowerShell
 ise 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\RoleCapabilities\ADHelpDesk.psrc'
 ```
@@ -193,7 +194,7 @@ VisibleFunctions = 'Reset-ContosoUserPassword'
 1.  PowerShell попытается автоматически загрузить модули, необходимые для ваших возможностей роли.
 Если этого не происходит, явно перечислите имена модулей в поле "ModulesToImport".
 
-2.  Если вы не уверены, является команда командлетом или функцией, выполните `Get-Command` и проверьте параметр "CommandType".
+2.  Если вы не уверены, является ли команда командлетом или функцией, выполните `Get-Command` и проверьте свойство CommandType.
 
 3.  ValidatePattern позволяет ограничить аргументы параметра с помощью регулярного выражения, если определить набор допустимых значений непросто.
 Определить ValidatePattern и ValidateSet для отдельного параметра одновременно невозможно.
@@ -210,7 +211,7 @@ ise "$env:ProgramData\JEAConfiguration\HelpDeskDemo.pssc"
 Если вы работаете в собственной среде, замените "CONTOSO\JEA_NonAdmins_Helpdesk" на имя собственного пользователя или группы без прав администратора.
 ```PowerShell
 # OLD: Description = ''
-Description = 'An endpoint for active directory tasks.'
+Description = 'An endpoint for Active Directory tasks.'
 
 # OLD: SessionType = 'Default'
 SessionType = 'RestrictedRemoteServer'
@@ -237,7 +238,7 @@ $HelpDeskCred = Get-Credential
 -   Имя пользователя: HelpDeskUser
 -   Пароль: pa$$w0rd
 
-Установите удаленное подключение к конечной точке службы поддержки AD, используя учетные данные без прав администратора:
+Установите удаленное подключение к конечной точке ADHelpdesk, используя учетные данные без прав администратора:
 ```PowerShell
 Enter-PSSession -ComputerName . -ConfigurationName ADHelpDesk -Credential $HelpDeskCred
 ```
@@ -266,12 +267,12 @@ Exit-PSSession
 Чтобы получить дополнительные сведения, запустите `Get-Help about_Functions`.
 
 **ValidateSet или ValidatePattern**: предоставляя доступ к команде, вы можете ограничить действительные аргументы для определенных параметров.
-ValidateSet — это конкретный список допустимых команд.
+ValidateSet — это конкретный список допустимых аргументов.
 ValidatePattern — это регулярное выражение, которому должны соответствовать аргументы для этого параметра.
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

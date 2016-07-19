@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: ce8d6c1c9e8005c5c4792ae0fa4c5030bb9a92ed
+ms.sourcegitcommit: bda348e6597f31b8dfa2014e5c34c5d3bc7bca15
+ms.openlocfilehash: 10123359213df7180388d9251e032c2bbb673143
 
 ---
 
@@ -31,6 +31,10 @@ Service [string] #ResourceName
     [ DependsOn = [string[]] ]
     [ StartupType = [string] { Automatic | Disabled | Manual }  ]
     [ State = [string] { Running | Stopped }  ]
+    [ Description = [string] ]
+    [ DisplayName = [string] ]
+    [ Ensure = [string] { Absent | Present } ]
+    [ Path = [string] ]
 }
 ```
 
@@ -44,21 +48,33 @@ Service [string] #ResourceName
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | StartupType| Указывает тип запуска службы. Допустимые значения этого свойства: **Automatic**, **Disabled** и **Manual**.| 
 | State| Указывает состояние, в котором должна находиться служба.| 
+| Описание | Указывает описание целевой службы.| 
+| DisplayName | Указывает отображаемое имя целевой службы.| 
+| Ensure | Указывает, имеется ли целевая служба в системе. Если целевая служба не должна существовать, укажите для этого свойства значение **Absent**. Если целевая служба должна существовать, укажите значение **Present** (используется по умолчанию).|
+| путь | Указывает путь к двоичному файлу для новой службы.| 
 
 ## Пример
 
 ```powershell
-Service ServiceExample
+configuration ServiceTest
 {
-    Name = "TermService"
-    StartupType = "Manual"
-    State = "Running"
-} 
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+    Node localhost
+    {
+
+        Service ServiceExample
+        {
+            Name        = "TermService"
+            StartupType = "Manual"
+            State       = "Running"
+        } 
+    }
+}
 ```
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

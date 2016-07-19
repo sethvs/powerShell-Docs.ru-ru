@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "повторное создание демонстрационной конечной точки"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: dabb5023012e90ace3fbc5f347c17821abd92595
+translationtype: Human Translation
+ms.sourcegitcommit: d20ea8418cb7389d756de94ea752cf604b8d07af
+ms.openlocfilehash: acd2cfbd038250a26236c875d0e8b03a32cd84f9
 
 ---
 
@@ -91,7 +92,7 @@ RoleDefinitions = @{'CONTOSO\JEA_NonAdmin_Operator' = @{ RoleCapabilities =  'Ma
 Оно определяет, какие действия разрешает выполнять привилегированная учетная запись.
 В этом поле можно указать функциональные возможности, которые будут предоставлены подключившемуся пользователю в зависимости от членства в группах.
 Это основные функциональные возможности элемента RBAC в JEA.
-В этом примере членам группы "Contoso\JEA_NonAdmin_Operator" предоставляются возможности роли "Demo".
+В этом примере членам группы "Contoso\JEA_NonAdmin_Operator" предоставляются возможности роли "Maintenance".
 
 3.  Поле *RunAsVirtualAccount* означает, что PowerShell следует запустить от имени виртуальной учетной записи в этой конечной точке.
 По умолчанию виртуальная учетная запись входит во встроенную группу администраторов.
@@ -124,7 +125,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 
 ## Тестирование конечной точки
 Повторите шаги, указанные в разделе [Использование JEA](using-jea.md), с новой конечной точкой, чтобы убедиться в том, что она работает, как предполагалось.
-Задавая имя конфигурации в команде Enter-PSSession, используйте имя новой конечной точки (JEADemo2).
+Задавая имя конфигурации в команде `Enter-PSSession`, используйте имя новой конечной точки (JEADemo2).
 
 ```PowerShell
 Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdminCred
@@ -152,6 +153,6 @@ Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdmi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

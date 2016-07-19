@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "использование jea"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 3bac5932c3ed57713bdb08e3a9ed435b228518bc
+translationtype: Human Translation
+ms.sourcegitcommit: 88ce340c09efdbb3d81a72fe6113c1187a9152f2
+ms.openlocfilehash: 9db7a5a91d25d459313117da34af63016f03c241
 
 ---
 
@@ -49,7 +50,7 @@ Get-Command
 ```
 
 Как вы видите, это весьма ограниченный набор команд по сравнению с теми, которые доступны в обычном окне PowerShell (нередко в него входит несколько тысяч команд).
-В частности, он включает только семь командлетов JEA по умолчанию (Clear-Host, Exit-PSSession, Get-Command, Get-FormatData, Get-Help, Measure-Object, Out-Default, Select-Object) и две команды, отдельно добавленные в файл возможностей для роли обслуживания.
+В частности, он включает только восемь команд JEA по умолчанию (Clear-Host, Exit-PSSession, Get-Command, Get-FormatData, Get-Help, Measure-Object, Out-Default, Select-Object) и две команды, явно добавленные в файл возможностей для роли обслуживания.
 
 Теперь посмотрим, в каком пользовательском контексте осуществляется этот сеанс, вызвав пользовательскую функцию, включенную в файл возможностей для роли обслуживания:
 
@@ -96,6 +97,6 @@ Exit-PSSession
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

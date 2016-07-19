@@ -1,12 +1,19 @@
 ---
-title: Модуль PSWorkflow
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Модуль PSWorkflow"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
+translationtype: Human Translation
+ms.sourcegitcommit: 4f67538548a3828f0f2ad2cdb1a7828a0f3db892
+ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
+
 ---
+
 # Модуль PSWorkflow
 В этом разделе содержатся разделы справки по модулю **PSWorkflow**, в который входят командлеты, поддерживающие компонент "Рабочий процесс" Windows PowerShell. Модуль **PSWorkflow** устанавливается вместе с Windows PowerShell.
 
@@ -29,8 +36,6 @@ ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
 
 [about_Parallel](https://technet.microsoft.com/en-us/library/104559a8-e89a-49f5-8c08-e5bf72768cbf)
 
-[about_Foreach-Parallel](https://technet.microsoft.com/en-us/library/35704780-dde8-4f5f-9319-5b982148bba7)
-
 [about_Sequence](https://technet.microsoft.com/en-us/library/bda3f81a-be8a-43be-b0df-12bb7e193b9b)
 
 [about_Suspend-Workflow](https://technet.microsoft.com/en-us/library/be2ded75-1eca-493e-96c1-758f92b5f199)
@@ -38,12 +43,13 @@ ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
 ## См. также
 [Начало работы с модулем Workflow Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=252592)
 [Запись рабочего процесса Windows PowerShell](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)
-[Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
+[Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
 [Разделы справки по модулю Windows PowerShell Core](../core-modules/Windows-PowerShell-Core-About-Topics.md)
 [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

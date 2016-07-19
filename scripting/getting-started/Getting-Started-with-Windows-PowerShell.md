@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: bee671bf537a100bd8ad407f34ccd5fe63c7f9a8
+ms.sourcegitcommit: 35dafe18719cd26977966a26d2781fc99cbf4097
+ms.openlocfilehash: d0f5fb26844edd4e07265a8c7d638f30a51244f7
 
 ---
 
 # Начало работы с Windows PowerShell
-Windows PowerShell — это новая оболочка командной строки, предназначенная специально для системных администраторов. Windows PowerShell содержит интерактивное приглашение и среду сценариев, которые можно использовать отдельно или вместе.
+Windows PowerShell — это оболочка командной строки Windows, предназначенная специально для системных администраторов. Windows PowerShell содержит интерактивное приглашение и среду сценариев, которые можно использовать отдельно или вместе.
 
 В отличие от большинства оболочек, которые принимают и возвращают текст, Windows PowerShell основана на среде CLR .NET Framework и платформе .NET Framework и принимает и возвращает объекты .NET Framework. Это фундаментальное изменение в среде предоставляет совершенно новые средства и методы для настройки Windows и управления ей.
 
@@ -38,6 +38,6 @@ Windows PowerShell — это новая оболочка командной с
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

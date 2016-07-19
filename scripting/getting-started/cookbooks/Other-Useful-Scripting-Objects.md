@@ -1,12 +1,19 @@
 ---
-title: Другие полезные объекты для сценариев
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Другие полезные объекты для сценариев"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
+translationtype: Human Translation
+ms.sourcegitcommit: ebf9d61bd67cc352d6d6404a9b592f856c99759e
+ms.openlocfilehash: c68e6d7d26a8a9b1e32a35e82dd705d95480c9bf
+
 ---
+
 # Другие полезные объекты для сценариев
   Следующие объекты предоставляют дополнительные возможности создания сценариев в интегрированной среде сценариев Windows PowerShell. Они не являются частью иерархии **$psISE**.
 
@@ -26,11 +33,11 @@ psUnsupportedConsoleApplications
 ```
 
 ### $psLocalHelp
- Это объект словаря, который поддерживает сопоставление с учетом контекста разделов справки и связанных ссылок в локальном скомпилированном файле справки HTML. Он используется для поиска локальной справки для определенного раздела. Разделы в этом списке можно добавлять и удалять. В следующем примере кода показаны некоторые примеры пар "ключ-значение", которые содержатся в объекте **$psLocalHelp**..
+ Это объект словаря, который поддерживает сопоставление с учетом контекста разделов справки и связанных ссылок в локальном скомпилированном файле справки HTML. Он используется для поиска локальной справки для определенного раздела. Разделы в этом списке можно добавлять и удалять. В приведенном ниже примере кода показаны некоторые примеры пар "ключ\-значение", которые содержатся в объекте **$psLocalHelp**.
 
 ```
 # See the local help map
-$psLocalHelp |Format-List
+$psLocalHelp | Format-List
 
 ```
 
@@ -38,8 +45,8 @@ $psLocalHelp |Format-List
 
 |||
 |-|-|
-|Ключ: Add-Computer|Значение: WindowsPowerShellHelp.chm::/html/093f660c-b8d5-43cf-aa0c-54e5e54e76f9.htm|
-|Ключ: Add-Content|Значение: WindowsPowerShellHelp.chm::/html/0c836a1b-f389-4e9a-9325-0f415686d194.htm|
+|Ключ: Add\-Computer|Значение: WindowsPowerShellHelp.chm::\/html\/093f660c\-b8d5\-43cf\-aa0c\-54e5e54e76f9.htm|
+|Ключ: Add\-Content|Значение: WindowsPowerShellHelp.chm::\/html\/0c836a1b\-f389\-4e9a\-9325\-0f415686d194.htm|
 
  Следующий сценарий добавляет запись в этот список.
 
@@ -51,7 +58,7 @@ $psLocalHelp.Add("get-myNoun","c:\MyFolder\MyHelpChm.chm::/html/0198854a-1298-57
  Это объект словаря, который поддерживает сопоставление с учетом контекста заголовков разделов справки и связанных внешних URL-адресов. Он используется для поиска справки для определенного раздела в Интернете. Разделы в этом списке можно добавлять и удалять.
 
 ```
-$psOnlineHelp |format-list
+$psOnlineHelp | Format-List
 
 ```
 
@@ -59,8 +66,8 @@ $psOnlineHelp |format-list
 
 |||
 |-|-|
-|Ключ: Add-Computer|Значение: http://go.microsoft.com/fwlink/p/? LinkID = 135194|
-|Ключ: Add-Content|Значение: http://go.microsoft.com/fwlink/p/?LinkID=113278|
+|Ключ: Add\-Computer|Значение: http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=135194|
+|Ключ: Add\-Content|Значение: http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=113278|
 
  Следующий сценарий добавляет запись в этот список.
 
@@ -74,6 +81,7 @@ $psOnlineHelp.Add("get-myNoun","http://www.mydomain.com/MyNoun.html")
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

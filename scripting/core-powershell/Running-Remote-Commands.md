@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
 translationtype: Human Translation
-ms.sourcegitcommit: 593f0c2ca72e00f19c395c1dae31798d5a5f652d
-ms.openlocfilehash: 75d41569b18e61342809eebcc76b7899ec6363fa
+ms.sourcegitcommit: 0f77e2d13a26c58d2a4813e57a76ba54dbcaac46
+ms.openlocfilehash: 48385de53964217b2f7d263d85bfb99b1dbf6507
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: 75d41569b18e61342809eebcc76b7899ec6363fa
 Вы можете запускать команды на одном или сотнях компьютеров одной командой Windows PowerShell. Windows PowerShell поддерживает удаленное вычисление с помощью разных технологий, включая WMI, RPC и WS \- Management.
 
 ## Удаленное взаимодействие без настройки
-Многие командлеты Windows PowerShell содержат параметр ComputerName, который позволяет собирать данные и изменять параметры одного или нескольких удаленных компьютеров. Они используют различные способы связи, многие из которых работают во всех операционных системах Windows, которые Windows PowerShell поддерживает без необходимости какой-либо настройки.
+Многие командлеты Windows PowerShell имеют параметр ComputerName, который позволяет собирать данные и изменять параметры одного или нескольких удаленных компьютеров. Они используют различные способы связи, многие из которых работают во всех операционных системах Windows, которые Windows PowerShell поддерживает без необходимости какой-либо настройки.
 
 В эти командлеты входят следующие:
 
@@ -30,7 +30,7 @@ ms.openlocfilehash: 75d41569b18e61342809eebcc76b7899ec6363fa
 
 -   [Get-EventLog](https://technet.microsoft.com/en-us/library/dd315250.aspx)
 
--   [Get-Hotfix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
+-   [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
 
 -   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 75d41569b18e61342809eebcc76b7899ec6363fa
 Обычно командлеты, которые поддерживают удаленное взаимодействие без специальной настройки, имеют параметр ComputerName, но не имеют параметра Session. Чтобы найти эти командлеты в сеансе, введите:
 
 ```
-get-command | where { $_.parameters.keys -contains "ComputerName" -and $_.parameters.keys -notcontains "Session"}
+Get-Command | where { $_.parameters.keys -contains "ComputerName" -and $_.parameters.keys -notcontains "Session"}
 ```
 
 ## Служба удаленного взаимодействия Windows PowerShell
@@ -59,7 +59,7 @@ get-command | where { $_.parameters.keys -contains "ComputerName" -and $_.parame
 Чтобы запустить интерактивный сеанс с одним удаленным компьютером, используйте командлет [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx). Например, чтобы запустить интерактивный сеанс с удаленным компьютером Server01, введите:
 
 ```
-enter-pssession Server01
+Enter-PSSession Server01
 ```
 
 В командной строке отобразится имя компьютера, к которому вы подключены. В дальнейшем все команды, введенные в командной строке, будут запускаться на удаленном компьютере, а результаты отобразятся на локальном компьютере.
@@ -67,7 +67,7 @@ enter-pssession Server01
 Чтобы завершить интерактивный сеанс, введите:
 
 ```
-exit-pssession
+Exit-PSSession
 ```
 
 Дополнительные сведения о командлетах Enter \-PSSession и Exit\- PSSession см. в статьях [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) и [Exit-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx).
@@ -77,7 +77,7 @@ exit-pssession
 Например, чтобы выполнить команду [Get-UICulture](https://technet.microsoft.com/en-us/library/dd347742.aspx) на удаленных компьютерах Server01 и Server02, введите:
 
 ```
-invoke-command -computername Server01, Server02 {get-UICulture}
+Invoke-Command -ComputerName Server01, Server02 {Get-UICulture}
 ```
 
 Выходные данные будут возвращены на ваш компьютер.
@@ -97,7 +97,7 @@ LCID    Name     DisplayName               PSComputerName
 Например, следующая команда выполняет сценарий DiskCollect.ps1 на удаленных компьютерах Server01 и Server02.
 
 ```
-invoke-command -computername Server01, Server02 -filepath c:\Scripts\DiskCollect.ps1
+Invoke-Command -ComputerName Server01, Server02 -FilePath c:\Scripts\DiskCollect.ps1
 ```
 
 Дополнительные сведения о командлете Invoke \- Command см. в статье [Invoke-Command](https://technet.microsoft.com/en-us/library/dd347578.aspx).
@@ -108,28 +108,28 @@ invoke-command -computername Server01, Server02 -filepath c:\Scripts\DiskCollect
 Например, следующая команда создает удаленный сеанс на компьютере Server01 и другой удаленный сеанс на компьютере Server02. Она сохраняет объекты сеанса в переменной $s.
 
 ```
-$s = new-pssession -computername Server01, Server02
+$s = New-PSSession -ComputerName Server01, Server02
 ```
 
 После установки сеансов в них можно выполнить любую команду. Так как сеансы являются постоянными, вы можете собирать данные в одной команде и использовать их в последующей.
 
-Например, следующая команда выполняет команду Get \- Hotfix в сеансах в переменной $s и сохраняет результаты в переменной $h. Переменная $h создается в каждом сеансе в $s, но она не существует в локальном сеансе.
+Например, следующая команда выполняет команду Get\-HotFix в сеансах в переменной $s и сохраняет результаты в переменной $h. Переменная $h создается в каждом сеансе в $s, но она не существует в локальном сеансе.
 
 ```
-invoke-command -session $s {$h = get-hotfix}
+Invoke-Command -Session $s {$h = Get-HotFix}
 ```
 
 Теперь данные в переменной $h можно использовать в последующих командах, таких как следующая. Результаты отобразятся на локальном компьютере.
 
 ```
-invoke-command -session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"} }
+Invoke-Command -Session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}}
 ```
 
 ### Расширенная служба удаленного взаимодействия
 Это и есть служба удаленного взаимодействия Windows PowerShell. Используя командлеты, установленные с Windows PowerShell, можно установить и настроить удаленные сеансы с локальных и удаленных компьютеров, создать настраиваемые и ограниченные сеансы, разрешить пользователям импортировать команды из удаленного сеанса, которые могут неявно выполняться в удаленном сеансе, настроить безопасность удаленного сеанса и многое другое.
 
 Для упрощения настройки в PowerShell включен поставщик WSMan. Диск WSMAN:, созданный поставщиком, позволяет перемещаться по иерархии параметров конфигурации на локальном и удаленном компьютерах.
-Дополнительные сведения о поставщике WSMan см. в разделах [Поставщик WSMan](https://technet.microsoft.com/en-us/library/dd819476.aspx) и   [Сведения о командлетах WS-Management](https://technet.microsoft.com/en-us/library/dd819481.aspx) или введите команду "get \- help wsman" в консоли Windows PowerShell.
+Дополнительные сведения о поставщике WSMan см. в разделах [Поставщик WSMan](https://technet.microsoft.com/en-us/library/dd819476.aspx) и   [Сведения о командлетах WS-Management](https://technet.microsoft.com/en-us/library/dd819481.aspx) или введите команду "Get\-Help wsman" в консоли Windows PowerShell.
 
 Дополнительная информация:
 - [about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd315359.aspx)
@@ -154,6 +154,6 @@ invoke-command -session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

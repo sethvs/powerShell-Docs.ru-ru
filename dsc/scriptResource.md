@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 801a0491746c17061d14d6d4938e7182650f6ff3
+ms.sourcegitcommit: e1d217b8e633779f55e195fbf80aeee83db01409
+ms.openlocfilehash: ad2b20a3a977dc33b27f8a1096a2b48fcb3abe0e
 
 ---
 
@@ -20,7 +20,7 @@ ms.openlocfilehash: 801a0491746c17061d14d6d4938e7182650f6ff3
 
 Ресурс **Script** в DSC Windows PowerShell предоставляет механизм запуска блоков сценариев на целевых узлах. Ресурс `Script` имеет свойства `GetScript`, `SetScript` и `TestScript`. Эти свойства должны быть заданы для блоков сценария, выполняемых на каждом целевом узле. 
 
-Блок сценария `GetScript` должен возвращать хэш-таблицу, представляющую состояние текущего узла. Выходные значения этого блока необязательны. DSC не выполняет никаких действий с выходными данными этого блока сценария.
+Блок сценария `GetScript` должен возвращать хэш-таблицу, представляющую состояние текущего узла. Хэш-таблица должна содержать только один ключ `Result`, а значение должно иметь тип `String`. Выходные значения этого блока необязательны. DSC не выполняет никаких действий с выходными данными этого блока сценария.
 
 Блок сценария `TestScript` должен определять, требуется ли изменение текущего узла. Он должен возвращать значение `$true`, если состояние узла актуально. Он должен возвращать значение `$false`, если конфигурация узла устарела и должна быть обновлена блоком сценария `SetScript`. Блок сценария `TestScript` вызывается DSC.
 
@@ -46,7 +46,7 @@ Script [string] #ResourceName
 
 |  Свойство  |  Описание   | 
 |---|---| 
-| GetScript| Предоставляет блок сценария Windows PowerShell, который выполняется при вызове командлета [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx). Этот блок должен возвращать хэш-таблицу.| 
+| GetScript| Предоставляет блок сценария Windows PowerShell, который выполняется при вызове командлета [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx). Этот блок должен возвращать хэш-таблицу. Хэш-таблица должна содержать только один ключ **Result**, а значение должно иметь тип **String**.| 
 | SetScript| Предоставляет блок сценария Windows PowerShell. При вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) в первую очередь выполняется блок **TestScript**. Если блок **TestScript** возвращает **$false**, будет запущен блок **SetScript**. Если блок **TestScript** возвращает **$true**, то блок **SetScript** запущен не будет.| 
 | TestScript| Предоставляет блок сценария Windows PowerShell. Этот блок запускается при вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). Если он возвращает **$false**, будет запущен блок SetScript. Если он возвращает **$true**, блок SetScript запущен не будет. Кроме того, блок **TestScript** запускается при вызове командлета [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx). Однако в этом случае блок **SetScript** не будет запущен независимо от того, какое значение возвращает блок TestScript. Блок **TestScript** должен вернуть True, если фактическая конфигурация соответствует текущей конфигурации требуемого состояния, и False в противном случае. (Текущей конфигурацией требуемого состояния является последняя конфигурация, активированная на узле, который использует DSC.)| 
 | Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.| 
@@ -62,7 +62,7 @@ Script ScriptExample
         $sw.Close()
     }
     TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
-    GetScript = { <# This must return a hash table #> }          
+    GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
 }
 ```
 
@@ -73,7 +73,7 @@ Script UpdateConfigurationVersion
 {
     GetScript = { 
         $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
-        return @{ 'Version' = $currentVersion }
+        return @{ 'Result' = "Version: $currentVersion" }
     }          
     TestScript = { 
         $state = GetScript
@@ -96,6 +96,6 @@ Script UpdateConfigurationVersion
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
