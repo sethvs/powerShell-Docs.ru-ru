@@ -1016,9 +1016,6 @@
   "207792452c563ec6cca5c17fbcd122372442d8ac": [
     "scripting\\topic\\WinRMSecurity.md"
   ],
-  "af8aee96244140094066b8e2df65fdb525a94811": [
-    "wmf\\5.0\\TOC.md"
-  ],
   "5998288f1a82980b5988eb6d4fff1833ba5067e1": [
     "wmf\\5.0\\productincompat.md"
   ],
@@ -1181,6 +1178,9 @@
   "e09cfe0994ac523fd10658955731a93b6c176c88": [
     "wmf\\5.1\\features-scenarios-cache\\using-module.md"
   ],
+  "42bad0a9dd2862895bb43ca83b2277fcfb9980d7": [
+    "wmf\\5.1\\install-configure.md"
+  ],
   "8a10903c421f62311a28c9f32e352bba75f21052": [
     "wmf\\5.1\\install-configure.md"
   ],
@@ -1253,13 +1253,6 @@
   "7505e063fad84999af786f2af0602d204ed973b7": [
     "wmf\\5.1\\features-scenarios-cache\\DSCRunAsCredentialCompositeResources.md"
   ],
-  "817fadb79716e41ce8cc8f4245dedc66347ac413": [
-    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations_1.md"
-  ],
-  "2e278eeea1ea99b8a273c093b7bac5af618f8b2a": [
-    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations_1.md",
-    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations_2.md"
-  ],
   "b24e70c1e1aaf71487b00fbccaf6edb0f375b888": [
     "wmf\\5.1\\features-scenarios-cache\\Improved-dsc-classresource.md"
   ],
@@ -1275,10 +1268,174 @@
   "1d0bd545b52ef56045f2ec740b05c4e0fd93bb67": [
     "wmf\\5.1\\features-scenarios-cache\\improvements-oneget.md"
   ],
+  "817fadb79716e41ce8cc8f4245dedc66347ac413": [
+    "wmf\\5.1\\features-scenarios-cache\\DSCSigningValidations.md"
+  ],
+  "025565404b60cebefac27e51c70d70edb5e47bc9": [
+    "wmf\\5.1\\features-scenarios-cache\\PowerShellGet-Enhancements.md"
+  ],
   "22b9c04ae97efe4927c59b4ba08db0d757519c0a": [
     "wmf\\5.1\\features-scenarios-cache\\PowerShellGet-Enhancements.md"
   ],
   "bfe75745b736ffd97aff97f8450fa1ece5647dd1": [
     "wmf\\5.1\\package-management-improvements.md"
+  ],
+  "443d343d6f5c79c562e36ba59cd822d990de8715": [
+    "gallery\\psgallery\\contributing_to_psgallery_documentation.md"
+  ],
+  "9dab14b25815ac7c005b915df421300a1cc72033": [
+    "gallery\\psgallery\\Creating-and-Publishing-an-item.md"
+  ],
+  "8d6ca21b735c61aabd82ee9dd116082651133cf3": [
+    "gallery\\psgallery\\Deleting-Items.md"
+  ],
+  "57218c316b6921e2cd61027a2387edc31a2d9471": [
+    "gallery\\psgallery\\Item-Conventions.md",
+    "gallery\\psgallery\\Setting-Up-Local-Gallery.md",
+    "gallery\\psget\\module\\Dependency_Versioning.md",
+    "gallery\\psget\\module\\Module_Versioning.md",
+    "gallery\\psget\\module\\ModuleManifest-Reference.md",
+    "gallery\\psget\\script\\Script_Versioning.md"
+  ],
+  "e85cc33d66e195bc6e36fdb93f4959acc0ab4b28": [
+    "gallery\\psgallery\\Managing-Item-Owners.md"
+  ],
+  "de3ce3368ffbeb93bbead9d3665009c0a847feac": [
+    "gallery\\psgallery\\PackageManagement_Architecture .md"
+  ],
+  "83152849f15c3ca2d75d9505828b9a827c9df2e9": [
+    "gallery\\psgallery\\psgallery_contacting_administrators.md"
+  ],
+  "1f4f2e335d6bd2a2f52947ac06596afb079b905c": [
+    "gallery\\psgallery\\psgallery_contacting_item_owners.md"
+  ],
+  "ee43e20b0f83cef6940e2fb05eae6c1eea9597d6": [
+    "gallery\\psgallery\\psgallery_deploy_to_azure_automation.md"
+  ],
+  "cd93cf2d7ff9b200bd14283c6fb0b3d41b90a44a": [
+    "gallery\\psgallery\\psgallery_dispute_resolution.md"
+  ],
+  "754f044d585332a008e2c09a1cba466937f22c59": [
+    "gallery\\psgallery\\psgallery_faqs.md"
+  ],
+  "44ced9f60695ef6a24be1b8e10fa42ae03dd85f6": [
+    "gallery\\psgallery\\psgallery_filelist_feature.md"
+  ],
+  "0047438f30836ed0e0a365c3536803655b5b7f15": [
+    "gallery\\psgallery\\psgallery_gettingstarted.md"
+  ],
+  "5dfe29ae2e7d78e014f19b77f65c998bf51ff7eb": [
+    "gallery\\psgallery\\psgallery_items_tab.md"
+  ],
+  "f8d750bc1cbb14385a72863b4f9755f202be7e19": [
+    "gallery\\psgallery\\psgallery_report_abuse.md"
+  ],
+  "9a858cfc303cac6f9f2f23c01c1d8a753a69dc7c": [
+    "gallery\\psgallery\\psgallery_search_syntax.md"
+  ],
+  "257dfc9c884c50c2d3a58b8cc57ff0f673fde354": [
+    "gallery\\psgallery\\psgallery_unlist_items.md"
+  ],
+  "b28bce839403217ece4edd67d984a282b60d164d": [
+    "gallery\\psget\\module\\psget_find-command.md"
+  ],
+  "37a68f593be6b7b6b97656f84ff7dac034b12a32": [
+    "gallery\\psget\\module\\psget_find-dscresource.md"
+  ],
+  "169c83a1b2af2131b8c52e36d03563b8ed2bc8fb": [
+    "gallery\\psget\\module\\psget_find-module.md"
+  ],
+  "34220e3fcf97066fc3c2a1253d98ab5dead14441": [
+    "gallery\\psget\\module\\psget_find-rolecapability.md"
+  ],
+  "53873c0071914bb833bce476a9436a07308ddcf1": [
+    "gallery\\psget\\module\\psget_get-installedmodule.md"
+  ],
+  "f61d83c2cc12babccbdb75e6ae334b1f90de1bd6": [
+    "gallery\\psget\\module\\psget_install-module.md"
+  ],
+  "8187835b0b24800dd11656f3d37809d6774985ae": [
+    "gallery\\psget\\module\\psget_module_creation.md"
+  ],
+  "16a29f1802b653a2eb7daa4ef8cf3f0c0bf4e7b8": [
+    "gallery\\psget\\module\\psget_moduledependencypopulation.md"
+  ],
+  "e28f84eefbd5ec1636f93ad736c5a90922c7ed69": [
+    "gallery\\psget\\module\\psget_publish-module.md"
+  ],
+  "07ccbc92a07736d183f22d909031dc21239f5fb0": [
+    "gallery\\psget\\module\\psget_save-module.md"
+  ],
+  "fd8fb43d6b84930b2f8ed2b38ce624c7c56741f3": [
+    "gallery\\psget\\module\\psget_uninstall-module.md"
+  ],
+  "e626a05a595a39936fa328ad0ddc750c6626e385": [
+    "gallery\\psget\\module\\psget_update-module.md"
+  ],
+  "967d85a99256f5f4347aeec1b5f9dad3eca7a939": [
+    "gallery\\psget\\module\\psget_update-modulemanifest.md"
+  ],
+  "fa82b0da9834e0e9b4f75a1c92cbcbe831a392e3": [
+    "gallery\\psget\\oneget\\PackageManagement_cmdlets.md"
+  ],
+  "97fddea4abc33f950d72b7626dba0ba442eca75b": [
+    "gallery\\psget\\overview.md"
+  ],
+  "7c86beac71d47aa2da11691f8c325c3c80d9923d": [
+    "gallery\\psget\\psget_cmdlets_reference.md"
+  ],
+  "7e2566a7874904e90f6cab47d03d5817a4653ee2": [
+    "gallery\\psget\\psget_oneget_integration.md"
+  ],
+  "5396621599aea3316ac6d32d137ed114db68bbb3": [
+    "gallery\\psget\\repository\\bootstrapping_nuget_proivder_and_exe.md"
+  ],
+  "df940c200d4099560fdeb24bc471816f576f50db": [
+    "gallery\\psget\\repository\\psget_get-psrepository.md"
+  ],
+  "da4ab9afac51ec73c80c21bc207726ffb68055d4": [
+    "gallery\\psget\\repository\\psget_register-psrepository.md"
+  ],
+  "7bf1f63b00e52837ee0a07f8a2e5b48c9153dd8f": [
+    "gallery\\psget\\repository\\psget_set-psrepository.md"
+  ],
+  "193ea4ff8323f6be045639edfd39b792c1a145ea": [
+    "gallery\\psget\\repository\\psget_unregister-psrepository.md"
+  ],
+  "ad412fd3480d98e660562a27963b45d42afc5737": [
+    "gallery\\psget\\script\\psget_find-script.md"
+  ],
+  "a96100d0395c6ade2b62951f60c4723a20ae06f6": [
+    "gallery\\psget\\script\\psget_get-installedscript.md"
+  ],
+  "bb0f0dc2ad9bafd7ad8a69e93eaf5b187aeb22d7": [
+    "gallery\\psget\\script\\psget_install-script.md"
+  ],
+  "dea23041a92ce6082b210bc16f7b765d9e4a424d": [
+    "gallery\\psget\\script\\psget_new-scriptfileinfo.md"
+  ],
+  "e31e2957c1c1ed7b7e72613186a8e4584120ca06": [
+    "gallery\\psget\\script\\psget_publish-script.md"
+  ],
+  "7f96cee98a933df456df6dda0b6a20a2491bd5bf": [
+    "gallery\\psget\\script\\psget_save-script.md"
+  ],
+  "e36caac37a9d8ebb05fb62cc56054fe2cdc69b0b": [
+    "gallery\\psget\\script\\psget_test-scriptfileinfo.md"
+  ],
+  "204b597e19433aeeeef26640ae7b20ed8ad1aa98": [
+    "gallery\\psget\\script\\psget_uninstall-script.md"
+  ],
+  "bd31f7cdc1d49ec4eff947545625be6eb822e807": [
+    "gallery\\psget\\script\\psget_update-script.md"
+  ],
+  "6da59dbf6f98bb30ae9d57ecb3bace2f42cdf76b": [
+    "gallery\\psget\\script\\psget_update-scriptfileinfo.md"
+  ],
+  "d526066f543a99b765299c678d85c152a319d60b": [
+    "gallery\\readme.md"
+  ],
+  "263ec9e1dd297df2a70ef2846566a7004282aa92": [
+    "gallery\\TOC.md"
   ]
 }
