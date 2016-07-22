@@ -50,9 +50,6 @@
   "8c8fb7a40c066b048e1a54a741f4953e6b5a47b6": [
     "dsc\\fileResource.md"
   ],
-  "535b25125a0c56feb10147f1872bdfdf3e3ef33a": [
-    "dsc\\fileResource.md"
-  ],
   "c5ee7f7e7678b60700edb1ab1b66139791ea67c6": [
     "dsc\\gettingStarted.md"
   ],
@@ -171,9 +168,6 @@
     "dsc\\windowsProcessResource.md"
   ],
   "b2900987b1102cf41880e5af0a0cc44bc6499ef5": [
-    "dsc\\resourceAuthoringChecklist.md"
-  ],
-  "bd6af2cbf746e71aa59f509eae14664e647a1b05": [
     "dsc\\resourceAuthoringChecklist.md"
   ],
   "2160a4b932075c98df6806c61d263d30f650b9f4": [
@@ -318,9 +312,6 @@
     "wmf\\TOC.md"
   ],
   "7d220ac11459b24a6e28f58fc5ab93fbb256a21d": [
-    "wmf\\TOC.md"
-  ],
-  "75cb9979ed85239448c50445465aaf0b62be1382": [
     "wmf\\TOC.md"
   ],
   "f97722883acccd0addb49cc473fc1cce5300c184": [
@@ -1001,9 +992,6 @@
   "ababa1b3ce913528a3ac7089d91ef74c5eb27737": [
     "scripting\\whats-new\\What-s-New-in-the-PowerShell-50-ISE.md"
   ],
-  "7be11016317a65565dd9af2a3f65e8f00b3818f3": [
-    "scripting\\whats-new\\What-s-New-in-the-PowerShell-50-ISE.md"
-  ],
   "cd94291f225851a99253f5f54e10d6174e63f413": [
     "scripting\\whats-new\\What-s-New-in-Windows-PowerShell-50.md"
   ],
@@ -1166,9 +1154,6 @@
   "bb1129e6aa20b64e94ddb6d7b7cf7b51b1df9ca3": [
     "wmf\\5.1\\features-scenarios-cache\\oneget-improvement.md"
   ],
-  "e2646a59c7a241491ef934c62fdfb6d649d16191": [
-    "wmf\\5.1\\features-scenarios-cache\\oneget-improvement.md"
-  ],
   "f864850128f118704d7545b09110835ab1d51b8e": [
     "wmf\\5.1\\features-scenarios-cache\\ps-engine-enhancements.md"
   ],
@@ -1184,13 +1169,7 @@
   "8a10903c421f62311a28c9f32e352bba75f21052": [
     "wmf\\5.1\\install-configure.md"
   ],
-  "5a7aa50eb4ad5ea2788dc2cbdd189d5632f5c15f": [
-    "wmf\\5.1\\install-configure.md"
-  ],
   "387ebc0467b9f154444292f391af0f4b77123639": [
-    "wmf\\5.1\\known-issues.md"
-  ],
-  "4b69bb012270dac936549e0e133731a53064629e": [
     "wmf\\5.1\\known-issues.md"
   ],
   "cfe0a6562743f1df81acb81e33c120cb67f9042c": [
@@ -1199,19 +1178,10 @@
   "d25a22b0448e82a85e45c302a998abc35bd4c1b6": [
     "wmf\\5.1\\release-notes.md"
   ],
-  "a4a59cefde5bac004dc07d7b5bfc6ad091eaf8ea": [
-    "wmf\\5.1\\release-notes.md"
-  ],
   "49bc62fccc5b3dfd88fb06082fa84dc86327595f": [
     "wmf\\5.1\\scenarios-features.md"
   ],
   "01d7ac9815a8650f36150e36b4f6942f451dc368": [
-    "wmf\\5.1\\scenarios-features.md"
-  ],
-  "bc58ff634458e9c8d218d4ac44ee02e64b8a5dcf": [
-    "wmf\\5.1\\scenarios-features.md"
-  ],
-  "9341b7fc3feea20cc2434065c3e512d1a8dd2b54": [
     "wmf\\5.1\\scenarios-features.md"
   ],
   "a7ef0ddf4d093a89f32f3484dfbef78fb159f0c2": [
