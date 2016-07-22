@@ -9,12 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 4c1b57f221d0f502313eecb21dd36b5e85c2de4d
-ms.openlocfilehash: 5a7aa50eb4ad5ea2788dc2cbdd189d5632f5c15f
+ms.sourcegitcommit: 26da6c80568327faadc6746099ac9869f2018fcf
+ms.openlocfilehash: 8a10903c421f62311a28c9f32e352bba75f21052
 
 ---
 
 # Установка и настройка WMF 5.1 (предварительная версия) #
+
+***Обратите внимание:*** 
+*это содержимое — заполнитель. Приведенные ниже ссылки указывают на WMF версии 5.0 и будут обновлены после выпуска двоичных файлов.*
 
 Скачайте пакет WMF 5.1 для той операционной системы и архитектуры, в которой будет производиться установка.
 
@@ -57,6 +60,7 @@ ms.openlocfilehash: 5a7aa50eb4ad5ea2788dc2cbdd189d5632f5c15f
 
 
 
-<!--HONumber=Jul16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

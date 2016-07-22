@@ -2,8 +2,8 @@
 title: "Улучшения PackageManagement (OneGet)"
 contributor: jianyunt, quoctruong
 translationtype: Human Translation
-ms.sourcegitcommit: 4c1b57f221d0f502313eecb21dd36b5e85c2de4d
-ms.openlocfilehash: e2646a59c7a241491ef934c62fdfb6d649d16191
+ms.sourcegitcommit: 3b5a3bb0ef9cf123c0cee4a36890ac61431c85ff
+ms.openlocfilehash: bb1129e6aa20b64e94ddb6d7b7cf7b51b1df9ca3
 
 ---
 
@@ -36,9 +36,9 @@ ms.openlocfilehash: e2646a59c7a241491ef934c62fdfb6d649d16191
 **Сценарий**. В корпоративных средах у пользователей может быть доступ только к интрасети, но не к Интернету. Модуль OneGet не поддерживал такой сценарий в WMF 5.0.
 
 **Решение**.
-- Вы можете скачать поставщик NuGet с помощью другого компьютера, имеющего подключение к Интернету, выполнив команду "Install-PackageProvider NuGet".
+- Вы можете скачать поставщик NuGet на другом компьютере с подключением к Интернету, выполнив команду "Install-PackageProvider -Name NuGet".
 
-- Поставщик NuGet находится в папке $env:ProgramFiles\PackageManagement\ProviderAssemblies\nuget или $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies\nuget. 
+- Установленный поставщик NuGet находится в папке $env:ProgramFiles\PackageManagement\ProviderAssemblies\nuget или в папке $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies\nuget. 
 
 - Скопируйте двоичные файлы в папку или сетевую папку, к которой есть доступ у вашего компьютера (без подключения к Интернету), и установите поставщик NuGet, выполнив команду "Install-PackageProvider NuGet -Source <Path to folder>".
 
@@ -60,6 +60,6 @@ Find-Package -Source http://www.nuget.org/api/v2/ -Proxy http://www.myproxyserve
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

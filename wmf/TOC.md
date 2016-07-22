@@ -2,6 +2,11 @@
 
 # [WMF 5.1](5.1/release-notes.md)
 ## [Новые сценарии и возможности](5.1/scenarios-features.md)
+### [Ошибки, исправленные в WMF 5.1](5.1/bugfixes.md)
+### [Усовершенствования консоли PowerShell](5.1/console-improvements.md)
+### [Усовершенствования подсистемы PowerShell](5.1/engine-improvements.md)
+### [Усовершенствования в настройке требуемого состояния (DSC)](5.1/DSC-improvements.md)
+### [Усовершенствования модуля OneGet]
 ## [Установка и настройка](5.1/install-configure.md)
 ## [Известные проблемы](5.1/known-issues.md)
 ## [Совместимость](5.1/Compatibility.md)
@@ -89,6 +94,6 @@
 ### [Инвентаризация программного обеспечения (SIL)](5.0/sil_overview.md)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 
