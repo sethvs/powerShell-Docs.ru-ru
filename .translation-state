@@ -32548,9 +32548,9 @@
       "ArchiveFileCommit": "8a06c8cb4d45980c237510611f1631d79f24403e",
       "ArchiveFileDateTime": "2016-07-19T13:11:15.7816536Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\How-to-Debug-Scripts-in-Windows-PowerShell-ISE.fe1e91b6be8b768d0e36f102791ffd867cff9b45.ru-ru.xlf",
+      "BilingualFileCommit": "070425c7402830dbd47d12794087cd362670d394",
+      "BilingualDateTime": "2016-07-25T09:57:33.3292692Z",
       "BilingualException": null
     },
     "ababa1b3ce913528a3ac7089d91ef74c5eb27737": {
