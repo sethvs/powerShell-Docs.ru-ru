@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "8149d7c7a234672345b777610e3deba5b57fa0e1",
+  "LastProcessedCommit": "12c1cb06b55ec60ee4375787407fe8ce8c51052e",
   "LastTranslatedCommit": "8ed32988cc7917b87238b537c74c006b789fa502",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
@@ -35604,6 +35604,41 @@
       "ArchiveFilePath": "ol-archive\\PowerShell\\powerShell-Docs.ru-ru\\live\\install-configure.d23935c7edf43234f7208217daa4ff7870a16d7c.ru-ru.xlf",
       "ArchiveFileCommit": "f18ed2ae5f09a398110cdfaa9bc440a5c947106f",
       "ArchiveFileDateTime": "2016-07-26T13:17:15.4305203Z",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "0d5b3688d863b6138ec95d9bc0387f9729f63083": {
+      "FileHash": "0d5b3688d863b6138ec95d9bc0387f9729f63083",
+      "SourceFileCommit": "b79cceeac02288db4bf5a27c22fd73324c6598bc",
+      "SourceFilePath": "wmf\\5.1\\install-configure.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "wmf\\5.1\\install-configure.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ru-ru\\live\\install-configure.d23935c7edf43234f7208217daa4ff7870a16d7c.ru-ru.xlf",
+      "HandoffFileCommit": "9ff29bbfcbf360db59c0d225c0ddd239d9bd51d7",
+      "HandoffDateTime": "2016-07-27T19:11:13.4187092Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
