@@ -1,71 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 5
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/dsc/index.md) | HandedOffSuccess | [Details](#865258c0b403d4e7979d7ee32d3f87b63a349f0833)
- [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/gallery/index.md) | HandedOffSuccess | [Details](#865258c0b403d4e7979d7ee32d3f87b63a349f08104)
- [jea\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/jea/index.md) | HandedOffSuccess | [Details](#865258c0b403d4e7979d7ee32d3f87b63a349f08168)
- [scripting\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/scripting/index.md) | HandedOffSuccess | [Details](#865258c0b403d4e7979d7ee32d3f87b63a349f08296)
- [wmf\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/wmf/index.md) | HandedOffSuccess | [Details](#865258c0b403d4e7979d7ee32d3f87b63a349f08442)
+ [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8c31a7878b8c16469fd709d76af8bb9f1b39af1e/gallery/index.md) | HandedOffSuccess | [Details](#97403b5ae385aa568d0eba44eabac2e10b130a76104)
 
 ## Item Details
-##### <a name='865258c0b403d4e7979d7ee32d3f87b63a349f0833'></a> Source: [dsc\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/dsc/index.md)
+##### <a name='97403b5ae385aa568d0eba44eabac2e10b130a76104'></a> Source: [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8c31a7878b8c16469fd709d76af8bb9f1b39af1e/gallery/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/42e2719f521db693a3690a9d9256a626f3e48fef/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf)
-* Handoff Datetime: 2016-07-29 17:43:13
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='865258c0b403d4e7979d7ee32d3f87b63a349f08104'></a> Source: [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/gallery/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/42e2719f521db693a3690a9d9256a626f3e48fef/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf)
-* Handoff Datetime: 2016-07-29 17:43:13
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='865258c0b403d4e7979d7ee32d3f87b63a349f08168'></a> Source: [jea\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/jea/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/42e2719f521db693a3690a9d9256a626f3e48fef/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf)
-* Handoff Datetime: 2016-07-29 17:43:13
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='865258c0b403d4e7979d7ee32d3f87b63a349f08296'></a> Source: [scripting\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/scripting/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/42e2719f521db693a3690a9d9256a626f3e48fef/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf)
-* Handoff Datetime: 2016-07-29 17:43:13
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='865258c0b403d4e7979d7ee32d3f87b63a349f08442'></a> Source: [wmf\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8248ea4c6e353ae6df1662e080b2aa0156a4fb51/wmf/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/42e2719f521db693a3690a9d9256a626f3e48fef/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.087529cd8972c61293d437c5b3a72507e4d1e1d9.ru-ru.xlf)
-* Handoff Datetime: 2016-07-29 17:43:13
+* Handoff File: [index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/8e8ee55b681cff4712f0cbf71ad89f4f7953be72/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ru-ru.xlf)
+* Handoff Datetime: 2016-07-29 18:13:06
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
