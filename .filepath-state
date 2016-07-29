@@ -35,6 +35,9 @@
   "e5412a3168a18d1dbd117ed8b3eb6dd42a8d8f70": [
     "dsc\\configurations.md"
   ],
+  "e1922008a92f00c9ddab28598735839c25219d24": [
+    "dsc\\debugResource.md"
+  ],
   "f5290e085c8949f6b3cdf23f3244a7142da6248d": [
     "dsc\\debugResource.md"
   ],
@@ -1163,6 +1166,9 @@
   "e09cfe0994ac523fd10658955731a93b6c176c88": [
     "wmf\\5.1\\features-scenarios-cache\\using-module.md"
   ],
+  "058d18deeb3d4926970ea25a157f92ad14836e4b": [
+    "wmf\\5.1\\install-configure.md"
+  ],
   "0d5b3688d863b6138ec95d9bc0387f9729f63083": [
     "wmf\\5.1\\install-configure.md"
   ],
@@ -1210,6 +1216,9 @@
   ],
   "1f00f2706f3c3ece783590f3a2b0bdb6734402b0": [
     "wmf\\5.1\\DSC-improvements.md"
+  ],
+  "af0f58c5d84e21416cb15e4bd53c24369fa9c1b6": [
+    "wmf\\5.1\\engine-improvements.md"
   ],
   "ae1ce4f287245c9c61baff8c94e51a9640f8670b": [
     "wmf\\5.1\\engine-improvements.md"
