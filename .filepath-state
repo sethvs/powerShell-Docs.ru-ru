@@ -1007,6 +1007,16 @@
   "5998288f1a82980b5988eb6d4fff1833ba5067e1": [
     "wmf\\5.0\\productincompat.md"
   ],
+  "865258c0b403d4e7979d7ee32d3f87b63a349f08": [
+    "jea\\index.md",
+    "dsc\\index.md",
+    "gallery\\index.md",
+    "scripting\\index.md",
+    "wmf\\index.md"
+  ],
+  "2bf3293026c3df211073cfcf67ba5c4a1a61bd0f": [
+    "jea\\index.md"
+  ],
   "bfee5ef59a4085f0350ff454f634fc0bf5d6d837": [
     "jea\\README.md"
   ],
