@@ -1,1 +1,5 @@
-# Index test file for Open Publishing
+# Тестовый файл индекса для открытых публикаций
+
+<!--HONumber=Jul16_HO5-->
+
+

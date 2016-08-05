@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: f5290e085c8949f6b3cdf23f3244a7142da6248d
+ms.sourcegitcommit: 83ca45d507e39b77751ac7feb6a7b65ae2834280
+ms.openlocfilehash: e1922008a92f00c9ddab28598735839c25219d24
 
 ---
 
@@ -87,7 +87,7 @@ Debug-Runspace -Id 9
 
 ## Отладка сценария ресурса
 
-Запустите новый экземпляр интегрированной среды сценариев PowerShell. В консоли введите последние три строки выходных данных `Start-DscConifiguration` в виде команд, заменив `<credentials>` на действительные учетные данные пользователя. Теперь вы должны увидеть строку приглашения, которая выглядит примерно так:
+Запустите новый экземпляр интегрированной среды сценариев PowerShell. В консоли введите последние три строки выходных данных `Start-DscConfiguration` в виде команд, заменив `<credentials>` на действительные учетные данные пользователя. Теперь вы должны увидеть строку приглашения, которая выглядит примерно так:
 
 ```powershell
 [TEST-SRV]: [DBG]: [Process:9000]: [RemoteHost]: PS C:\DebugTest>>
@@ -110,6 +110,6 @@ Debug-Runspace -Id 9
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
