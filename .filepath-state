@@ -92,6 +92,9 @@
   "7813185313845b74e2a37dfa4ec6bb109f32f0eb": [
     "dsc\\lnxUserResource.md"
   ],
+  "5d0dc2fd1c5cfbe1065c402fe487d4240f8c2112": [
+    "dsc\\logResource.md"
+  ],
   "97ffa20191016584fc2fba459c457787365d11ee": [
     "dsc\\logResource.md"
   ],
@@ -307,6 +310,9 @@
   ],
   "edc1a0383cebfbe89b18b0238a13bb28e4d25c5a": [
     "wmf\\5.0\\sil_overview.md"
+  ],
+  "274c6dcc36b3baa64d01b5518444c7de3dcc00ee": [
+    "wmf\\TOC.md"
   ],
   "a8405b567e58e4136f75938b4e728812bfc64b09": [
     "wmf\\TOC.md"
@@ -938,6 +944,9 @@
   "8a61e974e7f7ea479ecc447c2db91c677cd8931f": [
     "scripting\\setup\\Installing-the-Windows-PowerShell-2.0-Engine.md"
   ],
+  "7af27dc9bd8e93d1df5258b0d8df8af12726f568": [
+    "scripting\\setup\\Installing-the-Windows-PowerShell-SDK.md"
+  ],
   "9ba9ef3efe6a8ae85d96b59db53ad3a16bf57699": [
     "scripting\\setup\\Installing-the-Windows-PowerShell-SDK.md"
   ],
@@ -1160,8 +1169,14 @@
   "e09cfe0994ac523fd10658955731a93b6c176c88": [
     "wmf\\5.1\\features-scenarios-cache\\using-module.md"
   ],
+  "26a325dc7a18ba167ddc56ca226fce3eded79f52": [
+    "wmf\\5.1\\install-configure.md"
+  ],
   "058d18deeb3d4926970ea25a157f92ad14836e4b": [
     "wmf\\5.1\\install-configure.md"
+  ],
+  "e6fe3c23d9d340df547f6efb0be876408f48d728": [
+    "wmf\\5.1\\known-issues.md"
   ],
   "387ebc0467b9f154444292f391af0f4b77123639": [
     "wmf\\5.1\\known-issues.md"
@@ -1171,6 +1186,9 @@
   ],
   "12f2c084ab92134b733ee037c3d9fbd512af2e4c": [
     "wmf\\5.1\\release-notes.md"
+  ],
+  "9611a7da48a849b52821ac2890e1ea60441a75e3": [
+    "wmf\\5.1\\scenarios-features.md"
   ],
   "49bc62fccc5b3dfd88fb06082fa84dc86327595f": [
     "wmf\\5.1\\scenarios-features.md"
@@ -1187,17 +1205,29 @@
   "d4cd4b828089caf47b32a405a68a3f357958f37e": [
     "wmf\\5.1\\features-scenarios-cache\\PesterUpdates.md"
   ],
+  "8a7774b36f15ff790c31d4c1a8bc69be257b8508": [
+    "wmf\\5.1\\bugfixes.md"
+  ],
   "90d57af0c8b90e709769525455ae39557b9c7176": [
     "wmf\\5.1\\bugfixes.md"
   ],
+  "2a17fdd4092adf734398f38bec915d53c1b3e566": [
+    "wmf\\5.1\\console-improvements.md"
+  ],
   "221b8095c15a810c032bd93aafe8ec886af233d9": [
     "wmf\\5.1\\console-improvements.md"
+  ],
+  "a76c9ae7117e71833955a67ad8ec06fa7d0ed419": [
+    "wmf\\5.1\\DSC-improvements.md"
   ],
   "3ea12a7b669cd7f4714f949a84459b1c8099abb8": [
     "wmf\\5.1\\DSC-improvements.md"
   ],
   "1f00f2706f3c3ece783590f3a2b0bdb6734402b0": [
     "wmf\\5.1\\DSC-improvements.md"
+  ],
+  "bb7efc55b1c948c349aa778b700e5cb1277b9762": [
+    "wmf\\5.1\\engine-improvements.md"
   ],
   "af0f58c5d84e21416cb15e4bd53c24369fa9c1b6": [
     "wmf\\5.1\\engine-improvements.md"
@@ -1247,6 +1277,9 @@
   "9dab14b25815ac7c005b915df421300a1cc72033": [
     "gallery\\psgallery\\Creating-and-Publishing-an-item.md"
   ],
+  "87e99e2735be9d2790dc0d7f75318bafe3bfd4dc": [
+    "gallery\\psgallery\\Deleting-Items.md"
+  ],
   "8d6ca21b735c61aabd82ee9dd116082651133cf3": [
     "gallery\\psgallery\\Deleting-Items.md"
   ],
@@ -1258,14 +1291,23 @@
     "gallery\\psget\\module\\ModuleManifest-Reference.md",
     "gallery\\psget\\script\\Script_Versioning.md"
   ],
+  "07164bab5e12283899be2453e644bba1b2d3b40f": [
+    "gallery\\psgallery\\Managing-Item-Owners.md"
+  ],
   "e85cc33d66e195bc6e36fdb93f4959acc0ab4b28": [
     "gallery\\psgallery\\Managing-Item-Owners.md"
   ],
   "de3ce3368ffbeb93bbead9d3665009c0a847feac": [
     "gallery\\psgallery\\PackageManagement_Architecture .md"
   ],
+  "4f32e7549f71f17125d758704776e75f0ffaaaf1": [
+    "gallery\\psgallery\\psgallery_contacting_administrators.md"
+  ],
   "83152849f15c3ca2d75d9505828b9a827c9df2e9": [
     "gallery\\psgallery\\psgallery_contacting_administrators.md"
+  ],
+  "84732e3f6e27904ae4cafae155c10c9eb0851be1": [
+    "gallery\\psgallery\\psgallery_contacting_item_owners.md"
   ],
   "1f4f2e335d6bd2a2f52947ac06596afb079b905c": [
     "gallery\\psgallery\\psgallery_contacting_item_owners.md"
@@ -1273,11 +1315,17 @@
   "ee43e20b0f83cef6940e2fb05eae6c1eea9597d6": [
     "gallery\\psgallery\\psgallery_deploy_to_azure_automation.md"
   ],
+  "0870a1ab7d5ce1e2f9fc2896e9078e6eec019850": [
+    "gallery\\psgallery\\psgallery_dispute_resolution.md"
+  ],
   "cd93cf2d7ff9b200bd14283c6fb0b3d41b90a44a": [
     "gallery\\psgallery\\psgallery_dispute_resolution.md"
   ],
   "754f044d585332a008e2c09a1cba466937f22c59": [
     "gallery\\psgallery\\psgallery_faqs.md"
+  ],
+  "f6f6e5a827e4cd86538d30bd003bca805a1b77eb": [
+    "gallery\\psgallery\\psgallery_filelist_feature.md"
   ],
   "44ced9f60695ef6a24be1b8e10fa42ae03dd85f6": [
     "gallery\\psgallery\\psgallery_filelist_feature.md"
@@ -1293,6 +1341,9 @@
   ],
   "9a858cfc303cac6f9f2f23c01c1d8a753a69dc7c": [
     "gallery\\psgallery\\psgallery_search_syntax.md"
+  ],
+  "fb5220e909dfc76583ab4834f4297b34cf990736": [
+    "gallery\\psgallery\\psgallery_unlist_items.md"
   ],
   "257dfc9c884c50c2d3a58b8cc57ff0f673fde354": [
     "gallery\\psgallery\\psgallery_unlist_items.md"
@@ -1393,8 +1444,14 @@
   "6da59dbf6f98bb30ae9d57ecb3bace2f42cdf76b": [
     "gallery\\psget\\script\\psget_update-scriptfileinfo.md"
   ],
+  "1407b4d2c8c6c246b51ef447284e729811823688": [
+    "gallery\\readme.md"
+  ],
   "d526066f543a99b765299c678d85c152a319d60b": [
     "gallery\\readme.md"
+  ],
+  "5902715d089c9251c84e66cc536019af9e69c31b": [
+    "gallery\\TOC.md"
   ],
   "263ec9e1dd297df2a70ef2846566a7004282aa92": [
     "gallery\\TOC.md"
