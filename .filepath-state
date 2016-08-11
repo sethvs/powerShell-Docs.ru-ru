@@ -110,6 +110,9 @@
   "bcaf82cbafe67cc309765e16b3c9cd6eff0a982a": [
     "dsc\\packageResource.md"
   ],
+  "12decb2502031f85c40e1f68bc426b2d837f13cf": [
+    "dsc\\partialConfigs.md"
+  ],
   "9e3052353dd54568eb2dfaf5af5efde7faafd03a": [
     "dsc\\partialConfigs.md"
   ],
@@ -124,6 +127,9 @@
   ],
   "730f2f26e2811996e79cf0073a4ef65cad390687": [
     "dsc\\pullClientConfigID4.md"
+  ],
+  "ec4ce56d00daa265fb0031f20ded05d3f3c04895": [
+    "dsc\\pullClientConfigNames.md"
   ],
   "32ff157c7c8366cf0c9847dec4815d2d4b9cc5fa": [
     "dsc\\pullClientConfigNames.md"
@@ -1184,6 +1190,9 @@
   "cfe0a6562743f1df81acb81e33c120cb67f9042c": [
     "wmf\\5.1\\known-issues-cache\\template.md"
   ],
+  "83061e651b190bab3e5914bb6270a5857f7aa7a5": [
+    "wmf\\5.1\\release-notes.md"
+  ],
   "12f2c084ab92134b733ee037c3d9fbd512af2e4c": [
     "wmf\\5.1\\release-notes.md"
   ],
@@ -1267,6 +1276,9 @@
   ],
   "22b9c04ae97efe4927c59b4ba08db0d757519c0a": [
     "wmf\\5.1\\features-scenarios-cache\\PowerShellGet-Enhancements.md"
+  ],
+  "f83066393a966ee1cd054ea528ed0590bc494643": [
+    "wmf\\5.1\\package-management-improvements.md"
   ],
   "bfe75745b736ffd97aff97f8450fa1ece5647dd1": [
     "wmf\\5.1\\package-management-improvements.md"
