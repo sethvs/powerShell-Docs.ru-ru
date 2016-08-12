@@ -110,6 +110,9 @@
   "bcaf82cbafe67cc309765e16b3c9cd6eff0a982a": [
     "dsc\\packageResource.md"
   ],
+  "c5d3cb1045e67d4913fbbad13938e8f95a43cacf": [
+    "dsc\\partialConfigs.md"
+  ],
   "12decb2502031f85c40e1f68bc426b2d837f13cf": [
     "dsc\\partialConfigs.md"
   ],
@@ -1462,6 +1465,9 @@
   "d526066f543a99b765299c678d85c152a319d60b": [
     "gallery\\readme.md"
   ],
+  "420624e0e554b0838bcca582a0e6c3c0cbd15901": [
+    "gallery\\TOC.md"
+  ],
   "5902715d089c9251c84e66cc536019af9e69c31b": [
     "gallery\\TOC.md"
   ],
@@ -1476,5 +1482,8 @@
   ],
   "180158033e0c960f73dba66a3d77b15765e3e382": [
     "wmf\\5.1\\known-issues-cache\\NetworkingSwitchCmdletInput.md"
+  ],
+  "dc283a7dd5794c07194066537a10734b0b5e743e": [
+    "gallery\\psget\\psget_cmdlets_troubleshooting.md"
   ]
 }
