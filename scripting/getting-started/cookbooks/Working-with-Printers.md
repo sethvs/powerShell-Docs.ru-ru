@@ -1,7 +1,7 @@
 ---
 title: "Работа с принтерами"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 27d3d11b71b95cd79817449cf8bdb1a0a26936bd
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c013124d12a551245152c1703e5f1d8a3f8f5f70
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: 27d3d11b71b95cd79817449cf8bdb1a0a26936bd
 Windows PowerShell можно использовать для управления принтерами с помощью инструментария WMI и COM-объекта WScript.Network с сервера сценариев Windows. Мы будем использовать сочетание обоих средств, чтобы продемонстрировать выполнение конкретных задач.
 
 ### Вывод подключений принтеров
-Чтобы вывести список принтеров, установленных на компьютере, проще всего использовать класс **Win32\_Printer** инструментария WMI:
+Самый простой способ вывести список принтеров, установленных на компьютере, — использовать класс **Win32_Printer** инструментария WMI.
 
 ```
 Get-WmiObject -Class Win32_Printer -ComputerName
@@ -40,7 +40,7 @@ Get-WmiObject -Class Win32_Printer -ComputerName
 ```
 
 ### Установка принтера по умолчанию
-Чтобы задать принтер по умолчанию с помощью инструментария WMI, найдите принтер в коллекции **Win32\_Printer**, а затем вызовите метод **SetDefaultPrinter**:
+Чтобы задать принтер по умолчанию с помощью инструментария WMI, найдите принтер в коллекции **Win32_Printer**, а затем вызовите метод **SetDefaultPrinter**.
 
 ```
 (Get-WmiObject -ComputerName . -Class Win32_Printer -Filter "Name='HP LaserJet 5Si'").SetDefaultPrinter()
@@ -62,6 +62,6 @@ Get-WmiObject -Class Win32_Printer -ComputerName
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Использование переменных для хранения объектов"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: c3bcf9dc6f70383e971d9c1ae75ec78860111de9
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6216f3e1a766c57a7549a3e3b4fbe76d043a8a41
 
 ---
 
 # Использование переменных для хранения объектов
-Windows PowerShell работает с объектами. Можно создавать переменные, главным образом — именованные объекты, чтобы сохранять выходные данные для последующего использования. Если вы привыкли работать с переменными в других оболочках, помните, что переменные Windows PowerShell являются объектами, а не текстом.
+Windows PowerShell работает с объектами. Можно создавать переменные, главным образом — именованные объекты, чтобы сохранять выходные данные для последующего использования. Если вы привыкли работать с переменными в других оболочках, помните, что переменные Windows PowerShell являются объектами, а не текстом.
 
 Имена переменных всегда начинаются с символа $ и могут включать любые буквенно-цифровые символы или знаки подчеркивания.
 
@@ -43,7 +43,7 @@ Path
 C:\temp
 ```
 
-**Get\-Member** можно использовать для отображения сведений о содержимом переменных. Передача $loc в Get\-Member покажет, что это объект **PathInfo**, так же как и выходные данные Get\-Location:
+**Get-Member** можно использовать для отображения сведений о содержимом переменных. Передача $loc в Get-Member покажет, что это объект **PathInfo**, так же как и выходные данные Get-Location:
 
 ```
 PS> $loc | Get-Member -MemberType Property
@@ -65,7 +65,7 @@ Windows PowerShell предоставляет несколько команд д
 Get-Command -Noun Variable | Format-Table -Property Name,Definition -AutoSize -Wrap
 ```
 
-Кроме переменных, создаваемых в текущем сеансе Windows PowerShell, существует несколько системных переменных. Можно использовать командлет **Remove\-Variable**, чтобы очистить все переменные, которые не управляются Windows PowerShell. Введите следующую команду для очистки всех переменных:
+Кроме переменных, создаваемых в текущем сеансе Windows PowerShell, существует несколько системных переменных. Можно использовать командлет **Remove-Variable**, чтобы очистить все переменные, которые не управляются с помощью Windows PowerShell. Введите следующую команду для очистки всех переменных:
 
 ```
 Remove-Variable -Name * -Force -ErrorAction SilentlyContinue
@@ -81,7 +81,7 @@ Performing operation "Remove Variable" on Target "Name: Error".
 (default is "Y"):A
 ```
 
-Если вы запустите командлет **Get\-Variable**, то увидите остальные переменные Windows PowerShell. Поскольку существует и переменный диск Windows PowerShell, можно также отобразить все переменные Windows PowerShell, введя следующее:
+Если вы запустите командлет **Get-Variable**, то увидите остальные переменные Windows PowerShell. Поскольку существует и переменный диск Windows PowerShell, можно также отобразить все переменные Windows PowerShell, введя следующее:
 
 ```
 Get-ChildItem variable:
@@ -106,6 +106,6 @@ C:\WINDOWS
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

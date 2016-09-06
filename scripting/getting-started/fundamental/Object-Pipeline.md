@@ -1,7 +1,7 @@
 ---
 title: "Конвейер объектов"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 56aa32d40d8e5e61f5328d5a373ca5a1bd7ca6e3
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 7f4cafad8854c19f733a2672ba6b40834d93aac0
 
 ---
 
@@ -24,6 +24,6 @@ ms.openlocfilehash: 56aa32d40d8e5e61f5328d5a373ca5a1bd7ca6e3
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

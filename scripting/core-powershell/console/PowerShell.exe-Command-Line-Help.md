@@ -1,12 +1,19 @@
 ---
-title: Справка по командной строке PowerShell.exe
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Справка по командной строке PowerShell.exe"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: e4635890a5433e199d5ddbce0ac1475a134ecd57
+
 ---
+
 # Справка по командной строке PowerShell.exe
 Запускает сеанс Windows PowerShell. Можно использовать PowerShell.exe для запуска сеанса Windows PowerShell из командной строки другого средства, такого как Cmd.exe, или использовать его в командной строке Windows PowerShell для запуска нового сеанса. Используйте указанные параметры для настройки сеанса.
 
@@ -39,9 +46,9 @@ PowerShell[.exe] -Help | -? | /?
 Принимает строковую версию команды в кодировке Base 64. Используйте этот параметр для отправки в Windows PowerShell команд, требующих сложных кавычек или фигурных скобок.
 
 ### -ExecutionPolicy <ExecutionPolicy>
-Задает политику выполнения по умолчанию для текущего сеанса и сохраняет ее в переменной среды $env:PSExecutionPolicyPreference. Этот параметр не изменяет политику выполнения Windows PowerShell, заданную в реестре. Дополнительные сведения о политиках выполнения Windows PowerShell, включая список допустимых значений, см. в статье "about_Execution_Policies" (http://go.microsoft.com/fwlink/?LinkID=135170).
+Задает политику выполнения по умолчанию для текущего сеанса и сохраняет ее в переменной среды $env:PSExecutionPolicyPreference. Этот параметр не изменяет политику выполнения Windows PowerShell, заданную в реестре. Дополнительные сведения о политиках выполнения Windows PowerShell, включая список допустимых значений, см. в статье about_Execution_Policies (http://go.microsoft.com/fwlink/?LinkID=135170).
 
-### -File <FilePath> [<Parameters>]
+### -File <FilePath> \[<Parameters>]
 Запускает указанный сценарий в локальной области ("с точкой"), чтобы создаваемые сценарием функции и переменные были доступны в текущем сеансе. Введите путь к файлу сценария и любые параметры. Параметр **File** должен быть последним в команде, поскольку все символы, введенные после параметра **File**, интерпретируются как путь к файлу сценария и следующие за ним параметры сценария.
 
 Параметры сценария и их значения можно включить в значение параметра **File**. Например: `-File .\Get-Script.ps1 -Domain Central`
@@ -54,7 +61,7 @@ PowerShell[.exe] -Help | -? | /?
 Описывает формат данных, отправляемых в Windows PowerShell. Допустимые значения: "Text" (текстовые строки) или "XML" (сериализованный формат CLIXML).
 
 ### -Mta
-Запускает оболочку с использованием многопотокового подразделения. Этот параметр впервые появился в Windows PowerShell 3.0. В Windows PowerShell 3.0 по умолчанию используется однопотоковое подразделение (STA). В Windows PowerShell 2.0 по умолчанию используется многопотоковое подразделение (STA).
+Запускает оболочку с использованием многопотокового подразделения. Этот параметр впервые появился в Windows PowerShell 3.0. В Windows PowerShell 3.0 по умолчанию используется однопотоковое подразделение (STA). В Windows PowerShell 2.0 по умолчанию используется многопотоковое подразделение (STA).
 
 ### -NoExit
 Не завершает работу после выполнения команд запуска.
@@ -75,14 +82,14 @@ PowerShell[.exe] -Help | -? | /?
 Загружает указанный файл консоли Windows PowerShell. Введите путь и имя файла консоли. Для создания файла консоли используйте командлет [Export-Console](https://technet.microsoft.com/en-us/library/4bab1c02-9e61-4aaf-9957-11d1934ef4ef) в Windows PowerShell.
 
 ### -Sta
-Запускает Windows PowerShell с использованием многопотокового подразделения. В Windows PowerShell 3.0 по умолчанию используется однопотоковое подразделение (STA). В Windows PowerShell 2.0 по умолчанию используется многопотоковое подразделение (STA).
+Запускает Windows PowerShell с использованием многопотокового подразделения. В Windows PowerShell 3.0 по умолчанию используется однопотоковое подразделение (STA). В Windows PowerShell 2.0 по умолчанию используется многопотоковое подразделение (STA).
 
 ### -Version <Windows PowerShell Version>
 Запускает заданную версию Windows PowerShell. Указанная версия должна быть установлена в системе. Если на компьютере установлен Windows PowerShell 3.0, допустимыми значениями являются "3.0" и "2.0". По умолчанию используется значение "3.0".
 
 Если Windows PowerShell 3.0 не установлен, допустимо только значение "2.0". Другие значения игнорируются.
 
-Дополнительные сведения см. в разделе "Установка Windows PowerShell" статьи [Начало работы с Windows PowerShell [СТАРЫЙ MSDN]](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)..
+Дополнительные сведения см. в разделе "Установка Windows PowerShell" статьи [Начало работы с Windows PowerShell [СТАРЫЙ MSDN]](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd).
 
 ### -WindowStyle <Window style>
 Задает стиль окна для сеанса. Допустимые значения: Normal, Minimized, Maximized и Hidden.
@@ -90,7 +97,7 @@ PowerShell[.exe] -Help | -? | /?
 ### -Command
 Выполняет указанные команды (вместе с параметрами) как введенные в командной строке Windows PowerShell и завершает работу, если не указан параметр NoExit.
 
-Значением Command может быть строка "-". или блок сценария. Если Command имеет значение "-", текст команды считывается из стандартного ввода.
+Значением Command может быть строка "-". или блок сценария. Если для Command задано значение "-", текст команды считывается из стандартного ввода.
 
 Блоки сценариев должны быть заключены в фигурные скобки ({}). Указать блок сценария можно только при использовании PowerShell.exe в Windows PowerShell. Результаты сценария возвращаются родительской оболочке как десериализованные объекты XML, а не как активные объекты.
 
@@ -130,6 +137,7 @@ powershell.exe -encodedCommand $encodedCommand
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

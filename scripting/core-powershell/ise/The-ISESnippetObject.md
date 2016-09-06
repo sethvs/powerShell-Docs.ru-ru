@@ -1,14 +1,21 @@
 ---
-title: Объект ISESnippet
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект ISESnippet"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 98bc8113-c3cd-4201-bdb9-9d9bdb7e266c
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 4f244b21454c2db929688d11cdf3f46d474ce0db
+
 ---
+
 # Объект ISESnippet
-  Объект **ISESnippet** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISESnippet. Элементы коллекции **$psISE.CurrentPowerShellTab.Snippets** являются примерами объектов **ISESnippet**. Самый простой способ создать фрагмент кода — использовать командлет [New-IseSnippet&#91;PSITPro5_ISE&#93;](https://technet.microsoft.com/en-us/library/0a6339a3-2683-4a8e-8929-90ad9a95c3e0).
+  Объект **ISESnippet** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISESnippet. Элементы коллекции **$psISE.CurrentPowerShellTab.Snippets** являются примерами объектов **ISESnippet**. Самый простой способ создать фрагмент кода — использовать командлет [New-IseSnippet&#91;PSITPro5_ISE&#93;](https://technet.microsoft.com/en-us/library/0a6339a3-2683-4a8e-8929-90ad9a95c3e0).
 
 ## Свойства
 
@@ -37,7 +44,7 @@ $psISE.CurrentPowerShellTab.Snippets.Item(0).CodeFragment
 ###  <a name="Shortcut"></a> Установленное напрямую доверие
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
- Свойство только для чтения, которое получает сочетания клавиш Windows для элемента меню.
+ Свойство только для чтения, которое получает сочетания клавиш Windows для пункта меню.
 
 ```
 # Get the shortcut for the first submenu item.
@@ -55,6 +62,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus[0].Shortcut
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

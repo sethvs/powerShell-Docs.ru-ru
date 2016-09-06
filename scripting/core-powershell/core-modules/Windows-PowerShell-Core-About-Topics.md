@@ -1,12 +1,19 @@
 ---
-title: Разделы справки по модулю Windows PowerShell Core
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Разделы справки по модулю Windows PowerShell Core"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 4d33ebe2a067781d708ca3b0f8dc4dd2848ba4d4
+
 ---
+
 # Разделы справки по модулю Windows PowerShell Core
 Этот раздел содержит список справочных разделов, которые применяются ко всем модулям Windows PowerShell. Разделы по основным понятиям для других модулей см. в справке по конкретному модулю.
 
@@ -21,7 +28,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Checkpoint-Workflow](https://technet.microsoft.com/en-us/library/3a309488-1e7a-4807-b83b-dedbeac3ee1c)|Содержит описание действия Checkpoint-Workflow, которое является контрольной точкой в рабочем процессе.|
 |[about_Command_Precedence [v4]](https://technet.microsoft.com/en-us/library/fb14a05e-d461-432d-a253-e9371b54bd2e)|Содержит сведения о том, каким образом Windows PowerShell выбирает команды для выполнения.|
 |[about_Command_Syntax [v4]](https://technet.microsoft.com/en-us/library/f39782e8-fe76-46ea-b8b5-b50bbee8da4b)|Содержит сведения о формате команд в Windows PowerShell.|
-|[about_Comment_Based_Help [v4]](https://technet.microsoft.com/en-us/library/c270e198-6da2-4825-b6eb-35d5c8a5cf3d)|Содержит сведения о том, как писать разделы справки на основе комментариев для функций и сценариев.|
+|[about_Comment_Based_Help [v4]](https://technet.microsoft.com/en-us/library/c270e198-6da2-4825-b6eb-35d5c8a5cf3d)|Объясняет, как писать разделы справки на основе комментариев для функций и скриптов.|
 |[about_CommonParameters [v4]](https://technet.microsoft.com/en-us/library/c3f5e229-8bfb-498e-bb84-b84444a323c4)|Содержит описание параметров, которые могут использоваться с любым командлетом.|
 |[about_Comparison_Operators [v4]](https://technet.microsoft.com/en-us/library/007cf70d-f090-4720-a282-77c6ecbfa711)|Содержит описание операторов сравнения, используемых в Windows PowerShell.|
 |[about_Continue [v4]](https://technet.microsoft.com/en-us/library/a7d1e707-f9c7-4a15-9f92-bc530a40a91a)|Содержит описание инструкции **Continue**, которая служит для немедленного перехода в начало цикла программы.|
@@ -31,7 +38,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Debuggers [v4]](https://technet.microsoft.com/en-us/library/2b2ce8b3-f881-4528-bd30-f453dea06755)|Содержит описание отладчика сценариев Windows PowerShell, представляющего собой набор командлетов для отладки сценариев и функций.|
 |[about_Do [v4]](https://technet.microsoft.com/en-us/library/d1f65c4e-6231-44e2-b21c-78a91845ad6c)|Содержит описание инструкции Do, запускающей блок скрипта один или несколько раз в зависимости от условия While или Until.|
 |[about_Environment_Variables [v4]](https://technet.microsoft.com/en-us/library/998c8863-3794-42a8-8971-a5cadef72772)|Содержит сведения о том, как обращаться к переменным среды Windows из Windows PowerShell.|
-|[about_Escape_Characters [v4]](https://technet.microsoft.com/en-us/library/576ca013-c4ca-4ade-bf46-b0d1ce2c778f)|Содержит вводные сведения об escape-символе Windows PowerShell (`) и его назначении.|
+|[about_Escape_Characters [v4]](https://technet.microsoft.com/en-us/library/576ca013-c4ca-4ade-bf46-b0d1ce2c778f)|Содержит вводные сведения об escape-знаке Windows PowerShell (\`) и его назначении.|
 |[about_Eventlogs [v4]](https://technet.microsoft.com/en-us/library/8b5279cd-daf1-4ed1-8575-2df4baf7042d)|Содержит описание журнала событий Windows PowerShell в средстве просмотра событий.|
 |[about_Execution_Policies [v4]](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)|Содержит описание политик выполнения Windows PowerShell и способов управления ими.|
 |[about_For [v4]](https://technet.microsoft.com/en-us/library/a2eb48d6-7d47-4087-a8d6-deb1d029a957)|Содержит описание цикла **For** в Windows PowerShell.|
@@ -76,7 +83,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_PSSessions [v4]](https://technet.microsoft.com/en-us/library/747682ac-6499-4031-8dcc-5f22e831b549)|Содержит описание сеансов Windows PowerShell (PSSession) и сведения о том, как их использовать для выполнения удаленных команд.|
 |[about_PSSession_Details [v4]](https://technet.microsoft.com/en-us/library/d2c594e8-bcf6-4db5-8335-6487adcaf7eb)|Содержит подробные сведения о сеансах Windows PowerShell.|
 |[about_PSSnapins [v4]](https://technet.microsoft.com/en-us/library/87afc358-9075-4264-a94e-3edf39eb52aa)|Содержит описание оснасток Windows PowerShell и сведения о том, как их использовать для расширения Windows PowerShell.|
-|[about_Quoting_Rules [v4]](https://technet.microsoft.com/en-us/library/295e444a-4219-40c6-b16f-3685c7c7bc52)|Содержит сведения о правилах использования одиночных и двойных кавычек в Windows PowerShell, в том числе для автономных строк.|
+|[about_Quoting_Rules [v4]](https://technet.microsoft.com/en-us/library/295e444a-4219-40c6-b16f-3685c7c7bc52)|Содержит сведения о правилах использования одиночных и двойных кавычек в Windows PowerShell, в том числе для here-строк.|
 |[about_Redirection [v4]](https://technet.microsoft.com/en-us/library/328167e4-1247-4f7e-a179-b5bb15cf617c)|Объясняет, как перенаправлять выходные данные в переменные и текстовые файлы. Описывает операторы перенаправления.|
 |[about_Ref [v4]](https://technet.microsoft.com/en-us/library/2e015309-2833-48f9-b9cd-bc176317de22)|Объясняет, как создавать и использовать тип ссылочной переменной.|
 |[about_Regular_Expressions [v4]](https://technet.microsoft.com/en-us/library/b8dfae27-fb64-4d24-b065-fbc9bee88ae3)|Содержит сведения о том, как использовать регулярные выражения в Windows PowerShell.|
@@ -91,7 +98,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Requires [v4]](https://technet.microsoft.com/en-us/library/0f9a5a00-f64c-4305-b2e7-076aab68ca6f)|Содержит описание инструкции **Requires**, которая предотвращает выполнение сценария при отсутствии требуемых оснасток и версий.|
 |[about_Reserved_Words [v4]](https://technet.microsoft.com/en-us/library/f3dc2da5-d6c3-4a28-8a13-51fbc61c4e51)|Содержит список зарезервированных слов в Windows PowerShell.|
 |[about_Return [v4]](https://technet.microsoft.com/en-us/library/5c4e116d-a8be-4e13-906c-c4f74bb06f46)|Описывает выход из текущей области действия, которая может быть функцией, скриптом или блоком скриптов.|
-|[about_Run_With_PowerShell](https://technet.microsoft.com/en-us/library/c9d9ca5f-eff9-4409-be9d-e43b5b4087eb)|Содержит сведения об использовании функции "Выполнить с помощью PowerShell" для выполнения сценария через контекстное меню в обозревателе файлов.|
+|[about_Run_With_PowerShell](https://technet.microsoft.com/en-us/library/c9d9ca5f-eff9-4409-be9d-e43b5b4087eb)|Объясняет использование функции "Выполнение с помощью PowerShell" для выполнения скрипта через контекстное меню в обозревателе файлов.|
 |[about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)|Содержит описание запланированных заданий и объясняет их использование и управление ими в Windows PowerShell и планировщике заданий.|
 |[about_Scheduled_Jobs_Basics](https://technet.microsoft.com/en-us/library/859d8bfd-e655-4dc3-ab65-19813301eb57)|Описание процедур создания запланированных заданий и управления ими.|
 |[about_Scheduled_Jobs_Advanced](https://technet.microsoft.com/en-us/library/6aea5423-fb96-461c-a1cb-1fb705930eee)|Дополнительные разделы о запланированных заданиях, включая описание структуры файлов, лежащей в основе запланированных заданий.|
@@ -116,7 +123,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)|Содержит описание обновляемой системы справки в Windows PowerShell.|
 |[about_Variables [v4]](https://technet.microsoft.com/en-us/library/0cb2aa2b-508a-4d25-999b-e066e99a9312)|Обзорный раздел, посвященный типам переменных в Windows PowerShell.|
 |[about_While [v4]](https://technet.microsoft.com/en-us/library/3a1a1329-2501-4e4e-8660-a2ca68c68541)|Содержит описание циклов **While** в Windows PowerShell.|
-|[about_Wildcards [v4]](https://technet.microsoft.com/en-us/library/9fe09a23-afce-4547-9e2f-c38090f77636)|Содержит сведения о том, как использовать подстановочные знаки (*) в Windows PowerShell.|
+|[about_Wildcards [v4]](https://technet.microsoft.com/en-us/library/9fe09a23-afce-4547-9e2f-c38090f77636)|Содержит сведения о том, как использовать подстановочные знаки (\*) в Windows PowerShell.|
 |[about_Windows_PowerShell_5.0](https://technet.microsoft.com/en-us/library/6d56fa88-371e-40c9-b2de-64a2a0cd49da)|Содержит описание изменений и возможностей, появившихся в Windows PowerShell 4.0.|
 |[about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)|Содержит описание интегрированной среды сценариев Windows PowerShell® (ISE).|
 |[about_Workflows](https://technet.microsoft.com/en-us/library/f2897bdd-1b9d-4679-8b19-09840bd40a22)|Содержит краткие обзорные сведения о компоненте "Рабочий процесс" в Windows PowerShell.|
@@ -124,7 +131,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_WMI](https://technet.microsoft.com/en-us/library/32da7221-c213-48ad-8466-fad82285e4e8)|Содержит общие сведения об инструментарии управления Windows (WMI), который является реализацией Майкрософт отраслевого стандарта WBEM.|
 |[about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)|Содержит общие сведения об инструментарии управления Windows (WMI) и Windows PowerShell.|
 |[about_WQL](https://technet.microsoft.com/en-us/library/820b2d23-3473-46f5-a188-5910704c7905)|Содержит описание языка WQL, используемого для получения объектов WMI в Windows PowerShell.|
-|[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Содержит описание командлетов в модуле Microsoft.WsMan.Management. Содержит сведения об их использовании для управления возможностями WS-Management, в том числе диском поставщика WSMan.|
+|[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Содержит описание командлетов в модуле Microsoft.WsMan.Management. Объясняет их использование для управления возможностями WS-Management, в том числе диском поставщика WSMan.|
 
 ## См. также
 [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
@@ -137,6 +144,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

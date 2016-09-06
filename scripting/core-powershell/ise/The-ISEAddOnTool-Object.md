@@ -1,7 +1,7 @@
 ---
 title: "Объект ISEAddOnTool"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 44b218200e4207fba059ce63adabec924fe6eb1d
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6b3c739ef54596495dad65dd51c3bcb4404c3d94
 
 ---
 
 # Объект ISEAddOnTool
-  Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев ISE Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем — **Показать надстройку Command**. После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
+  Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command). После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
 
- Каждую надстройку\-можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
+ Каждую надстройку можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
 
  Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек. Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md).
 
@@ -29,7 +29,7 @@ ms.openlocfilehash: 44b218200e4207fba059ce63adabec924fe6eb1d
 ###  <a name="Control"></a> Элемент
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Свойство **Control** обеспечивает доступ для чтения к множеству сведений надстройки Commands.
+ Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.
 
 ```
 # View the properties of the Commands add-on tool.
@@ -145,7 +145,7 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 ###  <a name="IsVisible"></a> IsVisible
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Логическое свойство, которое определяет видимость настройки на соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или **$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание на то, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
+ Логическое свойство, которое определяет видимость надстройки в соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или ******$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
 
 ```
 # Hide the current tool in the vertical tool pane
@@ -158,7 +158,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 ###  <a name="name"></a> Название
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Свойство только для чтения, которое получает имя оснастки.
+ Свойство только для чтения, которое получает имя надстройки.
 
 ```
 # Gets the name of the visible vertical pane add-on tool.
@@ -176,6 +176,6 @@ Commands
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

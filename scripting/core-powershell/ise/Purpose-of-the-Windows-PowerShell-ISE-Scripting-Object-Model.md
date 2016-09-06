@@ -1,12 +1,19 @@
 ---
-title: Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
+
 ---
+
 # Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
   Объекты определяют внешний вид и функции интегрированной среды сценариев Windows PowerShell (ISE). В справочнике по объектной модели содержатся сведения о свойствах- и методах-членах, предоставляемых этими объектами. Примеры показывают, как использовать сценарии для прямого доступа к этим методам и свойствам. Объектная модель сценариев упрощает выполнение следующих задач.
 
@@ -71,6 +78,7 @@ ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

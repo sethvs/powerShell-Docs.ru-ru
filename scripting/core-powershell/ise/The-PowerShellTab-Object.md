@@ -1,18 +1,25 @@
 ---
-title: Объект PowerShellTab
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект PowerShellTab"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: f3f2d27c3c82406f8e8967fd1784a6e07579c1fa
+
 ---
+
 # Объект PowerShellTab
   Объект **PowerShellTab** представляет среду выполнения Windows PowerShell.
 
 ## Методы
 
-###  <a name="invoke"></a> Invoke( Script )
+###  <a name="invoke"></a> Invoke\( Script \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Выполняет заданный сценарий на вкладке PowerShell.
@@ -20,8 +27,7 @@ ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 > [!NOTE]
 >  Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Он не возвращает объекты или значения. Если код изменяет какую-либо переменную, эти изменения сохраняются на вкладке, для которой была вызвана команда.
 
- **Script** — System.Management.Automation.ScriptBlock или строка.
- Блок сценария для запуска.
+ **Script** — System.Management.Automation.ScriptBlock или строка. Блок сценария для запуска.
 
 ```
 # Manually create a second PowerShell tab before running this script.
@@ -29,7 +35,7 @@ ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 $psise.PowerShellTabs[1].Invoke({dir})
 ```
 
-### InvokeSynchronous( Script, [useNewScope], millisecondsTimeout )
+### InvokeSynchronous\( Script, \[useNewScope\], millisecondsTimeout \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Выполняет заданный сценарий на вкладке PowerShell.
@@ -37,14 +43,13 @@ $psise.PowerShellTabs[1].Invoke({dir})
 > [!NOTE]
 >  Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Выполняется блок сценария, и любое значение, возвращаемое при выполнении сценария, возвращается в среду выполнения, из которой вызывается команда. Если время выполнения команды превышает значение времени ожидания, заданное параметром **millesecondsTimeout**, команда завершается ошибкой с исключением "Время ожидания операции истекло".
 
- **Script** — System.Management.Automation.ScriptBlock или строка.
- Блок сценария для запуска.
+ **Script** — System.Management.Automation.ScriptBlock или строка. Блок сценария для запуска.
 
- **[useNewScope]** — необязательный, логический; значение по умолчанию **$true**.
- Если задано значение **$true**, создается новая область для выполнения команды. Параметр не изменяет среду выполнения вкладки PowerShell, которая указана командой.
+ **\[useNewScope\]** — необязательный логический параметр; значение по умолчанию — **$true**
+. Если задано значение **$true**, создается новая область для выполнения команды. Параметр не изменяет среду выполнения вкладки PowerShell, которая указана командой.
 
- **[millisecondsTimeout]** — необязательный, целое число; значение по умолчанию **500**..
- Если команда не завершается в течение указанного времени, то создается исключение **TimeoutException** с сообщением "Время ожидания операции истекло".
+ **\[millisecondsTimeout\]** — необязательный, целое число. Значение по умолчанию — **500**.
+Если команда не завершается в течение указанного времени, то создается исключение **TimeoutException** с сообщением "Время ожидания операции истекло".
 
 ```
 # create a new PowerShell tab and then switch back to the first
@@ -106,7 +111,7 @@ $secondTab.CanInvoke
 ```
 
 ###  <a name="Commandpane"></a> Consolepane
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.  В Windows PowerShell ISE 2.0 это свойство называется **CommandPane**..
+  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.  В Windows PowerShell ISE 2.0 это свойство называется **CommandPane**.
 
  Свойство только для чтения, которое получает объект [editor](../ise/The-ISEEditor-Object.md) области консоли.
 
@@ -119,7 +124,7 @@ $psISE.CurrentPowerShellTab.ConsolePane
 ###  <a name="Displayname"></a> DisplayName
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает или задает текст, выводимый на вкладке PowerShell. По умолчанию вкладкам назначаются имена "PowerShell #", где # представляет номер вкладки.
+ Свойство только для чтения, которое получает или задает текст, выводимый на вкладке PowerShell. По умолчанию вкладкам назначаются имена "PowerShell #", где # — номер вкладки.
 
 ```
 $newTab = $psise.PowerShellTabs.Add()
@@ -153,7 +158,7 @@ $newFile.Editor.LineCount
 ###  <a name="Output"></a> Выходные данные
   Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  В более поздних версиях интегрированной среды сценариев Windows PowerShell для тех же целей можно использовать объект **ConsolePane**.
 
- Свойство только для чтения, которое получает область вывода текущего [редактора](../ise/The-ISEEditor-Object.md)..
+ Свойство только для чтения, которое получает область вывода текущего [редактора](../ise/The-ISEEditor-Object.md).
 
 ```
 # Clears the text in the Output pane.
@@ -223,6 +228,7 @@ $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

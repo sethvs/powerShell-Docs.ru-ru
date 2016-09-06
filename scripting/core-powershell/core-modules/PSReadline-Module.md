@@ -1,12 +1,19 @@
 ---
-title: Модуль PSReadline
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Модуль PSReadline"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: bf079dec-4d26-40e7-b7a9-154c69e485ba
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 483d96a5df9a1bbbbdaa0cb76657a4aba0dafe80
+
 ---
+
 # Модуль PSReadline
 В этом разделе содержатся разделы справки по модулю **PSReadline**. Модуль **PSReadline** содержит командлеты, которые позволяют настраивать среду редактирования командной строки в Windows PowerShell.
 
@@ -19,6 +26,7 @@ ms.assetid: bf079dec-4d26-40e7-b7a9-154c69e485ba
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

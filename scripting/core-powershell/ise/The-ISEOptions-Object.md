@@ -1,7 +1,7 @@
 ---
 title: "Объект ISEOptions"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 75e2a76f-f3d1-490b-ad5d-e3829946aabb
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 272749d487a59ccf5eb30352dc902591228746f3
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 1aee849dd8b89492a641560ed4ef163c3cb96da4
 
 ---
 
@@ -224,7 +224,7 @@ $psISE.Options.ConsolePaneTextBackgroundColor = "pink"
 ###  <a name="contc"></a> ConsoleTokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Задает цвета маркеров IntelliSense в области консоли интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя\/значение" для типов и цветов маркеров для области консоли. Сведения об изменении цвета маркеров IntelliSense в области сценариев см. в разделе [TokenColors](#tc). Сведения о восстановлении значений по умолчанию для цветов см. в разделе [RestoreDefaultConsoleTokenColors()](#rdctc). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
+ Задает цвета маркеров IntelliSense в области консоли интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области консоли. Сведения об изменении цвета маркеров IntelliSense в области сценариев см. в разделе [TokenColors](#tc). Сведения о восстановлении значений по умолчанию для цветов см. в разделе [RestoreDefaultConsoleTokenColors()](#rdctc). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
 
 ```
 # Sets the color of commands to green.
@@ -376,7 +376,7 @@ $psISE.Options.OutputPaneForegroundColor = "gold"
 ###  <a name="optfc"></a> OutputPaneTextForegroundColor
   Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneForegroundColor](#conpfc).
 
- Свойство для чтения и записи, которое изменяет цвет переднего плана текста в области вывода в интегрированной среде сценариев Windows PowerShell 2.0.
+ Свойство для чтения и записи, которое изменяет цвет переднего плана текста в области вывода в интегрированной среде сценариев Windows PowerShell 2.0.
 
 ```
 # Changes the foreground color of the text in the Output Pane to blue.
@@ -436,7 +436,7 @@ $psISE.Options.SelectedScriptPaneState = "Maximized"
 ###  <a name="sds"></a> ShowDefaultSnippets
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, содержит ли список фрагментов **CTRL\+J** начальный набор, который включен в Windows PowerShell. Если задано значение **$false**, в списке **CTRL\+J** отображаются только определенные пользователем фрагменты. По умолчанию используется значение **$true**.
+ Указывает, содержит ли список фрагментов **CTRL+J** начальный набор, который включен в Windows PowerShell. Если задано значение **$false**, в списке **CTRL+J** отображаются только определенные пользователем фрагменты. По умолчанию используется значение **$true**.
 
 ```
 # Hide the default snippets from the CTRL+J list.
@@ -476,7 +476,7 @@ $psISe.Options.ShowLineNumbers = $false
 ###  <a name="so"></a> ShowOutlining
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает, отображаются ли в области сценариев расширяемые и свертываемые скобки рядом с фрагментами кода в левом поле. Когда они отображаются, можно щелкнуть значок "минус" (\(\-\)) рядом с блоком текста, чтобы свернуть, или значок "плюс" (\(\+\)), чтобы развернуть блок текста. По умолчанию используется значение **$true**.
+ Указывает, отображаются ли в области сценариев расширяемые и свертываемые скобки рядом с фрагментами кода в левом поле. Когда они отображаются, можно щелкнуть значок "минус" (\(-\)) рядом с блоком текста, чтобы свернуть, или значок "плюс" (\(+\)), чтобы развернуть блок текста. По умолчанию используется значение **$true**.
 
 ```
 # Turn off outlining in the Script pane.
@@ -520,7 +520,7 @@ $psISE.Options.ShowWarningForDuplicateFiles = $true
 ###  <a name="tc"></a> TokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
- Задает цвета маркеров IntelliSense в области сценариев интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя\/значение" для типов и цветов маркеров для области сценариев. Сведения об изменении цветов маркеров IntelliSense в области консоли см. в разделе [ConsoleTokenColors](#contc). Сведения о восстановлении значений по умолчанию см. в разделе [RestoreDefaultTokenColors()](#rdtc). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
+ Задает цвета маркеров IntelliSense в области сценариев интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области сценариев. Сведения об изменении цветов маркеров IntelliSense в области консоли см. в разделе [ConsoleTokenColors](#contc). Сведения о восстановлении значений по умолчанию см. в разделе [RestoreDefaultTokenColors()](#rdtc). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
 
 ```
 # Sets the color of commands to green.
@@ -608,7 +608,7 @@ $psISE.Options.WarningForegroundColor =”yellow”
 ###  <a name="xtc"></a> XmlTokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает объект словаря, который содержит пары "имя\/значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors()](#rdxtc).
+ Указывает объект словаря, который содержит пары "имя — значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors()](#rdxtc).
 
 ```
 # Sets the color of XML element names to green.
@@ -635,6 +635,6 @@ $psISE.Options.Zoom = 200
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

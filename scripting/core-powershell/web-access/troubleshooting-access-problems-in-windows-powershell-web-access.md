@@ -1,15 +1,15 @@
 ---
 title: "Устранение неполадок с доступом в Windows PowerShell Web Access"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 6366ec9c49f721b758b6a520f68cf2b3c5ee0caf
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: df935247806f108705c9528e4c5454ce499becef
 
 ---
 
@@ -143,7 +143,7 @@ ms.openlocfilehash: 6366ec9c49f721b758b6a520f68cf2b3c5ee0caf
 
 [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
 [Использование веб-консоли Windows PowerShell](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
-[about\_Remote\_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
+[about_Remote_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
 
 <span>Демонстрация: </span> унаследованная защита
 
@@ -197,6 +197,6 @@ ms.openlocfilehash: 6366ec9c49f721b758b6a520f68cf2b3c5ee0caf
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

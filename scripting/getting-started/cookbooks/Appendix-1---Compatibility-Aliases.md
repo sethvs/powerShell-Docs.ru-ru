@@ -1,7 +1,7 @@
 ---
 title: "Приложение 1. Псевдонимы совместимости"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 38a6cb1b0402825b307652e6747ea65baafd1d8b
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 61eac49bc710a2435117409b74ba02798cf720da
 
 ---
 
 # Приложение 1. Псевдонимы совместимости
 Windows PowerShell имеет несколько псевдонимов перехода, позволяющих пользователям UNIX и Cmd применять знакомые команды в Windows PowerShell. Наиболее распространенные псевдонимы приведены в таблице ниже, также там указана команда Windows PowerShell для псевдонима и стандартный псевдоним Windows PowerShell, если он существует.
 
-Найти команду Windows PowerShell, на которую указывает псевдоним из Windows PowerShell, можно с помощью командлета Get\-Alias. Например, введите **get\-alias cls**.
+Найти команду Windows PowerShell, на которую указывает псевдоним из Windows PowerShell, можно с помощью командлета Get-Alias. Например, введите **get-alias cls**.
 
 ```
 CommandType     Name                            Definition
@@ -27,21 +27,21 @@ Alias           cls                             Clear-Host
 
 |Команда CMD|Команда UNIX|Команда PS|Псевдоним PS|
 |---------------|----------------|--------------|------------|
-|**dir**|**ls**|**Get\-ChildItem**|**gci**|
-|**cls**|**clear**|**Clear\-Host** (функция)|Н\/Д|
-|**del, erase, rmdir**|**rm**|**Remove\-Item**|**ri**|
-|**copy**|**cp**|**Copy\-Item**|**ci**|
-|**move**|**mv**|**Move\-Item**|**mi**|
-|**rename**|**mv**|**Rename\-Item**|**rni**|
-|**type**|**cat**|**Get\-Content**|**gc**|
-|**cd**|**cd**|**Set\-Location**|**sl**|
-|**md**|**mkdir**|**New\-Item**|**ni**|
-|Н\/Д|**pushd**|**Push\-Location**|Н\/Д|
-|Н\/Д|**popd**|**Pop\-Location**|Н\/Д|
+|**dir**|**ls**|**Get-ChildItem**|**gci**|
+|**cls**|**clear**|**Clear-Host** (функция)|Н/Д|
+|**del, erase, rmdir**|**rm**|**Remove-Item**|**ri**|
+|**copy**|**cp**|**Copy-Item**|**ci**|
+|**move**|**mv**|**Move-Item**|**mi**|
+|**rename**|**mv**|**Rename-Item**|**rni**|
+|**type**|**cat**|**Get-Content**|**gc**|
+|**cd**|**cd**|**Set-Location**|**sl**|
+|**md**|**mkdir**|**New-Item**|**ni**|
+|Н/Д|**pushd**|**Push-Location**|Н/Д|
+|Н/Д|**popd**|**Pop-Location**|Н/Д|
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

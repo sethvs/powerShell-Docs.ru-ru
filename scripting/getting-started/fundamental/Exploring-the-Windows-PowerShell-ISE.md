@@ -1,23 +1,30 @@
 ---
-title: Обзор интегрированной среды сценариев Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Обзор интегрированной среды сценариев Windows PowerShell"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c1f285a1d1beb35c931c17f5944d7ec697cb152e
+
 ---
+
 # Обзор интегрированной среды сценариев Windows PowerShell
-Интегрированная среда сценариев (ISE) Windows PowerShellÂ® позволяет создавать, выполнять и отлаживать команды и сценарии. ISE Windows PowerShell состоит из строки меню, вкладок Windows PowerShell, панели инструментов, вкладок сценариев, области сценариев, области консоли, строки состояния, ползунка для размера текста и контекстной справки.
+Интегрированная среда сценариев (ISE) Windows PowerShellÂ® позволяет создавать, выполнять и отлаживать команды и сценарии. Интегрированная среда сценариев Windows PowerShell состоит из строки меню, вкладок Windows PowerShell, панели инструментов, вкладок сценариев, области сценариев, области консоли, строки состояния, ползунка для размера текста и контекстной справки.
 
 > [!NOTE]
 > Начиная с ISE Windows PowerShell 3.0, области команд и вывода были объединены в одну область консоли.
 
 ## Строка меню
-Строка меню содержит меню **Файл**, **Правка**, **Вид**, **Сервис**, **Отладка**, **Надстройки** и **Справка**. Кнопки в меню позволяют выполнять задачи, связанные с написанием и запуском сценариев и выполнением команд в ISE Windows PowerShell. Кроме того, [дополнительные средства](../../core-powershell/ise/The-ISEAddOnTool-Object.md) можно поместить в строку меню, выполняя сценарии, использующие [объектную модель сценариев интегрированной среды сценариев Windows PowerShell](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)..
+Строка меню содержит меню **Файл**, **Правка**, **Вид**, **Сервис**, **Отладка**, **Надстройки** и **Справка**. Кнопки в меню позволяют выполнять задачи, связанные с написанием и запуском сценариев и выполнением команд в ISE Windows PowerShell. Кроме того, [дополнительные средства](../../core-powershell/ise/The-ISEAddOnTool-Object.md) можно поместить в строку меню, выполняя сценарии, использующие [объектную модель сценариев интегрированной среды сценариев Windows PowerShell](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md).
 
 > [!NOTE]
-> В ISE Windows PowerShell 2.0 меню **Сервис** и **Надстройки** отсутствуют.
+> В интегрированной среде сценариев Windows PowerShell 2.0 меню **Сервис** и **Надстройки** отсутствуют.
 
 ## Вкладки Windows PowerShell
 Вкладка Windows PowerShell — это среда, в которой выполняется сценарий Windows PowerShell. Вы можете открыть в ISE Windows PowerShell новые вкладки Windows PowerShell, чтобы создать отдельные среды на локальном или удаленных компьютерах. Число одновременно открытых вкладок PowerShell не может превышать восьми.
@@ -72,6 +79,8 @@ ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
 [Использование интегрированной среды сценариев Windows PowerShell](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Приложение 2. Создание настраиваемого ярлыка PowerShell"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 24e9b67cf51b99156db3f0bdfb446996b9d3df76
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: ceec1038516ddd4c29df770d14981c0a69437498
 
 ---
 
@@ -25,7 +25,7 @@ ms.openlocfilehash: 24e9b67cf51b99156db3f0bdfb446996b9d3df76
 
 4.  В разделе **Правка** установите флажок **Для выделения**.
 
-    Этот параметр позволяет выбрать текст в окне консоли Windows PowerShell, перетащив курсор при нажатой левой кнопке мыши, а также скопировать текст в буфер обмена, нажав клавишу ВВОД или правую кнопку мыши.
+    Этот параметр позволяет выбрать текст в окне консоли Windows PowerShell, перетащив курсор при нажатой левой кнопки мыши, а также скопировать текст в буфер обмена, нажав клавишу ВВОД или правую кнопку мыши.
 
 5.  В разделе **Правка** установите флажок **Быстрая вставка**. Этот параметр позволяет автоматически вставить текст из буфера обмена с помощью щелчка правой кнопкой мыши в окне консоли.
 
@@ -46,6 +46,6 @@ ms.openlocfilehash: 24e9b67cf51b99156db3f0bdfb446996b9d3df76
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

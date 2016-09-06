@@ -1,24 +1,31 @@
 ---
-title: Объект ISEFile
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект ISEFile"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c1744841e23aa9c2fedf3eb92230ef422c36f0cd
+
 ---
+
 # Объект ISEFile
   Объект **ISEFile** представляет файл в интегрированной среде сценариев (ISE) Windows PowerShell®. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEFile. В этом разделе перечислены его члены (методы и свойства). Объект **$PsISE.CurrentFile** и все файлы в коллекции "Файлы" на вкладке PowerShell являются экземплярами класса Microsoft.PowerShell.Host.ISE.ISEFile.
 
 ## Методы
 
-###  <a name="save-override"></a> Save( [saveEncoding] )
+###  <a name="save-override"></a> Save\( \[saveEncoding\] \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Сохраняет файл на диске.
 
- **[saveEncoding]** — необязательный; [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
- Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**..
+ **\[saveEncoding\]** — необязательный; [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+. Необязательный параметр кодировки знаков, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
  -   **System.IO.IOException**: не удалось сохранить файл.
@@ -36,16 +43,15 @@ $myfile.Encoding
 
 ```
 
-###  <a name="saveas"></a> SaveAs(filename, [saveEncoding])
+###  <a name="saveas"></a> SaveAs\(filename, \[saveEncoding\]\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Сохраняет файл с указанным именем файла и кодировкой.
 
- **filename** — строка
- Имя, используемое для сохранения файла.
+ **filename** — строка. Имя, используемое для сохранения файла.
 
- **[saveEncoding]** — необязательный; [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
- Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**..
+ **\[saveEncoding\]** — необязательный; [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+. Необязательный параметр кодировки знаков, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
  -   **System.ArgumentNullException**: параметр **filename** имеет значение NULL.
@@ -68,7 +74,7 @@ $psIse.CurrentFile.SaveAs( $fullPath, [System.Text.Encoding]::UTF8 )
 ###  <a name="Displayname"></a> DisplayName
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает строку, содержащую отображаемое имя этого файла. Имя отображается на вкладке **Файл** в верхней части окна редактора. Наличие звездочки (*) в конце имени указывает, что файл содержит изменения, которые не были сохранены.
+ Свойство только для чтения, которое получает строку, содержащую отображаемое имя этого файла. Имя отображается на вкладке **Файл** в верхней части окна редактора. Наличие звездочки (\(\*\)) в конце имени указывает, что файл содержит изменения, которые не были сохранены.
 
 ```
 # Shows the display name of the file.
@@ -112,7 +118,7 @@ $psIse.CurrentFile.FullPath
 ###  <a name="IsSaved"></a> IsSaved
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Логическое свойство только для чтения, которое возвращает значение**$true**, если файл был сохранен после последнего изменения.
+ Логическое свойство только для чтения, которое возвращает значение **$true**, если файл был сохранен после последнего изменения.
 
 ```
 # Determines whether the file has been saved since it was last modified.
@@ -124,7 +130,7 @@ $myfile.IsSaved
 ###  <a name="IsUntitled"></a> IsUntitled
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое возвращает значение **$true**, если для файла не было задано имя.
+ Свойство только для чтения, которое возвращает значение **$true**, если для файла не задано имя.
 
 ```
 # Determines whether the file has never been given a title.
@@ -143,6 +149,7 @@ $psISE.CurrentFile.IsUntitled
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

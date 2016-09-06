@@ -1,7 +1,7 @@
 ---
 title: "Другие полезные объекты для сценариев"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
 translationtype: Human Translation
-ms.sourcegitcommit: ebf9d61bd67cc352d6d6404a9b592f856c99759e
-ms.openlocfilehash: c68e6d7d26a8a9b1e32a35e82dd705d95480c9bf
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 83aa2ceb63497c7a12ec80d4b1472327284acf5b
 
 ---
 
@@ -33,7 +33,7 @@ psUnsupportedConsoleApplications
 ```
 
 ### $psLocalHelp
- Это объект словаря, который поддерживает сопоставление с учетом контекста разделов справки и связанных ссылок в локальном скомпилированном файле справки HTML. Он используется для поиска локальной справки для определенного раздела. Разделы в этом списке можно добавлять и удалять. В приведенном ниже примере кода показаны некоторые примеры пар "ключ\-значение", которые содержатся в объекте **$psLocalHelp**.
+ Это объект словаря, который поддерживает сопоставление с учетом контекста разделов справки и связанных ссылок в локальном скомпилированном файле справки HTML. Он используется для поиска локальной справки для определенного раздела. Разделы в этом списке можно добавлять и удалять. В следующем примере кода показаны некоторые примеры пар "ключ —значение", которые содержатся в объекте **$psLocalHelp**.
 
 ```
 # See the local help map
@@ -45,8 +45,8 @@ $psLocalHelp | Format-List
 
 |||
 |-|-|
-|Ключ: Add\-Computer|Значение: WindowsPowerShellHelp.chm::\/html\/093f660c\-b8d5\-43cf\-aa0c\-54e5e54e76f9.htm|
-|Ключ: Add\-Content|Значение: WindowsPowerShellHelp.chm::\/html\/0c836a1b\-f389\-4e9a\-9325\-0f415686d194.htm|
+|Ключ: Add-Computer|Значение: WindowsPowerShellHelp.chm::/html/093f660c-b8d5-43cf-aa0c-54e5e54e76f9.htm|
+|Ключ: Add-Content|Значение: WindowsPowerShellHelp.chm::/html/0c836a1b-f389-4e9a-9325-0f415686d194.htm|
 
  Следующий сценарий добавляет запись в этот список.
 
@@ -66,8 +66,8 @@ $psOnlineHelp | Format-List
 
 |||
 |-|-|
-|Ключ: Add\-Computer|Значение: http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=135194|
-|Ключ: Add\-Content|Значение: http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=113278|
+|Ключ: Add-Computer|Значение: http://go.microsoft.com/fwlink/p/?LinkID=135194|
+|Ключ: Add-Content|Значение: http://go.microsoft.com/fwlink/p/?LinkID=113278|
 
  Следующий сценарий добавляет запись в этот список.
 
@@ -82,6 +82,6 @@ $psOnlineHelp.Add("get-myNoun","http://www.mydomain.com/MyNoun.html")
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

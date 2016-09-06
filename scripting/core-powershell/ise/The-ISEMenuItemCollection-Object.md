@@ -1,33 +1,40 @@
 ---
-title: Объект ISEMenuItemCollection
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект ISEMenuItemCollection"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 563bfc58e545a9e67eb9dd89d8d28e1aa2a33f1c
+
 ---
+
 # Объект ISEMenuItemCollection
   Объект **ISEMenuItemCollection**  — это коллекция объектов **ISEMenuItem**. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEMenuItemCollection. Примером является объект **$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus**, используемый для настройки меню **Надстройки** в интегрированной среде сценариев Windows PowerShell® (ISE).
 
 ## Метод
 
-### Add(string DisplayName, System.Management.Automation.ScriptBlock Action, System.Windows.Input.KeyGesture Shortcut)
+### Add\(string DisplayName, System.Management.Automation.ScriptBlock Action, System.Windows.Input.KeyGesture Shortcut \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Добавляет пункт меню в коллекцию.
 
  **DisplayName**
- Отображаемое имя добавляемого меню.
+ — отображаемое имя добавляемого меню.
 
- **Действие**
- Объект **System.Management.Automation.ScriptBlock**, указывающий действие, связанное с этим пунктом меню.
+ **Action**
+ — объект **System.Management.Automation.ScriptBlock**, указывающий действие, связанное с этим пунктом меню.
 
- **Установленное напрямую доверие**
- Сочетание клавиш для действия.
+ **Shortcut**
+ — сочетание клавиш для действия.
 
- **Возвращает**
- объект ISEMenuItem, который был только что добавлен.
+ **Returns**
+ — объект ISEMenuItem, который был только что добавлен.
 
 ```
 # Create an Add-ons menu with an fast access key and a shortcut.
@@ -35,7 +42,7 @@ ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
 $menuAdded = $psISE.CurrentPowerShellTab.AddOnsMenu.SubMenus.Add("_Process",{get-process},"Alt+P")
 ```
 
-### Clear()
+### Очистить\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Удаляет все подменю из пункта меню.
@@ -55,6 +62,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Clear()
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

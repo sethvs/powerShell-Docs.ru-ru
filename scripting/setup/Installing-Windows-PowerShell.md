@@ -1,7 +1,7 @@
 ---
 title: "Установка Windows PowerShell"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 translationtype: Human Translation
-ms.sourcegitcommit: f856f170c6e18be8758d52df9b50ac443531fdf2
-ms.openlocfilehash: 415e68b372c831ed8dd4535c2968e5a36b5cb65d
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 00249ec98e1624a949fe11fee8be9e93018578a9
 
 ---
 
@@ -45,9 +45,9 @@ Windows PowerShell 3.0 предоставляется установленно�
 
 #### Установка Windows PowerShell 3.0
 
-1.  Установите полную версию Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).
+1.  Выполните полную установку Microsoft .NET Framework 4 (dotNetFx40_Full_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).
 
-    Также можно установить Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).
+    Можно также установить Microsoft .NET Framework 4.5 (dotNetFx45_Full_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).
 
 2.  Установите Windows Management Framework 3.0 из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290).
 
@@ -93,9 +93,9 @@ Windows PowerShell 3.0 предоставляется установленно�
 
 2.  Установите Windows Management Framework (Windows PowerShell 2.0, статья базы знаний 968930) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkId=243035](http://go.microsoft.com/fwlink/?LinkId=243035).
 
-3.  Установите полную версию Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).
+3.  Выполните полную установку Microsoft .NET Framework 4 (dotNetFx40_Full_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).
 
-    Также можно установить Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).
+    Можно также установить Microsoft .NET Framework 4.5 (dotNetFx45_Full_setup.exe) из Центра загрузки Майкрософт по адресу [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).
 
 4.  Установите компонент расширенной защиты для проверки подлинности (статья базы знаний 968389) по адресу [http://go.microsoft.com/fwlink/?LinkID=186398](http://go.microsoft.com/fwlink/?LinkID=186398).
 
@@ -107,6 +107,6 @@ Windows PowerShell 3.0 предоставляется установленно�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

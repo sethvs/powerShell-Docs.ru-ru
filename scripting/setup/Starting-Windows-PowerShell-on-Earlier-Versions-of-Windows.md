@@ -1,27 +1,34 @@
 ---
-title: Запуск Windows PowerShell в более ранних версиях Windows
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Запуск Windows PowerShell в более ранних версиях Windows"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6cdb6bb5d901c9bc7d2b7f5051e372337bbb69f9
+
 ---
+
 # Запуск Windows PowerShell в более ранних версиях Windows
 В этой статье объясняется, как запустить Windows PowerShell и интегрированную среду сценариев Windows PowerShell в WindowsÂ® 7, Windows ServerÂ® 2008 R2 и Windows Server 2008. Кроме того, здесь поясняется, как включить дополнительный компонент для Windows PowerShell ISE в Windows PowerShell 2.0 под управлением Windows ServerÂ® 2008 R2 и Windows Server 2008.
 
-Чтобы установить Windows PowerShell 4.0 на поддерживаемых системах, скачайте и установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881). Дополнительные сведения см. в статье [Установка Windows PowerShell](Installing-Windows-PowerShell.md)..
+Чтобы установить Windows PowerShell 4.0 на поддерживаемых системах, скачайте и установите [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881). Дополнительные сведения см. в статье [Установка Windows PowerShell](Installing-Windows-PowerShell.md).
 
-Чтобы установить Windows PowerShell 3.0 на поддерживаемых системах, скачайте и установите [Windows Management Framework 3.0](http://go.microsoft.com/fwlink/?LinkID=240290). Дополнительные сведения см. в статье [Установка Windows PowerShell](Installing-Windows-PowerShell.md)..
+Чтобы установить Windows PowerShell 3.0 на поддерживаемых системах, скачайте и установите [Windows Management Framework 3.0](http://go.microsoft.com/fwlink/?LinkID=240290). Дополнительные сведения см. в статье [Установка Windows PowerShell](Installing-Windows-PowerShell.md).
 
 ## Запуск Windows PowerShell в более ранних версиях Windows
 Используйте любой из следующих методов для запуска установленной версии Windows PowerShell 3.0 или Windows PowerShell 4.0, где это возможно.
 
 #### Из меню "Пуск"
 
--   Нажмите кнопку **Пуск**, введите **PowerShell** и выберите **Windows PowerShell**..
+-   Нажмите кнопку **Пуск**, введите **PowerShell** и выберите **Windows PowerShell**.
 
--   В меню **Пуск** выберите **Пуск**, **Все программы**, **Стандартные**, откройте папку **Windows PowerShell** и щелкните **Windows PowerShell**..
+-   В меню **Пуск** выберите **Пуск**, **Все программы**, **Стандартные**, откройте папку **Windows PowerShell** и щелкните **Windows PowerShell**.
 
 #### В командной строке
 
@@ -31,20 +38,20 @@ ms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642
     PowerShell
     ```
 
-    Можно также использовать параметры программы PowerShell.exe для настройки сеанса. Дополнительные сведения см. в статье [Справка по командной строке PowerShell.exe](../core-powershell/console/PowerShell.exe-Command-Line-Help.md)..
+    Можно также использовать параметры программы PowerShell.exe для настройки сеанса. Дополнительные сведения см. в статье [Справка по командной строке PowerShell.exe](../core-powershell/console/PowerShell.exe-Command-Line-Help.md).
 
 #### С правами администратора ("Запуск от имени администратора")
 
-1.  Нажмите кнопку **Пуск**, введите **PowerShell**, щелкните правой кнопкой мыши элемент **Windows PowerShell** и выберите пункт **Запуск от имени администратора**..
+1.  Нажмите кнопку **Пуск**, введите **PowerShell**, щелкните правой кнопкой мыши **Windows PowerShell** и выберите пункт **Запуск от имени администратора**.
 
 ## Запуск интегрированной среды сценариев Windows PowerShell в более ранних версиях Windows
 Используйте один из следующих методов для запуска интегрированной среды сценариев Windows PowerShell.
 
 #### Из меню "Пуск"
 
--   Нажмите кнопку **Пуск**, введите **Интегрированная среда сценариев** и выберите **Интегрированная среда сценариев Windows PowerShell**..
+-   Нажмите кнопку **Пуск**, введите **Интегрированная среда сценариев** и выберите **Интегрированная среда сценариев Windows PowerShell**.
 
--   В меню **Пуск** выберите **Пуск**, **Все программы**, **Стандартные**, откройте папку **Windows PowerShell** и щелкните **Интегрированная среда сценариев Windows PowerShell**..
+-   В меню **Пуск** выберите **Пуск**, **Все программы**, **Стандартные**, откройте папку **Windows PowerShell** и щелкните **Интегрированная среда сценариев Windows PowerShell**.
 
 #### В командной строке
 
@@ -62,7 +69,7 @@ ms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642
 
 #### С правами администратора ("Запуск от имени администратора")
 
-1.  Нажмите кнопку **Пуск**, введите **Интегрированная среда сценариев**, щелкните правой кнопкой мыши элемент **Интегрированная среда сценариев Windows PowerShell** и выберите пункт **Запуск от имени администратора**..
+1.  Нажмите кнопку **Пуск**, введите **Интегрированная среда сценариев**, щелкните правой кнопкой мыши **Интегрированная среда сценариев Windows PowerShell** и выберите пункт **Запуск от имени администратора**.
 
 ## Включение интегрированной среды сценариев Windows PowerShell в более ранних версиях Windows
 При использовании Windows PowerShell 4.0 и Windows PowerShell 3.0 интегрированная среда сценариев Windows PowerShell по умолчанию включена во всех версиях Windows. Если она еще не включена, Windows Management Framework 4.0 или Windows Management Framework 3.0 включает ее.
@@ -75,12 +82,13 @@ ms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642
 
 1.  Запустите диспетчер сервера.
 
-2.  Щелкните **Компоненты** и выберите **Добавить компоненты**..
+2.  Щелкните **Компоненты** и выберите **Добавить компоненты**.
 
 3.  В меню "Выберите компоненты" щелкните интегрированную среду сценариев Windows PowerShell.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

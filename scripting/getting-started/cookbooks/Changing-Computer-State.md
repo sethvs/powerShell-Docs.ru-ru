@@ -1,7 +1,7 @@
 ---
 title: "Изменение состояния компьютера"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 8093268b-27f8-4a49-8871-142c5cc33f01
 translationtype: Human Translation
-ms.sourcegitcommit: c6b87ed59a16ccb147fdd3d98e48cfa1c0aa748d
-ms.openlocfilehash: d1f3c08451b385c56d0c4e084dce8fa5795c278e
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 1779b9de13a30a43236e24793e5196261a7db77f
 
 ---
 
@@ -31,7 +31,7 @@ rundll32.exe user32.dll,LockWorkStation
 Чтобы завершить работу конкретных сеансов на сервере терминалов, используйте программу командной строки **tsshutdn.exe**.
 
 ### Выход из текущего сеанса
-Выйти из сеанса в локальной системе можно несколькими способами. Самый простой заключается в использовании программы командной строки удаленного рабочего стола или служб терминалов — **logoff.exe** (для получения дополнительных сведений введите **logoff /?** в командной строке Windows PowerShell). Чтобы выйти из текущего активного сеанса, введите **logoff** без аргументов.
+Выйти из сеанса в локальной системе можно несколькими способами. Самый простой заключается в использовании программы командной строки удаленного рабочего стола или служб терминалов — **logoff.exe** (для получения дополнительных сведений введите **logoff /?** в командной строке Windows PowerShell). Чтобы выйти из текущего активного сеанса, введите **logoff** без аргументов.
 
 Можно также использовать средство **shutdown.exe** с параметром выхода:
 
@@ -39,18 +39,18 @@ rundll32.exe user32.dll,LockWorkStation
 shutdown.exe -l
 ```
 
-Третий вариант — использование инструментария WMI. Класс Win32\_OperatingSystem имеет метод Win32Shutdown. Вызов метода с флагом 0 инициирует выход из системы:
+Третий вариант — использование инструментария WMI. Класс Win32_OperatingSystem имеет метод Win32Shutdown. Вызов метода с флагом 0 инициирует выход из системы:
 
 ```
 (Get-WmiObject -Class Win32_OperatingSystem -ComputerName .).Win32Shutdown(0)
 ```
 
-Дополнительные сведения и другие возможности метода Win32Shutdown см. в статье "Win32Shutdown Method of the Win32\_OperatingSystem Class" (Метод Win32Shutdown класса Win32_OperatingSystem) на сайте MSDN.
+Дополнительные сведения и другие возможности метода Win32Shutdown см. в статье Win32Shutdown Method of the Win32_OperatingSystem Class (Метод Win32Shutdown класса Win32_OperatingSystem) на сайте MSDN.
 
 ### Завершение работы или перезапуск компьютера
 Завершение работы и перезапуск компьютеров обычно относятся к схожим типам задач. Средства, завершающие работу компьютера, обычно также перезапускают его и наоборот. Существует два варианта непосредственной перезагрузки компьютера из Windows PowerShell. Используйте Tsshutdn.exe или Shutdown.exe с соответствующими аргументами. Подробные сведения об использовании можно получить, запустив **tsshutdn.exe /?** или **shutdown.exe /?**.
 
-Для завершения работы и перезапуска можно также использовать **Win32\_OperatingSystem** прямо из Windows PowerShell.
+Для завершения работы и перезапуска можно также использовать **Win32_OperatingSystem** прямо из Windows PowerShell.
 
 Чтобы завершить работу компьютера, используйте метод Win32Shutdown с флагом **1**.
 
@@ -67,6 +67,6 @@ shutdown.exe -l
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

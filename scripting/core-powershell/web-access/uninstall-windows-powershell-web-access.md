@@ -1,3 +1,18 @@
+---
+title: "Удаление Windows PowerShell Web Access"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: d54139714552943901f565a8525bb478ed308f09
+
+---
+
 #  Удаление Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
@@ -10,7 +25,7 @@
 
 ------------------------------------------------------------------------
 
-Перед удалением Windows PowerShell Web Access с сервера шлюза выполните командлет <span class="code">Uninstall-PswaWebApplication</span>, чтобы удалить веб-сайт и веб-приложения Windows PowerShell Web Access, или используйте процедуру диспетчера служб IIS [Удаление веб-сайта и веб-приложений Windows PowerShell Web Access](#BKMK_delsite)..
+Перед удалением Windows PowerShell Web Access с сервера шлюза выполните командлет <span class="code">Uninstall-PswaWebApplication</span>, чтобы удалить веб-сайт и веб-приложения Windows PowerShell Web Access, или используйте процедуру диспетчера служб IIS [Удаление веб-сайта и веб-приложений Windows PowerShell Web Access](#BKMK_delsite).
 
 Удаление Windows PowerShell Web Access не приводит к удалению IIS или любых других компонентов, которые были установлены автоматически, поскольку они требуются для выполнения Windows PowerShell Web Access. В процессе удаления остаются установленными компоненты, от которых зависит Windows PowerShell Web Access. Вы можете удалить эти компоненты при необходимости.
 
@@ -35,9 +50,9 @@
 
     -   На рабочем столе Windows щелкните правой кнопкой мыши **Windows PowerShell** на панели задач.
 
-    -   На экране **Пуск** Windows щелкните **Windows PowerShell**..
+    -   На **начальном** экране Windows щелкните **Windows PowerShell**.
 
-2.  Введите **Uninstall-PswaWebApplication** и нажмите клавишу **ВВОД**..
+2.  Введите **Uninstall-PswaWebApplication** и нажмите клавишу **ВВОД**.
 
 3.  Если используется тестовый сертификат, добавьте в командлет параметр <span class="code">DeleteTestCertificate</span>, как показано в следующем примере.
 
@@ -55,9 +70,9 @@
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами. Если сеанс уже открыт, переходите к следующему шагу.
 
-    -   На рабочем столе Windows щелкните правой кнопкой мыши **Windows PowerShell** на панели задач и выберите команду **Запустить от имени администратора**..
+    -   На рабочем столе Windows щелкните правой кнопкой мыши **Windows PowerShell** на панели задач и выберите команду **Запустить от имени администратора**.
 
-    -   На экране **Пуск** Windows щелкните правой кнопкой мыши **Windows PowerShell**, а затем щелкните **Запустить от имени администратора**..
+    -   На **начальном экране** Windows щелкните правой кнопкой мыши **Windows PowerShell**, а затем выберите команду **Запустить от имени администратора**.
 
 2.  Введите следующую команду и нажмите клавишу **ВВОД**, где *computer_name* представляет удаленный сервер, с которого требуется удалить Windows PowerShell Web Access. Параметр <span class="code">–Restart</span> автоматически перезапускает целевые серверы, если это требуется при удалении.
 
@@ -90,15 +105,15 @@
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий. Если консоль уже открыта, переходите к следующему шагу.
 
-    -   На рабочем столе Windows запустите диспетчер серверов, щелкнув **Диспетчер серверов** на панели задач Windows. В диспетчере серверов откройте меню **Сервис** и выберите пункт **Диспетчер служб IIS**..
+    -   На рабочем столе Windows запустите диспетчер серверов, щелкнув **Диспетчер серверов** на панели задач Windows. В диспетчере серверов откройте меню **Сервис** и выберите пункт **Диспетчер служб IIS**.
 
     -   На **начальном** экране Windows введите любую часть имени **Диспетчер служб IIS**. Щелкните ярлык, когда он появится в списке результатов **Приложения**.
 
 2.  В области дерева диспетчера служб IIS выберите веб-сайт, на котором выполняется веб-приложение Windows PowerShell Web Access.
 
-3.  В области **Действия** в разделе **Управление веб-сайтом** щелкните **Остановить**..
+3.  В области **Действия** в разделе **Управление веб-сайтом** щелкните **Остановить**.
 
-4.  В области дерева щелкните правой кнопкой мыши веб-приложение на веб-сайте, на котором выполняется веб-приложение Windows PowerShell Web Access, а затем щелкните **Удалить**..
+4.  В области дерева щелкните правой кнопкой мыши веб-приложение на веб-сайте, на котором выполняется веб-приложение Windows PowerShell Web Access, а затем выберите **Удалить**.
 
 5.  В области дерева выберите **Пулы приложений**, выберите папку пула приложений Windows PowerShell Web Access, щелкните **Остановить** в области **Действия**, а затем щелкните **Удалить** в области содержимого.
 
@@ -132,17 +147,17 @@
 
     -   На рабочем столе Windows запустите диспетчер серверов, щелкнув **Диспетчер серверов** на панели задач Windows.
 
-    -   На **начальном** экране в Windows выберите **Диспетчер серверов**..
+    -   На **начальном** экране в Windows выберите **Диспетчер серверов**.
 
-2.  В меню **Управление** выберите команду **Удалить роли и компоненты**..
+2.  В меню **Управление** выберите команду **Удалить роли и компоненты**.
 
-3.  На странице **Выбор целевого сервера** выберите сервер или виртуальный жесткий диск, с которого следует удалить компонент. Чтобы выбрать автономный виртуальный жесткий диск, сначала выберите сервер, на котором будет подключен виртуальный жесткий диск, а затем выберите VHD-файл. Выбрав конечный сервер, нажмите кнопку **Далее**..
+3.  На странице **Выбор целевого сервера** выберите сервер или виртуальный жесткий диск, с которого следует удалить компонент. Чтобы выбрать автономный виртуальный жесткий диск, сначала выберите сервер, на котором будет подключен виртуальный жесткий диск, а затем выберите VHD-файл. Выбрав конечный сервер, нажмите кнопку **Далее**.
 
 4.  Еще раз щелкните **Далее**, чтобы пропустить страницу **Удаление компонентов**.
 
-5.  Снимите флажок **Windows PowerShell Web Access** и щелкните **Далее**..
+5.  Снимите флажок **Windows PowerShell Web Access** и нажмите кнопку **Далее**.
 
-6.  На странице **Подтверждение выборов для удаления** щелкните **Удалить**..
+6.  На странице **Подтверждение удаления компонентов** щелкните **Удалить**.
 
 <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
 <a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
@@ -155,23 +170,19 @@
 <span>Демонстрация: </span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
-Да
-Нет
+Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500 </span> символов</span>
-Отправить
-Пропустить
+<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
 
-<span class="stdr-thankyou">Спасибо! </span> <span class="stdr-appreciate"> Мы ценим ваши отзывы.</span>
+<span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
 [Управление профилем](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Отзыв о сайте</a>
-Отзыв о сайте
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Отзыв о сайте</a> Отзыв о сайте
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
@@ -179,11 +190,11 @@
 
 Быстро ли загрузилась страница?
 
-<span> Да <span> </span></span> <span> Нет<span> </span></span>
+<span> Да<span> </span></span> <span> Нет<span> </span></span>
 
 Вам нравится дизайн страницы?
 
-<span> Да <span> </span></span> <span> Нет<span> </span></span>
+<span> Да<span> </span></span> <span> Нет<span> </span></span>
 
 Расскажите подробнее
 
@@ -206,6 +217,8 @@
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

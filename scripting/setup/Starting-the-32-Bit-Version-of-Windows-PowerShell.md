@@ -1,7 +1,7 @@
 ---
 title: "Запуск 32-разрядной версии Windows PowerShell"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -9,17 +9,17 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
 translationtype: Human Translation
-ms.sourcegitcommit: b6ab9bfdd779a865c1f543bf16e91ec17b43c4b0
-ms.openlocfilehash: 41bbdd302aa3aa0d253bc4c820fdbbeb1b827ccc
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 ---
 
 # Запуск 32-разрядной версии Windows PowerShell
-При установке Windows PowerShell на 64\-разрядном компьютере в дополнение к 64**разрядной версии устанавливается **Windows PowerShell (x86)\- — 32\-разрядная версия Windows PowerShell. При открытии Windows PowerShell по умолчанию запускается 64\-разрядная версия.
+При установке Windows PowerShell на 64-разрядном компьютере в дополнение к 64-разрядной версии устанавливается **Windows PowerShell (x86)** — 32-разрядная версия Windows PowerShell. При открытии Windows PowerShell по умолчанию запускается 64-разрядная версия.
 
-Но в некоторых случаях следует запустить **Windows PowerShell (x86)**, например при использовании модуля, которому нужна 32\-разрядная версия, или при удаленном подключении к 32\-разрядному компьютеру.
+Однако в некоторых случаях нужно запустить **Windows PowerShell (x86)**, например при использовании модуля, которому требуется 32-разрядная версия, или при удаленном подключении к 32-разрядному компьютеру.
 
-Для запуска 32\-разрядной версии Windows PowerShell воспользуйтесь любой из следующих процедур.
+Для запуска 32-разрядной версии Windows PowerShell воспользуйтесь любой из следующих процедур.
 
 #### В Windows Server® 2012 R2
 
@@ -63,6 +63,6 @@ ms.openlocfilehash: 41bbdd302aa3aa0d253bc4c820fdbbeb1b827ccc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,12 +1,19 @@
 ---
-title: Объект ISEMenuItem
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект ISEMenuItem"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: a16660bd-0aee-46fd-ac17-3f022165d089
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: e067519d58ca381fc4e5c746fe9bbd16bdc68c60
+
 ---
+
 # Объект ISEMenuItem
   Объект **ISEMenuItem** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEMenuItem. Все объекты в меню **Надстройки** являются экземплярами класса **Microsoft.PowerShell.Host.ISE.ISEMenuItem**.
 
@@ -15,7 +22,7 @@ ms.assetid: a16660bd-0aee-46fd-ac17-3f022165d089
 ###  <a name="DisplayName"></a> DisplayName
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает отображаемое имя элемента меню.
+ Свойство только для чтения, которое получает отображаемое имя пункта меню.
 
 ```
 # Get the display name of the Add-ons menu item
@@ -43,7 +50,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus[0].Action.Invoke()
 ###  <a name="Shortcut"></a> Установленное напрямую доверие
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает сочетания клавиш Windows для элемента меню.
+ Свойство только для чтения, которое получает сочетания клавиш Windows для пункта меню.
 
 ```
 # Get the shortcut for the first submenu item.
@@ -55,7 +62,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus[0].Shortcut
 ###  <a name="Submenus"></a> Подменю
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает [список подменю](The-ISEMenuItemCollection-Object.md) для элемента меню.
+ Свойство только для чтения, которое получает [список подменю](The-ISEMenuItemCollection-Object.md) для пункта меню.
 
 ```
 # List the submenus of the Add-ons menu
@@ -91,6 +98,7 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

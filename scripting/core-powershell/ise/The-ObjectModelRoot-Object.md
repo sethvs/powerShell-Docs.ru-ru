@@ -1,12 +1,19 @@
 ---
-title: Объект ObjectModelRoot
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Объект ObjectModelRoot"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 5d9b2492dbcade15c91d2b7687f5fc64998e2a9a
+
 ---
+
 # Объект ObjectModelRoot
   Объект **$PsISE**, который является основным корневым объектом в интегрированной среде сценариев Windows PowerShell® (ISE), — это экземпляр класса Microsoft.PowerShell.Host.ISE.ObjectModelRoot. В этом разделе описаны свойства объекта **ObjectModelRoot**.
 
@@ -50,6 +57,7 @@ ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 
