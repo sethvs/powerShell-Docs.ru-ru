@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 59bf4cff540dabeeb77038ea84177f7c6bac2b4b
-ms.openlocfilehash: e5412a3168a18d1dbd117ed8b3eb6dd42a8d8f70
+ms.sourcegitcommit: 6c5f3d3321b7e50215cf58267e1864b7da827764
+ms.openlocfilehash: d84bb35ada3588367436e6f5e3c6696b90c3661b
 
 ---
 
@@ -45,7 +45,7 @@ Configuration MyDscConfiguration {
 - Один блок **Node** или несколько. Определяют настраиваемые вами узлы (компьютеры или виртуальные машины). В представленной выше конфигурации присутствует один блок **Node**, соответствующий компьютеру с именем TEST-PC1.
 - Один блок ресурсов или несколько. В этих блоках конфигурация определяет свойства настраиваемых ресурсов. В данном случае используются два блока ресурсов, каждый из которых вызывает ресурс WindowsFeature.
 
-В блоке **Configuration** можно делать все то же самое, что и в функции PoweShell. Например, в предыдущем примере вместо того, чтобы прописывать имя целевого компьютера конфигурации в коде, можно добавить в имя узла соответствующий параметр:
+В блоке **Configuration** можно делать все то же самое, что и в функции PowerShell. Например, в предыдущем примере вместо того, чтобы прописывать имя целевого компьютера конфигурации в коде, можно добавить в имя узла соответствующий параметр:
 
 ```powershell
 Configuration MyDscConfiguration {
@@ -137,6 +137,6 @@ Configuration DependsOnExample {
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

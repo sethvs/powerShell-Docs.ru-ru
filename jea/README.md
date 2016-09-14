@@ -9,8 +9,8 @@ ms.date: 2016-06-22
 title: "файл README"
 ms.technology: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: bd7f637d0889fd0f56c3fa653389819341d2ccff
-ms.openlocfilehash: bfee5ef59a4085f0350ff454f634fc0bf5d6d837
+ms.sourcegitcommit: 8149f656f0aacbb23cacc8a1a9b45ed59866b92f
+ms.openlocfilehash: 7bb5635832e912b39ec387e8ac93ada24a434ff8
 
 ---
 
@@ -83,7 +83,7 @@ JEA разрабатывается параллельно с будущим вы
 
 ## Начните создавать свои собственные конечные точки JEA
 Создать конечную точку JEA легко — вам нужна только система с JEA и текстовый редактор (например, интегрированная среда сценариев PowerShell).
-Начать лучше всего с каркасных файлов, используя `New-PSRoleCapabilityFile -Path <path>` и `New-PSSessionCapabilityFile -Path <Path>` без других аргументов.
+Начать лучше всего с каркасных файлов, используя [`New-PSRoleCapabilityFile -Path <path>`](https://technet.microsoft.com/library/mt631422.aspx) и [`New-PSSessionConfigurationFile -Path <Path>`](https://technet.microsoft.com/library/mt631422.aspx) без других аргументов.
 Эти каркасные файлы содержат все необходимые поля конфигурации, а также полезные комментарии о том, для чего можно использовать каждое поле.
 
 Чтобы дополнительно упростить создание конечных точек JEA, воспользуйтесь [вспомогательным приложением инструментария JEA](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx), графический пользовательский интерфейс которого позволяет создавать файлы конфигурации сеансов и возможностей ролей.
@@ -92,6 +92,6 @@ JEA разрабатывается параллельно с будущим вы
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
