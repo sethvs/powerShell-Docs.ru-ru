@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: e1d217b8e633779f55e195fbf80aeee83db01409
-ms.openlocfilehash: ad2b20a3a977dc33b27f8a1096a2b48fcb3abe0e
+ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
+ms.openlocfilehash: 6b060d17fb106089528b0737ab03cc7d592d412a
 
 ---
 
@@ -54,39 +54,53 @@ Script [string] #ResourceName
 
 ## Пример 1
 ```powershell
-Script ScriptExample
+$version = Get-Content 'version.txt'
+
+Configuration ScriptTest
 {
-    SetScript = { 
-        $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
-        $sw.WriteLine("Some sample string")
-        $sw.Close()
+    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
+
+    Script ScriptExample
+    {
+        SetScript = 
+        { 
+            $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
+            $sw.WriteLine("Some sample string")
+            $sw.Close()
+        }
+        TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
+        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
     }
-    TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
-    GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
 }
 ```
 
 ## Пример 2.
 ```powershell
 $version = Get-Content 'version.txt'
-Script UpdateConfigurationVersion
+
+Configuration ScriptTest
 {
-    GetScript = { 
-        $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
-        return @{ 'Result' = "Version: $currentVersion" }
-    }          
-    TestScript = { 
-        $state = GetScript
-        if( $state['Version'] -eq $using:version )
-        {
-            Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
-            return $true
+    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
+
+    Script UpdateConfigurationVersion
+    {
+        GetScript = { 
+            $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+            return @{ 'Result' = "Version: $currentVersion" }
+        }          
+        TestScript = { 
+            $state = $GetScript
+            if( $state['Version'] -eq $using:version )
+            {
+                Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
+                return $true
+            }
+            Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
+            return $false
         }
-        Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
-        return $false
-    }
-    SetScript = { 
-        $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+        SetScript = { 
+            $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+        }
     }
 }
 ```
@@ -96,6 +110,6 @@ Script UpdateConfigurationVersion
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

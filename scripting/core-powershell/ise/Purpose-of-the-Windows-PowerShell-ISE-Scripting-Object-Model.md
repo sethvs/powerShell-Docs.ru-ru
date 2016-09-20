@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
+ms.sourcegitcommit: 641b6b2169824296b459691e67cdb771f3a07294
+ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
 ---
 
@@ -71,14 +71,14 @@ ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
  Объектную модель сценариев можно использовать для создания сочетаний клавиш для часто выполняемых операций.
 
 ## См. также
- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md) 
- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ - [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md) 
+ - [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+ - [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
