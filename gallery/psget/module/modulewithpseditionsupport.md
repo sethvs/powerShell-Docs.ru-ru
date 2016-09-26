@@ -65,8 +65,23 @@ Core
 ### Вариант 1. Упаковка модуля для нескольких версий и нескольких выпусков PowerShell
 
 #### Содержимое папки модуля
-
- Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll Microsoft.Windows.PowerShell.ScriptAnalyzer.dll PSScriptAnalyzer.psd1 PSScriptAnalyzer.psm1 ScriptAnalyzer.format.ps1xml ScriptAnalyzer.types.ps1xml coreclr\Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll coreclr\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll en-US\about_PSScriptAnalyzer.help.txt en-US\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll-Help.xml PSv3\Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll PSv3\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll Settings\CmdletDesign.psd1 Settings\DSC.psd1 Settings\ScriptFunctions.psd1 Settings\ScriptingStyle.psd1 Settings\ScriptSecurity.psd1
+- Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll 
+- Microsoft.Windows.PowerShell.ScriptAnalyzer.dll 
+- PSScriptAnalyzer.psd1
+- PSScriptAnalyzer.psm1
+- ScriptAnalyzer.format.ps1xml
+- ScriptAnalyzer.types.ps1xml
+- coreclr\Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll 
+- coreclr\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll 
+- en-US\about_PSScriptAnalyzer.help.txt
+- en-US\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll-Help.xml
+- PSv3\Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll 
+- PSv3\Microsoft.Windows.PowerShell.ScriptAnalyzer.dll 
+- Settings\CmdletDesign.psd1
+- Settings\DSC.psd1
+- Settings\ScriptFunctions.psd1
+- Settings\ScriptingStyle.psd1
+- Settings\ScriptSecurity.psd1
 
 #### Содержимое файла PSScriptAnalyzer.psd1
 
@@ -214,8 +229,9 @@ Find-Module -Tag PSEditon_Core
 ## Дополнительные подробности
 ### [Скрипты с PSEditions](../script/scriptwithpseditionsupport.md)
 ### [Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
+### [Обновление манифеста модуля] (./psget_update-modulemanifest.md)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

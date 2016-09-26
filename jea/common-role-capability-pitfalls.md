@@ -9,8 +9,8 @@ ms.date: 2016-06-22
 title: "распространенные проблемы возможностей ролей"
 ms.technology: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e
+ms.sourcegitcommit: 2c42f8d6eaadee43a3baff1811aafb6b5c1a9be3
+ms.openlocfilehash: 2b2dfd9c39fe5d7bf4a52032653108729715e6bf
 
 ---
 
@@ -33,6 +33,6 @@ ms.openlocfilehash: 0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

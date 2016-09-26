@@ -9,46 +9,48 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 57049ff138604b0e13c8fd949ae14da05cb03a4b
-ms.openlocfilehash: 1f00f2706f3c3ece783590f3a2b0bdb6734402b0
+ms.sourcegitcommit: 270f2a458a40f005f462d3de5236defbb91a7362
+ms.openlocfilehash: c88c145c3585befcee194499f7e21aaeac67c0f3
 
 ---
 
 #Усовершенствования в настройке требуемого состояния (DSC) в WMF 5.1
 
-## Усовершенствования в ресурсах класса DSC
+## Усовершенствования в ресурсах классов DSC
 
 В WMF 5.1 были устранены следующие известные проблемы.
-* Командлет Get-DscConfiguration может возвращать пустые значения (NULL) или ошибки, если функция Get() ресурса DSC на основе класса возвращает сложный тип или хэш-таблицу.
-* Командлет Get-DscConfiguration возвращает ошибку, если в конфигурации DSC используются учетные данные для запуска от имени.
-* Ресурсы на основе класса не могут использоваться в составной конфигурации.
-* Командлет Start-DscConfiguration зависает, если ресурс на основе класса имеет свойство с собственным типом.
+* Командлет Get-DscConfiguration может возвращать пустые значения (NULL) или ошибки, если функция Get() ресурса DSC на основе классов возвращает сложный тип или хэш-таблицу.
+* Командлет Get-DscConfiguration возвращает ошибку, если в конфигурации DSC используются учетные данные запуска от имени.
+* Ресурсы на основе классов не могут использоваться в составной конфигурации.
+* Командлет Start-DscConfiguration зависает, если ресурс на основе классов имеет свойство со своим собственным типом.
 * Ресурсы на основе класса не могут использоваться в качестве монопольных ресурсов.
 
 
 ## Усовершенствования в отладке ресурсов DSC
 
-В WMF 5.0 отладчик PowerShell не останавливался непосредственно в методах для работы с ресурсами класса (Get, Set, Test).
-В WMF 5.1 отладчик будет останавливаться в методах для работы с ресурсами класса точно так же, как в методах для работы с ресурсами на основе MOF.
+В WMF 5.0 отладчик PowerShell не останавливался непосредственно в методах для работы с ресурсами, основанными на классах (Get, Set, Test).
+В WMF 5.1 отладчик будет останавливаться в методах для работы с ресурсами, основанными на классах, точно так же, как в методах для работы с ресурсами на основе MOF.
 
 ## Опрашивающий клиент DSC поддерживает TLS 1.1 и TLS 1.2 
 Ранее опрашивающий клиент DSC поддерживал только SSL3.0 и TLS1.0 через подключения по протоколу HTTPS. При принудительном использовании более безопасных протоколов опрашивающий клиент прекращал работу. В WMF 5.1 опрашивающий клиент DSC больше не поддерживает SSL 3.0, но поддерживает более безопасные протоколы TLS 1.1 и TLS 1.2.  
 
 ## Улучшенная регистрация опрашивающего сервера ##
 
-В более ранних версиях WMF одновременные запросы регистрации или отчетов к опрашивающему серверу DSC при использовании базы данных ESENT привели бы к ошибке LCM в регистрации или получении отчета. В журналах событий на опрашивающем сервере в таких случаях появилась бы ошибка "Имя экземпляра уже используется".
+В более ранних версиях WMF одновременные запросы регистрации или отчетов к опрашивающему серверу DSC при использовании базы данных ESENT привели бы к ошибке в LCM при регистрации или получении отчета. В журналах событий на опрашивающем сервере в таких случаях появилась бы ошибка "Имя экземпляра уже используется".
 Эта ошибка вызывалась тем, что для доступа к базе данных ESENT в сценарии с несколькими потоками использовался неправильный шаблон. В WMF 5.1 эта проблема устранена. Одновременные запросы регистрации или отчетов (с использованием базы данных ESENT) будут выполняться корректно в WMF 5.1. Эта проблема относится только к базе данных ESENT и не касается базы данных OLEDB. 
 
-##Соглашение об именовании для частичной конфигурации
+##Соглашение об именовании для частичной опрашивающей конфигурации
 В предыдущем выпуске соглашение об именовании для частичной конфигурации было таким, что имя MOF-файла в опрашивающем сервере или службе должно было соответствовать имени частичной конфигурации, указанному в параметрах локального диспетчера конфигурации, которое, в свою очередь, должно соответствовать имени конфигурации, включенному в MOF-файл. 
 
-См. моментальные снимки ниже.- •   Параметры локальной конфигурации, определяющие частичную конфигурацию, которую разрешено получать узлу.
+См. моментальные снимки ниже.
 
-![Пример метаконфигурации](../../images/MetaConfigPartialOne.png)
+•   Параметры локальной конфигурации, определяющие частичную конфигурацию, которую разрешено получать узлу.
+
+![Пример метаконфигурации](../images/MetaConfigPartialOne.png)
 
 •   Пример определения частичной конфигурации 
 
-```Powershell
+```PowerShell
 Configuration PartialOne
 {
     Node('localhost')
@@ -63,19 +65,19 @@ Configuration PartialOne
 PartialOne
 ```
 
-•   "Имя конфигурации", включенное в созданный MOF-файл.
+•   Имя конфигурации (ConfigurationName), включенное в созданный MOF-файл.
 
-![Пример созданного MOF-файла](../../images/PartialGeneratedMof.png)
+![Пример созданного MOF-файла](../images/PartialGeneratedMof.png)
 
 •   Имя файла в репозитории конфигураций 
 
-![Имя файла в репозитории конфигураций](../../images/PartialInConfigRepository.png)
+![Имя файла в репозитории конфигураций](../images/PartialInConfigRepository.png)
 
-Служба автоматизации Azure создала MOF-файлы с именами <ConfigurationName>.<NodeName>.mof. Поэтому следующая конфигурация будет скомпилирована в файл PartialOne.Localhost.mof.
+Служба автоматизации Azure создавала MOF-файлы с именами `<ConfigurationName>.<NodeName>.mof`. Поэтому следующая конфигурация будет скомпилирована в файл PartialOne.Localhost.mof.
 
-Это делало невозможным запрос к одной из частичных конфигураций в службе автоматизации Azure.
+Это делало невозможным запрос к одной из частичных конфигураций из службы автоматизации Azure.
 
-```Powershell
+```PowerShell
 Configuration PartialOne
 {
     Node('localhost')
@@ -90,18 +92,18 @@ Configuration PartialOne
 PartialOne
 ```
 
-В WMF 5.1 частичная конфигурация в опрашивающем сервере или службе может иметь имя <ConfigurationName>.<NodeName>.mof. Кроме того, если компьютер запрашивает одну конфигурацию с опрашивающего сервера или службы, то файл конфигурации в репозитории конфигураций опрашивающего сервера может иметь любое имя. Эта гибкость в именовании позволяет управлять узлами, которые находятся под частичным управлением службы автоматизации Azure. В этом случае часть конфигурации узла поступает из DSC службы автоматизации Azure, а другой частью конфигурации вы управляете локально.
+В WMF 5.1 частичная конфигурация на опрашивающем сервере или в службе может иметь имя `<ConfigurationName>.<NodeName>.mof`. Кроме того, если компьютер запрашивает одну конфигурацию с опрашивающего сервера или службы, то файл конфигурации в репозитории конфигураций опрашивающего сервера может иметь любое имя. Эта гибкость в именовании позволяет управлять узлами, которые находятся под частичным управлением службы автоматизации Azure. В этом случае часть конфигурации узла поступает из DSC службы автоматизации Azure, а другой частью конфигурации вы управляете локально.
 
 В следующей метаконфигурации узел находится как под локальным управлением, так и под управлением службы автоматизации Azure.
 
-```Powershell
+```PowerShell
   [DscLocalConfigurationManager()]
    Configuration RegistrationMetaConfig
    {
         Settings
         {
-            RefreshFrequencyMins = 30;
-            RefreshMode = "PULL";            
+            RefreshFrequencyMins = 30
+            RefreshMode = "PULL"            
         }
 
         ConfigurationRepositoryWeb web
@@ -111,14 +113,14 @@ PartialOne
             ConfigurationNames = $configurationName
         }
 
-        # Partial configuration managed by Azure Automation Service.
-        PartialConfiguration PartialCOnfigurationManagedByAzureAutomation
+        # Partial configuration managed by Azure Automation service.
+        PartialConfiguration PartialConfigurationManagedByAzureAutomation
         {
             ConfigurationSource = "[ConfigurationRepositoryWeb]Web"   
         }
     
         # This partial configuration is managed locally.
-        PartialConfiguration OnPremConfig
+        PartialConfiguration OnPremisesConfig
         {
             RefreshMode = "PUSH"
             ExclusiveResources = @("Script")
@@ -134,7 +136,7 @@ PartialOne
 
 Добавлена поддержка использования параметра [*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser) с [составными](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) ресурсами DSC.    
 
-Теперь пользователь может указать значение параметра PsDscRunAsCredential при использовании составных ресурсов в конфигурации. Если значение задано, все ресурсы, включенные в составной ресурс, также будут запущены от имени этого пользователя. Если составной ресурс вызывает другой составной ресурс, то все входящие в него ресурсы также будут запущены от имени этого пользователя.  Учетные данные запуска от имени распространяются на любой уровень иерархии составных ресурсов. Если для одного из ресурсов, входящих в составной ресурс, указано собственное значение параметра PsDscRunAsCredential, то при компиляции конфигурации будет выдана ошибка слияния.
+Теперь пользователь может указать значение параметра PsDscRunAsCredential при использовании составных ресурсов в конфигурации. Если значение задано, все ресурсы, включенные в составной ресурс, будут запущены от имени этого пользователя. Если составной ресурс вызывает другой составной ресурс, то все входящие в него ресурсы также будут запущены от имени этого пользователя. Учетные данные запуска от имени распространяются на любой уровень иерархии составных ресурсов. Если для одного из ресурсов, входящих в составной ресурс, указано собственное значение параметра PsDscRunAsCredential, то при компиляции конфигурации будет выдана ошибка слияния.
 
 В этом примере показано, как использовать этот параметр с составным ресурсом [WindowsFeatureSet](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_newresources), включенным в модуль PSDesiredStateConfiguration. 
 
@@ -162,7 +164,7 @@ Configuration InstallWindowsFeature
 $configData = @{
     AllNodes = @(
         @{
-            NodeName             = 'localhost';
+            NodeName             = 'localhost'
             PSDscAllowDomainUser = $true
             CertificateFile      = 'C:\publicKeys\targetNode.cer'
             Thumbprint           = '7ee7f09d-4be0-41aa-a47f-96b9e3bdec25'
@@ -184,9 +186,11 @@ InstallWindowsFeature -ConfigurationData $configData
 
 ###Подписывание конфигурации и модулей 
 ***
-* Файлы конфигурации (MOF-файлы): поддержка подписывания MOF-файлов была добавлена к функциям существующего командлета PowerShell [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).  
+* Файлы конфигурации (MOF-файлы): поддержка подписывания MOF-файлов была добавлена к функциям существующего командлета PowerShell, [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).  
 * Модули: для подписывания модулей необходимо подписать каталог соответствующего модуля, выполнив следующие действия. 
-    1. Создайте файл каталога: файл каталога содержит коллекцию криптографических хэшей или отпечатков. Каждый отпечаток соответствует файлу, включенному в модуль. Был добавлен новый командлет [New-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx), благодаря которому пользователи могут создавать файлы каталогов для своих модулей.
+    1. Создайте файл каталога: файл каталога содержит коллекцию криптографических хэшей или отпечатков. 
+       Каждый отпечаток соответствует файлу, включенному в модуль. 
+       Был добавлен новый командлет [New-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx), благодаря которому пользователи могут создавать файлы каталогов для своих модулей.
     2. Подпишите файл каталога: подпишите файл каталога с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).
     3. Поместите файл каталога в папку модуля.
 По соглашению файл каталога модуля должен находиться в папке модуля и имя файла каталога модуля должно совпадать с именем модуля.
@@ -212,9 +216,9 @@ Configuration EnableSignatureValidation
       RegistrationKey = 'd6750ff1-d8dd-49f7-8caf-7471ea9793fc' # Replace this with correct registration key.
     }
     SignatureValidation validations{
-        # By default,LCM will use default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM will use this custom store for retrieving the trusted publishers to validate the content.
+        # By default, LCM will use default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM will use this custom store for retrieving the trusted publishers to validate the content.
         TrustedStorePath = 'Cert:\LocalMachine\DSCStore'            
-        SignedItemType =  'Configuration','Module'         # Those are list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
+        SignedItemType = 'Configuration','Module'         # This is a list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
     }
  
 }
@@ -223,24 +227,26 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
  ```
 
 Установка приведенной выше метаконфигурации для узла включает проверку подписи для загруженных конфигураций и модулей. Для проверки цифровых подписей локальный диспетчер конфигураций выполнит следующие действия.
-1. Проверьте подпись в файле конфигурации (MOF-файл). Для проверки подписи диспетчер использует командлет PowerShell [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx), в котором в версии 5.1 была добавлена поддержка проверки подписей MOF.
-2. Проверьте центр сертификации, который авторизовал доверенное лицо.
+
+1. Проверьте подпись в файле конфигурации (MOF-файл). 
+   Для проверки подписи диспетчер использует командлет PowerShell [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx), в котором в версии 5.1 была добавлена поддержка проверки подписи MOF.
+2. Убедитесь, что центр сертификации, который авторизовал подписывающую сторону, является доверенным.
 3. Скачайте зависимости модуля или ресурса конфигурации во временный каталог.
 4. Проверьте подпись каталога, включенного в модуль.
-    * Найдите файл <moduleName>.cat и проверьте его подпись с помощью командлета [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx).
+    * Найдите файл `<moduleName>.cat` и проверьте его подпись командлетом [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx).
     * Проверьте центр сертификации, который проверил подлинность доверенного лица.
-    * Проверьте, что содержимое модулей не было изменено, с помощью нового командлета [Test-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx).
-5. Установите модуль в папку $env:ProgramFiles\WindowsPowerShell\Modules\
+    * Проверьте, чтобы содержимое модулей не было изменено, с помощью нового командлета, [Test-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx).
+5. Установите модуль (Install-Module) в папку "$env:ProgramFiles\WindowsPowerShell\Modules\".
 6. Выполните конфигурацию.
 
 > Примечание. Проверка подписи каталога модуля и конфигурации выполняется только при первом применении конфигурации к системе или при скачивании и установке модуля. При проверке на согласованность не проверяется подпись файла Current.mof и зависимости для его модулей.
 Если проверка на любом этапе завершается неудачно, например если конфигурация, полученная с опрашивающего сервера, не подписана, то обработка конфигурации будет завершена с ошибкой, показанной ниже, и все временные файлы будут удалены.
 
-![Пример ошибки конфигурации](../../images/PullUnsignedConfigFail.png)
+![Пример ошибки конфигурации](../images/PullUnsignedConfigFail.png)
 
-Аналогично при попытке получения модуля, каталог для которого не подписан, появится следующая ошибка.
+Аналогично при попытке получить модуль, каталог для которого не подписан, появится следующая ошибка.
 
-![Пример ошибки модуля](../../images/PullUnisgnedCatalog.png)
+![Пример ошибки модуля](../images/PullUnisgnedCatalog.png)
 
 ####Принудительная отправка
 Конфигурация, переданная на узел с помощью принудительной отправки, может быть изменена злоумышленником в месте ее отправки. Локальный диспетчер конфигураций выполняет похожие действия для проверки подписи для принудительно отправленных и опубликованных конфигураций.
@@ -248,7 +254,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 
 * Включите проверку подписи на узле.
 
-```Powershell
+```PowerShell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -267,9 +273,10 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 ``` 
 * Создайте пример файла конфигурации.
 
-```Powershell
+```PowerShell
 # Sample configuration
-Configuration Test{
+Configuration Test
+{
 
     File foo
     {
@@ -282,22 +289,22 @@ Test
 
 * Попробуйте принудительно отправить не подписанный файл конфигурации на узел. 
 
-```Powershell
+```PowerShell
 Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 ``` 
-![Ошибка "MOF-файл не подписан"](../../images/PushUnsignedMof.png)
+![Ошибка "MOF-файл не подписан"](../images/PushUnsignedMof.png)
 
-* Подпишите конфигурационный файл с помощью сертификата подписи кода.
+* Подпишите файл конфигурации с помощью сертификата подписи кода.
 
-![Подписанный MOF-файл](../../images/SignMofFile.png)
+![Подписанный MOF-файл](../images/SignMofFile.png)
 
 * Попробуйте отправить подписанный MOF-файл.
 
-![Подписанный MOF-файл](../../images/PushSignedMof.png)
+![Подписанный MOF-файл](../images/PushSignedMof.png)
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

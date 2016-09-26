@@ -2,8 +2,8 @@
 title: "Улучшения подсистемы PowerShell"
 author: jasonsh
 translationtype: Human Translation
-ms.sourcegitcommit: 6813902aec214aee9ede27ff79dd291364e9f443
-ms.openlocfilehash: f864850128f118704d7545b09110835ab1d51b8e
+ms.sourcegitcommit: 47c963343c541d0f2ace194f365de5fcd809ccc5
+ms.openlocfilehash: 1b35a25312b44d14ec8771be9e17aaa43e270b61
 
 ---
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: f864850128f118704d7545b09110835ab1d51b8e
 
 ### При перенаправлении файлов больше не задается жестко `-Encoding Unicode` ###
 
-Во всех предыдущих версиях PowerShell было невозможно контролировать кодировку файлов, используемую оператором перенаправления файлов, например `get-childitem > out.txt`, так как среда PowerShell добавляла параметр `-Encoding Unicode`.
+Во всех предыдущих версиях PowerShell было невозможно контролировать кодировку файлов, используемую оператором перенаправления файлов, например `Get-ChildItem > out.txt`, так как среда PowerShell добавляла параметр `-Encoding Unicode`.
 
 Начиная с версии WMF 5.1 можно изменять кодировку файлов при перенаправлении, задавая `$PSDefaultParameterValues`, например:
 
@@ -63,7 +63,7 @@ $PSDefaultParameterValues["Out-File:Encoding"] = "Ascii"
 Эта ошибка исправлена в WMF 5.1.
 
 
-### Исправлены некоторые проблемы с объектами COM ###
+### Исправлены некоторые проблемы с COM-объектами ###
 
 В WMF 5 появился новый модуль привязки COM для вызова методов применительно к COM-объектам и доступа к свойствам COM-объектов.
 Этот новый модуль значительно повысил производительность, но в нем был ряд ошибок, которые исправлены в WMF 5.1.
@@ -73,7 +73,7 @@ $PSDefaultParameterValues["Out-File:Encoding"] = "Ascii"
 Рассмотрим следующий пример:
 
 ```
-$obj = new-object -com wscript.shell
+$obj = New-Object -ComObject WScript.Shell
 $obj.SendKeys([char]173)
 ```
 
@@ -100,7 +100,7 @@ $x = Get-COMDictionary
 
 ### `[ordered]` не разрешалось использовать в классах ###
 
-В WMF 5 появились классы, в которых проверялось использование литералов типов.  `[ordered]` выглядит как литерал типа, но в действительности не является типом .Net.  В WMF 5 неправильно выдавалась ошибка для `[ordered]` внутри класса:
+В WMF 5 появились классы, в которых проверялось использование литералов типов.  `[ordered]` выглядит как литерал типа, но в действительности не является типом .NET.  В WMF 5 неправильно выдавалась ошибка для `[ordered]` внутри класса:
 
 ```
 class CThing
@@ -123,6 +123,6 @@ class CThing
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

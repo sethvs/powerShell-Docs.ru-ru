@@ -1,19 +1,26 @@
 ---
-title: Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
+translationtype: Human Translation
+ms.sourcegitcommit: d015dfae1990c66ea75aa45004b366d1609fb36f
+ms.openlocfilehash: 460ab6d82b694266d31b09779866f746b56c9f51
+
 ---
+
 # Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
-Вкладки в интегрированной среде сценариев Windows PowerShellÂ® позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения. Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.
+Вкладки в интегрированной среде скриптов Windows PowerShell® позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения. Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.
 
 > [!NOTE]
 > Переменные, функции и псевдонимы, созданные на одной вкладке, на другую не переносятся. Это разные сеансы Windows PowerShell.
 
-Выполните следующие действия, чтобы открыть или закрыть вкладку в Windows PowerShell. Чтобы переименовать вкладку, задайте свойство [DisplayName](https://technet.microsoft.com/en-us/library/a9b58556-951b-4f48-b3ae-b351b7564360#Displayname) для объекта сценария на вкладке Windows PowerShell.
+Выполните следующие действия, чтобы открыть или закрыть вкладку в Windows PowerShell. Чтобы переименовать вкладку, задайте свойство [DisplayName](The-PowerShellTab-Object.md#Displayname) для объекта сценария на вкладке Windows PowerShell.
 
 ## Создание и использование вкладки PowerShell
 В меню **Файл** щелкните элемент **Создать вкладку PowerShell**. Новая вкладка PowerShell всегда открывается в виде активного окна. Вкладки PowerShell нумеруются последовательно в порядке их открытия. Каждая вкладка связана с собственным окном консоли Windows PowerShell. Одновременно можно открыть до 32 вкладок PowerShell со своим сеансом (в интегрированной среде сценариев Windows PowerShell 2.0 это ограничение равно 8).
@@ -32,14 +39,15 @@ ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
 
 -   В меню **Файл** щелкните **Закрыть вкладку PowerShell** или нажмите кнопку "Закрыть" (**X**) на активной вкладке для ее закрытия.
 
-Если на закрываемой вкладке PowerShell имеются несохраненные файлы, вам будет предложено сохранить их или отменить изменения. Дополнительные сведения о сохранении сценария см. в статье [Сохранение скрипта](https://technet.microsoft.com/en-us/library/162f594d-efd3-4234-9960-45e56e6eadc8)..
+Если на закрываемой вкладке PowerShell имеются несохраненные файлы, вам будет предложено сохранить их или отменить изменения. Дополнительные сведения о сохранении сценария см. в статье [Сохранение скрипта](https://technet.microsoft.com/library/162f594d-efd3-4234-9960-45e56e6eadc8).
 
 ## См. также
-[Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
-[Использование области консоли в интегрированной среде сценариев Windows PowerShell](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
+- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
+- [Использование области консоли в интегрированной среде сценариев Windows PowerShell](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Sep16_HO3-->
 
 
