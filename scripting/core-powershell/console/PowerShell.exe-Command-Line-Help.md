@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: e4635890a5433e199d5ddbce0ac1475a134ecd57
+ms.sourcegitcommit: 763dc6bb0410ec09fc237d41b96842895b15d142
+ms.openlocfilehash: c3b263110a908c28569cf3048a94d48da8316684
 
 ---
 
@@ -124,6 +124,9 @@ PowerShell -PSConsoleFile sqlsnapin.psc1
 
 PowerShell -Version 2.0 -NoLogo -InputFormat text -OutputFormat XML
 
+PowerShell -Command "Get-EventLog -LogName security"
+
+# in an existing PowerShell session that understands the curly braces mean a script block
 PowerShell -Command {Get-EventLog -LogName security}
 
 PowerShell -Command "& {Get-EventLog -LogName security}"
@@ -138,6 +141,6 @@ powershell.exe -encodedCommand $encodedCommand
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
