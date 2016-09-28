@@ -9,14 +9,18 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: f413ba6470985622e55bb4bd175d7c5d4b94c7d9
-ms.openlocfilehash: e545d49381a92ef3f7cc6a27316cbfc3a036a8c9
+ms.sourcegitcommit: 3dde62efa7ba595ed5160cc81b4e2b17a54e52a2
+ms.openlocfilehash: d4c9e88ddd6cfaec611527d19d00cbd4db9f5d1d
 
 ---
 
 #Известные проблемы в WMF 5.1 (предварительная версия) #
 
 > Примечание. Эта информация является предварительной и может быть изменена.
+
+##Запуск PowerShell от имени администратора с помощью ярлыка
+После установки WMF при попытке запустить PowerShell от имени администратора с помощью ярлыка может появиться сообщение "Неопознанная ошибка".
+Запустите PowerShell с помощью ярлыка без прав администратора. После этого средство будет запускаться и с правами администратора.
 
 ##Pester
 В этом выпуске существует две проблемы, которые следует иметь в виду при использовании Pester на сервере Nano.
@@ -30,6 +34,6 @@ ms.openlocfilehash: e545d49381a92ef3f7cc6a27316cbfc3a036a8c9
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
