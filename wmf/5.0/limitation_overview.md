@@ -99,6 +99,6 @@ Sysprep не работает после установки WMF 5.0
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

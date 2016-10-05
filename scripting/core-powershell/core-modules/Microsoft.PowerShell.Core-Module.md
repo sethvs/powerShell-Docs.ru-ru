@@ -1,7 +1,7 @@
 ---
 title: "Модуль Microsoft.PowerShell.Core"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -32,6 +32,6 @@ ms.openlocfilehash: da1ec55f88ece496b8a55d1c1d0ad9bf0052c8fa
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

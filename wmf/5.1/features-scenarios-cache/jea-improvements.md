@@ -85,6 +85,6 @@ RequiredGroups = @{ And = 'elevated-jea', @{ Or = '2FA-logon', 'smartcard-logon'
 Виртуальные учетные записи по-прежнему не поддерживаются при использовании JEA в Windows 7.
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
