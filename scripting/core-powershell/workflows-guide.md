@@ -1,7 +1,7 @@
 ---
 title: "руководство по рабочим процессам"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -42,6 +42,6 @@ ms.openlocfilehash: 4cdd2c913eb33d29e9734c3845994d7e776db2b1
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

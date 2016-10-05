@@ -1,3 +1,18 @@
+---
+title: "справочник по установке"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 63f7597ba91fb839252de451c6c9380b5b19c0ec
+
+---
+
 #  Руководство по установке
 
 -  [Специальные возможности в интегрированной среде сценариев Windows PowerShell](Accessibility-in-Windows-PowerShell-ISE.md)
@@ -14,6 +29,8 @@
 -  [WinRMSecurity](WinRMSecurity.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO3-->
 
 

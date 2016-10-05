@@ -28,6 +28,6 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 Новое значение этой переменной среды вступает в силу немедленно в текущем процессе.
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

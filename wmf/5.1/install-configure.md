@@ -9,19 +9,19 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 0a53817d6af625822d9183d2a0d5bc7bf4d2b264
-ms.openlocfilehash: 058d18deeb3d4926970ea25a157f92ad14836e4b
+ms.sourcegitcommit: c88163b5a7d8805d0dea82d321796d8f41d17bb8
+ms.openlocfilehash: 26a325dc7a18ba167ddc56ca226fce3eded79f52
 
 ---
 
 # Установка и настройка WMF 5.1 (предварительная версия) #
 
 ## Установка .NET 4.6
-Для использования WMF 5.1 необходимо установить платформу .NET Framework 4.6. Это нужно, чтобы включить новые функции для подписи каталогов, которые влияют на некоторые аспекты загрузки модулей и скриптов в WMF 5.1. 
+Для использования WMF 5.1 необходимо установить платформу .NET Framework 4.6. Это нужно, чтобы обеспечить работу новых функций подписывания каталогов, которые влияют на некоторые аспекты загрузки модулей и скриптов в WMF 5.1. 
 
-[Платформа .NET Framework 4.6 доступна в статье базы знаний KB 3045560](https://support.microsoft.com/en-us/kb/3045560). Инструкции по установке доступны по месту скачивания.
+[Платформа .NET Framework 4.6 доступна в статье базы знаний 3045560](https://support.microsoft.com/en-us/kb/3045560). Инструкции по установке доступны по месту скачивания.
 
-> **Примечание**. Требование о наличии .NET 4.6 не обнаруживается установщиком WMF 5.1 Preview, поэтому возможно установить WMF 5.1 Preview и без установки .NET 4.6. Это известная проблема. Тестирование показало, что вы можете установить .NET 4.6 после установки WMF 5.1 Preview. В финальной версии WMF 5.1 правильно проверит необходимые компоненты перед установкой. 
+> **Примечание**. Требование иметь .NET 4.6 не обнаруживается установщиком предварительной версии WMF 5.1, поэтому возможно установить ее и без установки .NET 4.6. Это известная проблема. Тестирование показало, что вы можете установить .NET 4.6 после установки предварительной версии WMF 5.1. В финальной версии WMF 5.1 правильно проверит необходимые компоненты перед установкой. 
 
 ## Скачивание и установка WMF 5.1 Preview
 
@@ -29,7 +29,7 @@ ms.openlocfilehash: 058d18deeb3d4926970ea25a157f92ad14836e4b
 
 | Операционная система       | Необходимые компоненты | Ссылки на пакеты             |
 |------------------------|---------------|---------------------------|
-| Windows Server 2012 R2 | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | [Win8.1AndW2K12R2-KB3156422-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823586)|
+| Windows Server 2012 R2 | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | [Win8.1AndW2K12R2-KB3156422-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823586)|
 | Windows Server 2012    | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | [W2K12-KB3156423-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823587)|
 | Windows Server 2008 R2 | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) </br> [WMF 4.0.](http://www.microsoft.com/en-us/download/details.aspx?id=40855) </br> Обновление для системы безопасности для [подписывания кода SHA-2](https://technet.microsoft.com/en-us/library/security/3033929) | [Win7AndW2K8R2-KB3156424-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823588) |
 | Windows 8.1            | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | **x64:** [Win8.1AndW2K12R2-KB3156422-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823586) </br> **x86:** [Win8.1-KB3156422-x86.msu](http://go.microsoft.com/fwlink/?LinkID=823589) |
@@ -44,7 +44,7 @@ ms.openlocfilehash: 058d18deeb3d4926970ea25a157f92ad14836e4b
 
 ## Установка WMF 5.1 из командной строки##
 
-1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). В установке основных серверных компонентов для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
+1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). При выборе варианта "Установка основных серверных компонентов" для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
 
 2. Перейдите в папку, куда был скачан или скопирован пакет установки WMF 5.1.
 
@@ -67,6 +67,6 @@ ms.openlocfilehash: 058d18deeb3d4926970ea25a157f92ad14836e4b
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 
