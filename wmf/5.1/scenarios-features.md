@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 57049ff138604b0e13c8fd949ae14da05cb03a4b
-ms.openlocfilehash: 01d7ac9815a8650f36150e36b4f6942f451dc368
+ms.sourcegitcommit: a1dde68414fd9754a15adb42642646f87adb0823
+ms.openlocfilehash: 9611a7da48a849b52821ac2890e1ea60441a75e3
 
 ---
 
@@ -44,15 +44,15 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 ```
 Поддерживаются каталоги версий 1 и 2. В версии 1 для создания хэшей файлов используется алгоритм хэширования SHA1, в версии 2 — SHA256. Каталог версии 2 не поддерживается в *Windows Server 2008 R2* и *Windows 7*. На платформах *Windows 8*, *Windows Server 2012* и более поздней версии рекомендуется использовать каталог версии 2.  
 
-![](../../images/NewFileCatalog.jpg)
+![](../images/NewFileCatalog.jpg)
 
 Следующая команда создает файл каталога. 
 
-![](../../images/CatalogFile1.jpg)  
+![](../images/CatalogFile1.jpg)  
 
-![](../../images/CatalogFile2.jpg) 
+![](../images/CatalogFile2.jpg) 
 
-Для проверки целостности файла каталога (Pester.cat в примере выше) его нужно подписать с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).   
+Для проверки целостности файла каталога (Pester.cat в приведенном выше примере) его нужно подписать с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).   
 
 
 ###Test-FileCatalog 
@@ -64,9 +64,9 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-FilesToSkip <string[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-![](../../images/TestFileCatalog.jpg)
+![](../images/TestFileCatalog.jpg)
 
-Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти сведения можно получить с помощью флага *-Detailed*. Командлет также отображает состояние подписи каталога в поле *Подпись*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
+Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти данные можно получить с помощью параметра *-Detailed*. Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
 
 
 ## Кэш анализа модуля ##
@@ -75,15 +75,13 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 По умолчанию этот кэш хранится в файле `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`.
 Кэш обычно считывается при запуске в процессе поиска команды и записывается в фоновом потоке через некоторое время после импорта модуля.
 
-Чтобы изменить расположение кэша по умолчанию, задайте переменную среды PSModuleAnalysisCachePath перед запуском PowerShell. Изменения, вносимые в эту переменную среды, влияют только на дочерние процессы.
-Значение должно быть полным путем (включая имя файла), на создание и запись файлов по которому у среды PowerShell есть разрешение.
-Чтобы отключить файловый кэш, укажите в качестве этого значения недопустимое расположение, например:
+Чтобы изменить расположение кэша по умолчанию, присвойте значение переменной среды `$env:PSModuleAnalysisCachePath` перед запуском PowerShell. Изменения, вносимые в эту переменную среды, влияют только на дочерние процессы. Значение должно быть полным путем (включая имя файла), на создание и запись файлов по которому у среды PowerShell есть разрешение. Чтобы отключить файловый кэш, укажите в качестве этого значения недопустимое расположение, например:
 
 ```PowerShell
 $env:PSModuleAnalysisCachePath = 'nul'
 ```
 
-Таким образом задается путь к недопустимому устройству. Если среда PowerShell не может осуществлять запись по указанному пути, ошибка не выводится, хотя в трассировщике может выводиться сообщение об ошибке:
+Таким образом задается путь к недопустимому устройству. Если среда PowerShell не может осуществлять запись по указанному пути, ошибка не выводится; сообщения об ошибках можно получить, используя трассировщик:
 
 ```PowerShell
 Trace-Command -PSHost -Name Modules -Expression { Import-Module Microsoft.PowerShell.Management -Force }
@@ -112,19 +110,13 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 * Если имеется несколько версий модуля, в PowerShell используется **та же логика разрешения**, что и в `Import-Module`, и ошибка не выводится. Это поведение аналогично поведению `Import-Module` и `Import-DscResource`.
 
 
-
-
-
-
-
-
 ##Усовершенствования Pester
-В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий были отправлены изменения https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которые улучшают работу Pester с Nano. 
+В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий были отправлены изменения https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которые улучшают работу Pester с Nano Server. 
 
 Изменения, произошедшие в версиях с 3.3.5 по 3.4.0, можно найти в файле ChangeLog.md по следующей ссылке: https://github.com/pester/Pester/blob/master/CHANGELOG.md.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,6 +4,6 @@
 
 Дополнительные сведения см. в разделе [Запись поддержки конфигураций DSC](https://msdn.microsoft.com/powershell/dsc/confighelp).
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

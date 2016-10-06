@@ -21,6 +21,6 @@ Mode LastWriteTime Length Name
 Командлеты Clipboard поддерживают изображения, звуковые файлы, списки файлов и текст.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

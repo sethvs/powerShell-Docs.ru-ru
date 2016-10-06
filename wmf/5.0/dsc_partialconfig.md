@@ -3,6 +3,6 @@
 WMF 5.0 помогает доставлять документы конфигурации на узел фрагментами. Дополнительные сведения см. в разделе [Частичные конфигурации](https://msdn.microsoft.com/powershell/dsc/partialconfigs).
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

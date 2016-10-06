@@ -53,6 +53,12 @@ Find-PackageProvider -Name "Nuget" -AllVersions
 
 #Find a provider from a specified source
 Find-PackageProvider -Name "Gistprovider" -Source "PSGallery"
+
+#For machines without internet, you can download the nuget provider first, put it to you file share and then use the following to install the nuget provider (TP5 or later).
+
+Find-PackageProvider -Source  C:\sharedfolder\Providers\
+Install-PackageProvider -Source C:\sharedfolder\Providers\ -Name nuget -force
+    
 ```
 
 ## [Командлет Get-Package](https://technet.microsoft.com/en-us/library/dn890704.aspx)
@@ -106,6 +112,8 @@ Install-PackageProvider -Name "Nuget" -RequiredVersion "2.8.5.201" -Force
 Get-PackageProvider –ListAvailable
 Import-PackageProvider –Name "Nuget" -RequiredVersion "2.8.5.201" -Verbose
 Import-PackageProvider –Name MyProvider –RequiredVersion xxxx -force
+
+As of the Windows Server Technical Preview(TP5), Install-PackageProvider does install as well as import the provider. Hence after you run find-packageprovider and install-packageprovider, the provider should be ready to use 
 ```
 
 ##[ Командлет Install-Package](https://technet.microsoft.com/en-us/library/dn890711.aspx)
@@ -180,6 +188,7 @@ Get-Package -Name jquery –Provider NuGet -Destination c:\test | Uninstall-Pack
 # Unregister a package source for the NuGet provider. You can use command Unregister-PackageSource, to disconnect with a repository, and Get-PackageSource, to discover what the repositories are associated with that provider.
 Unregister-PackageSource  -Name "NugetSource"
 ```
+
 
 
 <!--HONumber=Aug16_HO3-->

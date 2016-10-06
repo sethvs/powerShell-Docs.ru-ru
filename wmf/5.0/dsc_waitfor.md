@@ -4,6 +4,6 @@
 
 Дополнительные сведения см. в разделе [Указание межузловых зависимостей](https://msdn.microsoft.com/powershell/dsc/crossnodedependencies).
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

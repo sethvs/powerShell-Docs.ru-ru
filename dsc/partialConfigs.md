@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: ede565ef23c36a195f137e9949b215c6632a7e26
-ms.openlocfilehash: 9e3052353dd54568eb2dfaf5af5efde7faafd03a
+ms.sourcegitcommit: 0e830804616ff23412e0d6ff69c38e2ea20228e5
+ms.openlocfilehash: c5d3cb1045e67d4913fbbad13938e8f95a43cacf
 
 ---
 
@@ -34,9 +34,9 @@ configuration PartialConfigDemo
     Node localhost
     {
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
-            Description = 'Configuration for the Base OS'
+            Description = 'Configuration to add the SharePoint service account to the Administrators group.'
             RefreshMode = 'Push'
         }
            PartialConfiguration SharePointConfig
@@ -49,7 +49,7 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-**RefreshMode** для каждой частичной конфигурации имеет значение Push. Имена блоков **PartialConfiguration** (в этом случае OSInstall и SharePointConfig) должны точно совпадать с именами конфигураций, принудительно отправленных на целевой узел.
+**RefreshMode** для каждой частичной конфигурации имеет значение Push. Имена блоков **PartialConfiguration** (в этом случае ServiceAccountConfig и SharePointConfig) должны точно совпадать с именами конфигураций, отправляемых на целевой узел.
 
 ### Публикация и запуск частичных конфигураций в режиме принудительной отправки
 ![Структура папки PartialConfig](./images/PartialConfig1.jpg)
@@ -85,12 +85,12 @@ Configuration PartialConfigDemoConfigNames
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
             RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
-            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+            ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
         }     
         
-        PartialConfiguration Part1 
+        PartialConfiguration ServiceAccountConfig 
         {
-            Description                     = "OSInstall"
+            Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv") 
         }
  
@@ -98,7 +98,7 @@ Configuration PartialConfigDemoConfigNames
         {
             Description                     = "SharePointConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
         }
    
 }
@@ -125,7 +125,7 @@ configuration PartialConfigDemoConfigID
             
         }
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
             Description                     = 'Configuration for the Base OS'
             ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
@@ -135,7 +135,7 @@ configuration PartialConfigDemoConfigID
         {
             Description                     = 'Configuration for the Sharepoint Server'
             ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Pull'
         }
     }
@@ -143,7 +143,7 @@ configuration PartialConfigDemoConfigID
 PartialConfigDemo 
 ```
 
-Вы можете извлечь частичные конфигурации более чем из одного сервера опросов — потребуется только определить каждый опрашивающий сервер, а затем сослаться на соответствующий опрашивающий сервер в каждом блоке PartialConfiguration.
+Вы можете извлечь частичные конфигурации более чем из одного опрашивающего сервера — потребуется только определить каждый опрашивающий сервер, а затем сослаться на соответствующий опрашивающий сервер в каждом блоке **PartialConfiguration**.
 
 После создания метаконфигурации необходимо запустить ее для создания документа конфигурации (MOF-файла), а затем вызвать [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621(v=wps.630).aspx) для настройки LCM.
 
@@ -152,8 +152,8 @@ PartialConfigDemo
 Документы частичной конфигурации необходимо разместить в папке, указанной как **ConfigurationPath**, в файле `web.config` для опрашивающего сервера (обычно `C:\Program Files\WindowsPowerShell\DscService\Configuration`). Документы конфигурации должны быть именованы следующим образом: `ConfigurationName.mof`, где _ConfigurationName_ — имя частичной конфигурации. Например, документы конфигурации следует назвать следующим образом.
 
 ```
-OSInstall.mof
-OSInstall.mof.checksum
+ServiceAccountConfig.mof
+ServiceAccountConfig.mof.checksum
 SharePointConfig.mof
 SharePointConfig.mof.checksum
 ```
@@ -163,8 +163,8 @@ SharePointConfig.mof.checksum
 Документы частичной конфигурации необходимо разместить в папке, указанной как **ConfigurationPath**, в файле `web.config` для опрашивающего сервера (обычно `C:\Program Files\WindowsPowerShell\DscService\Configuration`). Документы конфигурации необходимо именовать следующим образом: _ConfigurationName_. _ConfigurationID_`.mof`, где _ConfigurationName_ будет именем частичной конфигурации, а _ConfigurationID_ — идентификатором конфигурации, заданным в LCM на целевом узле. Например, документы конфигурации следует назвать следующим образом.
 
 ```
-OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
-OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
+ServiceAccountConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
+ServiceAccountConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
 SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 ```
@@ -177,7 +177,7 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 
 ## Частичные конфигурации в смешанных режимах принудительной отправки и запросов
 
-Кроме того, вы можете совместить режимы принудительной отправки и запросов для частичных конфигураций Это значит, что у вас может быть одна частичная конфигурация, запрашиваемая с опрашивающего сервера, тогда как для другой частичной конфигурации выполняется принудительная отправка. Используйте каждую частичную конфигурацию в соответствии с ее режимом обновления. Например, в следующей метаконфигурации описывается один и тот же пример с частичной конфигурацией операционной системы в режиме запросов и частичной конфигурации SharePoint в режиме принудительной отправки.
+Кроме того, вы можете совместить режимы принудительной отправки и запросов для частичных конфигураций Это значит, что у вас может быть одна частичная конфигурация, запрашиваемая с опрашивающего сервера, тогда как для другой частичной конфигурации выполняется принудительная отправка. Используйте каждую частичную конфигурацию в соответствии с ее режимом обновления. Например, в следующей метаконфигурации описывается тот же пример с частичной конфигурацией учетной записи службы в режиме запросов и частичной конфигурации SharePoint в режиме принудительной отправки.
 
 ### Смешанные режимы принудительной отправки и запросов с использованием ConfigurationNames
 
@@ -198,12 +198,12 @@ Configuration PartialConfigDemoConfigNames
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
             RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
-            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+            ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
         }     
         
-        PartialConfiguration OSInstall 
+        PartialConfiguration ServiceAccountConfig 
         {
-            Description                     = "OSInstall"
+            Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
             RefreshMode                     = 'Pull' 
         }
@@ -211,7 +211,7 @@ Configuration PartialConfigDemoConfigNames
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Push'
         }
    
@@ -239,7 +239,7 @@ configuration PartialConfigDemo
             
         }
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
             Description             = 'Configuration for the Base OS'
             ConfigurationSource     = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
@@ -248,7 +248,7 @@ configuration PartialConfigDemo
            PartialConfiguration SharePointConfig
         {
             Description             = 'Configuration for the Sharepoint Server'
-            DependsOn               = '[PartialConfiguration]OSInstall'
+            DependsOn               = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode             = 'Push'
         }
     }
@@ -256,14 +256,14 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-Обратите внимание, что режим **RefreshMode**, указанный в блоке "Настройки", — это "Режим запросов", а режим **RefreshMode** для частичной конфигурации OSInstall — "Принудительная отправка".
+Обратите внимание, что режим **RefreshMode**, указанный в блоке Settings (Настройки), — это Pull (Режим запросов), а режим **RefreshMode** для частичной конфигурации SharePointConfig — Push (Принудительная отправка).
 
-MOF-файлы конфигурации следует именовать и располагать в соответствии с их режимами обновления. Вызовите **Publish-DSCConfiguration**, чтобы опубликовать частичную конфигурацию `SharePointInstall`, и дождитесь извлечения конфигурации `OSInstall` из опрашивающего сервера или выполните принудительное обновление, вызвав [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
+MOF-файлы конфигурации следует именовать и располагать в соответствии с их режимами обновления. Вызовите **Publish-DSCConfiguration**, чтобы опубликовать частичную конфигурацию `SharePointConfig`, и дождитесь извлечения конфигурации `ServiceAccountConfig` из опрашивающего сервера или выполните принудительное обновление, вызвав [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
 
-## Пример частичной конфигурации OSInstall
+## Пример частичной конфигурации ServiceAccountConfig
 
 ```powershell
-Configuration OSInstall
+Configuration ServiceAccountConfig
 {
     Param (
         [Parameter(Mandatory,
@@ -294,7 +294,7 @@ Configuration OSInstall
         }
     }
 }
-OSInstall
+ServiceAccountConfig
 
 ```
 ## Пример частичной конфигурации SharePointConfig
@@ -323,13 +323,14 @@ SharePointConfig
 ```
 ##См. также 
 
-**Концепции**
-[Опрашивающие серверы службы настройки требуемого состояния Windows PowerShell](pullServer.md) 
+**Основные понятия**
+[Опрашивающие серверы настройки требуемого состояния Windows PowerShell](pullServer.md) 
+
 [Настройка локального диспетчера конфигураций Windows](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

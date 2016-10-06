@@ -1,7 +1,7 @@
 ---
 title: "Поставщики в модуле  Windows PowerShell Core"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -37,6 +37,6 @@ ms.openlocfilehash: f6b1ca1a3253c941c76826c6644079a14f19ddcf
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

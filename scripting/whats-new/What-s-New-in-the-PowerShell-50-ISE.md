@@ -1,7 +1,7 @@
 ---
 title: "Новые возможности интегрированной среды сценариев PowerShell версии 5.0"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -236,6 +236,6 @@ IntelliSense — это средство для автоматического 
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

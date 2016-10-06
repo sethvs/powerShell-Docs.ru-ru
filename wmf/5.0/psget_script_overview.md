@@ -68,6 +68,6 @@ Function Update-ScriptFileInfo 1.0.0.1 PowerShellGet
 ```
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

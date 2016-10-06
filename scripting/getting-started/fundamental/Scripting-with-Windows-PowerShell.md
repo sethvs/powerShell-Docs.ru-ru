@@ -1,7 +1,7 @@
 ---
 title: "Работа со сценариями в Windows PowerShell"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
@@ -32,6 +32,6 @@ Windows PowerShell включает приведенные ниже возмож
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

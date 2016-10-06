@@ -190,6 +190,6 @@ PS C:\> Update-xDscResource –Name ‘Demo_ADUser’ –Property $UserName, $En
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

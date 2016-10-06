@@ -86,6 +86,6 @@ Configuration WebApplication
 
 Эта конфигурация, которая очень похожа на предыдущую, завершается с ошибкой, поскольку ресурсы WindowsFeature FE_IIS и WindowsFeature Worker_IIS больше не совпадают, а значит конфликтуют.
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,6 +4,6 @@
 
 Дополнительные сведения см. в разделе [Настройка опрашивающего клиента с помощью идентификатора конфигурации](https://msdn.microsoft.com/powershell/dsc/pullclientconfigid) или [Настройка опрашивающего клиента с помощью имен конфигурации](https://msdn.microsoft.com/powershell/dsc/pullclientconfignames).
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

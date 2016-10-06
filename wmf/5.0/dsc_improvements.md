@@ -11,6 +11,6 @@
 Модуль PSDesiredStateConfiguration был обновлен до версии 1.1. Конфигурации DSC, скомпилированные в WMF 5.0 Preview за февраль 2015 года или более ранней версии не будут работать в PowerShell/WMF 5.0. 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

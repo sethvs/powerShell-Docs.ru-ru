@@ -1,5 +1,5 @@
 ---
-title: "FullyQuilifiedModuleName для \"using module\""
+title: "FullyQuilifiedModuleName для &quot;using module&quot;"
 author: jaimeo
 contributor: vors
 translationtype: Human Translation
@@ -32,6 +32,6 @@ WMF 5.1
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

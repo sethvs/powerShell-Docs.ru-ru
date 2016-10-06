@@ -1,7 +1,7 @@
 ---
 title: WinRMSecurityRedirect
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: eslesar
@@ -122,6 +122,6 @@ New-PSDrive -Name Tools \\Server2\Shared\Tools -Credential $myCredential
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

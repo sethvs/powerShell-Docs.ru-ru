@@ -1,12 +1,18 @@
 ---
-title: Модуль Security
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "безопасность"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
-ms.assetid:
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 6bdf3f658ed75b48be6df217b6a0b4ad5951c935
+
 ---
+
 # Модуль Security
 В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Security**. В модуль **Microsoft.PowerShell.Security** включается [поставщик сертификатов [v3]](https://technet.microsoft.com/en-us/library/3f743541-d0c6-4670-809a-b16fb01f7c4d) и командлеты, управляющие функциями безопасности Windows PowerShell, в том числе политиками выполнения. Модуль **Microsoft.PowerShell.Security** устанавливается вместе с Windows PowerShell.
 
@@ -18,11 +24,13 @@ ms.assetid:
 [Поставщик Certificate [v3]](https://technet.microsoft.com/en-us/library/3f743541-d0c6-4670-809a-b16fb01f7c4d)
 
 ## См. также
-[Windows PowerShell 5.0](../core-powershell/core-modules/Windows-PowerShell-5.0.md)
-[Основные модули Windows PowerShell](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+[Windows PowerShell 5.0](../core-powershell/core-modules/Windows-PowerShell-5.0.md)
+[Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
 [Работа со сценариями в Windows PowerShell](../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO3-->
 
 
