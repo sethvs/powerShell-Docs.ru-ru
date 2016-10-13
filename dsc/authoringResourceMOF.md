@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 4d685e518acd3a18f4872417b645dbe66f758421
+ms.sourcegitcommit: b414a01bcd111143791a5fac77e61ce309a0a5c5
+ms.openlocfilehash: 50b99917f15d290db30da1b1b752d668d886ec50
 
 ---
 
@@ -28,7 +28,7 @@ ms.openlocfilehash: 4d685e518acd3a18f4872417b645dbe66f758421
 Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
 
 ```
-$env:PSModulePath (folder)
+$env:ProgramFiles\WindowsPowerShell\Modules (folder)
     |- MyDscResources (folder)
         |- DSCResources (folder)
             |- Demo_IISWebsite (folder)
@@ -279,6 +279,6 @@ FunctionsToExport = @("Get-TargetResource", "Set-TargetResource", "Test-TargetRe
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
