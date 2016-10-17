@@ -1,25 +1,30 @@
 {
-    "build": {
-        "content": [
-            {
-                "files": [
-                    "**/**.md"
-                ],
-                "exclude": ["**/obj/**"]
-            }
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/**.md"
         ],
-        "globalMetadata": {
-            "ROBOTS": "INDEX, FOLLOW"
-        },
-        "resource": [
-            {
-                "files": [
-                    "**/images/**"
-                ],
-                "exclude": ["**/obj/**"]
-            }
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "ROBOTS": "INDEX, FOLLOW",
+      "bilingual_type": "hover over"
+    },
+    "resource": [
+      {
+        "files": [
+          "**/images/**"
         ],
-        "template": "op.html",
-        "dest": "wmf"
-    }
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
+    "template": "op.html",
+    "dest": "wmf"
+  }
 }
