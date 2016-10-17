@@ -1,16 +1,23 @@
 ---
-title: Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Справочник по объектной модели интегрированной среды сценариев Windows PowerShell"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 9bfb74ba438dd27fc2799263fc12a20edd2bb8cb
+
 ---
+
 # Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
   
 ## Справочник по объектной модели
- Этот раздел содержит ссылку на базовые классы, определяющие различные объекты в интегрированной среде сценариев Windows PowerShellÂ®. Упорядочение объектов в соответствии с их иерархией рассматривается в статье [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)..
+ Этот раздел содержит справку по базовым классам, определяющим различные объекты в интегрированной среде скриптов (ISE) Windows PowerShell®. Упорядочение объектов в соответствии с их иерархией рассматривается в статье [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md).
 
  [Объект ISEAddOnTool](The-ISEAddOnTool-Object.md)
  Примеры: $psISE.CurrentVisibleHorizontalTool, $psISE.CurrentVisibleVerticalTool.
@@ -41,7 +48,7 @@ ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
  Примеры: $psISE.CurrentPowerShellTab, $psISE.PowerShellTabs\[0\].
 
  [Объект PowerShellTabCollection](The-PowerShellTabCollection-Object.md)
- Пример: $psISE.PowerShellTabs
+ Пример: $psISE.PowerShellTabs.
 
 ## См. также
  [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
@@ -49,6 +56,7 @@ ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

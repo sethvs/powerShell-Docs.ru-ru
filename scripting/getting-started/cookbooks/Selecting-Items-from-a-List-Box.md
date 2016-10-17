@@ -1,12 +1,19 @@
 ---
-title: Выбор элементов из списка
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Выбор элементов из списка"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 327c7cc5-21d0-4ace-b151-aa1491d1d3c2
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 7e8fd05cfedd500c51f2d7e4f6adbb7d1f27cb00
+
 ---
+
 # Выбор элементов из списка
 Используйте Windows PowerShell 3.0 и более поздние версии для создания диалогового окна, в котором пользователи могут выбирать элементы из списка.
 
@@ -137,7 +144,7 @@ $listBox.Height = 80
 В следующем разделе необходимо указать значения списка, которые должны отображаться пользователям.
 
 > [!NOTE]
-> Список, созданный этим сценарием, позволяет выбрать только один вариант. Чтобы создать список, допускающий множественный выбор, укажите значение для свойства **SelectionMode**, аналогичное следующему: `$listBox.SelectionMode = "MultiExtended"`. Дополнительные сведения см. в разделе [Списки с множественным выбором](Multiple-selection-List-Boxes.md)..
+> Список, созданный этим сценарием, позволяет выбрать только один вариант. Чтобы создать список, допускающий множественный выбор, укажите значение для свойства **SelectionMode**, аналогичное следующему: `$listBox.SelectionMode = "MultiExtended"`. Дополнительные сведения см. в статье [Списки с множественным выбором](Multiple-selection-List-Boxes.md).
 
 ```
 [void] $listBox.Items.Add("atl-dc-001")
@@ -173,12 +180,13 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## См. также
-[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры PowerShell GUI не работают?)](http://go.microsoft.com/fwlink/?LinkId=506644)
 [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
 [Windows PowerShell Tip of the Week: Selecting Items from a List Box (Совет недели для Windows PowerShell: выбор элементов из списка)](http://technet.microsoft.com/library/ff730949.aspx)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

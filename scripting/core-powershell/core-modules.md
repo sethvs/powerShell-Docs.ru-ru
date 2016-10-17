@@ -1,6 +1,21 @@
-#  Руководство по основным модулям Windows PowerShell
+---
+title: "основные модули"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: ab536969fac8ded0e540da3eb138448b4f444f67
+ms.openlocfilehash: 3bee547fc53d1164d3cbf17f033083d4f1099ae7
 
-Модули Core PowerShell предоставляют основные функциональные возможности PowerShell.
+---
+
+#  Основополагающие модули PowerShell
+
+Основополагающие модули PowerShell предоставляют базовые функциональные возможности PowerShell.
 Эти модули охватывают следующие основные области:
 
 -  [Модуль Archive](core-modules/Microsoft.PowerShell.Archive-Module.md)
@@ -21,6 +36,7 @@
 -  [Модуль Utility](core-modules/Microsoft.PowerShell.Utility-Module.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

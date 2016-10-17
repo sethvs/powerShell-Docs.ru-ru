@@ -1,3 +1,18 @@
+---
+title: "руководство по ise"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 053a4fd734b1e86c5f8ca22c8197ce4e80b6fce6
+
+---
+
 # Руководство по ISE
 
 -  [Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell](ise/How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
@@ -29,6 +44,8 @@
 -  [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](ise/Windows-PowerShell-ISE-Object-Model-Reference.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO3-->
 
 

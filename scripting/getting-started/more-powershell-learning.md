@@ -1,6 +1,33 @@
+---
+title: "другие статьи о powershell"
+ms.date: 2016-05-11
+keywords: "powershell,командлет"
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 05205ff8fcf0a3b23e66a6ac756be0d9a5055bd2
+
+---
+
 #  Другие статьи о PowerShell
 
-Другие источники для изучения PowerShell
+Другие источники для изучения PowerShell  
+
+## Ресурсы для пользователей Windows PowerShell
+
+Помимо справки, доступной в командной строке, пользователи, желающие использовать Windows PowerShell, могут найти дополнительную информацию в следующих источниках.
+
+-   [Блог команды разработчиков Windows PowerShell](http://blogs.msdn.com/b/powershell/). Лучший ресурс, позволяющий учиться непосредственно у рабочей группы по Windows PowerShell.
+-   [Windows PowerShell Customer Connection](http://Connect.Microsoft.com/PowerShell). Отправляйте предложения, отзывы или информацию об ошибках рабочей группе по Windows PowerShell. Вы можете сообщить об ошибке в коде, документации или локализации (в переводе).
+-   В блоге [Hey, Scripting Guy! ](http://www.scriptingguys.com/blog) каждые 7 дней публикуется новый контент, и он заслуженно и на постоянной основе входит в пятерку лучших блогов Майкрософт. Статьи основаны на сценариях и написаны приятным и живым языком.
+-   [Страница изучения PowerShell](http://www.scriptingguys.com/learnpowershell) — дом Windows PowerShell в Центре скриптов TechNet. На этой странице размещен ряд видео для начинающих от Эда Уилсона (Ed Wilson), специалиста по сценариям Майкрософт. Здесь также находятся тесты по Windows PowerShell, ссылки на контент от сообщества и многое другое.
+-   Возникли вопросы по использованию Windows PowerShell? Объединяйтесь с сотнями других людей с похожими интересами на [официальном форуме Scripting Guys](http://social.technet.microsoft.com/forums/itcg/threads/).
+-   [Центр скриптов Майкрософт](https://technet.microsoft.com/scriptcenter). Портал, на котором можно найти многие полезные ресурсы для Windows PowerShell, включая [репозиторий Центра скриптов](http://gallery.technet.microsoft.com/scriptcenter/). Один из лучших способов обучиться сценариям — увидеть примеры в действии. Есть тысячи скриптов Windows PowerShell, которые вы можете оценить и адаптировать под свои нужны (и поиск по ним).
+-   Примите участие в работе сообщества пользователей Windows PowerShell. На [странице сообщества Центра скриптов](https://technet.microsoft.com/scriptcenter/hh182567.aspx) можно узнать, где географически находятся десятки групп пользователей Windows PowerShell; скорее всего, и рядом с вами кто-то есть. Оставайтесь в курсе деятельности сообщества Microsoft Scripting Guy.
 
 ## Видео
 
@@ -23,7 +50,16 @@
 -  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 4](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481552_Dnl_L.wmv)
 -  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 5](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481554_Dnl_L.wmv)
 
+## Ресурсы для разработчиков Windows PowerShell
 
-<!--HONumber=May16_HO2-->
+Следующие ресурсы помогут разработчикам создавать собственные модули, функции, командлеты, поставщики, а также приложения, содержащие в себе Windows PowerShell.
+
+-   [Пакет SDK для Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=89595). Предоставляет справочные сведения.
+-   [Руководство программиста по Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=89596). Предоставляет учебники. Также информирует об основополагающих концепциях Windows PowerShell.
+
+
+
+
+<!--HONumber=Aug16_HO3-->
 
 

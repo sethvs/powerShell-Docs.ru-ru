@@ -1,19 +1,33 @@
 ---
 title: "Создание сценариев PowerShell"
 ms.date: 2016-05-11
-keywords: powershell,cmdlet
+keywords: "powershell,командлет"
 description: 
 ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 32b4e11f150fe0374472d2d4c75f8de6c3575abb
-ms.openlocfilehash: 8ef9ea5b00c9c0ac0d14370a39d1ed7970e65cc3
+ms.sourcegitcommit: b38cfd053cc2356fa7ca99605dbd84190d342327
+ms.openlocfilehash: fc6307be4dafb378350b6d9667b2b6aca0e2e6d4
 
 ---
 
-#  Создание сценариев PowerShell
+#  PowerShell
+
+Windows PowerShell — это оболочка командной строки на основе платформы .NET с языком сценариев. Она позволяет системным администраторам и опытным пользователям быстро автоматизировать администрирование различных операционных систем (Linux, OSX, Unix и Windows) и процессов, связанных с приложениями, работающими в этих операционных системах.
+
+###  Теперь PowerShell использует открытый исходный код
+
+Базовый исходный код PowerShell теперь доступен в GitHub, где участники сообщества могут делать свои дополнения (см. раздел [PowerShell](https://github.com/powershell/powershell)).
+
+Вы можете начать с нужных вам элементов в разделе [Получить PowerShell](https://github.com/PowerShell/PowerShell#get-powershell).
+Или, возможно, с краткого обзора в разделе [Приступая к работе](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell)
+
+>  **Примечание.**  
+>  Все ссылки на PowerShell в GitHub приведут вас в GitHub.
+
+#  Документация
 
 Коллекция документации упорядочена по четырем основным разделам.
 
@@ -34,20 +48,19 @@ ms.openlocfilehash: 8ef9ea5b00c9c0ac0d14370a39d1ed7970e65cc3
 -  Ряд разделов "[основной справочник для &lt;использование&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)", который предоставляет инструкции по выполнению стандартных задач с файлами, файловой системой, реестром, процессами, службами и на аналогичные повседневные темы.
 -  Отсматриваемое руководство по другим ресурсам для [обучения работе с PowerShell](getting-started/more-powershell-learning.md).
 
-##  [Основы PowerShell](core-powershell/core-powershell.md)
-Этот раздел содержит все справочные материалы и подробные руководства по PowerShell.  
+##  [Распространенные модули PowerShell](core-powershell/core-powershell.md)
+Этот раздел содержит все справочные материалы по PowerShell.  
 Содержание раздела:
--  [Руководство по основным модулям Windows PowerShell](core-powershell/core-modules.md)
--  [Руководство по интегрированной среде сценариев (ISE) PowerShell](core-powershell/ise-guide.md)
--  [Руководство по окну консоли PowerShell](core-powershell/console-guide.md)
--  [Руководство по удаленному управлению PowerShell](core-powershell/Running-Remote-Commands.md)
--  [Руководство по рабочим процессам PowerShell](core-powershell/workflows-guide.md)
--  [Руководство по PowerShell Web Access](core-powershell/web-access.md)
+-  [Основополагающие модули PowerShell](core-powershell/core-modules.md)
+-  [Интегрированная среда сценариев PowerShell \((ISE)\)](core-powershell/ise-guide.md)
+-  [Окно консоли PowerShell](core-powershell/console-guide.md)
+-  [Удаленное управление PowerShell](core-powershell/Running-Remote-Commands.md)
+-  [Рабочие процессы PowerShell](core-powershell/workflows-guide.md)
+-  [PowerShell Web Access](core-powershell/web-access.md)
 -  [Глоссарий PowerShell](Windows-PowerShell-Glossary.md)
 
 
 
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

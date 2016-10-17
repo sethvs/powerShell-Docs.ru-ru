@@ -1,7 +1,7 @@
 ---
 title: "Ресурс DSC GroupSet"
 ms.date: 2016-05-16
-keywords: powershell, DSC, built-in, resource
+keywords: "powershell, DSC, встроенный, ресурс"
 description: "Предоставляет механизм для управления локальными группами на целевом узле."
 ms.topic: article
 author: eslesar
@@ -86,6 +86,6 @@ GroupSetTest -ConfigurationData $cd
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
