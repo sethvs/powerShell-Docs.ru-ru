@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: a16660bd-0aee-46fd-ac17-3f022165d089
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: e067519d58ca381fc4e5c746fe9bbd16bdc68c60
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: 43477d0742612f331f74833a1d70e69692b5b8e7
 
 ---
 
@@ -83,7 +83,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.SubMenus.Clear()
 # Add an Add-ons menu item with an shortcut and fast access key.
 # Note the use of “_”  as opposed to the “&” for mapping to the fast access key letter for the menu item.
 $menuAdded = $psISE.CurrentPowerShellTab.AddOnsMenu.SubMenus.Add("_Process",{get-process},"Alt+P") 
-# Add a nested menu – a parent and a child submenu item. 
+# Add a nested menu - a parent and a child submenu item. 
 $parentAdded = $psISE.CurrentPowerShellTab.AddOnsMenu.SubMenus.Add("Parent",$null,$null) 
 $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
 
@@ -99,6 +99,6 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
