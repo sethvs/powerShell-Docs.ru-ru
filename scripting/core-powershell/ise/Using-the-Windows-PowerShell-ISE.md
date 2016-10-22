@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 64fb5f37-90a8-4b89-9fc8-c6b8fcc0c7d0
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 117a7a3e031ffde70ebcbcb5d180c2d7b822ac76
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: 78e9875815adfbe18f675023e9d9d0742aca2786
 
 ---
 
 # Использование интегрированной среды сценариев Windows PowerShell
-В этом разделе содержатся сведения о компонентах интегрированной среды сценариев Windows PowerShell® (ISE), которые делают вашу работу более продуктивной.
+В этом разделе содержатся сведения о компонентах интегрированной среды скриптов Windows PowerShell® (ISE), которые делают вашу работу более продуктивной.
 
 [Использование заполнения нажатием клавиши TAB в областях сценариев и консоли](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md). Пошаговые инструкции по использованию заполнения нажатием клавиши TAB в областях скриптов и консоли.
 
@@ -37,6 +37,6 @@ ms.openlocfilehash: 117a7a3e031ffde70ebcbcb5d180c2d7b822ac76
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

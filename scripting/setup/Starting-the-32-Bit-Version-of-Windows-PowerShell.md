@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
+ms.sourcegitcommit: fa0a541965b4121b8e8ac677b3c38e6f316b4553
+ms.openlocfilehash: 4e6a0e7f8935b905d1cb19576541d1b532fcba21
 
 ---
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 Для запуска 32-разрядной версии Windows PowerShell воспользуйтесь любой из следующих процедур.
 
-#### В Windows Server® 2012 R2
+#### Windows Server® 2012 R2
 
 -   На экране **Пуск** щелкните **Windows PowerShell (x86)**. Щелкните плитку **Windows PowerShell x86**.
 
@@ -31,7 +31,7 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 -   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows Server 2012
+#### Windows Server® 2012
 
 -   На экране **Пуск** введите **PowerShell** и выберите **Windows PowerShell (x86)**.
 
@@ -41,7 +41,7 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 -   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows 8.1
+#### Windows® 8.1
 
 -   На экране **Пуск** щелкните **Windows PowerShell (x86)**. Щелкните плитку **Windows PowerShell x86**.
 
@@ -51,7 +51,7 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
    
 -   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows 8
+#### Windows® 8
 
 -   На экране **Пуск** переместите курсор в правый верхний угол, щелкните **Параметры**, **Плитки**, а затем переместите ползунок **Показать средства администрирования** в значение "Да". Введите **PowerShell** и выберите **Windows PowerShell (x86)**.
 
@@ -63,6 +63,6 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 634eab89-0845-4016-974b-361b09bb8f7b
 translationtype: Human Translation
-ms.sourcegitcommit: 457451343b51891e336b0df6f979c285fb6144eb
-ms.openlocfilehash: 0a8f19693085b9b878fae60953a2cdc358ba8f4c
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: 575ee3b8279ad50920df17ff92d4f65467d83830
 
 ---
 
@@ -24,11 +24,11 @@ ms.openlocfilehash: 0a8f19693085b9b878fae60953a2cdc358ba8f4c
 
  Добавляет новую надстройку в коллекцию. Метод возвращает добавленную надстройку. Перед выполнением этой команды необходимо установить надстройку на локальном компьютере и загрузить сборку.
 
- **Name** — строка. Задает отображаемое имя надстройки, добавляемой в интегрированную среду сценариев Windows PowerShell.
+ **Name** — строка. Задает отображаемое имя надстройки, добавляемой в интегрированную среду скриптов Windows PowerShell.
 
- **ControlType** — тип. Определяет добавляемый элемент управления.
+ **ControlType** — тип. Определяет добавляемый элемент управления.
 
- **\[IsVisible\]** — необязательный логический параметр. Если задано значение **$true**, надстройка сразу же отображается в связанной области инструментов.
+ **\[IsVisible\]** — необязательный логический параметр. Если задано значение **$true**, надстройка сразу же отображается в связанной области инструментов.
 
 ```PowerShell
 # Load a DLL with an add-on and then add it to the ISE
@@ -41,7 +41,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSoluti
 
  Удаляет указанную надстройку из коллекции.
 
- **Item** — Microsoft.PowerShell.Host.ISE.ISEAddOnTool. Указывает объект, удаляемый из интегрированной среды сценариев Windows PowerShell.
+ **Item** — Microsoft.PowerShell.Host.ISE.ISEAddOnTool. Указывает объект, удаляемый из интегрированной среды скриптов Windows PowerShell.
 
 ```PowerShell
 # Load a DLL with an add-on and then add it to the ISE
@@ -54,7 +54,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSoluti
 
  Выбирает вкладку PowerShell, указанную параметром **psTab**.
 
- **psTab** — Microsoft.PowerShell.Host.ISE.PowerShellTab. Выбираемая вкладка PowerShell.
+ **psTab** — Microsoft.PowerShell.Host.ISE.PowerShellTab. Выбираемая вкладка PowerShell.
 
 ```PowerShell
       $newTab = $psISE.PowerShellTabs.Add()
@@ -67,7 +67,7 @@ $newTab.DisplayName="Brand New Tab"
 
  Удаляет вкладку PowerShell, указанную параметром **psTab**.
 
- **psTab** — Microsoft.PowerShell.Host.ISE.PowerShellTab. Удаляемая вкладка PowerShell.
+ **psTab** — Microsoft.PowerShell.Host.ISE.PowerShellTab. Удаляемая вкладка PowerShell.
 
 ```PowerShell
 $newTab = $psISE.PowerShellTabs.Add()
@@ -87,6 +87,6 @@ $psISE.PowerShellTabs.Remove($newTab)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

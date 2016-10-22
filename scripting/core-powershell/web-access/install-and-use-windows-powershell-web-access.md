@@ -8,8 +8,8 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 75e9b6525d74a8bc632b9fe2e64183717f59776f
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: fe79ca70ff1f9a3960b79747221a70adc46b7c67
 
 ---
 
@@ -167,7 +167,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_374a9c21-4f6e-471e-b957-bb190a594533'); "Копировать в буфер обмена".)
 
-        Install-WindowsFeature –Name WindowsPowerShellWebAccess -ComputerName <computer_name> -IncludeManagementTools -Restart
+        Install-WindowsFeature -Name WindowsPowerShellWebAccess -ComputerName <computer_name> -IncludeManagementTools -Restart
 
     <table>
     <colgroup>
@@ -189,7 +189,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_d841d509-347e-49d0-bf54-8d1f306bece6'); "Копировать в буфер обмена".)
 
-        Install-WindowsFeature –Name WindowsPowerShellWebAccess –VHD <path> -ComputerName <computer_name> -IncludeManagementTools -Restart
+        Install-WindowsFeature -Name WindowsPowerShellWebAccess -VHD <path> -ComputerName <computer_name> -IncludeManagementTools -Restart
 
 3.  Когда установка завершена, убедитесь, что Windows PowerShell Web Access установлен на целевых серверах, запустив командлет **Get-WindowsFeature** на целевом сервере в консоли Windows PowerShell, которая была открыта с повышенными правами пользователя. Можно также проверить установку Windows PowerShell Web Access в консоли диспетчера серверов, выбрав целевой сервер на странице **Все серверы**, а затем просмотрев плитку **Роли и компоненты** для выбранного сервера. Можно также просмотреть файл сведений для Windows PowerShell Web Access.
 
@@ -266,7 +266,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
     -   PhysicalPath: %*windir*%/Web/PowerShellWebAccess/wwwroot
 
-    <span class="label">Пример:</span> <span class="code">Install-PswaWebApplication –webApplicationName myWebApp –useTestCertificate</span>
+    <span class="label">Пример:</span> <span class="code">Install-PswaWebApplication -webApplicationName myWebApp -useTestCertificate</span>
 
     В этом примере адрес результирующего сайта для Windows PowerShell Web Access таков: https://&lt;*имя_сервера*&gt;/myWebApp.
 
@@ -367,15 +367,15 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_f9e7959b-75d0-4d63-8f8e-02334a8dd09d'); "Копировать в буфер обмена".)
 
-        Add-PswaAuthorizationRule –UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
+        Add-PswaAuthorizationRule -UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
 
     Это правило авторизации разрешает конкретному пользователю доступ к одному сетевому компьютеру, к которому обычно требуется доступ, с доступом к конкретной конфигурации сеанса, область которого соответствует потребностям пользовательских скриптов и командлетов. В следующем примере пользователю с именем <span class="code">JSmith</span> в домене <span class="code">Contoso</span> предоставляется доступ для управления компьютером <span class="code">Contoso\_214</span> и использования конфигурации сеанса с именем <span class="code">NewAdminsOnly</span>.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_ebd5bc5e-ec5d-4955-a86a-63843e480e37'); "Копировать в буфер обмена".)
 
-        Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
+        Add-PswaAuthorizationRule -UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso_214**.
+4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**.
 
 После настройки правила авторизации авторизованные пользователи могут выполнить вход в веб-консоль и приступить к использованию Windows PowerShell Web Access.
 
@@ -601,15 +601,15 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_4df22c91-f56f-4bb5-91e7-99f9b365ed5d'); "Копировать в буфер обмена".)
 
-        Add-PswaAuthorizationRule –UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
+        Add-PswaAuthorizationRule -UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
 
     Это правило авторизации разрешает конкретному пользователю доступ к одному сетевому компьютеру, к которому обычно требуется доступ, с доступом к конкретной конфигурации сеанса, область которого соответствует потребностям пользовательских скриптов и командлетов. В следующем примере пользователю с именем <span class="code">JSmith</span> в домене <span class="code">Contoso</span> предоставляется доступ для управления компьютером <span class="code">Contoso\_214</span> и использования конфигурации сеанса с именем <span class="code">NewAdminsOnly</span>.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_efc3999a-2905-453f-86cd-014b41658ffc'); "Копировать в буфер обмена".)
 
-        Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
+        Add-PswaAuthorizationRule -UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso_214**.
+4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**.
 
 После настройки правила авторизации авторизованные пользователи могут выполнить вход в веб-консоль и приступить к использованию Windows PowerShell Web Access.
 
@@ -707,12 +707,12 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 © Корпорация Майкрософт (Microsoft Corporation), 2016 г.
 
-Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN http://www.asp.net/ajaxlibrary/CDN.ashx.
+Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN — http://www.asp.net/ajaxlibrary/CDN.ashx.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

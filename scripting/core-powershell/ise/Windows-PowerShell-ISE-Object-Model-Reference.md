@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 9bfb74ba438dd27fc2799263fc12a20edd2bb8cb
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: c60a7adb5cce55392d5dc09c7ca357bfc4c73e15
 
 ---
 
@@ -51,12 +51,12 @@ ms.openlocfilehash: 9bfb74ba438dd27fc2799263fc12a20edd2bb8cb
  Пример: $psISE.PowerShellTabs.
 
 ## См. также
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 6e58c298725254a84819856070b9702340fcf81d
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: c378e9f38c6cc9ea94ce07c320d7a42dd3f102b5
 
 ---
 
@@ -24,7 +24,7 @@ ms.openlocfilehash: 6e58c298725254a84819856070b9702340fcf81d
 -   [Сохранение сценария](#bkmk_3)
 
 ## <a name="bkmk_1"></a>Создание и выполнение сценариев
-В области сценариев можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы сценариев (PS1), файлы данных сценариев (PSD1) и файлы модулей сценариев (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
+В области скриптов можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
 
 > [!NOTE]
 > Политика выполнения Windows PowerShell определяет, можно ли выполнять сценарии, загружать профили Windows PowerShell и файлы конфигурации. Политика выполнения по умолчанию, Restricted, запрещает выполнение сценариев и блокирует загрузку профилей. Чтобы изменить эту политику выполнения и разрешить загрузку и использование профилей, изучите статьи [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) и [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).
@@ -150,11 +150,11 @@ $psise.CurrentFile.encoding
 Интегрированная среда сценариев Windows PowerShell не изменяет кодировку сценариев, созданных в других редакторах, даже при использовании команд "Сохранить" или "Сохранить как" в интегрированной среде сценариев Windows PowerShell.
 
 ## См. также
-[Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
+- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
