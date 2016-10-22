@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
 translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: bfb36e6313379080ee071ec1df41992b945d2d83
+ms.sourcegitcommit: b59186234a513cf34d2615d90643ee749bd60d3f
+ms.openlocfilehash: 20718ebbfb38f847d460a33e3c69b5cb45b754c6
 
 ---
 
@@ -70,6 +70,6 @@ ms.openlocfilehash: bfb36e6313379080ee071ec1df41992b945d2d83
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
