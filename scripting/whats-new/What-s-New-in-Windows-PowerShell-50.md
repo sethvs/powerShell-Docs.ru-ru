@@ -762,6 +762,6 @@ Windows PowerShell 3.0 включает поддержку функций за�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO5-->
 
 
