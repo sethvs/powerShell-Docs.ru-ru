@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: b4d97b1c96a99bcfc43fb20ce9a4ecfa528ea024
+ms.sourcegitcommit: 2aa04e8094fee4b0da3d5e7025cca215d542355e
+ms.openlocfilehash: b81bcbd37cdfebc04fbc7ef92d76f0769c135713
 
 ---
 
@@ -152,11 +152,11 @@ ms.openlocfilehash: b4d97b1c96a99bcfc43fb20ce9a4ecfa528ea024
 |**Запуск PowerShell.exe** (консоль Windows PowerShell)|CTRL+SHIFT+P|
 
 ## См. также
-[Использование интегрированной среды сценариев Windows PowerShell](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+- [Использование интегрированной среды сценариев Windows PowerShell](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
