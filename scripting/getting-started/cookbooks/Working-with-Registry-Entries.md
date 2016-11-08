@@ -14,10 +14,10 @@ ms.openlocfilehash: cdc7f45c9fa8a6bf748a52b460a1ac190d283971
 
 ---
 
-# Работа с записями реестра
+# <a name="working-with-registry-entries"></a>Работа с записями реестра
 Так как записи реестра являются свойствами разделов и их невозможно открыть напрямую, при работе с ними необходимо использовать немного другой подход.
 
-### Создание списков записей реестра
+### <a name="listing-registry-entries"></a>Создание списков записей реестра
 Существует несколько способов просмотра реестра. Самый простой — получить имена свойств, связанные с разделом. Например, чтобы увидеть имена записей в разделе реестра **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion**, используйте **Get-Item**. Разделы реестра содержат свойство с универсальным именем Property, которое является списком записей реестра в разделе. Следующая команда выбирает свойство Property и расширяет элементы так, чтобы они отображались в списке:
 
 ```
@@ -80,7 +80,7 @@ ProgramFilesDir     : C:\Program Files
 
 Расширение пути работает так же, как и в файловой системе, поэтому в этом расположении можно получить перечисление **ItemProperty** для **HKLM:\\SOFTWARE\\Microsoft\\Windows\\Help** с помощью **Get-ItemProperty -Path ..\\Help**.
 
-### Получение одной записи реестра
+### <a name="getting-a-single-registry-entry"></a>Получение одной записи реестра
 Если необходимо получить конкретную запись в разделе реестра, можно использовать один из нескольких возможных подходов. В этом примере выполняется поиск значения **DevicePath** в **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion**.
 
 Используйте вместе с **Get-ItemProperty** параметр **Path**, чтобы указать имя раздела, и параметр **Name**, чтобы указать имя записи **DevicePath**.
@@ -121,7 +121,7 @@ PS> (New-Object -ComObject WScript.Shell).RegRead("HKLM\SOFTWARE\Microsoft\Windo
 %SystemRoot%\inf
 ```
 
-### Создание новых записей реестра
+### <a name="creating-new-registry-entries"></a>Создание новых записей реестра
 Чтобы добавить новую запись реестра с именем PowerShellPath в раздел **CurrentVersion**, используйте **New-ItemProperty** с путем к разделу, именем записи и значением записи. В этом примере использовано значение переменной Windows PowerShell **$PSHome**, в которой хранится путь к каталогу установки для Windows PowerShell.
 
 Вы можете добавить новую запись в раздел с помощью следующей команды, и команда также вернет сведения о новой записи:
@@ -159,7 +159,7 @@ New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion, HKCU:\SO
 
 Кроме того, можно перезаписать имеющееся значение записи реестра, добавив параметр **Force** в любую команду **New-ItemProperty**.
 
-### Переименование записей реестра
+### <a name="renaming-registry-entries"></a>Переименование записей реестра
 Чтобы переименовать запись **PowerShellPath** на PSHome, используйте **Rename-ItemProperty**.
 
 ```
@@ -172,7 +172,7 @@ Rename-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name 
 Rename-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -NewName PSHome -passthru
 ```
 
-### Удаление записей реестра
+### <a name="deleting-registry-entries"></a>Удаление записей реестра
 Чтобы удалить записи реестра PSHome и PowerShellPath, используйте **Remove-ItemProperty**.
 
 ```
@@ -183,6 +183,6 @@ Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
