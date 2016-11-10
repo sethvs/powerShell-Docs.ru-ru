@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: f3f2d27c3c82406f8e8967fd1784a6e07579c1fa
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 7a0ca395008106a6459f992103ecb7e5dc1d12a6
 
 ---
 
@@ -220,15 +220,15 @@ $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
 ```
 
 ## См. также
- [Объект PowerShellTabCollection](The-PowerShellTabCollection-Object.md) 
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](../ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](../ise/Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Иерархия объектной модели интегрированной среды сценариев](../ise/The-ISE-Object-Model-Hierarchy.md)
+- [Объект PowerShellTabCollection](The-PowerShellTabCollection-Object.md) 
+- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](../ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
+- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](../ise/Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Иерархия объектной модели интегрированной среды сценариев](../ise/The-ISE-Object-Model-Hierarchy.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
