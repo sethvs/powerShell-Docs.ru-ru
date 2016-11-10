@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 423be0f76788fa8f45356ca8446bad6754d38e1a
+ms.sourcegitcommit: b59186234a513cf34d2615d90643ee749bd60d3f
+ms.openlocfilehash: c38edc68154ccfa9cd76ebdad5a94ddfb4f902c8
 
 ---
 
@@ -173,14 +173,14 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf), и "How to Write Cmdlet Help" (Как писать справку для командлетов) ([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415)) — в библиотеке MSDN.
 
 ## См. также
-[about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
-[about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
-[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
-[Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
+- [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
+- [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
+- [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
+- [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

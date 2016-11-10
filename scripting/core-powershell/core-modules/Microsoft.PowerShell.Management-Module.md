@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 03d69ab7-89d8-4cff-863e-d5f3864fee5a
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: d62bf183f2b80c8ff7bc279124dc10ef72fdf5ff
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 33a2652eaccf42f130b86a5411930aec6a20e2bf
 
 ---
 
@@ -21,13 +21,13 @@ ms.openlocfilehash: d62bf183f2b80c8ff7bc279124dc10ef72fdf5ff
 [Командлеты модуля Management Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=245862)
 
 ## См. также
-[Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-[Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-[Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
+- [Основные модули Windows PowerShell](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
