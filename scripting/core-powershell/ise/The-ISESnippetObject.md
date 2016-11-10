@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 98bc8113-c3cd-4201-bdb9-9d9bdb7e266c
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 4f244b21454c2db929688d11cdf3f46d474ce0db
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 04d650aca06977883c029684b37838da01b456aa
 
 ---
 
@@ -54,15 +54,15 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus[0].Shortcut
 ```
 
 ## См. также
- [Объект ISESnippetCollection](The-ISESnippetCollection-Object.md) 
- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+- [Объект ISESnippetCollection](The-ISESnippetCollection-Object.md) 
+- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
+- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
