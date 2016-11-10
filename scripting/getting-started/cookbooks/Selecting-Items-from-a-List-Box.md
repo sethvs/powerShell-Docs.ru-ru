@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 327c7cc5-21d0-4ace-b151-aa1491d1d3c2
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 7e8fd05cfedd500c51f2d7e4f6adbb7d1f27cb00
+ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
+ms.openlocfilehash: ce74f3c7cb26632269e42dfddb941fee11dcdc87
 
 ---
 
@@ -180,13 +180,13 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## См. также
-[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры PowerShell GUI не работают?)](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week: Selecting Items from a List Box (Совет недели для Windows PowerShell: выбор элементов из списка)](http://technet.microsoft.com/library/ff730949.aspx)
+- [Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
+- [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+- [Windows PowerShell Tip of the Week: Selecting Items from a List Box (Совет недели для Windows PowerShell: выбор элементов из списка)](http://technet.microsoft.com/library/ff730949.aspx)
 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 5a635485387bb367f4e43982085f9d36765a95e5
+ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
+ms.openlocfilehash: 3812d0492da1879df50538533740ff857af7b15d
 
 ---
 
@@ -172,16 +172,15 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
 Windows PowerShell также имеет командлеты для запуска (или перезапуска), отладки процесса и ожидания завершения процесса перед выполнением команды. Дополнительные сведения об этих командлетах см. в разделах справки по каждому из них.
 
 ## См. также
-[Get-Process [m2]](https://technet.microsoft.com/en-us/library/27a05dbd-4b69-48a3-8d55-b295f6225f15)
-[Stop-Process [m2]](https://technet.microsoft.com/en-us/library/12454238-9881-457a-bde4-fb6cd124deec)
-[Start-Process](https://technet.microsoft.com/en-us/library/41a7e43c-9bb3-4dc2-8b0c-f6c32962e72c)
-[Wait-Process](https://technet.microsoft.com/en-us/library/9222af7a-789d-4a09-aa90-09d7c256c799)
-[Debug-Process](https://technet.microsoft.com/en-us/library/eea1dace-3913-4dbd-b659-5a94a610eee1)
-[Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
+- [Get-Process [m2]](https://technet.microsoft.com/en-us/library/27a05dbd-4b69-48a3-8d55-b295f6225f15)
+- [Stop-Process [m2]](https://technet.microsoft.com/en-us/library/12454238-9881-457a-bde4-fb6cd124deec)
+- [Start-Process](https://technet.microsoft.com/en-us/library/41a7e43c-9bb3-4dc2-8b0c-f6c32962e72c)
+- [Wait-Process](https://technet.microsoft.com/en-us/library/9222af7a-789d-4a09-aa90-09d7c256c799)
+- [Debug-Process](https://technet.microsoft.com/en-us/library/eea1dace-3913-4dbd-b659-5a94a610eee1)
+- [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
 
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
