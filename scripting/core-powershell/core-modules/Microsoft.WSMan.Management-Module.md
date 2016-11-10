@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 687cb04d-541c-44f6-a896-75c9686cb04e
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: de6a4fcc1b07ed1bd41f4b2f6b6cd68e2cd66f84
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 9de8c9ca11f211ff7cff99c7946a2b9e9dcc9bf5
 
 ---
 
@@ -25,13 +25,13 @@ ms.openlocfilehash: de6a4fcc1b07ed1bd41f4b2f6b6cd68e2cd66f84
 [Поставщик WSMan [v3]](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)
 
 ## См. также
-[Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-[Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-[Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
+- [Основные модули Windows PowerShell](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
