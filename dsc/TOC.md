@@ -1,15 +1,17 @@
 # [Обзор](overview.md)
 
 # [Конфигурации](configurations.md)
-## [Применение конфигураций](enactingConfigurations.md)
-## [Использование ресурсов с несколькими версиями](sxsResource.md)
-## [Запуск DSC с учетными данными пользователя](runAsUser.md)
+## [Активированные конфигурации](enactingConfigurations.md)
+## [Использование ресурсов с несколькими версиями](sxsResource.md)
+## [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Указание межузловых зависимостей](crossNodeDependencies.md)
 ## [Данные конфигурации](configData.md)
-### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
+### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
 ## [Защита MOF-файла конфигурации](secureMOF.md)
 ## [Частичные конфигурации](partialConfigs.md)
-## [Запись поддержки конфигураций DSC](configHelp.md)
+## [Создание справки по конфигурациям DSC](configHelp.md)
+## [Настройка виртуальных машин при начальной загрузке с помощью DSC](bootstrapDsc.md)
+### [Раздел реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md)
 
 # [Ресурсы](resources.md)
 ## [Встроенные ресурсы](builtInResource.md)
@@ -22,37 +24,37 @@
 ### [Ресурс Registry](registryResource.md)
 ### [Ресурс Script](scriptResource.md)
 ### [Ресурс Service](serviceResource.md)
-### [Ресурс пользователя](userResource.md)
+### [Ресурс User](userResource.md)
 ### [Ресурс WindowsFeature](windowsfeatureResource.md)
 ### [Ресурс WindowsProcess](windowsProcessResource.md)
-## [Создание пользовательских ресурсов](authoringResource.md) 
+## [Создание настраиваемых ресурсов](authoringResource.md) 
 ### [Настраиваемые ресурсы на основе MOF-файла](authoringResourceMOF.md)
-#### [Ресурс на основе MOF-файла в C#](authoringResourceMofCS.md)
+#### [Ресурс на основе MOF-файла в C#](authoringResourceMofCS.md)
 ### [Настраиваемые ресурсы на основе классов](authoringResourceClass.md)
 ### [Составные ресурсы](authoringResourceComposite.md)
-### [Запись ресурса DSC с одним экземпляром (рекомендуется)](singleInstance.md)
+### [Создание ресурса DSC с одним экземпляром (рекомендуется)](singleInstance.md)
 ### [Контрольный список для создания ресурсов](resourceAuthoringChecklist.md)
 ## [Отладка ресурсов DSC](debugResource.md)
 ## [Прямой вызов методов ресурсов DSC](directCallResource.md)
 
 # [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
-## [Настройка LCM в PowerShell 4.0](metaConfig4.md)
+## [Настройка LCM в PowerShell 4.0](metaConfig4.md)
 
 # Модель опроса DSC
 ## [Настройка опрашивающего веб-сервера](pullServer.md)
 ## [Настройка опрашивающего SMB-сервера DSC](pullServerSMB.md)
 ## [Настройка опрашивающего клиента](pullClient.md)
-### [Настройка опрашивающего клиента с помощью имен конфигураций](pullClientConfigNames.md)
+### [Настройка опрашивающего клиента с помощью имени конфигурации](pullClientConfigNames.md)
 ### [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md)
 ## [Использование сервера отчетов DSC](reportServer.md)
 ## [Рекомендации по опрашивающим серверам](secureServer.md)
 
-# [Устранение неполадок в DSC](troubleshooting.md)
+# [Устранение неполадок в DSC](troubleshooting.md)
 
 # [Использование DSC на сервере Nano Server](nanoDsc.md)
 
 # DSC в Linux
-## [Начало работы с DSC в Linux](lnxGettingStarted.md)
+## [Начало работы с DSC в Linux](lnxGettingStarted.md)
 ## [Встроенные ресурсы для Linux](lnxBuiltInResources.md)
 ### [Ресурс nxArchive](lnxArchiveResource.md)
 ### [Ресурс nxEnvironment](lnxEnvironmentResource.md)
@@ -91,6 +93,6 @@
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 
