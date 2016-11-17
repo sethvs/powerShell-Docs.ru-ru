@@ -8,24 +8,67 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: ebd74549e2671a332ef6abf131ab984a4d0865a6
-ms.openlocfilehash: 8a3ae5fdf5d70de999ca6b992efb14533408c305
+ms.sourcegitcommit: 3038854786edaa9f24b6cf39b7c0c49b3d5206e3
+ms.openlocfilehash: 448cddf17a67ace9d228d1d8a9dc39109d0c91d5
 
 ---
 
-# Разделение данных конфигурации и данных среды
+# <a name="separating-configuration-and-environment-data"></a>Разделение данных конфигурации и данных среды
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Настройка требуемого состояния Windows PowerShell позволяет отделить данные конфигурации от логики конфигурации. Это можно рассматривать как отделение структурной конфигурации (например, конфигурации, которая требует установки IIS) от конфигурации среды (т. е. при существовании тестовой и рабочей среды имена узлов различаются, но к каждому из них применяется одна и та же конфигурация). Подобное разделение обеспечивает следующие преимущества.
+С помощью встроенного параметра DSC **ConfigurationData** можно определить данные, которые будут использоваться в конфигурации. Это позволяет создать единую конфигурацию, которую можно использовать для нескольких узлов или для различных сред. Например, при разработке приложения можно использовать одну и ту же конфигурацию для среды разработки и для рабочей среды и указать данные для каждой среды с помощью данных конфигурации.
 
-* Возможность применения одних и тех же данных конфигурации для различных источников, узлов и конфигураций.
-* Логика настройки без жестко прописанных в коде данных более удобна для повторного использования. В этом случае она работает как рекомендации по составлению сценариев для функций.
-* Если некоторые данные необходимо изменить, изменения достаточно внести только в одном месте, сэкономив тем самым время и уменьшив вероятность ошибок.
+Чтобы увидеть, как это работает, рассмотрим очень простой пример. Мы создадим одну конфигурацию, в соответствии с которой на некоторых узлах будет находиться **IIS**, а на других узлах — **Hyper-V**: 
 
-## Базовые концепции и примеры
+```powershell
+Configuration MyDscConfiguration {
+    
+    Node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
+    {
+        WindowsFeature IISInstall {
+            Ensure = 'Present'
+            Name   = 'Web-Server'
+        }
+        
+    }
+    Node $AllNodes.Where($_.Role -eq "VMHost").NodeName
+    {
+        WindowsFeature HyperVInstall {
+            Ensure = 'Present'
+            Name   = 'Hyper-V'
+        }
+    }
+}
 
-Для указания на среду как часть конфигурации в DSC используется параметр **ConfigurationData**, который представляет собой хэш-таблицу (или принимает PSD1-файл, содержащий хэш-таблицу). Хэш-таблица должна содержать по меньшей мере один ключ **AllNodes** со структурированными значениями. Например:
+$MyData = 
+@{
+    AllNodes =
+    @(
+        @{
+            NodeName    = 'VM-1'
+            Role = 'WebServer'
+        }
+
+        @{
+            NodeName    = 'VM-2'
+            FeatureName = 'VMHost'
+        }
+    )
+}
+
+MyDscConfiguration -ConfigurationData $MyData
+```
+
+В последней строке этого сценария конфигурация компилируется в документы MOF. Для этого в качестве значения параметра **ConfigurationData** передается `$MyData`. `$MyData` указывает два разных узла, каждый из которых имеет свои собственные `NodeName` и `Role`. В конфигурации динамически создаются блоки **Node** с помощью фильтрации коллекции узлов, полученной от `$MyData` (в частности, `$AllNodes`), по свойству `Role`.
+
+Теперь рассмотрим, как это работает, более подробно.
+
+## <a name="the-configurationdata-parameter"></a>Параметр ConfigurationData
+
+Конфигурация DSC принимает параметр **ConfigurationData**. Этот параметр указывается при компиляции конфигурации. Сведения о компиляции конфигураций см. в разделе [Конфигурации DSC](configurations.md).
+
+Параметр **ConfigurationData** представляет собой хэш-таблицу, в которой должен быть по меньшей мере один ключ с именем **AllNodes**. В ней также могут быть другие ключи:
 
 ```powershell
 $MyData = 
@@ -35,7 +78,7 @@ $MyData =
 }
 ```
 
-Обратите внимание на ключ AllNodes, значение которого представляет собой массив. Кроме того, каждый элемент этого массива является хэш-таблицей, для которой ключом служит ключ NodeName:
+Значение ключа **AllNodes** представляет собой массив. Каждый элемент этого массива также является хэш-таблицей, в которой должен быть по меньшей мере один ключ с именем **AllNodes**:
 
 ```powershell
 $MyData = 
@@ -61,7 +104,7 @@ $MyData =
 }
 ```
 
-Каждая запись хэш-таблицы в ключе AllNodes соответствует данным конфигурации для узла в конфигурации. Наряду с обязательным ключом NodeName в хэш-таблицу можно добавлять и другие ключи, например:
+В каждую хэш-таблицу можно добавить и другие ключи:
 
 ```powershell
 $MyData = 
@@ -90,75 +133,7 @@ $MyData =
 }
 ```
 
-В DSC есть три специальные переменные для использования в сценарии настройки:
-
-* **$AllNodes**: ссылается на все узлы. Если применить фильтрацию с параметрами **.Where()** и **.ForEach()**, то для выбора узлов VM-1 и VM-3 в приведенном выше примере можно не прописывать их имена в коде, а написать следующее:
-
-```powershell
-configuration MyConfiguration
-{
-    node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
-    {
-    }
-}
-```
-
-* **$Node**: отфильтровав набор узлов, можно сослаться на определенную запись с помощью переменной $Node. Например:
-
-```powershell
-configuration MyConfiguration
-{
-    Import-DscResource -ModuleName xWebAdministration -Name MSFT_xWebsite
-    node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
-    {
-        xWebsite Site
-        {
-            Name         = $Node.SiteName
-            PhysicalPath = $Node.SiteContents
-            Ensure       = "Present"
-        }
-    }
-}
-```
-
-Чтобы применить свойство ко всем узлам, используйте запись NodeName = “*”. Например, чтобы присвоить свойство LogPath каждому узлу, можно написать следующее:
-
-```
-$MyData = 
-@{
-    AllNodes = 
-    @(
-        @{
-            NodeName           = "*"
-            LogPath            = "C:\Logs"
-        },
-
- 
-        @{
-            NodeName = "VM-1"
-            Role     = "WebServer"
-            SiteContents = "C:\Site1"
-            SiteName = "Website1"
-        },
-
- 
-        @{
-            NodeName = "VM-2"
-            Role     = "SQLServer"
-        },
-
- 
-        @{
-            NodeName = "VM-3"
-            Role     = "WebServer"
-            SiteContents = "C:\Site2"
-            SiteName = "Website3"
-        }
-    );
-}
-```
-
-* **$ConfigurationData**: эта переменная используется в конфигурации для доступа к хэш-таблице данных конфигурации, передаваемой в виде параметра. Например:
+Чтобы применить свойство ко всем узлам, можно создать элемент массива **AllNodes**, значение параметра **NodeName** для которого будет равно `*`. Например, чтобы присвоить каждому узлу свойство `LogPath`, можно написать следующее:
 
 ```powershell
 $MyData = 
@@ -166,66 +141,223 @@ $MyData =
     AllNodes = 
     @(
         @{
-            NodeName           = "*"
-            LogPath            = "C:\Logs"
+            NodeName     = "*"
+            LogPath      = "C:\Logs"
         },
 
  
         @{
-            NodeName = "VM-1"
-            Role     = "WebServer"
+            NodeName     = "VM-1"
+            Role         = "WebServer"
             SiteContents = "C:\Site1"
-            SiteName = "Website1"
+            SiteName     = "Website1"
         },
 
  
         @{
-            NodeName = "VM-2"
-            Role     = "SQLServer"
+            NodeName     = "VM-2"
+            Role         = "SQLServer"
         },
- 
 
+ 
         @{
-            NodeName = "VM-3"
-            Role     = "WebServer"
+            NodeName     = "VM-3"
+            Role         = "WebServer"
             SiteContents = "C:\Site2"
-            SiteName = "Website3"
+            SiteName     = "Website3"
         }
     );
-
-    NonNodeData = 
-    @{
-        ConfigFileContents = (Get-Content C:\Template\Config.xml)
-     }   
-} 
-
-configuration MyConfiguration
-{
-    Import-DscResource -ModuleName xWebAdministration -Name MSFT_xWebsite
-
-    node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
-    {
-        xWebsite Site
-        {
-            Name         = $Node.SiteName
-            PhysicalPath = $Node.SiteContents
-            Ensure       = "Present"
-        }
-
-        File ConfigFile
-        {
-            DestinationPath = $Node.SiteContents + "\\config.xml"
-            Contents = $ConfigurationData.NonNodeData.ConfigFileContents
-        }
-    }
 }
 ```
 
-Полный пример входит в [модуль xWebAdministration](https://powershellgallery.com/packages/xWebAdministration).
+Это аналогично добавлению свойства с именем `LogPath` и значением `"C:\Logs"` в каждый из других блоков (`VM-1`, `VM-2` и `VM-3`).
+
+## <a name="defining-the-configurationdata-hashtable"></a>Определение хэш-таблицы ConfigurationData
+
+Хэш-таблицу **ConfigurationData** можно определить в виде переменной в файле сценария конфигурации (как в наших предыдущих примерах) или в отдельном PSD1-файле. Чтобы определить хэш-таблицу **ConfigurationData** в PSD1-файле, создайте файл, который будет содержать только хэш-таблицу, представляющую данные конфигурации.
+
+Например, можно создать файл с именем `MyData.psd1` и со следующим содержимым:
+
+```powershell
+@{
+    AllNodes =
+    @(
+        @{
+            NodeName    = 'VM-1'
+            FeatureName = 'Web-Server'
+        }
+
+        @{
+            NodeName    = 'VM-2'
+            FeatureName = 'Hyper-V'
+        }
+    )
+}
+```
+
+Чтобы использовать данные конфигурации, которая определена в PSD1-файле, передайте путь и имя этого файла в качестве значения параметра **ConfigurationData** при компиляции конфигурации:
+
+```powershell
+MyDscConfiguration -ConfigurationData .\MyData.psd1
+```
+
+## <a name="using-configurationdata-variables-in-a-configuration"></a>Использование переменных ConfigurationData в конфигурации
+
+DSC предоставляет три специальные переменные, которые могут использоваться в сценарии конфигурации: **$AllNodes**, **$Node** и **$ConfigurationData**.
+
+- **$AllNodes** относится ко всей коллекции узлов, определенных в **ConfigurationData**. Коллекцию **AllNodes** можно отфильтровать с помощью **.Where()** и **.ForEach()**.
+- После фильтрации коллекции с помощью **.Where()** или **.ForEach()** элемент **Node** будет указывать на конкретную запись в **AllNodes**.
+- **ConfigurationData** ссылается на всю хэш-таблицу, которая передается в качестве параметра при компиляции конфигурации.
+
+## <a name="devops-example"></a>Пример DevOps
+
+Рассмотрим полный пример использования одной и той же конфигурации для настройки среды разработки и рабочей среды веб-сайта. В среде разработки службы IIS и SQL Server устанавливаются на одних и тех же узлах. В рабочей среде службы IIS и SQL Server устанавливаются на отдельных узлах. Для указания данных конфигурации для двух различных сред мы будем использовать PSD1-файл данных конфигурации.
+
+### <a name="configuration-data-file"></a>Файл данных конфигурации
+
+Данные среды разработки и рабочей среды определяются в файле `DevProdEnvData.psd1` следующим образом:
+
+```powershell
+@{
+
+    AllNodes = @(
+
+        @{
+            NodeName        = "*"
+            SQLServerName   = "MySQLServer"
+            SqlSource       = "C:\Software\Sql"
+            DotNetSrc       = "C:\Software\sxs"
+        },
+
+        @{
+            NodeName        = "Prod-SQL"
+            Role            = "MSSQL"
+        },
+
+        @{
+            NodeName        = "Prod-IIS"
+            Role            = "Web"
+            SiteContents    = "C:\Website\Prod\SiteContents\"
+            SitePath        = "\\Prod-IIS\Website\"
+        }
+
+        @{
+            NodeName         = "Dev"
+            Role             = "MSSQL", "Web"
+            SiteContents     = "C:\Website\Dev\SiteContents\"
+            SitePath         = "\\Dev\Website\"
+
+        }
+
+    )
+
+}
+
+    )
+
+}
+```
+
+### <a name="configuration-file"></a>Файл конфигурации
+
+Теперь отфильтруем узлы, определенные в `DevProdEnvData.psd1`, по их роли (`MSSQL`, `Dev` или и то и другое) и настроим их соответствующим образом. В среде разработки службы IIS и SQL Server установлены на одном узле, а в рабочей среде на двух различных узлах. Содержимое сайта также различно, как указано в свойствах `SiteContents`.
+
+В конце сценария конфигурации мы вызываем конфигурацию (компилируем ее в документ MOF), передав `DevProdEnvData.psd1` в качестве параметра `$ConfigurationData`.
+
+```powershell
+Configuration MyWebApp
+{
+    Import-DscResource -Module PSDesiredStateConfiguration
+    Import-DscResource -Module xSqlPs
+
+    Node $AllNodes.Where{$_.Role -contains "MSSQL"}.Nodename
+   {
+        # Install prerequisites
+        WindowsFeature installdotNet35
+        {            
+            Ensure      = "Present"
+            Name        = "Net-Framework-Core"
+            Source      = "c:\software\sxs"
+        }
+
+        # Install SQL Server
+        xSqlServerInstall InstallSqlServer
+        {
+            InstanceName = $Node.SQLServerName
+            SourcePath   = $Node.SqlSource
+            Features     = "SQLEngine,SSMS"
+            DependsOn    = "[WindowsFeature]installdotNet35"
+
+        }
+   }
+
+   Node $AllNodes.Where($_.Role -contains "Web")
+   {
+        # Install the IIS role
+        WindowsFeature IIS
+        {
+            Ensure       = 'Present'
+            Name         = 'Web-Server'
+        }
+
+        # Install the ASP .NET 4.5 role
+        WindowsFeature AspNet45
+        {
+            Ensure       = 'Present'
+            Name         = 'Web-Asp-Net45'
+
+        }
+
+        # Stop the default website
+        xWebsite DefaultSite 
+        {
+            Ensure       = 'Present'
+            Name         = 'Default Web Site'
+            State        = 'Stopped'
+            PhysicalPath = 'C:\inetpub\wwwroot'
+            DependsOn    = '[WindowsFeature]IIS'
+
+        }
+
+        # Copy the website content
+        File WebContent
+
+        {
+            Ensure          = 'Present'
+            SourcePath      = $Node.SiteContents
+            DestinationPath = $Node.SitePath
+            Recurse         = $true
+            Type            = 'Directory'
+            DependsOn       = '[WindowsFeature]AspNet45'
+
+        }       
 
 
+        # Create the new Website
+
+        xWebsite NewWebsite
+
+        {
+
+            Ensure          = 'Present'
+            Name            = $WebSiteName
+            State           = 'Started'
+            PhysicalPath    = $Node.SitePath
+            DependsOn       = '[File]WebContent'
+        }
+
+    }
+
+MyWebApp -ConfigurationData DevProdEnvData.psd1
+
+}
+```
+
+## <a name="see-also"></a>См. также
+- [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
+- [Конфигурации DSC](configurations.md)
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
