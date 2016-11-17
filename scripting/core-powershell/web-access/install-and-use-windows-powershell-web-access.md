@@ -13,7 +13,7 @@ ms.openlocfilehash: fe79ca70ff1f9a3960b79747221a70adc46b7c67
 
 ---
 
-#  Установка и использование Windows PowerShell Web Access
+#  <a name="install-and-use-windows-powershell-web-access"></a>Установка и использование Windows PowerShell Web Access
 
 Обновлено: 5 ноября 2013 г.
 
@@ -43,11 +43,11 @@ ms.openlocfilehash: fe79ca70ff1f9a3960b79747221a70adc46b7c67
 
 Содержание раздела:
 
--   [Требования для запуска веб-доступа Windows PowerShell](#BKMK_reqs)
+-   [Требования для запуска Windows PowerShell Web Access](#BKMK_reqs)
 
 -   [Поддержка браузеров и клиентских устройств](#BKMK_browser)
 
--   [Рекомендованная схема (быстрого) развертывания](#BKMK_recm)
+-   [Рекомендуемая схема (быстрого) развертывания](#BKMK_recm)
 
 -   [Пользовательское развертывание](#BKMK_custom)
 
@@ -55,7 +55,7 @@ ms.openlocfilehash: fe79ca70ff1f9a3960b79747221a70adc46b7c67
 
 <a href="" id="BKMK_reqs"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования для запуска веб-доступа Windows PowerShell</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования для запуска Windows PowerShell Web Access</span></a>
 <a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
 
 ------------------------------------------------------------------------
@@ -119,27 +119,27 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_recm"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Рекомендованная схема (быстрого) развертывания</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Рекомендуемая схема (быстрого) развертывания</span></a>
 <a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
 
 ------------------------------------------------------------------------
 
 Шлюз Windows PowerShell Web Access можно установить на сервер под управлением Windows Server 2012 R2 или Windows Server 2012 с помощью командлетов развертывания Windows PowerShell или мастера добавления ролей и компонентов в диспетчере серверов. Для быстрой установки и настройки воспользуйтесь командлетами Windows PowerShell, как описано в этом разделе.
 
--   [Шаг 1. Установка Windows PowerShell Web Access](#BKMK_step1)
+-   [Шаг 1. Установка Windows PowerShell Web Access](#BKMK_step1)
 
--   [Шаг 2. Настройка шлюза](#BKMK_step2)
+-   [Шаг 2. Настройка шлюза](#BKMK_step2)
 
--   [Шаг 3. Настройка ограничивающего правила авторизации](#BKMK_step3)
+-   [Шаг 3. Настройка ограничивающего правила авторизации](#BKMK_step3)
 
 <a href="" id="BKMK_step1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-#### Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
+#### <a name="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -198,7 +198,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_step2"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
 
 ------------------------------------------------------------------------
 
@@ -222,11 +222,11 @@ Windows PowerShell Web Access поддерживает перечисленны�
 </tbody>
 </table>
 
--   [Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication](#BKMK_testcert)
+-   [Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью командлета Install-PswaWebApplication](#BKMK_testcert)
 
 -   [Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS](#BKMK_gencert)
 
-#### Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-installpswawebapplication"></a>Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -286,7 +286,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
     </tbody>
     </table>
 
-#### Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-installpswawebapplication-and-iis-manager"></a>Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -345,7 +345,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_step3"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -353,7 +353,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -391,11 +391,11 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_custom1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-#### Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
+#### <a name="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard"></a>Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
 
 1.  Если диспетчер серверов уже открыт, переходите к следующему шагу. Если диспетчер серверов еще не открыт, откройте его одним из следующих способов.
 
@@ -435,19 +435,19 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
 
 ------------------------------------------------------------------------
 
 Этот раздел содержит инструкции по установке веб-приложения Windows PowerShell Web Access в подкаталог, а не в корневой каталог веб-сайта. Данная процедура, выполняемая через пользовательский интерфейс, эквивалентна действиям, выполняемым с помощью командлета <span class="code">Install-PswaWebApplication</span>. В раздел также включены инструкции по использованию диспетчера служб IIS для настройки шлюза Windows PowerShell Web Access в качестве корневого веб-сайта.
 
--   [Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте](#BKMK_configman)
+-   [Использование диспетчера IIS для настройки шлюза на существующем веб-сайте](#BKMK_configman)
 
--   [Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом](#BKMK_configroot)
+-   [Использование диспетчера IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом](#BKMK_configroot)
 
 -   
 
-#### Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
+#### <a name="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website"></a>Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -469,9 +469,9 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 8.  В поле **Физический путь** найдите расположение приложения. Можно использовать расположение по умолчанию %windir%/Web/PowerShellWebAccess/wwwroot. Нажмите кнопку **ОК**.
 
-9.  Выполните шаги, описанные в процедуре [Настройка SSL-сертификата в диспетчере служб IIS](#BKMK_cert) в данной статье.
+9.  Следуйте инструкциями в процедуре [Настройка SSL-сертификата в диспетчере служб IIS](#BKMK_cert) этого раздела.
 
-10. <span class="label">Дополнительный шаг по обеспечению безопасности.</span> Когда веб-сайт выбран в области дерева, дважды щелкните **Параметры SSL** на панели содержимого. Выберите **Требовать SSL**, а затем в области **Действия** щелкните **Применить**. Дополнительно в области **Параметры SSL** можно потребовать, чтобы пользователи, подключающиеся к веб-сайту Windows PowerShell Web Access, имели клиентские сертификаты. Клиентские сертификаты помогают проверить идентификацию пользователя клиентского устройства. Дополнительные сведения о том, как требование клиентских сертификатов может повысить безопасность Windows PowerShell Web Access, см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx) в этом руководстве.
+10. <span class="label">Дополнительный шаг по обеспечению безопасности.</span> Когда веб-сайт выбран в области дерева, дважды щелкните **Параметры SSL** в области содержимого. Выберите **Требовать SSL**, а затем в области **Действия** щелкните **Применить**. Дополнительно в области **Параметры SSL** можно потребовать, чтобы пользователи, подключающиеся к веб-сайту Windows PowerShell Web Access, имели клиентские сертификаты. Клиентские сертификаты помогают проверить идентификацию пользователя клиентского устройства. Дополнительные сведения о том, как требование клиентских сертификатов может повысить безопасность Windows PowerShell Web Access, см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx) в этом руководстве.
 
 11. Откройте сеанс браузера на клиентском устройстве. Дополнительные сведения о поддерживаемых браузерах и устройствах см. в разделе [Поддержка браузеров и клиентских устройств](#BKMK_browser) в этой статье.
 
@@ -509,7 +509,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
         c:\windows\system32\icacls.exe $authorizationFile
 
-#### Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
+#### <a name="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate"></a>Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -579,7 +579,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -587,7 +587,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -622,7 +622,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Для безопасной производственной среды следует всегда использовать действительный сертификат SSL, подписанный центром сертификации (ЦС). В этом разделе описано, как получить и установить действительный SSL-сертификат от центра сертификации.
 
-### Настройка SSL-сертификата в диспетчере служб IIS
+### <a name="to-configure-an-ssl-certificate-in-iis-manager"></a>Настройка SSL-сертификата в диспетчере служб IIS
 
 1.  В области дерева диспетчера служб IIS выберите сервер, на котором установлен компонент Windows PowerShell Web Access.
 
@@ -661,14 +661,14 @@ Windows PowerShell Web Access поддерживает перечисленны�
 [Настройка безопасности веб-сервера (IIS 7)](https://technet.microsoft.com/library/cc731278.aspx)
 [Ресурсы развертывания IPsec](https://technet.microsoft.com/network/bb531150)
 
-<span>Демонстрация: </span> унаследованная защита
+<span>Демонстрация:</span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
 Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
+<span class="stdr-count">Осталось символов: <span class="stdr-charcnt">1500</span> </span> Отправить Пропустить
 
 <span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
@@ -694,7 +694,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 -   [Информационный бюллетень Flash](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Свяжитесь с нами](https://technet.microsoft.com/cc512759.aspx)
+-   [Контакты](https://technet.microsoft.com/cc512759.aspx)
 -   |
 -   [Заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement)
 -   |

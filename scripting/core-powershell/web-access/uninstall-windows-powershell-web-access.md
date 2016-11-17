@@ -13,7 +13,7 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ---
 
-#  Удаление Windows PowerShell Web Access
+#  <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -38,13 +38,13 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
 
 ------------------------------------------------------------------------
 
 Если вы задали настраиваемое имя веб-сайта, добавьте параметр <span class="code">WebsiteName</span> в команду и укажите имя веб-сайта. Если использовалось настраиваемое веб-приложение (не приложение **pswa** по умолчанию), добавьте параметр <span class="code">WebApplicationName</span> в команду и укажите имя веб-приложения.
 
-#### Удаление веб-сайта и веб-приложений с помощью командлета Uninstall-PswaWebApplication
+#### <a name="to-delete-the-website-and-web-applications-by-using-the-uninstallpswawebapplication-cmdlet"></a>Удаление веб-сайта и веб-приложений с помощью командлета Uninstall-PswaWebApplication
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -62,11 +62,11 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-#### Удаление Windows PowerShell Web Access с помощью командлетов Windows PowerShell
+#### <a name="to-uninstall-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Удаление Windows PowerShell Web Access с помощью командлетов Windows PowerShell
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами. Если сеанс уже открыт, переходите к следующему шагу.
 
@@ -97,11 +97,11 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
 
 ------------------------------------------------------------------------
 
-#### Удаление веб-сайта Windows PowerShell Web Access и веб-приложений с помощью диспетчера служб IIS
+#### <a name="to-delete-the-windows-powershell-web-access-website-and-web-applications-by-using-iis-manager"></a>Удаление веб-сайта Windows PowerShell Web Access и веб-приложений с помощью диспетчера служб IIS
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий. Если консоль уже открыта, переходите к следующему шагу.
 
@@ -125,7 +125,7 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
     </colgroup>
     <thead>
     <tr class="header">
-    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC101471.jpeg" title="System_CAPS_note" alt="System_CAPS_note" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-note" /></span><span class="alertTitle">Примечание </span></th>
+    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC101471.jpeg" title="System_CAPS_note" alt="System_CAPS_note" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-note" /></span><span class="alertTitle">Примечание.</span></th>
     </tr>
     </thead>
     <tbody>
@@ -137,11 +137,11 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-#### Удаление Windows PowerShell Web Access с помощью мастера удаления ролей и компонентов
+#### <a name="to-uninstall-windows-powershell-web-access-by-using-the-remove-roles-and-features-wizard"></a>Удаление Windows PowerShell Web Access с помощью мастера удаления ролей и компонентов
 
 1.  Если диспетчер серверов уже открыт, переходите к следующему шагу. Если диспетчер серверов еще не открыт, откройте его одним из следующих способов.
 
@@ -167,14 +167,14 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 [Установка и использование Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx)
 [Справка IIS Manager 7.0](https://technet.microsoft.com/library/cc732664.aspx)
 
-<span>Демонстрация: </span> унаследованная защита
+<span>Демонстрация:</span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
 Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
+Осталось <span class="stdr-count"><span class="stdr-charcnt">1500</span> символов</span> Отправить Пропустить
 
 <span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
@@ -200,7 +200,7 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 -   [Информационный бюллетень Flash](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Свяжитесь с нами](https://technet.microsoft.com/cc512759.aspx)
+-   [Контакты](https://technet.microsoft.com/cc512759.aspx)
 -   |
 -   [Заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement)
 -   |

@@ -13,7 +13,7 @@ ms.openlocfilehash: f62b1e0ec9f26e1b2bcb364c78a2ce39467655a5
 
 ---
 
-# Правила авторизации и средства безопасности Windows PowerShell Web Access
+# <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Правила авторизации и средства безопасности Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -198,7 +198,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 </tbody>
 </table>
 
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -222,7 +222,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**.
 
-#### Удаление правила авторизации
+#### <a name="to-remove-an-authorization-rule"></a>Удаление правила авторизации
 
 1.  Если сеанс Windows PowerShell еще не открыт, см. шаг 1 процедуры [Добавление неограничивающего правила авторизации](#BKMK_arar) в этом разделе.
 
@@ -376,14 +376,14 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 [about_Session_Configurations](https://technet.microsoft.com/library/dd819508.aspx)
 [Командлеты Windows PowerShell Web Access](https://technet.microsoft.com/library/hh918342.aspx)
 
-<span>Демонстрация: </span> унаследованная защита
+<span>Демонстрация:</span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
 Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
+<span class="stdr-count">Осталось символов: <span class="stdr-charcnt">1500</span> </span> Отправить Пропустить
 
 <span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
@@ -409,7 +409,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 -   [Информационный бюллетень Flash](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Свяжитесь с нами](https://technet.microsoft.com/cc512759.aspx)
+-   [Контакты](https://technet.microsoft.com/cc512759.aspx)
 -   |
 -   [Заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement)
 -   |

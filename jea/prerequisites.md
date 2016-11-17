@@ -14,9 +14,9 @@ ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
 
 ---
 
-# Необходимые компоненты
+# <a name="prerequisites"></a>Необходимые компоненты
 
-## Начальное состояние
+## <a name="initial-state"></a>Начальное состояние
 Прежде чем приступать к этому разделу, убедитесь в следующем.
 
 1. В вашей системе доступна функция JEA. Проверьте список поддерживаемых операционных систем и необходимые скачиваемые компоненты в файле [README](./README.md).
@@ -24,7 +24,7 @@ ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
 3. Компьютер присоединен к домену.
 Инструкции по быстрой настройке нового домена на сервере см. в статье [Создание контроллера домена](#creating-a-domain-controller).
 
-## Включение удаленного взаимодействия PowerShell
+## <a name="enable-powershell-remoting"></a>Включение удаленного взаимодействия PowerShell
 Управление с помощью функции JEA осуществляется через удаленное взаимодействие PowerShell.
 Чтобы убедиться, что оно включено и правильно настроено, выполните в окне администратора PowerShell следующую команду:
 
@@ -34,7 +34,7 @@ Enable-PSRemoting
 
 Если вы не знакомы с работой удаленного взаимодействия PowerShell, запустите `Get-Help about_Remote` и ознакомьтесь с этой важной фундаментальной концепцией.
 
-## Идентификация пользователей или групп
+## <a name="identify-your-users-or-groups"></a>Идентификация пользователей или групп
 Чтобы показать JEA в действии, необходимо определить пользователей и группы без прав администратора, которые будут использоваться в этом руководстве.
 
 Если используется существующий домен, определите или создайте учетные записи непривилегированных пользователей и группы.
@@ -45,7 +45,7 @@ Enable-PSRemoting
 Для создания учетных записей пользователей и групп без прав администратора воспользуйтесь сведениями в разделе [Настройка пользователей и групп](creating-a-domain-controller.md#set-up-users-and-groups) в приложении.
 Значениями переменной `$NonAdministrator` по умолчанию будут группы, созданные в указанном разделе.
 
-## Настройка файла возможности для роли обслуживания
+## <a name="set-up-maintenance-role-capability-file"></a>Настройка файла возможности для роли обслуживания
 Чтобы создать демонстрационный файл возможностей роли, который понадобится нам в следующем разделе, выполните в PowerShell следующие команды:
 Для чего нужен этот файл, вы узнаете далее в этом разделе.
 
@@ -68,7 +68,7 @@ New-Item -Path "$env:ProgramFiles\WindowsPowerShell\Modules\Demo_Module\RoleCapa
 New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\Demo_Module\RoleCapabilities\Maintenance.psrc" @MaintenanceRoleCapabilityCreationParams
 ```
 
-## Создание и регистрация демонстрационного файла конфигурации сеанса
+## <a name="create-and-register-demo-session-configuration-file"></a>Создание и регистрация демонстрационного файла конфигурации сеанса
 Чтобы создать и зарегистрировать демонстрационный файл конфигурации сеанса, который понадобится нам в следующем разделе, выполните следующие команды:
 Для чего нужен этот файл, вы узнаете далее в этом разделе.
 
@@ -110,7 +110,7 @@ New-PSSessionConfigurationFile -Path "$env:ProgramData\JEAConfiguration\JEADemo.
 Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEAConfiguration\JEADemo.pssc"
 ```
 
-## Включение ведения журнала модуля PowerShell (необязательно)
+## <a name="enable-powershell-module-logging-optional"></a>Включение ведения журнала модуля PowerShell (необязательно)
 Указанные ниже действия позволят включить ведение журнала действий PowerShell в вашей системе.
 Это не обязательно для работы с JEA, но пригодится при работе с разделом [Отчеты о JEA](reporting-on-jea.md).
 
@@ -129,6 +129,6 @@ Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEACo
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
