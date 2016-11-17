@@ -45,7 +45,7 @@ Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 ------------------------------------------------------------------------------------------------------------------------
 Когда LCM находится в DebugMode, может зависнуть Stop-DscConfiguration при попытке остановить операцию, запущенную Get-DscConfiguration.
 
-**Решение.** Завершите отладку операции, запущенной Get-DscConfiguration, как описано в разделе [Отладка ресурсов DSC](../../dsc/debugResource.md).
+**Решение.** Завершите отладку операции, запущенной Get-DscConfiguration, как описано в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource).
 
 
 <a name="no-verbose-error-messages-are-shown-in-debugmode"></a>В DebugMode не отображаются подробные сообщения об ошибках
@@ -77,7 +77,7 @@ Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 
 <a name="dsc-resources-cannot-be-debugged-easily-when-used-with-invokedscresource"></a>Невозможна простая отладка ресурсов DSC при использовании Invoke-DscResource
 -----------------------------------------------------------------------
-Когда LCM работает в режиме отладки (дополнительные сведения см. в разделе [Отладка ресурсов DSC](../../dsc/debugResource.md)), командлет Invoke-DscResource не предоставляет сведения о пространстве выполнения, к которому требуется подключиться для отладки.
+Когда LCM работает в режиме отладки (дополнительные сведения см. в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource)), командлет Invoke-DscResource не предоставляет сведения о пространстве выполнения, к которому требуется подключиться для отладки.
 **Решение.** Найдите пространство выполнения и подключитесь к нему с помощью командлетов **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** и **Debug-Runspace** для отладки ресурса DSC.
 
 ```powershell
@@ -228,6 +228,6 @@ Configuration $configName
 ```
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
