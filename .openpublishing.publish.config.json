@@ -68,5 +68,12 @@
     "live-oldev"
   ],
   "skip_source_output_uploading": false,
-  "dependent_repositories": []
+  "dependent_repositories": [
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/PowerShell/powerShell-Docs",
+      "branch": "live"
+    }
+  ],
+  "need_generate_pdf_url_template": false
 }
