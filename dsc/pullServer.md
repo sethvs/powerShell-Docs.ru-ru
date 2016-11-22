@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 08f91852d698954d6c3211bf8a429fe3b4143084
-ms.openlocfilehash: 1c9a3ca18995621332cbd05a2147c7b0f71e619e
+ms.sourcegitcommit: 4bc84787847c55658077ba0bb21784d59ca5bed7
+ms.openlocfilehash: 2d2573612da7388f01467ed2113cfc233e6f4dd6
 
 ---
 
@@ -75,7 +75,7 @@ configuration Sample_xDscPullServer
              ConfigurationPath        = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration" 
              State                    = 'Started'
              DependsOn                = '[WindowsFeature]DSCServiceFeature'     
-             UseSecurityBestPractices = $true
+             UseSecurityBestPractices = $false
          } 
 
         File RegistrationKeyFile
@@ -191,6 +191,6 @@ MOF-файл конфигурации необходимо сопоставит�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 3038854786edaa9f24b6cf39b7c0c49b3d5206e3
-ms.openlocfilehash: 448cddf17a67ace9d228d1d8a9dc39109d0c91d5
+ms.sourcegitcommit: 787ac3c3d6ffaf7b1009fe3cfd64a0aefadc32d1
+ms.openlocfilehash: 8d305c67fb22e0d27dc1a36ba93369e9633680d3
 
 ---
 
@@ -348,9 +348,9 @@ Configuration MyWebApp
 
     }
 
-MyWebApp -ConfigurationData DevProdEnvData.psd1
-
 }
+
+MyWebApp -ConfigurationData DevProdEnvData.psd1
 ```
 
 ## <a name="see-also"></a>См. также
@@ -358,6 +358,6 @@ MyWebApp -ConfigurationData DevProdEnvData.psd1
 - [Конфигурации DSC](configurations.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

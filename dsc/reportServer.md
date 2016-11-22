@@ -8,12 +8,12 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 59793e1701740dc783439cf1408c6efabd53cbcf
-ms.openlocfilehash: d541f37723d77cf0b52012bae143dc7d64efd65d
+ms.sourcegitcommit: 1e7bc38f03dd72fc29d004eb92bf130c416e490a
+ms.openlocfilehash: f7f2699287e76970d0b2565f7bbd45a5d75ac93a
 
 ---
 
-# Использование сервера отчетов DSC
+# <a name="using-a-dsc-report-server"></a>Использование сервера отчетов DSC
 
 > Область применения: Windows PowerShell 5.0
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: d541f37723d77cf0b52012bae143dc7d64efd65d
 
 В локальном диспетчере конфигураций (LCM) узла можно настроить отправку отчетов о состоянии конфигурации на опрашивающий сервер, которые затем можно запросить для извлечения содержащихся в них данных. Каждый раз при проверке и применении конфигурации узел отправляет отчет на сервер отчетов. Эти отчеты хранятся в базе данных на сервере, и их можно извлечь, вызвав веб-службу отчетов. Каждый отчет содержит сведения, например перечень примененных конфигураций и данные о том, успешно ли они были выполнены, использованные ресурсы, любые произошедшие ошибки, а также время начала и окончания.
 
-## Настройка узла для отправки отчетов
+## <a name="configuring-a-node-to-send-reports"></a>Настройка узла для отправки отчетов
 
 Запросить на узле отправку отчетов на сервер можно с помощью блока **ReportServerWeb** в конфигурации LCM узла (сведения о настройке LCM см. в разделе [Настройка локального диспетчера конфигураций](metaConfig.md)). Сервер, на который узел отправляет отчеты, необходимо настроить как опрашивающий веб-сервер (отправлять отчеты в общий ресурс SMB невозможно). Сведения о настройке опрашивающего сервера см. в разделе [Настройка опрашивающего веб-сервера DSC](pullServer.md). Сервер отчетов может быть той же службой, в которой узел извлекает конфигурации и получает ресурсы, или другой службой.
  
@@ -94,7 +94,7 @@ PullClientConfig
 
 >**Примечание**. При настройке опрашивающего сервера можно указать любое имя веб-службы, но свойство **ServerURL** должно соответствовать имени службы.
 
-## Получение данных из отчетов
+## <a name="getting-report-data"></a>Получение данных из отчетов
 
 Отчеты, отправляемые на опрашивающий сервер, добавляются в базу данных на сервере. Отчеты доступны путем вызовов веб-службы. Чтобы извлечь отчеты с указанного узла, отправьте HTTP-запрос в веб-службу отчетов в следующем формате: `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID = MyNodeAgentId)/Reports` где `MyNodeAgentId` — это AgentId узла, с которого вы хотите получать отчеты. Вы можете получить AgentID узла, вызвав [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) на этом узле.
 
@@ -105,8 +105,8 @@ PullClientConfig
 ```powershell
 function GetReport
 {
-    param($AgentId = "$((glcm).AgentId)", $serviceURL = "http://CONTOSO-REPORT:8080/PSDSCReportServer.svc")
-    $requestUri = "$serviceURL/Nodes(AgentId= '$AgentId')/Reports"
+    param($AgentId = "$((glcm).AgentId)", $serviceURL = "http://CONTOSO-REPORT:8080/PSDSCPullServer.svc")
+    $requestUri = "$serviceURL/Node(ConfigurationId= '$AgentId')/StatusReports"
     $request = Invoke-WebRequest -Uri $requestUri  -ContentType "application/json;odata=minimalmetadata;streaming=true;charset=utf-8" `
                -UseBasicParsing -Headers @{Accept = "application/json";ProtocolVersion = "2.0"} `
                -ErrorAction SilentlyContinue -ErrorVariable ev
@@ -115,7 +115,7 @@ function GetReport
 }
 ```
     
-## Просмотр данных из отчетов
+## <a name="viewing-report-data"></a>Просмотр данных из отчетов
 
 Если задать для переменной результат функции **GetReport**, можно просмотреть отдельные поля в элементе возвращаемого массива:
 
@@ -222,14 +222,14 @@ InDesiredState    : True
 
 Обратите внимание, что эти примеры призваны дать представление о том, что вы можете сделать с данными из отчетов. Общие сведения о работе с JSON в PowerShell см. в разделе [Работа с JSON и PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/).
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Настройка локального диспетчера конфигураций](metaConfig.md)
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
-- [Настройка опрашивающего клиента с помощью имен конфигураций](pullClientConfigNames.md)
+- [Настройка опрашивающего клиента с помощью имени конфигурации](pullClientConfigNames.md)
 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 
