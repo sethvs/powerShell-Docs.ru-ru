@@ -14,12 +14,12 @@ ms.openlocfilehash: 86cb3485445fdb00c9b99a20694b9bf12a6e8f2c
 
 ---
 
-# Объект ISEFileCollection
+# <a name="the-isefilecollection-object"></a>Объект ISEFileCollection
   Объект **ISEFileCollection**  — это коллекция объектов **ISEFile**. Примером является коллекция $psISE.CurrentPowerShellTab.Files.
 
-## Методы
+## <a name="methods"></a>Методы
 
-### Add\( \[fullPath\] \)
+### <a name="add-fullpath-"></a>Add\( \[fullPath\] \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Создает и возвращает новый файл без имени и добавляет его в коллекцию. Свойство **IsUntitled** созданного файла имеет значение **$true**.
@@ -35,7 +35,7 @@ $psISE.CurrentPowerShellTab.Files.Add("$pshome\Examples\profile.ps1")
 
 ```
 
-### Remove\( File, \[Force\] \)
+### <a name="remove-file-force-"></a>Remove\( File, \[Force\] \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Удаляет указанный файл из текущей вкладки PowerShell.
@@ -55,7 +55,7 @@ $firstfile = $psISE.CurrentPowerShellTab.Files[0]
 $psISE.CurrentPowerShellTab.Files.Remove($firstfile, $true)
 ```
 
-### SetSelectedFile\( selectedFile \)
+### <a name="setselectedfile-selectedfile-"></a>SetSelectedFile\( selectedFile \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Выбирает файл, который задается параметром **selectedFile**.
@@ -70,16 +70,16 @@ $psISE.CurrentPowerShellTab.Files.SetSelectedFile($firstfile)
 
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Объект ISEFile](The-ISEFile-Object.md) 
-- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
-- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
-- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
+- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 
   
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

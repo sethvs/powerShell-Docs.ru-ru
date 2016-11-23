@@ -14,20 +14,20 @@ ms.openlocfilehash: 6a4b65525125e088a58a66719b4b21816814f012
 
 ---
 
-# Модуль PackageManagement
+# <a name="packagemanagement-module"></a>Модуль PackageManagement
 В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.PackageManagement**. Модуль **Microsoft.PowerShell. Модуль PackageManagement** устанавливается вместе с Windows PowerShell® 5.0.
 
-## Разделы справки
-[Командлеты модуля PackageManagement Windows PowerShell](http://technet.microsoft.com/library/dn890706(v=wps.640).aspx)
+## <a name="help-topics"></a>Разделы справки
+[Командлеты модуля PackageManagement среды Windows PowerShell](http://technet.microsoft.com/library/dn890706(v=wps.640).aspx)
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-- [Основные модули Windows PowerShell](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-- [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+- [Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [Работа со скриптами в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

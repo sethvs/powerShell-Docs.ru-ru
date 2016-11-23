@@ -14,7 +14,7 @@ ms.openlocfilehash: 260805af4b64646922477f874c6679f58af8aea9
 
 ---
 
-# Запуск Windows PowerShell
+# <a name="starting-windows-powershell"></a>Запуск Windows PowerShell
 PowerShell — это библиотека DLL обработчика скриптов, которая внедрена в несколько узлов.  Самый распространенный запускаемый узел — интерактивная командная строка (PowerShell.exe) и интерактивная среда скриптов (PowerShell_ISE.exe).  
 
 Информацию о запуске Windows PowerShell® в Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 и Windows 8 см. в статье [Общие задачи управления и навигации](http://technet.microsoft.com/library/hh831491.aspx).
@@ -29,13 +29,13 @@ PowerShell — это библиотека DLL обработчика скри�
 
 -   [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
-## См. также
-- [Требования к системе для Windows PowerShell](Windows-PowerShell-System-Requirements.md)
+## <a name="see-also"></a>См. также
+- [Требования Windows PowerShell к системе](Windows-PowerShell-System-Requirements.md)
 - [Установка Windows PowerShell](Installing-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

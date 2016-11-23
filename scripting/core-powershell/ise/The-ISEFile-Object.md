@@ -14,12 +14,12 @@ ms.openlocfilehash: e4d830fa49157366fb20851f01b34d433b296534
 
 ---
 
-# Объект ISEFile
+# <a name="the-isefile-object"></a>Объект ISEFile
   Объект **ISEFile** представляет файл в интегрированной среде скриптов (ISE) Windows PowerShell®. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEFile. В этом разделе перечислены его члены (методы и свойства). Объект **$PsISE.CurrentFile** и все файлы в коллекции "Файлы" на вкладке PowerShell являются экземплярами класса Microsoft.PowerShell.Host.ISE.ISEFile.
 
-## Методы
+## <a name="methods"></a>Методы
 
-###  <a name="save-override"></a> Save\( \[saveEncoding\] \)
+###  <a name="a-namesave-overridea-save-saveencoding-"></a><a name="save-override"></a> Save\( \]saveEncoding\[ \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Сохраняет файл на диске.
@@ -43,7 +43,7 @@ $myfile.Encoding
 
 ```
 
-###  <a name="saveas"></a> SaveAs\(filename, \[saveEncoding\]\)
+###  <a name="a-namesaveasa-saveasfilename-saveencoding"></a><a name="saveas"></a>SaveAs\(filename, \[saveEncoding\]\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Сохраняет файл с указанным именем файла и кодировкой.
@@ -69,12 +69,12 @@ $psIse.CurrentFile.SaveAs( $fullPath, [System.Text.Encoding]::UTF8 )
 
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
-###  <a name="Displayname"></a> DisplayName
+###  <a name="a-namedisplaynamea-displayname"></a><a name="Displayname"></a> DisplayName
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Свойство только для чтения, которое получает строку, содержащую отображаемое имя этого файла. Имя отображается на вкладке **Файл** в верхней части окна редактора. Наличие звездочки (\(\*\)) в конце имени указывает, что файл содержит изменения, которые не были сохранены.
+ Свойство только для чтения, которое получает строку, содержащую отображаемое имя этого файла. Имя отображается на вкладке **Файл** в верхней части окна редактора. Наличие звездочки \(\*\) в конце имени указывает, что в файле есть изменения, которые не были сохранены.
 
 ```
 # Shows the display name of the file.
@@ -82,7 +82,7 @@ $psIse.CurrentFile.DisplayName
 
 ```
 
-###  <a name="Editor"></a> Editor
+###  <a name="a-nameeditora-editor"></a><a name="Editor"></a> Editor
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает [объект редактора](The-ISEEditor-Object.md), используемый для указанного файла.
@@ -93,7 +93,7 @@ $psIse.CurrentFile.Editor.Text
 
 ```
 
-###  <a name="Encoding"></a> Encoding
+###  <a name="a-nameencodinga-encoding"></a><a name="Encoding"></a> Encoding
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает исходную кодировку файла. Это объект **System.Text.Encoding**.
@@ -104,7 +104,7 @@ $psIse.CurrentFile.Encoding
 
 ```
 
-###  <a name="FullPath"></a> FullPath
+###  <a name="a-namefullpatha-fullpath"></a><a name="FullPath"></a> FullPath
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает строку, указывающую полный путь к открытому файлу.
@@ -115,7 +115,7 @@ $psIse.CurrentFile.FullPath
 
 ```
 
-###  <a name="IsSaved"></a> IsSaved
+###  <a name="a-nameissaveda-issaved"></a><a name="IsSaved"></a> IsSaved
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Логическое свойство только для чтения, которое возвращает значение **$true**, если файл был сохранен после последнего изменения.
@@ -127,7 +127,7 @@ $myfile.IsSaved
 
 ```
 
-###  <a name="IsUntitled"></a> IsUntitled
+###  <a name="a-nameisuntitleda-isuntitled"></a><a name="IsUntitled"></a> IsUntitled
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое возвращает значение **$true**, если для файла не задано имя.
@@ -140,16 +140,16 @@ $psISE.CurrentFile.IsUntitled
 
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Объект ISEFileCollection](The-ISEFileCollection-Object.md) 
-- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
-- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
-- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
+- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 
   
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

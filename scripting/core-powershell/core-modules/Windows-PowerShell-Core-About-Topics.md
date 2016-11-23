@@ -14,7 +14,7 @@ ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 
 ---
 
-# Разделы справки по модулю Windows PowerShell Core
+# <a name="windows-powershell-core-about-topics"></a>Разделы справки по модулю Windows PowerShell Core
 Этот раздел содержит список справочных разделов, которые применяются ко всем модулям Windows PowerShell. Разделы по основным понятиям для других модулей см. в справке по конкретному модулю.
 
 |Раздел|Описание|
@@ -133,18 +133,18 @@ ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 |[about_WQL](https://technet.microsoft.com/en-us/library/820b2d23-3473-46f5-a188-5910704c7905)|Содержит описание языка WQL, используемого для получения объектов WMI в Windows PowerShell.|
 |[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Содержит описание командлетов в модуле Microsoft.WsMan.Management. Объясняет их использование для управления возможностями WS-Management, в том числе диском поставщика WSMan.|
 
-## См. также
-- [Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
-- [Основные модули Windows PowerShell](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+## <a name="see-also"></a>См. также
+- [Работа со скриптами в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+- [Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
 - [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
 - [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)
 - [about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)
 - [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
-- [Пакет SDK Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107032)
+- [Пакет SDK для Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107032)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

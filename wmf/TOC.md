@@ -7,6 +7,7 @@
 ### [Усовершенствования подсистемы PowerShell](5.1/engine-improvements.md)
 ### [Улучшения в управлении пакетами](5.1/package-management-improvements.md)
 ### [Улучшения в JEA](5.1/jea-improvements.md)
+### [Командлеты для работы с каталогами](5.1/catalog-cmdlets.md)
 ### [Ошибки, исправленные в WMF 5.1](5.1/bugfixes.md)
 ## [Установка и настройка](5.1/install-configure.md)
 ## [Известные проблемы](5.1/known-issues.md)
@@ -95,6 +96,6 @@
 ### [Инвентаризация программного обеспечения (SIL)](5.0/sil_overview.md)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

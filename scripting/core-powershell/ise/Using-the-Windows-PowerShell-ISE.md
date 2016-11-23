@@ -14,7 +14,7 @@ ms.openlocfilehash: 6363aff01a6018f1fc3a850c6e40ad96e485f554
 
 ---
 
-# Использование интегрированной среды сценариев Windows PowerShell
+# <a name="using-the-windows-powershell-ise"></a>Использование интегрированной среды сценариев Windows PowerShell
 В этом разделе содержатся сведения о компонентах интегрированной среды скриптов Windows PowerShell® (ISE), которые делают вашу работу более продуктивной.
 
 [Использование заполнения нажатием клавиши TAB в областях сценариев и консоли](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md). Пошаговые инструкции по использованию заполнения нажатием клавиши TAB в областях скриптов и консоли.
@@ -29,14 +29,14 @@ ms.openlocfilehash: 6363aff01a6018f1fc3a850c6e40ad96e485f554
 
 [Использование профилей в интегрированной среде сценариев Windows PowerShell](How-to-Use-Profiles-in-Windows-PowerShell-ISE.md). Информация и пошаговые инструкции, связанные с созданием и использованием профилей в интегрированной среде скриптов Windows PowerShell.
 
-## См. также
-- [Обзор интегрированной среды сценариев Windows PowerShell](../../getting-started/fundamental/Exploring-the-Windows-PowerShell-ISE.md)
-- [Специальные возможности в интегрированной среде сценариев Windows PowerShell](../../setup/Accessibility-in-Windows-PowerShell-ISE.md)
-- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/69b047d0-da79-413e-b948-8e45d05d1f85)
+## <a name="see-also"></a>См. также
+- [Обзор интегрированной среды скриптов Windows PowerShell](../../getting-started/fundamental/Exploring-the-Windows-PowerShell-ISE.md)
+- [Специальные возможности в интегрированной среде скриптов Windows PowerShell](../../setup/Accessibility-in-Windows-PowerShell-ISE.md)
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](https://technet.microsoft.com/en-us/library/69b047d0-da79-413e-b948-8e45d05d1f85)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 
