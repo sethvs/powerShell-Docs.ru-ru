@@ -7,7 +7,7 @@
       "docset_name": "PowerShell_PowerShell-docs_dsc",
       "build_source_folder": "dsc",
       "build_output_subfolder": "dsc",
-      "locale": "ru-ru",
+      "locale": "ru-RU",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -18,7 +18,7 @@
       "docset_name": "PowerShell_PowerShell-docs_gallery",
       "build_source_folder": "gallery",
       "build_output_subfolder": "gallery",
-      "locale": "ru-ru",
+      "locale": "ru-RU",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -30,7 +30,7 @@
       "docset_name": "PowerShell_PowerShell-docs_jea",
       "build_source_folder": "jea",
       "build_output_subfolder": "jea",
-      "locale": "ru-ru",
+      "locale": "ru-RU",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -38,10 +38,24 @@
       }
     },
     {
+      "docset_name": "PowerShell_PowerShell-docs_reference",
+      "build_source_folder": "reference",
+      "build_output_subfolder": "reference",
+      "locale": "ru-RU",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
+    },
+    {
       "docset_name": "PowerShell_PowerShell-docs_scripting",
       "build_source_folder": "scripting",
       "build_output_subfolder": "scripting",
-      "locale": "ru-ru",
+      "locale": "ru-RU",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -52,7 +66,7 @@
       "docset_name": "PowerShell_PowerShell-docs_wmf",
       "build_source_folder": "wmf",
       "build_output_subfolder": "wmf",
-      "locale": "ru-ru",
+      "locale": "ru-RU",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -68,12 +82,6 @@
     "live-oldev"
   ],
   "skip_source_output_uploading": false,
-  "dependent_repositories": [
-    {
-      "path_to_root": "_repo.en-us",
-      "url": "https://github.com/PowerShell/powerShell-Docs",
-      "branch": "live"
-    }
-  ],
+  "dependent_repositories": [],
   "need_generate_pdf_url_template": false
 }
