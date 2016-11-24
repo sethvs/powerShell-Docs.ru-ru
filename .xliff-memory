@@ -10347,8 +10347,8 @@
       "IsArchived": false,
       "ArchivedDateTime": "0001-01-01T00:00:00",
       "SkeletonFile": "ol-xliffcache\\PowerShell\\powerShell-Docs.ru-ru\\live\\edafde9188cad3b21d0cd2b30cfaaf1bede9b195.bfa18cfa80e341f8d224403b521c83fe6b6f3e44.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\README.cf2da502d5141d3c542b8221274cee500c801dc1.ru-ru.xlf",
+      "LocXliffCommit": "8888ba917557493c2bd83ab7bfdf9467d9530dae"
     },
     "reference\\3.0\\Microsoft.PowerShell.Management\\Copy-ItemProperty.md.1b18186247edb8041fbaeddc71b9abad7f7c6a60.HT": {
       "SourceFilename": "reference\\3.0\\Microsoft.PowerShell.Management\\Copy-ItemProperty.md",
