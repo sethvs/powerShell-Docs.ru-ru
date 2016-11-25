@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 4456b1e165130fd52249ffdbd7c22ff591061a8e
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 948c7347a4794a1d0cb8369a34e2d5c21ad78241
 
 ---
 
@@ -66,15 +66,15 @@ $psISE.PowerShellTabs.SelectedPowerShellTab=$oldtab
 ```
 
 ## См. также
- [Объект PowerShellTab](The-PowerShellTab-Object.md) 
- [Объектная модель интегрированной среды сценариев Windows PowerShell](../ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](../ise/Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Иерархия объектной модели интегрированной среды сценариев](../ise/The-ISE-Object-Model-Hierarchy.md)
+- [Объект PowerShellTab](The-PowerShellTab-Object.md) 
+- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](../ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
+- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](../ise/Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Иерархия объектной модели интегрированной среды сценариев](../ise/The-ISE-Object-Model-Hierarchy.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
