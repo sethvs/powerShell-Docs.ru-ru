@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 2424
 [ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 2196
+[ Handoff Success Files ](#handoff-success-list)| 2194
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 17
-[ Handback Failed Files ](#handback-failed-list)| 2
+[ Handback Failed Files ](#handback-failed-list)| 3
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 172
+[ In Sync Handback Files ](#insync-handback-success-list)| 173
 [ Ignored Files ](#ignored-list)| 36
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -27,7 +27,6 @@
  [dsc\bootstrapDsc.md](https://github.com/PowerShell/powerShell-Docs/blob/7d7e4f9784456c897c4779e2bc275d8dc195a29e/dsc/bootstrapDsc.md) | HandedOffSuccess | [Details](#c8920239a3492421b1a5dc39d0ad599083bc466b15)
  [dsc\configData.md](https://github.com/PowerShell/powerShell-Docs/blob/787ac3c3d6ffaf7b1009fe3cfd64a0aefadc32d1/dsc/configData.md) | HandedOffSuccess | [Details](#8d305c67fb22e0d27dc1a36ba93369e9633680d317)
  [dsc\configurations.md](https://github.com/PowerShell/powerShell-Docs/blob/49ddf6faf98a51f7ad5252e9563b1543478ed113/dsc/configurations.md) | HandedOffSuccess | [Details](#567ab9528402c7d39d80a997bc14b6c6992cf77220)
- [dsc\DSCAutomationHostEnabled.md](https://github.com/PowerShell/powerShell-Docs/blob/260490003335923d4e1c6b6873b11ee71ba780c0/dsc/DSCAutomationHostEnabled.md) | HandedOffSuccess | [Details](#24842d755aa34ab29c6a5b4f973052476bc907e526)
  [dsc\enactingConfigurations.md](https://github.com/PowerShell/powerShell-Docs/blob/49ddf6faf98a51f7ad5252e9563b1543478ed113/dsc/enactingConfigurations.md) | HandedOffSuccess | [Details](#9090f4be2987b8a56ba4d839f54e05082a8bcfa027)
  [dsc\lnxGettingStarted.md](https://github.com/PowerShell/powerShell-Docs/blob/e4385f0ed482b97e8794cde968de549902cc358e/dsc/lnxGettingStarted.md) | HandedOffSuccess | [Details](#2283e797275f426b624119bd1191e58080780c0944)
  [dsc\logResource.md](https://github.com/PowerShell/powerShell-Docs/blob/62f993e3d3e6ef744fb07920d332d476dfd24fc6/dsc/logResource.md) | HandedOffSuccess | [Details](#60085295fa7df6179a81cd98859cd33e6923150f51)
@@ -2124,7 +2123,6 @@
  [scripting\core-powershell\ise\The-ISESnippetCollection-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-ISESnippetCollection-Object.md) | HandedOffSuccess | [Details](#410cd4503883ea2cc02936044d7357b9cb0292742217)
  [scripting\core-powershell\ise\The-ISESnippetObject.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-ISESnippetObject.md) | HandedOffSuccess | [Details](#04d650aca06977883c029684b37838da01b456aa2218)
  [scripting\core-powershell\ise\The-ObjectModelRoot-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-ObjectModelRoot-Object.md) | HandedOffSuccess | [Details](#d51f5ab8b80bdf5e12a5b0f505f91eeeb4f3d48a2219)
- [scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-PowerShellTabCollection-Object.md) | HandedOffSuccess | [Details](#948c7347a4794a1d0cb8369a34e2d5c21ad782412221)
  [scripting\core-powershell\ise\The-PowerShellTab-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-PowerShellTab-Object.md) | HandedOffSuccess | [Details](#7a0ca395008106a6459f992103ecb7e5dc1d12a62220)
  [scripting\core-powershell\ise\The-Windows-PowerShell-ISE-Scripting-Object-Model.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) | HandedOffSuccess | [Details](#64f68d93821eff391189b02ef4a6bb78e90872892222)
  [scripting\core-powershell\ise\Using-the-Windows-PowerShell-ISE.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/Using-the-Windows-PowerShell-ISE.md) | HandedOffSuccess | [Details](#6363aff01a6018f1fc3a850c6e40ad96e485f5542223)
@@ -2245,6 +2243,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [dsc\authoringResourceComposite.md](https://github.com/PowerShell/powerShell-Docs/blob/48cfed9e0c31e24c441eafb388a799bd7fc7415f/dsc/authoringResourceComposite.md) | HandedBackFailed | [Details](#6631d60d7d82e71c315c26a0196aa3e4c1b60b1510)
+ [dsc\DSCAutomationHostEnabled.md](https://github.com/PowerShell/powerShell-Docs/blob/260490003335923d4e1c6b6873b11ee71ba780c0/dsc/DSCAutomationHostEnabled.md) | HandedBackFailed | [Details](#24842d755aa34ab29c6a5b4f973052476bc907e526)
  [gallery\psgallery\PackageManagement_Architecture .md](https://github.com/PowerShell/powerShell-Docs/blob/e6c526d1074f61154d03b92b6bf6f599976f5936/gallery/psgallery/PackageManagement_Architecture%20.md) | HandedBackFailed | [Details](#c84ff58e4378feffa15c91485826b74f421c737e120)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
@@ -2339,6 +2338,7 @@
  [jea\role-capabilities.md](https://github.com/PowerShell/powerShell-Docs/blob/81fd386d58576a8930093b4f18ce36a4ff6cecd0/jea/role-capabilities.md) | InSyncHandedBackSuccess | [Details](#a3dd4a217f5b1fd80e97adf802c65073ca015bbc192)
  [jea\using-jea.md](https://github.com/PowerShell/powerShell-Docs/blob/88ce340c09efdbb3d81a72fe6113c1187a9152f2/jea/using-jea.md) | InSyncHandedBackSuccess | [Details](#9db7a5a91d25d459313117da34af63016f03c241194)
  [reference\README.md](https://github.com/PowerShell/powerShell-Docs/blob/6f2cc23f6fce9c267e793fa8653f292e6a6b98ec/reference/README.md) | InSyncHandedBackSuccess | [Details](#edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174)
+ [scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-PowerShellTabCollection-Object.md) | InSyncHandedBackSuccess | [Details](#948c7347a4794a1d0cb8369a34e2d5c21ad782412221)
  [scripting\core-powershell\workflows-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/4f760ef9a62d16ec709f8d25e62c2a03b8d841a5/scripting/core-powershell/workflows-guide.md) | InSyncHandedBackSuccess | [Details](#4cdd2c913eb33d29e9734c3845994d7e776db2b12232)
  [scripting\getting-started\cookbooks\Collecting-Information-About-Computers.md](https://github.com/PowerShell/powerShell-Docs/blob/d698cdd29bfe165b87494696ca2dc3486be4ab0e/scripting/getting-started/cookbooks/Collecting-Information-About-Computers.md) | InSyncHandedBackSuccess | [Details](#96204a0ce674cacd5b830f9f8b820ce3e1cbbc202241)
  [scripting\getting-started\fundamental\Scripting-with-Windows-PowerShell.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Scripting-with-Windows-PowerShell.md) | InSyncHandedBackSuccess | [Details](#0148f4631e34e65a4336c5d1d50e313fb66397482278)
@@ -2824,7 +2824,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='24842d755aa34ab29c6a5b4f973052476bc907e526'></a> Source: [dsc\DSCAutomationHostEnabled.md](https://github.com/PowerShell/powerShell-Docs/blob/260490003335923d4e1c6b6873b11ee71ba780c0/dsc/DSCAutomationHostEnabled.md)
-* Status: HandedOffSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [DSCAutomationHostEnabled.fba7c9b1470882c6192cbd39804769a5471d975c.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/2d59aa3466a2f02723bcf977a58923449f349018/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/DSCAutomationHostEnabled.fba7c9b1470882c6192cbd39804769a5471d975c.ru-ru.xlf)
 * Handoff Datetime: 2016-11-23 22:41:45
@@ -2832,7 +2832,8 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-25 15:42:51
+* Handback Error: [handback_transform_failed](#24842d755aa34ab29c6a5b4f973052476bc907e526handback_transform_failed)
 * [Back to Top](#report-top)
 
 ##### <a name='9090f4be2987b8a56ba4d839f54e05082a8bcfa027'></a> Source: [dsc\enactingConfigurations.md](https://github.com/PowerShell/powerShell-Docs/blob/49ddf6faf98a51f7ad5252e9563b1543478ed113/dsc/enactingConfigurations.md)
@@ -29598,18 +29599,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='948c7347a4794a1d0cb8369a34e2d5c21ad782412221'></a> Source: [scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-PowerShellTabCollection-Object.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/83ef95d2a171732b74e0a2d8d419c0073ead31db/scripting/core-powershell/ise/The-PowerShellTabCollection-Object.md)
 * Handoff File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/2d59aa3466a2f02723bcf977a58923449f349018/ol-handoff/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
 * Handoff Datetime: 2016-11-23 22:41:45
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md](https://github.com/PowerShell/powerShell-Docs.ru-ru/blob/9c9d0dc9940f31f250d336c4f5d09d49b246737a/scripting/core-powershell/ise/The-PowerShellTabCollection-Object.md)
-* Current Handback File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/16b5eaa5964340fd160551d5c1bb8bc56753f346/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
-* Current Handback Datetime: 2016-05-25 00:06:23
+* Handback File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/719c996e148374468f9082f18a41250a26f35e39/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
+* Handback Datetime: 2016-11-25 15:42:51
 * Bilingual File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/16b5eaa5964340fd160551d5c1bb8bc56753f346/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
 * Bilingual Datetime: 2016-06-16 14:33:12
 * [Back to Top](#report-top)
@@ -32736,6 +32734,12 @@
 * Error Message: Handback file: C:\ol\master\PSD.handback\7f42c4\ol-handback\PowerShell\powerShell-Docs.ru-ru\live\poison\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf failed.
 * Retriable: False
 * Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\PSD.handback\\7f42c4\\ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\poison\\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ru-ru.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\ntitle: Составные ресурсы: использование DSC как ресурса ms.date:  2016-05-16 keywords:  powershell,DSC description:  \nms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell\nError message: (Line: 1, Col: 25, Idx: 24) - (Line: 1, Col: 25, Idx: 24): Mapping values are not allowed in this context.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass7_0.<GetHandbackFiles>b__1(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 418","extended_information":null}
+
+##### <a name='24842d755aa34ab29c6a5b4f973052476bc907e526handback_transform_failed'></a> Source: [dsc\DSCAutomationHostEnabled.md](#24842d755aa34ab29c6a5b4f973052476bc907e526)
+* Error Code: handback_transform_failed
+* Error Message: Handback file: C:\ol\master\PSD.handback\7f42c4\ol-handback\PowerShell\powerShell-Docs.ru-ru\live\DSCAutomationHostEnabled.fba7c9b1470882c6192cbd39804769a5471d975c.ru-ru.xlf failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\PSD.handback\\7f42c4\\ol-handback\\PowerShell\\powerShell-Docs.ru-ru\\live\\DSCAutomationHostEnabled.fba7c9b1470882c6192cbd39804769a5471d975c.ru-ru.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\ntitle: раздел реестра DSCAutomationHostEnabled ms.date: 2016-05-16 keywords: powershell,DSC description:  \nms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell\nError message: (Line: 1, Col: 55, Idx: 54) - (Line: 1, Col: 55, Idx: 54): Mapping values are not allowed in this context.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 127\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 114\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass7_0.<GetHandbackFiles>b__1(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 519","extended_information":null}
 
 ##### <a name='c84ff58e4378feffa15c91485826b74f421c737e120handback_validate_file_name_invalide'></a> Source: [gallery\psgallery\PackageManagement_Architecture .md](#c84ff58e4378feffa15c91485826b74f421c737e120)
 * Error Code: handback_validate_file_name_invalide
