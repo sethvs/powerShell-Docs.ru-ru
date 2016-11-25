@@ -29608,8 +29608,8 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/719c996e148374468f9082f18a41250a26f35e39/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
 * Handback Datetime: 2016-11-25 15:42:51
-* Bilingual File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/16b5eaa5964340fd160551d5c1bb8bc56753f346/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
-* Bilingual Datetime: 2016-06-16 14:33:12
+* Bilingual File: [The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/719c996e148374468f9082f18a41250a26f35e39/ol-handback/PowerShell/powerShell-Docs.ru-ru/live/The-PowerShellTabCollection-Object.a2b2b49a9b0542cb693b54f1dc6b5f4602d24cbc.ru-ru.xlf)
+* Bilingual Datetime: 2016-11-25 15:44:11
 * [Back to Top](#report-top)
 
 ##### <a name='7a0ca395008106a6459f992103ecb7e5dc1d12a62220'></a> Source: [scripting\core-powershell\ise\The-PowerShellTab-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-PowerShellTab-Object.md)
