@@ -1,13 +1,6 @@
 ---
 redirect_url: /powershell/gallery/readme
-translationtype: Human Translation
-ms.sourcegitcommit: 8c31a7878b8c16469fd709d76af8bb9f1b39af1e
-ms.openlocfilehash: 97403b5ae385aa568d0eba44eabac2e10b130a76
-
+ms.openlocfilehash: b25fea5072e7b78143f8221f7e12e6371f252ff2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-
