@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 6b001c12885022006003ef3ffe91b7aede07bd17
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Встроенные ресурсы настройки требуемого состояния для Linux
+# <a name="built-in-desired-state-configuration-resources-for-linux"></a>Встроенные ресурсы настройки требуемого состояния для Linux
 
 Ресурсы — это строительные блоки, которые можно использовать для написания сценария настройки требуемого состояния (DSC) PowerShell. DSC для Linux поставляется с набором встроенных возможностей для настройки ресурсов, таких как файлы и папки, пакеты, переменные среды, службы и процессы.
 
-## Встроенные ресурсы 
+## <a name="built-in-resources"></a>Встроенные ресурсы 
 
 Список ресурсов и ссылки на статьи, в которых они рассматриваются подробно.
 
@@ -32,9 +30,3 @@ ms.openlocfilehash: 6b001c12885022006003ef3ffe91b7aede07bd17
 * Ресурс [nxSshAuthorizedKeys](lnxSshAuthorizedKeysResource.md) — управляет открытыми SSH-ключами для пользователей Linux. 
 * Ресурс [nxUser](lnxUserResource.md) — управляет локальными пользователями Linux. 
   
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

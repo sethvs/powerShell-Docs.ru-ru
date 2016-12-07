@@ -11,9 +11,9 @@
 После выполнения любого из указанных действий ярлыки PowerShell будут работать. Эти действия требуется выполнить всего один раз.
 
 
-<a name="powershell-modules-and-dsc-resources-report-errors-about-executionpolicy-on-windows-7"></a>Модули PowerShell и ресурсы DSC выдает ошибки для ExecutionPolicy в Windows 7
+<a name="powershell-modules-and-dsc-resources-report-errors-about-executionpolicy-on-windows-7"></a>Модули PowerShell и ресурсы DSC выдает ошибки для ExecutionPolicy в Windows 7
 -------------------------------------------------------------------------------------
-В Windows 7 использование модулей PowerShell и ресурсов DSC может привести к возникновению ошибок, связанных с ExecutionPolicy.
+В Windows 7 использование модулей PowerShell и ресурсов DSC может привести к возникновению ошибок, связанных с ExecutionPolicy.
 
 **Решение.** Задайте для ExecutionPolicy значение RemoteSigned, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
 
@@ -36,7 +36,7 @@ Set-ExecutionPolicy RemoteSigned
 
 **Решение.** Запустите командлет Start-SilLogging один раз после установки WMF, так как процесс его установки ошибочно останавливает функцию инвентаризации программного обеспечения.
 
-<a name="getchilditem-does-not-work-if-literalpath-and-recurse-are-used-together"></a>Get-ChildItem не работает, если -LiteralPath и -Recurse используются совместно
+<a name="get-childitem-does-not-work-if--literalpath-and--recurse-are-used-together"></a>Get-ChildItem не работает, если -LiteralPath и -Recurse используются совместно
 --------------------------------------------------------------------------
 
 Если имя каталога содержит недопустимый подстановочный знак, то Get-ChildItem не дает ожидаемые результаты при совместном использовании -LiteralPath и -Recurse.
@@ -44,13 +44,13 @@ Set-ExecutionPolicy RemoteSigned
 **Решение.** В настоящее время обходной путь, хотя он и не является оптимальным, заключается в реализации рекурсии в скрипте вместо использования командлета.
 
 
-<a name="sysprep-fails-after-wmf-50-installation"></a>Sysprep не работает после установки WMF 5.0
+<a name="sysprep-fails-after-wmf-50-installation"></a>Sysprep не работает после установки WMF 5.0
 ----------------------------------------
 
 Существует два способа решения этой проблемы в зависимости от используемой версии Windows Server.
 
 **Решение**
-- Для систем под управлением **Windows Server 2008 R2**
+- Для систем под управлением **Windows Server 2008 R2**
   1. Откройте PowerShell от имени администратора.
   2. Выполните следующую команду. 
   
@@ -69,8 +69,8 @@ Set-ExecutionPolicy RemoteSigned
   ```
   5. Установите все доступные важные обновления Windows и запустите Sysyprep в обычном режиме.
   
-- Для систем под управлением **Windows Server 2012**
-  1.    После установки WMF 5.0 на сервере, где предполагается выполнить Sysprep, войдите в систему как администратор.
+- Для систем под управлением **Windows Server 2012**
+  1.    После установки WMF 5.0 на сервере, где предполагается выполнить Sysprep, войдите в систему как администратор.
   2.    Скопируйте файл Generize.xml из папки \Windows\System32\Sysprep\ActionFiles\ в расположение за пределами каталога Windows, например C:\.
   3.    Откройте копию Generalize.xml в блокноте.
   4.    Найдите и удалите следующий текст: нужно удалить по одному экземпляру каждой строки (они находятся ближе к концу документа).
@@ -105,8 +105,3 @@ Set-ExecutionPolicy RemoteSigned
       * Предполагается, что измененная копия Generalize.xml скопирована в каталог C:\.
 
   10.   Теперь файл Generalize.xml изменен. Запустите программу Sysprep с включенным параметром generalize.
-
-
-<!--HONumber=Oct16_HO5-->
-
-

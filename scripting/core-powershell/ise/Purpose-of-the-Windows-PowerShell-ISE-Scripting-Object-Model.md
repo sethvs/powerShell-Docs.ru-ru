@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
-translationtype: Human Translation
-ms.sourcegitcommit: 641b6b2169824296b459691e67cdb771f3a07294
-ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
-
+ms.openlocfilehash: 3213279588df19a677940b67fa1752a29a678e36
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
+# <a name="purpose-of-the-windows-powershell-ise-scripting-object-model"></a>Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
   Объекты определяют внешний вид и функции интегрированной среды сценариев Windows PowerShell (ISE). В справочнике по объектной модели содержатся сведения о свойствах- и методах-членах, предоставляемых этими объектами. Примеры показывают, как использовать сценарии для прямого доступа к этим методам и свойствам. Объектная модель сценариев упрощает выполнение следующих задач.
 
-## Настройка внешнего вида интегрированной среды сценариев Windows PowerShell
+## <a name="customizing-the-appearance-of-windows-powershell-ise"></a>Настройка внешнего вида интегрированной среды сценариев Windows PowerShell
  Объектную модель можно использовать для изменения параметров приложения. Например, их можно изменить следующим образом:
 
 -   можно изменить цвет текста и фона в сообщениях об ошибках, предупреждениях, подробных сообщениях и выходных данных отладки;
@@ -32,7 +30,7 @@ ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
 -   можно переключиться в представление, где область сценариев и область вывода отображаются рядом или область сценариев отображается над областью вывода. Область команд можно закрепить под или над областью вывода.
 
-## Расширение функций интегрированной среды сценариев Windows PowerShell
+## <a name="enhancing-the-functionality-of-windows-powershell-ise"></a>Расширение функций интегрированной среды сценариев Windows PowerShell
  Объектную модель можно использовать для расширения возможностей интегрированной среды сценариев Windows PowerShell. Например, администратор может сделать следующее:
 
 -   добавить или изменить экземпляр интегрированной среды сценариев Windows PowerShell (например, можно добавить новые пункты меню, чтобы изменить меню, и сопоставить новые пункты меню со сценариями);
@@ -67,18 +65,12 @@ ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
     -   выбрать файл.
 
-## Автоматизация задач
+## <a name="automating-tasks"></a>Автоматизация задач
  Объектную модель сценариев можно использовать для создания сочетаний клавиш для часто выполняемых операций.
 
-## См. также
- - [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md) 
- - [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- - [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+## <a name="see-also"></a>См. также
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md) 
+- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
-
-
-
-<!--HONumber=Sep16_HO3-->
-
-

@@ -1,8 +1,23 @@
-# Update-ScriptFileInfo
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: psget_update scriptfileinfo
+ms.technology: powershell
+ms.openlocfilehash: 7e71e2cbd5ce5bad5899e40f077bf16050dcd763
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="update-scriptfileinfo"></a>Update-ScriptFileInfo
 
 Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Update-ScriptFileInfo обновляет информацию для сценария.
 - Командлет Update-ScriptFileInfo обновляет метаданные файла сценария только в том случае, если он был создан с помощью командлета New-ScriptFileInfo или с допустимым комментарием PSScriptInfo.
@@ -10,16 +25,16 @@
 - Если указан параметр -Force, попробуйте добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 - Если после добавления метаданных сценария в существующий файл командлет Test-ScriptFileInfo завершается с ошибками анализа и возникает ошибка наподобие "не удалось добавить метаданные к существующему файлу", то можно использовать командлет New-ScriptFileInfo, чтобы добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Update-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619793)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 # Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -33,7 +48,7 @@ Version Name Author Description
 ```
 
 
-### Добавление метаданных сценария в существующий файл сценария
+### <a name="adding-the-script-metadata-to-the-existing-script-file"></a>Добавление метаданных сценария в существующий файл сценария
 
 ```powershell
 PS C:\WINDOWS\system32> New-ScriptFileInfo -Description "Script file description." -PassThru
@@ -176,7 +191,4 @@ Function foo
 Foo
 
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

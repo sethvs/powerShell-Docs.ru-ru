@@ -1,26 +1,41 @@
-# Register-PSRepository
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_регистрация_psrepository"
+ms.technology: powershell
+ms.openlocfilehash: aceee6fc411dafb915643996d57c23b5c8b25f53
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="register-psrepository"></a>Register-PSRepository
 
 Возвращает информацию о зарегистрированных репозиториях, которая есть на компьютере.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Register-PSRepository регистрирует веб-репозиторий с модулями PowerShell. После регистрации репозитория вы можете ссылаться на него из командлетов Find-Module, Install-Module и Publish-Module. Зарегистрированный репозиторий становится репозиторием по умолчанию в командлетах Find-Module и Install-Module. 
 
 Информация о зарегистрированных репозиториях привязана к конкретному пользователю. Они не регистрируются в контексте всей системы.
 
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Register-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517129)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
-### Регистрация репозитория PowerShell
+### <a name="register-a-powershell-repository"></a>Регистрация репозитория PowerShell
 Вы можете настроить PowerShellGet на работу с внутренними репозиториями. После регистрации репозитория командлеты Find-Module и Install-Module можно настроить на работу с ним.
 
 ```powershell
@@ -50,7 +65,7 @@ Unregister-PSRepository DemoRepo
 ```
 
 
-### Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
+### <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a>Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
 
 Используйте командлет Register-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.
 
@@ -102,8 +117,4 @@ ScriptPublishLocation : https://customgallery.cloudapp.net/api/v2/package/
 ProviderOptions : {}
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

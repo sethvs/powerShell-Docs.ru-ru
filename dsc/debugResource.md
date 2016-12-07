@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 83ca45d507e39b77751ac7feb6a7b65ae2834280
 ms.openlocfilehash: e1922008a92f00c9ddab28598735839c25219d24
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Отладка ресурсов DSC
+# <a name="debugging-dsc-resources"></a>Отладка ресурсов DSC
 
 > Область применения: Windows PowerShell 5.0
 
 В PowerShell 5.0 в DSC появилась новая функция, позволяющая выполнять отладку ресурса DSC при применении конфигурации.
 
-## Включение отладки DSC
+## <a name="enabling-dsc-debugging"></a>Включение отладки DSC
 Перед отладкой ресурса необходимо включить отладку с помощью командлета [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx). Он принимает обязательный параметр **BreakAll**. 
 
 Убедитесь, что отладка включена, вызвав командлет [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) и проверив результат. Следующие выходные данные PowerShell демонстрируют результат включения отладки:
@@ -43,7 +41,7 @@ PS C:\DebugTest>
 ```
 
 
-## Запуск конфигурации с включенной функцией отладки
+## <a name="starting-a-configuration-with-debug-enabled"></a>Запуск конфигурации с включенной функцией отладки
 Для отладки ресурса DSC необходимо запустить конфигурацию, вызывающую этот ресурс. В этом примере мы рассмотрим простую конфигурацию, которая вызывает ресурс [WindowsFeature](windowsfeatureResource.md), чтобы проверить, установлен ли компонент WindowsPowerShellWebAccess:
 
 ```powershell
@@ -85,7 +83,7 @@ Debug-Runspace -Id 9
 ```
 К этому моменту LCM вызвал ресурс и достиг первой контрольной точки. Последние три строки выходных данных показывают, как присоединиться к процессу и запустить отладку сценария ресурса.
 
-## Отладка сценария ресурса
+## <a name="debugging-the-resource-script"></a>Отладка сценария ресурса
 
 Запустите новый экземпляр интегрированной среды сценариев PowerShell. В консоли введите последние три строки выходных данных `Start-DscConfiguration` в виде команд, заменив `<credentials>` на действительные учетные данные пользователя. Теперь вы должны увидеть строку приглашения, которая выглядит примерно так:
 
@@ -96,20 +94,14 @@ Debug-Runspace -Id 9
 В области сценариев будет открыт сценарий ресурса, и отладчик остановится на первой строке функции **Test-TargetResource** (метод **Test()** ресурса на основе класса).
 Теперь вы можете использовать команды отладки в интегрированной среде сценариев для пошагового выполнения сценария ресурса, просмотра значений переменных, просмотра стека вызовов и т. д. Сведения об отладке в интегрированной среде сценариев PowerShell см. в разделе [Отладка сценариев в интегрированной среде сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/dd819480.aspx). Помните, что каждая строка в сценарии ресурса (или классе) устанавливается в качестве точки останова.
 
-## Отключение отладки DSC
+## <a name="disabling-dsc-debugging"></a>Отключение отладки DSC
 
 После вызова командлета [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx) все вызовы [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) приведут к запуску отладчика для конфигурации. Чтобы обеспечить нормальную работу конфигураций, необходимо отключить отладку, вызвав командлет [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx).
 
 >**Примечание**. Перезагрузка не меняет состояние отладки LCM. Если отладка включена, после перезагрузки запуск конфигурации по-прежнему будет вызывать отладчик.
 
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md) 
 - [Написание пользовательских ресурсов DSC с использованием классов PowerShell](authoringResourceClass.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

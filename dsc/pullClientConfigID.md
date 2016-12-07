@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: f6569220fbafdba49bac9ac9dca3e6036a7aad08
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Настройка опрашивающего клиента с помощью идентификатора конфигурации
+# <a name="setting-up-a-pull-client-using-configuration-id"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации
 
 > Область применения: Windows PowerShell 5.0
 
@@ -50,13 +48,13 @@ PullClientConfigID
 
 После запуска этого сценария будет создана новая выходная папка **PullClientConfigID**, в которую будет помещен MOF-файл метаконфигурации. В этом случае MOF-файл метаконфигурации будет называться `localhost.meta.mof`.
 
-Чтобы применить конфигурацию, вызовите командлет **Set-DscLocalConfigurationManager**, в параметре **Path** которого задано расположение MOF-файла метаконфигурации. Например: `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
+Чтобы применить конфигурацию, вызовите командлет **Set-DscLocalConfigurationManager**, в параметре **Path** которого задано расположение MOF-файла метаконфигурации. Пример: `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
 
-## Идентификатор конфигурации
+## <a name="configuration-id"></a>Идентификатор конфигурации
 
 Сценарий задает для свойства **ConfigurationID** LCM значение GUID, созданное специально для этой цели (вы можете создать GUID, используя командлет **New-Guid**). Идентификатор **ConfigurationID** — это то, что LCM использует для поиска соответствующей конфигурации на опрашивающем сервере. MOF-файл конфигурации на опрашивающем сервере должен быть назван _ConfigurationID_.mof, где _ConfigurationID_ является значением свойства **ConfigurationID** LCM целевого узла.
 
-## Опрашивающий SMB-сервер
+## <a name="smb-pull-server"></a>Опрашивающий SMB-сервер
 
 Чтобы настроить на клиенте опрос конфигураций с SMB-сервера, используйте блок **ConfigurationRepositoryShare**. В блоке **ConfigurationRepositoryShare** укажите путь к серверу, задав свойство **SourcePath**. Следующая метаконфигурация настраивает на целевом узле опрос с опрашивающего SMB-сервера **SMBPullServer**.
 
@@ -83,7 +81,7 @@ configuration PullClientConfigID
 PullClientConfigID
 ```
 
-## Серверы ресурсов и отчетов
+## <a name="resource-and-report-servers"></a>Серверы ресурсов и отчетов
 
 Если указать только блок **ConfigurationRepositoryWeb** или **ConfigurationRepositoryShare** в конфигурации LCM (как в предыдущем примере), опрашивающий клиент будет получать ресурсы с указанного сервера, но не будет отправлять отчеты на этот сервер. Можно использовать один и тот же опрашивающий сервер для конфигураций, ресурсов и создания отчетов, но необходимо создать блок **ReportRepositoryWeb** для настройки отчетов. 
 
@@ -157,13 +155,7 @@ configuration PullClientConfigID
 PullClientConfigID
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 
-* [Настройка опрашивающего клиента с именами конфигурации](pullClientConfigNames.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+* [Настройка опрашивающего клиента с именами конфигураций](pullClientConfigNames.md)
 

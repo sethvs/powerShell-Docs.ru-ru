@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 49ddf6faf98a51f7ad5252e9563b1543478ed113
-ms.openlocfilehash: 567ab9528402c7d39d80a997bc14b6c6992cf772
-
+ms.openlocfilehash: 01af336f34928aec63cac7402c1ab20c701579fe
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="dsc-configurations"></a>Конфигурации DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -76,7 +74,7 @@ Configuration MyDscConfiguration {
 
 - разрешает все переменные; 
 - создает папку в текущем каталоге с тем же именем, что и у конфигурации;
-- создает файл с именем _имя_узла_.mof в новой папке, где _имя_узла_ — это имя целевого узла конфигурации. Если узлов несколько, MOF-файл создается для каждого из них.
+- создает файл с именем _имя_узла_.mof в новой папке, где _имя_узла_ — это имя целевого узла конфигурации. Если узлов несколько, MOF-файл создается для каждого из них.
 
 >__Примечание__. MOF-файл содержит все сведения о конфигурации целевого узла. Поэтому его необходимо хранить в безопасном месте. Дополнительные сведения см. в статье [Защита MOF-файла](secureMOF.md).
 
@@ -133,10 +131,4 @@ Configuration DependsOnExample {
 * [Общие сведения о службе настройки требуемого состояния Windows PowerShell](overview.md)
 * [Ресурсы DSC](resources.md)
 * [Настройка локального диспетчера конфигураций](metaConfig.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

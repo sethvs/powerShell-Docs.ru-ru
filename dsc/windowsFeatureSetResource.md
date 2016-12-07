@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: df6869cdf1d1f6c823704e4de2882e90cb672ad2
-
+ms.openlocfilehash: 1bb0e73a1aae6926040373e017494c2ef5e5fd3e
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс DSC WindowsFeatureSet
+# <a name="dsc-windowsfeatureset-resource"></a>Ресурс DSC WindowsFeatureSet
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ ms.openlocfilehash: df6869cdf1d1f6c823704e4de2882e90cb672ad2
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких компонентов Windows.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 WindowsFeatureSet [string] #ResourceName
@@ -38,19 +36,19 @@ WindowsFeatureSet [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Имена ролей или компонентов, которые необходимо добавить или удалить. Это свойство аналогично свойству **Name** командлета [Get-WindowsFeature](https://technet.microsoft.com/en-us/library/jj205469.aspx) и не содержит отображаемые имена ролей или компонентов.| 
 | Учетные данные| Учетные данные для добавления или удаления ролей или компонентов.| 
-| Ensure| Указывает, добавляются ли роли или компоненты. Чтобы добавить роли или компоненты, установите это свойство равным Present, чтобы удалить — равным Absent.| 
+| Ensure| Указывает, добавляются ли роли или компоненты. Чтобы добавить роли или компоненты, установите это свойство равным Present, чтобы удалить — равным Absent.| 
 | IncludeAllSubFeature| Присвойте этому свойству значение **$true**, чтобы включить все необходимые дополнительные компоненты для компонентов, указанных в свойстве **Name**.| 
 | LogPath| Путь к файлу журнала, в котором поставщик ресурсов должен вести журнал работы.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | Источник| Указывает расположение исходного файла для установки, если он необходим.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 Приведенная ниже конфигурация обеспечивает установку компонентов **Веб-сервер** (IIS) и **SMTP-сервер**, а также всех их дополнительных компонентов.
 
@@ -70,10 +68,4 @@ configuration FeatureSetTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 
