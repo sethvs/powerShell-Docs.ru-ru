@@ -1,4 +1,4 @@
-# Регистрация репозитория PowerShell
+# <a name="register-a-powershell-repository"></a>Регистрация репозитория PowerShell
 Вы можете настроить работу PowerShellGet с внутренними репозиториями. Для этого были добавлены следующие компоненты.
 - Register-PSRepository: регистрирует репозиторий для текущего пользователя.
 - Unregister-PSRepository: удаляет зарегистрированный репозиторий для текущего пользователя.
@@ -31,7 +31,3 @@ Install-Module SomeModule
 \#Removing a repository
 Unregister-PSRepository DemoRepo
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

@@ -1,5 +1,19 @@
-
-Развертывание в службу автоматизации Azure
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psgallery_развертывание_в_службу_автоматизации_azure"
+ms.technology: powershell
+ms.openlocfilehash: 20b0dd53b5d10f36089a884a99209a575332a91a
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+<a name="deploy-to-azure-automation"></a>Развертывание в службу автоматизации Azure
 ===========================
 
 Кнопкой "Развернуть в службе автоматизации Azure" на странице подробностей об элементе можно развернуть элемент из коллекции PowerShell в службу автоматизации Azure.
@@ -16,9 +30,4 @@
 Кнопку "Развернуть в службу автоматизации Azure" можно отключить, добавив тег AzureAutomationNotSupported в метаданные элемента.
 
 Подробности о службе автоматизации Azure см. на [сайте службы автоматизации Azure](http://azure.microsoft.com/en-us/services/automation/).
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

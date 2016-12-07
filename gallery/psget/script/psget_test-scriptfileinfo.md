@@ -1,22 +1,37 @@
-# Test-ScriptFileInfo
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: psget_test scriptfileinfo
+ms.technology: powershell
+ms.openlocfilehash: 570ad7e878195f36e1d0831c504301bcee647a7d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="test-scriptfileinfo"></a>Test-ScriptFileInfo
 
 Проверяет блок комментариев метаданных файла сценария.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Test-ScriptFileInfo проверяет блок комментариев в начале сценария, который будет опубликован с помощью сценарного командлета Publish-Script.
 Если блок комментариев метаданных содержит ошибку, этот командлет возвращает сведения о месте ошибки или способ ее устранения.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Test-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Test-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619791)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 # Create a new script file with minimum required metadata values
 New-ScriptFileInfo -Path C:\ScriptSharingDemo\Demo-Script.ps1 -Description "Script file description goes here"
@@ -62,8 +77,4 @@ At line:1 char:1
     + FullyQualifiedErrorId : MissingPSScriptInfo,Test-ScriptFileInfo
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

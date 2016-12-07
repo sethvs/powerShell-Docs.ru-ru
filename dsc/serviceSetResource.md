@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 12438bc9c6e4211b6a31550fa25334a20fde6846
-ms.openlocfilehash: 871d697626a0376e8f1f27bdbbf16d8612a56a79
-
+ms.openlocfilehash: 798609d7e1e7d88e7a9f76f5fff12f63c6109c76
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс DSC ServiceSet
+# <a name="dsc-serviceset-resource"></a>Ресурс DSC ServiceSet
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ ms.openlocfilehash: 871d697626a0376e8f1f27bdbbf16d8612a56a79
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких служб.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Service [string] #ResourceName
@@ -38,7 +36,7 @@ Service [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -52,7 +50,7 @@ Service [string] #ResourceName
 
 
 
-## Пример
+## <a name="example"></a>Пример
 
 Приведенная ниже конфигурация запускает службы "Windows Audio" и "Службы удаленных рабочих столов".
 
@@ -72,10 +70,4 @@ configuration ServiceSetTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
-ms.openlocfilehash: 6b060d17fb106089528b0737ab03cc7d592d412a
-
+ms.openlocfilehash: 56eb7ef230d84cc5f5679f39e13e2019205c65f5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Script в DSC
+# <a name="dsc-script-resource"></a>Ресурс Script в DSC
 
  
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -29,7 +27,7 @@ ms.openlocfilehash: 6b060d17fb106089528b0737ab03cc7d592d412a
 Если необходимо использовать переменные из сценария конфигурации в блоках сценария `GetScript`, `TestScript` или `SetScript`, используйте область `$using:` (см. пример ниже).
 
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Script [string] #ResourceName
@@ -42,7 +40,7 @@ Script [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -52,7 +50,7 @@ Script [string] #ResourceName
 | Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.
 
-## Пример 1
+## <a name="example-1"></a>Пример 1
 ```powershell
 $version = Get-Content 'version.txt'
 
@@ -74,7 +72,7 @@ Configuration ScriptTest
 }
 ```
 
-## Пример 2.
+## <a name="example-2"></a>Пример 2.
 ```powershell
 $version = Get-Content 'version.txt'
 
@@ -106,10 +104,4 @@ Configuration ScriptTest
 ```
 
 Этот ресурс записывает версию конфигурации в текстовый файл. Эта версия доступна на клиентском компьютере, но не на узлах, поэтому ее необходимо передать во все блоки сценария ресурса `Script` с помощью области PowerShell `using`. При создании MOF-файла узла значение переменной `$version` считывается из текстового файла на клиентском компьютере. DSC заменяет переменные `$using:version` в каждом блоке сценария значением переменной `$version`.
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
 

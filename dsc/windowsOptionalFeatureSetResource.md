@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: 52eb958e59ecb1d5ae3faf268933bbd544410d47
-
+ms.openlocfilehash: 1fab04dfcd4ce927bbe526b93c826cf3749a42a5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс DSC WindowsOptionalFeatureSet
+# <a name="dsc-windowsoptionalfeatureset-resource"></a>Ресурс DSC WindowsOptionalFeatureSet
 
 > Область применения: Windows PowerShell 5.0
 
@@ -21,7 +19,7 @@ ms.openlocfilehash: 52eb958e59ecb1d5ae3faf268933bbd544410d47
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких дополнительных компонентов Windows.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 WindowsOptionalFeature [string] #ResourceName
@@ -38,12 +36,12 @@ WindowsOptionalFeature [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имена компонентов, которые необходимо включить или отключить.| 
-| Ensure| Указывает, включены ли компоненты. Чтобы включить компоненты, установите это свойство равным Present, чтобы отключить — равным Absent.|
+| Ensure| Указывает, включены ли компоненты. Чтобы включить компоненты, установите это свойство равным Present, чтобы отключить — равным Absent.|
 | Источник| Не реализовано.|
 | NoWindowsUpdateCheck| Указывает, обращается ли система DISM к Центру обновления Windows при поиске исходных файлов для включения компонентов. Если задано значение $true, система DISM не обращается к Центру обновления Windows.|
 | RemoveFilesOnDisable| Задайте значение **$true**, чтобы удалить все файлы, связанные с компонентами, при их отключении (то есть когда свойству **Ensure** присваивается значение Absent).|
@@ -52,11 +50,5 @@ WindowsOptionalFeature [string] #ResourceName
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

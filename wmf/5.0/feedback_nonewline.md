@@ -1,4 +1,4 @@
-# Параметр NoNewLine
+# <a name="nonewline-parameter"></a>Параметр NoNewLine
 **Out-File**, **Add-Content** и **Set-Content** теперь имеют новый параметр **–NoNewline**, который просто пропускает перевод на новую строку после выходных данных.
 ```PowerShell
 PS C:\> "This is " | Out-File -FilePath Example.txt -NoNewline
@@ -27,8 +27,3 @@ a single
 
 sentence.
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

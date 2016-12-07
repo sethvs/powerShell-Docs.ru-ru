@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: dbe2c1ca2fb7dd65b49876f3bee6752ec9a24d6b
-
+ms.openlocfilehash: 8a8af7f4b82b856460427a68ec536e98f7cd981b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Запуск DSC с учетными данными пользователя 
+# <a name="running-dsc-with-user-credentials"></a>Запуск DSC с учетными данными пользователя 
 
 > Область применения: Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ ms.openlocfilehash: dbe2c1ca2fb7dd65b49876f3bee6752ec9a24d6b
 У каждого ресурса есть свойство **PsDscRunAsCredential**, которому можно назначить учетные данные любого пользователя (объект [PSCredential](https://msdn.microsoft.com/en-us/library/ms572524(v=VS.85).aspx)).
 Учетные данные можно жестко задать в качестве значения свойства конфигурации или установить в качестве значения [Get-Credential](https://technet.microsoft.com/en-us/library/hh849815.aspx). В этом случае пользователю будет предложено ввести учетные данные при компиляции конфигурации (дополнительные сведения о компиляции конфигураций см. в разделе [Конфигурации](configurations.md)).
 
->**Примечание**. Свойство **PsDscRunAsCredential** недоступно в PowerShell 4.0.
+>**Примечание**. Свойство **PsDscRunAsCredential** недоступно в PowerShell 4.0.
 
 В следующем примере **Get-Credential** используется для запроса учетных данных пользователя. Ресурс [Registry](registryResource.md) используется для изменения раздела реестра, указывающего цвет фона для окна командной строки Windows.
 
@@ -62,10 +60,4 @@ ChangeCmdBackGroundColor -ConfigurationData $configData
 ```
 >**Примечание**. В этом примере предполагается, что у вас есть действительный сертификат в `C:\publicKeys\targetNode.cer` и что отображаемое значение представляет собой отпечаток этого сертификата.
 >Сведения о шифровании учетных данных в MOF-файлах конфигурации DSC см. в разделе [Защита MOF-файла](secureMOF.md).
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

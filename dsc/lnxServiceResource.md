@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 3835495705297616a41329bcfdaad42b464115d8
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс nxService в DSC для Linux
+# <a name="dsc-for-linux-nxservice-resource"></a>Ресурс nxService в DSC для Linux
 
 Ресурс **nxService** в настройке требуемого состояния PowerShell предоставляет механизм управления службами на узле Linux.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxService <string> #ResourceName
@@ -31,7 +29,7 @@ nxService <string> #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство |  Описание | 
 |---|---|
 | Название| Указывает имя службы или управляющей программы, которую нужно настроить.| 
@@ -41,11 +39,11 @@ nxService <string> #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
 
-## Дополнительные сведения
+## <a name="additional-information"></a>Дополнительные сведения
 
 Ресурс **nxService** не создает определение или сценарий службы, если они не существуют. Ресурс **nxFile** настройки требуемого состояния PowerShell можно использовать для управления существованием или содержанием сценария или файла определения службы.
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере показана конфигурация службы httpd (для HTTP-сервера Apache), зарегистрированной на контроллере службы **SystemD**.
 
@@ -63,10 +61,4 @@ Controller = "systemd"
 }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

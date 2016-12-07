@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 730f2f26e2811996e79cf0073a4ef65cad390687
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
+# <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -48,10 +46,10 @@ SimpleMetaConfigurationForPull -Output "."
 Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ```
 
-## Идентификатор конфигурации
+## <a name="configuration-id"></a>Идентификатор конфигурации
 Сценарий заносит в свойство **ConfigurationID** LCM значение GUID, которое было создано специально для этой цели (создать GUID можно, используя командлет **New-Guid**). Идентификатор **ConfigurationID** — это то, что LCM использует для поиска соответствующей конфигурации на опрашивающем сервере. MOF-файл конфигурации на опрашивающем сервере должен иметь имя `ConfigurationID.mof`, где *ConfigurationID* является значением свойства **ConfigurationID** LCM целевого узла.
 
-## Опрос с SMB-сервера
+## <a name="pulling-from-an-smb-server"></a>Опрос с SMB-сервера
 
 Если опрашивающий сервер настроен как файловый ресурс SMB, а не веб-служба, укажите **DscFileDownloadManager** вместо **WebDownLoadManager**.
 **DscFileDownloadManager** принимает свойство **SourcePath** вместо **ServerUrl**. Следующий сценарий настраивает LCM для опроса конфигураций из общего ресурса SMB "SmbDscShare" на сервере "CONTOSO-SERVER".
@@ -74,14 +72,8 @@ Configuration SimpleMetaConfigurationForPull
 SimpleMetaConfigurationForPull -Output "."
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
 - [Настройка опрашивающего SMB-сервера DSC](pullServerSMB.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

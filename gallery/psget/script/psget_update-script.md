@@ -1,21 +1,36 @@
-# Update-Script
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_обновление_скрипта"
+ms.technology: powershell
+ms.openlocfilehash: b95ab77ba04d70d470a9740b452f415c872f8fa7
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="update-script"></a>Update-Script
 
 Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Update-Script обновляет указанный скрипт из репозитория, из которого он был ранее установлен.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Update-Script -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619787)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
 Get-InstalledScript -Name Fabrikam-Script
@@ -55,9 +70,4 @@ Version Name Type Repository Description
 2.5 Required-Script2 Script GalleryINT Description for the Required-Script2 script
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

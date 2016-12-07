@@ -1,4 +1,4 @@
-# Извлечение по запросу для конфигураций DSC
+# <a name="on-demand-pull-of-dsc-configurations"></a>Извлечение по запросу для конфигураций DSC
 
 Новый командлет Update-DscConfiguration активирует извлечение с опрашивающих серверов, определенных в метаконфигурации. Такое поведение часто называется "оперативным извлечением". 
 
@@ -31,7 +31,3 @@ Update-DscConfiguration     -CimSession <CimSession[]>
                             [-Confirm] 
                             [<CommonParameters>]
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

@@ -8,19 +8,17 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: de9e8af7908ac6a72a100fd2c86b52c30c390c39
-
+ms.openlocfilehash: 517b07a9ebca91029381684beaec95d37934f3ce
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
+# <a name="getting-wmi-objects-get-wmiobject"></a>Получение объектов WMI (Get-WmiObject)
 
-# <a name="getting-wmi-objects-getwmiobject"></a>Получение объектов WMI (Get-WmiObject)
-
-## <a name="getting-wmi-objects-getwmiobject"></a>Получение объектов WMI (Get-WmiObject)
+## <a name="getting-wmi-objects-get-wmiobject"></a>Получение объектов WMI (Get-WmiObject)
 Инструментарий управления Windows (WMI) является ключевой технологией системного администрирования Windows, поскольку предоставляет широкий спектр сведений в унифицированном виде. Так как спектр возможностей инструментария WMI достаточно широк, командлет **Get-WmiObject** Windows PowerShell, служащий для доступа к объектам WMI, — один из наиболее полезных. Мы рассмотрим, как командлет Get-WmiObject обращается к объектам WMI и как использовать объекты WMI для выполнения определенных задач.
 
 ### <a name="listing-wmi-classes"></a>Вывод списка классов WMI
-Первая проблема, с которой сталкивается большинство пользователей WMI, — это выяснение того, что можно сделать с помощью инструментария WMI. Классы WMI описывают ресурсы, которыми можно управлять. Имеются сотни классов WMI, некоторые из которых содержат множество свойств.
+Первая проблема, с которой сталкивается большинство пользователей WMI, — это выяснение того, что можно сделать с помощью инструментария WMI. Классы WMI описывают ресурсы, которыми можно управлять. Имеются сотни классов WMI, некоторые из которых содержат множество свойств.
 
 Командлет **Get-WmiObject** решает эту проблему, предоставляя сведения об инструментарии WMI. Список классов WMI, доступных на локальном компьютере, можно получить, введя команду:
 
@@ -109,7 +107,7 @@ BuildNumber                               Property   System.String BuildNumb...
 ...
 ```
 
-#### <a name="displaying-nondefault-properties-with-format-cmdlets"></a>Вывод свойств, отличных от используемых по умолчанию, с помощью командлетов Format
+#### <a name="displaying-non-default-properties-with-format-cmdlets"></a>Вывод свойств, отличных от используемых по умолчанию, с помощью командлетов Format
 Если необходимо показать сведения, содержащиеся в классе **Win32_OperatingSystem**, которые не выводятся по умолчанию, можно воспользоваться командлетом **Format**. Например, если нужно показать сведения о количестве доступной памяти, введите:
 
 ```
@@ -135,10 +133,4 @@ FreePhysicalMemory     : 301876
 FreeVirtualMemory      : 2056724
 FreeSpaceInPagingFiles : 1556644
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

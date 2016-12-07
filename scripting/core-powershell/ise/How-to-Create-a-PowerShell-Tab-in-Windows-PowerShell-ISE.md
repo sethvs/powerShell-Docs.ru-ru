@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
-translationtype: Human Translation
-ms.sourcegitcommit: d015dfae1990c66ea75aa45004b366d1609fb36f
-ms.openlocfilehash: 460ab6d82b694266d31b09779866f746b56c9f51
-
+ms.openlocfilehash: fb568b1194a3d123913e635d26b5fbd2ad76c531
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
 Вкладки в интегрированной среде скриптов Windows PowerShell® позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения. Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.
 
@@ -23,7 +21,7 @@ ms.openlocfilehash: 460ab6d82b694266d31b09779866f746b56c9f51
 Выполните следующие действия, чтобы открыть или закрыть вкладку в Windows PowerShell. Чтобы переименовать вкладку, задайте свойство [DisplayName](The-PowerShellTab-Object.md#Displayname) для объекта сценария на вкладке Windows PowerShell.
 
 ## <a name="to-create-and-use-a-new-powershell-tab"></a>Создание и использование вкладки PowerShell
-В меню **Файл** щелкните элемент **Создать вкладку PowerShell**. Новая вкладка PowerShell всегда открывается в виде активного окна. Вкладки PowerShell нумеруются последовательно в порядке их открытия. Каждая вкладка связана с собственным окном консоли Windows PowerShell. Одновременно можно открыть до 32 вкладок PowerShell со своим сеансом (в интегрированной среде сценариев Windows PowerShell 2.0 это ограничение равно 8).
+В меню **Файл** щелкните элемент **Создать вкладку PowerShell**. Новая вкладка PowerShell всегда открывается в виде активного окна. Вкладки PowerShell нумеруются последовательно в порядке их открытия. Каждая вкладка связана с собственным окном консоли Windows PowerShell. Одновременно можно открыть до 32 вкладок PowerShell со своим сеансом (в интегрированной среде сценариев Windows PowerShell 2.0 это ограничение равно 8).
 
 Обратите внимание, что нажатие значка **Создать** или **Открыть** не приводит к созданию вкладки с отдельным сеансом.  Эти кнопки открывают новый или существующий файл сценария на активной вкладке с сеансом. Для каждой вкладки и сеанса можно открыть несколько файлов сценариев. Вкладки сценариев для сеанса отображаются под вкладками сеанса, только когда соответствующий сеанс активен.
 
@@ -44,10 +42,4 @@ ms.openlocfilehash: 460ab6d82b694266d31b09779866f746b56c9f51
 ## <a name="see-also"></a>См. также
 - [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
 - [Использование области консоли в интегрированной среде сценариев Windows PowerShell](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

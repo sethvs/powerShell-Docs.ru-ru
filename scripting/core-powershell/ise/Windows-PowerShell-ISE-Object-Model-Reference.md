@@ -8,15 +8,13 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
-translationtype: Human Translation
-ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
-ms.openlocfilehash: c60a7adb5cce55392d5dc09c7ca357bfc4c73e15
-
+ms.openlocfilehash: 44d5f142c6d2c68c1a70b3a1017a8e6e57a58abe
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
+# <a name="windows-powershell-ise-object-model-reference"></a>Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
   
-## Справочник по объектной модели
+## <a name="object-model-reference"></a>Справочник по объектной модели
  Этот раздел содержит справку по базовым классам, определяющим различные объекты в интегрированной среде скриптов (ISE) Windows PowerShell®. Упорядочение объектов в соответствии с их иерархией рассматривается в статье [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md).
 
  [Объект ISEAddOnTool](The-ISEAddOnTool-Object.md)
@@ -50,13 +48,7 @@ ms.openlocfilehash: c60a7adb5cce55392d5dc09c7ca357bfc4c73e15
  [Объект PowerShellTabCollection](The-PowerShellTabCollection-Object.md)
  Пример: $psISE.PowerShellTabs.
 
-## См. также
-- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+## <a name="see-also"></a>См. также
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
-
-
-
-<!--HONumber=Oct16_HO2-->
-
-

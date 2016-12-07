@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 2ba44df5dd6c91371cbbfe95d48184a4ff4a7738
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс nxFile в DSC для Linux
+# <a name="dsc-for-linux-nxfile-resource"></a>Ресурс nxFile в DSC для Linux
 
 Ресурс **nxFile** в настройке требуемого состояния PowerShell предоставляет механизм управления файлами и каталогами на узле Linux.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxFile <string> #ResourceName
@@ -39,7 +37,7 @@ nxFile <string> #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -56,7 +54,7 @@ nxFile <string> #ResourceName
 | Режим| Указывает нужные разрешения для ресурса в восьмеричной или символьной нотации (например, 777 или rwxrwxrwx). Если используется символьная нотация, не указывайте первый символ, обозначающий каталог или файл.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Дополнительные сведения
+## <a name="additional-information"></a>Дополнительные сведения
 
 
 Linux и Windows используют разные символы разрыва строки в текстовых файлах по умолчанию, что может привести к непредвиденным результатам при настройке некоторых файлов на компьютере Linux с помощью __nxFile__. Избежать проблем из-за непредвиденных символов разрыва строки при работе с содержанием файла Linux можно разными способами:
@@ -134,7 +132,7 @@ nxFile resolvConf
 }
 ```
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере проверяется существование каталога `/opt/mydir` и файла с указанным содержимым в этом каталоге.
 
@@ -161,10 +159,4 @@ nxFile FileExample
 } 
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

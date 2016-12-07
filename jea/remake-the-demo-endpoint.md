@@ -8,17 +8,15 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "повторное создание демонстрационной конечной точки"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: d20ea8418cb7389d756de94ea752cf604b8d07af
-ms.openlocfilehash: acd2cfbd038250a26236c875d0e8b03a32cd84f9
-
+ms.openlocfilehash: 4a56272b6f995500d443d441f5e03db85dac6f96
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Повторное создание демонстрационной конечной точки
+# <a name="remake-the-demo-endpoint"></a>Повторное создание демонстрационной конечной точки
 В этом разделе вы узнаете, как создать точную копию демонстрационной конечной точки, которая использовалась в предыдущем разделе.
 Здесь представлены основные понятия, необходимые для понимания JEA, включая конфигурации сеансов и возможности ролей PowerShell.
 
-## Конфигурации сеансов PowerShell
+## <a name="powershell-session-configurations"></a>Конфигурации сеансов PowerShell
 При работе JEA в предыдущем разделе вы начали со следующей команды:
 
 ```PowerShell
@@ -28,7 +26,7 @@ Enter-PSSession -ComputerName . -ConfigurationName JEA_Demo -Credential $NonAdmi
 Хотя большинство параметров говорят сами за себя, параметр *ConfigurationName* сначала может показаться противоречивым.
 Этот параметр задается в конфигурации сеанса PowerShell, к которому вы подключаетесь.
 
-*Конфигурация сеанса PowerShell* — еще один термин для обозначения конечной точки PowerShell.
+*Конфигурация сеанса PowerShell* — еще один термин для обозначения конечной точки PowerShell.
 Это то "место", где пользователи могут подключаться и получать доступ к функциональным возможностям PowerShell.
 В зависимости от настройки конфигурация сеанса может предоставлять подключающимся пользователям различные функциональные возможности.
 В JEA конфигурации сеансов используются для того, чтобы ограничить PowerShell определенным набором функциональных возможностей и вести работу от имени привилегированной виртуальной учетной записи.
@@ -41,14 +39,14 @@ Enter-PSSession -ComputerName . -ConfigurationName JEA_Demo -Credential $NonAdmi
 Get-PSSessionConfiguration
 ```
 
-## Файлы конфигурации сеансов PowerShell
+## <a name="powershell-session-configuration-files"></a>Файлы конфигурации сеансов PowerShell
 Новые конфигурации сеансов PowerShell создаются путем регистрации новых *файлов конфигурации сеансов PowerShell*.
 Файлы конфигурации сеансов имеют расширение PSSC.
 Файл конфигурации сеанса можно создать с помощью командлета New-PSSessionConfigurationFile.
 
 Теперь создадим и зарегистрируем новую конфигурацию сеанса для JEA.
 
-## Создание и изменение конфигурации сеанса PowerShell
+## <a name="generate-and-modify-your-powershell-session-configuration"></a>Создание и изменение конфигурации сеанса PowerShell
 Для создания "каркасного" файла конфигурации сеанса PowerShell выполните следующую команду:
 
 ```PowerShell
@@ -107,7 +105,7 @@ RoleDefinitions = @{'CONTOSO\JEA_NonAdmin_Operator' = @{ RoleCapabilities =  'Ma
 
 Наконец, сохраните изменения в *JEADemo2.pssc*.
 
-## Применение конфигурации сеанса PowerShell
+## <a name="apply-the-powershell-session-configuration"></a>Применение конфигурации сеанса PowerShell
 
 Для создания конечной точки из файла конфигурации сеанса необходимо зарегистрировать файл.
 При этом требуется несколько фрагментов данных:
@@ -123,7 +121,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 
 Все готово. Вы настроили конечную точку JEA.
 
-## Тестирование конечной точки
+## <a name="test-out-your-endpoint"></a>Тестирование конечной точки
 Повторите шаги, указанные в разделе [Использование JEA](using-jea.md), с новой конечной точкой, чтобы убедиться в том, что она работает, как предполагалось.
 Задавая имя конфигурации в команде `Enter-PSSession`, используйте имя новой конечной точки (JEADemo2).
 
@@ -131,7 +129,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdminCred
 ```
 
-## Основные понятия
+## <a name="key-concepts"></a>Основные понятия
 **Конфигурация сеанса PowerShell**: иногда называется *конечной точкой PowerShell*; это то "место", где пользователи могут подключаться к PowerShell и получать доступ к его функциональным возможностям.
 Чтобы получить список конфигураций сеансов, зарегистрированных в системе, выполните команду `Get-PSSessionConfiguration`.
 При определенной настройке конфигурацию сеанса PowerShell можно назвать *конечной точкой JEA*.
@@ -149,10 +147,4 @@ Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdmi
 **PowerShell Transcript**: файл, содержащий представление сеанса PowerShell с "подсматриванием".
 В PowerShell можно настроить создание записей сеансов JEA с помощью поля TranscriptDirectory.
 Дополнительные сведения о записях см. в этой [записи в блоге](https://technet.microsoft.com/en-us/magazine/ff687007.aspx).
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

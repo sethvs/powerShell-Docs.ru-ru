@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 1fe624c2532e44ed675762f3c141934fb4f0b60d
-
+ms.openlocfilehash: 97d97a36830088d6ee1296cda5310e087fc41893
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Прямой вызов методов ресурсов DSC
+# <a name="calling-dsc-resource-methods-directly"></a>Прямой вызов методов ресурсов DSC
 
 >Область применения: Windows PowerShell 5.0
 
@@ -25,7 +23,7 @@ ms.openlocfilehash: 1fe624c2532e44ed675762f3c141934fb4f0b60d
 
 Ниже приведены примеры прямого вызова методов ресурсов:
 
-## Проверка наличия файла
+## <a name="ensure-a-file-is-present"></a>Проверка наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Set -Property @{
@@ -34,7 +32,7 @@ $result = Invoke-DscResource -Name File -Method Set -Property @{
 $result | fl
 ```
 
-## Тестирование наличия файла
+## <a name="test-that-a-file-is-present"></a>Тестирование наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Test -Property @{
@@ -43,7 +41,7 @@ $result = Invoke-DscResource -Name File -Method Test -Property @{
 $result | fl
 ```
 
-## Получение содержимого файла
+## <a name="get-the-contents-of-file"></a>Получение содержимого файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Get -Property @{
@@ -54,14 +52,8 @@ $result.ItemValue | fl
 
 >**Примечание**. Прямой вызов методов составного ресурса не поддерживается. Вместо этого вызывайте методы базовых ресурсов, входящих в составной ресурс.
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md) 
 - [Написание пользовательских ресурсов DSC с использованием классов PowerShell](authoringResourceClass.md)
 - [Отладка ресурсов DSC](debugResource.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

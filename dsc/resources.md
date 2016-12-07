@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 0a27a40b995393c41f0496a5f7fa3f56fbd865dd
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурсы DSC
+# <a name="dsc-resources"></a>Ресурсы DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -24,12 +22,6 @@ ms.openlocfilehash: 0a27a40b995393c41f0496a5f7fa3f56fbd865dd
 Описание ресурсов DSC см. в следующих разделах:
 
 - [Встроенные ресурсы DSC](builtInResource.md)
-- [Создание пользовательских ресурсов DSC](authoringResource.md)
+- [Встроенные пользовательские ресурсы DSC](authoringResource.md)
 - [Встроенные ресурсы DSC для Linux](lnxBuiltInResources.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -1,4 +1,4 @@
-# Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet
+# <a name="powershell-script-discovery-install-and-management-with-powershellget"></a>Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet
 
 Компонент совместного использования сценариев был добавлен в PowerShellGet в выпуске WMF 5.0 RTM.
 Для поддержки сценариев PowerShell в модуль PowerShellGet добавлены следующие новые командлеты.
@@ -66,8 +66,3 @@ Function Update-ScriptFileInfo 1.0.0.1 PowerShellGet
 
 **Publish-Script** -LiteralPath &lt;string&gt; \[-NuGetApiKey &lt;string&gt;\] \[-Repository &lt;string&gt;\] \[-WhatIf\] \[-Confirm\] \[&lt;CommonParameters&gt;\]
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

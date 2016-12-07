@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-translationtype: Human Translation
-ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
-ms.openlocfilehash: 068ea5b8de5463c492c894d313ac1f266c449797
-
+ms.openlocfilehash: f38c9f310c528a9daff2784ab3a686309e624ecb
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell
 Эта статья содержит инструкции по созданию, редактированию, выполнению и сохранению сценариев в области сценариев.
 
@@ -24,7 +22,7 @@ ms.openlocfilehash: 068ea5b8de5463c492c894d313ac1f266c449797
 -   [Сохранение скрипта](#bkmk_3)
 
 ## <a name="a-namebkmk1ahow-to-create-and-run-scripts"></a><a name="bkmk_1"></a> Создание и выполнение сценариев
-В области скриптов можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
+В области скриптов можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
 
 > [!NOTE]
 > Политика выполнения Windows PowerShell определяет, можно ли выполнять сценарии, загружать профили Windows PowerShell и файлы конфигурации. Политика выполнения по умолчанию, Restricted, запрещает выполнение сценариев и блокирует загрузку профилей. Чтобы изменить эту политику выполнения и разрешить загрузку и использование профилей, изучите статьи [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) и [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).
@@ -151,10 +149,4 @@ $psise.CurrentFile.encoding
 
 ## <a name="see-also"></a>См. также
 - [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

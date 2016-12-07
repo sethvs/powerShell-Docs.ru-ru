@@ -1,31 +1,46 @@
-# New-ScriptFileInfo
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: psget_new scriptfileinfo
+ms.technology: powershell
+ms.openlocfilehash: d6b8790c3dd7ce366d608ff7bfd083ca12b201fd
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="new-scriptfileinfo"></a>New-ScriptFileInfo
 
 Создание файла сценария с метаданными.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет New-ScriptFileInfo создает файл сценария PowerShell, включая метаданные о сценарии.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name New-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [New-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619792)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
-### Параметр PassThru
+### <a name="passthru-parameter"></a>Параметр PassThru
 
 ```powershell
 New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
-### Командлет New-ScriptFileInfo
-Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. 
+### <a name="new-scriptfileinfo-cmdlet"></a>Командлет New-ScriptFileInfo
+Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. 
 
 ```powershell
 # Create a new script file with minimum required metadata values
@@ -180,8 +195,4 @@ DefinedCommands : {Demo-ScriptFunction, Demo-ScriptWorkflow}
 DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

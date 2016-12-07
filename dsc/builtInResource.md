@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: ea312b4e773cd8b0eceeca123e616957728eb1c6
-
+ms.openlocfilehash: 1cbe3ac8de217d659f717cb960b4b57cb2d4fdd9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Встроенные ресурсы настройки требуемого состояния Windows PowerShell
+# <a name="built-in-windows-powershell-desired-state-configuration-resources"></a>Встроенные ресурсы настройки требуемого состояния Windows PowerShell
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -28,13 +26,7 @@ ms.openlocfilehash: ea312b4e773cd8b0eceeca123e616957728eb1c6
 * [Ресурс Registry](registryResource.md)
 * [Ресурс Script](scriptResource.md)
 * [Ресурс Service](serviceResource.md)
-* [Ресурс пользователя](userResource.md)
+* [Ресурс User](userResource.md)
 * [Ресурс WindowsFeature](windowsfeatureResource.md)
 * [Ресурс WindowsProcess](windowsProcessResource.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

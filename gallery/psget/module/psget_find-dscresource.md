@@ -1,8 +1,23 @@
-# Find-DscResource
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_нахождение_ресурса_dsc"
+ms.technology: powershell
+ms.openlocfilehash: afd13e1dd791794d62be4601477bcc77448586c5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="find-dscresource"></a>Find-DscResource
 
 Находит ресурсы DSC в модулях.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Find-DscResource ищет ресурсы [настройки требуемого состояния (DSC)](https://msdn.microsoft.com/en-us/PowerShell/dsc/overview), имеющиеся в модулях, соответствующих заданному условию, из зарегистрированных репозиториев.
 Для каждого модуля, найденного командлетом Find-DscResource, он возвращает объект PSGetDscResourceInfo, который можно передать в командлет Install-Module, чтобы установить возвращенные этим командлетом модули, содержащие ресурсы.
@@ -22,16 +37,16 @@ DSC — это новая платформа управления в Windows Pow
 - Find-DscResource позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-DscResource может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-DscResource -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-DscResource](http://go.microsoft.com/fwlink/?LinkId=517196)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 
 # Find a specific DSC Resource
@@ -79,8 +94,4 @@ Find-DscResource -Filter Domain
 Find-DscResource -Tag Azure, DSC
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

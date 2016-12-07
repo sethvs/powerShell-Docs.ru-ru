@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
-ms.openlocfilehash: d07b11c148dfa747b3f9c0157191b83efb6c65df
-
+ms.openlocfilehash: 343bd3c625e2df9f34480ea8065e3039d6069d61
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Package в DSC
+# <a name="dsc-package-resource"></a>Ресурс Package в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **Package** в DSC Windows PowerShell предоставляет механизм установки или удаления пакетов, таких как пакеты установщика Windows и setup.exe, на целевом узле.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Package [string] #ResourceName
@@ -36,7 +34,7 @@ Package [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имя пакета, для которого требуется обеспечить определенное состояние.| 
@@ -49,7 +47,7 @@ Package [string] #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 | ReturnCode| Указывает ожидаемый код возврата. Если фактический код возврата не соответствует указанному здесь значению, настройка вернет ошибку.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В этом примере выполняется установщик MSI, который находится по указанному пути и имеет указанный идентификатор.
 
@@ -65,10 +63,4 @@ Configuration PackageTest
     } 
 }
 ```
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
 

@@ -8,14 +8,12 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: ae974955-4282-4cbc-8c42-0fff1904ef32
-translationtype: Human Translation
-ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
-ms.openlocfilehash: 410cd4503883ea2cc02936044d7357b9cb029274
-
+ms.openlocfilehash: d8b5db28b0a8ce24d35b2684dd473bdea104d225
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="the-isesnippetcollection-object"></a>Объект ISESnippetCollection
-  Объект **ISESnippetCollection** — это коллекция объектов **ISESnippet**. Коллекция файлов, с которой связан объект **PowerShellTab**, является членом этого класса. Примером является коллекция **$psISE.CurrentPowerShellTab.Files**.
+  Объект **ISESnippetCollection** — это коллекция объектов **ISESnippet**. Коллекция файлов, с которой связан объект **PowerShellTab**, является членом этого класса. Примером является коллекция **$psISE.CurrentPowerShellTab.Files**.
 
 ## <a name="methods"></a>Методы
 
@@ -24,7 +22,7 @@ ms.openlocfilehash: 410cd4503883ea2cc02936044d7357b9cb029274
 
  Загружает SNIPPETS.PS1XML-файл, содержащий определяемые пользователем фрагменты кода. Для создания фрагментов кода проще всего использовать командлет New-IseSnippet, который автоматически сохраняет фрагменты в папке профиля, чтобы загружать их при каждом запуске интегрированной среды сценариев Windows PowerShell.
 
- **FilePathName** — строка. Путь к файлу с расширением SNIPPETS.PS1XML и его имя. В нем содержатся определения фрагментов.
+ **FilePathName** — строка. Путь к файлу с расширением SNIPPETS.PS1XML и его имя. В нем содержатся определения фрагментов.
 
 ```
 # Loads a custom snippet file into the current PowerShell tab.
@@ -39,9 +37,3 @@ $SnipFile = Join-Path ( Split-Path $profile) “Snippets\MySnips.snippets.ps1xml
 - [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 
   
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-

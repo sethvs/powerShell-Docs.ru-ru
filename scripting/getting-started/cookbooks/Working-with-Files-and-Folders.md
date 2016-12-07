@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: c3f7c226fcb496e5bb51ba601429c54b43de9d52
-
+ms.openlocfilehash: be0960062182bbce161fdb26340825a7f6360382
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Работа с файлами и папками
+# <a name="working-with-files-and-folders"></a>Работа с файлами и папками
 Просмотр содержимого дисков Windows PowerShell и управление хранящимися на них элементами аналогично управлению файлами и папками на физических дисках Windows. В этом разделе мы обсудим выполнение отдельных задач управления файлами и папками.
 
-### Получение списка файлов и папок, содержащихся в папке
+### <a name="listing-all-the-files-and-folders-within-a-folder"></a>Получение списка файлов и папок, содержащихся в папке
 Извлечь все элементы непосредственно из папки можно с помощью командлета **Get-ChildItem**. Для отображения скрытых и системных элементов добавьте необязательный параметр **Force**. Например, эта команда отображает непосредственное содержимое диска C Windows PowerShell (которое совпадает с содержимым физического диска C Windows):
 
 ```
@@ -38,7 +36,7 @@ Get-ChildItem -Force C:\ -Recurse
 Get-ChildItem -Path $env:ProgramFiles -Recurse -Include *.exe | Where-Object -FilterScript {($_.LastWriteTime -gt "2005-10-01") -and ($_.Length -ge 1m) -and ($_.Length -le 10m)}
 ```
 
-### Копирование файлов и папок
+### <a name="copying-files-and-folders"></a>Копирование файлов и папок
 Копирование выполняется с помощью командлета **Copy-Item**. Следующая команда создает резервную копию C:\\boot.ini в C:\\boot.bak:
 
 ```
@@ -71,7 +69,7 @@ Copy-Item -Filter *.txt -Path c:\data -Recurse -Destination c:\temp\text
 (New-Object -ComObject Scripting.FileSystemObject).CopyFile("c:\boot.ini", "c:\boot.bak")
 ```
 
-### Создание файлов и папок
+### <a name="creating-files-and-folders"></a>Создание файлов и папок
 Создание новых элементов осуществляется одинаковым образом всеми поставщиками Windows PowerShell. Если поставщик Windows PowerShell поддерживает более одного типа элементов (например, поставщик Windows PowerShell FileSystem различает каталоги и файлы), необходимо указать тип элемента.
 
 Эта команда создает папку "C:\\temp\\New Folder":
@@ -86,7 +84,7 @@ New-Item -Path 'C:\temp\New Folder' -ItemType "directory"
 New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType "file"
 ```
 
-### Удаление всех файлов и папок, содержащихся в папке
+### <a name="removing-all-files-and-folders-within-a-folder"></a>Удаление всех файлов и папок, содержащихся в папке
 Удалить вложенные элементы можно с помощью командлета **Remove-Item**, однако он потребует подтверждения удаления, если элемент сам что-нибудь содержит. Например, при попытке удаления папки C:\\temp\\DeleteMe, которая содержит другие элементы, Windows PowerShell предварительно предложит подтвердить удаление этой папки:
 
 ```
@@ -106,7 +104,7 @@ sure you want to continue?
 Remove-Item C:\temp\DeleteMe -Recurse
 ```
 
-### Отображение локальной папки в виде диска, доступного в Windows
+### <a name="mapping-a-local-folder-as-a-windows-accessible-drive"></a>Отображение локальной папки в виде диска, доступного в Windows
 Отобразить локальную папку можно с помощью команды **subst**. Следующая команда создает локальный диск P:, корневым каталогом которого является локальный каталог Program Files:
 
 ```
@@ -115,7 +113,7 @@ subst p: $env:programfiles
 
 Как и в случае сетевых дисков, диски, отображенные в оболочке Windows PowerShell с помощью команды **subst**, немедленно становятся доступными оболочке Windows PowerShell.
 
-### Чтение текстового файла в массив
+### <a name="reading-a-text-file-into-an-array"></a>Чтение текстового файла в массив
 Одним из наиболее общих форматов хранения текстовых данных является файл, отдельные строки которого рассматриваются как отдельные элементы. Командлет **Get-Content** используется для чтения всего файла за один шаг, как показано далее.
 
 ```
@@ -144,10 +142,4 @@ $Computers = Get-Content -Path C:\temp\DomainMembers.txt
 ```
 
 Теперь переменная **$Computers** представляет собой массив, содержащий в каждом элементе имя компьютера.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

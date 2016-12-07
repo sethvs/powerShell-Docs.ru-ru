@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
-translationtype: Human Translation
-ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
-ms.openlocfilehash: e4d830fa49157366fb20851f01b34d433b296534
-
+ms.openlocfilehash: 1bfccad79ffbaeb12b39e156fa2cde3d58d01e7f
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="the-isefile-object"></a>Объект ISEFile
   Объект **ISEFile** представляет файл в интегрированной среде скриптов (ISE) Windows PowerShell®. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEFile. В этом разделе перечислены его члены (методы и свойства). Объект **$PsISE.CurrentFile** и все файлы в коллекции "Файлы" на вкладке PowerShell являются экземплярами класса Microsoft.PowerShell.Host.ISE.ISEFile.
 
@@ -24,7 +22,7 @@ ms.openlocfilehash: e4d830fa49157366fb20851f01b34d433b296534
 
  Сохраняет файл на диске.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+ **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
 . Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
@@ -50,7 +48,7 @@ $myfile.Encoding
 
  **filename** — строка. Имя, используемое для сохранения файла.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+ **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
 . Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
@@ -147,9 +145,3 @@ $psISE.CurrentFile.IsUntitled
 - [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 
   
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-

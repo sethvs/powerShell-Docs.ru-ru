@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: carolz
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: d87f81867181d6110532dc0afff1572ebc5bfff3
-ms.openlocfilehash: b7e0e4e8dba43ff85c77446a2ec593f42316f460
-
+ms.openlocfilehash: 938dcdfe6ef4254819068703d1c267934df913b4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="using-dsc-on-microsoft-azure"></a>Использование DSC в Microsoft Azure
 
 Настройка требуемого состояния (DSC) поддерживается в Microsoft Azure при помощи [обработчика расширений настройки требуемого состояния Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-extensions-dsc-overview) и [DSC в службе автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-dsc-overview).
@@ -32,10 +30,4 @@ ms.openlocfilehash: b7e0e4e8dba43ff85c77446a2ec593f42316f460
 - [DSC в службе автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-dsc-overview)
 - [Начало работы с DSC в службе автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-dsc-getting-started)
 - [Подключение компьютеров для управления при помощи DSC в службе автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

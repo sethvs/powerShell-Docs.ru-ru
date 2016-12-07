@@ -1,10 +1,25 @@
-# Find-RoleCapability
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_нахождение_возможности_ролей"
+ms.technology: powershell
+ms.openlocfilehash: 3f005bf0a9201c3762ca6399a78d4ff983409656
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="find-rolecapability"></a>Find-RoleCapability
 
 Находит возможности ролей в модулях.
 
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-RoleCapability находит возможности ролей PowerShell в модулях. Find-RoleCapability ищет модули в зарегистрированных репозиториях. Для каждой возможности роли, найденной командлетом, он возвращает объект PSGetRoleCapabilityInfo. Вы можете передать объект PSGetRoleCapabilityInfo в командлет Install-Module для установки модуля, содержащего эту возможность роли.
-Возможности ролей PowerShell определяют, какие команды, приложения и т. п. будут доступны пользователю в конечной точке Just Enough Administration (JEA). Возможности ролей определяются файлами с расширением PSRC.
+Возможности ролей PowerShell определяют, какие команды, приложения и т. п. будут доступны пользователю в конечной точке Just Enough Administration (JEA). Возможности ролей определяются файлами с расширением PSRC.
 
 - Командлет Find-RoleCapability позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, RequiredVersion, AllVersions.
   - Эти параметры являются взаимоисключающими.
@@ -15,16 +30,16 @@
 - Find-RoleCapability позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-RoleCapability может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-RoleCapability -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-RoleCapability](http://go.microsoft.com/fwlink/?LinkId=718029)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 
 # Find a specific role capability
@@ -66,7 +81,4 @@ Find-RoleCapability -Filter RBAC
 Find-RoleCapability -Tag Azure, DSC
 
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

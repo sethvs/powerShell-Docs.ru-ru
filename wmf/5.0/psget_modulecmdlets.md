@@ -1,4 +1,4 @@
-# Командлеты PowerShellGet для управления модулями
+# <a name="powershellget-cmdlets-for-module-management"></a>Командлеты PowerShellGet для управления модулями
 
 - [Find-DscResource](https://technet.microsoft.com/en-us/library/mt654006.aspx)
 - [Find-Module](https://technet.microsoft.com/en-us/library/dn807167.aspx)
@@ -24,16 +24,16 @@
 - [Update-ScriptFileInfo](https://technet.microsoft.com/en-us/library/mt653991.aspx)
 - [Unregister-PSRepository](https://technet.microsoft.com/en-us/library/dn807161.aspx)
 
-## Поддержка установки зависимостей модуля, командлеты Get-InstalledModule и Uninstall-Module
+## <a name="module-dependency-installation-support-get-installedmodule-and-uninstall-module-cmdlets"></a>Поддержка установки зависимостей модуля, командлеты Get-InstalledModule и Uninstall-Module
 - Добавлено заполнение зависимостей модулей в командлете Publish-Module. Списки RequiredModules и NestedModules для PSModuleInfo используются при подготовке списка зависимостей публикуемого модуля.
 - Добавлена поддержка установки зависимостей модулей в командлетах Install-Module и Update-Module. Зависимости модулей устанавливаются и обновляются по умолчанию.
 - Добавлен параметр -IncludeDependencies для командлета Find-Module, позволяющий включить зависимости модулей в результаты.
 - Добавлена поддержка -MaximumVersion в командлетах Find-Module, Install-Module и Update-Module.
 - Добавлены новые командлеты InstalledModule и Uninstall-Module.
 
-## Демонстрация командлетов PowerShellGet с поддержкой зависимостей модулей:
+## <a name="powershellget-cmdlets-demo-with-module-dependencies-support"></a>Демонстрация командлетов PowerShellGet с поддержкой зависимостей модулей:
 
-### Убедитесь, что зависимости модулей доступны в репозитории:
+### <a name="ensure-that-module-dependencies-are-available-on-the-repository"></a>Убедитесь, что зависимости модулей доступны в репозитории:
 ```powershell
 Find-Module -Repository LocalRepo -Name RequiredModule1,RequiredModule2,RequiredModule3,NestedRequiredModule1,NestedRequiredModule2,NestedRequiredModule3 | Sort-Object -Property Name
 
@@ -47,7 +47,7 @@ Version    Name                     Repository    Description
 2.0        RequiredModule3          LocalRepo     RequiredModule3 module
 ```
 
-### Создайте модуль с зависимостями, указанных в свойствах RequiredModules и NestedModules манифеста модуля.
+### <a name="create-a-module-with-dependencies-that-are-specified-in-the-requiredmodules-and-nestedmodules-properties-of-its-module-manifest"></a>Создайте модуль с зависимостями, указанных в свойствах RequiredModules и NestedModules манифеста модуля.
 ```powershell
 $RequiredModules = @('RequiredModule1',
                      @{ModuleName = 'RequiredModule2'; ModuleVersion = '1.5'; },
@@ -61,12 +61,12 @@ New-ModuleManifest -Path 'C:\Program Files\WindowsPowerShell\Modules\TestDepWith
 -NestedModules $NestedRequiredModules -RequiredModules $RequiredModules -ModuleVersion "1.0" -Description "TestDepWithNestedRequiredModules1 module"
 ```
 
-###  Опубликуйте две версии (**"1.0"** и **"2.0"**) модуля TestDepWithNestedRequiredModules1 с зависимостями в репозитории.
+###  <a name="publish-two-versions-10-and-20-of-the-testdepwithnestedrequiredmodules1-module-with-dependencies-to-the-repository"></a>Опубликуйте две версии (**"1.0"** и **"2.0"**) модуля TestDepWithNestedRequiredModules1 с зависимостями в репозитории.
 ```powershell
 Publish-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -NuGetApiKey "MyNuGet-ApiKey-For-LocalRepo"
 ```
 
-###  Найдите модуль TestDepWithNestedRequiredModules1 вместе с зависимостями, указав -IncludeDependencies.
+###  <a name="find-the-testdepwithnestedrequiredmodules1-module-with-its-dependencies-by-specifying--includedependencies"></a>Найдите модуль TestDepWithNestedRequiredModules1 вместе с зависимостями, указав -IncludeDependencies.
 ```powershell
 Find-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo –IncludeDependencies -MaximumVersion "1.0"
 
@@ -81,7 +81,7 @@ Version    Name                                Repository  Description
 2.0        NestedRequiredModule3               LocalRepo   NestedRequiredModule3 module
 ``` 
 
-### Используйте метаданные Find-Module для поиска зависимостей модулей.
+### <a name="use-find-module-metadata-to-find-the-module-dependencies"></a>Используйте метаданные Find-Module для поиска зависимостей модулей.
 ```powershell
 $psgetModuleInfo = Find-Module -Repository MSPSGallery -Name ModuleWithDependencies2
 $psgetModuleInfo.Dependencies.ModuleName
@@ -120,7 +120,7 @@ RequiredVersion 2.5
 CanonicalId PowerShellGet:NestedRequiredModule3/2.5#http://psget/psGallery/api/v2/
 ```
 
-###  Установите модуль TestDepWithNestedRequiredModules1 с зависимостями.
+###  <a name="install-the-testdepwithnestedrequiredmodules1-module-with-dependencies"></a>Установите модуль TestDepWithNestedRequiredModules1 с зависимостями.
 ```powershell
 Install-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -RequiredVersion "1.0"
 Get-InstalledModule
@@ -136,7 +136,7 @@ Version    Name                    Repository   Description
 1.0        TestDepWithNestedRequiredModules1  LocalRepo    TestDepWithNestedRequiredModules1 module
 ```
 
-###  Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.
+###  <a name="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies"></a>Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.
 ```powershell
 Find-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -AllVersions
 
@@ -162,7 +162,7 @@ Version    Name                                Repository  Description
 2.0        TestDepWithNestedRequiredModules1   LocalRepo   TestDepWithNestedRequiredModules1 module
 ```
 
-###  Выполните командлет Uninstall-Module для удаления модуля, установленного с помощью PowerShellGet.
+###  <a name="run-the-uninstall-module-cmdlet-to-uninstall-a-module-that-you-installed-by-using-powershellget"></a>Выполните командлет Uninstall-Module для удаления модуля, установленного с помощью PowerShellGet.
 Если от удаляемого модуля зависит любой другой модуль, PowerShellGet выдает ошибку.
 ```powershell
 Get-InstalledModule -Name RequiredModule1 | Uninstall-Module
@@ -175,7 +175,7 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\PSGet.psm1:1303 char
 + FullyQualifiedErrorId : UnableToUninstallAsOtherModulesNeedThisModule,Uninstall-Package,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
 ```
 
-## Командлет Save-Module
+## <a name="save-module-cmdlet"></a>Командлет Save-Module
 ```powershell
 Save-Module -Repository MSPSGallery -Name ModuleWithDependencies2 -Path C:\MySavedModuleLocation
 dir C:\MySavedModuleLocation
@@ -193,12 +193,12 @@ d----- 4/21/2015 5:40 PM RequiredModule2
 d----- 4/21/2015 5:40 PM RequiredModule3
 ```
 
-## Командлет Update-ModuleManifest
+## <a name="update-modulemanifest-cmdlet"></a>Командлет Update-ModuleManifest
 Этот новый командлет используется для обновления файла манифеста с помощью входных значений свойств. Он принимает те же параметры, что и Test-ModuleManifest.
 
-Нам известно, что многие создатели модулей стремятся указать "\*" в экспортированных значениях, таких как FunctionsToExport, CmdletsToExport и т. д. Во время публикации модуля в коллекции PowerShell неуказанные функции и команды будут занесены неправильно. Поэтому мы рекомендуем авторам модулей обновить манифесты с использованием соответствующих значений.
+Нам известно, что многие создатели модулей стремятся указать "\*" в экспортированных значениях, таких как FunctionsToExport, CmdletsToExport и т. д. Во время публикации модуля в коллекции PowerShell неуказанные функции и команды будут занесены неправильно. Поэтому мы рекомендуем авторам модулей обновить манифесты с использованием соответствующих значений.
 
-При наличии модулей, имеющих экспортированные свойства, Update-ModuleManifest заполнит указанный файл манифеста данными из экспортированных функций, командлетов, переменных и т. п:
+При наличии модулей, имеющих экспортированные свойства, Update-ModuleManifest заполнит указанный файл манифеста данными из экспортированных функций, командлетов, переменных и т. п:
 ```powershell
 Get-Content -Path "C:\Temp\PSGTEST-TestPackageMetadata\2.5\PSGTEST-TestPackageMetadata.psd1"
 @{
@@ -277,8 +277,3 @@ PrivateData = @{
 } # End of PrivateData hashtable
 ```
 ***Примечание.*** DscResourcesToExport поддерживается только в последней версии PowerShell 5.0. При использовании предыдущей версии PowerShell обновить поля нельзя.
-
-
-<!--HONumber=Aug16_HO3-->
-
-

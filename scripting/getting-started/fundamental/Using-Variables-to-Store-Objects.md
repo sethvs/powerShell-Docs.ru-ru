@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 6216f3e1a766c57a7549a3e3b4fbe76d043a8a41
-
+ms.openlocfilehash: 5f37f66a34a98a4da28f4e36f115272d44ae5fc4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Использование переменных для хранения объектов
+# <a name="using-variables-to-store-objects"></a>Использование переменных для хранения объектов
 Windows PowerShell работает с объектами. Можно создавать переменные, главным образом — именованные объекты, чтобы сохранять выходные данные для последующего использования. Если вы привыкли работать с переменными в других оболочках, помните, что переменные Windows PowerShell являются объектами, а не текстом.
 
 Имена переменных всегда начинаются с символа $ и могут включать любые буквенно-цифровые символы или знаки подчеркивания.
 
-### Создание переменной
+### <a name="creating-a-variable"></a>Создание переменной
 Чтобы создать переменную, можно ввести для нее допустимое имя:
 
 ```
@@ -58,7 +56,7 @@ Provider     Property   System.Management.Automation.ProviderInfo Provider {...
 ProviderPath Property   System.String ProviderPath {get;}
 ```
 
-### Работа с переменными
+### <a name="manipulating-variables"></a>Работа с переменными
 Windows PowerShell предоставляет несколько команд для работы с переменными. Полный список в удобочитаемой форме можно получить, введя следующее:
 
 ```
@@ -87,8 +85,8 @@ Performing operation "Remove Variable" on Target "Name: Error".
 Get-ChildItem variable:
 ```
 
-### Использование переменных Cmd.exe
-Хотя система Windows PowerShell — это не Cmd.exe, она выполняется в среде командной оболочки и может использовать переменные, доступные в любой среде в Windows. Эти переменные предоставляются посредством диска с именем **env:**. Эти переменные можно просмотреть, введя следующее:
+### <a name="using-cmdexe-variables"></a>Использование переменных Cmd.exe
+Хотя система Windows PowerShell — это не Cmd.exe, она выполняется в среде командной оболочки и может использовать переменные, доступные в любой среде в Windows. Эти переменные предоставляются посредством диска с именем **env:**. Эти переменные можно просмотреть, введя следующее:
 
 ```
 Get-ChildItem env:
@@ -102,10 +100,4 @@ C:\WINDOWS
 ```
 
 В Windows PowerShell также можно создавать и изменять переменные среды. Переменные среды из Windows PowerShell соответствует обычным правилам для переменных среды в рамках всей системы Windows.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

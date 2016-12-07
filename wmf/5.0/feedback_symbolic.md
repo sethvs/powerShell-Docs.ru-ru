@@ -1,12 +1,12 @@
-# Взаимодействие с символьными ссылками с помощью улучшенных командлетов Item
+# <a name="interact-with-symbolic-links-using-improved-item-cmdlets"></a>Взаимодействие с символьными ссылками с помощью улучшенных командлетов Item
 
 В целях поддержки символьных ссылок была расширена функциональность **\*-Item** и нескольких связанных с ним командлетов. Теперь символьные ссылки можно создавать в простой отдельной строке с помощью **New-Item**. Вы заметите, что командлеты Item (**Remove-Item, Get-ChildItem**) работают почти так же, как и раньше.
 
 Ниже приведены варианты использования новых возможностей:
 
-## NEW-ITEM
+## <a name="new-item"></a>NEW-ITEM
 
-### ФАЙЛЫ С СИМВОЛЬНЫМИ ССЫЛКАМИ
+### <a name="symbolic-link-files"></a>ФАЙЛЫ С СИМВОЛЬНЫМИ ССЫЛКАМИ
 
 ```powershell
 # Create a new symbolic link file named MySymLinkFile.txt in C:\Temp which links to $pshome\profile.ps1
@@ -20,7 +20,7 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkFile.txt -Value $pshome\p
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkFile.txt -Value $pshome\profile.ps1
 ```
 
-### КАТАЛОГИ С СИМВОЛЬНЫМИ ССЫЛКАМИ
+### <a name="symbolic-link-directories"></a>КАТАЛОГИ С СИМВОЛЬНЫМИ ССЫЛКАМИ
 
 ```powershell
 # Create a new symbolic link directory named MySymLinkDir in C:\Temp which links to the $pshome folder
@@ -35,21 +35,21 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkDir -Value $pshome
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkDir -Value $pshome
 ```
 
-### ЖЕСТКИЕ СВЯЗИ
+### <a name="hard-links"></a>ЖЕСТКИЕ СВЯЗИ
 
 ```powershell
 New-Item -ItemType HardLink -Path C:\Temp -Name MyHardLinkFile.txt -Value $pshome\profile.ps1
 # Same combinations of Path and Name allowed as described above
 ```
 
-### СОЕДИНЕНИЯ КАТАЛОГОВ
+### <a name="directory-junctions"></a>СОЕДИНЕНИЯ КАТАЛОГОВ
 
 ```powershell
 New-Item -ItemType Junction -Path C:\Temp\MyJunctionDir -Value $pshome
 # Same combinations of Path and Name allowed as described above
 ```
 
-## GET-CHILDITEM
+## <a name="get-childitem"></a>GET-CHILDITEM
 
 ```powershell
 # Append link type column to Mode property and display with Get-ChildItem
@@ -100,7 +100,7 @@ SpecialBuild: False
 Language:
 ```
 
-## REMOVE-ITEM
+## <a name="remove-item"></a>REMOVE-ITEM
 
 ```powershell
 # Works like any other item type
@@ -113,8 +113,3 @@ Remove-Item C:\Temp\MySymLinkDir
 # Removes the files in the target directory and MySymLinkDir
 Remove-Item C:\Temp\MySymLinkDir -Force
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

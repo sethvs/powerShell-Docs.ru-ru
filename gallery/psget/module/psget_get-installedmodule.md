@@ -1,8 +1,23 @@
-# Get-InstalledModule
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_получение_установленного_модуля"
+ms.technology: powershell
+ms.openlocfilehash: a3c7c96bcb288dcc44aa1e4039d85def4ddb014e
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="get-installedmodule"></a>Get-InstalledModule
 
 Возвращает установленные модули на компьютере.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Get-InstalledModule возвращает модули PowerShell, которые были установлены командлетом Install-Module.
 
@@ -15,16 +30,16 @@
   - Если параметр RequiredVersion не указан, командлет Get-InstalledModule возвращает последнюю версию установленного модуля, которая не ниже указанной минимальной версии, или последнюю версию модуля, если минимальная версия не указана. 
   - Если параметр RequiredVersion указан, Get-InstalledModule возвращает только версию установленного модуля, которая точно совпадает с указанной версией.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Get-InstalledModule -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Get-InstalledModule](http://go.microsoft.com/fwlink/?LinkId=526863)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 
@@ -88,7 +103,7 @@ InstalledLocation          : C:\Program Files\WindowsPowerShell\Modules\DJoin\1.
 
 
 
-## Свойства InstalledDate и UpdatedDate в объекте PSGetRepositoryItemInfo
+## <a name="installeddate-and-updateddate-properties-in-psgetrepositoryiteminfo-object"></a>Свойства InstalledDate и UpdatedDate в объекте PSGetRepositoryItemInfo
 
     During the install operation:
         InstalledDate: current DateTime (Get-Date) value
@@ -114,7 +129,4 @@ Name          InstalledDate         UpdatedDate
 ----          -------------         -----------
 ContosoServer 2/29/2016 11:59:14 AM 2/29/2016 12:00:15 PM
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

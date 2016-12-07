@@ -1,4 +1,19 @@
-# Справочник по командлетам PowerShellGet
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_справочник_по_командлетам"
+ms.technology: powershell
+ms.openlocfilehash: d96506a70861a013b6383b6327225eb341fd164d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="powershellget-cmdlet-reference"></a>Справочник по командлетам PowerShellGet
 
 - [Register-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517129)
 - [Get-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517127)
@@ -25,8 +40,4 @@
 - [Test-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619791)
 - [Update-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619793)
 - [Publish-Script](http://go.microsoft.com/fwlink/?LinkId=619788)
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 5c6f660f9de9039355f3a991da440b75e97275eb
-
+ms.openlocfilehash: 9e5bb79b0d022b85441f5f6aab2f8cce141fe9c1
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Глоссарий Windows PowerShell
+# <a name="windows-powershell-glossary"></a>Глоссарий Windows PowerShell
 
 
 |Термин|Определение|
@@ -60,10 +58,4 @@ ms.openlocfilehash: 5c6f660f9de9039355f3a991da440b75e97275eb
 |файл сценария Windows PowerShell|Файл, имеющий расширение PS1 и содержащий сценарий, который написан на языке Windows PowerShell.|
 |Оснастка Windows PowerShell|Ресурс, определяющий набор командлетов, поставщиков и типов Microsoft .NET Framework, которые можно добавить в среду Windows PowerShell.|
 |Рабочий процесс Windows PowerShell|Рабочий процесс — это последовательность связанных программируемых операций, в ходе которых выполняются длительные задачи или скоординированные действия на нескольких устройствах или управляемых узлах. Рабочий процесс Windows PowerShell позволяет ИТ-специалистам и разработчикам создавать в качестве рабочих процессов последовательности действий управления несколькими устройствами или отдельные задачи в рамках рабочего процесса. Рабочий процесс Windows PowerShell позволяет адаптировать и выполнять в рамках рабочего процесса как сценарии Windows PowerShell, так и файлы XAML.|
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

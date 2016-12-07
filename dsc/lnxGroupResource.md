@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 2139e4462c0568c30b118ef6cb3ceef1717b52e6
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс nxGroup в DSC для Linux
+# <a name="dsc-for-linux-nxgroup-resource"></a>Ресурс nxGroup в DSC для Linux
 
 Ресурс **nxGroup** в DSC PowerShell предоставляет механизм управления локальными группами на узле Linux.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```powershell
 nxGroup <string> #ResourceName
@@ -32,7 +30,7 @@ nxGroup <string> #ResourceName
 
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -44,7 +42,7 @@ nxGroup <string> #ResourceName
 | PreferredGroupID| По возможности задает в качестве идентификатора группы указанное значение. Если этот идентификатор группы сейчас используется, выбирается следующий доступный идентификатор группы.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере удостоверяется, что пользователь monuser существует и является членом группы DBusers.
 
@@ -69,10 +67,4 @@ nxGroup GroupExample{
 }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

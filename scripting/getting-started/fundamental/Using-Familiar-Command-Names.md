@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
-translationtype: Human Translation
-ms.sourcegitcommit: 0c22cc16f5c5becacfc07a6332c0b949f9da40e0
-ms.openlocfilehash: dc235dee1af01c1f3d29118e4824d6a2b49b113a
-
+ms.openlocfilehash: 9db1afb2a90e763ccca1e7ecfcc33c15e87c95e9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="using-familiar-command-names"></a>Использование знакомых имен команд
 Благодаря механизму *присвоения псевдонима* Windows PowerShell позволяет пользователям ссылаться на команды с помощью альтернативных имен. За счет присвоения псевдонима пользователи, обладающие опытом работы с другими оболочками, могут повторно использовать уже известные им общие имена команд для выполнения схожих операций в Windows PowerShell. Хотя мы не намереваемся подробно рассматривать псевдонимы Windows PowerShell, их можно использовать с самого начала работы с Windows PowerShell.
 
@@ -72,10 +70,4 @@ Set-Alias : Alias is not writeable because alias gi is read-only or constant and
 At line:1 char:10
 + Set-Alias  <<<< -Name gi -Value Get-Item
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

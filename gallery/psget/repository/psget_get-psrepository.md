@@ -1,23 +1,38 @@
-# Get-PSRepository
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_получение_репозитория_ps"
+ms.technology: powershell
+ms.openlocfilehash: b1d5172232f0c2916382b6c35093a238f6b2cb4d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="get-psrepository"></a>Get-PSRepository
 
 Возвращает информацию о зарегистрированных репозиториях, которая есть на компьютере.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Get-PSRepository возвращает репозитории модуля PowerShell, зарегистрированные для текущего пользователя на компьютере.
 
 Для каждого зарегистрированного репозитория Get-PSRepository возвращает объект PSRepository, который при необходимости может быть передан в командлет Unregister-PSRepository для отмены регистрации зарегистрированного репозитория.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Get-PSRepository -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Get-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517127)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 
@@ -49,7 +64,4 @@ PSGallery                 Untrusted            https://www.powershellgallery.com
 Get-PSRepository *Gallery*
 
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

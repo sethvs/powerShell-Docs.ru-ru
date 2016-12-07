@@ -8,19 +8,17 @@ contributor: ryanpu
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 37edecc88cf36cfb2f1800452b9586f15ce3a088
-ms.openlocfilehash: bd01ff0d208717511505a1aedf9eeaa303d08dbe
-
+ms.openlocfilehash: 1b054b67bfd7b3660bac134bc8b023baf5644507
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="improvements-to-just-enough-administration-jea"></a>Улучшения Just Enough Administration (JEA)
 
 ## <a name="constrained-file-copy-tofrom-jea-endpoints"></a>Ограниченное копирование файлов в конечные точки JEA и из них
 
 Теперь вы можете удаленно копировать файлы в конечную точку JEA и из нее, не беспокоясь о том, что подключающийся пользователь сможет скопировать *любой* файл в вашей системе.
 Это возможно благодаря настройке подключения диска пользователя в PSSC-файле.
-Диск пользователя — это новый PSDrive, уникальный для каждого подключающегося пользователя; он сохраняется между сеансами.
+Диск пользователя — это новый PSDrive, уникальный для каждого подключающегося пользователя; он сохраняется между сеансами.
 Когда для копирования файлов в сеанс JEA или из него используется Copy-Item, доступ разрешен только на диск пользователя.
 Копировать файлы на другой PSDrive будет невозможно.
 
@@ -93,12 +91,6 @@ RequiredGroups = @{ Or = '2FA-logon', 'smartcard-logon' }
 RequiredGroups = @{ And = 'elevated-jea', @{ Or = '2FA-logon', 'smartcard-logon' }}
 ```
 
-## <a name="fixed-virtual-accounts-are-now-supported-on-windows-server-2008-r2"></a>Исправлено: виртуальные учетные записи теперь поддерживаются в Windows Server 2008 R2
-Теперь в WMF 5.1 вы можете использовать виртуальные учетные записи в Windows Server 2008 R2, включив согласованные конфигурации и паритет функций в Windows Server 2008 R2 — 2016.
-Виртуальные учетные записи по-прежнему не поддерживаются при использовании JEA в Windows 7.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+## <a name="fixed-virtual-accounts-are-now-supported-on-windows-server-2008-r2"></a>Исправлено: виртуальные учетные записи теперь поддерживаются в Windows Server 2008 R2
+Теперь в WMF 5.1 вы можете использовать виртуальные учетные записи в Windows Server 2008 R2, включив согласованные конфигурации и паритет функций в Windows Server 2008 R2 — 2016.
+Виртуальные учетные записи по-прежнему не поддерживаются при использовании JEA в Windows 7.

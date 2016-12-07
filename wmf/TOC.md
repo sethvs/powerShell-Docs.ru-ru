@@ -1,6 +1,6 @@
 # [Обзор Windows Management Framework (WMF)](README.md)
 
-# [WMF 5.1](5.1/release-notes.md)
+# [WMF 5.1](5.1/release-notes.md)
 ## [Новые сценарии и возможности](5.1/scenarios-features.md)
 ### [Усовершенствования в настройке требуемого состояния (DSC)](5.1/DSC-improvements.md)
 ### [Усовершенствования консоли PowerShell](5.1/console-improvements.md)
@@ -8,17 +8,17 @@
 ### [Улучшения в управлении пакетами](5.1/package-management-improvements.md)
 ### [Улучшения в JEA](5.1/jea-improvements.md)
 ### [Командлеты для работы с каталогами](5.1/catalog-cmdlets.md)
-### [Ошибки, исправленные в WMF 5.1](5.1/bugfixes.md)
+### [Ошибки, исправленные в WMF 5.1](5.1/bugfixes.md)
 ## [Установка и настройка](5.1/install-configure.md)
 ## [Известные проблемы](5.1/known-issues.md)
 ## [Совместимость](5.1/Compatibility.md)
 
-# [WMF 5.0](5.0/releasenotes.md)
+# [WMF 5.0](5.0/releasenotes.md)
 ## [Сведения об установке](5.0/requirements.md)
 ## [Известные проблемы и ограничения](5.0/limitation_overview.md)
 ### [Известные проблемы с настройкой требуемого состояния (DSC)](5.0/limitation_dsc.md)
 ## [Состояние совместимости продуктов](5.0/productincompat.md)
-## [Сценарии, поддерживаемые WMF 5.0]()
+## [Сценарии, поддерживаемые WMF 5.0]()
 ### [Just Enough Administration (JEA)](5.0/jea_overview.md)
 #### [Создание конечной точки JEA и подключение к ней](5.0/jea_endpoint.md)
 #### [Отчеты о JEA](5.0/jea_report.md)
@@ -72,7 +72,7 @@
 #### [Командлеты PackageManagement](5.0/oneget_cmdlets.md)
 ### [Обнаружение, установка и инвентаризация модуля PowerShell с помощью PowerShellGet](5.0/psget_module_overview.md)
 #### [Регистрация репозитория PowerShell](5.0/psget_psrepository.md)
-#### [Поддержка параллельных версий в PowerShell 5.0 или более поздней версии](5.0/psget_modulesxsinstall.md)
+#### [Поддержка параллельных версий в PowerShell 5.0 или более поздней версии](5.0/psget_modulesxsinstall.md)
 #### [Установка зависимостей модулей](5.0/psget_moduledependency.md)
 #### [Командлеты PowerShellGet для управления модулями](5.0/psget_modulecmdlets.md)
 ### [Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet](5.0/psget_script_overview.md)
@@ -89,13 +89,8 @@
 #### [New-Guid](5.0/feedback_newguid.md)
 #### [Get-ChildItem получает параметр -Depth](5.0/feedback_getchilditem.md)
 #### [Изменения объекта FileInfo](5.0/feedback_fileinfo.md)
-#### [Поддержка модулей для объявления диапазонов версий (1.* и т. д.)](5.0/feedback_moduleversionranges.md)
+#### [Поддержка модулей для объявления диапазонов версий (1.* и т. д.)](5.0/feedback_moduleversionranges.md)
 ### [Поток информации](5.0/informationstream_overview.md)
 ### [Создание командлетов PowerShell на основе конечной точки OData](5.0/odata_overview.md)
 ### [Управление сетевыми коммутаторами с помощью PowerShell](5.0/networkswitch_overview.md)
 ### [Инвентаризация программного обеспечения (SIL)](5.0/sil_overview.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

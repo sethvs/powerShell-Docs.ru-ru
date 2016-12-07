@@ -1,9 +1,24 @@
-# Начальная загрузка поставщика NuGet и NuGet.exe для операций публикации с одним запросом и начальная загрузка только поставщика NuGet для операций, не относящихся к публикации
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "начальная_загрузка_поставщика_nuget_и_exe"
+ms.technology: powershell
+ms.openlocfilehash: 3ba2289f83f2de5f7be7e4e0cced1988ee17b466
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="bootstrap-both-nuget-provider-and-nugetexe-for-publish-operations-with-single-prompt-message-and-bootstrap-only-nuget-provider-for-non-publish-operations"></a>Начальная загрузка поставщика NuGet и NuGet.exe для операций публикации с одним запросом и начальная загрузка только поставщика NuGet для операций, не относящихся к публикации
 
 Файл NuGet.exe удален из последнего поставщика NuGet. При публикации модуля или скрипта PowerShellGet требуется NuGet.exe для создания и передачи NUPKG-файла в репозиторий. Поставщик NuGet необходим для операций, не относящихся к публикации, таких как поиск, установка, обновление и сохранение.
 Добавлена логика для начальной загрузки поставщика NuGet и NuGet.exe для операций публикации с одним запросом и начальной загрузки только поставщика NuGet для операций, не относящихся к публикации.
 
-## Если поставщик NuGet недоступен
+## <a name="when-nuget-provider-is-not-available"></a>Если поставщик NuGet недоступен
 
 ```powershell                                
 PS C:\windows\system32> find-module -Repository dtlgalleryint -verbose -name contoso
@@ -34,7 +49,7 @@ Version    Name                                Type       Repository           D
 2.5        Contoso                             Module     dtlgalleryint        Contoso module
 ```
 
-## Если поставщик NuGet доступен, а NuGet.exe недоступен во время выполнения операции публикации
+## <a name="when-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation"></a>Если поставщик NuGet доступен, а NuGet.exe недоступен во время выполнения операции публикации
 
 ```powershell
 PS C:\windows\system32> Publish-Module -Name Contoso -Repository LocalRepo -Verbose
@@ -58,7 +73,7 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'C:\LocalGallery'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
                    
-## Если и поставщик NuGet, и NuGet.exe недоступны во время выполнения операции публикации
+## <a name="when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation"></a>Если и поставщик NuGet, и NuGet.exe недоступны во время выполнения операции публикации
 
 ```powershell
 PS C:\windows\system32> Publish-Module -Name Contoso -Repository LocalRepo -Verbose
@@ -83,7 +98,4 @@ VERBOSE: Installing NuGet provider.
 VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'C:\LocalGallery'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

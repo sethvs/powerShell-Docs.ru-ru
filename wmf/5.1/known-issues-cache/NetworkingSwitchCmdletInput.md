@@ -1,13 +1,11 @@
 ---
 title: "Сбой командлетов диспетчера сетевых коммутаторов"
 contributor: vaibch
-translationtype: Human Translation
-ms.sourcegitcommit: 34337749a77f4379b841a8478d4e6e3bc97e7ada
-ms.openlocfilehash: 180158033e0c960f73dba66a3d77b15765e3e382
-
+ms.openlocfilehash: e32e31762b665a7e2c6f6938fe494cb6127d4264
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-Командлеты диспетчера сетевых коммутаторов можно использовать для управления сетевыми коммутаторами по WSMAN. Несколько командлетов этого модуля могут принимать значения из конвейеров. В WMF 5.1 Preview командлеты, которые принимают значение из конвейера, не могут быть выполнены, если значения не переданы через конвейеры.
+Командлеты диспетчера сетевых коммутаторов можно использовать для управления сетевыми коммутаторами по WSMAN. Несколько командлетов этого модуля могут принимать значения из конвейеров. В WMF 5.1 Preview командлеты, которые принимают значение из конвейера, не могут быть выполнены, если значения не переданы через конвейеры.
 
 Если параметр InputObject не используется, командлет должен по-прежнему работать без сбоев.
 
@@ -24,7 +22,7 @@ ms.openlocfilehash: 180158033e0c960f73dba66a3d77b15765e3e382
 - Remove-NetworkSwitchVlan
 - Set-NetworkSwitchVlanProperty
 
-### Разрешение
+### <a name="resolution"></a>Разрешение
 Командлеты работают нормально, если значение параметра InputObject передается через конвейер. Ниже приведены примеры, подходящие для командлетов выше.
 
 - Disable-NetworkSwitchEthernetPort
@@ -77,9 +75,3 @@ $properties = @{Caption = "New Caption"}
 $vlan = Get-CimInstance -ClassName CIM_NetworkVlan -Namespace root/interop -CimSession $cimSession | Select-Object -First 1
 $vlan | Set-NetworkSwitchVlanProperty -Property $properties -CimSession $cimSession
 ```
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

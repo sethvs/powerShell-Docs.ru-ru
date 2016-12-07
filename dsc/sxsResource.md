@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 01720794aa1d200428c2729463fba92970f9cb56
-ms.openlocfilehash: 716ecd9b14976dd70b69a740850ab53670387956
-
+ms.openlocfilehash: a3f2cf37eb185124d73443bbe42b5fcc82034f15
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Использование ресурсов с несколькими версиями
+# <a name="using-resources-with-multiple-versions"></a>Использование ресурсов с несколькими версиями
 
 > Область применения: Windows PowerShell 5.0
 
-В PowerShell 5.0 ресурсы DSC могут иметь несколько версий, и эти версии можно устанавливать на компьютере параллельно. Это реализуется благодаря наличию нескольких версий модуля ресурсов, которые содержатся в одной папке модуля.
+В PowerShell 5.0 ресурсы DSC могут иметь несколько версий, и эти версии можно устанавливать на компьютере параллельно. Это реализуется благодаря наличию нескольких версий модуля ресурсов, которые содержатся в одной папке модуля.
 
-## Параллельная установка нескольких версий ресурса
+## <a name="installing-multiple-resource-versions-side-by-side"></a>Параллельная установка нескольких версий ресурса
 
 Параметры **MinimumVersion**, **MaximumVersion** и **RequiredVersion** командлета [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) можно использовать, чтобы указать версию модуля для установки. Вызов командлета **Install-Module** без указания версии устанавливает последнюю версию.
 
@@ -46,7 +44,7 @@ PowerShell      xCluster                  xFailOverCluster               1.1    
 PowerShell      xCluster                  xFailOverCluster               1.2.0.0    {DomainAdministratorCredential, Name, ...
 ```
 
-## Указание версии ресурса в конфигурации
+## <a name="specifying-a-resource-version-in-a-configuration"></a>Указание версии ресурса в конфигурации
 
 Если имеется несколько ресурсов, установленных на компьютере, необходимо указать версию нужного ресурса при его использовании в конфигурации. Это делается путем указания параметра **ModuleVersion** ключевого слова **Import-DscResource**. Если не указать версию модуля ресурсов для ресурса, имеющего несколько установленных версий, конфигурация породит ошибку.
 
@@ -69,7 +67,7 @@ configuration VersionTest
 }     
 ```
 
->Примечание. Параметр ModuleVersion ключевого слова Import-DscResource недоступен в PowerShell 4.0. В PowerShell 4.0 версию модуля можно задать, передав объект спецификации модуля в параметр ModuleName ключевого слова Import-DscResource. Объект спецификации модуля представляет собой хэш-таблицу, содержащую ключи ModuleName и RequiredVersion. Например:
+>Примечание. Параметр ModuleVersion ключевого слова Import-DscResource недоступен в PowerShell 4.0. В PowerShell 4.0 версию модуля можно задать, передав объект спецификации модуля в параметр ModuleName ключевого слова Import-DscResource. Объект спецификации модуля представляет собой хэш-таблицу, содержащую ключи ModuleName и RequiredVersion. Например:
 
 ```powershell
 configuration VersionTest
@@ -88,15 +86,9 @@ configuration VersionTest
 }     
 ```
 
-Этот способ также будет работать в PowerShell 5.0, однако рекомендуется использовать параметр **ModuleVersion**.
+Этот способ также будет работать в PowerShell 5.0, однако рекомендуется использовать параметр **ModuleVersion**.
 
-## См. также:
+## <a name="see-also"></a>См. также:
 * [Конфигурации DSC](configurations.md)
 * [Ресурсы DSC](resources.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

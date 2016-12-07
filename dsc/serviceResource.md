@@ -7,20 +7,18 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: bda348e6597f31b8dfa2014e5c34c5d3bc7bca15
-ms.openlocfilehash: 10123359213df7180388d9251e032c2bbb673143
-
+ms.openlocfilehash: 6c1dce6a3f1b801f7bdf5bf778df8033e3d76280
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Service в DSC
+# <a name="dsc-service-resource"></a>Ресурс Service в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 
 Ресурс **Service** в DSC Windows PowerShell предоставляет механизм управления службами на целевом узле.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Service [string] #ResourceName
@@ -38,7 +36,7 @@ Service [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -53,7 +51,7 @@ Service [string] #ResourceName
 | Ensure | Указывает, имеется ли целевая служба в системе. Если целевая служба не должна существовать, укажите для этого свойства значение **Absent**. Если целевая служба должна существовать, укажите значение **Present** (используется по умолчанию).|
 | путь | Указывает путь к двоичному файлу для новой службы.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 ```powershell
 configuration ServiceTest
@@ -71,10 +69,4 @@ configuration ServiceTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

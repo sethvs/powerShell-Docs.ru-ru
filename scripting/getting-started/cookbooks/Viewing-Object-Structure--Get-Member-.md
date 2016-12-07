@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: acd52c1271013320dafa7f7bf5c72b752e07574b
-
+ms.openlocfilehash: 041b58f5fcfdf2225704adcb943de864c94502c1
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# <a name="viewing-object-structure-getmember"></a>Просмотр структуры объектов (Get-Member)
+# <a name="viewing-object-structure-get-member"></a>Просмотр структуры объектов (Get-Member)
 Поскольку объекты играют ключевую роль в Windows PowerShell, существует несколько собственных команд для работы с произвольными типами объектов. Наиболее важной является команда **Get-Member**.
 
 Объекты, возвращаемые командой, проще всего проанализировать, передав ее выходные данные в командлет **Get-Member**. Командлет **Get-Member** показывает формальное имя типа объекта и полный список его элементов. Количество возвращаемых элементов иногда может быть просто огромным. Например, объект процесса может иметь более ста элементов.
@@ -73,10 +71,4 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 > Windows PowerShell определяет способ отображения типа объекта с помощью сведений, хранящихся в XML-файлах, имена которых заканчиваются на .format.ps1xml. Данные форматирования для объектов процессов, которые являются объектами System.Diagnostics.Process .NET, хранятся в PowerShellCore.format.ps1xml.
 
 Если требуется просмотреть свойства, отличные от отображаемых Windows PowerShell по умолчанию, необходимо самостоятельно отформатировать выходные данные. Это можно сделать с помощью командлетов форматирования.
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

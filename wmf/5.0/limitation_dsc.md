@@ -33,7 +33,7 @@ Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 ```
 
 
-<a name="lcm-can-go-into-an-unstable-state-while-using-getdscconfiguration-in-debugmode"></a>LCM может перейти в нестабильное состояние при использовании Get-DscConfiguration в DebugMode
+<a name="lcm-can-go-into-an-unstable-state-while-using-get-dscconfiguration-in-debugmode"></a>LCM может перейти в нестабильное состояние при использовании Get-DscConfiguration в DebugMode
 -------------------------------------------------------------------------------
 
 Когда LCM находится в режиме DebugMode, нажатие клавиш CTRL+C для остановки обработки Get-DscConfiguration может привести к переключению LCM в нестабильное состояние, в котором не работает большинство командлетов DSC.
@@ -41,7 +41,7 @@ Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 **Решение.** Не нажимайте клавиши CTRL+C во время отладки командлет Get-DscConfiguration.
 
 
-<a name="stopdscconfiguration-may-hang-in-debugmode"></a>STOP-DscConfiguration может зависнуть в DebugMode
+<a name="stop-dscconfiguration-may-hang-in-debugmode"></a>STOP-DscConfiguration может зависнуть в DebugMode
 ------------------------------------------------------------------------------------------------------------------------
 Когда LCM находится в DebugMode, может зависнуть Stop-DscConfiguration при попытке остановить операцию, запущенную Get-DscConfiguration.
 
@@ -55,27 +55,27 @@ Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 **Решение.** Отключите *DebugMode* для просмотра подробных сообщений из ресурсов.
 
 
-<a name="invokedscresource-operations-cannot-be-retrieved-by-getdscconfigurationstatus-cmdlet"></a>Командлету Get-DscConfigurationStatus не удается получить операции Invoke-DscResource
+<a name="invoke-dscresource-operations-cannot-be-retrieved-by-get-dscconfigurationstatus-cmdlet"></a>Командлету Get-DscConfigurationStatus не удается получить операции Invoke-DscResource
 --------------------------------------------------------------------------------------
 После использования командлета Invoke-DscResource для прямого вызова методов любого ресурса позднее записи такой операции не удается извлечь с помощью Get-DscConfigurationStatus.
 
 **Решение.** Отсутствует.
 
 
-<a name="getdscconfigurationstatus-returns-pull-cycle-operations-as-type-consistency"></a>Get-DscConfigurationStatus возвращает операции цикла извлечения с типом *Consistency*
+<a name="get-dscconfigurationstatus-returns-pull-cycle-operations-as-type-consistency"></a>Get-DscConfigurationStatus возвращает операции цикла извлечения с типом *Consistency*
 ---------------------------------------------------------------------------------
 Когда узел переведен в режим обновления PULL, для каждой выполненной операции извлечения командлет Get-DscConfigurationStatus сообщает тип операции, как *Consistency*, а не *Initial*.
 
 **Решение.** Отсутствует.
 
-<a name="invokedscresource-cmdlet-does-not-return-message-in-the-order-they-were-produced"></a>Командлет Invoke-DscResource не возвращает сообщения в том порядке, в котором они были созданы
+<a name="invoke-dscresource-cmdlet-does-not-return-message-in-the-order-they-were-produced"></a>Командлет Invoke-DscResource не возвращает сообщения в том порядке, в котором они были созданы
 ---------------------------------------------------------------------------------
 Командлет Invoke-DscResource не возвращает подробные сообщения, предупреждения и сообщения об ошибках в том порядке, в котором они были созданы LCM или ресурсом DSC.
 
 **Решение.** Отсутствует.
 
 
-<a name="dsc-resources-cannot-be-debugged-easily-when-used-with-invokedscresource"></a>Невозможна простая отладка ресурсов DSC при использовании Invoke-DscResource
+<a name="dsc-resources-cannot-be-debugged-easily-when-used-with-invoke-dscresource"></a>Невозможна простая отладка ресурсов DSC при использовании Invoke-DscResource
 -----------------------------------------------------------------------
 Когда LCM работает в режиме отладки (дополнительные сведения см. в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource)), командлет Invoke-DscResource не предоставляет сведения о пространстве выполнения, к которому требуется подключиться для отладки.
 **Решение.** Найдите пространство выполнения и подключитесь к нему с помощью командлетов **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** и **Debug-Runspace** для отладки ресурса DSC.
@@ -114,7 +114,7 @@ Debug-Runspace -Id 2
 **Решение.** Используйте разные имена для одинаковых ресурсов в различных неполных конфигурациях.
 
 
-<a name="startdscconfiguration-useexisting-does-not-work-with-credential"></a>Start-DscConfiguration –UseExisting не работает с параметром -Credential
+<a name="start-dscconfiguration-useexisting-does-not-work-with--credential"></a>Start-DscConfiguration –UseExisting не работает с параметром -Credential
 ------------------------------------------------------------------
 
 При использовании Start-DscConfiguration с параметром –UseExisting параметр –Credential игнорируется. DSC использует удостоверение процесса по умолчанию для продолжения операции. Это вызывает ошибку, если для продолжения работы на удаленном узле требуются другие учетные данные.
@@ -133,14 +133,14 @@ Start-DscConfiguration -UseExisting -CimSession $session
 **Решение.** Отсутствует.
 
 
-<a name="debugging-of-classbased-dsc-resources"></a>Отладка ресурсов DSC, основанных на классах
+<a name="debugging-of-class-based-dsc-resources"></a>Отладка ресурсов DSC, основанных на классах
 --------------------------------------
 В этом выпуске отладка ресурсов DSC на основе классов не поддерживается.
 
 **Решение.** Отсутствует.
 
 
-<a name="variables-functions-defined-in-script-scope-in-dsc-classbased-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC 
+<a name="variables-functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC 
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Несколько последовательных вызовов Start-DSCConfiguration завершаются ошибкой, если конфигурация использует любой ресурс на основе класса, у которого переменные или функции определены в области $script.
@@ -161,19 +161,19 @@ Start-DscConfiguration -UseExisting -CimSession $session
 **Решение.** Используйте свойство Credential, если оно доступно. Например, ServiceSet и WindowsFeatureSet.
 
 
-<a name="getdscresource-syntax-does-not-reflect-psdscrunascredential-correctly"></a>*Get-DscResource -Syntax* неправильно отражает PsDscRunAsCredential
+<a name="get-dscresource--syntax-does-not-reflect-psdscrunascredential-correctly"></a>*Get-DscResource -Syntax* неправильно отражает PsDscRunAsCredential
 -------------------------------------------------------------------------
 Get-DscResource -Synta отражает PsDscRunAsCredential неправильно, когда ресурс помечает его как обязательный или не поддерживает его.
 
 **Решение.** Отсутствует. Однако создание конфигурации в интегрированной среде сценариев отражает правильные метаданные о свойстве PsDscRunAsCredential при использовании технологии IntelliSense.
 
 
-<a name="windowsoptionalfeature-is-not-available-in-windows-7"></a>WindowsOptionalFeature недоступен в Windows 7
+<a name="windowsoptionalfeature-is-not-available-in-windows-7"></a>WindowsOptionalFeature недоступен в Windows 7
 -----------------------------------------------------
 
-Ресурс DSC WindowsOptionalFeature недоступен в Windows 7. Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.
+Ресурс DSC WindowsOptionalFeature недоступен в Windows 7. Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.
 
-<a name="for-classbased-dsc-resources-importdscresource-moduleversion-may-not-work-as-expected"></a>Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось   
+<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a>Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось   
 ------------------------------------------------------------------------------------------
 Если у узла компиляции нескольких версий модуля ресурса DSC на основе класса, `Import-DscResource -ModuleVersion` не может получить указанную версию и вызывает следующую ошибку компиляции.
 
@@ -226,8 +226,3 @@ Configuration $configName
     }
 }
 ```
-
-
-<!--HONumber=Nov16_HO2-->
-
-

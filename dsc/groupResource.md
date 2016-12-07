@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: f6e33f82f495a89a4aa28c64b7974c170d50cfe1
-ms.openlocfilehash: 446c9036989c47c03664d978a1dea4e0234ada8d
-
+ms.openlocfilehash: 12c6ad6f30b4e1b67296289c927e59fd64079675
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Group в DSC
+# <a name="dsc-group-resource"></a>Ресурс Group в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс Group в DSC Windows PowerShell предоставляет механизм управления локальными группами на целевом узле.
 
-##Синтаксис##
+##<a name="syntax"></a>Синтаксис##
 ```
 Group [string] #ResourceName
 {
@@ -34,7 +32,7 @@ Group [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -47,7 +45,7 @@ Group [string] #ResourceName
 | MembersToInclude| Это свойство используется для добавления участников в существующее членство в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-## Пример 1
+## <a name="example-1"></a>Пример 1
 
 Следующий пример показывает, как проверить, что группа с именем TestGroup не существует. 
 
@@ -60,7 +58,7 @@ Group GroupExample
     GroupName = "TestGroup"
 }
 ```
-## Пример 2.
+## <a name="example-2"></a>Пример 2.
 Следующий пример демонстрирует добавление пользователя Active Directory в группу локальных администраторов в лабораторной сборке с несколькими компьютерами, в которой уже используется объект PSCredential для учетной записи локального администратора. Поскольку этот объект также используется для учетной записи администратора домена (после повышения роли домена), нам потребуется преобразовать этот существующий объект PSCredential в понятные учетные данные домена, чтобы можно было добавить пользователя домена в группу локальных администраторов на рядовом сервере.
 
 ```powershell
@@ -89,10 +87,4 @@ Group AddADUserToLocalAdminGroup
             PsDscRunAsCredential = $DCredential
         }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: ceec1038516ddd4c29df770d14981c0a69437498
-
+ms.openlocfilehash: da02415aaaf0e308abb3a9c96bb19591701e3408
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Приложение 2. Создание настраиваемого ярлыка PowerShell
+# <a name="appendix-2---creating-a-custom-powershell-shortcut"></a>Приложение 2. Создание настраиваемого ярлыка PowerShell
 Следующая процедура описывает создание ярлыка для Windows PowerShell, в котором уже заданы нужные параметры.
 
 1.  Создайте ярлык, указывающий на Powershell.exe.
@@ -42,10 +40,4 @@ ms.openlocfilehash: ceec1038516ddd4c29df770d14981c0a69437498
 11. Если вы хотите, чтобы при открытии консоль располагалась в определенной точке на рабочем столе, снимите флажок **Автоматический выбор** в разделе **Положение окна**, а затем измените значения в полях **Слева** и **Сверху** раздела **Положение окна**.
 
 12. Нажмите кнопку **ОК**.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

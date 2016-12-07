@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: bf36abde6a3bfff4c2e49868465e089cc886d031
-ms.openlocfilehash: 45fe96c43a834566d398820e3d94e3be923bb385
-
+ms.openlocfilehash: 6e5ea98febfe7541f35a84c37df73df580654340
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс DSC GroupSet
+# <a name="dsc-groupset-resource"></a>Ресурс DSC GroupSet
 
 > Область применения: Windows PowerShell 5.0
 
@@ -21,7 +19,7 @@ ms.openlocfilehash: 45fe96c43a834566d398820e3d94e3be923bb385
 
 Используйте этот ресурс, если необходимо добавить один и тот же список участников в несколько групп или удалить его из нескольких групп, а также если необходимо удалить или добавить несколько групп с одинаковым списком участников.
 
-##Синтаксис##
+##<a name="syntax"></a>Синтаксис##
 ```
 Group [string] #ResourceName
 {
@@ -34,7 +32,7 @@ Group [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -46,7 +44,7 @@ Group [string] #ResourceName
 | MembersToInclude| Это свойство используется для добавления участников в существующее членство в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-## Пример 1
+## <a name="example-1"></a>Пример 1
 
 В приведенном ниже примере показано, как обеспечить существование двух групп: myGroup и myOtherGroup. 
 
@@ -81,11 +79,5 @@ GroupSetTest -ConfigurationData $cd
 ```
 
 >**Примечание**. Для простоты в этом примере используются учетные данные в виде обычного текста. Сведения о шифровании учетных данных в MOF-файле конфигурации см. в разделе [Защита MOF-файла](secureMOF.md).
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

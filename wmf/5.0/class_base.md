@@ -1,4 +1,4 @@
-# Объявление базового класса
+# <a name="declare-base-class"></a>Объявление базового класса
 Класс можно объявить Windows PowerShell в качестве базового типа для другого класса Windows PowerShell.
 
 ```PowerShell
@@ -29,7 +29,3 @@ $list.Add(100)
 
 $list[0] # return 100
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

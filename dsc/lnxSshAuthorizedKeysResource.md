@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: edc906b4e9c925320c4ed00c5ab295189066ccb9
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс nxSshAuthorizedKeys в DSC для Linux
+# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a>Ресурс nxSshAuthorizedKeys в DSC для Linux
 
 Ресурс **NxAuthorizedKeys** в DSC PowerShell обеспечивает механизм управления авторизованными SSH-ключами для указанного пользователя.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxAuthorizedKeys <string> #ResourceName
@@ -31,7 +29,7 @@ nxAuthorizedKeys <string> #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -41,7 +39,7 @@ nxAuthorizedKeys <string> #ResourceName
 | Клавиши| Указывает содержимое ключа Требуется, если свойство **Ensure** имеет значение Present.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере определяется общедоступный авторизованный SSH-ключ для пользователя monuser.
 
@@ -58,10 +56,4 @@ nxSshAuthorizedKeys myKey{
 } 
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

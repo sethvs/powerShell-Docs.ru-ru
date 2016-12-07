@@ -1,4 +1,4 @@
-# Поддержка модулей для объявления диапазонов версий (1.* и т. д.)
+# <a name="modules-support-for-declaring-version-ranges-1-etc"></a>Поддержка модулей для объявления диапазонов версий (1.* и т. д.)
 В сочетании с **-MinimumVersion** **-MaximumVersion** дает пользователю возможность получения и импорта модуля в пределах определенного диапазона. Параметр также поддерживает **.***. В следующем примере показано, как это работает:
 
 ```PowerShell
@@ -14,8 +14,3 @@ VERBOSE: Importing cmdlet 'Set-PSReadlineKeyHandler'.
 VERBOSE: Importing cmdlet 'Set-PSReadlineOption'.
 VERBOSE: Importing function 'PSConsoleHostReadline'.
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

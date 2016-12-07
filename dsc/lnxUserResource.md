@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 7813185313845b74e2a37dfa4ec6bb109f32f0eb
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс nxUser в DSC для Linux
+# <a name="dsc-for-linux-nxuser-resource"></a>Ресурс nxUser в DSC для Linux
 
 Ресурс **nxUser** в DSC PowerShell предоставляет механизм управления локальными пользователями на узле Linux.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxUser <string> #ResourceName
@@ -37,7 +35,7 @@ nxUser <string> #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Указывает имя учетной записи, для которой требуется обеспечить определенное состояние. | 
 |---|---|
@@ -52,7 +50,7 @@ nxUser <string> #ResourceName
 | GroupID| ИД основной группы пользователя.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — ResourceName, а его тип — ResourceType, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере проверяется, что пользователь monuser существует и является членом группы DBusers.
 
@@ -76,10 +74,4 @@ nxGroup GroupExample{
 }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

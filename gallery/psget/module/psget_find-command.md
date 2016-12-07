@@ -1,8 +1,23 @@
-# Find-Command
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_нахождение_команды"
+ms.technology: powershell
+ms.openlocfilehash: 99091130ea89023495e5e3aacafb292f67f2db30
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="find-command"></a>Find-Command
 
 Ищет команды PowerShell в модулях.
 
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-Command ищет команды PowerShell, такие как командлеты, псевдонимы, функции и рабочие процессы. Find-Command ищет их в модулях из зарегистрированных репозиториев.
 Для каждой команды, им обнаруженной, он возвращает объект PSGetCommandInfo. Вы можете передать объект PSGetCommandInfo в командлет Install-Module для установки модуля, содержащего конкретную команду.
 
@@ -15,16 +30,16 @@
 - Find-Command позволяет фильтровать язык поиска для определенного репозитория при помощи параметра -Filter.
 - Find-Command может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Command -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-Command](http://go.microsoft.com/fwlink/?LinkId=733636)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 
 # Find a specific command
@@ -66,7 +81,4 @@ Find-Command -Filter RBAC
 Find-Command -Tag Azure, DSC
 
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

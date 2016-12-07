@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: b414a01bcd111143791a5fac77e61ce309a0a5c5
-ms.openlocfilehash: b5de1100450a89796c20a5bbb2e71f7759374b02
-
+ms.openlocfilehash: a8c2094cbef1bb14c4a9082ff78fae78ec0c2e65
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Написание пользовательских ресурсов DSC с использованием классов PowerShell
+# <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>Написание пользовательских ресурсов DSC с использованием классов PowerShell
 
 > Область применения: Windows PowerShell 5.0
 
@@ -25,7 +23,7 @@ ms.openlocfilehash: b5de1100450a89796c20a5bbb2e71f7759374b02
 
 Дополнительные сведения о ресурсах DSC см. в статье [Создание настраиваемых ресурсов для настройки требуемого состояния Windows PowerShell](authoringResource.md).
 
-## Структура папок для ресурса класса
+## <a name="folder-structure-for-a-class-resource"></a>Структура папок для ресурса класса
 
 Для реализации настраиваемого ресурса DSC с помощью класса PowerShell создайте указанную ниже структуру папок. Класс определяется в файле **MyDscResource.psm1**, а манифест модуля — в файле **MyDscResource.psd1**.
 
@@ -36,7 +34,7 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
            MyDscResource.psd1 
 ```
 
-## Создание класса
+## <a name="create-the-class"></a>Создание класса
 
 Для создания класса PowerShell необходимо ключевое слово class. Чтобы указать, что класс является ресурсом DSC, используйте атрибут **DscResource()**. Имя класса — это имя ресурса DSC.
 
@@ -46,7 +44,7 @@ class FileResource {
 }
 ```
 
-### Объявление свойств
+### <a name="declare-properties"></a>Объявление свойств
 
 Схема ресурсов DSC определяется как свойства класса. Необходимо объявить три свойства описанным ниже образом.
 
@@ -81,7 +79,7 @@ enum Ensure
 }
 ```
 
-### Реализация методов
+### <a name="implementing-the-methods"></a>Реализация методов
 
 Методы **Get()**, **Set()** и **Test()** эквивалентны функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.
 
@@ -218,7 +216,7 @@ enum Ensure
     }
 ```
 
-### Полный файл
+### <a name="the-complete-file"></a>Полный файл
 Полный файл класса:
 
 ```powershell
@@ -417,7 +415,7 @@ class FileResource
 ```
 
 
-## Создание манифеста
+## <a name="create-a-manifest"></a>Создание манифеста
 
 Чтобы сделать ресурс на основе класса доступным для модуля DSC, необходимо добавить в файл манифеста оператор **DscResourcesToExport**, который указывает модулю, что нужно экспортировать этот ресурс. Наш манифест выглядит следующим образом:
 
@@ -455,7 +453,7 @@ PowerShellVersion = '5.0'
 } 
 ```
 
-## Тестирование ресурса
+## <a name="test-the-resource"></a>Тестирование ресурса
 
 Сохранив файлы класса и манифеста в структуру папок, как описано выше, вы можете создать конфигурацию, использующую новый ресурс. Инструкции по запуску конфигурации DSC см. в статье [Активирование конфигураций](enactingConfigurations.md). Следующая конфигурация будет проверять, существует ли файл `c:\test\test.txt`, и, если его нет, копировать файл из `c:\test.txt` (необходимо создать файл `c:\test.txt` перед запуском конфигурации).
 
@@ -474,13 +472,7 @@ Test
 Start-DscConfiguration -Wait -Force Test
 ```
 
-## См. также
-### Концепции
-[Создание пользовательских ресурсов настройки требуемого состояния Windows PowerShell](authoringResource.md)
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
+## <a name="see-also"></a>См. также
+### <a name="concepts"></a>Концепции
+[Создание пользовательских ресурсов DSC Windows PowerShell](authoringResource.md)
 

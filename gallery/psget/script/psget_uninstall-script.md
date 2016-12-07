@@ -1,21 +1,36 @@
-# Uninstall-Script
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_удаление_скрипта"
+ms.technology: powershell
+ms.openlocfilehash: 9cc6ee62720bfca858e7f783753adabe8a53fb29
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="uninstall-script"></a>Uninstall-Script
 
 Удаляет файл сценария, который был установлен с помощью PowerShellGet.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Uninstall-Script удаляет указанные файлы сценариев, которые были установлены в сетевом репозитории.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Uninstall-Script -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Uninstall-Script](http://go.microsoft.com/fwlink/?LinkId=619789)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 Get-InstalledScript | Uninstall-Script -WhatIf
@@ -55,8 +70,4 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm
 + CategoryInfo : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
 + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

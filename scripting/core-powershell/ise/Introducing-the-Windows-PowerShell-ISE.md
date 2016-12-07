@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: a0de70ca-909a-4807-94d1-6da86e5b52a0
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 07ec87200c8cc2db2c4d5695a2ca32a63bc470c8
-
+ms.openlocfilehash: e12348d8230549766a04d9995acaaee7213d8808
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Введение в интегрированную среду сценариев Windows PowerShell
+# <a name="introducing-the-windows-powershell-ise"></a>Введение в интегрированную среду сценариев Windows PowerShell
 Интегрированная среда сценариев Windows PowerShell (ISE) является ведущим приложением для Windows PowerShell. В интегрированной среде сценариев Windows PowerShell можно запускать команды, а также записывать, тестировать и выполнять отладку в одном графическом пользовательском интерфейсе на основе Windows с редактированием нескольких строк, заполнением нажатием клавиши TAB, раскраской синтаксических конструкций, выборочным выполнением, контекстной справкой и поддержкой письма справа налево.
 Пункты меню и сочетания клавиш можно использовать для выполнения большинства тех же задач, которые выполняются в Windows PowerShell.  Например, при отладке сценария в интегрированной среде сценариев Windows PowerShell, чтобы задать точку останова строки, щелкните правой кнопкой мыши строку кода, а затем нажмите кнопку **Точка останова**.
 
@@ -28,21 +26,15 @@ ms.openlocfilehash: 07ec87200c8cc2db2c4d5695a2ca32a63bc470c8
 
 Интегрированная среда сценариев Windows PowerShell позволяет настроить некоторые аспекты его представления. Он также содержит собственный профиль Windows PowerShell, в котором можно хранить функции, псевдонимы, переменные и команды, используемые в интегрированной среде сценариев Windows PowerShell.
 
-### Запуск интегрированной среды сценариев Windows PowerShell
+### <a name="to-start-the-windows-powershell-ise"></a>Запуск интегрированной среды сценариев Windows PowerShell
 
 1.  Выполните одно из следующих действий.
 
-    -   Нажмите кнопку **Пуск**, откройте **Все программы**, **Windows PowerShell V2** и щелкните **Интегрированная среда сценариев Windows PowerShell**.
+    -   Нажмите кнопку **Пуск**, откройте **Все программы**, **Windows PowerShell V2** и щелкните **Интегрированная среда сценариев Windows PowerShell**.
 
     -   В Cmd.exe консоли Windows PowerShell или в поле "Выполнить" введите **powershell_ise.exe**.
 
-### Получение справки в интегрированной среде сценариев Windows PowerShell
+### <a name="to-get-help-in-the-windows-powershell-ise"></a>Получение справки в интегрированной среде сценариев Windows PowerShell
 
 -   В меню **Справка** выберите **Справка Windows PowerShell**. Также можно нажать клавишу F1. В открывшемся файле будет описана интегрированная среда сценариев Windows PowerShell и служба Windows PowerShell, в том числе вся справка, доступная с помощью командлета Get-Help.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

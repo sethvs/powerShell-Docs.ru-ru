@@ -1,21 +1,36 @@
-# Save-Module
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_сохранение_модуля"
+ms.technology: powershell
+ms.openlocfilehash: 9e83f1eeeb8e4bee666aeb845702f6562a487d6b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="save-module"></a>Save-Module
 
 Сохраняет модуль локально без его установки.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Save-Module сохраняет модуль локально из указанного репозитория для проверки. Модуль не устанавливается.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Save-Module -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Save-Module](http://go.microsoft.com/fwlink/?LinkId=531351)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 Save-Module -Repository MSPSGallery -Name ModuleWithDependencies2 -Path C:\MySavedModuleLocation
@@ -43,8 +58,4 @@ Find-Command -Name "Get-NestedRequiredModule4" -Repository "INT" | Save-Module -
 Find-RoleCapability -Name Maintenance,MyJeaRole | Save-Module -Path C:\MyModulesPath
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 
