@@ -1,21 +1,36 @@
-# Set-PSRepository
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_задание_репозитория_ps"
+ms.technology: powershell
+ms.openlocfilehash: be2c16a79a3e6873c0f7a364092def881d490091
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="set-psrepository"></a>Set-PSRepository
 
 Set-PSRepository задает значения для зарегистрированного репозитория.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Set-PSRepository задает значения для зарегистрированного репозитория модулей.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Set-PSRepository -Module PowerShellGet -Syntax
 ```
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Set-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517128)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 PS C:\> Register-PSRepository -Name myRepository -SourceLocation "https://www.myget.org/F/powershellgetdemo/api/v2" -InstallationPolicy Trusted
@@ -34,7 +49,7 @@ myRepository              Untrusted            https://www.myget.org/F/powershel
 ```
 
 
-### Командлет Set-PSRepository с поддержкой совместного использования скриптов
+### <a name="set-psrepository-cmdlet-with-script-sharing-support"></a>Командлет Set-PSRepository с поддержкой совместного использования скриптов
 
 Используйте командлеты Set-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.
 ```powershell
@@ -57,8 +72,4 @@ ScriptPublishLocation : https://MyGallery.com/api/v2/package/
 ProviderOptions : {}
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: f4dc0265246195cc2320bcaf9d7f9abf7b1405a3
-ms.openlocfilehash: becacd2dcbc6fd0edd9154a45342edc5c536935b
-
+ms.openlocfilehash: 099755bf8dc41adfedf77de451dbcdf390c298e9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Запись поддержки конфигураций DSC
+# <a name="writing-help-for-dsc-configurations"></a>Запись поддержки конфигураций DSC
 
 >Область применения: Windows PowerShell 5.0
 
@@ -63,7 +61,7 @@ configuration HelpSample1
 }
 ```
 
-## Просмотр справки по конфигурации
+## <a name="viewing-configuration-help"></a>Просмотр справки по конфигурации
 
 Для просмотра справки по конфигурации используйте командлет **Get-Help** с именем функции или введите имя функции и `-?`. Ниже приведены выходные данные предыдущей функции при передаче в **Get-Help**.
 
@@ -94,12 +92,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 * [Конфигурации DSC](configurations.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

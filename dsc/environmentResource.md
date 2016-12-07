@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 20a7711604033b5ff1484dbb526df2642a9a1738
-
+ms.openlocfilehash: 4a51b56091aea23568674cdc7d4d4128c78b239c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Environment в DSC
+# <a name="dsc-environment-resource"></a>Ресурс Environment в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс __Environment__ в DSC Windows PowerShell предоставляет механизм управления системными переменными среды.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 ``` mof
 Environment [string] #ResourceName
 {
@@ -31,7 +29,7 @@ Environment [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -41,7 +39,7 @@ Environment [string] #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | Значение| Значение, которое нужно присвоить переменной среды.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере проверяется, существует ли переменная __TestEnvironmentVariable__ и имеет ли она значение __TestValue__. Если переменная не существует, она создается.
 
@@ -53,10 +51,4 @@ Environment EnvironmentExample
     Value = "TestValue"
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

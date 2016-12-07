@@ -1,8 +1,23 @@
-# Get-InstalledScript
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_получение_установленного_скрипта"
+ms.technology: powershell
+ms.openlocfilehash: d755ed5dbcee279f943d56832ffd7689e4cc6f04
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="get-installedscript"></a>Get-InstalledScript
 
 Возвращает установленные сценарии на компьютере.
 
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Get-InstalledScript возвращает установленные на компьютере сценарии PowerShell.
 
@@ -15,17 +30,17 @@
   - Если параметр RequiredVersion не указан, командлет Get-InstalledScript возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана. 
   - Если параметр RequiredVersion указан, Get-InstalledScript возвращает только версию установленного сценария, которая точно совпадает с указанной версией.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Get-InstalledScript -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Get-InstalledScript](http://go.microsoft.com/fwlink/?LinkId=619790)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 
@@ -86,7 +101,4 @@ InstalledLocation          : C:\Program Files\WindowsPowerShell\Scripts
 
 
 ```
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -8,12 +8,10 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "предварительные требования"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
-
+ms.openlocfilehash: 6cd57c2fab63d2184cb5c792b63df99dbd782235
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="prerequisites"></a>Необходимые компоненты
 
 ## <a name="initial-state"></a>Начальное состояние
@@ -125,10 +123,4 @@ Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEACo
 Примечание. Вы можете также включить при помощи групповой политики запись действий PowerShell в масштабе всей системы.
 
 **Итак, вы настроили на компьютере демонстрационную конечную точку и готовы приступить к работе с JEA.**
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,4 +1,4 @@
-# Ключевое слово Import-DscResource поддерживает параметр -moduleversion
+# <a name="import-dscresource-keyword-supports--moduleversion-parameter"></a>Ключевое слово Import-DscResource поддерживает параметр -moduleversion
 
 Мы добавили в динамическое ключевое слово `Import-DscResource` новый параметр, доступный при создании конфигураций DSC. Авторы конфигурации теперь могут указать, из какой именно версии модуля следует загружать ресурсы DSC. Новый синтаксис ключевого слова имеет следующий вид.
 
@@ -16,10 +16,5 @@ Import-DscResource [-Name <ResourceName(s)>] [-ModuleName <ModuleName(s)>] [-Mod
 
 **Примечание**. Параметр `–ModuleVersion` можно использовать только вместе с параметром `–ModuleName`. Его нельзя использовать с именами ресурсов, используя только параметр `–Name`.
 
-До этого единственный способ для указания версии модуля при загрузке ресурсов DSC заключался в использовании объекта спецификации модуля, например: `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+До этого единственный способ для указания версии модуля при загрузке ресурсов DSC заключался в использовании объекта спецификации модуля, например `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`.
 

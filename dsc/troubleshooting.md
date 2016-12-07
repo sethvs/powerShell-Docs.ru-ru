@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 99c1ea706ca5c3fb008065e98cc99fef463b1011
-ms.openlocfilehash: caf661fe58faf8cf24c789b408505051429df3f4
-
+ms.openlocfilehash: f933d5d821d71a497d20e8ff66ebe26af9661f50
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="troubleshooting-dsc"></a>Устранение неполадок в DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 В этом разделе описываются способы устранения неполадок в DSC.
 
-## <a name="using-getdscconfigurationstatus"></a>Использование Get-DscConfigurationStatus
+## <a name="using-get-dscconfigurationstatus"></a>Использование Get-DscConfigurationStatus
 
 Командлет [Get-DscConfigurationStatus](https://technet.microsoft.com/en-us/library/mt517868.aspx) получает сведения о состоянии конфигурации с целевого узла. Возвращается расширенный объект, который содержит высокоуровневые сведения о том, было ли выполнение конфигурации успешным. Можно детализировать объект для получения сведений о запуске конфигурации, например следующие.
 
@@ -264,7 +262,7 @@ TimeCreated                     Id LevelDisplayName Message
 
 ## <a name="using-xdscdiagnostics-to-analyze-dsc-logs"></a>Анализ журналов DSC с помощью xDscDiagnostics
 
-**xDscDiagnostics** представляет собой модуль PowerShell, состоящий из нескольких простых функций, которые могут помочь в анализе сбоев DSC на вашем компьютере. Эти функции помогают идентифицировать все локальные события для последних операций DSC или событий DSC на удаленных компьютерах (с действительными учетными данными). В данном случае термин "операция DSC" используется для определения одного уникального выполнения DSC от начала до конца. Например, `Test-DscConfiguration` будет отдельной операцией DSC. Аналогично все остальные командлеты в DSC (такие как `Get-DscConfiguration`, `Start-DscConfiguration` и т. д.) можно определить как отдельные операции DSC. Эти функции описаны в разделе [xDscDiagnostics](https://github.com/PowerShell/xDscDiagnostics). Чтобы получить справку, выполните команду `Get-Help <cmdlet name>`.
+**xDscDiagnostics** представляет собой модуль PowerShell, состоящий из нескольких простых функций, которые могут помочь в анализе сбоев DSC на вашем компьютере. Эти функции помогают идентифицировать все локальные события для последних операций DSC или событий DSC на удаленных компьютерах (с действительными учетными данными). В данном случае термин "операция DSC" используется для определения одного уникального выполнения DSC от начала до конца. Например, `Test-DscConfiguration` будет отдельной операцией DSC. Аналогично все остальные командлеты в DSC (такие как `Get-DscConfiguration`, `Start-DscConfiguration` и т. д.) можно определить как отдельные операции DSC. Эти функции описаны в разделе [xDscDiagnostics](https://github.com/PowerShell/xDscDiagnostics). Чтобы получить справку, выполните команду `Get-Help <cmdlet name>`.
 
 ### <a name="getting-details-of-dsc-operations"></a>Получение сведений об операциях DSC 
 
@@ -622,10 +620,4 @@ onlyProperty                            PSComputerName
 
 ### <a name="other-resources"></a>Прочие ресурсы
 * [Конфигурация требуемого состояния Windows PowerShell (DSC)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

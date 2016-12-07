@@ -1,4 +1,4 @@
-# Командлет Test-DscConfiguration поддерживает проектные конфигурации
+# <a name="test-dscconfiguration-cmdlet-supports-reference-configurations"></a>Командлет Test-DscConfiguration поддерживает проектные конфигурации
 
 Командлет Test-DscConfiguration был обновлен, чтобы обеспечить тестирование требуемого состояния конфигурации для одного или нескольких целевых узлов путем указания документа проектной конфигурации для сравнения.
 
@@ -35,8 +35,3 @@ Test-DscConfiguration   -ReferenceConfiguration <string>
                         [-AsJob] 
                         [<CommonParameters>]
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

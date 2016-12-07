@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 9196129e79272d8bee717ef8a5d42fb590760a0f
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурса nxFileLine в DSC для Linux
+# <a name="dsc-for-linux-nxfileline-resource"></a>Ресурса nxFileLine в DSC для Linux
 
 Ресурс **nxFileLine** в DSC PowerShell предоставляет механизм управления строками в файле конфигурации на узле Linux.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxFileLine <string> #ResourceName
@@ -30,7 +28,7 @@ nxFileLine <string> #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -39,7 +37,7 @@ nxFileLine <string> #ResourceName
 | DoesNotContainPattern| Шаблон регулярных выражений для строк, которые не должны присутствовать в файле. Присутствующие в файле строки, которые соответствуют этому регулярному выражению, будут удалены.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В этом примере показывается, как использовать ресурс **nxFileLine** для настройки файла `/etc/sudoers`, чтобы пользователь monuser не требовал использовать телетайп (TTY).
 
@@ -53,10 +51,4 @@ nxFileLine DoNotRequireTTY
    DoesNotContainPattern = "Defaults:monuser[ ]+requiretty"
 } 
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -1,7 +1,22 @@
-# Find-Module
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_нахождение_модуля"
+ms.technology: powershell
+ms.openlocfilehash: b6fe3ffcbb366ee237acf0304ec4804b93e2b8ad
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="find-module"></a>Find-Module
 Находит в коллекции модули, соответствующие указанному условию.
 
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-Module обнаруживает в зарегистрированных репозиториях модули, которые отвечают заданным условиям.
 Для каждого найденного модуля Find-Module возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Module для установки этих модулей.
 
@@ -15,16 +30,16 @@
 - Find-Module позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-Module может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Module -Module PowerShellGet -Syntax
 ```
 
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-Module](http://go.microsoft.com/fwlink/?LinkID=398574)
 
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 # Find a specific module
 Find-Module Azure
@@ -127,8 +142,4 @@ PackageManagementProvider  : NuGet
 AdditionalMetadata         : {downloadCount, description, copyright, FileList...}
 
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
 

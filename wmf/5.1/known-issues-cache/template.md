@@ -1,27 +1,19 @@
 ---
 title: "пример шаблона с описанием известной проблемы или ограничения"
 contributor: 
-translationtype: Human Translation
-ms.sourcegitcommit: a952a27ec1695ce9951c352446194cf72d18f50a
-ms.openlocfilehash: cfe0a6562743f1df81acb81e33c120cb67f9042c
-
+ms.openlocfilehash: e3b98044902cb6665e06582c8259bd5defd6f2ca
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 >Примечание. Предоставьте предложенное описательное название и краткое описание.
 
-## Пример. Ложные ошибки ExecutionPolicy ##
-В Windows 7 использование модулей PowerShell и ресурсов DSC может привести к возникновению ошибок, связанных с ExecutionPolicy.
+## <a name="example-erroneous-executionpolicy-errors"></a>Пример. Ложные ошибки ExecutionPolicy ##
+В Windows 7 использование модулей PowerShell и ресурсов DSC может привести к возникновению ошибок, связанных с ExecutionPolicy.
 
-### Разрешение
+### <a name="resolution"></a>Разрешение
 
 Чтобы устранить проблему, задайте для **ExecutionPolicy** значение **RemoteSigned**, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

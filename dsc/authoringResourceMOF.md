@@ -7,25 +7,23 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: b414a01bcd111143791a5fac77e61ce309a0a5c5
-ms.openlocfilehash: 50b99917f15d290db30da1b1b752d668d886ec50
-
+ms.openlocfilehash: 1fc28589633d6279d0428179a70e7e561d753ea8
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Написание пользовательских ресурсов DSC с использованием MOF
+# <a name="writing-a-custom-dsc-resource-with-mof"></a>Написание пользовательских ресурсов DSC с использованием MOF
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 В этом разделе мы определим схему для настраиваемого ресурса настройки требуемого состояния (DSC) Windows PowerShell в MOF-файле и реализуем этот ресурс в файле сценария Windows PowerShell. Этот ресурс применяется для создания и обслуживания веб-сайтов.
 
-## Создание схемы MOF
+## <a name="creating-the-mof-schema"></a>Создание схемы MOF
 
 Схема определяет свойства ресурса, которые можно настроить с помощью сценария DSC.
 
-### Структура папок для ресурса MOF
+### <a name="folder-structure-for-a-mof-resource"></a>Структура папок для ресурса MOF
 
-Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
+Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
 
 ```
 $env:ProgramFiles\WindowsPowerShell\Modules (folder)
@@ -39,7 +37,7 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
 
 Обратите внимание, что папку DSCResources необходимо создать в папке верхнего уровня, а имя папки для каждого ресурса должно совпадать с именем ресурса.
 
-### Содержание MOF-файла
+### <a name="the-contents-of-the-mof-file"></a>Содержание MOF-файла
 
 Приведем пример файла MOF, который можно использовать как настраиваемый ресурс веб-сайта. Чтобы воспользоваться этим примером, сохраните данную схему в файле с именем *Demo_IISWebsite.schema.mof*.
 
@@ -69,7 +67,7 @@ class Demo_IISWebsite : OMI_BaseResource
 * Для сохранения единообразия встроенных ресурсов DSC рекомендуется включать в ресурс свойство `Ensure` с значениями `Present` и `Absent`.
 * Имя настраиваемого ресурса должно иметь формат `classname.schema.mof`, где `classname` — это идентификатор, следующий за ключевым словом `class` в определении схемы.
 
-### Создание сценария ресурсов
+### <a name="writing-the-resource-script"></a>Создание сценария ресурсов
 
 Сценарий ресурса реализует логику ресурса. В этот модуль необходимо включить три функции: **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Все три функции должны принимать набор параметров, идентичный набору свойств, заданных в схеме MOF для вашего ресурса. В этом документе такой набор свойств называется "свойства ресурса". Сохраните эти три функции в файл <ResourceName>.psm1. В следующем примере функции сохраняются в файл с именем Demo_IISWebsite.psm1.
 
@@ -220,7 +218,7 @@ $result
 
 **Примечание**. Чтобы упростить отладку, используйте в реализации трех предыдущих функций командлет **Write-Verbose**. Он записывает текст в поток подробных сообщений. По умолчанию поток подробных сообщений не отображается, однако его можно вывести на экран, изменив значение переменной **$VerbosePreference** или применив в командлетах DSC параметр **Verbose** со значением new.
 
-### Создание манифеста модуля
+### <a name="creating-the-module-manifest"></a>Создание манифеста модуля
 
 Командлет **New-ModuleManifest** позволяет определить файл <ResourceName>.psd1 для модуля настраиваемого ресурса. При вызове этого командлета необходимо сослаться на модуль сценария (PSM1-файл), описанный в предыдущем разделе. Включите в список функций для экспорта функции **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Пример файла манифеста:
 
@@ -275,10 +273,4 @@ FunctionsToExport = @("Get-TargetResource", "Set-TargetResource", "Test-TargetRe
 # HelpInfoURI = ''
 }
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

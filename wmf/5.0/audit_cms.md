@@ -1,4 +1,4 @@
-# Командлеты Cryptographic Message Syntax (CMS)
+# <a name="cryptographic-message-syntax-cms-cmdlets"></a>Командлеты Cryptographic Message Syntax (CMS)
 
 Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652).
 
@@ -82,7 +82,3 @@ Hello World
 ```powershell
 dir -DocumentEncryptionCert
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

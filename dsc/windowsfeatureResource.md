@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 522dbea958a60f76e98abe32e11e6491ea6d457c
-
+ms.openlocfilehash: 98c39d11122d26502723a302ebd7ad4cff0be35d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс WindowsFeature в DSC
+# <a name="dsc-windowsfeature-resource"></a>Ресурс WindowsFeature в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **WindowsFeature** в DSC Windows PowerShell предоставляет механизм добавления и удаления ролей и компонентов на целевом узле.
 
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 WindowsFeature [string] #ResourceName
@@ -34,7 +32,7 @@ WindowsFeature [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -46,7 +44,7 @@ WindowsFeature [string] #ResourceName
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | Источник| Указывает расположение исходного файла для установки, если он необходим.| 
 
-## Пример
+## <a name="example"></a>Пример
 ```powershell
 WindowsFeature RoleExample
 {
@@ -55,10 +53,4 @@ WindowsFeature RoleExample
     Name = "Web-Server" # Use the Name property from Get-WindowsFeature  
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 
