@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 4809eb60ba1a5529343c2ab3c88493bf2c32389b
-
+ms.openlocfilehash: 6af4884948c44f7f256d62d0c61f1c71b47994f3
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Работа с разделами реестра
+# <a name="working-with-registry-keys"></a>Работа с разделами реестра
 Поскольку разделы реестра представляют собой элементы на дисках Windows PowerShell, работа с ними очень похожа на работу с файлами и папками. Одно важное различие заключается в том, что каждый элемент реестрового диска Windows PowerShell представляет собой контейнер, как и папка на диске файловой системы. Однако записи реестра и связанные с ними значения являются свойствами элементов, а не отдельными элементами.
 
-### Получение всех подразделов раздела реестра
+### <a name="listing-all-subkeys-of-a-registry-key"></a>Получение всех подразделов раздела реестра
 Показать все элементы, непосредственно содержащиеся в разделе реестра, можно с помощью командлета **Get-ChildItem**. Для отображения скрытых и системных элементов добавьте необязательный параметр **Force**. Например, эта команда отображает элементы, непосредственно расположенные на диске HKCU: Windows PowerShell, который соответствует кусту реестра HKEY_CURRENT_USER.
 
 ```
@@ -60,7 +58,7 @@ Get-ChildItem -Path hkcu:\ -Recurse
 Get-ChildItem -Path HKCU:\Software -Recurse | Where-Object -FilterScript {($_.SubKeyCount -le 1) -and ($_.ValueCount -eq 4) }
 ```
 
-### Копирование разделов
+### <a name="copying-keys"></a>Копирование разделов
 Копирование выполняется с помощью командлета **Copy-Item**. Следующая команда копирует HKLM:\\SOFTWARE\\Microsoft\\Windows\\ и все его свойства в HKCU:\\, создавая новый раздел с именем "CurrentVersion":
 
 ```
@@ -75,7 +73,7 @@ Copy-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion' -Destination h
 
 Для копирования файловой системы можно использовать и другие доступные средства. В оболочке Windows PowerShell можно использовать любые средства для редактирования реестра (в том числе reg.exe, regini.exe и regedit.exe), а также COM-объекты, поддерживающие редактирование реестра (такие как WScript.Shell и WMI-класс StdRegProv).
 
-### Создание разделов
+### <a name="creating-keys"></a>Создание разделов
 Создание новых разделов в реестре проще, чем создание нового элемента в файловой системе. Поскольку все разделы реестра являются контейнерами, нет необходимости указывать тип элемента. Достаточно указать явный путь, например:
 
 ```
@@ -88,7 +86,7 @@ New-Item -Path hkcu:\software_DeleteMe
 New-Item -Path Registry::HKCU_DeleteMe
 ```
 
-### Удаление разделов
+### <a name="deleting-keys"></a>Удаление разделов
 Удаление элементов в принципе осуществляется одинаково для всех поставщиков. Следующие команды удаляют элементы, не выводя никаких сообщений:
 
 ```
@@ -96,7 +94,7 @@ Remove-Item -Path hkcu:\Software_DeleteMe
 Remove-Item -Path 'hkcu:\key with spaces in the name'
 ```
 
-### Удаление всех разделов внутри определенного раздела
+### <a name="removing-all-keys-under-a-specific-key"></a>Удаление всех разделов внутри определенного раздела
 Удалить вложенные элементы можно с помощью командлета **Remove-Item**, однако он потребует подтверждения удаления, если элемент сам что-нибудь содержит. Например, при попытке удаления созданного нами подраздела HKCU:\\CurrentVersion будет отображено следующее:
 
 ```
@@ -121,10 +119,4 @@ Remove-Item -Path HKCU:\CurrentVersion -Recurse
 ```
 Remove-Item -Path HKCU:\CurrentVersion\* -Recurse
 ```
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 
