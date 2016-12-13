@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: b430e98c7ec287c0efcf2c2e2736253797242904
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager
+# <a name="getconfigurationstatus-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager
 
 Получает журнал состояния конфигурации.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -27,7 +25,7 @@ uint32 GetConfigurationStatus(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *All* \[in\]  
@@ -36,23 +34,23 @@ uint32 GetConfigurationStatus(
 *configurationStatus* \[out\]  
 Выходные данные содержат встроенный экземпляр класса **MSFT_DSCConfigurationStatus**, который определяет параметры.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -62,11 +60,5 @@ uint32 GetConfigurationStatus(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

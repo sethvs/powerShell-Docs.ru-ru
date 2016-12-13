@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587
-translationtype: Human Translation
-ms.sourcegitcommit: 416d21d2a2fa3d837eba19b1023e4045a124e23c
-ms.openlocfilehash: 9229df48b00c125e04d0f97536697495d0ca01ed
-
+ms.openlocfilehash: 2564ab148fb1de1cb58ee775d2000d321a1d36c1
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Подготовка к использованию Windows PowerShell
+# <a name="getting-ready-to-use-windows-powershell"></a>Подготовка к использованию Windows PowerShell
 После установки и запуска Windows PowerShell рассмотрите следующие варианты настройки. Эти задачи можно выполнить в любое время.
 
 -   **Установка файлов справки.** Командлеты, которые включены в Windows PowerShell 3.0, поставляются без файлов справки. Однако можно воспользоваться командлетом [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545), чтобы скачать и установить актуальные файлы справки. При установке файлов можно использовать командлет [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a), чтобы отображать их прямо в командной строке. Дополнительные сведения см. в статье [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe).
@@ -27,13 +25,7 @@ ms.openlocfilehash: 9229df48b00c125e04d0f97536697495d0ca01ed
 
     ПРИМЕЧАНИЕ. Если удаленное взаимодействие включено на компьютере, где выполняется Windows PowerShell 2.0, оно остается включенным после установки Windows Management Framework 3.0. Тем не менее в Windows Server 2008 (не Windows Server 2008 R2) после установки Windows Management Framework 3.0 удаленное взаимодействие потребуется включить повторно.
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Установка Windows PowerShell](../setup/Installing-Windows-PowerShell.md)
 - [Запуск Windows PowerShell [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
 

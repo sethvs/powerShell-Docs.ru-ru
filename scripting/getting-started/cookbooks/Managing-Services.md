@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 66c2a8c8afab49f16e8ef7d0b5ba3a2a65c92490
-
+ms.openlocfilehash: 9d9566328cac84ae6b450d9dedeb75a37d6dcba5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Управление службами
+# <a name="managing-services"></a>Управление службами
 Существует восемь основных командлетов Service, предназначенных для широкого спектра задач обслуживания. Мы рассмотрим только вывод и изменение состояния выполнения для служб, но список командлетов Service можно получить с помощью **Get-Help \&#42;-Service**, а сведения о каждом из них можно найти с помощью **Get-Help<имя_командлета>**, например **Get-Help New-Service**.
 
-## Получение служб
+## <a name="getting-services"></a>Получение служб
 Получить службы на локальном или удаленном компьютере можно с помощью командлета **Get-Service**. Как и в случае с **Get-Process**, использование команды **Get-Service** без параметров возвращает все службы. Можно фильтровать по имени, даже используя звездочку как подстановочный знак:
 
 ```
@@ -53,7 +51,7 @@ Stopped  ServiceLayer       ServiceLayer
 Get-Service -ComputerName Server01
 ```
 
-## Получение необходимых и зависимых служб
+## <a name="getting-required-and-dependent-services"></a>Получение необходимых и зависимых служб
 Командлет Get-Service имеет два параметра, которые удобно использовать при администрировании служб. Параметр DependentServices получает службы, которые зависят от данной службы. Параметр RequiredServices получает службы, от которых зависит данная служба.
 
 Эти параметры просто отображают значения свойств DependentServices и ServicesDependedOn (псевдоним RequiredServices) объекта System.ServiceProcess.ServiceController, возвращаемого Get-Service, но они упрощают работу с командами и получение этой информации.
@@ -88,7 +86,7 @@ Running  BITS               Background Intelligent Transfer Ser...
 Get-Service -Name * | where {$_.RequiredServices -or $_.DependentServices} | Format-Table -Property Status, Name, RequiredServices, DependentServices -auto
 ```
 
-## Остановка, запуск, приостановка и перезапуск служб
+## <a name="stopping-starting-suspending-and-restarting-services"></a>Остановка, запуск, приостановка и перезапуск служб
 Все командлеты Service имеют схожую общую форму. Службы можно указать по общему имени или отображаемому имени, они также принимают списки и подстановочные знаки в качестве значений. Для остановки очереди печати принтера используйте:
 
 ```
@@ -138,22 +136,16 @@ WARNING: Waiting for service 'Print Spooler (Spooler)' to finish starting...
 Invoke-Command -ComputerName Server01 {Restart-Service Spooler}
 ```
 
-## Задание свойств служб
+## <a name="setting-service-properties"></a>Задание свойств служб
 Командлет Set-Service изменяет свойства службы на локальном или удаленном компьютере. Так как состояние службы является свойством, этот командлет можно использовать для запуска, остановки и приостановки службы. Командлет Set-Service также имеет параметр StartupType, позволяющий изменять тип запуска службы.
 
 Чтобы использовать командлет Set-Service в Windows Vista и более поздних версиях Windows, откройте среду Windows PowerShell, используя параметр "Запуск от имени администратора".
 
 Дополнительные сведения см. в статье [Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3).
 
-## См. также
-[Get-Service [m2]](https://technet.microsoft.com/en-us/library/0a09cb22-0a1c-4a79-9851-4e53075f9cf6)
-[Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3)
-[Restart-Service [m2]](https://technet.microsoft.com/en-us/library/45acf50d-2277-4523-baf7-ce7ced977d0f)
-[Suspend-Service [m2]](https://technet.microsoft.com/en-us/library/c8492b87-0e21-4faf-8054-3c83c2ec2826)
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
+## <a name="see-also"></a>См. также
+- [Get-Service [m2]](https://technet.microsoft.com/en-us/library/0a09cb22-0a1c-4a79-9851-4e53075f9cf6)
+- [Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3)
+- [Restart-Service [m2]](https://technet.microsoft.com/en-us/library/45acf50d-2277-4523-baf7-ce7ced977d0f)
+- [Suspend-Service [m2]](https://technet.microsoft.com/en-us/library/c8492b87-0e21-4faf-8054-3c83c2ec2826)
 

@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c1cb722c-41e9-4baa-be83-59b4653222e9
-translationtype: Human Translation
-ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
-ms.openlocfilehash: e3899a183cb1c8652adff7d01ffc09efde7f49b4
-
+ms.openlocfilehash: 25c6dcbc2c79cb62d26aad60c7e3277ef039564f
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Создание графического элемента управления "Выбор даты"
+# <a name="creating-a-graphical-date-picker"></a>Создание графического элемента управления "Выбор даты"
 Используйте Windows PowerShell 3.0 и более поздние версии для создания формы с графическим элементом управления "Календарь", в котором пользователи могут выбрать день месяца.
 
-## Создание графического элемента "Выбор даты"
+## <a name="create-a-graphical-date-picker-control"></a>Создание графического элемента "Выбор даты"
 Скопируйте и вставьте следующий код в интегрированную среду сценариев Windows PowerShell, а затем сохраните файл как сценарий Windows PowerShell (PS1-файл).
 
 ```
@@ -70,9 +68,9 @@ $form = New-Object Windows.Forms.Form
 
 После создания экземпляра класса "Форма" назначьте значения для трех свойств этого класса.
 
--   **Текст.** Это будет заголовком окна.
+-   **Text.** Это будет заголовком окна.
 
--   **Размер.** Это размер формы в пикселях. Предыдущий сценарий создает форму шириной 243 пикселей и высотой 230 пикселей.
+-   **Size.** Это размер формы в пикселях. Предыдущий сценарий создает форму шириной 243 пикселей и высотой 230 пикселей.
 
 -   **StartingPosition.** Для этого дополнительного свойства задается значение **CenterScreen** в предыдущем сценарии. Если это свойство не добавлено, Windows выберет расположение после открытия формы. Если для **StartingPosition** задать значение **CenterScreen**, форма будет автоматически отображаться в центре экрана при загрузке.
 
@@ -137,14 +135,8 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-## См. также
-- [Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
-- [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
-- [Windows PowerShell Tip of the Week: Creating a Graphical Date Picker (Совет недели для Windows PowerShell: создание графического элемента управления "Выбор даты")](http://technet.microsoft.com/library/ff730942.aspx)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
+## <a name="see-also"></a>См. также
+- [Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры скриптов PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
+- [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дэйва Уайята)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+- [Windows PowerShell Tip of the Week: Creating a Graphical Date Picker](http://technet.microsoft.com/library/ff730942.aspx) (Совет недели для Windows PowerShell: создание графического элемента управления "Выбор даты")
 

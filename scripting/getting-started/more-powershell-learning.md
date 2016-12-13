@@ -7,17 +7,15 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: ba4f79742e21e23fb3745ca8c7833679d398ccf4
-
+ms.openlocfilehash: bef7edde1286946ddfa1dbe79cb718ac231b152c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#  Другие статьи о PowerShell
+#  <a name="more-powershell-learning"></a>Другие статьи о PowerShell
 
 Другие источники для изучения PowerShell  
 
-## Ресурсы для пользователей Windows PowerShell
+## <a name="resources-for-windows-powershell-users"></a>Ресурсы для пользователей Windows PowerShell
 
 Помимо справки, доступной в командной строке, пользователи, желающие использовать Windows PowerShell, могут найти дополнительную информацию в следующих источниках.
 
@@ -29,37 +27,31 @@ ms.openlocfilehash: ba4f79742e21e23fb3745ca8c7833679d398ccf4
 -   [Центр скриптов Майкрософт](https://technet.microsoft.com/scriptcenter). Портал, на котором можно найти многие полезные ресурсы для Windows PowerShell, включая [репозиторий Центра скриптов](http://gallery.technet.microsoft.com/scriptcenter/). Один из лучших способов обучиться сценариям — увидеть примеры в действии. Есть тысячи скриптов Windows PowerShell, которые вы можете оценить и адаптировать под свои нужны (и поиск по ним).
 -   Примите участие в работе сообщества пользователей Windows PowerShell. На [странице сообщества Центра скриптов](https://technet.microsoft.com/scriptcenter/hh182567.aspx) можно узнать, где географически находятся десятки групп пользователей Windows PowerShell; скорее всего, и рядом с вами кто-то есть. Оставайтесь в курсе деятельности сообщества Microsoft Scripting Guy.
 
-## Видео
+## <a name="video-training"></a>Видео
 
-###  Виртуальная академия Майкрософт
+###  <a name="microsoft-virtual-academy"></a>Виртуальная академия Майкрософт
 -  [Быстрое начало работы с PowerShell 3.0](https://mva.microsoft.com/en-US/training-courses/getting-started-with-powershell-30-jump-start-8276)
 -  [Быстрое начало работы с расширенными возможностями средств и сценариев PowerShell 3.0](https://mva.microsoft.com/en-US/training-courses/advanced-tools-scripting-with-powershell-30-jump-start-8231)
 
-###  Статьи о центре сценариев
-####  Серия "Основы Windows PowerShell для занятых администраторов"
+###  <a name="script-center-learn"></a>Статьи о центре сценариев
+####  <a name="windows-powershell-essentials-for-the-busy-admin-series"></a>Серия "Основы Windows PowerShell для занятых администраторов"
 -  [PowerShell "SmowerShell" — зачем изучать Windows PowerShell &#40;Part 1&#41;](http://dlbmodigital.microsoft.com/webcasts/wmv/23976_Dnl_L.wmv)
 -  [Прослушивание через конвейер — как комбинировать команды Windows PowerShell для удовольствия и для выгоды &#40;Part 2&#41;](http://dlbmodigital.microsoft.com/webcasts/wmv/23977_Dnl_L.wmv)
 -  [Единственный поставщик? Едва ли — разговор о поставщиках Windows PowerShell &#40;Part 3&#41;](http://dlbmodigital.microsoft.com/webcasts/wmv/23978_Dnl_L.wmv)
 -  [Основное событие — Windows PowerShell создает журналы событий &#40;Part 4&#41;](http://dlbmodigital.microsoft.com/webcasts/wmv/23979_Dnl_L.wmv)
 -  [Больше, чем можно сделать в удаленном режиме — использование Windows PowerShell для управления удаленным рабочим столом &#40;Part 5&#41;](http://dlbmodigital.microsoft.com/webcasts/wmv/23980_Dnl_L.wmv)
 
-#### Изучите программу сейчас, пока не возникло экстренной ситуации
--  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 1](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481530_Dnl_L.wmv)
--  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 2](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481542_Dnl_L.wmv)
--  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 3](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481548_Dnl_L.wmv)
--  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 4](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481552_Dnl_L.wmv)
--  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 5](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481554_Dnl_L.wmv)
+#### <a name="learn-it-now-before-its-an-emergency"></a>Изучите программу сейчас, пока не возникло экстренной ситуации
+-  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 1](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481530_Dnl_L.wmv)
+-  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 2](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481542_Dnl_L.wmv)
+-  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 3](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481548_Dnl_L.wmv)
+-  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 4](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481552_Dnl_L.wmv)
+-  [Windows PowerShell: изучите программу сейчас, пока не возникло экстренной ситуации. Часть 5](http://dlbmodigital.microsoft.com/webcasts/wmv/1032481554_Dnl_L.wmv)
 
-## Ресурсы для разработчиков Windows PowerShell
+## <a name="resources-for-windows-powershell-developers"></a>Ресурсы для разработчиков Windows PowerShell
 
 Следующие ресурсы помогут разработчикам создавать собственные модули, функции, командлеты, поставщики, а также приложения, содержащие в себе Windows PowerShell.
 
 -   [Пакет SDK для Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=89595). Предоставляет справочные сведения.
 -   [Руководство программиста по Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=89596). Предоставляет учебники. Также информирует об основополагающих концепциях Windows PowerShell.
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 1666b85402f17230090f7290c8cb400dd9fbf0a6
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Метод ResourceGet класса MSFT_DSCLocalConfigurationManager
+# <a name="resourceget-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceGet класса MSFT_DSCLocalConfigurationManager
 
 Напрямую вызывает метод **Get** ресурса DSC.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -29,7 +27,7 @@ uint32 ResourceGet(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *ResourceType* \[in\]  
@@ -44,23 +42,23 @@ uint32 ResourceGet(
 *configurations* \[out\]  
 Выходные данные содержат встроенный экземпляр конфигураций.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -70,11 +68,5 @@ uint32 ResourceGet(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

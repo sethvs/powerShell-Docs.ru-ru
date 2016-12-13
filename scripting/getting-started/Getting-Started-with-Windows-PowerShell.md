@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: a031bad99e8aca1d7598f99e157723bf4360cf56
-
+ms.openlocfilehash: bb852b8d5cb5202568a80517074cc8ff6f40ea0f
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Начало работы с Windows PowerShell
+# <a name="getting-started-with-windows-powershell"></a>Начало работы с Windows PowerShell
 Windows PowerShell — это оболочка командной строки Windows, предназначенная специально для системных администраторов. Windows PowerShell содержит интерактивное приглашение и среду сценариев, которые можно использовать отдельно или вместе.
 
 В отличие от большинства оболочек, которые принимают и возвращают текст, Windows PowerShell основана на среде CLR .NET Framework и платформе .NET Framework и принимает и возвращает объекты .NET Framework. Это фундаментальное изменение в среде предоставляет совершенно новые средства и методы для настройки Windows и управления ей.
@@ -27,17 +25,11 @@ Windows PowerShell — это оболочка командной строки W
 
 Содержание раздела:
 
--   [Требования к системе для Windows PowerShell](../setup/Windows-PowerShell-System-Requirements.md)
+-   [Требования Windows PowerShell к системе](../setup/Windows-PowerShell-System-Requirements.md)
 
 -   [Установка Windows PowerShell](../setup/Installing-Windows-PowerShell.md)
 
 -   [Запуск Windows PowerShell](../setup/Starting-Windows-PowerShell.md)
 
 -   [Подготовка к использованию Windows PowerShell](Getting-Ready-to-Use-Windows-PowerShell.md)
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

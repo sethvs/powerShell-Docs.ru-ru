@@ -8,25 +8,23 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-translationtype: Human Translation
-ms.sourcegitcommit: 26d8bc85b78248e15558dbfef72d32cca7de9627
-ms.openlocfilehash: e63809763808836af9f468c2ac55ede42836d6b2
-
+ms.openlocfilehash: 450fca8e190a175995ff91f9b32ee0695af14045
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Объект ISEAddOnTool
+# <a name="the-iseaddontool-object"></a>Объект ISEAddOnTool
   Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command). После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
 
  Каждую надстройку можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
 
  Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек. Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md).
 
-## Методы
+## <a name="methods"></a>Методы
  Для объектов этого класса нет доступных методов интегрированной среды сценариев Windows PowerShell.
 
-## Свойства
+## <a name="properties"></a>Свойства
 
-###  <a name="Control"></a> Элемент
+###  <a name="a-namecontrola-control"></a><a name="Control"></a> Control
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
  Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.
@@ -142,7 +140,7 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 
 ```
 
-###  <a name="IsVisible"></a> IsVisible
+###  <a name="a-nameisvisiblea-isvisible"></a><a name="IsVisible"></a> IsVisible
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
  Логическое свойство, которое определяет видимость надстройки в соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или ******$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
@@ -155,7 +153,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 
 ```
 
-###  <a name="name"></a> Название
+###  <a name="a-namenamea-name"></a><a name="name"></a> Name
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
  Свойство только для чтения, которое получает имя надстройки.
@@ -167,15 +165,9 @@ Commands
 
 ```
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Объект ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
-- [Объектная модель сценариев интегрированной среды сценариев Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-- [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
-- [Иерархия объектной модели интегрированной среды сценариев](The-ISE-Object-Model-Hierarchy.md)
-
-
-
-
-<!--HONumber=Sep16_HO4-->
-
+- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 

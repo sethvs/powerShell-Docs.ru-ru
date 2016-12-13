@@ -8,13 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "основные понятия, используемые в этом руководстве"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 178fea44987b0c457b8e5d23fbe851ee12f03b31
-
+ms.openlocfilehash: 873ab19fdf43ec4ac41cc546aa94b64fbc607984
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Основные понятия, используемые в этом руководстве
+# <a name="key-concepts-used-throughout-this-guide"></a>Основные понятия, используемые в этом руководстве
 **Что такое JEA?**
 
 JEA — это расширение [ограниченных конечных точек](http://blogs.technet.com/b/heyscriptingguy/archive/2014/03/31/introduction-to-powershell-endpoints.aspx) PowerShell, которое добавляет определения внутри ролей, виртуальные учетные записи и ряд других улучшений, упрощающих защиту конечных точек управления.
@@ -53,10 +51,4 @@ JEA ограничивает функциональные возможности
 
 **Подключенный пользователь**: пользователь без прав администратора, который подключается к конечной точке JEA и которому назначаются роли.
 Все команды этого пользователя выполняются в контексте пользователя запуска от имени или виртуальной учетной записи.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

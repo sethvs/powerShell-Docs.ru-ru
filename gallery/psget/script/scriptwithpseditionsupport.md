@@ -1,4 +1,19 @@
-# Сценарии с совместимыми выпусками PowerShell
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "поддержкавыпусковскриптамиps"
+ms.technology: powershell
+ms.openlocfilehash: aac38b9a5b133b0b7982e7748e1483a0774599a2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="script-with-compatible-powershell-editions"></a>Сценарии с совместимыми выпусками PowerShell
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
 
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
@@ -50,12 +65,7 @@ Find-Script -Tag PSEditon_Core
 
 ```
 
-## Дополнительные подробности
-### [Модули с PSEditions](../module/modulewithpseditionsupport.md)
-### [Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+## <a name="more-details"></a>Дополнительные подробности
+### <a name="modules-with-pseditionsmodulemodulewithpseditionsupportmd"></a>[Модули с PSEditions](../module/modulewithpseditionsupport.md)
+### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
 

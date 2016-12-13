@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 4129c83dd0b72159cbf1d47c037b9d462ca45f0e
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# Метод ResourceTest класса MSFT_DSCLocalConfigurationManager
+# <a name="resourcetest-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceTest класса MSFT_DSCLocalConfigurationManager
 
 Напрямую вызывает метод **Test** ресурса DSC.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -30,7 +27,7 @@ uint32 ResourceTest(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *ResourceType* \[in\]  
@@ -45,23 +42,23 @@ uint32 ResourceTest(
 *InDesiredState* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел находится в нужном состоянии.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -71,11 +68,5 @@ uint32 ResourceTest(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

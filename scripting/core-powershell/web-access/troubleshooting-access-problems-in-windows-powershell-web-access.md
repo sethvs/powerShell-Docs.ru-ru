@@ -7,13 +7,11 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
-
+ms.openlocfilehash: e22fa0d8712321e8b0f61b849d46c0c610049c86
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#  Устранение неполадок с доступом в Windows PowerShell Web Access
+#  <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Устранение неполадок с доступом в Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -69,7 +67,7 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 </tr>
 <tr class="odd">
 <td><p>Невозможно подключиться к удаленному компьютеру в рабочей группе</p></td>
-<td><p>Если целевой компьютер входит в рабочую группу, используйте следующий синтаксис, чтобы указать имя пользователя и войти на компьютер: &lt;<em>имя_рабочей_группы</em>&gt;\&lt;<em>имя_пользователя</em>&gt;</p></td>
+<td><p>Если целевой компьютер входит в рабочую группу, используйте следующий синтаксис, чтобы указать имя пользователя и войти на компьютер: &lt;<em>имя_рабочей_группы</em>&gt;\&lt;<em>имя_пользователя</em>&gt;.</p></td>
 </tr>
 <tr class="even">
 <td><p>Невозможно найти инструменты управления веб-сервера (IIS), даже если роль была установлена</p></td>
@@ -103,30 +101,30 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 <tbody>
 <tr class="odd">
 <td><p>Сервер шлюза входит в домен</p></td>
-<td><p><em>Имя_сервера </em>\<em>имя_пользователя</em>, Localhost\<em>имя_пользователя</em> или .\<em>имя_пользователя</em></p></td>
-<td><p><em>Имя_сервера </em>\<em>группа_пользователей</em>, Localhost\<em>группа_пользователей</em> или .\<em>группа_пользователей</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>имя_пользователя</em>, Localhost\<em>имя_пользователя</em> или .\<em>имя_пользователя</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>группа_пользователей</em>, Localhost\<em>группа_пользователей</em> или .\<em>группа_пользователей</em></p></td>
 <td><p>Полное имя сервера шлюза или Localhost</p></td>
-<td><p><em>Имя_сервера </em>\<em>группа_компьютеров</em>, Localhost\<em>группа_компьютеров</em> или .\<em>группа_компьютеров</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>группа_компьютеров</em>, Localhost\<em>группа_компьютеров</em> или .\<em>группа_компьютеров</em></p></td>
 </tr>
 <tr class="even">
 <td><p>Сервер шлюза входит в рабочую группу</p></td>
-<td><p><em>Имя_сервера </em>\<em>имя_пользователя</em>, Localhost\<em>имя_пользователя</em> или .\<em>имя_пользователя</em></p></td>
-<td><p><em>Имя_сервера </em>\<em>группа_пользователей</em>, Localhost\<em>группа_пользователей</em> или .\<em>группа_пользователей</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>имя_пользователя</em>, Localhost\<em>имя_пользователя</em> или .\<em>имя_пользователя</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>группа_пользователей</em>, Localhost\<em>группа_пользователей</em> или .\<em>группа_пользователей</em></p></td>
 <td><p>Имя сервера</p></td>
-<td><p><em>Имя_сервера </em>\<em>группа_компьютеров</em>, Localhost\<em>группа_компьютеров</em> или .\<em>группа_компьютеров</em></p></td>
+<td><p><em>Имя_сервера</em>\<em>группа_компьютеров</em>, Localhost\<em>группа_компьютеров</em> или .\<em>группа_компьютеров</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Войдите на сервер шлюза как на конечный компьютер, используя учетные данные в одном из следующих форматов.</p>
 <ul>
-<li><p><em>Имя_сервера </em>\<em> имя_пользователя</em></p></li>
+<li><p><em>Имя_сервера</em>\<em>имя_пользователя</em></p></li>
 <li><p>Localhost\<em>имя_пользователя</em></p></li>
 <li><p>.\<em>имя_пользователя</em></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Вместо синтаксиса <em>имя_пользователя</em>/<em> computer_name в правиле авторизации отображается идентификатор безопасности (SID)</em> </p></td>
+<td><p>Вместо синтаксиса <em>имя_пользователя</em>/<em> имя_компьютера</em>  в правиле авторизации отображается идентификатор безопасности (SID)</p></td>
 <td><p>Либо правило больше не действительно, либо произошла ошибка запроса к доменным службам Active Directory. Правило авторизации недействительно обычно в том случае, если сервер шлюза когда-то входил в рабочую группу, но позднее был присоединен к домену.</p></td>
 </tr>
 <tr class="even">
@@ -145,14 +143,14 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 [Использование веб-консоли Windows PowerShell](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
 [about_Remote_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
 
-<span>Демонстрация: </span> унаследованная защита
+<span>Демонстрация:</span> унаследованная защита
 
 <span class="stdr-votetitle">Эта страница была полезной?</span>
 Да Нет
 
 Дополнительные отзывы?
 
-<span class="stdr-count"><span class="stdr-charcnt">Осталось 1500</span> символов</span> Отправить Пропустить
+Осталось <span class="stdr-count"><span class="stdr-charcnt">1500</span> символов</span> Отправить Пропустить
 
 <span class="stdr-thankyou">Спасибо!</span> <span class="stdr-appreciate">Мы ценим ваши отзывы.</span>
 
@@ -178,7 +176,7 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 
 -   [Информационный бюллетень Flash](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Свяжитесь с нами](https://technet.microsoft.com/cc512759.aspx)
+-   [Контакты](https://technet.microsoft.com/cc512759.aspx)
 -   |
 -   [Заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement)
 -   |
@@ -193,10 +191,4 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 
 Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN — http://www.asp.net/ajaxlibrary/CDN.ashx.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

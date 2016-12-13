@@ -8,29 +8,27 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-translationtype: Human Translation
-ms.sourcegitcommit: 5b978b9c939759bd47ee73d4f7ffa6e3a66df788
-ms.openlocfilehash: ababa1b3ce913528a3ac7089d91ef74c5eb27737
-
+ms.openlocfilehash: 957bf31c4d1d78e1df627fbddf03ce7d97083f1b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Новые возможности в интегрированной среде сценариев Windows PowerShell
+# <a name="what39s-new-in-the-windows-powershell-ise"></a>Новые возможности в интегрированной среде сценариев Windows PowerShell
 В этой статье описаны новые и обновленные функции, представленные в разных версиях интегрированной среды сценариев Windows PowerShell®.
 
-## <a name="overview"></a>Описание компонента
+## <a name="a-nameoverviewafeature-description"></a><a name="overview"></a> Описание функции
 Интегрированная среда сценариев Windows PowerShell — это ведущее приложение, позволяющее писать, выполнять и тестировать сценарии и модули в удобной среде с графическим интерфейсом. Такие важные возможности, как цветовая разметка синтаксиса, автозаполнение по нажатию клавиши TAB, визуальная отладка, совместимость с Юникодом и контекстная справка делают работу со сценариями более удобной.
 
 Общие сведения об интегрированной среде сценариев Windows PowerShell см. в статье [Общие сведения об интегрированной среде сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671).
 
-## <a name="versions"></a>Новые и измененные функции в интегрированной среде сценариев Windows PowerShell
+## <a name="a-nameversionsanew-and-changed-functionality-in-windows-powershell-ise"></a><a name="versions"></a> Новые и измененные функции в интегрированной среде сценариев Windows PowerShell
 Следующая таблица содержит новые и измененные функции для этого выпуска интегрированной среды сценариев Windows PowerShell в Windows PowerShell.
 
 |Компонент или функция|Интегрированная среда сценариев Windows PowerShell 4.0|Интегрированная среда сценариев Windows PowerShell 3.0|Интегрированная среда сценариев Windows PowerShell 2.0|
 |--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 |**[IntelliSense](#BKMK_Intellisense)**|X|X||
-|**[Фрагменты](#bkmk_snippets)**|X|X||
-|**[Дополнительные компоненты](#BKMK_AddOnTools)**|X|X||
-|**[Диспетчер перезапуска и автосохранение](#BKMK_RestartMgr)**|X|X||
+|**[Фрагменты кода](#bkmk_snippets)**|X|X||
+|**[Дополнительные средства](#BKMK_AddOnTools)**|X|X||
+|**[Перезапуск диспетчера и автосохранение](#BKMK_RestartMgr)**|X|X||
 |**[Область консоли](#BKMK_ConsolePane)**|X|X||
 |**[Список недавно использовавшихся элементов](#BKMK_MRU)**|X|X||
 |**[Параметры командной строки](#BKMK_CommandLine)**|X|X||
@@ -38,7 +36,7 @@ ms.openlocfilehash: ababa1b3ce913528a3ac7089d91ef74c5eb27737
 |**[Новое окно справки](#BKMK_NewHelpViewer)**|X|X||
 |**[Командлет Show-Command](#BKMK_ShowCommand)**|X|X||
 
-### <a name="BKMK_Intellisense"></a>IntelliSense
+### <a name="a-namebkmkintellisenseaintellisense"></a><a name="BKMK_Intellisense"></a> IntelliSense
 **Добавлен в интегрированной среде сценариев 3.0**
 
 IntelliSense — это средство для автоматического дополнения, являющееся частью интегрированной среды сценариев Windows PowerShell. По мере набора IntelliSense отображает активные меню с подходящими командлетами, параметрами, значениями параметров, файлами и папками.
@@ -51,7 +49,7 @@ IntelliSense — это средство для автоматического 
 
 При вводе командлетов в интегрированной среде сценариев Windows PowerShell 3.0 или более поздней версии отображается прокручиваемое и активное меню, позволяющее просмотреть и выбрать соответствующие команды.
 
-### <a name="BKMK_Snippets"></a>Фрагменты
+### <a name="a-namebkmksnippetsasnippets"></a><a name="BKMK_Snippets"></a> Фрагменты
 **Добавлен в интегрированной среде сценариев 3.0**
 
 *Фрагменты* — это короткие участки кода Windows PowerShell, которые можно легко вставить в сценарии, создаваемые в интегрированной среде сценариев Windows PowerShell. Интегрированная среда сценариев Windows PowerShell включает стандартный набор фрагментов. При работе в интегрированной среде сценариев Windows PowerShell можно добавлять фрагменты кода с помощью командлета **New-Snippet**.
@@ -64,7 +62,7 @@ IntelliSense — это средство для автоматического 
 
 Чтобы использовать фрагменты кода в Windows PowerShell 3.0 или более поздней версии, выберите команду **Запустить фрагменты** в меню **Правка** или нажмите сочетание клавиш **CTRL+J**.
 
-### <a name="BKMK_AddOnTools"></a>Дополнительные средства
+### <a name="a-namebkmkaddontoolsaadd-on-tools"></a><a name="BKMK_AddOnTools"></a> Дополнительные средства
 **Добавлено в PowerShell 3.0**
 
 Интегрированная среда сценариев Windows PowerShell теперь поддерживает дополнительные компоненты — элементы управления Windows Presentation Foundation (WPF), которые добавляются с помощью объектной модели. Дополнительные компоненты могут отображаться в вертикальной или горизонтальной области внутри консоли. Если область содержит несколько дополнительных средств, они отображаются на вкладках. Можно также добавлять и удалять дополнительные средства сторонних производителей. Дополнительные сведения об импорте и экспорте дополнительных компонентов см. в статье [Операции интегрированной среды сценариев Windows PowerShell](http://technet.microsoft.com/library/cc732148.aspx).
@@ -79,7 +77,7 @@ IntelliSense — это средство для автоматического 
 
 Другие дополнительные средства можно найти с помощью команды **Перейти на сайт дополнительных компонентов** в меню **Дополнительные компоненты**.
 
-### <a name="BKMK_RestartMgr"></a>Перезапуск диспетчера и автосохранение
+### <a name="a-namebkmkrestartmgrarestart-manager-and-auto-save"></a><a name="BKMK_RestartMgr"></a> Перезапуск диспетчера и автосохранение
 **Добавлено в PowerShell 3.0**
 
 Интегрированная среда сценариев Windows PowerShell теперь автоматически сохраняет открытые сценарии в отдельном расположении каждые две минуты.  Если интегрированная среда сценариев Windows PowerShell прекращает работать или перезагружается операционная система, то при повторном запуске интегрированной среды сценариев Windows PowerShell сценарии, открытые во время последнего сеанса, восстанавливаются, даже если они не были сохранены.
@@ -94,7 +92,7 @@ IntelliSense — это средство для автоматического 
 
 Интегрированная среда сценариев Windows PowerShell 2.0 не сохраняет сценарии автоматически в случае перезагрузки.
 
-### <a name="BKMK_MRU"></a>Список недавно использовавшихся элементов
+### <a name="a-namebkmkmruamost-recently-used-list"></a><a name="BKMK_MRU"></a> Список недавно использовавшихся элементов
 **Добавлено в PowerShell 3.0**
 
 Интегрированная среда сценариев Windows PowerShell теперь содержит список недавно использовавшихся файлов. При открытии файла в интегрированной среде сценариев Windows PowerShell он добавляется в список недавно использованных элементов в меню **Файл**.
@@ -109,7 +107,7 @@ IntelliSense — это средство для автоматического 
 
 В интегрированной среде сценариев Windows PowerShell 2.0 нет списка недавно использованных элементов.
 
-### <a name="BKMK_ConsolePane"></a>Область консоли
+### <a name="a-namebkmkconsolepaneaconsole-pane"></a><a name="BKMK_ConsolePane"></a> Область консоли
 **Добавлено в PowerShell 3.0**
 
 Области команд и вывода, которые были разделены в первом выпуске интегрированной среды сценариев Windows PowerShell, объединены теперь в одну область консоли. Область консоли аналогична по функциональности и внешнему виду типовой консоли Windows PowerShell, но отличается рядом усовершенствований, которые перечислены ниже (многие из них описаны в этой статье).
@@ -146,7 +144,7 @@ IntelliSense — это средство для автоматического 
 
 Интегрированная среда сценариев Windows PowerShell 2.0 имеет отдельные области команд и вывода.
 
-### <a name="BKMK_CommandLine"></a>Параметры командной строки
+### <a name="a-namebkmkcommandlineacommand-line-switches"></a><a name="BKMK_CommandLine"></a> Параметры командной строки
 **Добавлено в PowerShell 3.0**
 
 При запуске интегрированной среды сценариев Windows PowerShell из командной строки (для этого введите **powershell_ise.exe** в командной строке) можно указывать следующие новые параметры.
@@ -165,7 +163,7 @@ IntelliSense — это средство для автоматического 
 
 Интегрированная среда сценариев Windows PowerShell 2.0 не распознает эти параметры командной строки.
 
-### <a name="BKMK_NewEditorFeatures"></a>Новые возможности редактора
+### <a name="a-namebkmkneweditorfeaturesanew-editor-features"></a><a name="BKMK_NewEditorFeatures"></a> Новые возможности редактора
 **Добавлено в PowerShell 3.0**
 
 Другие возможности редактирования в интегрированной среде сценариев Windows PowerShell:
@@ -194,7 +192,7 @@ IntelliSense — это средство для автоматического 
 
 Эти усовершенствования редактирования отсутствовали в интегрированной среде сценариев Windows PowerShell 2.0.
 
-### <a name="BKMK_NewHelpViewer"></a>Новое окно справки
+### <a name="a-namebkmknewhelpvieweranew-help-viewer-window"></a><a name="BKMK_NewHelpViewer"></a> Новое окно справки
 **Добавлено в PowerShell 3.0**
 
 Если нажать клавишу **F1**, когда курсор находится внутри командлета или выделена часть командлета, в новом окне справки откроется контекстная справка по выделенному командлету. Чтобы вывести описательные разделы справки Windows PowerShell, введите команду **operators** в области консоли, а затем нажмите клавишу **F1**.
@@ -211,7 +209,7 @@ IntelliSense — это средство для автоматического 
 
 При нажатии клавиши F1 в предыдущих версиях интегрированной среды сценариев Windows PowerShell открывался файл справки с локального компьютера. В интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версий открывшееся окно содержит справку, поддерживающую поиск и настройку. Это новая справка по интегрированной среде сценариев Windows PowerShell ISE 3.0, в Windows PowerShell 3.0 появилась обновленная справка.
 
-### <a name="BKMK_ShowCommand"></a>Командлет Show-Command
+### <a name="a-namebkmkshowcommandashow-command-cmdlet"></a><a name="BKMK_ShowCommand"></a> Командлет Show-Command
 **Добавлено в PowerShell 3.0**
 
 Командлет **Show-Command** позволяет составить или выполнить командлет или функцию, заполнив графическую форму. Эта форма дает пользователям возможность работать с Windows PowerShell в графической среде. Кроме того, командлет **Show-Command** позволяет опытным программистам быстро создавать графические интерфейсы на основе Windows PowerShell.
@@ -224,18 +222,10 @@ IntelliSense — это средство для автоматического 
 
 Командлет Show-Command появился в версии 3.0 интегрированной среды сценариев Windows PowerShell.
 
-## <a name="BKMK_LINKS"></a>См. также:
+## <a name="a-namebkmklinksasee-also"></a><a name="BKMK_LINKS"></a> См. также
 Дополнительные сведения об интегрированной среде сценариев в Windows PowerShell см. по следующим ссылкам.
 
--   [Using the Windows PowerShell Integrated Scripting Environment (Использование интегрированной среды сценариев Windows PowerShell)](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
-
--   [Интегрированная среда сценариев на вики-сайте TechNet](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
-
--   [Центр сценариев](http://technet.microsoft.com/scriptcenter/default)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+- [Использование интегрированной среды скриптов Windows PowerShell](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+- [Интегрированная среда сценариев на вики-сайте TechNet](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
+- [Центр сценариев](http://technet.microsoft.com/scriptcenter/default)
 

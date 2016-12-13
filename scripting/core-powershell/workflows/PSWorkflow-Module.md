@@ -8,17 +8,15 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
-translationtype: Human Translation
-ms.sourcegitcommit: 4f67538548a3828f0f2ad2cdb1a7828a0f3db892
-ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
-
+ms.openlocfilehash: a7bb1f2a4d5c1d4df828d242e6b6e45a39405a73
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Модуль PSWorkflow
+# <a name="psworkflow-module"></a>Модуль PSWorkflow
 В этом разделе содержатся разделы справки по модулю **PSWorkflow**, в который входят командлеты, поддерживающие компонент "Рабочий процесс" Windows PowerShell. Модуль **PSWorkflow** устанавливается вместе с Windows PowerShell.
 
-## Разделы справки
-[Командлеты модуля Workflow](http://go.microsoft.com/fwlink/?LinkID=245865)
+## <a name="help-topics"></a>Разделы справки
+[Командлеты рабочих процессов](http://go.microsoft.com/fwlink/?LinkID=245865)
 
 [Invoke-AsWorkflow[PSITPro5_WFUtility]](https://technet.microsoft.com/en-us/library/a5a32019-0d68-4041-935f-1b1cacaf6d3d)
 
@@ -40,16 +38,10 @@ ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
 
 [about_Suspend-Workflow](https://technet.microsoft.com/en-us/library/be2ded75-1eca-493e-96c1-758f92b5f199)
 
-## См. также
-[Начало работы с модулем Workflow Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=252592)
-[Запись рабочего процесса Windows PowerShell](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)
-[Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
-[Разделы справки по модулю Windows PowerShell Core](../core-modules/Windows-PowerShell-Core-About-Topics.md)
-[Работа со сценариями в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+## <a name="see-also"></a>См. также
+- [Начало работы с рабочим процессом Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=252592)
+- [Запись рабочего процесса Windows PowerShell](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)
+- [Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
+- [Разделы справки по модулю Windows PowerShell Core](../core-modules/Windows-PowerShell-Core-About-Topics.md)
+- [Работа со скриптами в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

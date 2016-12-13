@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 327c7cc5-21d0-4ace-b151-aa1491d1d3c2
-translationtype: Human Translation
-ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
-ms.openlocfilehash: ce74f3c7cb26632269e42dfddb941fee11dcdc87
-
+ms.openlocfilehash: 08df13411c1998b0db6a4af9b8bd2bacca1dc643
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Выбор элементов из списка
+# <a name="selecting-items-from-a-list-box"></a>Выбор элементов из списка
 Используйте Windows PowerShell 3.0 и более поздние версии для создания диалогового окна, в котором пользователи могут выбирать элементы из списка.
 
-## Создание элемента управления "Список" и выбор элементов
+## <a name="create-a-list-box-control-and-select-items-from-it"></a>Создание элемента управления "Список" и выбор элементов
 Скопируйте и вставьте следующий код в интегрированную среду сценариев Windows PowerShell, а затем сохраните файл как сценарий Windows PowerShell (PS1-файл).
 
 ```
@@ -86,9 +84,9 @@ Add-Type -AssemblyName System.Drawing
 
 После создания экземпляра класса "Форма" назначьте значения для трех свойств этого класса.
 
--   **Текст.** Это будет заголовком окна.
+-   **Text.** Это будет заголовком окна.
 
--   **Размер.** Это размер формы в пикселях. Предыдущий сценарий создает форму шириной 300 пикселей и высотой 200 пикселей.
+-   **Size.** Это размер формы в пикселях. Предыдущий сценарий создает форму шириной 300 пикселей и высотой 200 пикселей.
 
 -   **StartingPosition.** Для этого дополнительного свойства задается значение **CenterScreen** в предыдущем сценарии. Если это свойство не добавлено, Windows выберет расположение после открытия формы. Если для **StartingPosition** задать значение **CenterScreen**, форма будет автоматически отображаться в центре экрана при загрузке.
 
@@ -179,14 +177,8 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-## См. также
-- [Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
-- [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
-- [Windows PowerShell Tip of the Week: Selecting Items from a List Box (Совет недели для Windows PowerShell: выбор элементов из списка)](http://technet.microsoft.com/library/ff730949.aspx)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
+## <a name="see-also"></a>См. также
+- [Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры скриптов PowerShell GUI не работают)](http://go.microsoft.com/fwlink/?LinkId=506644)
+- [GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дэйва Уайята)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+- [Windows PowerShell Tip of the Week: Selecting Items from a List Box](http://technet.microsoft.com/library/ff730949.aspx) (Совет недели для Windows PowerShell: выбор элементов в списке)
 

@@ -1,4 +1,19 @@
-# Командлеты PackageManagement
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "командлеты_PackageManagement"
+ms.technology: powershell
+ms.openlocfilehash: 954097f6f3516eb627902c126a70203818ef84db
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="packagemanagement-cmdlets"></a>Командлеты PackageManagement
 Это основная составляющая PackageManagement, отвечающая за поддержку обнаружения, установки и инвентаризации программного обеспечения. Попробуйте использовать для выполнения этих операций следующие командлеты:
 -   Find-Package
 -   Find-PackageProvider
@@ -20,7 +35,7 @@ PS C:\> Install-Module PackageManagement –Force
 ```
 В этом случае потребуется повторно войти в сеанс PowerShell, чтобы переключиться на новую версию PackageManagement.
 
-## [Командлет Find-Package](https://technet.microsoft.com/en-us/library/dn890709.aspx)
+## <a name="find-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890709aspx"></a>[Командлет Find-Package](https://technet.microsoft.com/en-us/library/dn890709.aspx)
 Этот командлет обеспечивает обнаружения пакетов программного обеспечения в доступных источниках с помощью загруженных поставщиков пакетов.
 ```powershell
 # Find all available Windows PowerShell module packages from galleries registered
@@ -40,7 +55,7 @@ Find-Package -Name jquery –Provider NuGet -Source http://www.nuget.org/api/v2/
 Find-Package -Name jquery –Provider NuGet –RequiredVersion 2.1.4 -Source nuget.org
 ```
 
-## [Командлет Find-PackageProvider](https://technet.microsoft.com/en-us/library/mt676544.aspx)
+## <a name="find-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676544aspx"></a>[Командлет Find-PackageProvider](https://technet.microsoft.com/en-us/library/mt676544.aspx)
 Командлет Find-PackageProvider находит подходящие поставщики PackageManagement, которые доступны в зарегистрированных источниках пакетов PowerShellGet. Эти поставщики пакетов можно установить с помощью командлета Install-PackageProvider. По умолчанию сюда относятся модули, доступные в коллекции PowerShell с тегами PackageManagement и Provider. 
 
 Кроме того, Find-PackageProvider находит совпадающие поставщики PackageManagement, доступные в хранилище BLOB-объектов Azure PackageManagement, где для их поиска и установки используется поставщик начального загрузчика PackageManagement.
@@ -61,7 +76,7 @@ Install-PackageProvider -Source C:\sharedfolder\Providers\ -Name nuget -force
     
 ```
 
-## [Командлет Get-Package](https://technet.microsoft.com/en-us/library/dn890704.aspx)
+## <a name="get-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890704aspx"></a>[Командлет Get-Package](https://technet.microsoft.com/en-us/library/dn890704.aspx)
 Этот командлет возвращает список всех пакетов программного обеспечения, установленных с помощью PackageManagement.
 ```powershell
 # Get all the packages installed by Programs provider
@@ -72,7 +87,7 @@ Get-Package –Provider Programs
 Get-Package –Provider NuGet -Destination c:\test
 ```
 
-## [Командлет Get-PackageProvider](https://technet.microsoft.com/en-us/library/dn890703.aspx)
+## <a name="get-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890703aspx"></a>[Командлет Get-PackageProvider](https://technet.microsoft.com/en-us/library/dn890703.aspx)
 С помощью этого командлета можно выполнить инвентаризацию поставщиков пакетов, которые уже загружены и готовы к использованию на локальном компьютере.
 ```powershell
 # Get all currently loaded package providers
@@ -82,7 +97,7 @@ Get-PackageProvider
 Get-PackageProvider -ListAvailable
 ```
 
-## [Командлет Get-PackageSource](https://technet.microsoft.com/en-us/library/dn890705.aspx)
+## <a name="get-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890705aspx"></a>[Командлет Get-PackageSource](https://technet.microsoft.com/en-us/library/dn890705.aspx)
 Этот командлет возвращает список источников пакетов, зарегистрированных для поставщика пакетов.
 ```powershelll
 # Get all package sources
@@ -92,7 +107,7 @@ Get-PackageSource
 Get-PackageSource –ProviderName PowerShellGet
 ```
 
-## [Командлет Import-PackageProvider](https://technet.microsoft.com/en-us/library/mt676545.aspx)
+## <a name="import-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676545aspx"></a>[Командлет Import-PackageProvider](https://technet.microsoft.com/en-us/library/mt676545.aspx)
 Этот командлет добавляет поставщиков пакетов для управления пакетами в текущий сеанс.
 ```powershell
 # Import a package provider from the local machine
@@ -116,7 +131,7 @@ Import-PackageProvider –Name MyProvider –RequiredVersion xxxx -force
 As of the Windows Server Technical Preview(TP5), Install-PackageProvider does install as well as import the provider. Hence after you run find-packageprovider and install-packageprovider, the provider should be ready to use 
 ```
 
-##[ Командлет Install-Package](https://technet.microsoft.com/en-us/library/dn890711.aspx)
+##<a name="-install-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890711aspx"></a>[ Командлет Install-Package](https://technet.microsoft.com/en-us/library/dn890711.aspx)
 
 Этот командлет обеспечивает установку пакетов программного обеспечения в доступных источниках с помощью загруженных поставщиков пакетов.
 ```powershell
@@ -130,7 +145,7 @@ Install-Package -Name jquery -Source nuget.org -Destination c:\test
 Find-Package -Name jquery –Provider NuGet | Install-Package -Destination c:\test
 ```
 
-## [Командлет Install-PackageProvider](https://technet.microsoft.com/en-us/library/mt676543.aspx)
+## <a name="install-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676543aspx"></a>[Командлет Install-PackageProvider](https://technet.microsoft.com/en-us/library/mt676543.aspx)
 Этот командлет устанавливает один или несколько поставщиков пакетов для управления пакетами.
 ```powershell
 # Install a package provider from the PowerShell Gallery
@@ -147,14 +162,14 @@ Find-PackageProvider –Name "Gistprovider" | Install-PackageProvider -Verbose
 Install-PackageProvider –Name Gistprovider –Verbose –Scope CurrentUser
 ```
 
-## [Командлет Register-PackageSource](https://technet.microsoft.com/en-us/library/dn890701.aspx)
+## <a name="register-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890701aspx"></a>[Командлет Register-PackageSource](https://technet.microsoft.com/en-us/library/dn890701.aspx)
 Этот командлет добавляет источник пакетов для указанного поставщика пакетов.
 Каждый поставщик PackageManagement может иметь один или несколько источников программного обеспечения или репозиториев. PackageManagement предоставляет командлеты PowerShell для добавления, удаления и запроса источника. Например, можно зарегистрировать источник пакетов для поставщика NuGet:
 ```powershell
 Register-PackageSource -Name "NugetSource" -Location "http://www.nuget.org/api/v2" –ProviderName nuget
 ```
 
-## [Командлет Save-Package](https://technet.microsoft.com/en-us/library/dn890708.aspx)
+## <a name="save-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890708aspx"></a>[Командлет Save-Package](https://technet.microsoft.com/en-us/library/dn890708.aspx)
 Этот командлет сохраняет пакеты на локальном компьютере без установки.
 ```powershell
 # Saves jquery package to c:\test using NuGetProvider
@@ -166,14 +181,14 @@ Find-Package -Name jquery -Source http://www.nuget.org/api/v2/ | Save-Package -P
 Find-Package -source c:\test
 ```
 
-## [Командлет Set-PackageSource](https://technet.microsoft.com/en-us/library/dn890710.aspx)
+## <a name="set-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890710aspx"></a>[Командлет Set-PackageSource](https://technet.microsoft.com/en-us/library/dn890710.aspx)
 Этот командлет изменяет сведения о существующем источнике пакетов. 
 ```powershell
 #Set-PackageSource changes the values for a source that has already been registered by running the Register-PackageSource cmdlet. By #running Set-PackageSource, you can change the source name and location.
 Set-PackageSource  -Name nuget.org -Location  http://www.nuget.org/api/v2 -NewName nuget2 -NewLocation https://www.nuget.org/api/v2 
 ```
 
-## [Командлет Uninstall-Package](https://technet.microsoft.com/en-us/library/dn890702.aspx)
+## <a name="uninstall-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890702aspx"></a>[Командлет Uninstall-Package](https://technet.microsoft.com/en-us/library/dn890702.aspx)
 Этот командлет удаляет пакеты, установленные на локальном компьютере.
 ```powershell
 # Uninstall jquery using nuget
@@ -183,14 +198,9 @@ Uninstall-Package -Name jquery –Provider NuGet -Destination c:\test
 Get-Package -Name jquery –Provider NuGet -Destination c:\test | Uninstall-Package
 ```
 
-## [Командлет Unregister-PackageSource](https://technet.microsoft.com/en-us/library/dn890707.aspx)
+## <a name="unregister-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890707aspx"></a>[Командлет Unregister-PackageSource](https://technet.microsoft.com/en-us/library/dn890707.aspx)
 ```powershell
 # Unregister a package source for the NuGet provider. You can use command Unregister-PackageSource, to disconnect with a repository, and Get-PackageSource, to discover what the repositories are associated with that provider.
 Unregister-PackageSource  -Name "NugetSource"
 ```
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

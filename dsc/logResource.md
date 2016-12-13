@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
-ms.openlocfilehash: 60085295fa7df6179a81cd98859cd33e6923150f
-
+ms.openlocfilehash: fe905237f5f0672f6e5e0cd399e1b71058417d9c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Log в DSC 
+# <a name="dsc-log-resource"></a>Ресурс Log в DSC 
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -35,13 +33,13 @@ Log [string] #ResourceName
 
 [Где находятся журналы событий DSC?](https://msdn.microsoft.com/en-us/powershell/dsc/troubleshooting#where-are-dsc-event-logs)
 
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Сообщение| Указывает сообщение для записи в журнал событий Microsoft-Windows-Desired State Configuration/Analytic.| 
 | DependsOn | Указывает, что перед записью этого сообщения в журнал необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере показано, как добавить сообщение в журнал событий Microsoft-Windows-Desired State Configuration/Analytic.
 
@@ -62,10 +60,4 @@ Configuration logResourceTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
 

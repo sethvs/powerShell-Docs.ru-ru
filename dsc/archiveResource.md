@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 1d4d2d9106ef76d6628f93cf86234807dbb121ed
-
+ms.openlocfilehash: 77398d26f59975469e7c752a8d7f4f8bbbe4f553
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Ресурс Archive в DSC
+# <a name="dsc-archive-resource"></a>Ресурс Archive в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс Archive в DSC Windows PowerShell предоставляет механизм распаковки файлов архивов (ZIP) в указанную папку.
 
-## Синтаксис 
+## <a name="syntax"></a>Синтаксис 
 ```MOF
 Archive [string] #ResourceName
 {
@@ -33,7 +31,7 @@ Archive [string] #ResourceName
 }
 ```
 
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -45,7 +43,7 @@ Archive [string] #ResourceName
 | Проверить| Проверяет соответствие архива и подписи, используя свойство Checksum. Если свойство Checksum указано без свойства Validate, возникает ошибка конфигурации. Если свойство Validate указано без свойства Checksum, по умолчанию используется контрольная сумма SHA-256.| 
 | Force| Определенные операции с файлами (например, перезапись файла или удаление непустого каталога) вызывают ошибку. Свойство Force позволяет переопределять такие ошибки. По умолчанию используется значение False.| 
 
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере показано, как использовать ресурс Archive, чтобы убедиться, что содержимое архивного файла с именем Test.zip существует и извлекается в указанную папку.
 
@@ -56,10 +54,4 @@ Archive ArchiveExample {
     Destination = "C:\Users\Public\Documents\ExtractionPath"
 } 
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

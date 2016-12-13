@@ -7,17 +7,15 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 4f760ef9a62d16ec709f8d25e62c2a03b8d841a5
-ms.openlocfilehash: 4cdd2c913eb33d29e9734c3845994d7e776db2b1
-
+ms.openlocfilehash: 5cace2ee6612b9f827fedd31361d259525eab66d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Модуль PSWorkflow
+# <a name="psworkflow-module"></a>Модуль PSWorkflow
 В этом разделе содержатся разделы справки по модулю **PSWorkflow**, в который входят командлеты, поддерживающие компонент "Рабочий процесс" Windows PowerShell. Модуль **PSWorkflow** устанавливается вместе с Windows PowerShell.
 
-## Разделы справки
-[Командлеты модуля Workflow](http://go.microsoft.com/fwlink/?LinkID=245865)
+## <a name="help-topics"></a>Разделы справки
+[Командлеты рабочих процессов](http://go.microsoft.com/fwlink/?LinkID=245865)
 
 [about_Workflows](https://technet.microsoft.com/en-us/library/f2897bdd-1b9d-4679-8b19-09840bd40a22)
 
@@ -37,11 +35,5 @@ ms.openlocfilehash: 4cdd2c913eb33d29e9734c3845994d7e776db2b1
 
 [about_Suspend-Workflow](https://technet.microsoft.com/en-us/library/be2ded75-1eca-493e-96c1-758f92b5f199)
 
-[Командлеты модуля WorkflowUtility PowerShell](https://technet.microsoft.com/en-us/library/a5a32019-0d68-4041-935f-1b1cacaf6d3d)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+[Командлеты служебных программ рабочих процессов PowerShell](https://technet.microsoft.com/en-us/library/a5a32019-0d68-4041-935f-1b1cacaf6d3d)
 

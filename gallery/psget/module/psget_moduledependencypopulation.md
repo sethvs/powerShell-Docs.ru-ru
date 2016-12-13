@@ -1,4 +1,19 @@
-# Логика для подготовки зависимостей модуля во время операции публикации
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell,командлет,коллекция"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_заполнениезависимостеймодуля"
+ms.technology: powershell
+ms.openlocfilehash: 3d89dddf2fc31a9fdb1a57f21baaf757990989c7
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
+---
+# <a name="logic-for-preparing-the-module-dependencies-during-publish-operation"></a>Логика для подготовки зависимостей модуля во время операции публикации
 1.  Модули, перечисленные в списке RequiredModules, считаются зависимостями.
 2.  Модули, перечисленные в списке NestedModules, база модуля которых не находится под указанной базой модуля, считаются зависимостями.
 
@@ -16,9 +31,5 @@
 
 *Во время установки модуля подготовленный выше список зависимостей используется для установки зависимостей.*
 
-*Убедитесь, что зависимости вашего модуля доступны в разделе $env:PSModulePath в системе во время операции публикации.*
-
-
-<!--HONumber=Aug16_HO3-->
-
+*Убедитесь, что зависимости вашего модуля доступны в разделе $env:PSModulePath в системе во время публикации.*
 

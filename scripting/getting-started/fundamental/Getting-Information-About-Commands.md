@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 57ccd656e0b869da8aadece97e9bb871764c3f70
-
+ms.openlocfilehash: b91b68f6d7bfee668edc4731f23b21233d9367d5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Получение сведений о командах
+# <a name="getting-information-about-commands"></a>Получение сведений о командах
 Командлет **Get-Command** Windows PowerShell возвращает все команды, доступные в текущем сеансе. При вводе **Get-Command** в командной строке Windows PowerShell появятся выходные данные, аналогичные следующим:
 
 ```
@@ -49,7 +47,7 @@ Get-Help [[-Name] <String>] [-Path <String>] [-Category <String[]>] [-Component 
  [-Role <String[]>] [-Parameter <String>] [-Online] [-Verbose] [-Debug] [-ErrorAction <ActionPreference>] [-WarningAction <ActionPreference>] [-ErrorVariable <String>] [-WarningVariable <String>] [-OutVariable <String>] [-OutBuffer <Int32>]
 ```
 
-### Отображение доступных типов команд
+### <a name="displaying-available-command-types"></a>Отображение доступных типов команд
 Команда **Get-Command** не перечисляет все команды, доступные в Windows PowerShell. Вместо этого команда **Get-Command** перечисляет только командлеты в текущем сеансе. Windows PowerShell фактически поддерживает несколько других типов команд. Псевдонимы, функции и скрипты также являются командами Windows PowerShell, хотя они не описываются подробно в руководстве пользователя Windows PowerShell. Внешние файлы, исполняемые или содержащие обработчик зарегистрированных типов файлов, также классифицируются как команды.
 
 Чтобы получить все команды в сеансе, введите следующую команду:
@@ -82,10 +80,4 @@ Get-Command -CommandType Function
 ```
 Get-Command -CommandType Script
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 95b141472d9428cee71b6970fc1f496704211c0b
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# Метод SendConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="sendconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод SendConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отправляет документ конфигурации на управляемый узел и сохраняет его как ожидающее изменение.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -28,7 +25,7 @@ uint32 SendConfiguration(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *ConfigurationData* \[in\]  
@@ -37,23 +34,23 @@ uint32 SendConfiguration(
 *force* \[in\]  
 Значение **true** для принудительной остановки конфигурации.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -63,11 +60,5 @@ uint32 SendConfiguration(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

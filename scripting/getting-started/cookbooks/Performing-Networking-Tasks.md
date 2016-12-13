@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 39266e1e4ae2101de26277c20a98596f62cf223d
-
+ms.openlocfilehash: 5fbe64a5720bf76565452a271dbcb34ffe6563de
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Выполнение задач по работе с сетями
+# <a name="performing-networking-tasks"></a>Выполнение задач по работе с сетями
 Большая часть задач администрирования низкоуровневых сетевых протоколов связана с протоколом TCP/IP, так как это наиболее распространенный сетевой протокол. В этом разделе описано использование Windows PowerShell и WMI для выполнения этих задач.
 
-### Получение списка IP-адресов компьютера
+### <a name="listing-ip-addresses-for-a-computer"></a>Получение списка IP-адресов компьютера
 Список всех IP-адресов, используемых локальным компьютером, возвращает следующая команда:
 
 ```
@@ -26,7 +24,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 Выходные данные этой команды отличаются от большинства списков свойств заключением значений в фигурные скобки:
 
-<pre>IPAddress
+<a name="preipaddress"></a><pre>IPAddress
 ---------
 {192.168.1.80} {192.168.148.1} {192.168.171.1} {0.0.0.0}</pre>
 
@@ -36,7 +34,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 Свойство IPAddress каждого сетевого адаптера в действительности представляет собой массив. Фигурные скобки в определении указывают на то, что свойство **IPAddress** содержит не значение типа **System.String**, а массив значений типа **System.String**.
 
-### Вывод данных IP-конфигурации
+### <a name="listing-ip-configuration-data"></a>Вывод данных IP-конфигурации
 Для отображения подробных данных IP-конфигурации каждого сетевого адаптера воспользуйтесь следующей командой:
 
 ```
@@ -53,7 +51,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 Эта команда выводит подробные сведения о DHCP, DNS, маршрутизации и других менее значительных свойствах IP-конфигурации.
 
-### Проверка связи с компьютерами
+### <a name="pinging-computers"></a>Проверка связи с компьютерами
 Простую проверку связи с компьютером можно выполнить с помощью **Win32_PingStatus**. Следующая команда производит проверку связи, но при этом выводит большой объем сведений:
 
 ```
@@ -89,14 +87,14 @@ A status code of 0 indicates a successful ping.
 
 `$ips = 1..254 | ForEach-Object -Process {"192.168.1." + $_}`
 
-### Извлечение свойств сетевого адаптера
+### <a name="retrieving-network-adapter-properties"></a>Извлечение свойств сетевого адаптера
 Ранее в данном руководстве пользователя упоминалось о возможности извлечения общих свойств конфигурации с помощью **Win32_NetworkAdapterConfiguration**. Такие сведения о сетевом адаптере, как MAC-адреса и типы адаптеров, не относятся, строго говоря, к протоколу TCP/IP, но могут оказаться полезными для понимания того, что происходит в компьютере. Сводные данные можно получить с помощью следующей команды:
 
 ```
 Get-WmiObject -Class Win32_NetworkAdapter -ComputerName .
 ```
 
-### Назначение домена DNS сетевому адаптеру
+### <a name="assigning-the-dns-domain-for-a-network-adapter"></a>Назначение домена DNS сетевому адаптеру
 Чтобы назначить домен DNS для автоматического разрешения имен, нужно использовать метод **Win32_NetworkAdapterConfiguration SetDNSDomain**. Так как назначение домена DNS для каждого сетевого адаптера производится независимо, чтобы назначить домен для каждого адаптера, необходимо воспользоваться оператором **ForEach-Object**.
 
 ```
@@ -111,10 +109,10 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -C
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -ComputerName . | Where-Object -FilterScript {$_.IPEnabled} | ForEach-Object -Process {$_.SetDNSDomain("fabrikam.com")}
 ```
 
-### Выполнение задач настройки DHCP
+### <a name="performing-dhcp-configuration-tasks"></a>Выполнение задач настройки DHCP
 Изменение сведений DHCP, так же как и настройка DNS, включает работу с набором сетевых адаптеров. Существует несколько отдельных действий, выполняемых с помощью инструментария WMI. Мы рассмотрим несколько наиболее типичных.
 
-#### Определение адаптеров, поддерживающих DHCP
+#### <a name="determining-dhcp-enabled-adapters"></a>Определение адаптеров, поддерживающих DHCP
 Найти на компьютере адаптеры, поддерживающие DHCP, можно с помощью следующей команды:
 
 ```
@@ -127,14 +125,14 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "DHCPEnabled=true
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true and DHCPEnabled=true" -ComputerName .
 ```
 
-#### Извлечение свойств DHCP
+#### <a name="retrieving-dhcp-properties"></a>Извлечение свойств DHCP
 Свойства адаптера, относящиеся к протоколу DHCP, обычно начинаются с DHCP, поэтому для отображения только этих свойств можно использовать параметр Property командлета Format-Table:
 
 ```
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "DHCPEnabled=true" -ComputerName . | Format-Table -Property DHCP*
 ```
 
-#### Включение поддержки DHCP на каждом адаптере
+#### <a name="enabling-dhcp-on-each-adapter"></a>Включение поддержки DHCP на каждом адаптере
 Чтобы включить поддержку DHCP на всех адаптерах, используйте команду:
 
 ```
@@ -143,7 +141,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -C
 
 Можно воспользоваться оператором **Filter** "IPEnabled=true and DHCPEnabled=false" во избежание включения поддержки DHCP для адаптеров, у которых она уже включена, но пропуск этого шага не приведет к появлению ошибок.
 
-#### Отмена и обновление аренды адреса DHCP для отдельных адаптеров
+#### <a name="releasing-and-renewing-dhcp-leases-on-specific-adapters"></a>Отмена и обновление аренды адреса DHCP для отдельных адаптеров
 Класс **Win32_NetworkAdapterConfiguration** использует методы **ReleaseDHCPLease** и **RenewDHCPLease**. Оба метода используются одинаково. Обычно их применяют лишь при необходимости отмены или обновления аренды адресов для адаптера в отдельной подсети. Простейшим способом фильтрации адаптеров в подсети является выбор лишь тех адаптеров, которые используют шлюз для этой подсети. Например, следующая команда отменяет все аренды адресов DHCP для адаптеров на локальном компьютере, которые арендуют адреса DHCP с 192.168.1.254:
 
 ```
@@ -159,7 +157,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true a
 > [!NOTE]
 > Если эти методы применяются на удаленном компьютере, возможна потеря доступа к удаленной системе, которая подключена через адаптер с отмененной или обновленной арендой.
 
-#### Отмена и обновление аренды адресов DHCP для всех адаптеров
+#### <a name="releasing-and-renewing-dhcp-leases-on-all-adapters"></a>Отмена и обновление аренды адресов DHCP для всех адаптеров
 Отменить или обновить аренду адресов DHCP сразу для всех адаптеров можно с помощью методов **Win32_NetworkAdapterConfiguration** — **ReleaseDHCPLeaseAll** и **RenewDHCPLeaseAll**. Однако эту команду следует применять к классу WMI, а не к отдельному адаптеру, поскольку глобальная отмена и обновление аренды осуществляется на уровне класса, а не отдельного адаптера.
 
 Ссылку на класс WMI вместо ссылки на экземпляры класса можно получить путем перечисления всех классов WMI и выбора нужного класса по имени. Например, следующая команда возвращает класс Win32_NetworkAdapterConfiguration:
@@ -180,7 +178,7 @@ Get-WmiObject -List | Where-Object -FilterScript {$_.Name -eq "Win32_NetworkAdap
 ( Get-WmiObject -List | Where-Object -FilterScript {$_.Name -eq "Win32_NetworkAdapterConfiguration"} ).RenewDHCPLeaseAll()
 ```
 
-### Создание сетевой папки
+### <a name="creating-a-network-share"></a>Создание сетевой папки
 Создать сетевую папку можно с помощью метода **Win32_Share Create**:
 
 ```
@@ -193,7 +191,7 @@ Get-WmiObject -List | Where-Object -FilterScript {$_.Name -eq "Win32_NetworkAdap
 net share tempshare=c:\temp /users:25 /remark:"test share of the temp folder"
 ```
 
-### Удаление сетевой папки
+### <a name="removing-a-network-share"></a>Удаление сетевой папки
 Сетевую папку можно удалить с помощью **Win32_Share**, но этот процесс немного отличается от создания, так как требует получения именно удаляемой сетевой папки, а не класса **Win32_Share**. Следующий оператор удаляет сетевую папку TempShare:
 
 ```
@@ -207,7 +205,7 @@ PS> net share tempshare /delete
 tempshare was deleted successfully.
 ```
 
-### Подключение сетевого диска, доступного в Windows
+### <a name="connecting-a-windows-accessible-network-drive"></a>Подключение сетевого диска, доступного в Windows
 Командлет **New-PSDrive** позволяет создавать диски Windows PowerShell, но они доступны только в Windows PowerShell. Для создания сетевого диска можно воспользоваться COM-объектом **WScript.Network**. Следующая команда сопоставляет сетевую папку \\\\FPS01\\users с локальным диском B:
 
 ```
@@ -221,10 +219,4 @@ net use B: \\FPS01\users
 ```
 
 Диски, сопоставленные с помощью **WScript.Network** или команды net use, мгновенно становятся доступными в Windows PowerShell.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

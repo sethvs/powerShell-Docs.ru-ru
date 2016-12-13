@@ -8,18 +8,16 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 45182af45b2d1510b7ad8e9f2ac35fa5346ddb66
-ms.openlocfilehash: bb7efc55b1c948c349aa778b700e5cb1277b9762
-
+ms.openlocfilehash: 118cb91528824b75e28a1eadaa377a696c67f2dd
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#Усовершенствования подсистемы PowerShell
+#<a name="powershell-engine-improvements"></a>Усовершенствования подсистемы PowerShell
 
 В WMF 5.1 были реализованы перечисленные ниже улучшения основной подсистемы PowerShell.
 
 
-## Производительность ##
+## <a name="performance"></a>Производительность ##
 
 Производительность улучшена в некоторых важных аспектах:
 
@@ -42,9 +40,3 @@ ms.openlocfilehash: bb7efc55b1c948c349aa778b700e5cb1277b9762
 
 Еще одним явным изменением является то, как PowerShell кэширует экспортируемые команды и другую информацию для модулей, установленных в системе. Ранее этот кэш хранился в каталоге `$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`. В WMF 5.1 этот кэш является отдельным файлом `$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`.
 Дополнительные сведения см. в статье [Кэш анализа модуля](scenarios-features.md#module-analysis-cache).
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

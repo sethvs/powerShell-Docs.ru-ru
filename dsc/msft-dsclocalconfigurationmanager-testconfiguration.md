@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 0777467d37e2f5588f9c0ef368148e3bea963a5b
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="testconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отправляет документ конфигурации на управляемый узел и проверяет соответствие текущей конфигурации документу.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -30,7 +27,7 @@ uint32 TestConfiguration(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *configurationData* \[in\]  
@@ -45,23 +42,23 @@ uint32 TestConfiguration(
 *ResourcesNotInDesiredState* \[out\]  
 Выходные данные содержат встроенный экземпляр класса **MSFT_ResourceNotInDesiredState**, указывающий ресурсы, которые не находятся в нужном состоянии.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -71,11 +68,5 @@ uint32 TestConfiguration(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

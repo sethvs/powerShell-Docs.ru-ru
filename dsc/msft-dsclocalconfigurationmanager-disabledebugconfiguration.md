@@ -7,45 +7,43 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 919438862ca9786447b690d2db10e905da0a7c42
 ms.openlocfilehash: 97ad8a5711d469a80a7a61056d71b7e2b69cfd27
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отключает отладку ресурсов DSC.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
 uint32 DisableDebugConfiguration();
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 Этот метод не имеет параметров.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -54,11 +52,5 @@ uint32 DisableDebugConfiguration();
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 962941ba946a67256baf141bd195361c94a68f90
-
+ms.openlocfilehash: a8faf242fcc8c72461d6cb7609a562fbb92dfdb9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Использование DSC на сервере Nano Server
+# <a name="using-dsc-on-nano-server"></a>Использование DSC на сервере Nano Server
 
 > Область применения: Windows PowerShell 5.0
 
@@ -26,7 +24,7 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
 Сведения об установке и использовании сервера Nano Server, а также об управлении этим сервером с помощью удаленного взаимодействия PowerShell см. в статье [Getting Started with Nano Server](https://technet.microsoft.com/en-us/library/mt126167.aspx) (Приступая к работе с сервером Nano Server).
 
 
-## Функции DSC, доступные на сервере Nano Server
+## <a name="dsc-features-available-on-nano-server"></a>Функции DSC, доступные на сервере Nano Server
 
  Так как сервер Nano Server поддерживает только ограниченный набор API по сравнению с полной версией Windows Server, набор функций DSC в системе Nano Server на данный момент несравним с DSC в полнофункциональных SKU. DSC для Nano Server в настоящее время активно разрабатывается и не является законченным компонентом.
  
@@ -86,12 +84,12 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
 
 * Полнофункциональные ресурсы.
   * [Archive](archiveResource.md)
-  * [Среда](environmentResource.md)
-  * [Файл](fileResource.md)
-  * [Журнал](logResource.md)
+  * [Environment](environmentResource.md)
+  * [File](fileResource.md)
+  * [Log](logResource.md)
   * ProcessSet
-  * [Реестр](registryResource.md)
-  * [Скрипт](scriptResource.md)
+  * [Registry](registryResource.md)
+  * [Script](scriptResource.md)
   * WindowsPackageCab
   * [WindowsProcess](windowsProcessResource.md)
   * WaitForAll (см. раздел [Указание межузловых зависимостей](crossNodeDependencies.md)).
@@ -115,7 +113,7 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
   * [User](userResource.md)
   
 
-## Функции DSC, недоступные на сервере Nano Server
+## <a name="dsc-features-not-available-on-nano-server"></a>Функции DSC, недоступные на сервере Nano Server
 
 Следующие функции DSC в настоящее время недоступны для Nano Server:
 
@@ -123,16 +121,10 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
 * Опрашивающий сервер — в настоящее время опрашивающий сервер нельзя настроить на сервере Nano Server.
 * Все компоненты, не указанные в списке функций, работают.
 
-## Использование настраиваемых ресурсов DSC на сервере Nano Server
+## <a name="using-custom-dsc-resources-on-nano-server"></a>Использование настраиваемых ресурсов DSC на сервере Nano Server
  
 Поскольку набор API Windows и библиотек CLR, доступный на сервере Nano Server, ограничен, ресурсы DSC, работающие в полной версии среды выполнения Windows, не всегда работают в Nano Server. Перед развертыванием каких-либо настраиваемых ресурсов DSC в рабочей среде рекомендуется выполнять их полное и всестороннее тестирование.
 
-## См. также
-- [Getting Started with Nano Server (Приступая к работе с сервером Nano Server)](https://technet.microsoft.com/en-us/library/mt126167.aspx)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+## <a name="see-also"></a>См. также
+- [Начало работы с сервером Nano Server](https://technet.microsoft.com/en-us/library/mt126167.aspx)
 

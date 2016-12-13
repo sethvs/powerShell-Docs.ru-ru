@@ -1,9 +1,9 @@
-# Установка зависимостей модулей
+# <a name="installation-of-module-dependencies"></a>Установка зависимостей модулей
 
 Теперь в командлетах Install-Module, Update-Module и Publish-Module, выполняемых в Windows PowerShell 5.0 или более поздней версии, имеется поддержка параллельных (SxS) версий модуля.
 Кроме того, мы добавили в командлет Publish-Module параметр -RequiredVersion для указания публикуемой версии. Параметр Path теперь поддерживает базовый путь к модулю с папкой версии.
 
-**Примеры использования Install-Module:**
+**Примеры использования Install-Module**
 ```powershell
 PS C:\\windows\\system32&gt; Install-Module -Name ContosoServer -RequiredVersion 1.0 -Repository MSPSGallery
 PS C:\\windows\\system32&gt; Get-Module -ListAvailable -Name ContosoServer | Format-List Name,Version,ModuleBase
@@ -67,7 +67,7 @@ ModuleType Version Name ExportedCommands
 Manifest 2.0 ModuleWithDependencies2 {Get-NestedRequiredModule1, Get-NestedRequiredModule2, Get-NestedRequiredModule3, Get-NestedRequiredModule4...}
 ```
 
-**Содержимое файла манифеста для модуля ModuleWithDependencies2:**
+**Содержимое файла манифеста для модуля ModuleWithDependencies2**
 ```powershell
 @{
 \# Version number of this module.
@@ -192,7 +192,3 @@ _------ ---- ---------- -----------
 1.5 ContosoServer LocalRepo ContosoServer module
 2.0 ContosoServer LocalRepo ContosoServer module
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

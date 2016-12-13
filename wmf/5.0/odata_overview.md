@@ -1,5 +1,5 @@
-# Создание командлетов PowerShell на основе конечной точки OData
-Создание командлетов Windows PowerShell на основе конечной точки OData
+# <a name="generate-powershell-cmdlets-based-on-odata-endpoint"></a>Создание командлетов PowerShell на основе конечной точки OData
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint"></a>Создание командлетов Windows PowerShell на основе конечной точки OData
 --------------------------------------------------------------
 
 Командлет **Export-ODataEndpointProxy** создает набор командлетов Windows PowerShell в зависимости от функциональности, предоставляемой заданной конечной точкой OData.
@@ -40,7 +40,7 @@ ipmo 'C:\Users\user\Generated.psd1'
 -   Сопоставления
 -   Передача потоков
 
-Создание командлетов Windows PowerShell на основе конечной точки OData с помощью ODataUtils
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint-with-odatautils"></a>Создание командлетов Windows PowerShell на основе конечной точки OData с помощью ODataUtils
 ------------------------------------------------------------------------------
 Модуль ODataUtils позволяет создавать командлеты Windows PowerShell на базе конечных точек REST, которые поддерживают OData. В модуль Microsoft.PowerShell.ODataUtils Windows PowerShell внесены следующие дополнительные усовершенствования:
 -   Передача дополнительных сведений с серверной конечной точки на сторону клиента
@@ -98,8 +98,3 @@ Get-Product -Top 2 -AllowUnsecureConnection -AllowAdditionalData -Select Name
 
 Export-ODataEndpointProxy -Uri $endPointUri -OutputModule $generatedProxyModuleDir -Force -AllowUnSecureConnection -Verbose -Headers @{'subscription-key'='XXXX'}
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

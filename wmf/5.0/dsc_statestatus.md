@@ -1,4 +1,4 @@
-# Единое и согласованное представление состояний
+# <a name="unified-and-consistent-state-and-status-representation"></a>Единое и согласованное представление состояний
 
 В этот выпуск внесен ряд усовершенствований для служб автоматизации, отвечающих за состояние LCM и DSC. Сюда входят единые и согласованные представления состояния, управляемое свойство datetime объектов состояния, возвращаемых командлетом Get-DscConfigurationStatus, и свойство расширенных сведений о состоянии LCM, возвращаемое командлетом Get-DscLocalConfigurationManager.
 
@@ -26,8 +26,7 @@
 | r, F                            | PendingReboot        | Успех    | $true         | $null                        | r                              |
 
 ^
-S<sub>i</sub>: ряд ресурсов, которые успешно применены F<sub>i</sub>: ряд ресурсов, которые применены неудачно r: ресурс, который требует перезагрузку
-\*
+S<sub>i</sub>: ряд ресурсов, которые успешно применены F<sub>i</sub>: ряд ресурсов, которые применены неудачно r: ресурс, который требует перезагрузки \*
 
 ```powershell
 $LCMState = (Get-DscLocalConfigurationManager).LCMState
@@ -39,7 +38,7 @@ $ResourcesInDesiredState = (Get-DscConfigurationStatus).ResourcesInDesiredState
 
 $ResourcesNotInDesiredState = (Get-DscConfigurationStatus).ResourcesNotInDesiredState
 ```
-## Улучшения в командлете Get-DscConfigurationStatus
+## <a name="enhancement-in-get-dscconfigurationstatus-cmdlet"></a>Улучшения в командлете Get-DscConfigurationStatus
 
 В этом выпуске в командлет Get-DscConfigurationStatus было внесено несколько улучшений. Ранее свойство StartDate объектов, возвращаемое командлетом StartDate, имело тип String. Теперь оно имеет тип Datetime, что упрощает сложный выбор и фильтрацию благодаря встроенным свойствам объекта Datetime.
 ```powershell
@@ -81,7 +80,7 @@ Success 11/13/2015 11:20:44 AM Initial True
 Success 11/13/2015 11:20:44 AM LocalConfigurationManager False
 ```
 
-## Улучшения в командлете Get-DscLocalConfigurationManager
+## <a name="enhancement-in-get-dsclocalconfigurationmanager-cmdlet"></a>Улучшения в командлете Get-DscLocalConfigurationManager
 В объект, возвращаемый из командлета Get-DscLocalConfigurationManager, добавлено новое поле LCMStateDetail. Оно заполняется в том случае, когда LCMState имеет значение Busy. Извлечь его можно с помощью следующего командлета:
 ```powershell
 (Get-DscLocalConfigurationManager).LCMStateDetail
@@ -103,8 +102,3 @@ LCM State: Idle,
 LCM State: Busy, LCM is performing a consistency check.
 LCM State: Idle,
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

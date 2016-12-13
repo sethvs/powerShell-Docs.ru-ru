@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: cbc499f293aad941d40fcb720ef53e832c3b1ea8
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
+# <a name="resourceset-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
 
 Напрямую вызывает метод **Set** ресурса DSC.
 
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -30,7 +27,7 @@ uint32 ResourceSet(
 );
 ```
 
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *ResourceType* \[in\]  
@@ -45,23 +42,23 @@ uint32 ResourceSet(
 *RebootRequired* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
 
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -70,11 +67,5 @@ uint32 ResourceSet(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

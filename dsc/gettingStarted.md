@@ -7,18 +7,16 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: c5ee7f7e7678b60700edb1ab1b66139791ea67c6
-
+ms.openlocfilehash: 3a59f76919c0a63f269ca587d358020825412be4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Начало работы с настройкой требуемого состояния PowerShell #
+# <a name="getting-started-with-powershell-desired-state-configuration"></a>Начало работы с настройкой требуемого состояния PowerShell #
 
 В этом руководстве описывается, как приступить к созданию документов настройки требуемого состояния PowerShell и применять их к компьютерам. Предполагается, что пользователь уже знаком с командлетами, модулями и компонентами PowerShell. 
 
 
-## Создание конфигурации ##
+## <a name="create-a-configuration"></a>Создание конфигурации ##
 
 [**Конфигурации**](https://msdn.microsoft.com/en-us/powershell/dsc/configurations) — это документы, которые описывают среду. Среды состоят из "**узлов**", которые обычно представляют собой компьютеры или виртуальные машины. 
 
@@ -41,7 +39,7 @@ configuration MyFirstConfiguration
 
 }
 ```
-## Элементы конфигурации ##
+## <a name="parts-of-a-configuration"></a>Элементы конфигурации ##
 **Configuration** — это ключевое слово, добавленное в PowerShell 4.0. Оно означает особый вид компонентов PowerShell, используемых настройкой требуемого состояния. В этом примере компоненту присвоено имя myFirstConfiguration. 
 
 Следующая строка представляет собой оператор импорта, который аналогичен импорту модуля. Его мы обсудим позже.
@@ -71,10 +69,4 @@ Start-DscConfiguration -Path ./myFirstConfiguration
 ```powershell
 Start-DscConfiguration -Path ./myFirstConfiguration -Wait
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

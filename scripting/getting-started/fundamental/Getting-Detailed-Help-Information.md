@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
-translationtype: Human Translation
-ms.sourcegitcommit: b59186234a513cf34d2615d90643ee749bd60d3f
-ms.openlocfilehash: c38edc68154ccfa9cd76ebdad5a94ddfb4f902c8
-
+ms.openlocfilehash: 983876d805404857392565d4273e4dc38752a094
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Получение подробной справки
+# <a name="getting-detailed-help-information"></a>Получение подробной справки
 В Windows PowerShell входят подробные разделы справки, объясняющие концепции Windows PowerShell и язык Windows PowerShell. Разделы справки существуют для каждого командлета и поставщика, а также для многих функций и сценариев.
 
 Эти разделы можно отобразить в командной строке или просмотреть их последние обновленные версии в библиотеке Microsoft TechNet Library. Многие рабочие программы Windows PowerShell, например интегрированная среда сценариев Windows PowerShell, содержат дополнительные компоненты справки, например контекстную справку и скомпилированные файлы справки (CHM).
 
-## Получение справки для командлетов
+## <a name="getting-help-for-cmdlets"></a>Получение справки для командлетов
 Для получения справки о командлетах Windows PowerShell используйте командлет [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2). Например, для получения справки о командлете [Get-ChildItem [m2]](https://technet.microsoft.com/en-us/library/4b270d63-c995-45b8-b5b4-3f8887efbfcc), введите следующее:
 
 ```
@@ -82,7 +80,7 @@ get-help get-childitem -examples
 
 Дополнительные сведения о написании разделов справки для командлетов см. в статье "How to Write Cmdlet Help" (Как писать справку для командлетов) в библиотеке MSDN.
 
-## Получение справки по концепциям
+## <a name="getting-conceptual-help"></a>Получение справки по концепциям
 Командлет Get-Help также можно использовать для вывода разделов справки, посвященных концепциям Windows PowerShell, в том числе разделов о языке Windows PowerShell. Посвященные концепциям разделы справки начинаются с префикса about_, например about_line_editing. (Название концепции нужно вводить на английском языке, даже если используется локализованная версия Windows PowerShell.)
 
 Для отображения списка концептуальных разделов введите:
@@ -99,7 +97,7 @@ get-help about_command_syntax
 
 Параметры командлета Get-Help, например *Detailed*, *Parameter* и *Examples*, не влияют на отображение концептуальных разделов справки.
 
-## Получение справки о поставщиках
+## <a name="getting-help-about-providers"></a>Получение справки о поставщиках
 Командлет Get-Help позволяет получить информацию о поставщиках Windows PowerShell. Чтобы получить справку для поставщика, введите команду Get-Help и имя поставщика. Например, чтобы получить справку для поставщика Registry, введите:
 
 ```
@@ -114,7 +112,7 @@ get-help -category provider
 
 Параметры командлета Get-Help, например *Detailed*, *Parameter* и *Examples*, не влияют на отображение разделов справки о поставщиках.
 
-## Получение справки по сценариям и функциям
+## <a name="getting-help-about-scripts-and-functions"></a>Получение справки по сценариям и функциям
 Многим сценариям и функциям Windows PowerShell посвящены разделы справки. Для их просмотра можно использовать командлет Get-Help.
 
 Чтобы получить справку для функции, введите команду get-help и имя функции. Например, для получения справки по функции Disable-PSRemoting введите следующее:
@@ -135,7 +133,7 @@ get-help c:\ps-test\TestScript.ps1
 
 Сведения о написании разделов справки для функций и сценариев см. в статьях [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af) и [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf).
 
-## Получение справки в Интернете
+## <a name="getting-help-online"></a>Получение справки в Интернете
 Если локальный компьютер подключен к Интернету, лучше всего использовать разделы справки в Интернете. Поскольку разделы справки в Интернете легко обновлять, в них обычно содержится самая актуальная информация.
 
 Для получения справки в Интернете используйте параметр *Online* командлета Get-Help. Параметр *Online* командлета Get-Help подходит только для справки по командлетам, функциям и сценариям. Параметр *Online* нельзя использовать для вывода разделов справки о концепциях (About) и поставщиках. Поскольку эта возможность необязательна, она может не работать для некоторых разделов справки по командлетам, функциям и сценариям.
@@ -172,15 +170,9 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 
 Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf), и "How to Write Cmdlet Help" (Как писать справку для командлетов) ([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415)) — в библиотеке MSDN.
 
-## См. также
+## <a name="see-also"></a>См. также
 - [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
 - [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
 - [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
 - [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
 

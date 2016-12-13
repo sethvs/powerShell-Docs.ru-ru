@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
-translationtype: Human Translation
-ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
-ms.openlocfilehash: 3812d0492da1879df50538533740ff857af7b15d
-
+ms.openlocfilehash: 7f7097966aff6ae73b50521b86f932ffdfadf937
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Управление процессами с помощью командлетов Process
+# <a name="managing-processes-with-process-cmdlets"></a>Управление процессами с помощью командлетов Process
 Командлеты Process в Windows PowerShell позволяют управлять локальными и удаленными процессами в Windows PowerShell.
 
-## Получение процессов (Get-Process)
+## <a name="getting-processes-get-process"></a>Получение процессов (Get-Process)
 Для получения процессов, запущенных на локальном компьютере, выполните командет **Get-Process** без параметров.
 
 Отдельные процессы можно получить, указав их имена или идентификаторы. Следующая команда возвращает процесс Idle:
@@ -103,7 +101,7 @@ Handles  NPM(K)  PM(K) WS(K) VM(M) CPU(s)  Id ProcessName  MachineName
     605       9  30668 29800   155 7.11    3052 powershell Server02
 ```
 
-## Остановка процессов (Stop-Process)
+## <a name="stopping-processes-stop-process"></a>Остановка процессов (Stop-Process)
 Windows PowerShell позволяет гибко выводить списки процессов, но как обстоят дела с остановкой процесса?
 
 Командлет **Stop-Process** принимает имя или идентификатор, указывающие останавливаемый процесс. Возможность остановки процессов зависит от ваших разрешений. Некоторые процессы остановить нельзя. Например, при попытке остановить неактивный процесс возникает ошибка:
@@ -150,7 +148,7 @@ Get-Process -Name BadApp | Where-Object -FilterScript {$_.SessionId -neq 0} | St
 Invoke-Command -ComputerName Server01 {Stop-Process Powershell}
 ```
 
-## Остановка всех остальных сеансов Windows PowerShell
+## <a name="stopping-all-other-windows-powershell-sessions"></a>Остановка всех остальных сеансов Windows PowerShell
 В некоторых случаях может пригодиться возможность остановки всех выполняющихся сеансов Windows PowerShell, отличных от текущего. Если сеанс использует слишком много ресурсов или недоступен (он может выполняться удаленно или в другом сеансе), возможно, остановить его напрямую не получится. При попытке остановить все выполняющиеся сеансы может быть завершен текущий сеанс.
 
 Каждый сеанс Windows PowerShell имеет переменную среды PID, содержащую идентификатор процесса Windows PowerShell. Можно проверить переменную $PID на наличие идентификатора каждого сеанса и завершить только сеансы Windows PowerShell с другим идентификатором. Следующая команда конвейера делает именно это и возвращает список завершенных сеансов (из-за использования параметра **PassThru**):
@@ -168,19 +166,13 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     287       9    21044      26928   143     1.02   3672 powershell
 ```
 
-## Запуск, отладка и ожидание процессов
+## <a name="starting-debugging-and-waiting-for-processes"></a>Запуск, отладка и ожидание процессов
 Windows PowerShell также имеет командлеты для запуска (или перезапуска), отладки процесса и ожидания завершения процесса перед выполнением команды. Дополнительные сведения об этих командлетах см. в разделах справки по каждому из них.
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Get-Process [m2]](https://technet.microsoft.com/en-us/library/27a05dbd-4b69-48a3-8d55-b295f6225f15)
 - [Stop-Process [m2]](https://technet.microsoft.com/en-us/library/12454238-9881-457a-bde4-fb6cd124deec)
 - [Start-Process](https://technet.microsoft.com/en-us/library/41a7e43c-9bb3-4dc2-8b0c-f6c32962e72c)
 - [Wait-Process](https://technet.microsoft.com/en-us/library/9222af7a-789d-4a09-aa90-09d7c256c799)
 - [Debug-Process](https://technet.microsoft.com/en-us/library/eea1dace-3913-4dbd-b659-5a94a610eee1)
 - [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
-
-
-
-<!--HONumber=Oct16_HO3-->
-
-

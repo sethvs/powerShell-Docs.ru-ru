@@ -1,10 +1,10 @@
 # [Just Enough Administration (JEA)](README.md)
 ##  [Введение](introduction.md)
-##  [Необходимые компоненты](prerequisites.md)
+##  [Предварительные требования](prerequisites.md)
 ##  [Использование JEA](using-jea.md)
-##  [Переделка демоверсии](remake-the-demo-endpoint.md)
+##  [Новая демоверсия](remake-the-demo-endpoint.md)
 ##  [Возможности ролей](role-capabilities.md)
-##  [От начала до конца — Active Directory](end-to-end---active-directory.md)
+##  [Сквозной — Active Directory](end-to-end---active-directory.md)
 ##  [Обслуживание и развертывание на нескольких компьютерах](multi-machine-deployment-and-maintenance.md)
 ##  [Отчеты о JEA](reporting-on-jea.md)
 ##  Приложения
@@ -13,8 +13,3 @@
 ###  [О запрещенных списках](on-blacklisting.md)  
 ###  [Рекомендации по ограничениям команд](considerations-when-limiting-commands.md)  
 ###  [Распространенные проблемы возможностей ролей](common-role-capability-pitfalls.md)
-
-
-<!--HONumber=Aug16_HO3-->
-
-
