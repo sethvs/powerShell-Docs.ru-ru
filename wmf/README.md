@@ -8,13 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: b32cb86b7a18fee929cc81360d81f479571a74c2
-ms.openlocfilehash: a7ef0ddf4d093a89f32f3484dfbef78fb159f0c2
-
+ms.openlocfilehash: eacd33d2a0a92977a3990132e23eef9871a7f0dc
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows Management Framework
+# <a name="windows-management-framework"></a>Windows Management Framework
 
 Windows Management Framework (WMF) — это механизм доставки, который предоставляет согласованный интерфейс управления различными версиями Windows и Windows Server.
 Установив WMF, клиенты получают возможность легко обеспечивать взаимодействие внутри различных сочетаний операционных систем в своих средах.
@@ -31,7 +29,7 @@ Windows Management Framework (WMF) — это механизм доставки
 - Инвентаризация программного обеспечения (SIL)
 - Поставщик CIM диспетчера сервера
 
-## Заметки о выпуске WMF
+## <a name="wmf-release-notes"></a>Заметки о выпуске WMF
 Сведения о различных улучшениях в PowerShell и других компонентах определенной версии WMF см. по следующим ссылкам на заметки о выпусках:
 
 
@@ -39,11 +37,11 @@ Windows Management Framework (WMF) — это механизм доставки
 - [WMF 5.0](5.0/releasenotes.md)
 
 
-## Доступность WMF в различных операционных системах Windows
+## <a name="wmf-availability-across-windows-operating-systems"></a>Доступность WMF в различных операционных системах Windows
 
 >TODO: добавить ссылки на конкретные DLC WMF в заголовок столбца
 
-| Версия операционной системы | [Предварительная версия WMF 5.1 *]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF 2.0]() |
+| Версия операционной системы | [Предварительная версия WMF 5.1*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF (2.0)]() |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
 | Windows Server 2016 | Входит в комплект поставки * | Входит в комплект поставки * |  |  |  |
 | Windows 10 | Входит в комплект поставки * | Входит в комплект поставки *  | | | |  
@@ -59,9 +57,3 @@ Windows Management Framework (WMF) — это механизм доставки
 | Windows XP | | | |  | Да |
 
 >TODO: объяснить значение значка * в приведенной выше таблице
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

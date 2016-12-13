@@ -8,19 +8,17 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 1f6f18e46537d4b9f5e64c9e808e46e82b2d3050
-ms.openlocfilehash: 8e7dd69fc5ba29e719aec353afcac2471ecb2352
-
+ms.openlocfilehash: 96795dcf591375c2b087bc59331db39dbc972f5b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Совместимость WMF 5.1 с операционными системами (предварительная версия)#
+# <a name="wmf-51-operating-system-compatibility-preview"></a>Совместимость WMF 5.1 с операционными системами (предварительная версия)#
 
 > Примечание. Эта информация является предварительной и может быть изменена.
 
 >TODO: добавить ссылки на конкретные DLC WMF в заголовок столбца
 
-| Версия операционной системы | [Предварительная версия WMF 5.1 *]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF 2.0]() |
+| Версия операционной системы | [Предварительная версия WMF 5.1*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF 2.0]() |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
 | Windows Server 2016 | Входит в комплект поставки * | Входит в комплект поставки * |  |  |  |
 | Windows 10 | Входит в комплект поставки * | Входит в комплект поставки *  | | | |  
@@ -36,9 +34,3 @@ ms.openlocfilehash: 8e7dd69fc5ba29e719aec353afcac2471ecb2352
 | Windows XP | | | |  | Да |
 
 >TODO: объяснить значение значка * в приведенной выше таблице
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-
