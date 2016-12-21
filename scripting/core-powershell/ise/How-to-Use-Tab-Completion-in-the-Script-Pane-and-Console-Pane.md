@@ -1,15 +1,16 @@
 ---
-title: "Использование заполнения нажатием клавиши TAB в областях сценариев и консоли"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Использование заполнения нажатием клавиши TAB в областях сценариев и консоли"
+ms.technology: powershell
 ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
-ms.openlocfilehash: 803470be4a680d47ccec8b5b19bc873626aec15e
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f2eec644055c228dd1a16a2c20a09996666ca6e1
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="how-to-use-tab-completion-in-the-script-pane-and-console-pane"></a>Использование заполнения нажатием клавиши TAB в областях сценариев и консоли

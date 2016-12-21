@@ -1,14 +1,15 @@
 ---
-title: "основные справочники"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 0a5460dd8b3d94745c1350d4c88ac4ba2420eb03
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "основные справочники"
+ms.technology: powershell
+ms.openlocfilehash: 6caf1917904b125b67fce080b503b321ad0fd47c
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="basic-cookbooks-referencecookbooksbasic-cookbooks-referencemd"></a>[Основные справочные материалы](cookbooks/basic-cookbooks-reference.md)
@@ -20,7 +21,7 @@ translationtype: HT
 -  [Создание объектов .NET и COM (New-Object)](cookbooks/Creating-.NET-and-COM-Objects--New-Object-.md)
 -  [Создание настраиваемого поля ввода](cookbooks/Creating-a-Custom-Input-Box.md)
 -  [Создание графического элемента управления "Выбор даты"](cookbooks/Creating-a-Graphical-Date-Picker.md)
--  [Получение объектов WMI (Get-WmiObject)](cookbooks/Getting-WMI-Objects--Get-WmiObject-.md)
+-  [Получение объектов WMI (Get-WmiObject) ](cookbooks/Getting-WMI-Objects--Get-WmiObject-.md)
 -  [Управление текущим расположением](cookbooks/Managing-Current-Location.md)
 -  [Управление процессами при помощи командлетов Process](cookbooks/Managing-Processes-with-Process-Cmdlets.md)
 -  [Управление службами](cookbooks/Managing-Services.md)
@@ -38,7 +39,7 @@ translationtype: HT
 -  [Сортировка объектов](cookbooks/Sorting-Objects.md)
 -  [Использование команд Format для изменения представления вывода](cookbooks/Using-Format-Commands-to-Change-Output-View.md)
 -  [Использование статических классов и методов](cookbooks/Using-Static-Classes-and-Methods.md)
--  [Просмотр структуры объектов (Get-Member)](cookbooks/Viewing-Object-Structure--Get-Member-.md)
+-  [Просмотр структуры объектов (Get-Member) ](cookbooks/Viewing-Object-Structure--Get-Member-.md)
 -  [Работа с файлами и папками](cookbooks/Working-with-Files-and-Folders.md)
 -  [Работа с файлами, папками и разделами реестра](cookbooks/Working-With-Files-Folders-and-Registry-Keys.md)
 -  [Работа с объектами](cookbooks/Working-with-Objects.md)

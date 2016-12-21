@@ -1,19 +1,20 @@
 ---
-title: "Управление дисками Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Управление дисками Windows PowerShell"
+ms.technology: powershell
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
-ms.openlocfilehash: 776e55de817dd200142965e19ce84bbe776fcb9d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: aa2e116589d93bc160f697b25666838bbbe5cb6b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="managing-windows-powershell-drives"></a>Управление дисками Windows PowerShell
-*Диск Windows PowerShell* — это расположение хранилища данных, доступ к которому можно получить так же, как к диску файловой системы в Windows PowerShell. Поставщики Windows PowerShell создают несколько дисков, например диски файловой системы (включая C: и D:), диски реестра (HKCU: и HKLM:) и диск сертификата (Cert:), а вы можете создать собственные диски Windows PowerShell. Эти диски очень полезны, но они доступны только в Windows PowerShell. К ним невозможно получить доступ с помощью других средств Windows, например проводника или Cmd.exe.
+*Диск Windows PowerShell* — это расположение хранилища данных, доступ к которому можно получить так же, как к диску файловой системы в Windows PowerShell. Поставщики Windows PowerShell создают несколько дисков, например диски файловой системы (включая C: и D:), диски реестра (HKCU: и HKLM:) и диск сертификата (Cert:), а вы можете создать собственные диски Windows PowerShell. Эти диски очень полезны, но они доступны только в Windows PowerShell. К ним невозможно получить доступ с помощью других средств Windows, например проводника или Cmd.exe.
 
 Windows PowerShell использует существительное **PSDrive** для команд, которые работают на дисках Windows PowerShell. Для получения списка дисков Windows PowerShell в сеансе Windows PowerShell используйте командлет **Get-PSDrive**.
 
@@ -84,7 +85,7 @@ ring>] [-OutBuffer <Int32>] [-WhatIf] [-Confirm]
 
 -   PSProvider (используйте FileSystem для расположений файловой системы и Registry для расположений реестра);
 
--   корень, т. е. путь к корню нового диска.
+-   корень, т. е. путь к корню нового диска.
 
 Например, можно создать диск с именем "Office", который сопоставляется с папкой, содержащей приложения Microsoft Office на компьютере, такой как **C:\\Program Files\\Microsoft Office\\OFFICE11**. Чтобы создать диск, введите следующую команду:
 

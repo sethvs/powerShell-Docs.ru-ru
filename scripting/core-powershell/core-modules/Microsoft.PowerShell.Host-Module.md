@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.Host"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.Host"
+ms.technology: powershell
 ms.assetid: 580a896f-b1dc-46f9-af1d-ab1a93c1fbf4
-ms.openlocfilehash: 0602a956655421bfc1a703de71807471eb1a3340
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 81e0ca9773c9b4c6efb418cdb9ef4f0a8a4a0d2a
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershellhost-module"></a>Модуль Microsoft.PowerShell.Host

@@ -1,15 +1,16 @@
 ---
-title: "Специальные возможности в интегрированной среде сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Специальные возможности в интегрированной среде сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: 698cef0d283b061a53d9230d42062c547666d127
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 0c9877e9de958405be7ade4ab6470b1d97b916fc
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Специальные возможности в интегрированной среде сценариев Windows PowerShell

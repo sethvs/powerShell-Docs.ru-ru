@@ -1,15 +1,16 @@
 ---
-title: "Работа с программами установки программного обеспечения"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа с программами установки программного обеспечения"
+ms.technology: powershell
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
-ms.openlocfilehash: 27b9d9c71412a06a8890b56163d0e6acb7ecd1f4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 123ad074fc626bc2c93c4c61f30f056e92cd9d51
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="working-with-software-installations"></a>Работа с программами установки программного обеспечения

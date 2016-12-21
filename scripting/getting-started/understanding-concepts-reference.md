@@ -1,14 +1,15 @@
 ---
-title: "справочник по основным понятиям"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: c9330b3f3a114d673b31e2b2053a02545dd13169
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "справочник по основным понятиям"
+ms.technology: powershell
+ms.openlocfilehash: 49cccb64989726454b5a5015458b1404d89f9783
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="understanding-concepts"></a>Основные понятия

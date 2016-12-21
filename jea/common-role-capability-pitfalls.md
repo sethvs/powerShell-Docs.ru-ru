@@ -1,30 +1,15 @@
 ---
-description: 
-manager: dongill
+manager: carmonm
 ms.topic: article
-author: jpjofre
+author: rpsqrd
+ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2016-06-22
-title: "распространенные проблемы возможностей ролей"
+ms.date: 2016-12-05
+title: Just Enough Administration (JEA)
 ms.technology: powershell
-ms.openlocfilehash: 8e928ec07ef98b2ec8186a27d3aefa1450a3a424
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+redirect_url: https://msdn.microsoft.com/powershell/jea/role-capabilities
+ms.openlocfilehash: e2a230cf1ce505c145591c06f2b08129152a17c3
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-### <a name="common-role-capability-pitfalls"></a>Распространенные проблемы возможностей ролей
-При самостоятельной работе вы можете столкнуться с несколькими распространенными проблемами.
-Вот краткое руководство по тому, как выявлять и устранять такие проблемы при изменении или создании новой конечной точки.
-
-#### <a name="functions-vs-cmdlets"></a>Функции. Командлеты
-Команды PowerShell, написанные в PowerShell, являются функциями PowerShell.
-Команды PowerShell, написанные как специализированные классы .NET, являются командлетами PowerShell.
-Тип команды можно проверить, выполнив `Get-Command`.
-
-#### <a name="visibleproviders"></a>VisibleProviders
-Вам потребуется предоставить доступ ко всем поставщикам, необходимым для ваших команд.
-Чаще всего используется поставщик FileSystem, но может потребоваться доступ и к другим поставщикам, таким как Registry.
-Вводные сведения о поставщиках см. в записи в блоге [Эй, сценарист](http://blogs.technet.com/b/heyscriptingguy/archive/2015/04/20/find-and-use-windows-powershell-providers.aspx).
-Будьте внимательны, предоставляя доступ к поставщикам: зачастую лучше определить собственную функцию, которая будет работать с соответствующими базовыми поставщиками, чем напрямую предоставлять доступ к поставщику в сеансе JEA.
-Таким образом вы можете дать пользователям возможность работать с файлами, разделами реестра и т. д., но при этом сохраните контроль над тем, с **какими** из них они могут работать, используя настраиваемую логику проверки.
-

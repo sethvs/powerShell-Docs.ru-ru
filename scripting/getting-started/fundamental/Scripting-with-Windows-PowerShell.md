@@ -1,20 +1,21 @@
 ---
-title: "Работа со сценариями в Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа со сценариями в Windows PowerShell"
+ms.technology: powershell
 ms.assetid: c425d27a-bb41-4947-8d73-ba5480bc8ee0
-ms.openlocfilehash: f7c9164e09e253e8138820708ba8864841ddfff2
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 31a13a72688b89de4f0f29b81790b515988ecbf0
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="scripting-with-windows-powershell"></a>Работа со сценариями в Windows PowerShell
 
-Windows PowerShell® — это оболочка командной строки на основе задач, а также язык сценариев, предназначенный специально для системного администрирования. Созданная на основе .NET Framework служба Windows PowerShell помогает ИТ-специалистам и опытным пользователям в управлении и автоматизации администрирования операционной системы Windows, а также приложений, работающих под управлением Windows.
+Windows PowerShell® — это оболочка командной строки на основе задач, а также язык сценариев, предназначенный специально для системного администрирования. Созданная на основе .NET Framework служба Windows PowerShell помогает ИТ-специалистам и опытным пользователям в управлении и автоматизации администрирования операционной системы Windows, а также приложений, работающих под управлением Windows.
 
 Команды Windows PowerShell, которые называются *командлетами*, позволяют управлять компьютерами из командной строки. При использовании *поставщиков* Windows PowerShell доступ к хранилищам данных, таким как реестр и хранилище сертификатов, становится таким же простым, как и доступ к файловой системе. Кроме того, Windows PowerShell включает многофункциональный инструмент синтаксического анализа выражений и полностью разработанный язык скриптов.
 

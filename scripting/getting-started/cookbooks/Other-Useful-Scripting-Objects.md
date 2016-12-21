@@ -1,15 +1,16 @@
 ---
-title: "Другие полезные объекты для сценариев"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Другие полезные объекты для сценариев"
+ms.technology: powershell
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
-ms.openlocfilehash: 114f7b60bf44e0cfc2c9e2bad223552cb141d145
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: a1e3ad310303fe02ee61bcd6d2681df6d91a4924
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="other-useful-scripting-objects"></a>Другие полезные объекты для сценариев

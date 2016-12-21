@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.Core"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.Core"
+ms.technology: powershell
 ms.assetid: caa21265-653d-4ba0-9691-b6c0310b9c3d
-ms.openlocfilehash: 41c089cf9b93cc161bac5f278d217d0a8277d8f2
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 96209d5535039700be2bf72db4116aca27db24a5
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershellcore-module"></a>Модуль Microsoft.PowerShell.Core

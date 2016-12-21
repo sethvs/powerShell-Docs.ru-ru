@@ -1,23 +1,24 @@
 ---
-title: "Удаление Windows PowerShell Web Access"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 9e03bca75eeb6acf3f1433a9baaed0c1674ab1be
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Удаление Windows PowerShell Web Access"
+ms.technology: powershell
+ms.openlocfilehash: 1673892b5430f8c49b6ea5ffacf8be0e9e2b3fdf
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
 
-Обновлено: 24 июня 2013 г.
+Обновлено: 24 июня 2013 г.
 
-Область применения: Windows Server 2012 R2, Windows Server 2012
+Область применения: Windows Server 2012 R2, Windows Server 2012
 
-Выполните процедуры в этом разделе, чтобы удалить веб-сайт и приложение Windows PowerShell Web Access с сервера шлюза, который работает под управлением Windows Server 2012 R2 или Windows Server 2012. Прежде чем начать, известите пользователей веб-консоли, что вы удаляете веб-сайт.
+Выполните процедуры в этом разделе, чтобы удалить веб-сайт и приложение Windows PowerShell Web Access с сервера шлюза, который работает под управлением Windows Server 2012 R2 или Windows Server 2012. Прежде чем начать, известите пользователей веб-консоли, что вы удаляете веб-сайт.
 
 <a href="" id="BKMK_uninstall"></a>
 
@@ -36,7 +37,7 @@ translationtype: HT
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
 
 ------------------------------------------------------------------------
 
@@ -60,7 +61,7 @@ translationtype: HT
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
@@ -78,7 +79,7 @@ translationtype: HT
 
         Uninstall-WindowsFeature -Name WindowsPowerShellWebAccess -ComputerName <computer_name> -Restart
 
-    Чтобы удалить роли и компоненты с автономного виртуального жесткого диска (VHD), необходимо добавить оба параметра — <span class="code">-ComputerName</span> и <span class="code">-VHD</span>. Параметр <span class="code">-ComputerName</span> содержит имя сервера, на котором следует подключить виртуальный жесткий диск, а параметр <span class="code">-VHD</span> — путь к VHD-файлу на указанном сервере.
+    Чтобы удалить роли и компоненты с автономного виртуального жесткого диска (VHD), необходимо добавить оба параметра — <span class="code">-ComputerName</span> и <span class="code">-VHD</span>. Параметр <span class="code">-ComputerName</span> содержит имя сервера, на котором следует подключить виртуальный жесткий диск, а параметр <span class="code">-VHD</span> — путь к VHD-файлу на указанном сервере.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_5d8f91ee-b91a-4653-b7df-e745187fd72d'); "Копировать в буфер обмена".)
 
@@ -95,7 +96,7 @@ translationtype: HT
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Удаление веб-приложения</span></a>
 
 ------------------------------------------------------------------------
 
@@ -135,7 +136,7 @@ translationtype: HT
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Удаление Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
@@ -207,10 +208,10 @@ translationtype: HT
 -   [Товарные знаки](https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/)
 -   |
 
-© Корпорация Майкрософт (Microsoft Corporation), 2016 г.
+© Корпорация Майкрософт (Microsoft Corporation), 2016 г.
 
-© Корпорация Майкрософт (Microsoft Corporation), 2016 г.
+© Корпорация Майкрософт (Microsoft Corporation), 2016 г.
 
-Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN — http://www.asp.net/ajaxlibrary/CDN.ashx.
+Сторонние сценарии или код, на которые ссылается этот сайт, предоставляются вам по лицензии третьими лицами, являющимися владельцами такого кода, а не корпорацией Майкрософт. См. условия использования ASP.NET Ajax CDN — http://www.asp.net/ajaxlibrary/CDN.ashx.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
 

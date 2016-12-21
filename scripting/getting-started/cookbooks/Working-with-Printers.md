@@ -1,15 +1,16 @@
 ---
-title: "Работа с принтерами"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа с принтерами"
+ms.technology: powershell
 ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5
-ms.openlocfilehash: 2142d7ef1d1cc9b20ecc1ab35b9685817c838347
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: a75d0fc653bda7b368d3e1978d828040c3e67e3f
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="working-with-printers"></a>Работа с принтерами

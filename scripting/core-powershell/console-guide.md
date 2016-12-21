@@ -1,14 +1,15 @@
 ---
-title: "руководство по консоли"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 3a929cbb39bc7666ab00579f668637dddd971271
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "руководство по консоли"
+ms.technology: powershell
+ms.openlocfilehash: d645a03ff5d3ee82c4384d6d2a6fe069a5279628
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="powershell-console-window-guide"></a>Руководство по окну консоли PowerShell

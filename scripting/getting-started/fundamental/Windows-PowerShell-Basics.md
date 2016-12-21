@@ -1,15 +1,16 @@
 ---
-title: "Основы Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Основы Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
-ms.openlocfilehash: 6644ad379def3853d618dad2c72e7aa97b8242da
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 338d11350cd9baba82df7700e9df3688259a3907
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="windows-powershell-basics"></a>Основы Windows PowerShell

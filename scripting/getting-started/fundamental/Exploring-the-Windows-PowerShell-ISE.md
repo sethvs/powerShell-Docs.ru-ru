@@ -1,22 +1,23 @@
 ---
-title: "Обзор интегрированной среды сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Обзор интегрированной среды сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
-ms.openlocfilehash: 590996f2db730a7841eb7a85036e4f36e59e46ff
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8d2c803386233390440972b66a6d616b58439a6b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="exploring-the-windows-powershell-ise"></a>Обзор интегрированной среды сценариев Windows PowerShell
 Интегрированная среда скриптов (ISE) Windows PowerShell® позволяет создавать, выполнять и отлаживать команды и скрипты. Интегрированная среда сценариев Windows PowerShell состоит из строки меню, вкладок Windows PowerShell, панели инструментов, вкладок сценариев, области сценариев, области консоли, строки состояния, ползунка для размера текста и контекстной справки.
 
 > [!NOTE]
-> Начиная с ISE Windows PowerShell 3.0, области команд и вывода были объединены в одну область консоли.
+> Начиная с ISE Windows PowerShell 3.0, области команд и вывода были объединены в одну область консоли.
 
 ## <a name="menu-bar"></a>Строка меню
 Строка меню содержит меню **Файл**, **Правка**, **Вид**, **Сервис**, **Отладка**, **Надстройки** и **Справка**. Кнопки в меню позволяют выполнять задачи, связанные с написанием и запуском сценариев и выполнением команд в ISE Windows PowerShell. Кроме того, [дополнительные средства](../../core-powershell/ise/The-ISEAddOnTool-Object.md) можно поместить в строку меню, выполняя сценарии, использующие [объектную модель сценариев интегрированной среды сценариев Windows PowerShell](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md).
@@ -25,7 +26,7 @@ translationtype: HT
 > В интегрированной среде сценариев Windows PowerShell 2.0 меню **Сервис** и **Надстройки** отсутствуют.
 
 ## <a name="windows-powershell-tabs"></a>Вкладки Windows PowerShell
-Вкладка Windows PowerShell — это среда, в которой выполняется сценарий Windows PowerShell. Вы можете открыть в ISE Windows PowerShell новые вкладки Windows PowerShell, чтобы создать отдельные среды на локальном или удаленных компьютерах. Число одновременно открытых вкладок PowerShell не может превышать восьми.
+Вкладка Windows PowerShell — это среда, в которой выполняется сценарий Windows PowerShell. Вы можете открыть в ISE Windows PowerShell новые вкладки Windows PowerShell, чтобы создать отдельные среды на локальном или удаленных компьютерах. Число одновременно открытых вкладок PowerShell не может превышать восьми.
 
 ## <a name="toolbar"></a>Панель инструментов
 На панели инструментов расположены следующие кнопки.

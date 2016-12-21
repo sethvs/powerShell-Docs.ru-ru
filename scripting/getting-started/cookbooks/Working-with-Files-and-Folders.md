@@ -1,15 +1,16 @@
 ---
-title: "Работа с файлами и папками"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа с файлами и папками"
+ms.technology: powershell
 ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
-ms.openlocfilehash: be0960062182bbce161fdb26340825a7f6360382
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 4f4496d1fe7a4427236c6670e9fbc93a4167ce4b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="working-with-files-and-folders"></a>Работа с файлами и папками

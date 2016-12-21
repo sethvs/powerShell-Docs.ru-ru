@@ -7,15 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: f7f2699287e76970d0b2565f7bbd45a5d75ac93a
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 81b8a150e35728d35af34b75493f9288c39a411d
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
 # <a name="using-a-dsc-report-server"></a>Использование сервера отчетов DSC
 
 > Область применения: Windows PowerShell 5.0
 
->**Примечание**. Сервер отчетов, описанный в этой статье, недоступен в PowerShell 4.0.
+>**Примечание**. Сервер отчетов, описанный в этой статье, недоступен в PowerShell 4.0.
 
 В локальном диспетчере конфигураций (LCM) узла можно настроить отправку отчетов о состоянии конфигурации на опрашивающий сервер, которые затем можно запросить для извлечения содержащихся в них данных. Каждый раз при проверке и применении конфигурации узел отправляет отчет на сервер отчетов. Эти отчеты хранятся в базе данных на сервере, и их можно извлечь, вызвав веб-службу отчетов. Каждый отчет содержит сведения, например перечень примененных конфигураций и данные о том, успешно ли они были выполнены, использованные ресурсы, любые произошедшие ошибки, а также время начала и окончания.
 
@@ -94,7 +94,7 @@ PullClientConfig
 
 ## <a name="getting-report-data"></a>Получение данных из отчетов
 
-Отчеты, отправляемые на опрашивающий сервер, добавляются в базу данных на сервере. Отчеты доступны путем вызовов веб-службы. Чтобы извлечь отчеты с указанного узла, отправьте HTTP-запрос в веб-службу отчетов в следующем формате: `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID = MyNodeAgentId)/Reports` где `MyNodeAgentId` — это AgentId узла, с которого вы хотите получать отчеты. Вы можете получить AgentID узла, вызвав [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) на этом узле.
+Отчеты, отправляемые на опрашивающий сервер, добавляются в базу данных на сервере. Отчеты доступны путем вызовов веб-службы. Чтобы извлечь отчеты с указанного узла, отправьте HTTP-запрос в веб-службу отчетов в следующем формате: `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID= 'MyNodeAgentId')/Reports` где `MyNodeAgentId` — это AgentId узла, с которого вы хотите получать отчеты. Вы можете получить AgentID узла, вызвав [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) на этом узле.
 
 Отчеты возвращаются в виде массива объектов JSON.
 
@@ -104,7 +104,7 @@ PullClientConfig
 function GetReport
 {
     param($AgentId = "$((glcm).AgentId)", $serviceURL = "http://CONTOSO-REPORT:8080/PSDSCPullServer.svc")
-    $requestUri = "$serviceURL/Node(ConfigurationId= '$AgentId')/StatusReports"
+    $requestUri = "$serviceURL/Nodes(AgentID= '$AgentId')/Reports"
     $request = Invoke-WebRequest -Uri $requestUri  -ContentType "application/json;odata=minimalmetadata;streaming=true;charset=utf-8" `
                -UseBasicParsing -Headers @{Accept = "application/json";ProtocolVersion = "2.0"} `
                -ErrorAction SilentlyContinue -ErrorVariable ev
@@ -200,7 +200,7 @@ Locale                     : en-US
 Mode                       : Pull
 ```
 
-Помимо прочего видно, что последняя конфигурация вызывала два ресурса и один из них был в нужном состоянии, а другой — нет. Вы можете получить более понятные выходные данные только для свойства **ResourcesNotInDesiredState**.
+Помимо прочего видно, что последняя конфигурация вызывала два ресурса и один из них был в нужном состоянии, а другой — нет. Вы можете получить более понятные выходные данные только для свойства **ResourcesNotInDesiredState**.
 
 ```powershell
 $statusData.ResourcesInDesiredState

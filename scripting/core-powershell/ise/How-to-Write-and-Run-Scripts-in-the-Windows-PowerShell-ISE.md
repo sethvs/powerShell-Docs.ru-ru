@@ -1,15 +1,16 @@
 ---
-title: "Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: f38c9f310c528a9daff2784ab3a686309e624ecb
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 2478db382639ef315574bb7c79faec7cf2ae1c96
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell
@@ -22,7 +23,7 @@ translationtype: HT
 -   [Сохранение скрипта](#bkmk_3)
 
 ## <a name="a-namebkmk1ahow-to-create-and-run-scripts"></a><a name="bkmk_1"></a> Создание и выполнение сценариев
-В области скриптов можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
+В области скриптов можно открывать и редактировать файлы Windows PowerShell®. Сейчас нас интересуют следующие типы файлов Windows PowerShell®: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
 
 > [!NOTE]
 > Политика выполнения Windows PowerShell определяет, можно ли выполнять сценарии, загружать профили Windows PowerShell и файлы конфигурации. Политика выполнения по умолчанию, Restricted, запрещает выполнение сценариев и блокирует загрузку профилей. Чтобы изменить эту политику выполнения и разрешить загрузку и использование профилей, изучите статьи [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) и [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).

@@ -1,15 +1,16 @@
 ---
-title: "Изучение имен Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Изучение имен Windows PowerShell"
+ms.technology: powershell
 ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
-ms.openlocfilehash: 6bd3c3d9b9f05f8ea633ee23fdce7608e985abd7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c0695cee10a6ae11b82c7b70ccd1768ffa01b3e3
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="learning-windows-powershell-names"></a>Изучение имен Windows PowerShell

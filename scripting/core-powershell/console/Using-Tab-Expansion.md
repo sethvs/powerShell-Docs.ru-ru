@@ -1,15 +1,16 @@
 ---
-title: "Расширение по клавише TAB"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Расширение по клавише TAB"
+ms.technology: powershell
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
-ms.openlocfilehash: 8a9ae15003a298862e0b6ca84c8730c947214290
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 156792ee4ed5b3c2c0011f7ab593433e90d280b4
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="using-tab-expansion"></a>Расширение по клавише TAB

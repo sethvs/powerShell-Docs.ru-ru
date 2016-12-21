@@ -1,15 +1,16 @@
 ---
-title: "Модуль PSReadline"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль PSReadline"
+ms.technology: powershell
 ms.assetid: bf079dec-4d26-40e7-b7a9-154c69e485ba
-ms.openlocfilehash: 847ac8e36037cc9beac6da326c9d010076a4f752
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f9970466a6189aad30fb947ba492db19c7371a0a
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="psreadline-module"></a>Модуль PSReadline

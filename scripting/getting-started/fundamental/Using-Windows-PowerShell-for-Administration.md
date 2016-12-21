@@ -1,15 +1,16 @@
 ---
-title: "Использование Windows PowerShell для администрирования"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Использование Windows PowerShell для администрирования"
+ms.technology: powershell
 ms.assetid: db6334ec-ace6-436d-ab88-77aefc817511
-ms.openlocfilehash: c855c8ab66df52b51c5cca7933e065ce7f83f854
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c0a15bc813e6fdb850fe2d957711f1ad005d853d
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="using-windows-powershell-for-administration"></a>Использование Windows PowerShell для администрирования

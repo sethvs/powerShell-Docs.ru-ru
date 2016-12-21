@@ -1,14 +1,15 @@
 ---
-title: "руководство по ise"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 52103ee815f97068efc2c4cf666589e9d240bf92
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "руководство по ise"
+ms.technology: powershell
+ms.openlocfilehash: c5d2bd1fdf2e90bbf59a0848bda7981914902d56
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="ise-guide"></a>Руководство по ISE

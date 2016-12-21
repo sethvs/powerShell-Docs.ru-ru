@@ -1,15 +1,16 @@
 ---
-title: "Модуль интегрированной среды сценариев"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль интегрированной среды сценариев"
+ms.technology: powershell
 ms.assetid: fd03c995-4cdb-4d14-a315-9cfbd1e81b10
-ms.openlocfilehash: 5598d53233995bc062186c9d397ebb9244ddcee9
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8ff988591fbd0e23cf4cb94cf39c996387055395
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="ise-module"></a>Модуль интегрированной среды сценариев

@@ -1,15 +1,16 @@
 ---
-title: "Начало работы с Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Начало работы с Windows PowerShell"
+ms.technology: powershell
 ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
-ms.openlocfilehash: bb852b8d5cb5202568a80517074cc8ff6f40ea0f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e1a7da700bb88c2f72d1d38ac2cd55635f50108e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="getting-started-with-windows-powershell"></a>Начало работы с Windows PowerShell

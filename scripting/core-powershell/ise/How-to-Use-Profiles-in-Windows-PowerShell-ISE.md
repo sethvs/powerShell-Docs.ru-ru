@@ -1,21 +1,22 @@
 ---
-title: "Использование профилей в интегрированной среде сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Использование профилей в интегрированной среде сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
-ms.openlocfilehash: dc85d616aac580effc7170935a3edb35e1a54e04
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8825eb6db73ce6e611f10f116a8d8f923c277b0c
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="how-to-use-profiles-in-windows-powershell-ise"></a>Использование профилей в интегрированной среде сценариев Windows PowerShell
 В этой статье объясняется, как использовать профили в интегрированной среде скриптов Windows PowerShell®. Перед выполнением задач из этого раздела рекомендуется ознакомиться со статьей [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630)) либо ввести `Get-Help about_Profiles` в области консоли и нажать клавишу **ВВОД**.
 
-Профиль — это сценарий интегрированной среды сценариев Windows PowerShell, который выполняется автоматически при запуске нового сеанса.  Можно создать один или несколько профилей Windows PowerShell для интегрированной среды сценариев Windows PowerShell и использовать их для настройки среды Windows PowerShell для интегрированной среды сценариев Windows PowerShell, подготавливая ее к работе с помощью переменных, псевдонимов, функций, а также настроек цветов и шрифтов, которые должны быть доступны. Профиль затрагивает каждый запускаемый сеанс интегрированной среды сценариев Windows PowerShell.
+Профиль — это сценарий интегрированной среды сценариев Windows PowerShell, который выполняется автоматически при запуске нового сеанса.  Можно создать один или несколько профилей Windows PowerShell для интегрированной среды сценариев Windows PowerShell и использовать их для настройки среды Windows PowerShell для интегрированной среды сценариев Windows PowerShell, подготавливая ее к работе с помощью переменных, псевдонимов, функций, а также настроек цветов и шрифтов, которые должны быть доступны. Профиль затрагивает каждый запускаемый сеанс интегрированной среды сценариев Windows PowerShell.
 
 > [!NOTE]
 > Политика выполнения Windows PowerShell определяет, можно ли запускать сценарии и загружать профиль. Политика выполнения по умолчанию (Restricted) запрещает выполнение всех сценариев, включая профили. При использовании политики "Restricted" загрузить профиль нельзя. Дополнительные сведения о политике выполнения см. в статье [about_Execution_Policies [v4]](https://technet.microsoft.com/library/347708dc-1515-4d74-978b-8334603472e6(v=wps.630)).

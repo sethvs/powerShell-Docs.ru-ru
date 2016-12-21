@@ -1,15 +1,16 @@
 ---
-title: "Сортировка объектов"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Сортировка объектов"
+ms.technology: powershell
 ms.assetid: 8530caa8-3ed4-4c56-aed7-1295dd9ba199
-ms.openlocfilehash: 99ca62261f8302673f886149a7715ce06efa16cb
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 00ee71337331c730f37723152175e2ca10263191
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="sorting-objects"></a>Сортировка объектов

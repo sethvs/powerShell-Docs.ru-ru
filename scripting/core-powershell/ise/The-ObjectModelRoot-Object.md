@@ -1,19 +1,20 @@
 ---
-title: "Объект ObjectModelRoot"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ObjectModelRoot"
+ms.technology: powershell
 ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
-ms.openlocfilehash: f65837e69471d3042a577e2c6f185e8f80a80d47
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f25dfea23ba865d98f09ae9b1604ade8b1c4f72a
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-objectmodelroot-object"></a>Объект ObjectModelRoot
-  Объект **$PsISE**, который является основным корневым объектом в интегрированной среде скриптов Windows PowerShell® (ISE), — это экземпляр класса Microsoft.PowerShell.Host.ISE.ObjectModelRoot. В этом разделе описаны свойства объекта **ObjectModelRoot**.
+  Объект **$PsISE**, который является основным корневым объектом в интегрированной среде скриптов Windows PowerShell® (ISE), — это экземпляр класса Microsoft.PowerShell.Host.ISE.ObjectModelRoot. В этом разделе описаны свойства объекта **ObjectModelRoot**.
 
 ## <a name="properties"></a>Свойства
 

@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.ODataUtils"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.ODataUtils"
+ms.technology: powershell
 ms.assetid: bd5f47f0-428e-4be6-b02f-2b5609111ee9
-ms.openlocfilehash: 2452196173debb343f02ad1495edca366f996903
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: ea4ed050d05de22588051408ba26cb81116ce087
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershellodatautils-module"></a>Модуль Microsoft.PowerShell.ODataUtils

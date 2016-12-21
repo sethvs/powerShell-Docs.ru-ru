@@ -1,15 +1,16 @@
 ---
-title: "Прямое управление элементами"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Прямое управление элементами"
+ms.technology: powershell
 ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735
-ms.openlocfilehash: f462f195e1128cd67be8073fe0755b5158fee970
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e99ea91b6e17ab898815480d615b23cbd29061d5
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="manipulating-items-directly"></a>Прямое управление элементами
@@ -60,7 +61,7 @@ Mode                LastWriteTime     Length Name
 -a---        2006-05-18  11:44 AM          0 file1
 ```
 
-Тот же метод можно использовать для создания нового раздела реестра. На самом деле, раздел реестра создать проще, так как единственный тип элементов в реестре Windows — это раздел. (Записи реестра — это *свойства* элементов.) Например, чтобы создать ключ с именем _Test в подразделе CurrentVersion, введите:
+Тот же метод можно использовать для создания нового раздела реестра. На самом деле, раздел реестра создать проще, так как единственный тип элементов в реестре Windows — это раздел. (Записи реестра — это *свойства* элементов.) Например, чтобы создать ключ с именем _Test в подразделе CurrentVersion, введите:
 
 ```
 PS> New-Item -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion_Test
@@ -73,7 +74,7 @@ SKC  VC Name                           Property
   0   0 _Test                          {}
 ```
 
-При вводе пути реестра не забудьте добавить двоеточие (**:**) в имена дисков Windows PowerShell — HKLM: и HKCU:. Без двоеточия Windows PowerShell не распознает имена дисков в пути.
+При вводе пути реестра не забудьте добавить двоеточие (**:**) в имена дисков Windows PowerShell — HKLM: и HKCU:. Без двоеточия Windows PowerShell не распознает имена дисков в пути.
 
 ### <a name="why-registry-values-are-not-items"></a>Причины, по которым значения реестра не являются элементами
 При использовании командлета **Get-ChildItem** для поиска элементов в разделе реестра вы не увидите фактических записей реестра или их значений.

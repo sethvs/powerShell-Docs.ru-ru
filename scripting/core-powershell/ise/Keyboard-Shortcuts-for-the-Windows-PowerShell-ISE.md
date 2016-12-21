@@ -1,15 +1,16 @@
 ---
-title: "Сочетания клавиш для интегрированной среды сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Сочетания клавиш для интегрированной среды сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
-ms.openlocfilehash: 3cf2d8cea6f99cbc3bd778138c730643bd021268
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 7a6c848fe14cfed57e046ab6cf8c576f26b1bf3e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a>Сочетания клавиш для интегрированной среды сценариев Windows PowerShell

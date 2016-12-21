@@ -1,15 +1,16 @@
 ---
-title: "Управление службами"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Управление службами"
+ms.technology: powershell
 ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
-ms.openlocfilehash: 9d9566328cac84ae6b450d9dedeb75a37d6dcba5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: b4910eed852e777a1b407d436b2e6daa8c12a003
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="managing-services"></a>Управление службами

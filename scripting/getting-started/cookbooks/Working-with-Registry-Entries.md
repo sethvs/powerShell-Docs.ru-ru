@@ -1,15 +1,16 @@
 ---
-title: "Работа с записями реестра"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа с записями реестра"
+ms.technology: powershell
 ms.assetid: fd254570-27ac-4cc9-81d4-011afd29b7dc
-ms.openlocfilehash: 24517b4a31ab2c5b92c2485fb8c6bd0e56dd2ffd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 261c1c5fd0a85ce2d2830e34e9de92f0de4b9ff2
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="working-with-registry-entries"></a>Работа с записями реестра

@@ -1,39 +1,40 @@
 ---
-title: "Новые возможности Windows PowerShell 5.0"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Новые возможности Windows PowerShell 5.0"
+ms.technology: powershell
 ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
-ms.openlocfilehash: b3823319cef457c7d04ebdaf521857f1f3e096b9
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f5413c0638ff297d4505ba2b25fcbd203f56530d
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="what39s-new-in-windows-powershell"></a>Новые возможности Windows PowerShell
-Windows PowerShell® 5.0 включает несколько важных новых функций, расширяющих возможности использования и позволяющих более просто и полно контролировать среды на основе Windows и управлять ими.
+Windows PowerShell® 5.0 включает несколько важных новых функций, расширяющих возможности использования и позволяющих более просто и полно контролировать среды на основе Windows и управлять ими.
 
-Windows PowerShell 5.0 обеспечивает обратную совместимость. Командлеты, поставщики, модули, оснастки, сценарии, функции и профили, разработанные для Windows PowerShell 4.0, Windows PowerShell 3.0 и Windows PowerShell 2.0, обычно работают в Windows PowerShell 5.0 без изменений.
+Windows PowerShell 5.0 обеспечивает обратную совместимость. Командлеты, поставщики, модули, оснастки, сценарии, функции и профили, разработанные для Windows PowerShell 4.0, Windows PowerShell 3.0 и Windows PowerShell 2.0, обычно работают в Windows PowerShell 5.0 без изменений.
 
 # <a name="installing-windows-powershell"></a>Установка Windows PowerShell
-Windows PowerShell 5.0 устанавливается по умолчанию в Windows Server® 2016 Technical Preview и Windows 10®. 
+Windows PowerShell 5.0 устанавливается по умолчанию в Windows Server® 2016 Technical Preview и Windows 10®. 
 
-Чтобы установить Windows PowerShell 5.0 в системе Windows Server 2012 R2, Windows 8.1 Корпоративная или Windows 8.1 Профессиональная, скачайте и установите [Windows Management Framework 5.0](http://aka.ms/wmf5download). Перед тем как устанавливать Windows Management Framework 5.0, прочтите сведения о скачивании и убедитесь, что все требования к системе выполнены.
+Чтобы установить Windows PowerShell 5.0 в системе Windows Server 2012 R2, Windows 8.1 Корпоративная или Windows 8.1 Профессиональная, скачайте и установите [Windows Management Framework 5.0](http://aka.ms/wmf5download). Перед тем как устанавливать Windows Management Framework 5.0, прочтите сведения о скачивании и убедитесь, что все требования к системе выполнены.
 
 ## <a name="in-this-topic"></a>В этом разделе
 
--   [Обновления для DSC Windows PowerShell 4.0 в статье базы знаний 3000850](#BKMK_3000850)
+-   [Обновления для DSC Windows PowerShell 4.0 в статье базы знаний 3000850](#BKMK_3000850)
 
--   [Новые возможности в Windows PowerShell 5.0](#BKMK_new50)
+-   [Новые возможности в Windows PowerShell 5.0](#BKMK_new50)
 
--   [Новые возможности в Windows PowerShell 4.0](#BKMK_wps4)
+-   [Новые возможности в Windows PowerShell 4.0](#BKMK_wps4)
 
--   [Новые возможности в Windows PowerShell 3.0](#BKMK_wps3)
+-   [Новые возможности в Windows PowerShell 3.0](#BKMK_wps3)
 
-## <a name="a-namebkmk3000850awindows-powershell-40-updates-in-november-2014-update-rollup-kb-3000850"></a><a name="BKMK_3000850"></a> Обновления Windows PowerShell 4.0 в накопительном пакете обновления за ноябрь 2014 года (статья базы знаний 3000850)
-[Накопительный пакет обновления за ноябрь 2014 года для Windows RT 8.1, Windows 8.1 и Windows Server 2012 R2](https://support.microsoft.com/kb/3000850/) (статья базы знаний 3000850) содержит множество обновлений и улучшений для службы настройки требуемого состояния (DSC) Windows PowerShell в Windows PowerShell 4.0. Чтобы определить, установлено ли в вашей системе обновление из статьи 3000850, выполните `Get-Hotfix -Id KB3000850` в Windows PowerShell.
+## <a name="a-namebkmk3000850awindows-powershell-40-updates-in-november-2014-update-rollup-kb-3000850"></a><a name="BKMK_3000850"></a> Обновления Windows PowerShell 4.0 в накопительном пакете обновления за ноябрь 2014 года (статья базы знаний 3000850)
+[Накопительный пакет обновления за ноябрь 2014 года для Windows RT 8.1, Windows 8.1 и Windows Server 2012 R2](https://support.microsoft.com/kb/3000850/) (статья базы знаний 3000850) содержит множество обновлений и улучшений для службы настройки требуемого состояния (DSC) Windows PowerShell в Windows PowerShell 4.0. Чтобы определить, установлено ли в вашей системе обновление из статьи 3000850, выполните `Get-Hotfix -Id KB3000850` в Windows PowerShell.
 
 -   Обновления для существующих командлетов в модуле [PSDesiredStateConfiguration](https://technet.microsoft.com/library/dn391651(v=wps.640).aspx):
 
@@ -99,7 +100,7 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
     -   Проверку согласованности теперь можно выполнять чаще, чем операцию PULL, и наоборот.
 
-    -   Поддержка управления версиями: теперь DSC может распознать документ, созданный в более новой версии клиента (входит в состав [WMF 5.0](http://aka.ms/wmf5download)).
+    -   Поддержка управления версиями: теперь DSC может распознать документ, созданный в более новой версии клиента (входит в состав [WMF 5.0](http://aka.ms/wmf5download)).
 
 -   Усовершенствования предотвращения ошибок:
 
@@ -129,7 +130,7 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
     -   [Ресурс Archive](http://technet.microsoft.com/library/dn249917.aspx) теперь поддерживает учетные данные.
 
-## <a name="a-namebkmknew50anew-features-in-windows-powershell-50"></a><a name="BKMK_new50"></a> Новые функции в Windows PowerShell 5.0
+## <a name="a-namebkmknew50anew-features-in-windows-powershell-50"></a><a name="BKMK_new50"></a> Новые функции в Windows PowerShell 5.0
 
 -   [Новые возможности в Windows PowerShell](#BKMK_newcore)
 
@@ -139,23 +140,23 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   [Новые возможности в веб-службах Windows PowerShell](#BKMK_newOData)
 
--   [Исправления важных ошибок в Windows PowerShell 5.0](#BKMK_5bugfix)
+-   [Исправления важных ошибок в Windows PowerShell 5.0](#BKMK_5bugfix)
 
 ### <a name="a-namebkmknewcoreanew-features-in-windows-powershell"></a><a name="BKMK_newcore"></a> Новые функции в Windows PowerShell
 
--   Начиная с Windows PowerShell 5.0 разработку можно вести с использованием классов, формального синтаксиса и семантики, которые похожи на используемые в других объектно-ориентированных языках программирования. Для поддержки новой функции в язык Windows PowerShell были добавлены **Class**, **Enum** и другие ключевые слова. Дополнительные сведения о работе с классами см. в статье "about_Classes".
+-   Начиная с Windows PowerShell 5.0 разработку можно вести с использованием классов, формального синтаксиса и семантики, которые похожи на используемые в других объектно-ориентированных языках программирования. Для поддержки новой функции в язык Windows PowerShell были добавлены **Class**, **Enum** и другие ключевые слова. Дополнительные сведения о работе с классами см. в статье "about_Classes".
 
--   В Windows PowerShell 5.0 для передачи структурированных данных между сценарием и вызывающими его объектами (или средой внешнего размещения) можно использовать новый структурированный информационный поток. Теперь можно использовать Write-Host для вывода выходных данных в поток сведений. Информационные потоки также работают для PowerShell.Streams, заданий, запланированных заданий и рабочих процессов. Следующие функции поддерживают информационный поток.
+-   В Windows PowerShell 5.0 для передачи структурированных данных между сценарием и вызывающими его объектами (или средой внешнего размещения) можно использовать новый структурированный информационный поток. Теперь можно использовать Write-Host для вывода выходных данных в поток сведений. Информационные потоки также работают для PowerShell.Streams, заданий, запланированных заданий и рабочих процессов. Следующие функции поддерживают информационный поток.
 
     -   Новый командлет Write-Information, позволяющий указать, как Windows PowerShell обрабатывает данные потока сведений для команды. Write-Host является программой-оболочкой для Write-Information. Write-Information также является поддерживаемым действием рабочего процесса.
 
-    -   Два новых общих параметра — InformationVariable и InformationAction — позволяют настроить отображение информационных потоков из команды. Допустимые значения для InformationAction: SilentlyContinue, Stop, Continue, Inquire, Ignore и Suspend. По умолчанию используется SilentlyContinue. InformationVariable указывает строку как имя переменной, в которой требуется сохранить данные Write-Host из команды.
+    -   Два новых общих параметра — InformationVariable и InformationAction — позволяют настроить отображение информационных потоков из команды. Допустимые значения для InformationAction: SilentlyContinue, Stop, Continue, Inquire, Ignore и Suspend. По умолчанию используется SilentlyContinue. InformationVariable указывает строку как имя переменной, в которой требуется сохранить данные Write-Host из команды.
 
-    -   Новая привилегированная переменная InformationPreference задает настройку по умолчанию для данных информационного потока в сеансе Windows PowerShell. Значение по умолчанию — SilentlyContinue.
+    -   Новая привилегированная переменная InformationPreference задает настройку по умолчанию для данных информационного потока в сеансе Windows PowerShell. Значение по умолчанию — SilentlyContinue.
 
-    -   Были добавлены два новых общих параметра рабочего процесса — PSInformation и InformationAction.
+    -   Были добавлены два новых общих параметра рабочего процесса — PSInformation и InformationAction.
 
-    -   Теперь при использовании команды Format-Table столбцы таблицы автоматически форматируются с учетом первых 300 мс данных, проходящих через поток.
+    -   Теперь при использовании команды Format-Table столбцы таблицы автоматически форматируются с учетом первых 300 мс данных, проходящих через поток.
 
 -   При сотрудничестве с [Microsoft Research](http://research.microsoft.com/) был добавлен новый командлет ConvertFrom-String. ConvertFrom-String позволяет извлекать и анализировать структурированные объекты из содержимого текстовых строк. Дополнительные сведения см. в статье "ConvertFrom-String".
 
@@ -163,7 +164,7 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   Новый модуль Microsoft.PowerShell.Archive содержит командлеты, позволяющие сжимать файлы и папки в архивы (которые также называют ZIP-файлами), извлекать файлы из существующих ZIP-файлов и обновлять ZIP-файлы с использованием более поздних версий содержащихся в них файлов.
 
--   Новый модуль PackageManagement позволяет обнаруживать и устанавливать программные пакеты через Интернет. Модуль PackageManagement (ранее OneGet) — это диспетчер или мультиплексор существующих диспетчеров пакетов (также называемых поставщиками пакетов), который унифицирует управление пакетами Windows с помощью единого интерфейса Windows PowerShell.
+-   Новый модуль PackageManagement позволяет обнаруживать и устанавливать программные пакеты через Интернет. Модуль PackageManagement (ранее OneGet) — это диспетчер или мультиплексор существующих диспетчеров пакетов (также называемых поставщиками пакетов), который унифицирует управление пакетами Windows с помощью единого интерфейса Windows PowerShell.
 
 -   Новый модуль PowerShellGet позволяет искать, устанавливать, публиковать и обновлять модули и ресурсы DSC в [коллекции PowerShell](http://www.powershellgallery.com/) или во внутреннем репозитории модулей, который можно настроить с помощью командлета Register-PSRepository.
 
@@ -171,17 +172,17 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   Командлеты New-Item, Remove-Item и Get-ChildItem были усовершенствованы для поддержки создания [символьных ссылок](http://en.wikipedia.org/wiki/Symbolic_link) и управления ими. Параметр **-ItemType** для New-Item принимает новое значение **SymbolicLink**. Теперь символьные ссылки можно создавать в отдельной строке с помощью командлета New-Item.
 
--   Get-ChildItem также получил новый параметр, -Depth, используемый вместе с параметром -Recurse для ограничения рекурсии. Например, Get-ChildItem -Recurse -Depth 2 возвращает результаты из текущей папки, всех дочерних папок внутри нее и всех вложенных в них папок.
+-   Get-ChildItem также получил новый параметр, -Depth, используемый вместе с параметром -Recurse для ограничения рекурсии. Например, Get-ChildItem -Recurse -Depth 2 возвращает результаты из текущей папки, всех дочерних папок внутри нее и всех вложенных в них папок.
 
 -   Copy-Item теперь позволяет копировать файлы или папки из одного сеанса Windows PowerShell в другой. Таким образом, файлы можно копировать в сеансы, подключенные к удаленным компьютерам (включая компьютеры под управлением [Nano Server](http://blogs.technet.com/b/windowsserver/archive/2015/04/08/microsoft-announces-nano-server-for-modern-apps-and-cloud.aspx), не имеющие другого интерфейса). Чтобы скопировать файлы, укажите идентификаторы PSSession в качестве значения новых параметров -FromSession и -ToSession, а также добавьте -Path и -Destination, чтобы указать исходный путь и назначение соответственно. Пример: Copy-Item -Path c:\\myFile.txt -ToSession $s -Destination d:\\destinationFolder.
 
 -   Транскрибирование Windows PowerShell было улучшено и теперь распространяется на все приложения размещения (например, интегрированную среду сценариев Windows), а не только узел консоли (**powershell.exe**). Параметры транскрибирования (в том числе включение записи во всей системе) можно настроить с помощью параметра групповой политики **Включить транскрипции PowerShell**, который находится в разделе "Административные шаблоны/Компоненты Windows/Windows PowerShell".
 
--   Новая функция подробной трассировки сценариев позволяет включить подробное отслеживание и анализ для используемых в системе сценариев Windows PowerShell. После включения этой функции Windows PowerShell записывает все блоки сценариев в журнале событий трассировки Windows — **Microsoft-Windows-PowerShell/Operational**.
+-   Новая функция подробной трассировки сценариев позволяет включить подробное отслеживание и анализ для используемых в системе сценариев Windows PowerShell. После включения этой функции Windows PowerShell записывает все блоки сценариев в журнале событий трассировки Windows — **Microsoft-Windows-PowerShell/Operational**.
 
--   Начиная с Windows PowerShell 5.0, командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652). Командлеты Get-CmsMessage, Protect-CmsMessage и Unprotect-CmsMessage были добавлены в модуль [Microsoft.PowerShell.Security](http://technet.microsoft.com/library/hh849807.aspx).
+-   Начиная с Windows PowerShell 5.0, командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652). Командлеты Get-CmsMessage, Protect-CmsMessage и Unprotect-CmsMessage были добавлены в модуль [Microsoft.PowerShell.Security](http://technet.microsoft.com/library/hh849807.aspx).
 
--   Новые командлеты в модуле [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) — Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug и Disable-RunspaceDebug — позволяют задавать параметры отладки для пространства выполнения, а также запускать и останавливать отладку в нем. Для отладки произвольных пространств выполнения, то есть тех, которые не используются по умолчанию для консоли Windows PowerShell или сеанса интегрированной среды сценариев Windows PowerShell, Windows PowerShell позволяет задавать точки останова в сценарии. Кроме того, доступны дополнительные точки для останова выполнения сценария, чтобы можно было подключить отладчик и отладить сценарий пространства выполнения. В отладчик сценариев Windows PowerShell для пространств выполнения добавлена поддержка вложенной отладки для произвольных пространств выполнения.
+-   Новые командлеты в модуле [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) — Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug и Disable-RunspaceDebug — позволяют задавать параметры отладки для пространства выполнения, а также запускать и останавливать отладку в нем. Для отладки произвольных пространств выполнения, то есть тех, которые не используются по умолчанию для консоли Windows PowerShell или сеанса интегрированной среды сценариев Windows PowerShell, Windows PowerShell позволяет задавать точки останова в сценарии. Кроме того, доступны дополнительные точки для останова выполнения сценария, чтобы можно было подключить отладчик и отладить сценарий пространства выполнения. В отладчик сценариев Windows PowerShell для пространств выполнения добавлена поддержка вложенной отладки для произвольных пространств выполнения.
 
 -   В модуль [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) добавлен командлет Format-Hex. Format-Hex позволяет просматривать текст или двоичные данные в шестнадцатеричном формате.
 
@@ -207,25 +208,25 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   Для заданий Windows PowerShell добавлено новое состояние AtBreakpoint. Оно применяется, когда задание выполняет сценарий с заданными точками останова и была достигнута такая точка. При остановке задания в точке останова отладки необходимо отладить задание, запустив командлет Debug-Job.
 
--   Windows PowerShell 5.0 реализует поддержку нескольких версий модуля Windows PowerShell в одной папке внутри $PSModulePath. В класс ModuleSpecification добавлено свойство RequiredVersion, помогающее получить нужную версию модуля. Это свойство является взаимоисключающим со свойством ModuleVersion. RequiredVersion теперь поддерживается как часть значения параметра FullyQualifiedName для командлетов Get-Module, Import-Module и Remove-Module.
+-   Windows PowerShell 5.0 реализует поддержку нескольких версий модуля Windows PowerShell в одной папке внутри $PSModulePath. В класс ModuleSpecification добавлено свойство RequiredVersion, помогающее получить нужную версию модуля. Это свойство является взаимоисключающим со свойством ModuleVersion. RequiredVersion теперь поддерживается как часть значения параметра FullyQualifiedName для командлетов Get-Module, Import-Module и Remove-Module.
 
 -   Теперь проверку версии модуля можно выполнить, запустив командлет Test-ModuleManifest.
 
 -   Результаты командлета Get-Command теперь содержат столбец Version, так как в класс CommandInfo добавлено свойство Version. Get-Command показывает команды из нескольких версий одного модуля. Свойство Version также является частью производных классов CmdletInfo: CmdletInfo и ApplicationInfo.
 
--   Get-Command имеет новый параметр —ShowCommandInfo, возвращающий сведения ShowCommand в виде объектов PSObject. Это особенно удобно, когда Show-Command выполняется в интегрированной среде сценариев Windows PowerShell с использованием удаленного взаимодействия Windows PowerShell. Параметр -ShowCommandInfo заменяет существующую функцию Get-SerializedCommand в модуле Microsoft.PowerShell.Utility, но скрипт Get-SerializedCommand по-прежнему доступен для поддержки скриптов более низкого уровня.
+-   Get-Command имеет новый параметр —ShowCommandInfo, возвращающий сведения ShowCommand в виде объектов PSObject. Это особенно удобно, когда Show-Command выполняется в интегрированной среде сценариев Windows PowerShell с использованием удаленного взаимодействия Windows PowerShell. Параметр -ShowCommandInfo заменяет существующую функцию Get-SerializedCommand в модуле Microsoft.PowerShell.Utility, но скрипт Get-SerializedCommand по-прежнему доступен для поддержки скриптов более низкого уровня.
 
--   Новый командлет Get-ItemPropertyValue позволяет получить значение свойства без использования точечной нотации. Например, в более старых выпусках Windows PowerShell можно выполнить следующую команду, чтобы получить значение свойства Application Base для раздела реестра PowerShellEngine: **(Get-ItemProperty -Path HKLM:\\SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine -Name ApplicationBase).ApplicationBase**. Начиная с Windows PowerShell 5.0 можно выполнить команду **Get-ItemPropertyValue -Path HKLM:\\SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine -Name ApplicationBase**.
+-   Новый командлет Get-ItemPropertyValue позволяет получить значение свойства без использования точечной нотации. Например, в более старых выпусках Windows PowerShell можно выполнить следующую команду, чтобы получить значение свойства Application Base для раздела реестра PowerShellEngine: **(Get-ItemProperty -Path HKLM:\\SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine -Name ApplicationBase).ApplicationBase**. Начиная с Windows PowerShell 5.0 можно выполнить команду **Get-ItemPropertyValue -Path HKLM:\\SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine -Name ApplicationBase**.
 
 -   Консоль Windows PowerShell теперь использует цветовую разметку синтаксиса, как в интегрированной среде сценариев Windows PowerShell.
 
--   Новый модуль NetworkSwitch содержит командлеты, позволяющие применять конфигурацию коммутатора, виртуальной локальной сети и портов базового сетевого коммутатора уровня 2 к сетевым коммутаторам, прошедшим сертификацию для Windows Server 2012 R2.
+-   Новый модуль NetworkSwitch содержит командлеты, позволяющие применять конфигурацию коммутатора, виртуальной локальной сети и портов базового сетевого коммутатора уровня 2 к сетевым коммутаторам, прошедшим сертификацию для Windows Server 2012 R2.
 
 -   Для командлетов Import-Module и Remove-Module добавлен параметр FullyQualifiedName, позволяющий хранить несколько версий одного модуля.
 
 -   Командлеты Save-Help, Update-Help, Import-PSSession, Export-PSSession и Get-Command имеют новый параметр FullyQualifiedModule типа ModuleSpecification. Добавьте этот параметр, чтобы указать модуль по полному имени.
 
--   Значение **$PSVersionTable.PSVersion** обновлено до 5.0.
+-   Значение **$PSVersionTable.PSVersion** обновлено до 5.0.
 
 ### <a name="a-namebkmknewdscanew-features-in-windows-powershell-desired-state-configuration"></a><a name="BKMK_newDSC"></a> Новые функции для настройки требуемого состояния Windows PowerShell
 
@@ -273,11 +274,11 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   Новый атрибут **DscLocalConfigurationManager** определяет блок конфигурации как метаконфигурацию, которая используется для настройки локального диспетчера конфигураций DSC. Этот атрибут ограничивает конфигурацию, допуская только элементы для настройки локального диспетчера конфигураций DSC. Во время обработки эта конфигурация создает файл \*.meta.mof, который затем отправляется на соответствующие целевые узлы с помощью командлета Set-DscLocalConfigurationManager.
 
--   Теперь в Windows PowerShell 5.0 разрешены частичные конфигурации. Доставлять документы конфигурации на узел можно фрагментами. Чтобы узел получил несколько фрагментов документа конфигурации, сначала следует настроить его локальный диспетчер конфигураций для указания ожидаемых фрагментов:
+-   Теперь в Windows PowerShell 5.0 разрешены частичные конфигурации. Доставлять документы конфигурации на узел можно фрагментами. Чтобы узел получил несколько фрагментов документа конфигурации, сначала следует настроить его локальный диспетчер конфигураций для указания ожидаемых фрагментов:
 
 -   В DSC для Windows PowerShell 5.0 появилась возможность межкомпьютерной синхронизации. Встроенные ресурсы WaitFor\* (**WaitForAll**, **WaitForAny** и **WaitForSome**) позволяют указать зависимости между компьютерами во время выполнения конфигурации без внешней оркестрации. Эти ресурсы обеспечивают синхронизацию между узлами с помощью CIM-подключений по протоколу WS-Man. Конфигурация может ожидать изменения состояния определенного ресурса на другом компьютере.
 
--   JEA-администрирование — новое средство обеспечения безопасности при делегировании — использует DSC и ограниченные пространства выполнения Windows PowerShell, чтобы защитить предприятие от потери данных и умышленной или случайной компрометации их сотрудниками. Дополнительные сведения о JEA, включая сведения о том, где можно скачать ресурс DSC xJEA, см. в статье [Just Enough Administration, Step by Step](http://blogs.technet.com/b/privatecloud/archive/2014/05/14/just-enough-administration-step-by-step.aspx) (JEA-администрирование — шаг за шагом).
+-   JEA-администрирование — новое средство обеспечения безопасности при делегировании — использует DSC и ограниченные пространства выполнения Windows PowerShell, чтобы защитить предприятие от потери данных и умышленной или случайной компрометации их сотрудниками. Дополнительные сведения о JEA, включая сведения о том, где можно скачать ресурс DSC xJEA, см. в статье [Just Enough Administration, Step by Step](http://blogs.technet.com/b/privatecloud/archive/2014/05/14/just-enough-administration-step-by-step.aspx) (JEA-администрирование — шаг за шагом).
 
 -   В модуль PSDesiredStateConfiguration добавлены следующие командлеты:
 
@@ -305,16 +306,16 @@ Windows PowerShell 5.0 устанавливается по умолчанию в
 
 -   Начиная с Windows PowerShell 5.0, можно создать набор командлетов Windows PowerShell на основе функциональности, предоставляемой заданной конечной точкой OData. Для этого используется командлет Export-ODataEndpointProxy, доступный в новом модуле [Microsoft.PowerShell.OdataUtils](http://technet.microsoft.com/library/dn818507(v=wps.640).aspx).
 
-### <a name="a-namebkmk5bugfixanotable-bug-fixes-in-windows-powershell-50"></a><a name="BKMK_5bugfix"></a> Исправления важных ошибок в Windows PowerShell 5.0
+### <a name="a-namebkmk5bugfixanotable-bug-fixes-in-windows-powershell-50"></a><a name="BKMK_5bugfix"></a> Исправления важных ошибок в Windows PowerShell 5.0
 
--   Windows PowerShell 5.0 содержит новую реализацию COM, обеспечивающую значительное повышение производительности при работе с COM-объектами. Видеодемонстрация этого эффекта приведена на странице [Com_Perf_Improvements](http://1drv.ms/1qu3UPZ).
+-   Windows PowerShell 5.0 содержит новую реализацию COM, обеспечивающую значительное повышение производительности при работе с COM-объектами. Видеодемонстрация этого эффекта приведена на странице [Com_Perf_Improvements](http://1drv.ms/1qu3UPZ).
 
--   Была значительно повышена производительность при первом заполнении нажатием клавиши TAB в сеансе Windows PowerShell. Время завершения сократилось почти на 500 мс.
+-   Была значительно повышена производительность при первом заполнении нажатием клавиши TAB в сеансе Windows PowerShell. Время завершения сократилось почти на 500 мс.
 
-## <a name="a-namebkmkwps4anew-features-in-windows-powershell-40"></a><a name="BKMK_wps4"></a> Новые функции в Windows PowerShell 4.0
+## <a name="a-namebkmkwps4anew-features-in-windows-powershell-40"></a><a name="BKMK_wps4"></a> Новые функции в Windows PowerShell 4.0
 Windows PowerShell 4.0 обеспечивает обратную совместимость. Командлеты, поставщики, модули, оснастки, сценарии, функции и профили, разработанные для Windows PowerShell 3.0 и Windows PowerShell 2.0, обычно работают в Windows PowerShell 4.0 без изменений.
 
-Windows PowerShell 4.0 установлен в Windows® 8.1 и Windows Server 2012 R2 по умолчанию. Чтобы установить Windows PowerShell 4.0 в Windows 7 с пакетом обновления 1 (SP1) или Windows Server 2008 R2, скачайте и установите [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855). Перед тем как устанавливать Windows Management Framework 4.0., прочтите сведения о загрузке и убедитесь, что все требования к системе выполнены.
+Windows PowerShell 4.0 установлен в Windows® 8.1 и Windows Server 2012 R2 по умолчанию. Чтобы установить Windows PowerShell 4.0 в Windows 7 с пакетом обновления 1 (SP1) или Windows Server 2008 R2, скачайте и установите [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855). Перед тем как устанавливать Windows Management Framework 4.0., прочтите сведения о загрузке и убедитесь, что все требования к системе выполнены.
 
 -   [Новые возможности в Windows PowerShell](#BKMK_core)
 
@@ -326,13 +327,13 @@ Windows PowerShell 4.0 установлен в Windows® 8.1 и Windows Server 2
 
 -   [Новые возможности в Windows PowerShell Web Access](#BKMK_powwa)
 
--   [Исправления важных ошибок в Windows PowerShell 4.0](#BKMK_bugs)
+-   [Исправления важных ошибок в Windows PowerShell 4.0](#BKMK_bugs)
 
-Windows PowerShell 4.0 включает приведенные ниже новые функции.
+Windows PowerShell 4.0 включает приведенные ниже новые функции.
 
 ### <a name="a-namebkmkcoreanew-features-in-windows-powershell"></a><a name="BKMK_core"></a> Новые функции в Windows PowerShell
 
--   **Служба настройки требуемого состояния** (DSC) Windows PowerShell является новой системой управления в Windows PowerShell 4.0, которая позволяет развертывать данные конфигурации для программных служб и среды, в которой они выполняются, и управлять ими. Дополнительные сведения о службе настройки требуемого состояния см. в статье [Начало работы со службой настройки требуемого состояния Windows PowerShell](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0).
+-   **Служба настройки требуемого состояния** (DSC) Windows PowerShell является новой системой управления в Windows PowerShell 4.0, которая позволяет развертывать данные конфигурации для программных служб и среды, в которой они выполняются, и управлять ими. Дополнительные сведения о службе настройки требуемого состояния см. в статье [Начало работы со службой настройки требуемого состояния Windows PowerShell](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0).
 
 -   **Save-Help** теперь позволяет сохранять справку по модулям, установленным на удаленных компьютерах. Командлет Save-Help можно использовать для того, чтобы загрузить справку по модулю с подключенного к Интернету клиента (на котором установлены не все модули, для которых требуется справка), а затем скопировать сохраненную справку в удаленную общую папку или на удаленный компьютер без доступа к Интернету.
 
@@ -344,9 +345,9 @@ Windows PowerShell 4.0 включает приведенные ниже новы
 
 -   **Get-Module** содержит новый параметр **FullyQualifiedName** типа **ModuleSpecification\[]**. Параметр **FullyQualifiedName** Get-Module теперь позволяет указать модуль, используя имя, версию и GUID (необязательно) модуля.
 
--   Параметр политики выполнения по умолчанию в Windows PowerShell 2012 R2 — **RemoteSigned**. В Windows 8.1 параметр по умолчанию не изменился.
+-   Параметр политики выполнения по умолчанию в Windows PowerShell 2012 R2 — **RemoteSigned**. В Windows 8.1 параметр по умолчанию не изменился.
 
--   Начиная с Windows PowerShell 4.0 поддерживается вызов метода с помощью имен динамических методов. Можно использовать переменную для хранения имени метода, а затем динамически вызвать метод, вызвав переменную.
+-   Начиная с Windows PowerShell 4.0 поддерживается вызов метода с помощью имен динамических методов. Можно использовать переменную для хранения имени метода, а затем динамически вызвать метод, вызвав переменную.
 
 -   Задания асинхронных рабочих процессов больше не удаляются по истечении времени ожидания, указанного в общем параметре рабочего процесса **PSElapsedTimeoutSec**.
 
@@ -364,9 +365,9 @@ Windows PowerShell 4.0 включает приведенные ниже новы
 
 -   Добавлен новый командлет **Get-FileHash**, который возвращает хэш файла в одном из нескольких форматов для указанного файла.
 
--   В Windows PowerShell 4.0, если модуль использует ключ **DefaultCommandPrefix** в манифесте или если пользователь импортирует модуль с параметром **Prefix**, свойство **ExportedCommands** модуля отображает команды в модуле с префиксом. При выполнении команд с использованием синтаксиса модуля ModuleName\\CommandName имена команд должны включать префикс.
+-   В Windows PowerShell 4.0, если модуль использует ключ **DefaultCommandPrefix** в манифесте или если пользователь импортирует модуль с параметром **Prefix**, свойство **ExportedCommands** модуля отображает команды в модуле с префиксом. При выполнении команд с использованием синтаксиса модуля ModuleName\\CommandName имена команд должны включать префикс.
 
--   Значение **$PSVersionTable.PSVersion** обновлено до 4.0.
+-   Значение **$PSVersionTable.PSVersion** обновлено до 4.0.
 
 -   Поведение оператора **Where()** изменено. `Collection.Where('property -match name')`, принимающий строковое выражение в формате `"Property -CompareOperator Value"`, больше не поддерживается. Однако оператор **Where()** принимает строковые выражения в формате блока сценария; эта возможность все еще поддерживается.
 
@@ -402,7 +403,7 @@ Windows PowerShell 4.0 включает приведенные ниже новы
 
 -   Усовершенствована обработка типов в PSWS для поддержки типов, которые используют конструктор, отличный от конструктора по умолчанию, с поведением, аналогичным поведению **PSTypeConverter** в Windows PowerShell. Это позволяет использовать сложные типы с PSWS.
 
--   PSWS теперь позволяет расширить связанный экземпляр во время выполнения запроса. Для более крупного двоичного содержимого (например, изображений, аудио или видео) стоимость передачи является значительной, и передачу двоичных данных лучше производить без кодирования. PSWS использует именованные потоки ресурсов для передачи без кодирования. Именованный поток ресурсов — это свойство сущности типа **Edm.Stream**. Каждый именованный поток ресурсов содержит отдельный универсальный код ресурса для операций GET или UPDATE.
+-   PSWS теперь позволяет расширить связанный экземпляр во время выполнения запроса. Для более крупного двоичного содержимого (например, изображений, аудио или видео) стоимость передачи является значительной, и передачу двоичных данных лучше производить без кодирования. PSWS использует именованные потоки ресурсов для передачи без кодирования. Именованный поток ресурсов — это свойство сущности типа **Edm.Stream**. Каждый именованный поток ресурсов содержит отдельный универсальный код ресурса для операций GET или UPDATE.
 
 -   Действия OData теперь предоставляют механизм вызова методов, отличных от CRUD (Create, Read, Update и Delete), в ресурсе. Можно вызвать действие, отправив запрос HTTP POST в универсальный код ресурса, который определен для действия. Параметры для действия определены в тексте запроса POST.
 
@@ -416,11 +417,11 @@ Windows PowerShell 4.0 включает приведенные ниже новы
 
 -   Параметры по умолчанию могут отображаться на одной странице входа. Чтобы отобразить параметры по умолчанию, настройте значения для всех параметров, отображающихся в области **Дополнительные параметры подключения** на странице входа в файле **web.config**. Файл **web.config** можно использовать для настройки всех дополнительных параметров подключения, за исключением второго или дополнительного набора учетных данных.
 
--   Windows Server 2012 R2 позволяет удаленно управлять правилами авторизации для Windows PowerShell Web Access. Командлеты **Add-PswaAuthorizationRule** и **Test-PswaAuthorizationRule** теперь включают параметр Credential, который позволяет администраторам управлять правилами авторизации с удаленного компьютера или в сеансе Windows PowerShell Web Access.
+-   Windows Server 2012 R2 позволяет удаленно управлять правилами авторизации для Windows PowerShell Web Access. Командлеты **Add-PswaAuthorizationRule** и **Test-PswaAuthorizationRule** теперь включают параметр Credential, который позволяет администраторам управлять правилами авторизации с удаленного компьютера или в сеансе Windows PowerShell Web Access.
 
 -   Теперь вы можете открыть несколько сеансов Windows PowerShell Web Access в одном сеансе браузера, используя новую вкладку для каждого сеанса. Больше не нужно открывать новый сеанс браузера для подключения к новому сеансу в веб-консоли Windows PowerShell.
 
-### <a name="a-namebkmkbugsanotable-bug-fixes-in-windows-powershell-40"></a><a name="BKMK_bugs"></a> Исправления важных ошибок в Windows PowerShell 4.0
+### <a name="a-namebkmkbugsanotable-bug-fixes-in-windows-powershell-40"></a><a name="BKMK_bugs"></a> Исправления важных ошибок в Windows PowerShell 4.0
 
 -   **Get-Counter** теперь может возвращать счетчики, содержащие знак апострофа в выпусках Windows на французском языке.
 
@@ -450,14 +451,14 @@ Windows PowerShell 4.0 включает приведенные ниже новы
 
 -   **Get-Job** теперь возвращает все завершенные запланированные задания даже в новых сеансах.
 
--   Исправлены проблемы с подключением и отключением виртуальных жестких дисков с помощью поставщика **FileSystem** в Windows PowerShell 4.0. Windows PowerShell теперь может отслеживать новые диски при подключении в одном сеансе.
+-   Исправлены проблемы с подключением и отключением виртуальных жестких дисков с помощью поставщика **FileSystem** в Windows PowerShell 4.0. Windows PowerShell теперь может отслеживать новые диски при подключении в одном сеансе.
 
 -   Вам больше не нужно явно загружать модули **ScheduledJob** или **Workflow** для работы с их типами заданий.
 
 -   Повышена производительность импорта рабочих процессов, определяющих вложенные рабочие процессы.
 
-## <a name="a-namebkmkwps3anew-features-in-windows-powershell-30"></a><a name="BKMK_wps3"></a> Новые функции в Windows PowerShell 3.0
-Windows PowerShell 3.0 включает приведенные ниже новые функции.
+## <a name="a-namebkmkwps3anew-features-in-windows-powershell-30"></a><a name="BKMK_wps3"></a> Новые функции в Windows PowerShell 3.0
+Windows PowerShell 3.0 включает приведенные ниже новые функции.
 
 -   [Рабочие процессы Windows PowerShell](#BKMK_Workflow)
 
@@ -465,7 +466,7 @@ Windows PowerShell 3.0 включает приведенные ниже новы
 
 -   [Новые возможности в интегрированной среде скриптов Windows PowerShell](#BKMK_ISE)
 
--   [Поддержка Microsoft .NET Framework 4.0](#BKMK_NET4)
+-   [Поддержка Microsoft .NET Framework 4.0](#BKMK_NET4)
 
 -   [Поддержка среды предустановки Windows](#BKMK_WinPE)
 
@@ -541,18 +542,18 @@ Windows PowerShell 3.0 включает приведенные ниже новы
 -   **Регулирование рабочих процессов и подключений.** Выполнение рабочих процессов и подключений к узлам можно регулировать, включая масштабирование и сценарии высокой доступности.
 
 ### <a name="a-namebkmkwebaccessawindows-powershell-web-access"></a><a name="BKMK_WebAccess"></a> Windows PowerShell Web Access
-Windows PowerShell® Web Access — это компонент Windows Server 2012, который позволяет выполнять команды и скрипты Windows PowerShell в веб-консоли. Устройства, использующие веб-консоль, не требуют Windows PowerShell, программного обеспечения для удаленного управления или установки подключаемых модулей браузера. Все, что требуется, — это правильно настроенный шлюз Windows PowerShell Web Access и браузер на клиентском устройстве, поддерживающий JavaScript® и принимающий файлы cookie.
+Windows PowerShell® Web Access — это компонент Windows Server 2012, который позволяет выполнять команды и скрипты Windows PowerShell в веб-консоли. Устройства, использующие веб-консоль, не требуют Windows PowerShell, программного обеспечения для удаленного управления или установки подключаемых модулей браузера. Все, что требуется, — это правильно настроенный шлюз Windows PowerShell Web Access и браузер на клиентском устройстве, поддерживающий JavaScript® и принимающий файлы cookie.
 
 Дополнительные сведения см. в статье [Развертывание Windows PowerShell Web Access](http://go.microsoft.com/fwlink/p/?LinkID=221050).
 
 ### <a name="a-namebkmkiseanew-windows-powershell-ise-features"></a><a name="BKMK_ISE"></a> Новые функции интегрированной среды сценариев Windows PowerShell
-В версии Windows PowerShell 3.0 в интегрированной среде скриптов Windows PowerShell® появилось много новых возможностей, включая IntelliSense, окно Show-Command, объединенную область консоли, фрагменты кода, отслеживание парности фигурных скобок, разделы, которые можно развернуть или свернуть, автосохранение, список последних элементов, копирование отформатированного текста в командную строку, блочное копирование и полную поддержку написания рабочих процессов для скриптов Windows PowerShell. Дополнительные сведения см. в статье [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb).
+В версии Windows PowerShell 3.0 в интегрированной среде скриптов Windows PowerShell® появилось много новых возможностей, включая IntelliSense, окно Show-Command, объединенную область консоли, фрагменты кода, отслеживание парности фигурных скобок, разделы, которые можно развернуть или свернуть, автосохранение, список последних элементов, копирование отформатированного текста в командную строку, блочное копирование и полную поддержку написания рабочих процессов для скриптов Windows PowerShell. Дополнительные сведения см. в статье [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb).
 
-### <a name="a-namebkmknet4asupport-for-microsoft-net-framework-4"></a><a name="BKMK_NET4"></a> Поддержка Microsoft .NET Framework 4
-Служба Windows PowerShell создана на основе среды CLR 4.0. Создатели командлетов, сценариев и рабочих процессов могут использовать новые классы Microsoft .NET Framework 4 в Windows PowerShell с функциями, в которые входит совместимость и развертывание приложений, Managed Extensibility Framework, параллельное вычисление, сети, Windows Communication Foundation и Windows Workflow Foundation.
+### <a name="a-namebkmknet4asupport-for-microsoft-net-framework-4"></a><a name="BKMK_NET4"></a> Поддержка Microsoft .NET Framework 4
+Служба Windows PowerShell создана на основе среды CLR 4.0. Создатели командлетов, сценариев и рабочих процессов могут использовать новые классы Microsoft .NET Framework 4 в Windows PowerShell с функциями, в которые входит совместимость и развертывание приложений, Managed Extensibility Framework, параллельное вычисление, сети, Windows Communication Foundation и Windows Workflow Foundation.
 
 ### <a name="a-namebkmkwinpeasupport-for-windows-preinstallation-environment"></a><a name="BKMK_WinPE"></a> Поддержка среды предустановки Windows
-Windows PowerShell 3.0 является дополнительным компонентом среды предустановки Windows (Windows PE) 4.0 для Windows 8. Windows PE — это минимальная операционная система, которая запускает компьютер без операционной системы и подготавливает его к установке Windows. Windows PE можно использовать для секционирования и форматирования жестких дисков, копирования образов дисков на компьютер и запуска установки Windows из общей сетевой папки. Windows PowerShell 3.0 можно использовать в Windows PE для управления развертыванием, диагностикой и сценариями восстановления.
+Windows PowerShell 3.0 является дополнительным компонентом среды предустановки Windows (Windows PE) 4.0 для Windows 8. Windows PE — это минимальная операционная система, которая запускает компьютер без операционной системы и подготавливает его к установке Windows. Windows PE можно использовать для секционирования и форматирования жестких дисков, копирования образов дисков на компьютер и запуска установки Windows из общей сетевой папки. Windows PowerShell 3.0 можно использовать в Windows PE для управления развертыванием, диагностикой и сценариями восстановления.
 
 ### <a name="a-namebkmkdisconnectedadisconnected-sessions"></a><a name="BKMK_Disconnected"></a> Отключенные сеансы
 Начиная с Windows PowerShell 3.0 постоянные пользовательские сеансы (PSSessions), которые вы создаете с помощью командлета New-PSSession, сохраняются на удаленном компьютере. Они больше не зависят от сеанса, в котором были созданы.
@@ -581,7 +582,7 @@ Windows PowerShell 3.0 обнаруживает неожиданные поте�
 
 Командлет [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) можно использовать для обновления файлов справки для всех или конкретных модулей во всех поддерживаемых с любыми языками и региональными параметрами пользовательского интерфейса. Можно даже поместить команду [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) в ваш профиль Windows PowerShell. По умолчанию Windows PowerShell скачивает файлы справки для модуля не чаще раза в день.
 
-В модули Windows 8 и Windows Server 2012 не входят файлы справки. Чтобы скачать последние файлы справки, введите `Update-Help`. Для получения дополнительных сведений введите `Get-Help` (без параметров) или см. статью [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe).
+В модули Windows 8 и Windows Server 2012 не входят файлы справки. Чтобы скачать последние файлы справки, введите `Update-Help`. Для получения дополнительных сведений введите `Get-Help` (без параметров) или см. статью [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe).
 
 Если файлы справки для командлета не установлены на компьютере, командлет [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) теперь будет отображать автоматически созданную справку. В автоматически собранную справку входит синтаксис команды и инструкции по использованию командлета [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) для скачивания файлов справки.
 
@@ -612,10 +613,10 @@ http://go.microsoft.com/fwlink/?LinkID=223923
 Дополнительные сведения о поддержке справки в Интернете см. в статье [Поддержка справки в Интернете](http://go.microsoft.com/fwlink/?LinkId=242132).
 
 ### <a name="a-namebkmkcimacim-integration"></a><a name="BKMK_CIM"></a> Интеграция CIM
-Windows PowerShell 3.0 включает поддержку модели CIM, которая предоставляет стандартные определения для информации управления для систем, сетей, приложений и служб, позволяя им обмениваться сведениями об управлении между разнородными системами. Поддержка CIM в Windows PowerShell 3.0, включая возможность создавать командлеты Windows PowerShell на основе новых или существующих классов CIM, команды на основе XML-файлов определений командлетов, поддержка CIM .NET Framework. API, командлеты управления CIM и поставщики WMI 2.0.
+Windows PowerShell 3.0 включает поддержку модели CIM, которая предоставляет стандартные определения для информации управления для систем, сетей, приложений и служб, позволяя им обмениваться сведениями об управлении между разнородными системами. Поддержка CIM в Windows PowerShell 3.0, включая возможность создавать командлеты Windows PowerShell на основе новых или существующих классов CIM, команды на основе XML-файлов определений командлетов, поддержка CIM .NET Framework. API, командлеты управления CIM и поставщики WMI 2.0.
 
 ### <a name="a-namebkmkconfigfileasession-configuration-files"></a><a name="BKMK_ConfigFile"></a> Файлы конфигурации сеанса
-Начиная с Windows PowerShell 3.0 с помощью файла можно создать конфигурацию пользовательского сеанса. Файл конфигурации нового сеанса позволяет определить среду сеансов, которые используют конфигурацию сеансов, включая модули, сценарии и файлы форматирования, загруженные в сеансы, командлеты и элементы языка, которые могут использовать пользователи, модули и сценарии, которые они могут запускать, и переменные, которые они могут просматривать.
+Начиная с Windows PowerShell 3.0 с помощью файла можно создать конфигурацию пользовательского сеанса. Файл конфигурации нового сеанса позволяет определить среду сеансов, которые используют конфигурацию сеансов, включая модули, сценарии и файлы форматирования, загруженные в сеансы, командлеты и элементы языка, которые могут использовать пользователи, модули и сценарии, которые они могут запускать, и переменные, которые они могут просматривать.
 
 Можно создать сеанс, в котором пользователи могут только выполнять командлеты из одного конкретного модуля, или сеанс, в котором пользователи получат весь язык, доступ ко всем модулям и доступ к сценариям, которые выполняют дополнительные задачи.
 
@@ -639,7 +640,7 @@ Windows PowerShell 3.0 включает поддержку модели CIM, к�
 Дополнительные сведения о запланированных заданиях см. в статье [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92).
 
 ### <a name="a-namebkmklangawindows-powershell-language-enhancements"></a><a name="BKMK_Lang"></a> Усовершенствования языка Windows PowerShell
-Windows PowerShell 3.0 включает много функций, предназначенных для упрощения языка, его использования и предотвращения распространенных ошибок. В усовершенствования входит перечисление свойств, свойства счетчика и длины в скалярных объектах, новые операторы перенаправления, модификатор области $Using, автоматическая переменная PSItem, гибкое форматирование сценариев, атрибуты переменных, упрощенные аргументы атрибутов, имена числовых команд, оператор Stop-Parsing, усовершенствованный сплаттинг массивов, новые двоичные операторы, упорядоченные словари, приведение PSCustomObject и усовершенствованная справка на основе комментариев.
+Windows PowerShell 3.0 включает много функций, предназначенных для упрощения языка, его использования и предотвращения распространенных ошибок. В усовершенствования входит перечисление свойств, свойства счетчика и длины в скалярных объектах, новые операторы перенаправления, модификатор области $Using, автоматическая переменная PSItem, гибкое форматирование сценариев, атрибуты переменных, упрощенные аргументы атрибутов, имена числовых команд, оператор Stop-Parsing, усовершенствованный сплаттинг массивов, новые двоичные операторы, упорядоченные словари, приведение PSCustomObject и усовершенствованная справка на основе комментариев.
 
 ### <a name="a-namebkmkcoreanew-core-cmdlets"></a><a name="BKMK_Core"></a> Новые основные командлеты
 В установку основных компонентов Windows PowerShell добавлены новые командлеты, включая командлеты для управления запланированными заданиями, отключенными сеансами, интеграцией CIM и системой обновляемой справки.
@@ -681,7 +682,7 @@ Windows PowerShell 3.0 включает новые функции для име�
 Также были значительно улучшены поставщики Windows PowerShell, включая поддержку поставщика сертификатов для управления сертификатами SSL для веб-размещения, поддержку учетных данных, постоянных сетевых дисков и других потоков данных на дисках файловой системы.
 
 ### <a name="a-namebkmkremaremote-module-import-and-discovery"></a><a name="BKMK_REM"></a> Удаленный импорт и обнаружение модулей
-Windows PowerShell 3.0 расширяет возможности обнаружения модулей, импорта и неявного удаленного взаимодействия на удаленных компьютерах. Командлеты модуля получают модули на удаленных компьютерах и импортируют их на удаленный или локальный компьютер, используя удаленное взаимодействие Windows PowerShell. Поддержка нового сеанса CIM позволяет использовать CIM и WMI для управления компьютерами, запущенными не под управлением Windows, с помощью импорта команд на локальный компьютер, который неявно выполняется на удаленном компьютере.
+Windows PowerShell 3.0 расширяет возможности обнаружения модулей, импорта и неявного удаленного взаимодействия на удаленных компьютерах. Командлеты модуля получают модули на удаленных компьютерах и импортируют их на удаленный или локальный компьютер, используя удаленное взаимодействие Windows PowerShell. Поддержка нового сеанса CIM позволяет использовать CIM и WMI для управления компьютерами, запущенными не под управлением Windows, с помощью импорта команд на локальный компьютер, который неявно выполняется на удаленном компьютере.
 
 Подробнее см. в разделах справки для командлетов [Get-Module](https://technet.microsoft.com/en-us/library/2cccd4c4-9a21-4c77-b691-984ee57242e1) и [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade).
 
@@ -721,18 +722,18 @@ Windows PowerShell 3.0 предоставляет поддержку допол�
 9. Усовершенствованный командлет [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) с обоими параметрами **MinimumVersion** и **RequiredVersion**.
 
 ### <a name="a-namebkmksimpleasimplified-command-discovery"></a><a name="BKMK_SIMPLE"></a> Упрощенное обнаружение команд
-Больше не нужно импортировать все модули для обнаружения команд, доступных для сеанса. В Windows PowerShell 3.0 командлет [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) получает все команды из всех установленных модулей. При использовании команды модуль, экспортирующий команду, автоматически импортируется в сеанс.
+Больше не нужно импортировать все модули для обнаружения команд, доступных для сеанса. В Windows PowerShell 3.0 командлет [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) получает все команды из всех установленных модулей. При использовании команды модуль, экспортирующий команду, автоматически импортируется в сеанс.
 
 Новый командлет [Show-Command](https://technet.microsoft.com/en-us/library/65bba50b-91a8-49d5-80a2-a30fc684ba41) предназначен для начинающих. Команды можно искать в окне. Вы можете просматривать все команды или фильтровать их по модулю, использовать текстовые поля и раскрывающиеся списки для создания допустимой команды, а затем копировать или запускать команду в пределах одного окна.
 
 ### <a name="a-namebkmklogaimproved-logging-diagnostics-and-group-policy-support"></a><a name="BKMK_LOG"></a> Улучшенная поддержка ведения журнала, диагностики и групповой политики
-Windows PowerShell 3.0 усовершенствует поддержку ведения журнала и трассировки для команд и модулей с поддержкой журналов трассировки событий в Windows, редактируемого свойства **LogPipelineExecutionDetails** модулей и параметра групповой политики "Включить ведение журнала модуля". Теперь вы можете получить значения параметров из сведений журнала, отобразив свойства журнала.
+Windows PowerShell 3.0 усовершенствует поддержку ведения журнала и трассировки для команд и модулей с поддержкой журналов трассировки событий в Windows, редактируемого свойства **LogPipelineExecutionDetails** модулей и параметра групповой политики "Включить ведение журнала модуля". Теперь вы можете получить значения параметров из сведений журнала, отобразив свойства журнала.
 
 ### <a name="a-namebkmkoutaformatting-and-output-improvements"></a><a name="BKMK_OUT"></a> Усовершенствованное форматирование и выходные данные
 Новые усовершенствования форматирования и выходных данных повышают эффективность всех пользователей Windows PowerShell. В усовершенствования входит перенаправление выходных данных для всех потоков, улучшенный командлет Update-Type, который добавляет типы динамически, без файлов FORMAT.PS1XML, перенос по словам в выходных данных, свойства форматирования пользовательских объектов по умолчанию, тип **PSCustomObject**, улучшенное форматирование для объектов WMI и разнородных объектов, а также поддержка обнаружения перегрузок методов.
 
 ### <a name="a-namebkmkhostaenhanced-console-host-experience"></a><a name="BKMK_HOST"></a> Усовершенствованное взаимодействие с узлом консоли
-Основная программа консоли Windows PowerShell содержит новые функции в Windows PowerShell 3.0, включая однопотоковое подразделение по умолчанию. Новый параметр "Выполнить с помощью PowerShell" в проводнике позволяет выполнять сценарии в неограниченном сеансе, просто щелкнув правой кнопкой мыши. Новая логика запуска узла консоли запускает Windows PowerShell быстрее, а новые шрифты позволяют персонализировать знакомый интерфейс окна консоли.
+Основная программа консоли Windows PowerShell содержит новые функции в Windows PowerShell 3.0, включая однопотоковое подразделение по умолчанию. Новый параметр "Выполнить с помощью PowerShell" в проводнике позволяет выполнять сценарии в неограниченном сеансе, просто щелкнув правой кнопкой мыши. Новая логика запуска узла консоли запускает Windows PowerShell быстрее, а новые шрифты позволяют персонализировать знакомый интерфейс окна консоли.
 
 Дополнительные сведения см. в статье [about_Run_With_PowerShell](https://technet.microsoft.com/en-us/library/c9d9ca5f-eff9-4409-be9d-e43b5b4087eb).
 
@@ -740,17 +741,17 @@ Windows PowerShell 3.0 усовершенствует поддержку вед�
 Новые API командлетов и API размещения включают открытые API дерева расширенного синтаксиса и API для подкачки конвейеров, вложенных конвейеров, заполнения пулов пространства выполнения нажатием клавиши TAB, Windows RT, атрибута устаревшего командлета и свойств Verb и Noun объекта FunctionInfo.
 
 ### <a name="a-namebkmkperfaperformance-improvements"></a><a name="BKMK_PERF"></a> Повышение производительности
-Значительно повышена производительность в Windows PowerShell благодаря новому средству анализа языка, созданному на основе DLR в .NET Framework 4, вместе с компиляцией сценариев среды выполнения, повышением надежности подсистемы и изменением алгоритма [Get-ChildItem](https://technet.microsoft.com/en-us/library/75cf79bb-4db6-4a67-8c36-3d20754e2190), который повышает производительность, особенно при поиске общих сетевых папок.
+Значительно повышена производительность в Windows PowerShell благодаря новому средству анализа языка, созданному на основе DLR в .NET Framework 4, вместе с компиляцией сценариев среды выполнения, повышением надежности подсистемы и изменением алгоритма [Get-ChildItem](https://technet.microsoft.com/en-us/library/75cf79bb-4db6-4a67-8c36-3d20754e2190), который повышает производительность, особенно при поиске общих сетевых папок.
 
 ### <a name="a-namebkmkrunasarunas-and-shared-host-support"></a><a name="BKMK_RUNAS"></a> Поддержка запуска от имени и общего узла
-Windows PowerShell 3.0 включает поддержку функций запуска от имени и общего узла.
+Windows PowerShell 3.0 включает поддержку функций запуска от имени и общего узла.
 
 Функция *запуска от имени*, предназначенная для рабочего процесса Windows PowerShell, позволяет пользователям конфигурации сеанса создавать сеансы, которые запускаются с разрешением общей учетной записи пользователя. Это позволяет пользователям с меньшими привилегиями выполнять определенные команды и сценарии с правами администратора и уменьшает необходимость добавления большего количества опытных пользователей в группу администраторов.
 
 Функция **SharedHost** разрешает нескольким пользователям на нескольких компьютерах одновременно подключаться к сеансу рабочего процесса и отслеживать ход выполнения рабочего процесса. Пользователи могут запустить рабочий процесс на одном компьютере, а затем подключиться к сеансу рабочего процесса на другом компьютере, не отключая сеанс от исходного компьютера. Пользователи должны получить одинаковые разрешения и использовать ту же конфигурацию сеанса. Дополнительные сведения см. в подразделе "Запуск рабочего процесса Windows PowerShell" раздела "Начало работы с рабочими процессами Windows PowerShell".
 
 ### <a name="a-namebkmkcharaspecial-character-handling-improvements"></a><a name="BKMK_CHAR"></a> Улучшения обработки специальных символов
-Чтобы улучшить возможность интерпретации и правильной обработки специальных символов в Windows PowerShell 3.0, параметр **LiteralPath**, который обрабатывает специальные символы в путях, допустим практически во всех командлетах с параметром **Path**, включая новые командлеты [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) и [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa). Средство анализа также включает специальную логику для улучшения обработки обратных апострофов (\`) и квадратных скобок в именах и путях файлов.
+Чтобы улучшить возможность интерпретации и правильной обработки специальных символов в Windows PowerShell 3.0, параметр **LiteralPath**, который обрабатывает специальные символы в путях, допустим практически во всех командлетах с параметром **Path**, включая новые командлеты [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) и [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa). Средство анализа также включает специальную логику для улучшения обработки обратных апострофов (\`) и квадратных скобок в именах и путях файлов.
 
 ## <a name="see-also"></a>См. также
 - [about_Windows_PowerShell_4.0](http://technet.microsoft.com/en-us/library/hh847833(v=wps.630).aspx)

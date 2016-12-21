@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.Management"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.Management"
+ms.technology: powershell
 ms.assetid: 03d69ab7-89d8-4cff-863e-d5f3864fee5a
-ms.openlocfilehash: e13b9d3cbc213cbab5fbbea853e6f61731560558
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: ca0e729e9382c82ae6db82043f02bfb83a382bbf
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershellmanagement-module"></a>Модуль Microsoft.PowerShell.Management

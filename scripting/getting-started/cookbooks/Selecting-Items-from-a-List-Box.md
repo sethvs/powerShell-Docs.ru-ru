@@ -1,15 +1,16 @@
 ---
-title: "Выбор элементов из списка"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Выбор элементов из списка"
+ms.technology: powershell
 ms.assetid: 327c7cc5-21d0-4ace-b151-aa1491d1d3c2
-ms.openlocfilehash: 08df13411c1998b0db6a4af9b8bd2bacca1dc643
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 0bf96e4bfd786a745b5aebae15d986785b262121
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="selecting-items-from-a-list-box"></a>Выбор элементов из списка

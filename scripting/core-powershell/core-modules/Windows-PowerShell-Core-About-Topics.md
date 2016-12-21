@@ -1,15 +1,16 @@
 ---
-title: "Разделы справки по модулю Windows PowerShell Core"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Разделы справки по модулю Windows PowerShell Core"
+ms.technology: powershell
 ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
-ms.openlocfilehash: 5343cf633d74171037ed3cdc9fcaa04495f4aaf7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 08f62a8e54e1342a01e76dafd02b745c59a1e3f8
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="windows-powershell-core-about-topics"></a>Разделы справки по модулю Windows PowerShell Core
@@ -122,7 +123,7 @@ translationtype: HT
 |[about_Variables [v4]](https://technet.microsoft.com/en-us/library/0cb2aa2b-508a-4d25-999b-e066e99a9312)|Обзорный раздел, посвященный типам переменных в Windows PowerShell.|
 |[about_While [v4]](https://technet.microsoft.com/en-us/library/3a1a1329-2501-4e4e-8660-a2ca68c68541)|Содержит описание циклов **While** в Windows PowerShell.|
 |[about_Wildcards [v4]](https://technet.microsoft.com/en-us/library/9fe09a23-afce-4547-9e2f-c38090f77636)|Содержит сведения о том, как использовать подстановочные знаки (\*) в Windows PowerShell.|
-|[about_Windows_PowerShell_5.0](https://technet.microsoft.com/en-us/library/6d56fa88-371e-40c9-b2de-64a2a0cd49da)|Содержит описание изменений и возможностей, появившихся в Windows PowerShell 4.0.|
+|[about_Windows_PowerShell_5.0](https://technet.microsoft.com/en-us/library/6d56fa88-371e-40c9-b2de-64a2a0cd49da)|Содержит описание изменений и возможностей, появившихся в Windows PowerShell 4.0.|
 |[about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)|Описание интегрированной среды скриптов Windows PowerShell® (ISE).|
 |[about_Workflows](https://technet.microsoft.com/en-us/library/f2897bdd-1b9d-4679-8b19-09840bd40a22)|Содержит краткие обзорные сведения о компоненте "Рабочий процесс" в Windows PowerShell.|
 |[about_WorkflowCommonParameters](https://technet.microsoft.com/en-us/library/119f968e-618e-439c-b76c-cdd17e6df27c)|Содержит описание параметров, действительных во всех командах рабочих процессов Windows PowerShell.|

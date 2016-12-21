@@ -1,14 +1,15 @@
 ---
-title: "руководство по рабочим процессам"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 5cace2ee6612b9f827fedd31361d259525eab66d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "руководство по рабочим процессам"
+ms.technology: powershell
+ms.openlocfilehash: 59b31a94ad73bb723ade296cbb5faf147e663df1
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="psworkflow-module"></a>Модуль PSWorkflow

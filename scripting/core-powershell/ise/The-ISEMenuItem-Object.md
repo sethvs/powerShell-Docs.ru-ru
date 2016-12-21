@@ -1,15 +1,16 @@
 ---
-title: "Объект ISEMenuItem"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISEMenuItem"
+ms.technology: powershell
 ms.assetid: a16660bd-0aee-46fd-ac17-3f022165d089
-ms.openlocfilehash: a1456065c707e5229fd383a9e39d24f9436d4a99
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 443f79a2d7f299b4f9f59804909f01c7742415a4
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-isemenuitem-object"></a>Объект ISEMenuItem

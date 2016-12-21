@@ -1,15 +1,16 @@
 ---
-title: "Модуль PSLocalAccount5"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль PSLocalAccount5"
+ms.technology: powershell
 ms.assetid: 763b406f-2d89-4b45-b689-3d5b28f26022
-ms.openlocfilehash: 02b08ea0806b15ecbc2fb4c930fee4ca23972fe5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: aa2bb3e6ea91d8f9dd7500f4450fc4af5e5a7559
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="pslocalaccount5-module"></a>Модуль PSLocalAccount5

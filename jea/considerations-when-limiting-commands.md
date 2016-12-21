@@ -1,22 +1,15 @@
 ---
-description: 
-manager: dongill
+manager: carmonm
 ms.topic: article
-author: jpjofre
+author: rpsqrd
+ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2016-06-22
-title: "рекомендации по ограничениям команд"
+ms.date: 2016-12-05
+title: Just Enough Administration (JEA)
 ms.technology: powershell
-ms.openlocfilehash: 0b4396ee130d99c42f613c1b79193c236ad472e7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+redirect_url: https://msdn.microsoft.com/powershell/jea/security-considerations
+ms.openlocfilehash: 845bc704ea19c969b87fdbc1f58ebe58613daba4
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-### <a name="considerations-when-limiting-commands"></a>Рекомендации по ограничениям команд
-На этом этапе необходимо обратить внимание на один важный момент.
-Все возможности, предоставляемые через JEA, находятся в областях, ограниченных правами администратора.
-Пользователи без прав не должны иметь возможность изменять используемые сценарии через конечные точки JEA.
-
-Кроме того, ни в коем случае нельзя предоставлять пользователям JEA возможность перезаписывать конфигурации JEA и сценарии из разрешенного списка во время сеансов JEA.
-Будьте особенно внимательны, предоставляя доступ к таким командам, как `Copy-Item`.
-

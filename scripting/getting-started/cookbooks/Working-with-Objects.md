@@ -1,15 +1,16 @@
 ---
-title: "Работа с объектами"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Работа с объектами"
+ms.technology: powershell
 ms.assetid: 7ecc94a4-015c-4459-ae58-85289ea09030
-ms.openlocfilehash: 6319732807785d88ef477382c4b6205d10b957ea
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 9d5a1bb6c33d8314d46f771a4a35a522c87ca49b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="working-with-objects"></a>Работа с объектами

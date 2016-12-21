@@ -1,15 +1,16 @@
 ---
-title: "Модуль PSWorkflow"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль PSWorkflow"
+ms.technology: powershell
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
-ms.openlocfilehash: a7bb1f2a4d5c1d4df828d242e6b6e45a39405a73
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 28a74da26826e60122c6fd0bb2787ee60b1ec699
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="psworkflow-module"></a>Модуль PSWorkflow

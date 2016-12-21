@@ -1,15 +1,16 @@
 ---
-title: "Управление процессами с помощью командлетов Process"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Управление процессами с помощью командлетов Process"
+ms.technology: powershell
 ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
-ms.openlocfilehash: 7f7097966aff6ae73b50521b86f932ffdfadf937
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 418c175e6ed0b71b420c4aa2d545ff177122fa0a
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="managing-processes-with-process-cmdlets"></a>Управление процессами с помощью командлетов Process
@@ -176,3 +177,4 @@ Windows PowerShell также имеет командлеты для запус�
 - [Wait-Process](https://technet.microsoft.com/en-us/library/9222af7a-789d-4a09-aa90-09d7c256c799)
 - [Debug-Process](https://technet.microsoft.com/en-us/library/eea1dace-3913-4dbd-b659-5a94a610eee1)
 - [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
+

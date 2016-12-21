@@ -1,19 +1,20 @@
 ---
-title: "Объект ISESnippetCollection"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISESnippetCollection"
+ms.technology: powershell
 ms.assetid: ae974955-4282-4cbc-8c42-0fff1904ef32
-ms.openlocfilehash: d8b5db28b0a8ce24d35b2684dd473bdea104d225
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: ad6d8ba7a68654f15566d1a74ef6a30898f21c1e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-isesnippetcollection-object"></a>Объект ISESnippetCollection
-  Объект **ISESnippetCollection** — это коллекция объектов **ISESnippet**. Коллекция файлов, с которой связан объект **PowerShellTab**, является членом этого класса. Примером является коллекция **$psISE.CurrentPowerShellTab.Files**.
+  Объект **ISESnippetCollection** — это коллекция объектов **ISESnippet**. Коллекция файлов, с которой связан объект **PowerShellTab**, является членом этого класса. Примером является коллекция **$psISE.CurrentPowerShellTab.Files**.
 
 ## <a name="methods"></a>Методы
 
@@ -22,7 +23,7 @@ translationtype: HT
 
  Загружает SNIPPETS.PS1XML-файл, содержащий определяемые пользователем фрагменты кода. Для создания фрагментов кода проще всего использовать командлет New-IseSnippet, который автоматически сохраняет фрагменты в папке профиля, чтобы загружать их при каждом запуске интегрированной среды сценариев Windows PowerShell.
 
- **FilePathName** — строка. Путь к файлу с расширением SNIPPETS.PS1XML и его имя. В нем содержатся определения фрагментов.
+ **FilePathName** — строка. Путь к файлу с расширением SNIPPETS.PS1XML и его имя. В нем содержатся определения фрагментов.
 
 ```
 # Loads a custom snippet file into the current PowerShell tab.

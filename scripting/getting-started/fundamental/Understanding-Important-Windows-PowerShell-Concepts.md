@@ -1,15 +1,16 @@
 ---
-title: "Основные сведения о важных концепциях Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Основные сведения о важных концепциях Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
-ms.openlocfilehash: b18fbf9ac462deece2bdef6743afbda2ea194c42
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 00a04da3f463b50c64b18d3bbaf17fc22f1e9e3b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="understanding-important-windows-powershell-concepts"></a>Основные сведения о важных концепциях Windows PowerShell

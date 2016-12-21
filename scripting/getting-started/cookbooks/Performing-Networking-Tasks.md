@@ -1,15 +1,16 @@
 ---
-title: "Выполнение задач по работе с сетями"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Выполнение задач по работе с сетями"
+ms.technology: powershell
 ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5
-ms.openlocfilehash: 5fbe64a5720bf76565452a271dbcb34ffe6563de
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 1c938500da191c2791b3178971cdcea28f57aacd
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="performing-networking-tasks"></a>Выполнение задач по работе с сетями

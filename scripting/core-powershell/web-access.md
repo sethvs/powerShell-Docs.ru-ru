@@ -1,14 +1,15 @@
 ---
-title: "веб-доступ"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 414f4c9f8f8e9c7f10296c5a03a297969a659cbb
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "веб-доступ"
+ms.technology: powershell
+ms.openlocfilehash: bac9b47cade581a7805f1d1ea4d67c3715d009f0
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="web-access-for-powershell"></a>Веб-доступ для PowerShell
