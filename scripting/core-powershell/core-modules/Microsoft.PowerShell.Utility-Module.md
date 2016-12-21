@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.Utility"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.Utility"
+ms.technology: powershell
 ms.assetid: 35c7701f-8e26-442f-8dc7-cf0c89f2c337
-ms.openlocfilehash: 683ee675662a2e2190914acab37af8eff2e200c3
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 9bc3f6ba1610e36df21960f76764f33b13e5f777
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershellutility-module"></a>Модуль Microsoft.PowerShell.Utility

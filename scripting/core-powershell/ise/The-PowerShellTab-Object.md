@@ -1,15 +1,16 @@
 ---
-title: "Объект PowerShellTab"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект PowerShellTab"
+ms.technology: powershell
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
-ms.openlocfilehash: 7b3455f240358992941ab4c4cc5e0f2b16e9e4f2
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 89258180377c6649c213e442b1f2d64872aaa1b4
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-powershelltab-object"></a>Объект PowerShellTab

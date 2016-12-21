@@ -1,15 +1,16 @@
 ---
-title: "Поставщики в модуле  Windows PowerShell Core"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Поставщики в модуле  Windows PowerShell Core"
+ms.technology: powershell
 ms.assetid: 6e24bf6d-4c70-4edf-956a-1e8e4779ba10
-ms.openlocfilehash: 59b4554c31a95a2d2537a431fccb2d7b67da7e95
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: dbb49a7e6bce4fe1383aab8a3b28e85adafb2643
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="windows-powershell-core-providers"></a>Поставщики в модуле  Windows PowerShell Core

@@ -1,14 +1,15 @@
 ---
-title: "безопасность"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: ce9e513bf6774a762f8ff9209346141ec6b3b8ca
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "безопасность"
+ms.technology: powershell
+ms.openlocfilehash: 777cc0c011cf32a633246061da0d362cff698ac8
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="security-module"></a>Модуль Security

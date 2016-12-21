@@ -1,15 +1,16 @@
 ---
-title: "Списки с множественным выбором"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Списки с множественным выбором"
+ms.technology: powershell
 ms.assetid: f74cd5d9-da57-4802-b614-0b194a7bc8f8
-ms.openlocfilehash: 0c17cb271441ed20b36176e2c5d8cecdad586e8b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 5d079859309947fcb6ee034b1be9d6dd300510af
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="multiple-selection-list-boxes"></a>Списки с множественным выбором

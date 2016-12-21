@@ -1,15 +1,16 @@
 ---
-title: "Получение сведений о командах"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Получение сведений о командах"
+ms.technology: powershell
 ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
-ms.openlocfilehash: b91b68f6d7bfee668edc4731f23b21233d9367d5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e8ce2c403e023f4ae8f2f308d400e66859b7b200
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="getting-information-about-commands"></a>Получение сведений о командах

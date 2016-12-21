@@ -1,19 +1,20 @@
 ---
-title: "Объект ISEFileCollection"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISEFileCollection"
+ms.technology: powershell
 ms.assetid: 0f86a427-ea38-4bce-85f8-06c98d30d508
-ms.openlocfilehash: 01de8e108c5b54a192462779a31b0d8b07687705
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: eb88b6256d1d053e4c5c28439d3a80552883204f
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-isefilecollection-object"></a>Объект ISEFileCollection
-  Объект **ISEFileCollection**  — это коллекция объектов **ISEFile**. Примером является коллекция $psISE.CurrentPowerShellTab.Files.
+  Объект **ISEFileCollection**  — это коллекция объектов **ISEFile**. Примером является коллекция $psISE.CurrentPowerShellTab.Files.
 
 ## <a name="methods"></a>Методы
 
@@ -22,7 +23,7 @@ translationtype: HT
 
  Создает и возвращает новый файл без имени и добавляет его в коллекцию. Свойство **IsUntitled** созданного файла имеет значение **$true**.
 
- **\[fullPath\]** — необязательная строка. Полный путь к файлу. Исключение возникает, если включен параметр **fullPath** и относительный путь или если вместо полного пути используется имя файла.
+ **\[fullPath\]** — необязательная строка. Полный путь к файлу. Исключение возникает, если включен параметр **fullPath** и относительный путь или если вместо полного пути используется имя файла.
 
 ```
 # Adds a new untitled file to the collection of files in the current PowerShell tab.
@@ -38,9 +39,9 @@ $psISE.CurrentPowerShellTab.Files.Add("$pshome\Examples\profile.ps1")
 
  Удаляет указанный файл из текущей вкладки PowerShell.
 
- **File** — строка. Файл ISEFile, удаляемый из коллекции. Если файл не был сохранен, этот метод создает исключение. Используйте параметр **Force** для принудительного удаления несохраненного файла.
+ **File** — строка. Файл ISEFile, удаляемый из коллекции. Если файл не был сохранен, этот метод создает исключение. Используйте параметр **Force** для принудительного удаления несохраненного файла.
 
- **\[Force\]** — необязательное логическое значение. Если задано значение **$true**, предоставляет разрешение на удаление файла, даже если он не был сохранен с момента последнего использования. Значение по умолчанию — **$false**.
+ **\[Force\]** — необязательное логическое значение. Если задано значение **$true**, предоставляет разрешение на удаление файла, даже если он не был сохранен с момента последнего использования. Значение по умолчанию — **$false**.
 
 ```
 # Removes the first opened file from the file collection associated with the current PowerShell tab.
@@ -58,7 +59,7 @@ $psISE.CurrentPowerShellTab.Files.Remove($firstfile, $true)
 
  Выбирает файл, который задается параметром **selectedFile**.
 
- **selectedFile** — Microsoft.PowerShell.Host.ISE.ISEFile. Выбираемый файл ISEFile.
+ **selectedFile** — Microsoft.PowerShell.Host.ISE.ISEFile. Выбираемый файл ISEFile.
 
 ```
 

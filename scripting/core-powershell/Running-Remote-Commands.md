@@ -1,15 +1,16 @@
 ---
-title: "Выполнение удаленных команд"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Выполнение удаленных команд"
+ms.technology: powershell
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: 08b29a2fc00aab990f9a64b8cc18fdab7b838986
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c05981e43e59869e85c6b834d4af9df86ec1230b
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="running-remote-commands"></a>Выполнение удаленных команд

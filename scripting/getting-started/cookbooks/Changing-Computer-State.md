@@ -1,15 +1,16 @@
 ---
-title: "Изменение состояния компьютера"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Изменение состояния компьютера"
+ms.technology: powershell
 ms.assetid: 8093268b-27f8-4a49-8871-142c5cc33f01
-ms.openlocfilehash: 60652b67a98179f0dab137e3360766d2e6936d81
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e743bd7f893427f62a37d295c26c1b5aea2185f0
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="changing-computer-state"></a>Изменение состояния компьютера
@@ -22,7 +23,7 @@ translationtype: HT
 rundll32.exe user32.dll,LockWorkStation
 ```
 
-Эта команда немедленно блокирует рабочую станцию. Она использует *rundll32.exe*, который запускает библиотеки DLL Windows (и сохраняет их библиотеки для многократного использования), чтобы запустить user32.dll — библиотеку функций управления Windows.
+Эта команда немедленно блокирует рабочую станцию. Она использует *rundll32.exe*, который запускает библиотеки DLL Windows (и сохраняет их библиотеки для многократного использования), чтобы запустить user32.dll — библиотеку функций управления Windows.
 
 Если рабочая станция блокируется при включенном быстром переключении пользователей, например в Windows XP, компьютер отображает экран входа в систему вместо того, чтобы запустить заставку текущего пользователя.
 
@@ -37,7 +38,7 @@ rundll32.exe user32.dll,LockWorkStation
 shutdown.exe -l
 ```
 
-Третий вариант — использование инструментария WMI. Класс Win32_OperatingSystem имеет метод Win32Shutdown. Вызов метода с флагом 0 инициирует выход из системы:
+Третий вариант — использование инструментария WMI. Класс Win32_OperatingSystem имеет метод Win32Shutdown. Вызов метода с флагом 0 инициирует выход из системы:
 
 ```
 (Get-WmiObject -Class Win32_OperatingSystem -ComputerName .).Win32Shutdown(0)

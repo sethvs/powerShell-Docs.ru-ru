@@ -1,15 +1,16 @@
 ---
-title: "Объект PowerShellTabCollection"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект PowerShellTabCollection"
+ms.technology: powershell
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58
-ms.openlocfilehash: 79edc4e41522b187cd6421be0bd897663b42bb44
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 38bac3445fd94022f03c0f336bd17f9033dfedc2
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-powershelltabcollection-object"></a>Объект PowerShellTabCollection

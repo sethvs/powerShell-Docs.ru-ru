@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.WSMan.Management"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.WSMan.Management"
+ms.technology: powershell
 ms.assetid: 687cb04d-541c-44f6-a896-75c9686cb04e
-ms.openlocfilehash: ec5f9eaff1ab7a2a4bff8609488052c035e46ad4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 35ff38b42ade367502a0fe028d0c69a6b735a9b1
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftwsmanmanagement-module"></a>Модуль Microsoft.WSMan.Management

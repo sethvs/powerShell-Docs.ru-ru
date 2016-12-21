@@ -1,15 +1,16 @@
 ---
-title: "Объект ISEFile"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISEFile"
+ms.technology: powershell
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
-ms.openlocfilehash: 1bfccad79ffbaeb12b39e156fa2cde3d58d01e7f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: fe0b2396de747bf88e780df505f5f7991e3e0b6f
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-isefile-object"></a>Объект ISEFile
@@ -22,7 +23,7 @@ translationtype: HT
 
  Сохраняет файл на диске.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+ **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
 . Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
@@ -48,7 +49,7 @@ $myfile.Encoding
 
  **filename** — строка. Имя, используемое для сохранения файла.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
+ **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
 . Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**

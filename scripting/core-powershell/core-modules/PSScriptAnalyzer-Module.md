@@ -1,15 +1,16 @@
 ---
-title: "Модуль PSScriptAnalyzer"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль PSScriptAnalyzer"
+ms.technology: powershell
 ms.assetid: 8734c1e1-898e-4fc1-8fc0-d1ad7d3cf077
-ms.openlocfilehash: fa61987777cc141b2003601a7e1b07788739bced
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e5429cc727f3fe2e56eadfb6e2c7abb34c2d52ed
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="psscriptanalyzer-module"></a>Модуль PSScriptAnalyzer

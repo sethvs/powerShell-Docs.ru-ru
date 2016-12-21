@@ -1,15 +1,16 @@
 ---
-title: "Объект ISESnippet"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISESnippet"
+ms.technology: powershell
 ms.assetid: 98bc8113-c3cd-4201-bdb9-9d9bdb7e266c
-ms.openlocfilehash: 5af4891107394981679e38cd0a7fd4c86346dc01
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 51ecf1261857e278c6d02ecb3cce16454ecfd4c4
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-isesnippetobject"></a>Объект ISESnippet

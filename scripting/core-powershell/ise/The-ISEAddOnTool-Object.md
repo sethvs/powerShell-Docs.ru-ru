@@ -1,15 +1,16 @@
 ---
-title: "Объект ISEAddOnTool"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISEAddOnTool"
+ms.technology: powershell
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-ms.openlocfilehash: 450fca8e190a175995ff91f9b32ee0695af14045
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c1ab4220fdede7cabec99fd2d9dfb39648503f28
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-iseaddontool-object"></a>Объект ISEAddOnTool

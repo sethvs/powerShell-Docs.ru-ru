@@ -1,15 +1,16 @@
 ---
-title: "Подготовка к использованию Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Подготовка к использованию Windows PowerShell"
+ms.technology: powershell
 ms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587
-ms.openlocfilehash: 2564ab148fb1de1cb58ee775d2000d321a1d36c1
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8090302903269cbaa77b9b8a7b64c339d66ae80d
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="getting-ready-to-use-windows-powershell"></a>Подготовка к использованию Windows PowerShell

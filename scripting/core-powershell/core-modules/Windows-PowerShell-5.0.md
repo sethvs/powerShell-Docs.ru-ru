@@ -1,15 +1,16 @@
 ---
-title: Windows PowerShell 5.0
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: Windows PowerShell 5.0
+ms.technology: powershell
 ms.assetid: 2ae52a0d-2eb5-4c71-971f-fb3f612d281b
-ms.openlocfilehash: 841c3ce80a625b1f52a1ce50e989ca348c65f93b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: aac2b5507f6f203ad0f2ce0aef5c98b97c266869
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="windows-powershell-50"></a>Windows PowerShell 5.0

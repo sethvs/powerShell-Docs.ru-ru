@@ -1,15 +1,16 @@
 ---
-title: "Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell"
+ms.technology: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
-ms.openlocfilehash: 3213279588df19a677940b67fa1752a29a678e36
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 079b23ca1338fdb888e13cc187e9498a141916aa
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="purpose-of-the-windows-powershell-ise-scripting-object-model"></a>Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell

@@ -1,15 +1,16 @@
 ---
-title: "Иерархия объектной модели интегрированной среды сценариев"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Иерархия объектной модели интегрированной среды сценариев"
+ms.technology: powershell
 ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
-ms.openlocfilehash: 8e192fa1a1a7b43852296ed23b8729feabc55dc5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 815d17ea6ca4a1a209b39d49ce1bd271e07621b4
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-ise-object-model-hierarchy"></a>Иерархия объектной модели интегрированной среды сценариев

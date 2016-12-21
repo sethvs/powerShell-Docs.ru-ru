@@ -1,15 +1,16 @@
 ---
-title: "Модуль PSScheduledJob"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль PSScheduledJob"
+ms.technology: powershell
 ms.assetid: 9ab43b8d-3f4d-48fe-a274-9116f1bc4b60
-ms.openlocfilehash: f73bdffc1968921aecbfc56c3793bb47f78a2e30
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: e2d340d44e0ace402cd006db7c379284a71ce0d7
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="psscheduledjob-module"></a>Модуль PSScheduledJob

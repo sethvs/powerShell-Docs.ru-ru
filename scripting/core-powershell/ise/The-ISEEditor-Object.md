@@ -1,19 +1,20 @@
 ---
-title: "Объект ISEEditor"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Объект ISEEditor"
+ms.technology: powershell
 ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
-ms.openlocfilehash: 88f3edf9f5e1cad0979626af6a435b9331bfb04d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f4bc79e88dfe528b27817670232a445c4e0c610e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="the-iseeditor-object"></a>Объект ISEEditor
-  Объект **ISEEditor** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEEditor. Область консоли — это объект **ISEEditor**. Каждый объект [ISEFile](The-ISEFile-Object.md) имеет связанный объект **ISEEditor**. В следующих разделах перечислены методы и свойства объекта **ISEEditor**.
+  Объект **ISEEditor** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEEditor. Область консоли — это объект **ISEEditor**. Каждый объект [ISEFile](The-ISEFile-Object.md) имеет связанный объект **ISEEditor**. В следующих разделах перечислены методы и свойства объекта **ISEEditor**.
 
 ## <a name="methods"></a>Методы
 
@@ -30,7 +31,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.Clear()
 ### <a name="ensurevisibleint-linenumber"></a>EnsureVisible\(int lineNumber\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Прокручивает редактор таким образом, чтобы отображалась строка, соответствующая значению параметра **lineNumber**. Метод создает исключение, если указанный номер строки находится за пределами диапазона 1, последнего номера строки, который определяет допустимые номера строк.
+ Прокручивает редактор таким образом, чтобы отображалась строка, соответствующая значению параметра **lineNumber**. Метод создает исключение, если указанный номер строки находится за пределами диапазона 1, последнего номера строки, который определяет допустимые номера строк.
 
  **lineNumber**
 . Номер строки, которая будет отображена.

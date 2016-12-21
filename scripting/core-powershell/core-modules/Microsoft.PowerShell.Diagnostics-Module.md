@@ -1,15 +1,16 @@
 ---
-title: "Модуль Microsoft.PowerShell.Diagnostics"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Модуль Microsoft.PowerShell.Diagnostics"
+ms.technology: powershell
 ms.assetid: f5aab004-d759-4f8b-9064-a30095ad4257
-ms.openlocfilehash: ad0e67824f654d6fdcb00febf64c2d42378bd6c3
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 7e3c4a3ac549f874e060441f1ec12f65c3f69496
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="microsoftpowershelldiagnostics-module"></a>Модуль Microsoft.PowerShell.Diagnostics
