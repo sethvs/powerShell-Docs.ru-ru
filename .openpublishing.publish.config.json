@@ -4,17 +4,6 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "PowerShell_PowerShell-docs_dsc",
-      "build_source_folder": "dsc",
-      "build_output_subfolder": "dsc",
-      "locale": "ru-ru",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      }
-    },
-    {
       "docset_name": "PowerShell_PowerShell-docs_jea",
       "build_source_folder": "jea",
       "build_output_subfolder": "jea",
