@@ -15,18 +15,6 @@
       }
     },
     {
-      "docset_name": "PowerShell_PowerShell-docs_gallery",
-      "build_source_folder": "gallery",
-      "build_output_subfolder": "gallery",
-      "locale": "ru-ru",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "op"
-    },
-    {
       "docset_name": "PowerShell_PowerShell-docs_jea",
       "build_source_folder": "jea",
       "build_output_subfolder": "jea",
