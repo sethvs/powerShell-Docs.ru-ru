@@ -38,20 +38,6 @@
       }
     },
     {
-      "docset_name": "PowerShell_PowerShell-docs_reference",
-      "build_source_folder": "reference",
-      "build_output_subfolder": "reference",
-      "locale": "ru-ru",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op"
-    },
-    {
       "docset_name": "PowerShell_PowerShell-docs_wmf",
       "build_source_folder": "wmf",
       "build_output_subfolder": "wmf",
