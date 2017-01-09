@@ -1,15 +1,16 @@
 ---
-title: "Удаление объектов из конвейера с помощью Where-Object"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Удаление объектов из конвейера (Where-Object)"
+ms.technology: powershell
 ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
-ms.openlocfilehash: f616fbbc073c5e8870d7c8c55d6d2eb40fd3957c
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: ecbbc834bd5f02f7c8daf02e41e9a0ad07ca6dcf
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="removing-objects-from-the-pipeline-where-object"></a>Удаление объектов из конвейера (Where-Object)

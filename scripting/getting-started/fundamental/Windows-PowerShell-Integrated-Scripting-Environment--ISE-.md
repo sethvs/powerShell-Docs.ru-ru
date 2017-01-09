@@ -1,15 +1,16 @@
 ---
-title: "Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Интегрированная среда сценариев Windows PowerShell (ISE)"
+ms.technology: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: 411d7cce5c93d274ab1f10d77f5efba2154c74a8
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: ce6f084ee1f7e8f086ef5c3a6202cbf7070431db
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
@@ -20,10 +21,10 @@ translationtype: HT
 ## <a name="whats-new"></a>Новые возможности
 Ниже перечислены функции, которые были добавлены в последние версии интегрированной среды сценариев PowerShell.
 
-### <a name="added-in-powershell-30-windows-server-2012-windows-8"></a>Возможности, добавленные в PowerShell 3.0 (Windows Server 2012, Windows 8)
+### <a name="added-in-powershell-30-windows-server-2012-windows-8"></a>Возможности, добавленные в PowerShell 3.0 (Windows Server 2012, Windows 8)
 **Intellisense** автоматически завершает команды, отображая в процессе ввода меню с совпадающими командлетами, параметрами, их значениями, файлами или папками.
 
-**Фрагменты** — это короткие участки кода, которые можно легко вставить в создаваемые сценарии. К продукту прилагается коллекция полезных фрагментов, которую можно пополнять с помощью командлета **New-Snippet**.
+**Фрагменты** — это короткие участки кода, которые можно легко вставить в создаваемые сценарии. К продукту прилагается коллекция полезных фрагментов, которую можно пополнять с помощью командлета **New-Snippet**.
 
 **Дополнительные компоненты**, которые добавляют функции в интегрированную среду сценариев, можно создавать с помощью кода, взаимодействующего с [объектной моделью сценариев интегрированной среды сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/dd819478.aspx). Эти средства могут отображать элементы управления в области с вкладками или незаметно работать в фоновом режиме. Хорошим примером является дополнительный компонент **Commands**, который входит в состав версии 3.0 и более поздних. Он отображает список доступных команд и справку по ним.
 
@@ -53,11 +54,11 @@ translationtype: HT
 
 -   **Выделение блока**. Можно выделить блок текста, удерживая клавишу ALT при выделении мышью текста в области сценариев или нажимая клавиши **ALT+SHIFT+СТРЕЛКА**.
 
-### <a name="added-in-powershell-20-windows-server-2008-r2-windows-7"></a>Возможности, добавленные в PowerShell 2.0 (Windows Server 2008 R2, Windows 7)
-Интегрированная среда сценариев появилась в PowerShell 2.0.
+### <a name="added-in-powershell-20-windows-server-2008-r2-windows-7"></a>Возможности, добавленные в PowerShell 2.0 (Windows Server 2008 R2, Windows 7)
+Интегрированная среда сценариев появилась в PowerShell 2.0.
 
 ## <a name="requirements-for-running-the-windows-powershell-ise"></a>Требования для работы с интегрированной средой сценариев Windows PowerShell
-Интегрированная среда сценариев доступна на любом компьютере, где можно запустить Windows PowerShell 2.0 или более поздней версии. Каждый выпуск Windows и Windows Server содержит Windows PowerShell и интегрированную среду сценариев, но можно обновить их до актуальных версий, установив Windows Management Framework. Выполните этот поиск, чтобы найти актуальную версию: [скачивания](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending). Обратите внимание, что все позиции с меткой Preview ("Предварительная версия") не являются окончательными и поддерживают не все функции.
+Интегрированная среда сценариев доступна на любом компьютере, где можно запустить Windows PowerShell 2.0 или более поздней версии. Каждый выпуск Windows и Windows Server содержит Windows PowerShell и интегрированную среду сценариев, но можно обновить их до актуальных версий, установив Windows Management Framework. Выполните этот поиск, чтобы найти актуальную версию: [скачивания](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending). Обратите внимание, что все позиции с меткой Preview ("Предварительная версия") не являются окончательными и поддерживают не все функции.
 
 > [!NOTE]
 > Поскольку интегрированной среде сценариев Windows PowerShell требуется графический пользовательский интерфейс, ее нельзя запустить в Windows Server, где установлены только основные серверные компоненты.

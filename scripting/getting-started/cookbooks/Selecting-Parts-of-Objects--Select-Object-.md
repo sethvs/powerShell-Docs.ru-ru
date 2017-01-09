@@ -1,15 +1,16 @@
 ---
-title: "Выбор частей объектов с помощью Select-Object"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Выбор частей объектов (Select-Object)"
+ms.technology: powershell
 ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92
-ms.openlocfilehash: 66f2927652b33371aa11db1662d3e9d28b4f5fbd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 5e0ca5110d7e35e49da3db779d9d495ea6b78e67
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="selecting-parts-of-objects-select-object"></a>Выбор частей объектов (Select-Object)

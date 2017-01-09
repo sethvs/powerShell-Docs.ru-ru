@@ -1,15 +1,16 @@
 ---
-title: "Перенаправление данных с помощью командлетов Out"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Перенаправление данных с помощью командлетов Out"
+ms.technology: powershell
 ms.assetid: 2a4acd33-041d-43a5-a3e9-9608a4c52b0c
-ms.openlocfilehash: b48cc5fbd5c229d0339a24402e186fe9ef69e97b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: afc0d9462c9b11cd53ae2443b5fd36653e87b767
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="redirecting-data-with-out--cmdlets"></a>Перенаправление данных с помощью командлетов Out-*

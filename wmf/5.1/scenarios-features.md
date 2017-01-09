@@ -1,5 +1,5 @@
 ---
-title: "Новые сценарии и возможности в WMF 5.1 (предварительная версия)"
+title: "Новые сценарии и возможности в WMF 5.1"
 ms.date: 2016-07-13
 keywords: PowerShell, DSC, WMF
 description: 
@@ -8,11 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 92a4657e90c197cbd7d1b11f778809a860092596
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 1ea650d5dd69251c0407133f649ea8efb1315dd2
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-# <a name="new-scenarios-and-features-in-wmf-51-preview"></a>Новые сценарии и возможности в WMF 5.1 (предварительная версия) #
+# <a name="new-scenarios-and-features-in-wmf-51"></a>Новые сценарии и возможности в WMF 5.1 #
 
 > Примечание. Эта информация является предварительной и может быть изменена.
 

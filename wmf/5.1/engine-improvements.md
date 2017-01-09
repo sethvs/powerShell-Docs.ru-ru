@@ -1,5 +1,5 @@
 ---
-title: "Усовершенствования подсистемы PowerShell в WMF 5.1 (предварительная версия)"
+title: "Усовершенствования подсистемы PowerShell в WMF 5.1"
 ms.date: 2016-07-13
 keywords: PowerShell, DSC, WMF
 description: 
@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 118cb91528824b75e28a1eadaa377a696c67f2dd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c8ad4ac8f3c7bf705114edc06c1b85846336dfff
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
 #<a name="powershell-engine-improvements"></a>Усовершенствования подсистемы PowerShell

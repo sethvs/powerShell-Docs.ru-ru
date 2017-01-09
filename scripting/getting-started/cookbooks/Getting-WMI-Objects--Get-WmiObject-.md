@@ -1,15 +1,16 @@
 ---
-title: "Получение объектов WMI с помощью Get-WmiObject"
-ms.date: 2016-05-11
-keywords: "powershell,командлет"
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: "powershell,командлет"
+ms.date: 2016-12-12
+title: "Получение объектов WMI (Get-WmiObject)"
+ms.technology: powershell
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
-ms.openlocfilehash: 517b07a9ebca91029381684beaec95d37934f3ce
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: a19739cf857dbe8ef6f0f4759454a1c960343861
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="getting-wmi-objects-get-wmiobject"></a>Получение объектов WMI (Get-WmiObject)
@@ -18,7 +19,7 @@ translationtype: HT
 Инструментарий управления Windows (WMI) является ключевой технологией системного администрирования Windows, поскольку предоставляет широкий спектр сведений в унифицированном виде. Так как спектр возможностей инструментария WMI достаточно широк, командлет **Get-WmiObject** Windows PowerShell, служащий для доступа к объектам WMI, — один из наиболее полезных. Мы рассмотрим, как командлет Get-WmiObject обращается к объектам WMI и как использовать объекты WMI для выполнения определенных задач.
 
 ### <a name="listing-wmi-classes"></a>Вывод списка классов WMI
-Первая проблема, с которой сталкивается большинство пользователей WMI, — это выяснение того, что можно сделать с помощью инструментария WMI. Классы WMI описывают ресурсы, которыми можно управлять. Имеются сотни классов WMI, некоторые из которых содержат множество свойств.
+Первая проблема, с которой сталкивается большинство пользователей WMI, — это выяснение того, что можно сделать с помощью инструментария WMI. Классы WMI описывают ресурсы, которыми можно управлять. Имеются сотни классов WMI, некоторые из которых содержат множество свойств.
 
 Командлет **Get-WmiObject** решает эту проблему, предоставляя сведения об инструментарии WMI. Список классов WMI, доступных на локальном компьютере, можно получить, введя команду:
 

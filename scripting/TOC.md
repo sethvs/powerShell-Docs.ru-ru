@@ -1,8 +1,8 @@
 # [Создание скриптов PowerShell](PowerShell-Scripting.md)
 
 ## [Новые возможности PowerShell](whats-new/What-s-New-With-PowerShell.md)
-### [PowerShell 5.0](whats-new/What-s-New-in-Windows-PowerShell-50.md)
-### [Интегрированная среда скриптов PowerShell 5.0](whats-new/What-s-New-in-the-PowerShell-50-ISE.md)
+### [PowerShell 5.0](whats-new/What-s-New-in-Windows-PowerShell-50.md)
+### [Интегрированная среда скриптов PowerShell 5.0](whats-new/What-s-New-in-the-PowerShell-50-ISE.md)
 
 ## [Установка](setup/setup-reference.md)
 ### [Требования PowerShell к системе](setup/Windows-PowerShell-System-Requirements.md)
@@ -10,11 +10,12 @@
 ### [Запуск PowerShell](setup/Starting-Windows-PowerShell.md)
 #### [Запуск 32-разрядной версии Windows PowerShell](setup/Starting-the-32-Bit-Version-of-Windows-PowerShell.md)
 #### [Запуск PowerShell в более ранних версиях Windows](setup/Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
-### [Установка подсистемы Windows PowerShell 2.0](setup/Installing-the-Windows-PowerShell-2.0-Engine.md)
-### [Запуск подсистемы Windows PowerShell 2.0](setup/Starting-the-Windows-PowerShell-2.0-Engine.md)
+### [Установка подсистемы Windows PowerShell 2.0](setup/Installing-the-Windows-PowerShell-2.0-Engine.md)
+### [Запуск подсистемы Windows PowerShell 2.0](setup/Starting-the-Windows-PowerShell-2.0-Engine.md)
 ### [Установка пакета SDK для Windows PowerShell](setup/Installing-the-Windows-PowerShell-SDK.md)
 ### [Безопасность](setup/security.md)
 #### [Вопросы обеспечения безопасности для удаленного взаимодействия PowerShell](setup/WinRMSecurity.md)
+#### [Выполнение второго прыжка при удаленном взаимодействии PowerShell](setup/PS-remoting-second-hop.md)
 ### [Специальные возможности](setup/Accessibility-in-Windows-PowerShell-ISE.md)
 
 ## [Начало работы](getting-started/Getting-Started-with-Windows-PowerShell.md)

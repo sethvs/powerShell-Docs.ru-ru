@@ -1,5 +1,5 @@
 ---
-title: "Исправления ошибок в WMF 5.1 (предварительная версия)"
+title: "Исправления ошибок в WMF 5.1"
 ms.date: 2016-07-13
 keywords: PowerShell, DSC, WMF
 description: 
@@ -8,11 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: d851b0cc9300b9afb027fe9ceb122f246a17e418
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 09316fef0594697a60a1bd4acabf39588f75edc2
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-# <a name="bug-fixes-in-wmf-51-preview"></a>Исправления ошибок в WMF 5.1 (предварительная версия)#
+# <a name="bug-fixes-in-wmf-51"></a>Исправления ошибок в WMF 5.1#
 
 ## <a name="bug-fixes"></a>Устранение ошибок ##
 

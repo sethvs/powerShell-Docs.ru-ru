@@ -1,6 +1,6 @@
 ---
 title: Windows Management Framework (WMF)
-ms.date: 2016-05-16
+ms.date: 2016-12-07
 keywords: PowerShell, WMF
 description: 
 ms.topic: article
@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: eacd33d2a0a92977a3990132e23eef9871a7f0dc
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: b652613561655c4cbd63342b0fcc495195f83a80
+ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
 translationtype: HT
 ---
 # <a name="windows-management-framework"></a>Windows Management Framework
@@ -30,30 +30,28 @@ Windows Management Framework (WMF) — это механизм доставки
 - Поставщик CIM диспетчера сервера
 
 ## <a name="wmf-release-notes"></a>Заметки о выпуске WMF
-Сведения о различных улучшениях в PowerShell и других компонентах определенной версии WMF см. по следующим ссылкам на заметки о выпусках:
 
+Сведения о различных улучшениях в PowerShell и других компонентах определенной версии WMF см. по следующим ссылкам на заметки о выпусках:
 
 - [WMF 5.1 (предварительная версия)](5.1/release-notes.md)
 - [WMF 5.0](5.0/releasenotes.md)
 
-
 ## <a name="wmf-availability-across-windows-operating-systems"></a>Доступность WMF в различных операционных системах Windows
 
->TODO: добавить ссылки на конкретные DLC WMF в заголовок столбца
-
-| Версия операционной системы | [Предварительная версия WMF 5.1*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF (2.0)]() |
+| Версия операционной системы | [WMF 5.1](https://aka.ms/wmf51download) | [WMF 5.0](https://aka.ms/wmf5download) | [WMF 4.0](https://aka.ms/wmf4download) |  [WMF 3.0](https://aka.ms/wmf3download) | [WMF 2.0](https://aka.ms/wmf2download) |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
-| Windows Server 2016 | Входит в комплект поставки * | Входит в комплект поставки * |  |  |  |
-| Windows 10 | Входит в комплект поставки * | Входит в комплект поставки *  | | | |  
-| Windows Server 2012 R2| ?? | Да | Входит в комплект поставки |  |  |
-| Windows 8.1 | ?? | Да |  Входит в комплект поставки |  |  |
-| Windows Server 2012 | ?? | Да | Да |  Входит в комплект поставки | |
+| Windows Server 2016 | Входит в комплект поставки |  |  |  |  |
+| Windows 10 | Входит в комплект поставки | Входит в комплект поставки  | | | |  
+| Windows Server 2012 R2| Да | Да | Входит в комплект поставки |  |  |
+| Windows 8.1 | Да | Да |  Входит в комплект поставки |  |  |
+| Windows Server 2012 | Да | Да | Да |  Входит в комплект поставки | |
 | Windows 8 |  |  |  | Входит в комплект поставки | |
-| Windows Server 2008 R2 с пакетом обновления 1 (SP1) | ?? | Да | Да |  Да| Входит в комплект поставки |
-| Windows 7 с пакетом обновления 1 (SP1)  | ?? | Да | Да | Да | Входит в комплект поставки |
+| Windows Server 2008 R2 с пакетом обновления 1 (SP1) | Да | Да | Да |  Да| Входит в комплект поставки |
+| Windows 7 с пакетом обновления 1 (SP1)  | Да | Да | Да | Да | Входит в комплект поставки |
 | Windows Server 2008 с пакетом обновления 2 (SP2) | | | | Да | Да |
 | Windows Vista | | | | | Да |
 | Windows Server 2003| | | |  | Да |
 | Windows XP | | | |  | Да |
 
->TODO: объяснить значение значка * в приведенной выше таблице
+**"Входит в комплект поставки"**: функции `specified WMF` были включены в указанную версию Windows и Windows Server.
+Поэтому установка `specified WMF` в указанных версиях операционных систем не требуется.

@@ -1,5 +1,5 @@
 ---
-title: "Известные проблемы в WMF 5.1 (предварительная версия)"
+title: "Известные проблемы в WMF 5.1"
 ms.date: 2016-07-13
 keywords: PowerShell, DSC, WMF
 description: 
@@ -8,13 +8,13 @@ author: krishna
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: e2f19ed2fa2d2070860438b128513a463d95adae
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8f1b550e92c3c280b84664e0b1f9695172370522
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-# <a name="known-issues-in-wmf-51-preview"></a>Известные проблемы в WMF 5.1 (предварительная версия) #
+# <a name="known-issues-in-wmf-51"></a>Известные проблемы в WMF 5.1 #
 
-> Примечание. Эта информация является предварительной и может быть изменена.
+> Примечание. Эта информация может быть изменена.
 
 ## <a name="starting-powershell-shortcut-as-administrator"></a>Запуск PowerShell от имени администратора с помощью ярлыка
 После установки WMF при попытке запустить PowerShell от имени администратора с помощью ярлыка может появиться сообщение "Неопознанная ошибка".

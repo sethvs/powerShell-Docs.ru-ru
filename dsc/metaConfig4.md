@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 64fc906cf0328d7be3aba7d5d6819640b4dcb4fa
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: cec3aaf4e57d1efc3e29880e4a7f078bd1840901
+ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
 translationtype: HT
 ---
 # <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)
@@ -21,7 +21,7 @@ translationtype: HT
 Ниже перечислены свойства локального диспетчера конфигураций, которые можно задавать или извлекать.
  
 * **AllowModuleOverwrite**: определяет, могут ли новые конфигурации, загружаемые с сервера конфигураций, перезаписывать старые конфигурации, уже находящиеся на целевом узле. Возможные значения — True и False.
-* **CertificateID**: GUID сертификата, защищающего учетные данные для доступа к конфигурации. Дополнительные сведения см. в статье [Защита учетных данных в службе настройки требуемого состояния Windows PowerShell](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx).
+* **CertificateID**: отпечаток сертификата, защищающего учетные данные, которые передаются в конфигурацию. Дополнительные сведения см. в статье [Защита учетных данных в службе настройки требуемого состояния Windows PowerShell](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx).
 * **ConfigurationID**: GUID, используемый для получения определенного файла конфигурации с сервера, заданного в качестве опрашивающего. Этот GUID обеспечивает доступ к нужному файлу конфигурации.
 * **ConfigurationMode**: указывает, как именно локальный диспетчер конфигураций применяет конфигурацию к целевым узлам. Возможны следующие значения:
     - **ApplyOnly**: если выбран этот параметр, DSC применяет конфигурацию и не выполняет никаких действий, пока не будет обнаружена новая конфигурация — это произойдет, если вы принудительно отправите новую конфигурацию на целевой узел или настроите опрашивающий сервер и DSC увидит новую конфигурацию про проверке опрашивающего сервера. При расхождениях с конфигурацией на целевом узле никакие действия не предпринимаются.
