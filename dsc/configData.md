@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 72555a36819c9717fafdd3daede8fa2f02c692b2
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f8f8ef06cd79af294bad7bb8cf3d6676ab9a69bc
+ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
 translationtype: HT
 ---
 # <a name="separating-configuration-and-environment-data"></a>Разделение данных конфигурации и данных среды
@@ -17,7 +17,7 @@ translationtype: HT
 
 С помощью встроенного параметра DSC **ConfigurationData** можно определить данные, которые будут использоваться в конфигурации. Это позволяет создать единую конфигурацию, которую можно использовать для нескольких узлов или для различных сред. Например, при разработке приложения можно использовать одну и ту же конфигурацию для среды разработки и для рабочей среды и указать данные для каждой среды с помощью данных конфигурации.
 
-Чтобы увидеть, как это работает, рассмотрим очень простой пример. Мы создадим одну конфигурацию, в соответствии с которой на некоторых узлах будет находиться **IIS**, а на других узлах — **Hyper-V**: 
+Чтобы увидеть, как это работает, рассмотрим очень простой пример. Мы создадим одну конфигурацию, в соответствии с которой на некоторых узлах будет находиться **IIS**, а на других узлах — **Hyper-V**: 
 
 ```powershell
 Configuration MyDscConfiguration {
@@ -50,7 +50,7 @@ $MyData =
 
         @{
             NodeName    = 'VM-2'
-            FeatureName = 'VMHost'
+            Role = 'VMHost'
         }
     )
 }
