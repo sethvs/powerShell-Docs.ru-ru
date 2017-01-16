@@ -8,8 +8,8 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-12-05
 title: "Конфигурации сеансов JEA"
 ms.technology: powershell
-ms.openlocfilehash: 1d410e345ff31a5f8149810fb9c3b07e92b27e05
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
+ms.openlocfilehash: 32602293afd3a94767682d32a053281ec021cc33
+ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
 translationtype: HT
 ---
 # <a name="jea-session-configurations"></a>Конфигурации сеансов JEA
@@ -49,7 +49,9 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\MyJEA
 - Get-Help
 - Measure-Object (measure)
 - Out-Default
-- Select-Object (select). Поставщики PowerShell недоступны, как и какие-либо внешние программы (исполняемые файлы, сценарии и т. д.).
+- Select-Object (select)
+
+Поставщики PowerShell недоступны, как и внешние программы (исполняемые файлы, скрипты и т. д.).
 
 Существует несколько полей, которые потребуется настроить для сеанса JEA.
 Они описаны в следующих разделах.
