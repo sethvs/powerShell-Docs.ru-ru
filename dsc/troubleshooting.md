@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: f933d5d821d71a497d20e8ff66ebe26af9661f50
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 6b506abf2508a8ba182af9c3362fcc408785d058
+ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
 translationtype: HT
 ---
 # <a name="troubleshooting-dsc"></a>Устранение неполадок в DSC
@@ -16,6 +16,10 @@ translationtype: HT
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 В этом разделе описываются способы устранения неполадок в DSC.
+
+## <a name="winrm-dependency"></a>Зависимость от WinRM
+
+Служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, выполните команду ```Set-WSManQuickConfig``` в сеансе Windows PowerShell с повышенными привилегиями.
 
 ## <a name="using-get-dscconfigurationstatus"></a>Использование Get-DscConfigurationStatus
 
@@ -29,7 +33,7 @@ translationtype: HT
 Следующий набор параметров возвращает сведения о состоянии для последнего выполнения конфигурации:
 
 ```powershell
-Get-DscConfigurationStatus  [-CimSession <CimSession[]>] 
+Get-DscConfigurationStatus     [-CimSession <CimSession[]>] 
                             [-ThrottleLimit <int>] 
                             [-AsJob] 
                             [<CommonParameters>]
@@ -37,7 +41,7 @@ Get-DscConfigurationStatus  [-CimSession <CimSession[]>]
 Следующий набор параметров возвращает сведения о состоянии для всех предыдущих выполнений конфигурации:
 
 ```powershell
-Get-DscConfigurationStatus  -All 
+Get-DscConfigurationStatus     -All 
                             [-CimSession <CimSession[]>] 
                             [-ThrottleLimit <int>] 
                             [-AsJob] 
@@ -51,30 +55,30 @@ PS C:\> $Status = Get-DscConfigurationStatus
 
 PS C:\> $Status
 
-Status      StartDate               Type            Mode    RebootRequested     NumberOfResources
-------      ---------               ----            ----    ---------------     -----------------
-Failure     11/24/2015  3:44:56     Consistency     Push    True                36
+Status         StartDate                Type            Mode    RebootRequested        NumberOfResources
+------        ---------                ----            ----    ---------------        -----------------
+Failure        11/24/2015  3:44:56     Consistency        Push    True                36
 
 PS C:\> $Status.ResourcesNotInDesiredState
 
-ConfigurationName       :   MyService
-DependsOn               :   
-ModuleName              :   PSDesiredStateConfiguration
-ModuleVersion           :   1.1
-PsDscRunAsCredential    :   
-ResourceID              :   [File]ServiceDll
-SourceInfo              :   c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
-DurationInSeconds       :   0.19
-Error                   :   SourcePath must be accessible for current configuration. The related file/directory is:
+ConfigurationName        :    MyService
+DependsOn                :    
+ModuleName                :    PSDesiredStateConfiguration
+ModuleVersion            :    1.1
+PsDscRunAsCredential    :    
+ResourceID                 :    [File]ServiceDll
+SourceInfo                :    c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
+DurationInSeconds        :    0.19
+Error                    :    SourcePath must be accessible for current configuration. The related file/directory is:
                             \\Server93\Shared\contosoApp.dll. The related ResourceID is [File]ServiceDll
-FinalState              :   
-InDesiredState          :   False
-InitialState            :   
-InstanceName            :   ServiceDll
-RebootRequested         :   False
-ReosurceName            :   File
-StartDate               :   11/24/2015  3:44:56
-PSComputerName          :
+FinalState                :    
+InDesiredState             :    False
+InitialState             :    
+InstanceName            :    ServiceDll
+RebootRequested            :    False
+ReosurceName            :    File
+StartDate                :    11/24/2015  3:44:56
+PSComputerName            :
 ```
 
 ## <a name="my-script-wont-run-using-dsc-logs-to-diagnose-script-errors"></a>Мой сценарий не запускается: диагностика ошибок в сценариях с помощью журналов DSC
@@ -262,7 +266,7 @@ TimeCreated                     Id LevelDisplayName Message
 
 ## <a name="using-xdscdiagnostics-to-analyze-dsc-logs"></a>Анализ журналов DSC с помощью xDscDiagnostics
 
-**xDscDiagnostics** представляет собой модуль PowerShell, состоящий из нескольких простых функций, которые могут помочь в анализе сбоев DSC на вашем компьютере. Эти функции помогают идентифицировать все локальные события для последних операций DSC или событий DSC на удаленных компьютерах (с действительными учетными данными). В данном случае термин "операция DSC" используется для определения одного уникального выполнения DSC от начала до конца. Например, `Test-DscConfiguration` будет отдельной операцией DSC. Аналогично все остальные командлеты в DSC (такие как `Get-DscConfiguration`, `Start-DscConfiguration` и т. д.) можно определить как отдельные операции DSC. Эти функции описаны в разделе [xDscDiagnostics](https://github.com/PowerShell/xDscDiagnostics). Чтобы получить справку, выполните команду `Get-Help <cmdlet name>`.
+**xDscDiagnostics** представляет собой модуль PowerShell, состоящий из нескольких простых функций, которые могут помочь в анализе сбоев DSC на вашем компьютере. Эти функции помогают идентифицировать все локальные события для последних операций DSC или событий DSC на удаленных компьютерах (с действительными учетными данными). В данном случае термин "операция DSC" используется для определения одного уникального выполнения DSC от начала до конца. Например, `Test-DscConfiguration` будет отдельной операцией DSC. Аналогично все остальные командлеты в DSC (такие как `Get-DscConfiguration`, `Start-DscConfiguration` и т. д.) можно определить как отдельные операции DSC. Эти функции описаны в разделе [xDscDiagnostics](https://github.com/PowerShell/xDscDiagnostics). Чтобы получить справку, выполните команду `Get-Help <cmdlet name>`.
 
 ### <a name="getting-details-of-dsc-operations"></a>Получение сведений об операциях DSC 
 

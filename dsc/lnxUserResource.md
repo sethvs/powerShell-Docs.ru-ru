@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 7813185313845b74e2a37dfa4ec6bb109f32f0eb
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 9d27299aca8dee3e0390c9c8fc900832eb7e960c
+ms.sourcegitcommit: b3724fac99e52c712b18c4effbb9ee13711d0238
 translationtype: HT
 ---
 # <a name="dsc-for-linux-nxuser-resource"></a>Ресурс nxUser в DSC для Linux
@@ -28,7 +28,6 @@ nxUser <string> #ResourceName
     [ Disabled = <bool> ]
     [ PasswordChangeRequired = <bool> ]
     [ HomeDirectory = <string> ]
-    [ Mode = <string> ]
     [ GroupID = <string> ]
     [ DependsOn = <string[]> ]
 

@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: f6569220fbafdba49bac9ac9dca3e6036a7aad08
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 66702defb6f16740d93e020ebd22374b161efc5f
+ms.sourcegitcommit: 267688f61dcc76fd685c1c34a6c7bfd9be582046
 translationtype: HT
 ---
 # <a name="setting-up-a-pull-client-using-configuration-id"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации
@@ -71,7 +71,7 @@ configuration PullClientConfigID
             RefreshFrequencyMins = 30 
             RebootNodeIfNeeded = $true
         }
-        ConfigurationRepositoryWeb SMBPullServer
+        ConfigurationRepositoryShare SMBPullServer
         {
             SourcePath = '\\SMBPullServer\PullSource'
             

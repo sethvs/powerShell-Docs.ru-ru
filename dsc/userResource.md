@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 84ed3408cfef1dbc99f6f3147ae36be09bca67e4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 0953000ba7930116679e4371f6acad5298725fdb
+ms.sourcegitcommit: 55b2457a19a2fa679fda8dc17a747ef21a98adc1
 translationtype: HT
 ---
 #<a name="dsc-user-resource"></a>Ресурс User в DSC#
@@ -60,7 +60,7 @@ User UserExample
     Ensure = "Present"  # To ensure the user account does not exist, set Ensure to "Absent"
     UserName = "SomeName"
     Password = $passwordCred # This needs to be a credential object
-    DependsOn = “[Group]GroupExample" # Configures GroupExample first
+    DependsOn = "[Group]GroupExample" # Configures GroupExample first
 }
 ```
 

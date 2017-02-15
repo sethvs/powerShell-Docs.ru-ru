@@ -1,11 +1,11 @@
 ---
 title: "Сбой командлетов диспетчера сетевых коммутаторов"
 contributor: vaibch
-ms.openlocfilehash: e32e31762b665a7e2c6f6938fe494cb6127d4264
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8495d79aec54d93f94e745e2efccb5116ad5d944
+ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
 translationtype: HT
 ---
-Командлеты диспетчера сетевых коммутаторов можно использовать для управления сетевыми коммутаторами по WSMAN. Несколько командлетов этого модуля могут принимать значения из конвейеров. В WMF 5.1 Preview командлеты, которые принимают значение из конвейера, не могут быть выполнены, если значения не переданы через конвейеры.
+Командлеты диспетчера сетевых коммутаторов можно использовать для управления сетевыми коммутаторами по WSMAN. Несколько командлетов этого модуля могут принимать значения из конвейеров. В WMF 5.1 Preview командлеты, которые принимают значение из конвейера, не могут быть выполнены, если значения не переданы через конвейеры.
 
 Если параметр InputObject не используется, командлет должен по-прежнему работать без сбоев.
 
@@ -30,6 +30,7 @@ translationtype: HT
 $port = Get-CimInstance -Namespace root/interop -ClassName CIM_EthernetPort -CimSession $cimSession | Select-Object -First 1
 $port | Disable-NetworkSwitchEthernetPort -CimSession $cimSession
 ```
+
 - Enable-NetworkSwitchEthernetPort
 ```powershell
 $port = Get-CimInstance -Namespace root/interop -ClassName CIM_EthernetPort -CimSession $cimSession | Select-Object -First 1
