@@ -1,64 +1,81 @@
 ---
-title: "Установка и настройка WMF 5.1 (предварительная версия)"
-ms.date: 2016-05-16
+title: "Установка и настройка WMF 5.1"
+ms.date: 2017-01-18
 keywords: PowerShell, DSC, WMF
 description: 
 ms.topic: article
-contributor: kriscv
-manager: dongill
+contributor: keithb
+manager: carmonm
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 21f26830cdc20a90ce48aa09bc7013d733242ae9
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 55a2e03385b90c7631d1b0373bf85602aa7d769b
+ms.sourcegitcommit: 267688f61dcc76fd685c1c34a6c7bfd9be582046
 translationtype: HT
 ---
-# <a name="install-and-configure-wmf-51-preview"></a>Установка и настройка WMF 5.1 (предварительная версия) #
-
-## <a name="install-net-46"></a>Установка .NET 4.6
-Для использования WMF 5.1 необходимо установить платформу .NET Framework 4.6. Это нужно, чтобы обеспечить работу новых функций подписывания каталогов, которые влияют на некоторые аспекты загрузки модулей и скриптов в WMF 5.1. 
-
-[Платформа .NET Framework 4.6 доступна в статье базы знаний 3045560](https://support.microsoft.com/en-us/kb/3045560). Инструкции по установке доступны по месту скачивания.
-
-> **Примечание**. Требование иметь .NET 4.6 не обнаруживается установщиком предварительной версии WMF 5.1, поэтому возможно установить ее и без установки .NET 4.6. Это известная проблема. Тестирование показало, что вы можете установить .NET 4.6 после установки предварительной версии WMF 5.1. В финальной версии WMF 5.1 правильно проверит необходимые компоненты перед установкой. 
-
-## <a name="download-and-install-the-wmf-51-preview"></a>Скачивание и установка WMF 5.1 Preview
-
-Скачайте пакет WMF 5.1 для той операционной системы и архитектуры, в которой будет производиться установка.
-
-| Операционная система       | Необходимые компоненты | Ссылки на пакеты             |
-|------------------------|---------------|---------------------------|
-| Windows Server 2012 R2 | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | [Win8.1AndW2K12R2-KB3156422-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823586)|
-| Windows Server 2012    | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | [W2K12-KB3156423-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823587)|
-| Windows Server 2008 R2 | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) </br> [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) </br> Обновление для системы безопасности для [подписывания кода SHA-2](https://technet.microsoft.com/en-us/library/security/3033929) | [Win7AndW2K8R2-KB3156424-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823588) |
-| Windows 8.1            | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) | **x64:** [Win8.1AndW2K12R2-KB3156422-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823586) </br> **x86:** [Win8.1-KB3156422-x86.msu](http://go.microsoft.com/fwlink/?LinkID=823589) |
-| Windows 7 с пакетом обновления 1 (SP1)          | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) </br> [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) </br> Обновление для системы безопасности для [подписывания кода SHA-2](https://technet.microsoft.com/en-us/library/security/3033929) | **x64:** [Win7AndW2K8R2-KB3156424-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823588) </br> **x86:** [Win7-KB3156424-x86.msu](http://go.microsoft.com/fwlink/?LinkID=823590) |
+# <a name="install-and-configure-wmf-51"></a>Установка и настройка WMF 5.1 #
 
 
-## <a name="install-wmf-51-from-windows-explorer-or-file-explorer-in-windows-server-2012-r2-or-windows-81"></a>Установка WMF 5.1 из проводника
+## <a name="download-and-install-the-wmf-51-package"></a>Скачать и установить пакет WMF 5.1
+
+Скачайте пакет WMF 5.1 для той операционной системы и архитектуры, в которой будет производиться установка.
+
+| Операционная система         | Необходимые компоненты       | Ссылки на пакеты             |
+|------------------------|---------------------|---------------------------|
+| Windows Server 2012 R2 | | [Win8.1AndW2K12R2-KB3191564-x64.msu](https://go.microsoft.com/fwlink/?linkid=839516)|
+| Windows Server 2012     | | [W2K12-KB3191565-x64.msu](https://go.microsoft.com/fwlink/?linkid=839513)|
+| Windows Server 2008 R2 | [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642) | [Win7AndW2K8R2-KB3191566-x64.ZIP](https://go.microsoft.com/fwlink/?linkid=839523) | 
+| Windows 8.1            |  | **x64:** [Win8.1AndW2K12R2-KB3191564-x64.msu](https://go.microsoft.com/fwlink/?linkid=839516) </br> **x86:** [Win8.1-KB3191564-x86.msu](https://go.microsoft.com/fwlink/?linkid=839521) |
+| Windows 7 с пакетом обновления 1 (SP1)          | [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642) | **x64:** [Win7AndW2K8R2-KB3191566-x64.ZIP](https://go.microsoft.com/fwlink/?linkid=839523) </br> **x86:** [Win7-KB3191566-x86.ZIP](https://go.microsoft.com/fwlink/?linkid=839522)
+
+
+
+## <a name="install-wmf-51-for-windows-server-2008-r2-and-windows-7"></a>Установить WMF 5.1 для Windows Server 2008 R2 и Windows 7
+
+> **Примечание**. Инструкции по установке для Windows Server 2008 R2 и Windows 7 изменились и отличаются от инструкций для других пакетов. Инструкции по установке для Windows Server 2012 R2, Windows Server 2012 и Windows 8.1 см. ниже.
+
+**Установка WMF 5.1 на Windows Server 2008 R2 и Windows 7**
+
+1. Перейдите в папку, куда был скачан ZIP-файл. 
+
+2. Щелкните его правой кнопкой мыши и выберите команду "Извлечь все...". ZIP-файл содержит два файла: MSU и файл скрипта Install-WMF5.1.PS1. После распаковки ZIP-файла вы можете скопировать его содержимое на любой компьютер под управлением Windows 7 или Windows Server 2008 R2.  
+
+3. После извлечения содержимого ZIP-файла откройте PowerShell от имени администратора, а затем перейдите в папку с  
+содержимым ZIP-файла. 
+
+4. Запустите скрипт Install-Wmf5.1.ps1 в этой папке и следуйте инструкциям. Этот скрипт проверит предварительные требования на локальном компьютере: если они выполнены, он установит WMF 5.1. Предварительные требования перечислены ниже. 
+
+Install-WMF5.1.ps1 принимает следующие параметры для упрощения автоматизации установки в Windows Server 2008 R2 и Windows 7:
+
+- AcceptEula: если этот параметр включен, условия EULA принимаются автоматически и не будут отображены.
+- AllowRestart: этот параметр можно использовать, только если указан параметр AcceptEula. Если этот параметр включен и после установки WMF 5.1 требуется перезагрузка, она будет выполнена без запроса сразу после завершения установки. 
+
+**Предварительные требования WMF 5.1 для Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1)**
+
+Для установки WMF 5.1 на компьютере с ОС Windows Server 2008 R2 с пакетом обновления 1 (SP1) или Windows 7 с пакетом обновления 1 (SP1) необходимо следующее.
+- Должен быть установлен последний пакет обновления.
+- Платформа WMF 3.0 **не должна** быть установлена. Установка WMF 5.1 поверх WMF 3.0 приведет к потере PSModulePath, что может вызвать сбой других приложений. Перед установкой WMF 5.1 нужно удалить WMF 3.0 или сохранить PSModulePath и восстановить его вручную после установки WMF 5.1. 
+- Для WMF 5.1 требуется платформа [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642). Вы можете установить Microsoft .NET Framework 4.5.2, следуя инструкциям по месту скачивания.
+
+**Зависимость WinRM** 
+
+Служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, выполните команду `Set-WSManQuickConfig` в сеансе Windows PowerShell с повышенными привилегиями.
+
+
+## <a name="install-wmf-51-for-windows-server-2012-r2-windows-server-2012-and-windows-81"></a>Установка WMF 5.1 для Windows Server 2012 R2, Windows Server 2012 и Windows 8.1
+**Установка из проводника**
 
 1. Перейдите в папку, куда был скачан MSU-файл.
 
 2. Дважды щелкните этот файл для его запуска.
 
-## <a name="install-wmf-51-from-the-command-prompt"></a>Установка WMF 5.1 из командной строки##
+**Установка из командной строки**
 
-1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). При выборе варианта "Установка основных серверных компонентов" для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
+1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). При выборе варианта "Установка основных серверных компонентов" для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
 
-2. Перейдите в папку, куда был скачан или скопирован пакет установки WMF 5.1.
+2. Перейдите в папку, куда был скачан или скопирован пакет установки WMF 5.1.
 
 3. Выполните одну из следующих команд:
-    - На компьютерах с ОС Windows Server 2012 R2 или Windows 8.1 (64-разрядная версия) выполните команду `Win8.1AndW2K12R2-KB3156422-x64.msu /quiet`.
-    - На компьютерах с ОС Windows Server 2012 выполните команду `W2K12-KB3156423-x64.msu /quiet`.
-    - На компьютерах с ОС Windows Server 2008 R2 с пакетом обновления 1 (SP1) или Windows 7 с пакетом обновления 1 (SP1) (64-разрядная версия) выполните команду `Win7AndW2K8R2-KB3156424-x64.msu /quiet`.
-    - На компьютерах с ОС Windows 8.1 (32-разрядная версия) выполните команду `Win8.1-KB3156422-x86.msu /quiet`.
-    - На компьютерах с ОС Windows 7 с пакетом обновления 1 (SP1) (32-разрядная версия) выполните команду `Win7-KB3156424-x86.msu /quiet`.
-
-## <a name="additional-installation-notes-for-windows-server-2008-r2-sp1-and-windows-7-sp1"></a>Дополнительные замечания по установке для Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1)##
-Для установки WMF 5.1 на компьютере с ОС Windows Server 2008 R2 с пакетом обновления 1 или Windows 7 с пакетом обновления 1 (SP1) необходимо установить следующие компоненты:
-- последний пакет обновления;
-- [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855)
-- Для WMF 5.1 нужна платформа [Microsoft .NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560). Вы можете установить Microsoft .NET Framework 4.6, выполнив следующие инструкции по месту скачивания.
-- Обновление для системы безопасности для [подписывания кода SHA-2](https://technet.microsoft.com/en-us/library/security/3033929). Оно необходимо, чтобы использовать новые командлеты PowerShell для файлов каталога Windows. 
-
-> **Зависимость от WinRM**: служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, выполните команду `Set-WSManQuickConfig` в сеансе Windows PowerShell с повышенными привилегиями.
-
+    - На компьютерах с ОС Windows Server 2012 R2 или Windows 8.1 (64-разрядная версия) выполните команду `Win8.1AndW2K12R2-KB3191564-x64.msu /quiet`.
+    - На компьютерах с ОС Windows Server 2012 выполните команду `W2K12-KB3191565-x64.msu /quiet`.
+    - На компьютерах с ОС Windows 8.1 (32-разрядная версия) выполните команду `Win8.1-KB3191564-x86.msu /quiet`.
+    

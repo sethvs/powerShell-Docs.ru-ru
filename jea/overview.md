@@ -7,10 +7,10 @@ ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
 ms.date: 2016-12-05
-title: "файл README"
+title: "Общие сведения о Just Enough Administration"
 ms.technology: powershell
-ms.openlocfilehash: f9609f6eb7547c627bc23687c7eb242dd2f5f457
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: 742f88bd130a9bcb577914c842735e8c47ca53e6
+ms.sourcegitcommit: cfe32f213819ae76de05da564c3e2c4b7ecfda2f
 translationtype: HT
 ---
 # <a name="just-enough-administration"></a>Just Enough Administration (JEA)

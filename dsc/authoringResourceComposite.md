@@ -1,8 +1,16 @@
 ---
-title: Составные ресурсы: использование DSC как ресурса ms.date:  2016-05-16 keywords:  powershell,DSC description:  
-ms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell
+title: "Составные ресурсы — использование конфигурации DSC как ресурса"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+ms.openlocfilehash: 36851c9616cfb9a2fc79925e4187effa913341ad
+ms.sourcegitcommit: c7577f7a1e902a41df6d337e5d85361d1814f90a
+translationtype: HT
 ---
-
 # <a name="composite-resources-using-a-dsc-configuration-as-a-resource"></a>Составные ресурсы: использование DSC как ресурса
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0

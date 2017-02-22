@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 09316fef0594697a60a1bd4acabf39588f75edc2
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: 8957f4709c95ccb5b72c4fa9b42c9fe9ef93dffe
+ms.sourcegitcommit: 58e5e77050ba32717ce3e31e314f0f25cb7b2979
 translationtype: HT
 ---
 # <a name="bug-fixes-in-wmf-51"></a>Исправления ошибок в WMF 5.1#
@@ -98,3 +98,16 @@ class CThing
 В WMF 5.1 эта проблема устранена: теперь возвращается последняя версия раздела.
 
 `Get-Help` не позволяет указать версию, по которой требуется справка. В качестве обходного решения можно перейти к каталогу модулей и открыть справку напрямую, например с помощью любимого редактора. 
+
+### <a name="powershellexe-reading-from-stdin-stopped-working"></a>Программа powershell.exe, считывающая данные из STDIN, прекратила работу.
+
+Клиенты используют `powershell -command -` в приложениях в машинном коде для передачи скрипта PowerShell с помощью STDIN. Теперь это невозможно из-за других изменений в узле консоли.
+
+https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/15854689-powershell-exe-command-is-broken-on-windows-10
+
+### <a name="powershellexe-creates-spike-in-cpu-usage-on-startup"></a>Программа powershell.exe создает пик загрузки ЦП при запуске.
+
+PowerShell использует запрос WMI, чтобы проверить, запущен ли он с помощью групповой политики, чтобы избежать задержки входа.
+Запрос WMI завершается вставкой tzres.mui.dll в каждый процесс в системе, так как класс Win32_Process WMI пытается извлечь сведения о локальном часовом поясе.
+Это приводит к пику загрузки ЦП в wmiprvse (узел поставщика WMI).
+Чтобы исправить это, используйте вызовы API Win32 вместо WMI, чтобы получить те же сведения.
