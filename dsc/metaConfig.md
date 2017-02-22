@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 13ff9acefa048e3b01c64150d67a2f14ec501284
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
+ms.openlocfilehash: fa45b4bf97a24e098ed81166119f789a5b961c26
+ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
 translationtype: HT
 ---
 # <a name="configuring-the-local-configuration-manager"></a>Настройка локального диспетчера конфигураций
@@ -81,15 +81,15 @@ configuration LCMConfig
 
 Опрашивающий сервер — это либо веб-служба OData, либо общая папка SMB, которые используются как централизованное расположение файлов DSC. Конфигурация LCM поддерживает определение следующих типов опрашивающих серверов:
 
-* **Сервер конфигураций**: репозиторий конфигураций DSC. Для определения серверов конфигураций используются блоки **ConfigurationRepositoryWeb** (для веб-серверов) и **ConfigurationRepositoryShare** (для SMB-серверов).
-* Сервер ресурсов — репозиторий ресурсов DSC, упакованных как модули PowerShell. Для определения серверов ресурсов используются блоки **ResourceRepositoryWeb** (для веб-серверов) и **ResourceRepositoryShare** (для SMB-серверов).
+* **Сервер конфигураций**: репозиторий конфигураций DSC. Определите серверы конфигурации с помощью блоков **ConfigurationRepositoryWeb** (для веб-серверов) и **ConfigurationRepositoryShare** (для серверов на основе SMB).
+* Сервер ресурсов — репозиторий ресурсов DSC, упакованных как модули PowerShell. Определите серверы ресурсов с помощью блоков **ResourceRepositoryWeb** (для веб-серверов) и **ResourceRepositoryShare** (для серверов на основе SMB).
 * Сервер отчетов — служба, в которую DSC отправляет данные отчетов. Для определения серверов отчетов используется блок **ReportServerWeb**. Сервер отчетов должен быть веб-службой.
 
 Сведения о настройке и использовании опрашивающих серверов см. в статье [Настройка опрашивающего сервера DSC](pullServer.md).
 
 ## <a name="configuration-server-blocks"></a>Блоки сервера конфигураций
 
-Для определения веб-сервера конфигураций создается блок **ConfigurationRepositoryWeb**. Блок **ConfigurationRepositoryWeb** определяет следующие свойства:
+Чтобы определить веб-сервер конфигурации, создайте блок **ConfigurationRepositoryWeb**. Блок **ConfigurationRepositoryWeb** определяет следующие свойства:
 
 |Свойство|Type|Описание|
 |---|---|---| 
@@ -108,7 +108,7 @@ configuration LCMConfig
 
 ## <a name="resource-server-blocks"></a>Блоки сервера ресурсов
 
-Для определения веб-сервера ресурса создается блок **ResourceRepositoryWeb**. Блок **ResourceRepositoryWeb** определяет следующие свойства:
+Чтобы определить веб-сервер ресурсов, создайте блок **ResourceRepositoryWeb**. Блок **ResourceRepositoryWeb** определяет следующие свойства:
 
 |Свойство|Type|Описание|
 |---|---|---|
