@@ -5,11 +5,11 @@ author: rpsqrd
 ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.date: 2017-03-08
 title: "Конфигурации сеансов JEA"
 ms.technology: powershell
-ms.openlocfilehash: 32602293afd3a94767682d32a053281ec021cc33
-ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
+ms.openlocfilehash: e98214d1777a1530b5a18ac9df1a6185d6d73979
+ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
 translationtype: HT
 ---
 # <a name="jea-session-configurations"></a>Конфигурации сеансов JEA
@@ -175,55 +175,13 @@ RoleDefinitions = @{
 Если несколько возможностей ролей доступны в системе с одинаковым плоским именем, PowerShell использует неявный порядок поиска для выбора действующего файла возможностей ролей.
 При этом система **не** предоставляет доступ всем файлам возможностей ролей с одинаковым именем.
 
-Порядок поиска для возможностей ролей JEA определяется порядком путей в `$env:PSModulePath` и именем родительского модуля.
-По умолчанию путь к модулю в PowerShell выглядит следующим образом:
+JEA использует переменную `$env:PSModulePath` среды, чтобы определить искомые пути для файлов возможностей роли.
+В пределах каждого из этих путей JEA будет искать допустимые модули PowerShell, которые содержат вложенную папку RoleCapabilities.
+Как и при импорте модулей JEA использует возможности роли, доступные в Windows, а не пользовательские возможности роли с тем же именем.
+При всех других конфликтах имен приоритет определяется порядком, в котором Windows перечисляет файлы в каталоге (не обязательно в алфавитном порядке).
+Первый найденный файл возможности роли, соответствующий нужному имени, будет использоваться для подключающегося пользователя.
 
-```powershell
-PS C:\> $env:PSModulePath
-
-
-C:\Users\Alice\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
-```
-
-Пути, которые стоят раньше (слева) в списке PSModulePath, имеют более высокий приоритет, чем пути справа.
-
-Каждый путь может содержать от 0 до нескольких модулей PowerShell.
-Возможности ролей выбираются из первого модуля в алфавитном порядке, который содержит файл возможностей ролей, соответствующий требуемому имени.
-
-Чтобы проиллюстрировать такой приоритет, рассмотрим следующий пример, где знак плюс (+) указывает папку, а знак минус (-) — файл.
-
-```
-+ C:\Program Files\WindowsPowerShell\Modules
-    + ContosoMaintenance
-        - ContosoMaintenance.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - DnsOperator.psrc
-            - DnsAuditor.psrc
-    + FabrikamModule
-        - FabrikamModule.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - FileServerAdmin.psrc
-
-+ C:\Windows\System32\WindowsPowerShell\v1.0\Modules
-    + BuiltInModule
-        - BuiltInModule.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - OtherBuiltinRole.psrc
-```
-
-В этой системе установлено несколько файлов возможностей ролей.
-Что произойдет, если файл конфигурации сеанса предоставляет пользователю доступ к роли "DnsAdmin"?
-
-
-Действующий файл возможностей ролей будет находиться в "C:\\Program Files\\WindowsPowerShell\\Modules\\ContosoMaintenance\\RoleCapabilities\\DnsAdmin.psrc".
-
-Если причина этого вам не ясна, вспомните о 2 порядках определения приоритета:
-
-1. Для переменной `$env:PSModulePath` папка "Program Files" указана до папки "System32", поэтому приоритетнее файлы из папки "Program Files".
-2. По алфавиту модуль ContosoMaintenance стоит перед FabrikamModule, поэтому он будет выбирать роль DnsAdmin из ContosoMaintenance.
+Порядок, в котором выполняется поиск возможностей роли, не является детерминированным. Поэтому если два или несколько наборов возможностей роли имеют одинаковые имена, **настоятельно рекомендуется** присвоить возможностям роли уникальные имена на компьютере.
 
 ### <a name="conditional-access-rules"></a>Правила условного доступа
 

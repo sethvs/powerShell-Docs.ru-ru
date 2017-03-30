@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 162ae26dec67e8259661bb58c1b713818627220b
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
+ms.openlocfilehash: e6ea0992f90a72da6426d9112950c925ab6cd32b
+ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
 translationtype: HT
 ---
 # <a name="credentials-options-in-configuration-data"></a>Параметры учетных данных в данных конфигурации
@@ -82,10 +82,8 @@ configuration unencryptedPasswordDemo
             Ensure = "Present"
             MembersToInclude = "User1"
         }
-
     }
 
-    
     Node "TestMachine2"
     {
         # Now we'll use a node-specific password to this machine
@@ -112,7 +110,6 @@ configuration unencryptedPasswordDemo
             Ensure = "Present"
             MembersToInclude = "User2"
         }
-      
     }
 
 }
@@ -160,7 +157,8 @@ Group [String] #ResourceName
 Он может создавать локальные группы, а также добавлять и удалять члены.
 Этот ресурс принимает как свойство `Credential`, так и автоматическое свойство `PsDscRunAsCredential`,
 но использует только свойство `Credential`.
-Дополнительные сведения о `PsDscRunAsCredential` см. в [заметках о выпуске WMF](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_runas).
+
+См. дополнительные сведения о свойстве `PsDscRunAsCredential` и [запуске DSC с учетными данными пользователя](runAsUser.md).
 
 ## <a name="example-the-group-resource-credential-property"></a>Пример: свойство учетных данных для ресурса Group
 
@@ -279,8 +277,8 @@ DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 
 **Используя учетные данные с ресурсами DSC, по возможности отдавайте предпочтение локальной учетной записи, а не доменной.**
 
-Если свойство `Username` учетных данных содержит \' или '@', DSC будет рассматривать их как доменную учетную запись.
-Исключение составляют значения localhost,&127;.0.0.1 и ::1 в доменной части имени пользователя.
+Если свойство `Username` учетных данных содержит \' или @, DSC будет рассматривать их как доменную учетную запись.
+Исключение составляют значения localhost, 127.0.0.1 и ::1 в доменной части имени пользователя.
 
 ## <a name="psdscallowdomainuser"></a>PSDscAllowDomainUser
 
