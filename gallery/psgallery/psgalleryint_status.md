@@ -9,20 +9,22 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "psgalleryint_состояние"
 ms.technology: powershell
-ms.openlocfilehash: a889620aff415146d1808df052ffc43732640ae7
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
+ms.openlocfilehash: 58f06ca061a4f171288e75b30698910c701f1da1
+ms.sourcegitcommit: ba8ed836799ef465e507fa1b8d341ba38459d863
 translationtype: HT
 ---
 <a name="powershell-gallery-status"></a>Состояние коллекции PowerShell
 =========================
 
-## <a name="03272017---unable-to-see-individual-module-and-script-pages"></a>27.03.2017 — не видны отдельные страницы модуля и скрипта
+## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов
 
-__Сводка влияния__. Прямые ссылки на отдельные страницы модуля и скрипта на сайте https://www.powershellgallery.com сейчас недоступны. Это актуально для всех регионов. Это влияет на все командлеты PowerShellGet; командлеты Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt должны продолжать работать.
+__Сводка по влиянию__. Прямые ссылки на отдельные страницы модулей и скриптов на сайте https://www.powershellgallery.com были недоступны. Это было актуально для всех регионов. Это не повлияло на командлеты PowerShellGet: Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt по-прежнему работали.
 
 __Причина__. Инженеры определили причину как проблему при включении кнопок социальных сетей (например, Facebook) на страницу.  
 
-__Решение__. Разработчики работают над исправлением этой проблемы. 
+__Решение__. Инженеры исправили проблему, отключив сведения о числе подключений через Facebook.
+
+__Дальнейшие действия__. Мы открыли обращение о внутреннем отслеживании, чтобы исправить использование API Facebook.
 
 ## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a>15.12.2016 — не удается отправить сообщения электронной почты через веб-сайт PowerShellGallery
 
