@@ -5,15 +5,17 @@
 
 # [Конфигурации](configurations.md)
 ## [Активированные конфигурации](enactingConfigurations.md)
+## [Разделение данных конфигурации и данных среды](separatingEnvData.md)
 ## [Использование ресурсов с несколькими версиями](sxsResource.md)
 ## [Запуск DSC с учетными данными пользователя](runAsUser.md)
 ## [Указание межузловых зависимостей](crossNodeDependencies.md)
 ## [Данные конфигурации](configData.md)
 ### [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
+## [Вложение конфигураций](compositeConfigs.md)
 ## [Защита MOF-файла конфигурации](secureMOF.md)
 ## [Частичные конфигурации](partialConfigs.md)
 ## [Создание справки по конфигурациям DSC](configHelp.md)
-## [Настройка виртуальных машин при начальной загрузке с помощью DSC](bootstrapDsc.md)
+## [Настройка виртуальной машины при начальной загрузке с помощью DSC](bootstrapDsc.md)
 ### [Раздел реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md)
 
 # [Ресурсы](resources.md)
