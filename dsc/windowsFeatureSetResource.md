@@ -7,13 +7,13 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 1bb0e73a1aae6926040373e017494c2ef5e5fd3e
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: a920e02d891492c170e672db2f0771950dcb758c
+ms.sourcegitcommit: 1002c473b88abb209e4188bb626d93675c3614e2
 translationtype: HT
 ---
 # <a name="dsc-windowsfeatureset-resource"></a>Ресурс DSC WindowsFeatureSet
 
-> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
+> Область применения: Windows PowerShell 5.0
 
 Ресурс **WindowsFeatureSet** в DSC Windows PowerShell предоставляет механизм добавления и удаления ролей и компонентов на целевом узле.
 Он является [составным ресурсом](authoringResourceComposite.md), который вызывает [ресурс WindowsFeature](windowsfeatureResource.md) для каждого компонента, указанного в свойстве `Name`.
@@ -42,7 +42,7 @@ WindowsFeatureSet [string] #ResourceName
 |---|---| 
 | Название| Имена ролей или компонентов, которые необходимо добавить или удалить. Это свойство аналогично свойству **Name** командлета [Get-WindowsFeature](https://technet.microsoft.com/en-us/library/jj205469.aspx) и не содержит отображаемые имена ролей или компонентов.| 
 | Учетные данные| Учетные данные для добавления или удаления ролей или компонентов.| 
-| Ensure| Указывает, добавляются ли роли или компоненты. Чтобы добавить роли или компоненты, установите это свойство равным Present, чтобы удалить — равным Absent.| 
+| Ensure| Указывает, добавляются ли роли или компоненты. Чтобы добавить роли или компоненты, установите это свойство равным Present, чтобы удалить — равным Absent.| 
 | IncludeAllSubFeature| Присвойте этому свойству значение **$true**, чтобы включить все необходимые дополнительные компоненты для компонентов, указанных в свойстве **Name**.| 
 | LogPath| Путь к файлу журнала, в котором поставщик ресурсов должен вести журнал работы.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
