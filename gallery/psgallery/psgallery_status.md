@@ -9,12 +9,20 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "psgallery_состояние"
 ms.technology: powershell
-ms.openlocfilehash: 48f554793d25c2d5ea10bc202489845f4225b2b9
-ms.sourcegitcommit: ba8ed836799ef465e507fa1b8d341ba38459d863
+ms.openlocfilehash: 1886715c4b948e4bc59a51fb96d54b56b5b5afed
+ms.sourcegitcommit: 809e4f1bdf218b283e84438151030bfa94ca956d
 translationtype: HT
 ---
 <a name="powershell-gallery-status"></a>Состояние коллекции PowerShell
 =========================
+
+## <a name="04112017---users-unable-to-log-in"></a>11.04.2017 — пользователям не удается войти
+
+__Сводка влияния__: некоторым пользователям не удается войти в коллекцию PowerShell с помощью учетных записей Azure AD. Группа эксплуатации коллекции PowerShell изучает эту проблему. Проблема не влияет на пользователей с учетными записями Майкрософт (те, с доменами наподобие Outlook.com, Live.com и т. д.). 
+ 
+__Основная причина__: подлежит уточнению  
+
+__Дальнейшие действия__: мы работаем с командой Azure AD, чтобы определить причину проблемы. 
 
 ## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов
 

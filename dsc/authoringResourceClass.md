@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: a8c2094cbef1bb14c4a9082ff78fae78ec0c2e65
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: feec9b9e242ef6f43c272bfeb179d11944d1cb06
+ms.sourcegitcommit: 1002c473b88abb209e4188bb626d93675c3614e2
 translationtype: HT
 ---
 # <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>Написание пользовательских ресурсов DSC с использованием классов PowerShell
@@ -22,6 +22,8 @@ translationtype: HT
 В этом разделе мы создадим простой ресурс с именем **FileResource**, управляющий файлом по указанному пути.
 
 Дополнительные сведения о ресурсах DSC см. в статье [Создание настраиваемых ресурсов для настройки требуемого состояния Windows PowerShell](authoringResource.md).
+
+>**Примечание**: универсальные коллекции не поддерживаются в ресурсах на основе классов.
 
 ## <a name="folder-structure-for-a-class-resource"></a>Структура папок для ресурса класса
 
