@@ -5,12 +5,14 @@ author: rpsqrd
 ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2017-03-08
+ms.date: 2017-04-25
 title: "Конфигурации сеансов JEA"
 ms.technology: powershell
-ms.openlocfilehash: e98214d1777a1530b5a18ac9df1a6185d6d73979
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.openlocfilehash: 8773096627217663362e61fb158cc900aea20f43
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="jea-session-configurations"></a>Конфигурации сеансов JEA
 
@@ -40,7 +42,7 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\MyJEA
 
 Файл конфигурации сеанса можно открыть в любом текстовом редакторе.
 Поле `-SessionType RestrictedRemoteServer` указывает, что конфигурация сеанса будет использоваться JEA для безопасного управления.
-Настроенные таким образом сеансы будут работать в [режиме NoLanguage](https://technet.microsoft.com/en-us/library/dn433292.aspx) и имеют только 8 следующих командлетов (и псевдонимов) по умолчанию:
+Настроенные таким образом сеансы работают в [режиме NoLanguage](https://technet.microsoft.com/en-us/library/dn433292.aspx) и содержат только восемь следующих команд (и псевдонимов) по умолчанию:
 
 - Clear-Host (cls, clear)
 - Exit-PSSession (exsn, exit)
@@ -139,7 +141,7 @@ MountUserDrive = $true
 ```
 
 По умолчанию этот диск позволяет хранить до 50 МБ данных на пользователя.
-Вы можете ограничить объем данных, доступных пользователю, с помощью поля *UserDriveMaxmimumSize*.
+Вы можете ограничить объем данных, доступных пользователю, с помощью поля *UserDriveMaximumSize*.
 
 ```powershell
 # Enables the user drive with a per-user limit of 500MB (524288000 bytes)
@@ -169,6 +171,15 @@ RoleDefinitions = @{
 
 Если пользователь принадлежит к нескольким группам в определении роли, они получат доступ к ролям в каждой из них.
 Если две роли предоставляют доступ к одним командлетам, пользователю назначается наиболее нестрогий набор параметров.
+
+При указании локальных пользователей и группы в поле определения роли перед обратной косой чертой обязательно укажите имя компьютера (не *localhost* или *.*).
+Чтобы проверить имя компьютера, проверьте имя переменной `$env:computername`.
+
+```powershell
+RoleDefinitions = @{
+    'MyComputerName\MyLocalGroup' = @{ RoleCapabilities = 'DnsAuditor' }
+}
+```
 
 ### <a name="role-capability-search-order"></a>Порядок поиска возможностей ролей
 Как показано в приведенном выше примере, ссылка на возможности ролей осуществляется по плоскому имени (имя без расширения) файла возможностей ролей.

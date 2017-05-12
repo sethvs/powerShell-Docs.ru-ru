@@ -9,9 +9,11 @@ ms.date: 2016-12-12
 title: "Интегрированная среда сценариев Windows PowerShell (ISE)"
 ms.technology: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: ce6f084ee1f7e8f086ef5c3a6202cbf7070431db
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 6b10e9ee610235cb17795a371fe05e4c2a81c3bb
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
 Интегрированная среда сценариев Windows PowerShell (ISE) является одним из двух узлов для языка и подсистемы Windows PowerShell. С помощью нее можно создавать, выполнять и тестировать сценарии такими способами, которые недоступны в консоли Windows PowerShell. Интегрированная среда сценариев добавляет цветовую разметку синтаксиса, заполнение нажатием клавиши TAB, IntelliSense, визуальную отладку и контекстную справку.
