@@ -7,9 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 12c6ad6f30b4e1b67296289c927e59fd64079675
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: db2a12141ab1eaca73bf958b5a27ef2a356d5b8f
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="dsc-group-resource"></a>Ресурс Group в DSC
 
@@ -17,18 +19,18 @@ translationtype: HT
 
 Ресурс Group в DSC Windows PowerShell предоставляет механизм управления локальными группами на целевом узле.
 
-##<a name="syntax"></a>Синтаксис##
+## <a name="syntax"></a>Синтаксис
 ```
 Group [string] #ResourceName
 {
-    GroupName = [string]
-    [ Credential = [PSCredential] ]
-    [ Description = [string[]] ]
-    [ Ensure = [string] { Absent | Present }  ]
-    [ Members = [string[]] ]
+    GroupName          = [string]
+    [ Credential       = [PSCredential] ]
+    [ Description      = [string[]] ]
+    [ Ensure           = [string] { Absent | Present }  ]
+    [ Members          = [string[]] ]
     [ MembersToExclude = [string[]] ]
     [ MembersToInclude = [string[]] ]
-    [ DependsOn = [string[]] ]
+    [ DependsOn        = [string[]] ]
 }
 ```
 
@@ -37,11 +39,11 @@ Group [string] #ResourceName
 |  Свойство  |  Описание   | 
 |---|---| 
 | GroupName| Имя группы, для которой требуется обеспечить определенное состояние.| 
-| Учетные данные| Учетные данные, необходимые для доступа к удаленным ресурсам. **Примечание**. Учетная запись должна иметь соответствующие разрешения Active Directory для добавления в группу любых нелокальных учетных записей; в противном случае произойдет ошибка.
+| Учетные данные| Учетные данные, необходимые для доступа к удаленным ресурсам. **Примечание**. Учетная запись должна иметь соответствующие разрешения Active Directory на добавление в группу любых нелокальных учетных записей. Иначе во время выполнения конфигурации на целевом узле произойдет ошибка.  
 | Описание| Описание группы.| 
 | Ensure| Указывает, существует ли группа. Чтобы убедиться, что группа не существует, укажите для этого свойства значение Absent. Чтобы убедиться, что группа существует, укажите для этого свойства значение Present (используется по умолчанию).| 
-| Члены группы| Используйте это свойство для замены текущего членства в группе заданными участниками. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **MembersToExclude** или **MembersToInclude**. Это приведет к ошибке.| 
-| MembersToExclude| Это свойство используется для удаления участников из существующего членства в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
+| Члены группы| Используйте это свойство для замены текущего членства в группе заданными участниками. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **MembersToExclude** или **MembersToInclude**. Это приводит к ошибке.| 
+| MembersToExclude| Это свойство используется для удаления участников из существующего членства в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приводит к ошибке.| 
 | MembersToInclude| Это свойство используется для добавления участников в существующее членство в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
@@ -52,7 +54,7 @@ Group [string] #ResourceName
 ```powershell
 Group GroupExample
 {
-    # This will remove TestGroup, if present
+    # This removes TestGroup, if present
     # To create a new group, set Ensure to "Present“
     Ensure = "Absent"
     GroupName = "TestGroup"
@@ -88,3 +90,22 @@ Group AddADUserToLocalAdminGroup
         }
 ```
 
+## <a name="example-3"></a>Пример 3
+В примере ниже показано, как настроить локальную группу TigerTeamAdmins на сервере TigerTeamSource.Contoso.Com, чтобы она не содержала определенную учетную запись домена Contoso\JerryG.  
+
+```powershell
+
+Configuration SecureTigerTeamSrouce 
+{
+  Import-DscResource -ModuleName 'PSDesiredStateConfiguration'
+  
+  Node TigerTeamSource.Contoso.Com {
+  Group TigerTeamAdmins
+    {
+       GroupName        = 'TigerTeamAdmins'   
+       Ensure           = 'Absent'             
+       MembersToInclude = "Contoso\JerryG"
+    }
+  }
+}
+```
