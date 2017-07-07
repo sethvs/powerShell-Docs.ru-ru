@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Использование статических классов и методов"
-ms.technology: powershell
 ms.assetid: 418ad766-afa6-4b8c-9a44-471889af7fd9
-ms.openlocfilehash: 999b87744ae8478658b2cc33b48956594f48588d
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: fe41c7d6b45564e7b5bc2b922a18587c9745e26d
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="using-static-classes-and-methods"></a>Использование статических классов и методов
 Не все классы .NET Framework можно создать с помощью **New-Object**. Например, при попытке создать объект **System.Environment** или **System.Math** с помощью **New-Object** вы получите следующие сообщения об ошибке:
@@ -50,7 +46,7 @@ True     False    Environment                              System.Object
 
 Класс **System.Environment** содержит общие сведения о рабочей среде для текущего процесса, которой при работе в Windows PowerShell является powershell.exe.
 
-Если попытаться просмотреть описание этого класса, введя **\[[System.Environment] | Get-Member**, тип объекта указывается как **System.RuntimeType**, а не **System.Environment**:
+Если попытаться просмотреть описание этого класса, введя **\[System.Environment] | Get-Member**, тип объекта указывается как **System.RuntimeType**, а не **System.Environment**:
 
 ```
 PS> [System.Environment] | Get-Member
