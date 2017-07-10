@@ -1,30 +1,31 @@
 ---
-title: "Ресурс Registry в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: d94f178fb75d15b12268ad783f78183ceba9f2b3
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс Registry в DSC"
+ms.openlocfilehash: 649cb60578c053c04a7fcc7446881fb76daee26a
+ms.sourcegitcommit: 79e8f03afb8d0b0bb0a167e56464929b27f51990
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/26/2017
 ---
-# <a name="dsc-registry-resource"></a>Ресурс Registry в DSC
+<a id="dsc-registry-resource" class="xliff"></a>
+# Ресурс Registry в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **Registry** в DSC Windows PowerShell предоставляет механизм управления разделами и значениями реестра на целевом узле.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 Registry [string] #ResourceName
 {
     Key = [string]
     ValueName = [string]
-    [ Ensure = [string] { Absent | Present }  ]
+    [ Ensure = [string] { Enable | Disable }  ]
     [ Force =  [bool]   ]
     [ Hex = [bool] ]
     [ DependsOn = [string[]] ]
@@ -33,13 +34,14 @@ Registry [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Клавиши| Указывает путь к разделу реестра, для которого требуется обеспечить определенное состояние. Этот путь должен включать куст.| 
-| ValueName| Указывает имя значения реестра.| 
+| ValueName| Указывает имя значения реестра. Чтобы добавить или удалить раздел реестра, укажите это свойство как пустую строку, не указывая ValueType или ValueData. Чтобы изменить или удалить значение по умолчанию раздела реестра, укажите это свойство как пустую строку, указав ValueType или ValueData.| 
 | Ensure| Указывает, существует ли ключ и значение. Для этого укажите для этого свойства значение Present. Чтобы они не существовали, укажите для этого свойства значение Absent. Значение по умолчанию — Present.| 
-| Force| Если указанный раздел реестра присутствует, __Force__ перезаписывает его новым значением.| 
+| Force| Если указанный раздел реестра присутствует, __Force__ перезаписывает его новым значением. При удалении раздела реестра с подразделами необходимо выбрать __$true__| 
 | Hex| Указывает, будут ли данные выражены в шестнадцатеричном формате. Если свойство задано, данные значения DWORD/QWORD будут представлены в шестнадцатеричном формате. Недопустимо для других типов. Значение по умолчанию — __$false__.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | ValueData| Данные для значения реестра.| 
@@ -61,7 +63,8 @@ Registry [string] #ResourceName
 
 <li>расширяемая строка (REG_EXPAND_SZ).</li></ul>
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 В этом примере гарантируется, что ключ с именем ExampleKey присутствует в кусте **HKEY\_LOCAL\_MACHINE**.
 ```powershell
 Configuration RegistryTest
@@ -76,7 +79,7 @@ Configuration RegistryTest
 }
 ```
 
->**Примечание.**. Для изменения настройки реестра в кусте **HKEY\_CURRENT\_USER** требуется запустить конфигурацию с использованием учетных данных пользователя, а не системных.
+>**Примечание.** Для изменения настройки реестра в кусте **HKEY\_CURRENT\_USER** требуется запустить конфигурацию с использованием учетных данных пользователя, а не системных.
 >Вы можете использовать свойство **PsDscRunAsCredential**, чтобы указать учетные данные пользователя для конфигурации. Пример см. в статье [Запуск DSC с использованием учетных данных пользователя](runAsUser.md).
 
 
