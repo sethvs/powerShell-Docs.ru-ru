@@ -1,21 +1,22 @@
 ---
-title: "Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 701063dfa37fe4ba8b014cadadd10339b7fd1bf7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager"
+ms.openlocfilehash: 9552fd5b5feb862fbe8ef95a7746776e7fe2f5c8
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager
+<a id="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# Метод SendConfigurationApply класса MSFT_DSCLocalConfigurationManager
 
 Отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.
 
-<a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+Синтаксис
 ------
 
 ```mof
@@ -25,7 +26,8 @@ uint32 SendConfigurationApply(
 );
 ```
 
-<a name="parameters"></a>Параметры
+<a id="parameters" class="xliff"></a>
+Параметры
 ----------
 
 *ConfigurationData* \[in\]  
@@ -34,23 +36,27 @@ uint32 SendConfigurationApply(
 *force* \[in\]  
 Значение **true** для принудительной остановки конфигурации.
 
-## <a name="return-value"></a>Возвращаемое значение
+<a id="return-value" class="xliff"></a>
+## Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Замечания
+<a id="remarks" class="xliff"></a>
+## Замечания
 
 Это статический метод.
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

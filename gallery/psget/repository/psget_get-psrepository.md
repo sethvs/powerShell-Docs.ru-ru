@@ -1,38 +1,40 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_получение_репозитория_ps"
-ms.technology: powershell
-ms.openlocfilehash: b1d5172232f0c2916382b6c35093a238f6b2cb4d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Get-PSRepository
+ms.openlocfilehash: 96f87428312c233757aa5fcae405a192aadff385
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="get-psrepository"></a>Get-PSRepository
+<a id="get-psrepository" class="xliff"></a>
+# Get-PSRepository
 
 Возвращает информацию о зарегистрированных репозиториях, которая есть на компьютере.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Get-PSRepository возвращает репозитории модуля PowerShell, зарегистрированные для текущего пользователя на компьютере.
 
 Для каждого зарегистрированного репозитория Get-PSRepository возвращает объект PSRepository, который при необходимости может быть передан в командлет Unregister-PSRepository для отмены регистрации зарегистрированного репозитория.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Get-PSRepository -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Get-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517127)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 

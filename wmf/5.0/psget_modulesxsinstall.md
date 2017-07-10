@@ -1,4 +1,16 @@
-# <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 69188738333a853a16e6ea68689ecba5dc632225
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="side-by-side-version-support-on-powershell-50-or-newer" class="xliff"></a>
+# Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
 
 Теперь в командлетах Install-Module, Update-Module и Publish-Module, выполняемых в Windows PowerShell 5.0 или более поздней версии, имеется поддержка параллельных (SxS) версий модуля.
 Кроме того, мы добавили в командлет Publish-Module параметр -RequiredVersion для указания публикуемой версии. Параметр Path теперь поддерживает базовый путь к модулю с папкой версии.
@@ -26,3 +38,4 @@ Version    Name                                Type       Repository           D
 1.1.0      PSScriptAnalyzer                    Module     PSGallery            PSScriptAnalyzer provides script analysis... 
 1.1.1      PSScriptAnalyzer                    Module     PSGallery            PSScriptAnalyzer provides script analysis...
 ```
+

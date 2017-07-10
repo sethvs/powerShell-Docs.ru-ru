@@ -1,19 +1,17 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_развертывание_в_службу_автоматизации_azure"
-ms.technology: powershell
-ms.openlocfilehash: 20b0dd53b5d10f36089a884a99209a575332a91a
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 91f48fb43d7fb099e34ce5d3b3b632e3cb119d64
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-<a name="deploy-to-azure-automation"></a>Развертывание в службу автоматизации Azure
+<a id="deploy-to-azure-automation" class="xliff"></a>
+Развертывание в службу автоматизации Azure
 ===========================
 
 Кнопкой "Развернуть в службе автоматизации Azure" на странице подробностей об элементе можно развернуть элемент из коллекции PowerShell в службу автоматизации Azure.

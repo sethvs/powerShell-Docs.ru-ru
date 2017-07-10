@@ -8,6 +8,9 @@
 ### [Элементы с совместимыми выпусками PSEdition](psgallery/psgallery_pseditions.md)
 ### [Представление FileList](psgallery/psgallery_filelist_feature.md)
 ### [Развертывание в службе автоматизации Azure](psgallery/psgallery_deploy_to_azure_automation.md)
+### [Создание учетной записи PowerShellGallery](psgallery/psgallery_creating_an_account.md)
+### [Создание и публикация элемента](psgallery/Creating-and-Publishing-an-item.md)
+### [Руководства и рекомендации для публикации](psgallery/psgallery-PublishingGuidelines.md)
 ### [Исключение элементов](psgallery/psgallery_unlist_items.md)
 ### [Удаление элементов](psgallery/Deleting-Items.md)
 ### [Управление владельцами элементов](psgallery/Managing-Item-Owners.md)
@@ -15,8 +18,11 @@
 ### [Разрешение спорных вопросов](psgallery/psgallery_dispute_resolution.md)
 ### [Обращение к владельцам элементов](psgallery/psgallery_contacting_item_owners.md)
 ### [Обращение к администраторам](psgallery/psgallery_contacting_administrators.md)
+### [Отправка отзывов через социальные сети или комментарии](psgallery/psgallery-SocialMediaFeedback.md)
 
 # [PowerShellGet](psget/overview.md)
+## [Получение модуля PowerShellGet](psget/get_psget_module.md)
+
 ## Модуль
 ### [Поиск модулей](psget/module/psget_find-module.md)
 ### [Поиск ресурсов DSC](psget/module/psget_find-dscresource.md)

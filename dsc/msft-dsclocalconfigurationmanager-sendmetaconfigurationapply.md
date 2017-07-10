@@ -1,21 +1,22 @@
 ---
-title: "Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: a81b41f66883b3cf0931905d24c8ff92ef55b6c7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager"
+ms.openlocfilehash: d8ddc9d99f0d74ad907a6e39ae0e8ac14159be16
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="sendmetaconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager
+<a id="sendmetaconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# Метод SendMetaConfigurationApply класса MSFT_DSCLocalConfigurationManager
 
 Задает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.
 
-<a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+Синтаксис
 ------
 
 ```mof
@@ -25,7 +26,8 @@ uint32 SendMetaConfigurationApply(
 );
 ```
 
-<a name="parameters"></a>Параметры
+<a id="parameters" class="xliff"></a>
+Параметры
 ----------
 
 *ConfigurationData* \[in\]  
@@ -34,23 +36,27 @@ uint32 SendMetaConfigurationApply(
 *force* \[in\]  
 Значение **true** для принудительной остановки конфигурации.
 
-## <a name="return-value"></a>Возвращаемое значение
+<a id="return-value" class="xliff"></a>
+## Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Замечания
+<a id="remarks" class="xliff"></a>
+## Замечания
 
 Это статический метод.
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

@@ -1,39 +1,41 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_отмена_регистрации_репозитория_ps"
-ms.technology: powershell
-ms.openlocfilehash: c90710db47dbfdc58e1ca7f84c6d6fd8f04b5109
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Unregister-PSRepository
+ms.openlocfilehash: 91380210f262208fce39d596bd6c2ad05a819fbf
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="unregister-psrepository"></a>Unregister-PSRepository
+<a id="unregister-psrepository" class="xliff"></a>
+# Unregister-PSRepository
 
 Отмена регистрации репозитория.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Unregister-PSRepository отменяет регистрацию репозитория для текущего пользователя.
 - Отмена регистрации и повторная регистрация репозитория PSGallery допустима для корпоративного и автономного сценариев.
 - Пользователи могут повторно зарегистрировать PSGallery, просто выполнив команду `Register-PSRepository -Default`.
 - Так как PSGallery — это репозиторий для публикации по умолчанию в командлетах Publish-Module и Publish-Script, возникнет ошибка, если коллекция PSGallery недоступна в списке зарегистрированных репозиториев.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Unregister-PSRepository -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Unregister-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517130)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 Unregister-PSRepository -Name "MyPrivateGallery"
@@ -41,7 +43,8 @@ Unregister-PSRepository -Name "MyPrivateGallery"
 Get-PSRepository exp | Unregister-PSRepository
 ```
 
-### <a name="unregistration-and-re-registration-of-the-psgallery-repository-is-allowed-for-an-enterprise-and-disconnected-scenarios"></a>Отмена регистрации и повторная регистрация репозитория PSGallery допустима для корпоративного и автономного сценариев.
+<a id="unregistration-and-re-registration-of-the-psgallery-repository-is-allowed-for-an-enterprise-and-disconnected-scenarios" class="xliff"></a>
+### Отмена регистрации и повторная регистрация репозитория PSGallery допустима для корпоративного и автономного сценариев.
 ```powershell
 
 # Unregister PSGallery repository

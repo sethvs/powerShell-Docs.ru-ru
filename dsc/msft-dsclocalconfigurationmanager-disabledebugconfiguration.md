@@ -1,49 +1,55 @@
 ---
-title: "Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 97ad8a5711d469a80a7a61056d71b7e2b69cfd27
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager"
+ms.openlocfilehash: 837ec770348eb7f5ccb456da626a70fc3c411e73
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+<a id="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отключает отладку ресурсов DSC.
 
-<a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+Синтаксис
 ------
 
 ```mof
 uint32 DisableDebugConfiguration();
 ```
 
-<a name="parameters"></a>Параметры
+<a id="parameters" class="xliff"></a>
+Параметры
 ----------
 
 Этот метод не имеет параметров.
 
-## <a name="return-value"></a>Возвращаемое значение
+<a id="return-value" class="xliff"></a>
+## Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Замечания
+<a id="remarks" class="xliff"></a>
+## Замечания
 
 Это статический метод.
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

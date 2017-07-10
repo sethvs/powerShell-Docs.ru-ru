@@ -1,21 +1,22 @@
 ---
-title: "Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: carmonm
-ms.prod: powershell
-ms.openlocfilehash: 052e0bbf49e50867cc1cb5bca95e860c6706bedb
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей"
+ms.openlocfilehash: e8cb26c659dbacde814b1ceaedc0b1fb8dae9d63
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="desired-state-configuration-overview-for-decision-makers"></a>Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей
+<a id="desired-state-configuration-overview-for-decision-makers" class="xliff"></a>
+# Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей
 
 В этом документе описываются коммерческие выгоды от использования настройки требуемого состояния (DSC) PowerShell. Это не техническое руководство.
 
-## <a name="what-is-desired-state-configuration"></a>Что такое настройка требуемого состояния?
+<a id="what-is-desired-state-configuration" class="xliff"></a>
+## Что такое настройка требуемого состояния?
 
 Настройка требуемого состояния (DSC) Windows PowerShell — это встроенная в Windows платформа управления конфигурациями, основанная на открытых стандартах. DSC отличается достаточной гибкостью для надежной, согласованной работы на каждом этапе жизненного цикла развертывания (разработка, тестирование, подготовка, производство), а также при масштабировании. 
 
@@ -24,7 +25,8 @@ translationtype: HT
 
 Кроме того, в DSC встроены функции мониторинга и отчетности. Если система перестает соответствовать требованиям, DSC выдает оповещение и пытается ее исправить. 
 
-## <a name="benefits-of-using-desired-state-configuration"></a>Преимущества использования настройки требуемого состояния
+<a id="benefits-of-using-desired-state-configuration" class="xliff"></a>
+## Преимущества использования настройки требуемого состояния
 
 Конфигурации рассчитаны на удобство чтения, хранения и обновления данных. Конфигурации объявляют требуемое состояние целевых устройств, а не инструкции по приведению таких устройств в указанное состояние. Это означает, что изучение, адаптация, реализация и поддержка конфигурации с помощью DSC потребуют гораздо меньших затрат. 
 
@@ -33,17 +35,20 @@ translationtype: HT
 Кроме того, конфигурации можно использовать совместно с помощью [Коллекции PowerShell](https://powershellgallery.com). Это означает, что для выполнения стоящих перед вами задач могут существовать готовые решения и наработки.
 
 
-## <a name="desired-state-configuration-and-devops"></a>Настройка требуемого состояния и DevOps
+<a id="desired-state-configuration-and-devops" class="xliff"></a>
+## Настройка требуемого состояния и DevOps
 
 Решения [DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx) объединяют усилия людей в сфере технологий и культуры, обеспечивая высокую скорость развертывания и итерации. DSC разработана в расчете на DevOps. Тот факт, что в среде определяется единая конфигурация, означает, что разработчики могут вносить свои требования в конфигурацию и включать ее в систему управления версиями, а рабочие коллективы — легко развертывать код без использования выполняемых вручную процессов, которые часто подвержены ошибкам. 
 
 Кроме того, конфигурации [опираются на данные](https://msdn.microsoft.com/en-us/powershell/dsc/configdata), а значит, работникам будет проще идентифицировать и изменять среды, не привлекая разработчиков. 
 
-## <a name="desired-state-configuration-on--and-off-premise"></a>Локальная и удаленная настройка требуемого состояния
+<a id="desired-state-configuration-on--and-off-premises" class="xliff"></a>
+## Локальная и удаленная настройка требуемого состояния
 
-DSC позволяет управлять как локальным, так и удаленным развертыванием. Для локальных решений в DSC используется [опрашивающий сервер](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver), обеспечивающий централизованное управление компьютерами и создание отчетов об их состоянии. Для облачных решений DSC можно применять везде, где можно использовать Windows. Кроме того, в DSC включены такие специализированные предложения от Azure, как [служба автоматизации Azure](https://azure.microsoft.com/en-us/documentation/services/automation/), которая выполняет централизацию отчетов DSC. 
+DSC позволяет управлять как локальными, так и удаленными развертываниями. Для локальных решений в DSC используется [опрашивающий сервер](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver), обеспечивающий централизованное управление компьютерами и создание отчетов об их состоянии. Для облачных решений DSC можно применять везде, где можно использовать Windows. Кроме того, в DSC включены такие специализированные предложения от Azure, как [служба автоматизации Azure](https://azure.microsoft.com/en-us/documentation/services/automation/), которая выполняет централизацию отчетов DSC. 
 
-## <a name="dsc-and-compatibility"></a>DSC и совместимость
+<a id="dsc-and-compatibility" class="xliff"></a>
+## DSC и совместимость
 
 Хотя DSC появилась в Windows Server 2012 R2, ее можно использовать и с предыдущими версиями этой операционной системы с помощью пакета Windows Management Framework (WMF). Дополнительные сведения о WMF см. на [домашней странице PowerShell](https://msdn.microsoft.com/en-us/powershell/). 
 

@@ -1,29 +1,31 @@
 ---
-title: "Написание пользовательских ресурсов DSC с использованием MOF"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 1fc28589633d6279d0428179a70e7e561d753ea8
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Написание пользовательских ресурсов DSC с использованием MOF"
+ms.openlocfilehash: 58d6ba3995d3d6dea2787cfa347e0b1386bc40af
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="writing-a-custom-dsc-resource-with-mof"></a>Написание пользовательских ресурсов DSC с использованием MOF
+<a id="writing-a-custom-dsc-resource-with-mof" class="xliff"></a>
+# Написание пользовательских ресурсов DSC с использованием MOF
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 В этом разделе мы определим схему для настраиваемого ресурса настройки требуемого состояния (DSC) Windows PowerShell в MOF-файле и реализуем этот ресурс в файле сценария Windows PowerShell. Этот ресурс применяется для создания и обслуживания веб-сайтов.
 
-## <a name="creating-the-mof-schema"></a>Создание схемы MOF
+<a id="creating-the-mof-schema" class="xliff"></a>
+## Создание схемы MOF
 
 Схема определяет свойства ресурса, которые можно настроить с помощью сценария DSC.
 
-### <a name="folder-structure-for-a-mof-resource"></a>Структура папок для ресурса MOF
+<a id="folder-structure-for-a-mof-resource" class="xliff"></a>
+### Структура папок для ресурса MOF
 
-Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
+Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
 
 ```
 $env:ProgramFiles\WindowsPowerShell\Modules (folder)
@@ -37,12 +39,13 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
 
 Обратите внимание, что папку DSCResources необходимо создать в папке верхнего уровня, а имя папки для каждого ресурса должно совпадать с именем ресурса.
 
-### <a name="the-contents-of-the-mof-file"></a>Содержание MOF-файла
+<a id="the-contents-of-the-mof-file" class="xliff"></a>
+### Содержание MOF-файла
 
 Приведем пример файла MOF, который можно использовать как настраиваемый ресурс веб-сайта. Чтобы воспользоваться этим примером, сохраните данную схему в файле с именем *Demo_IISWebsite.schema.mof*.
 
 ```
-[ClassVersion("1.0.0"), FriendlyName("Website")] 
+[ClassVersion("1.0.0"), FriendlyName("Website")]
 class Demo_IISWebsite : OMI_BaseResource
 {
   [Key] string Name;
@@ -67,7 +70,8 @@ class Demo_IISWebsite : OMI_BaseResource
 * Для сохранения единообразия встроенных ресурсов DSC рекомендуется включать в ресурс свойство `Ensure` с значениями `Present` и `Absent`.
 * Имя настраиваемого ресурса должно иметь формат `classname.schema.mof`, где `classname` — это идентификатор, следующий за ключевым словом `class` в определении схемы.
 
-### <a name="writing-the-resource-script"></a>Создание сценария ресурсов
+<a id="writing-the-resource-script" class="xliff"></a>
+### Создание сценария ресурсов
 
 Сценарий ресурса реализует логику ресурса. В этот модуль необходимо включить три функции: **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Все три функции должны принимать набор параметров, идентичный набору свойств, заданных в схеме MOF для вашего ресурса. В этом документе такой набор свойств называется "свойства ресурса". Сохраните эти три функции в файл <ResourceName>.psm1. В следующем примере функции сохраняются в файл с именем Demo_IISWebsite.psm1.
 
@@ -77,10 +81,10 @@ class Demo_IISWebsite : OMI_BaseResource
 
 ```powershell
 # DSC uses the Get-TargetResource function to fetch the status of the resource instance specified in the parameters for the target machine
-function Get-TargetResource 
+function Get-TargetResource
 {
-    param 
-    (       
+    param
+    (
         [ValidateSet("Present", "Absent")]
         [string]$Ensure = "Present",
 
@@ -110,7 +114,7 @@ function Get-TargetResource
         # Add all Website properties to the hash table
         # This simple example assumes that $Website is not null
         $getTargetResourceResult = @{
-                                      Name = $Website.Name; 
+                                      Name = $Website.Name;
                                         Ensure = $ensureResult;
                                         PhysicalPath = $Website.physicalPath;
                                         State = $Website.state;
@@ -134,11 +138,11 @@ function Get-TargetResource
 
 ```powershell
 # The Set-TargetResource function is used to create, delete or configure a website on the target machine. 
-function Set-TargetResource 
+function Set-TargetResource
 {
     [CmdletBinding(SupportsShouldProcess=$true)]
-    param 
-    (       
+    param
+    (
         [ValidateSet("Present", "Absent")]
         [string]$Ensure = "Present",
 
@@ -212,13 +216,16 @@ $ApplicationPool
 #Include logic to 
 $result = [System.Boolean]
 #Add logic to test whether the website is present and its status mathes the supplied parameter values. If it does, return true. If it does not, return false.
-$result 
+$result
 }
 ```
 
-**Примечание**. Чтобы упростить отладку, используйте в реализации трех предыдущих функций командлет **Write-Verbose**. Он записывает текст в поток подробных сообщений. По умолчанию поток подробных сообщений не отображается, однако его можно вывести на экран, изменив значение переменной **$VerbosePreference** или применив в командлетах DSC параметр **Verbose** со значением new.
+**Примечание**. Чтобы упростить отладку, используйте в реализации трех предыдущих функций командлет **Write-Verbose**. 
+>Он записывает текст в поток подробных сообщений. 
+>По умолчанию поток подробных сообщений не отображается, однако его можно вывести на экран, изменив значение переменной **$VerbosePreference** или применив в командлетах DSC параметр **Verbose** со значением new.
 
-### <a name="creating-the-module-manifest"></a>Создание манифеста модуля
+<a id="creating-the-module-manifest" class="xliff"></a>
+### Создание манифеста модуля
 
 Командлет **New-ModuleManifest** позволяет определить файл <ResourceName>.psd1 для модуля настраиваемого ресурса. При вызове этого командлета необходимо сослаться на модуль сценария (PSM1-файл), описанный в предыдущем разделе. Включите в список функций для экспорта функции **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Пример файла манифеста:
 
@@ -273,4 +280,25 @@ FunctionsToExport = @("Get-TargetResource", "Set-TargetResource", "Test-TargetRe
 # HelpInfoURI = ''
 }
 ```
+
+<a id="supporting-psdscrunascredential" class="xliff"></a>
+## Поддержка PsDscRunAsCredential
+
+>**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.
+
+Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.
+Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).
+
+Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$PsDscContext`.
+
+Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:
+
+```powershell
+if (PsDscContext.RunAsUser) {
+    Write-Verbose "User: $PsDscContext.RunAsUser";
+}
+```
+
+
+
 

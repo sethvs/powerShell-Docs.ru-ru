@@ -1,37 +1,39 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: psget_test scriptfileinfo
-ms.technology: powershell
-ms.openlocfilehash: 570ad7e878195f36e1d0831c504301bcee647a7d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Test-ScriptFileInfo
+ms.openlocfilehash: 0f6951b86bba352e33abe91fc76e000b7df75b49
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="test-scriptfileinfo"></a>Test-ScriptFileInfo
+<a id="test-scriptfileinfo" class="xliff"></a>
+# Test-ScriptFileInfo
 
 Проверяет блок комментариев метаданных файла сценария.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Test-ScriptFileInfo проверяет блок комментариев в начале сценария, который будет опубликован с помощью сценарного командлета Publish-Script.
 Если блок комментариев метаданных содержит ошибку, этот командлет возвращает сведения о месте ошибки или способ ее устранения.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Test-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Test-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619791)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 ```powershell
 # Create a new script file with minimum required metadata values
 New-ScriptFileInfo -Path C:\ScriptSharingDemo\Demo-Script.ps1 -Description "Script file description goes here"

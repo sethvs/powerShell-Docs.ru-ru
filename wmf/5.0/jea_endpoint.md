@@ -1,4 +1,16 @@
-# <a name="creating-and-connecting-to-a-jea-endpoint"></a>Создание конечной точки JEA и подключение к ней
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: c3645a6ba83081bd5ac31a13af0f67f6538db22a
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="creating-and-connecting-to-a-jea-endpoint" class="xliff"></a>
+# Создание конечной точки JEA и подключение к ней
 Чтобы создать конечную точку JEA, необходимо создать и зарегистрировать специально настроенный файл конфигурации сеанса PowerShell. Для этого можно воспользоваться командлетом **New-PSSessionConfigurationFile**.
 
 ```powershell
@@ -47,10 +59,10 @@ RoleDefinitions = @{
 1.  Установите для SessionType значение RestrictedRemoteServer.
 2.  Установите для RunAsVirtualAccount значение **$true**.
 3.  Установите для TranscriptPath каталог, где после каждого сеанса будут сохраняться записи с запросом на повышение прав.
-4.  Задайте для RoleDefinitions хэш-таблицу, определяющую, какие группы имеют доступ к отдельным возможностям роли.  Это поле определяет, **кто** и какие **действия** может выполнять на этой конечной точке.   Возможности роли — это специальные файлы, которые будут описаны чуть позже.
+4.  Задайте для RoleDefinitions хэш-таблицу, определяющую, какие группы имеют доступ к отдельным возможностям роли.  Это поле определяет, **кто** и какие **действия** может выполнять на этой конечной точке.   Возможности роли — это специальные файлы, которые будут описаны чуть позже.
 
 
-Поле RoleDefinitions определяет, какие группы имеют доступ к отдельным возможностям роли.  Возможность роли — это файл, который определяет набор возможностей, предоставляемых подключающимся пользователям.  Возможности роли можно создать с помощью команды **New-PSRoleCapabilityFile**.
+Поле RoleDefinitions определяет, какие группы имеют доступ к отдельным возможностям роли.  Возможность роли — это файл, который определяет набор возможностей, предоставляемых подключающимся пользователям.  Возможности роли можно создать с помощью команды **New-PSRoleCapabilityFile**.
 
 ```powershell
 New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc" 
@@ -130,10 +142,12 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc" 
 ```
 
-## <a name="connect-to-a-jea-endpoint"></a>Подключение к конечной точке JEA
+<a id="connect-to-a-jea-endpoint" class="xliff"></a>
+## Подключение к конечной точке JEA
 Подключение к конечной точке JEA осуществляется аналогично подключению к любой конечной точке PowerShell.  Необходимо просто назначить конечной точке JEA имя в качестве параметра ConfigurationName для **New-PSSession**, **Invoke-Command** или **Enter-PSSession**.
 
 ```powershell
 Enter-PSSession -ConfigurationName Maintenance -ComputerName localhost
 ```
 После подключения к сеансу JEA вы сможете выполнять только те команды, которые входят в число разрешенных для доступных вам возможностей роли. При попытке запустить любую другую команду возникает ошибка.
+

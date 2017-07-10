@@ -1,21 +1,22 @@
 ---
-title: "Ресурса nxFileLine в DSC для Linux"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 9196129e79272d8bee717ef8a5d42fb590760a0f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурса nxFileLine в DSC для Linux"
+ms.openlocfilehash: bde42bbe217fc9acf5a3f2ee0136d30e2b5f2415
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-for-linux-nxfileline-resource"></a>Ресурса nxFileLine в DSC для Linux
+<a id="dsc-for-linux-nxfileline-resource" class="xliff"></a>
+# Ресурса nxFileLine в DSC для Linux
 
 Ресурс **nxFileLine** в DSC PowerShell предоставляет механизм управления строками в файле конфигурации на узле Linux.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 nxFileLine <string> #ResourceName
@@ -28,7 +29,8 @@ nxFileLine <string> #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -37,7 +39,8 @@ nxFileLine <string> #ResourceName
 | DoesNotContainPattern| Шаблон регулярных выражений для строк, которые не должны присутствовать в файле. Присутствующие в файле строки, которые соответствуют этому регулярному выражению, будут удалены.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В этом примере показывается, как использовать ресурс **nxFileLine** для настройки файла `/etc/sudoers`, чтобы пользователь monuser не требовал использовать телетайп (TTY).
 

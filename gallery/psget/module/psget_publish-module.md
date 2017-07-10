@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_публикация_модуля"
-ms.technology: powershell
-ms.openlocfilehash: a21351837d0cc63e56254911a1a436175a2734cd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Publish-Module
+ms.openlocfilehash: 53fca3d6756ebf698023152ce5b58b45eb0ef757
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="publish-module"></a>Publish-Module
+<a id="publish-module" class="xliff"></a>
+# Publish-Module
 
 Публикует указанный модуль с локального компьютера в коллекцию в Интернете.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет **Publish-Module** публикует модуль в коллекцию на основе NuGet в Интернете с помощью ключа API, который хранится как часть профиля пользователя в коллекции. Модуль для публикации можно указывать с помощью имени модуля или пути к папке, содержащей модуль.
 
@@ -29,16 +28,19 @@ translationtype: HT
 Параметр Path также поддерживает базовый путь к модулю с папкой версии.
 Параметр Force командлета Publish-Module обеспечивает начальную загрузку NuGet.exe без запроса подтверждения.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Publish-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Publish-Module](http://go.microsoft.com/fwlink/?LinkID=398575)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 ContosoServer module with different versions to be published.
@@ -70,9 +72,11 @@ _------ ---- ---------- -----------
 2.0 ContosoServer LocalRepo ContosoServer module
 ```
 
-## <a name="publishing-a-module-with-dependencies"></a>Публикация модуля с зависимостями
+<a id="publishing-a-module-with-dependencies" class="xliff"></a>
+## Публикация модуля с зависимостями
 
-### <a name="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest"></a>Создайте модуль с зависимостями и диапазоном версий, указанным в свойстве RequiredModules манифеста этого модуля.
+<a id="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest" class="xliff"></a>
+### Создайте модуль с зависимостями и диапазоном версий, указанным в свойстве RequiredModules манифеста этого модуля.
 
 **Примечание**.
   - \* поддерживается только в MaximumVersion и также должен быть в конце строки версии. 
@@ -86,13 +90,15 @@ PS C:\windows\system32> cd C:\MyModules\ModuleWithDependencies
 PS C:\MyModules\ModuleWithDependencies> New-ModuleManifest -Path .\ModuleWithDependencies.psd1 -ModuleVersion 1.0 -RequiredModules $requiredModules -Description 'ModuleWithDependencies demo module'
 ```
 
-### <a name="publish-modulewithdependencies-module-with-dependencies-to-the-repository"></a>Опубликуйте модуль ModuleWithDependencies с зависимостями в репозитории.
+<a id="publish-modulewithdependencies-module-with-dependencies-to-the-repository" class="xliff"></a>
+### Опубликуйте модуль ModuleWithDependencies с зависимостями в репозитории.
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Publish-Module -Path C:\MyModules\ModuleWithDependencies -Repository LocalRepo
 ```
 
-### <a name="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies"></a>Найдите модуль ModuleWithDependencies вместе с зависимостями, указав -IncludeDependencies.
+<a id="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies" class="xliff"></a>
+### Найдите модуль ModuleWithDependencies вместе с зависимостями, указав -IncludeDependencies.
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Find-Module -Name ModuleWithDependencies -Repository LocalRepo -IncludeDependencies
@@ -104,7 +110,8 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="install-the-modulewithdependencies-module-with-dependencies"></a>Установите модуль ModuleWithDependencies с зависимостями.
+<a id="install-the-modulewithdependencies-module-with-dependencies" class="xliff"></a>
+### Установите модуль ModuleWithDependencies с зависимостями.
 Обратите внимание, что диапазоны версий учитываются во время установки зависимостей.
 
 ```powershell
@@ -121,7 +128,8 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="contents-of-modulewithdependencies2-module-manifest-file"></a>Содержимое файла манифеста для модуля ModuleWithDependencies2
+<a id="contents-of-modulewithdependencies2-module-manifest-file" class="xliff"></a>
+### Содержимое файла манифеста для модуля ModuleWithDependencies2
 
 ```powershell
 @{
@@ -176,7 +184,8 @@ PrivateData = @{
 ```
 
 
-### <a name="external-dependencies"></a>Внешние зависимости
+<a id="external-dependencies" class="xliff"></a>
+### Внешние зависимости
 Некоторые зависимости модуля могут управляться извне; в этом случае они должны добавляться в запись ExternalModuleDependencies раздела PSData манифеста модуля.
 
 Если SnippetPx не доступен в репозитории, возникнет следующая ошибка.

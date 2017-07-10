@@ -1,6 +1,19 @@
-# <a name="separation-of-node-and-configuration-ids"></a>Разделение идентификаторов узла и конфигурации
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 5b9eea1c90bfd5a8cee3897d832bf7775a750308
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="separation-of-node-and-configuration-ids" class="xliff"></a>
+# Разделение идентификаторов узла и конфигурации
 
-## <a name="overview"></a>Обзор
+<a id="overview" class="xliff"></a>
+## Обзор
 
 Чтобы повысить гибкость и удобство работы с DSC в режиме Pull, мы добавили в этот выпуск несколько функций. Они упрощают настройку и развертывание конфигураций на нескольких узлах и позволяют сохранить возможность отслеживания состояния и отчетов для каждого узла в отдельности. Эти функции представлены ниже:
 

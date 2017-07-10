@@ -1,24 +1,25 @@
 ---
-title: "Настройка виртуальных машин при начальной загрузке с помощью DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 38751d62a56dc90ff69fe3ab6e92829fb33edb2b
-ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Настройка виртуальных машин при начальной загрузке с помощью DSC"
+ms.openlocfilehash: a3592c50fa7f2232538fbec07129fac86c1d00b5
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
 >Область применения: Windows PowerShell 5.0
 
 >**Примечание.** Раздел реестра **DSCAutomationHostEnabled**, описанный в этом разделе, недоступен в PowerShell 4.0.
 Сведения о настройке новых виртуальных машин при начальной загрузке в PowerShell 4.0 см. в разделе [Требуется автоматически настроить машины с помощью DSC при начальной загрузке?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/).
 
-# <a name="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc"></a>Настройка виртуальных машин при начальной загрузке с помощью DSC
+<a id="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc" class="xliff"></a>
+# Настройка виртуальных машин при начальной загрузке с помощью DSC
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 
 Для выполнения этих примеров требуется следующее.
 
@@ -39,7 +40,8 @@ translationtype: HT
 >**Примечание.** На компьютер можно одновременно добавить `Pending.mof` и `MetaConfig.mof`.
 Если присутствуют оба файла, более высокий приоритет имеют параметры, указанные в `MetaConfig.mof`.
 
-## <a name="inject-a-configuration-mof-document-into-a-vhd"></a>Добавление документа MOF конфигурации в VHD
+<a id="inject-a-configuration-mof-document-into-a-vhd" class="xliff"></a>
+## Добавление документа MOF конфигурации в VHD
 
 Для применения конфигурации при начальной загрузке добавьте скомпилированный документ MOF конфигурации в VHD в качестве его файла `Pending.mof`.
 Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет конфигурацию, определенную в `Pending.mof`, при первой загрузке компьютера.
@@ -62,7 +64,8 @@ Configuration SampleIISInstall
 }
 ```
 
-### <a name="to-inject-the-configuration-mof-document-on-the-vhd"></a>Добавление документа MOF конфигурации в VHD
+<a id="to-inject-the-configuration-mof-document-on-the-vhd" class="xliff"></a>
+### Добавление документа MOF конфигурации в VHD
 
 1. Подключите VHD, в который нужно добавить конфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx). Например:
 
@@ -95,7 +98,8 @@ Configuration SampleIISInstall
 7. Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC. После первоначальной загрузки и установки операционной системы будут установлены службы IIS.
 Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).
 
-## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a>Добавление метаконфигурации DSC в VHD
+<a id="inject-a-dsc-metaconfiguration-into-a-vhd" class="xliff"></a>
+## Добавление метаконфигурации DSC в VHD
 
 Также можно настроить на компьютере извлечение конфигурации при начальной загрузке, добавив метаконфигурацию (см. раздел [Настройка локального диспетчера конфигурации [LCM]](metaConfig.md)) в VHD в качестве его файла `MetaConfig.mof`.
 Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет к локальному диспетчеру конфигурации метаконфигурацию, определенную в `MetaConfig.mof` при первой загрузке компьютера.
@@ -126,7 +130,8 @@ configuration PullClientBootstrap
 }
 ```
 
-### <a name="to-inject-the-metaconfiguration-mof-document-on-the-vhd"></a>Добавление документа MOF метаконфигурации в VHD
+<a id="to-inject-the-metaconfiguration-mof-document-on-the-vhd" class="xliff"></a>
+### Добавление документа MOF метаконфигурации в VHD
 
 1. Подключите VHD, в который нужно добавить метаконфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx). Например:
 
@@ -164,7 +169,8 @@ configuration PullClientBootstrap
 После первоначальной загрузки и установки операционной системы DSC извлечет конфигурацию из опрашивающего сервера и будут установлены службы IIS.
 Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).
 
-## <a name="disable-dsc-at-boot-time"></a>Отключение DSC при загрузке
+<a id="disable-dsc-at-boot-time" class="xliff"></a>
+## Отключение DSC при загрузке
 
 По умолчанию раздел **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** имеет значение 2, что позволяет запускать конфигурацию DSC, если компьютер находится в состоянии ожидания или в текущем состоянии. Если запускать конфигурацию при начальной загрузке не следует, необходимо задать для этого раздела значение 0.
 
@@ -199,9 +205,11 @@ configuration PullClientBootstrap
     reg unload HKLM\Vhd
     ```
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 
 - [Конфигурации DSC](configurations.md)
 - [Раздел реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md)
 - [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
+

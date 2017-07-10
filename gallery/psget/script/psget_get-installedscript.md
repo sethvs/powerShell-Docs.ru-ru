@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_получение_установленного_скрипта"
-ms.technology: powershell
-ms.openlocfilehash: d755ed5dbcee279f943d56832ffd7689e4cc6f04
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Get-InstalledScript
+ms.openlocfilehash: f35e57cdadd1448bd9032ab007d692003c4cf4a2
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="get-installedscript"></a>Get-InstalledScript
+<a id="get-installedscript" class="xliff"></a>
+# Get-InstalledScript
 
 Возвращает установленные сценарии на компьютере.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Get-InstalledScript возвращает установленные на компьютере сценарии PowerShell.
 
@@ -30,17 +29,20 @@ translationtype: HT
   - Если параметр RequiredVersion не указан, командлет Get-InstalledScript возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана. 
   - Если параметр RequiredVersion указан, Get-InstalledScript возвращает только версию установленного сценария, которая точно совпадает с указанной версией.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Get-InstalledScript -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Get-InstalledScript](http://go.microsoft.com/fwlink/?LinkId=619790)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 

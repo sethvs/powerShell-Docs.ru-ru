@@ -1,17 +1,17 @@
 ---
-title: "Ресурс Log в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: fe905237f5f0672f6e5e0cd399e1b71058417d9c
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс Log в DSC"
+ms.openlocfilehash: 72c9c5a9b8e2a4ed4ce43cfd792572ce95b502b3
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-log-resource"></a>Ресурс Log в DSC 
+<a id="dsc-log-resource" class="xliff"></a>
+# Ресурс Log в DSC 
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -33,13 +33,15 @@ Log [string] #ResourceName
 
 [Где находятся журналы событий DSC?](https://msdn.microsoft.com/en-us/powershell/dsc/troubleshooting#where-are-dsc-event-logs)
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Сообщение| Указывает сообщение для записи в журнал событий Microsoft-Windows-Desired State Configuration/Analytic.| 
 | DependsOn | Указывает, что перед записью этого сообщения в журнал необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В следующем примере показано, как добавить сообщение в журнал событий Microsoft-Windows-Desired State Configuration/Analytic.
 

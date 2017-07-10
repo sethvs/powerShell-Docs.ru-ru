@@ -1,25 +1,24 @@
 ---
-title: "Ресурс Group в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: db2a12141ab1eaca73bf958b5a27ef2a356d5b8f
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс Group в DSC"
+ms.openlocfilehash: 6fb6c5f9593687d7204ff31fddd9bca978ed2707
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-group-resource"></a>Ресурс Group в DSC
+<a id="dsc-group-resource" class="xliff"></a>
+# Ресурс Group в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс Group в DSC Windows PowerShell предоставляет механизм управления локальными группами на целевом узле.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 ```
 Group [string] #ResourceName
 {
@@ -34,7 +33,8 @@ Group [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -47,7 +47,8 @@ Group [string] #ResourceName
 | MembersToInclude| Это свойство используется для добавления участников в существующее членство в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-## <a name="example-1"></a>Пример 1
+<a id="example-1" class="xliff"></a>
+## Пример 1
 
 Следующий пример показывает, как проверить, что группа с именем TestGroup не существует. 
 
@@ -60,7 +61,8 @@ Group GroupExample
     GroupName = "TestGroup"
 }
 ```
-## <a name="example-2"></a>Пример 2.
+<a id="example-2" class="xliff"></a>
+## Пример 2.
 Следующий пример демонстрирует добавление пользователя Active Directory в группу локальных администраторов в лабораторной сборке с несколькими компьютерами, в которой уже используется объект PSCredential для учетной записи локального администратора. Поскольку этот объект также используется для учетной записи администратора домена (после повышения роли домена), нам потребуется преобразовать этот существующий объект PSCredential в понятные учетные данные домена, чтобы можно было добавить пользователя домена в группу локальных администраторов на рядовом сервере.
 
 ```powershell
@@ -90,7 +92,8 @@ Group AddADUserToLocalAdminGroup
         }
 ```
 
-## <a name="example-3"></a>Пример 3
+<a id="example-3" class="xliff"></a>
+## Пример 3
 В примере ниже показано, как настроить локальную группу TigerTeamAdmins на сервере TigerTeamSource.Contoso.Com, чтобы она не содержала определенную учетную запись домена Contoso\JerryG.  
 
 ```powershell
@@ -109,3 +112,4 @@ Configuration SecureTigerTeamSrouce
   }
 }
 ```
+

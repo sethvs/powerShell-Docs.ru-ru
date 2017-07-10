@@ -1,18 +1,15 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Правила авторизации и средства безопасности Windows PowerShell Web Access"
-ms.technology: powershell
-ms.openlocfilehash: f2ed4355536ed92048dde66617d36d36958fd75f
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 706830f618173879185f5b84570fdc7782434d59
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Правила авторизации и средства безопасности Windows PowerShell Web Access
+<a id="authorization-rules-and-security-features-of-windows-powershell-web-access" class="xliff"></a>
+# Правила авторизации и средства безопасности Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -197,7 +194,8 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 </tbody>
 </table>
 
-#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
+<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
+#### Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -221,7 +219,8 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**.
 
-#### <a name="to-remove-an-authorization-rule"></a>Удаление правила авторизации
+<a id="to-remove-an-authorization-rule" class="xliff"></a>
+#### Удаление правила авторизации
 
 1.  Если сеанс Windows PowerShell еще не открыт, см. шаг 1 процедуры [Добавление неограничивающего правила авторизации](#BKMK_arar) в этом разделе.
 

@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: psget_update scriptfileinfo
-ms.technology: powershell
-ms.openlocfilehash: 7e71e2cbd5ce5bad5899e40f077bf16050dcd763
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Update-ScriptFileInfo
+ms.openlocfilehash: 3af12d2754b7b3c94ac63db8ca6a564c924a2bde
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="update-scriptfileinfo"></a>Update-ScriptFileInfo
+<a id="update-scriptfileinfo" class="xliff"></a>
+# Update-ScriptFileInfo
 
 Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Update-ScriptFileInfo обновляет информацию для сценария.
 - Командлет Update-ScriptFileInfo обновляет метаданные файла сценария только в том случае, если он был создан с помощью командлета New-ScriptFileInfo или с допустимым комментарием PSScriptInfo.
@@ -25,16 +24,19 @@ translationtype: HT
 - Если указан параметр -Force, попробуйте добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 - Если после добавления метаданных сценария в существующий файл командлет Test-ScriptFileInfo завершается с ошибками анализа и возникает ошибка наподобие "не удалось добавить метаданные к существующему файлу", то можно использовать командлет New-ScriptFileInfo, чтобы добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Update-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619793)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 # Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -48,7 +50,8 @@ Version Name Author Description
 ```
 
 
-### <a name="adding-the-script-metadata-to-the-existing-script-file"></a>Добавление метаданных сценария в существующий файл сценария
+<a id="adding-the-script-metadata-to-the-existing-script-file" class="xliff"></a>
+### Добавление метаданных сценария в существующий файл сценария
 
 ```powershell
 PS C:\WINDOWS\system32> New-ScriptFileInfo -Description "Script file description." -PassThru

@@ -1,21 +1,22 @@
 ---
-title: "Ресурс nxGroup в DSC для Linux"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 2139e4462c0568c30b118ef6cb3ceef1717b52e6
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс nxGroup в DSC для Linux"
+ms.openlocfilehash: fcd1dfd3110b1358ed7ef9ca8d57154186b271f6
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-for-linux-nxgroup-resource"></a>Ресурс nxGroup в DSC для Linux
+<a id="dsc-for-linux-nxgroup-resource" class="xliff"></a>
+# Ресурс nxGroup в DSC для Linux
 
 Ресурс **nxGroup** в DSC PowerShell предоставляет механизм управления локальными группами на узле Linux.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```powershell
 nxGroup <string> #ResourceName
@@ -30,7 +31,8 @@ nxGroup <string> #ResourceName
 
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -42,7 +44,8 @@ nxGroup <string> #ResourceName
 | PreferredGroupID| По возможности задает в качестве идентификатора группы указанное значение. Если этот идентификатор группы сейчас используется, выбирается следующий доступный идентификатор группы.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В следующем примере удостоверяется, что пользователь monuser существует и является членом группы DBusers.
 

@@ -1,36 +1,37 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_систаксис_поиска"
-ms.technology: powershell
-ms.openlocfilehash: 36b551cd6576b1d2a9ca696f2bfdab570ea2523f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 409ae607557af760f9cec4e3c54f39e51b5fac18
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="gallery-search-syntax"></a>Синтаксис поиска по коллекции
+<a id="gallery-search-syntax" class="xliff"></a>
+# Синтаксис поиска по коллекции
 
 Коллекция PowerShell содержит текстовое окно поиска, где можно использовать слова, фразы и выражения с ключевыми словами, чтобы сузить результаты поиска.
 
-## <a name="search-by-keywords"></a>Поиск по ключевым словам
+<a id="search-by-keywords" class="xliff"></a>
+## Поиск по ключевым словам
 
     dsc azure sql
 
 Поисковая система пытается показать соответствующие документы, содержащие все три ключевые слова.
 
-## <a name="search-using-phrases-and-keywords"></a>Поиск с использованием ключевых слов и фраз
+<a id="search-using-phrases-and-keywords" class="xliff"></a>
+## Поиск с использованием ключевых слов и фраз
 
     "azure sql" deployment
 
 При вводе фразы, заключенной в кавычки (""), выполняется поиск конкретной фразы, а не отдельных ключевых слов.
 Соответствующие документы обычно содержат точную фразу azure sql, включая варианты (с другим регистром букв, например Azure SQL), а также обычно содержат слово "развертывание".
 
-## <a name="filtering-on-fields"></a>Фильтрация по полям
+<a id="filtering-on-fields" class="xliff"></a>
+## Фильтрация по полям
 
 Вы можете выполнять поиск конкретного идентификатора элемента (ID, Id или id) или других полей, указывая перед условиями поиска имя поля.
 
@@ -38,7 +39,8 @@ translationtype: HT
 
 [В чем отличие между идентификатором и заголовком? Идентификатор — это имя, используемое в консоли. Заголовок — это то, что отображается в верхней части страницы элемента в результатах поиска.]
 
-## <a name="examples"></a>Примеры
+<a id="examples" class="xliff"></a>
+## Примеры
 
     ID:"PSReadline"
     id:"AzureRM.Profile"

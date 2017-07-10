@@ -1,4 +1,16 @@
-# <a name="cryptographic-message-syntax-cms-cmdlets"></a>Командлеты Cryptographic Message Syntax (CMS)
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 9556f0d9a12807cbfe38aaade6798088f051596d
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="cryptographic-message-syntax-cms-cmdlets" class="xliff"></a>
+# Командлеты Cryptographic Message Syntax (CMS)
 
 Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652).
 
@@ -82,3 +94,4 @@ Hello World
 ```powershell
 dir -DocumentEncryptionCert
 ```
+

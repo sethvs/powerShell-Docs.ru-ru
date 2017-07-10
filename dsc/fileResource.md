@@ -1,17 +1,17 @@
 ---
-title: "Ресурс File в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: ba625f5130e806b3b8e14a0f6ed91fd5a1aabc54
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс File в DSC"
+ms.openlocfilehash: f16bfbc31489ef7d1b0e5e4ec3a4f30069c24c79
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-file-resource"></a>Ресурс File в DSC
+<a id="dsc-file-resource" class="xliff"></a>
+# Ресурс File в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -20,7 +20,8 @@ translationtype: HT
 >**Примечание**. Если свойство **MatchSource** имеет значение **$false** (значение по умолчанию), копируемое содержимое будет кэшироваться при первом применении конфигурации. 
 >При последующем применении конфигурации файлы и папки в пути, указанном в параметре **SourcePath**, не будут проверяться на наличие обновлений. Если вы хотите, чтобы файлы и папки в **SourcePath** проверялись на наличие обновлений при каждом применении конфигурации, установите для свойства **MatchSource** значение **$true**. 
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 ```
 File [string] #ResourceName
 {
@@ -39,7 +40,8 @@ File [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -56,7 +58,8 @@ File [string] #ResourceName
 | Type| Указывает, является ли настраиваемый ресурс каталогом или файлом. Если выбрано значение Directory, то ресурс является каталогом, а если значение File, то файлом. Значение по умолчанию — File.| 
 | MatchSource| Если используется значение по умолчанию __$false__, все файлы в источнике (например, файлы A, B и C) добавляются в папку назначения при первом применении конфигурации. Если в источник добавляется новый файл (D), он не будет добавлен в папку назначения даже при последующем повторном применении конфигурации. Если используется значение __$true__, при каждом применении конфигурации в папку назначения будут добавляться все найденные новые файлы (в нашем примере это файл D). Значение по умолчанию — **$false**.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В представленном ниже примере показано, как использовать ресурс файла, чтобы проверить наличие каталога `C:\Users\Public\Documents\DSCDemo\DemoSource` (вместе со всеми подкаталогами) с исходного компьютера (например, опрашивающего сервера) на целевом узле. Кроме того, по завершении настройки в журнал записывается сообщение и указывается оператор, гарантирующий запуск операции проверки файла перед операцией записи в журнал.
 

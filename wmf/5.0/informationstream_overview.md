@@ -1,4 +1,16 @@
-# <a name="information-stream"></a>Поток информации
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 4ccbdcc0eb3cd07b46ab51b63689fe21873cdd7e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="information-stream" class="xliff"></a>
+# Поток информации
 
 Теперь для передачи структурированных данных между сценарием и его узлом можно использовать новый поток структурированной информации. Командлет **Write-Host** также был изменен для передачи выходных данных в поток информации, где их можно собрать или отключить. Новый командлет **Write-Information** (вместе с соответствующим API WriteInformation), используемый с общими параметрами **-InformationVariable** и **-InformationAction**, обладает повышенной гибкостью и расширенными возможностями.
 
@@ -112,3 +124,4 @@ ProcessId       : 4008
 NativeThreadId  : 2276
 ManagedThreadId : 14
 ```
+

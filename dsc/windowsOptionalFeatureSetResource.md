@@ -1,17 +1,17 @@
 ---
-title: "Ресурс DSC WindowsOptionalFeatureSet"
-ms.date: 2016-05-24
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 1fab04dfcd4ce927bbe526b93c826cf3749a42a5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс DSC WindowsOptionalFeatureSet"
+ms.openlocfilehash: 3bf6a993d0ec9ce71c1e9222ddaa3bb429accb15
+ms.sourcegitcommit: 79e8f03afb8d0b0bb0a167e56464929b27f51990
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/26/2017
 ---
-# <a name="dsc-windowsoptionalfeatureset-resource"></a>Ресурс DSC WindowsOptionalFeatureSet
+<a id="dsc-windowsoptionalfeatureset-resource" class="xliff"></a>
+# Ресурс DSC WindowsOptionalFeatureSet
 
 > Область применения: Windows PowerShell 5.0
 
@@ -19,13 +19,14 @@ translationtype: HT
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких дополнительных компонентов Windows.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 WindowsOptionalFeature [string] #ResourceName
 {
     Name = [string[]]
-    [ Ensure = [string] { Absent | Present }  ]
+    [ Ensure = [string] { Enable | Disable }  ]
     [ Source = [string] ] 
     [ RemoveFilesOnDisable = [bool] ]  
     [ LogPath = [string] ]
@@ -36,12 +37,13 @@ WindowsOptionalFeature [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имена компонентов, которые необходимо включить или отключить.| 
-| Ensure| Указывает, включены ли компоненты. Чтобы включить компоненты, установите это свойство равным Present, чтобы отключить — равным Absent.|
+| Ensure| Указывает, включены ли компоненты. Чтобы включить компоненты, установите для этого свойства значение "Включить", чтобы отключить — значение "Отключить".|
 | Источник| Не реализовано.|
 | NoWindowsUpdateCheck| Указывает, обращается ли система DISM к Центру обновления Windows при поиске исходных файлов для включения компонентов. Если задано значение $true, система DISM не обращается к Центру обновления Windows.|
 | RemoveFilesOnDisable| Задайте значение **$true**, чтобы удалить все файлы, связанные с компонентами, при их отключении (то есть когда свойству **Ensure** присваивается значение Absent).|

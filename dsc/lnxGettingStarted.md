@@ -1,28 +1,29 @@
 ---
-title: "Начало работы с настройкой требуемого состояния (DSC) для Linux"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: c585dc929e85a404aecfb1e9f06daf2dfaf21832
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Начало работы с настройкой требуемого состояния (DSC) для Linux"
+ms.openlocfilehash: 2d4276a0ffcb4fd7b872cbc4771f86cb850c0b83
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Начало работы с настройкой требуемого состояния (DSC) для Linux
+<a id="get-started-with-desired-state-configuration-dsc-for-linux" class="xliff"></a>
+# Начало работы с настройкой требуемого состояния (DSC) для Linux
 
 В этом разделе объясняется, как приступить к работе с настройкой требуемого состояния PowerShell (DSC) для Linux. Общие сведения о службе настройки требуемого состояния см. в разделе [Начало работы со службой настройки требуемого состояния Windows PowerShell](overview.md).
 
-## <a name="supported-linux-operation-system-versions"></a>Поддерживаемые версии операционной системы Linux
+<a id="supported-linux-operation-system-versions" class="xliff"></a>
+## Поддерживаемые версии операционной системы Linux
 
 DSC для Linux поддерживает следующие версии операционной системы Linux:
 - CentOS 5, 6 и 7 (x86 и x64)
 - Debian GNU/Linux 6 и 7 (x86 и x64)
 - Oracle Linux 5, 6 и 7 (x86 и x64)
 - Red Hat Enterprise Linux Server 5, 6 и 7 (x86 и x64)
-- SUSE Linux Enterprise Server 10, 11 и 12 (x86 и x64)
+- SUSE Linux Enterprise Server 10, 11 и 12 (x86 и x64)
 - Ubuntu Server 12.04 LTS и 14.04 LTS (x86 и x64)
 
 Ниже указано, какие зависимости пакетов необходимы DSC для Linux.
@@ -36,11 +37,13 @@ DSC для Linux поддерживает следующие версии опе
 | ctypes| Библиотека Python CTypes| Должна соответствовать версии Python| 
 | libcurl| Библиотека HTTP-клиентов cURL| 7.15.1| 
 
-## <a name="installing-dsc-for-linux"></a>Установка DSC для Linux
+<a id="installing-dsc-for-linux" class="xliff"></a>
+## Установка DSC для Linux
 
 Перед установкой DSC для Linux необходимо установить [открытую инфраструктуру управления (OMI)](https://collaboration.opengroup.org/omi/).
 
-### <a name="installing-omi"></a>Установка OMI
+<a id="installing-omi" class="xliff"></a>
+### Установка OMI
 
 Настройка требуемого состояния для Linux требует наличия CIM-сервера открытой инфраструктуры управления (OMI) версии 1.0.8.1. OMI можно загрузить из Open Group: [Открытая инфраструктура управления (OMI)](https://collaboration.opengroup.org/omi/).
 
@@ -52,7 +55,8 @@ DSC для Linux поддерживает следующие версии опе
 
 `# sudo rpm -Uvh omiserver-1.0.8.ssl_100.rpm`
 
-### <a name="installing-dsc"></a>Установка DSC
+<a id="installing-dsc" class="xliff"></a>
+### Установка DSC
 
 DSC для Linux можно скачать [здесь](https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/latest). 
 
@@ -65,11 +69,13 @@ DSC для Linux можно скачать [здесь](https://github.com/Micro
 `# sudo rpm -Uvh dsc-1.0.0-254.ssl_100.x64.rpm`
 
 
-## <a name="using-dsc-for-linux"></a>Использование DSC для Linux
+<a id="using-dsc-for-linux" class="xliff"></a>
+## Использование DSC для Linux
 
 В следующих разделах описывается создание и запуск конфигураций DSC на компьютерах Linux.
 
-### <a name="creating-a-configuration-mof-document"></a>Создание MOF-документа конфигурации
+<a id="creating-a-configuration-mof-document" class="xliff"></a>
+### Создание MOF-документа конфигурации
 
 На компьютерах Linux (как и на компьютерах Windows) для создания конфигурации используется ключевое слово конфигурации Windows PowerShell. Следующие шаги описывают создание документа конфигурации для компьютера Linux с использованием Windows PowerShell.
 
@@ -105,7 +111,8 @@ Configuration ExampleConfiguration{
 ExampleConfiguration -OutputPath:"C:\temp" 
 ```
 
-### <a name="push-the-configuration-to-the-linux-computer"></a>Передача конфигурации на компьютер Linux
+<a id="push-the-configuration-to-the-linux-computer" class="xliff"></a>
+### Передача конфигурации на компьютер Linux
 
 Документы конфигурации (MOF-файлы) можно принудительно отправить на компьютер Linux с помощью командлета [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). Чтобы выполнить этот командлет, как и командлеты [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx или [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx), удаленно на компьютере Linux, необходимо использовать CIMSession. Для создания CIMSession на компьютере Linux служит командлет [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx).
 
@@ -133,11 +140,13 @@ $Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Aut
 
 `Start-DscConfiguration -Path:"C:\temp" -CimSession:$Sess -Wait -Verbose`
 
-### <a name="distribute-the-configuration-with-a-pull-server"></a>Распространение конфигурации через опрашивающий сервер
+<a id="distribute-the-configuration-with-a-pull-server" class="xliff"></a>
+### Распространение конфигурации через опрашивающий сервер
 
 Конфигурации можно распространять на компьютер Linux через опрашивающий сервер, как и в случае компьютеров с Windows. Рекомендации по работе с опрашивающим сервером см. в статье [Опрашивающие серверы конфигурации требуемого состояния Windows PowerShell](pullServer.md). Дополнительные сведения и ограничения, связанные с использованием компьютеров Linux с опрашивающим сервером, см. в заметках о выпуске настройки требуемого состояния для Linux.
 
-### <a name="working-with-configurations-locally"></a>Локальная работа с конфигурациями
+<a id="working-with-configurations-locally" class="xliff"></a>
+### Локальная работа с конфигурациями
 
 DSC для Linux включает сценарии работы с конфигурацией на локальном компьютере Linux. Эти сценарии расположены в `/opt/microsoft/dsc/Scripts` и включают следующее:
 * GetDscConfiguration.py
@@ -176,7 +185,8 @@ DSC для Linux включает сценарии работы с конфиг�
 
 `# sudo ./SetDscLocalConfigurationManager.py –configurationmof /tmp/localhost.meta.mof`
 
-## <a name="powershell-desired-state-configuration-for-linux-log-files"></a>Настройка требуемого состояния Windows PowerShell для файлов журнала Linux
+<a id="powershell-desired-state-configuration-for-linux-log-files" class="xliff"></a>
+## Настройка требуемого состояния Windows PowerShell для файлов журнала Linux
 
 Для сообщений DSC для Linux формируются следующие файлы журналов:
 

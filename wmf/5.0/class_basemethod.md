@@ -1,4 +1,16 @@
-# <a name="call-base-class-method"></a>Вызов метода базового класса
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 28da6d12d3f7a59777425e1cc4531a609a793ddb
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="call-base-class-method" class="xliff"></a>
+# Вызов метода базового класса
 
 Можно переопределить существующие методы в подклассах. Для этого объявите методы, используя те же имя и сигнатуру:
 
@@ -46,3 +58,4 @@ $list = [MyIntList]::new()
 $list.Add(100)
 $list[0] # return 200
 ```
+

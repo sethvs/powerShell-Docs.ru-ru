@@ -1,18 +1,17 @@
 ---
-manager: carmonm
-ms.topic: article
+ms.date: 2017-06-12
 author: rpsqrd
-ms.author: ryanpu
-ms.prod: powershell
-keywords: powershell,cmdlet,jea
-ms.date: 2017-03-07
+ms.topic: conceptual
+keywords: "jea,powershell,безопасность"
 title: "Общие сведения о Just Enough Administration"
-ms.technology: powershell
-ms.openlocfilehash: 2206ccbbcf5996b1bf8db9a46acab2f18f8020dd
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.openlocfilehash: a664a8ad44916f8112f7ef7bac145a54b83f126d
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="just-enough-administration"></a>Just Enough Administration (JEA)
+<a id="just-enough-administration" class="xliff"></a>
+# Just Enough Administration (JEA)
 
 Just Enough Administration (JEA) — это технология безопасности, позволяющая делегировать администрирование в отношении всего, чем можно управлять через PowerShell.
 JEA позволяет сделать следующее:
@@ -38,7 +37,8 @@ JEA помогает решить эту проблему, позволяя пр
 Более того, если в сеансе JEA настроено использование временных привилегированных виртуальных учетных записей, ваши администраторы DNS смогут подключаться к серверу с помощью учетных данных *без административных полномочий* и при этом выполнять команды, для которых обычно требуются права администратора.
 Эта возможность позволяет удалить пользователей из ролей локальных администраторов и администраторов домена с обширными правами доступа, а также детально настроить операции, доступные им на каждом компьютере.
 
-## <a name="get-started-with-jea"></a>Приступая к работе с JEA
+<a id="get-started-with-jea" class="xliff"></a>
+## Приступая к работе с JEA
 
 Вы можете начать использовать JEA уже сегодня на любом компьютере под управлением Windows Server 2016 или Windows 10.
 Кроме того, JEA можно запустить в более старых операционных системах с обновлением Windows Management Framework.
@@ -52,6 +52,8 @@ JEA помогает решить эту проблему, позволяя пр
 - [Вопросы безопасности](security-considerations.md): рекомендации по безопасности и влияние параметров конфигурации JEA.
 - [Аудит и отчеты для JEA](audit-and-report.md): сведения об аудите и ведении отчетов для конечных точек JEA.
 
-## <a name="samples-and-dsc-resource"></a>Примеры и ресурсы DSC
+<a id="samples-and-dsc-resource" class="xliff"></a>
+## Примеры и ресурсы DSC
 
 Примеры конфигураций JEA и ресурсов JEA DSC см. в [репозитории JEA в GitHub](https://github.com/PowerShell/JEA).
+

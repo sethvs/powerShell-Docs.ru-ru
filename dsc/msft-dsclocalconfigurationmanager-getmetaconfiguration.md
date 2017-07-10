@@ -1,21 +1,22 @@
 ---
-title: "Метод GetMetaConfiguration класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 4662bfed62fce47be7d42a083ad5a7be801e6ff1
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Метод GetMetaConfiguration класса MSFT_DSCLocalConfigurationManager"
+ms.openlocfilehash: 4f209014e9fde5841a9bce743f5364e6677d1e41
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="getmetaconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод GetMetaConfiguration класса MSFT_DSCLocalConfigurationManager
+<a id="getmetaconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# Метод GetMetaConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Получает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.
 
-<a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+Синтаксис
 ------
 
 ```mof
@@ -24,29 +25,34 @@ uint32 GetMetaConfiguration(
 );
 ```
 
-<a name="parameters"></a>Параметры
+<a id="parameters" class="xliff"></a>
+Параметры
 ----------
 
 *MetaConfiguration* \[out\]  
 Выходные данные содержат встроенный экземпляр класса **MSFT_DSCMetaConfiguration**, который определяет параметры.
 
-## <a name="return-value"></a>Возвращаемое значение
+<a id="return-value" class="xliff"></a>
+## Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Замечания
+<a id="remarks" class="xliff"></a>
+## Замечания
 
 Это статический метод.
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

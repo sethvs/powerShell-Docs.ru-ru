@@ -1,21 +1,22 @@
 ---
-title: "Метод ResourceSet класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: cbc499f293aad941d40fcb720ef53e832c3b1ea8
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Метод ResourceSet класса MSFT_DSCLocalConfigurationManager"
+ms.openlocfilehash: 9cd9c1b3f58a5862db6c4eea0488423b8dfe7310
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="resourceset-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
+<a id="resourceset-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
 
 Напрямую вызывает метод **Set** ресурса DSC.
 
-<a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+Синтаксис
 ------
 
 ```mof
@@ -27,7 +28,8 @@ uint32 ResourceSet(
 );
 ```
 
-<a name="parameters"></a>Параметры
+<a id="parameters" class="xliff"></a>
+Параметры
 ----------
 
 *ResourceType* \[in\]  
@@ -42,23 +44,27 @@ uint32 ResourceSet(
 *RebootRequired* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
 
-## <a name="return-value"></a>Возвращаемое значение
+<a id="return-value" class="xliff"></a>
+## Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Замечания
+<a id="remarks" class="xliff"></a>
+## Замечания
 
 Это статический метод.
 
-## <a name="requirements"></a>Требования
+<a id="requirements" class="xliff"></a>
+## Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

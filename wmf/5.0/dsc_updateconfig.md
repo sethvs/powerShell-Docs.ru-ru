@@ -1,4 +1,16 @@
-# <a name="on-demand-pull-of-dsc-configurations"></a>Извлечение по запросу для конфигураций DSC
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 410fa4b6c6d3e2708da78414cbb9b80dd3ca1387
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="on-demand-pull-of-dsc-configurations" class="xliff"></a>
+# Извлечение по запросу для конфигураций DSC
 
 Новый командлет Update-DscConfiguration активирует извлечение с опрашивающих серверов, определенных в метаконфигурации. Такое поведение часто называется "оперативным извлечением". 
 
@@ -31,3 +43,4 @@ Update-DscConfiguration     -CimSession <CimSession[]>
                             [-Confirm] 
                             [<CommonParameters>]
 ```
+

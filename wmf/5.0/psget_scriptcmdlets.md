@@ -1,6 +1,19 @@
-# <a name="powershellget-cmdlets-for-script-management"></a>Командлеты PowerShellGet для управления сценариями
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 2d56df459a4e09a16ab16c02f7ca2744c779206f
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="powershellget-cmdlets-for-script-management" class="xliff"></a>
+# Командлеты PowerShellGet для управления сценариями
 
-## <a name="find-script-cmdlet"></a>Командлет Find-Script
+<a id="find-script-cmdlet" class="xliff"></a>
+## Командлет Find-Script
 Командлет Find-Script позволяет обнаруживать файлы сценариев по разным условиям, таким как имя, тег, фильтр, имя команды, диапазон версий, точная версия, все версии, включая зависимости, в отдельных или всех зарегистрированных репозиториях.
 
 Пример использования:
@@ -139,7 +152,8 @@ Workflow {Test-WorkflowFromScript\_Fabrikam-ClientScript}
 Command {Test-FunctionFromScript\_Fabrikam-ClientScript, Test-WorkflowFromScript\_Fabrikam-ClientScript}
 ```
 
-## <a name="save-script-cmdlet"></a>Командлет Save-Script
+<a id="save-script-cmdlet" class="xliff"></a>
+## Командлет Save-Script
 Командлет Save-Script позволяет просмотреть файл сценария, сохранив его в указанном расположении.
 ```powershell
 \# Save a script file to the specified location for the script analysis
@@ -152,7 +166,8 @@ Version Name Author Description
 1.5 Fabrikam-ClientScript manikb Description for the Fabrikam-ClientScript script
 ```
 
-## <a name="install-script-and-get-installedscript-cmdlets"></a>Командлеты Install-Script и Get-InstalledScript
+<a id="install-script-and-get-installedscript-cmdlets" class="xliff"></a>
+## Командлеты Install-Script и Get-InstalledScript
 Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области. По умолчанию сценарии устанавливаются в область AllUsers. Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.
 
 Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH. Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script. Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.
@@ -333,7 +348,8 @@ Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
 
-## <a name="update-script-cmdlet"></a>Командлет Update-Script
+<a id="update-script-cmdlet" class="xliff"></a>
+## Командлет Update-Script
 Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
@@ -375,7 +391,8 @@ Version Name Type Repository Description
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
 
-## <a name="uninstall-script-cmdlet"></a>Командлет Uninstall-Script
+<a id="uninstall-script-cmdlet" class="xliff"></a>
+## Командлет Uninstall-Script
 ```powershell
 Uninstall-Script cmdlet lets you to uninstall the installed script files.
 Get-InstalledScript | Uninstall-Script -WhatIf
@@ -412,8 +429,9 @@ At C:\\Program Files\\WindowsPowerShell\\Modules\\PowerShellGet\\1.0.0.1\\PSModu
 + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
 ```
 
-## <a name="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets"></a>Командлеты New-ScriptFileInfo и Test-ScriptFileInfo
-Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. Командлет Test-ScriptFileInfo позволяет проверить и получить метаданные файла сценария.
+<a id="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets" class="xliff"></a>
+## Командлеты New-ScriptFileInfo и Test-ScriptFileInfo
+Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. Командлет Test-ScriptFileInfo позволяет проверить и получить метаданные файла сценария.
 ```powershell
 \# Create a new script file with minimum required metadata values
 New-ScriptFileInfo -Path C:\\ScriptSharingDemo\\Demo-Script.ps1 -Description "Script file description goes here"
@@ -564,7 +582,8 @@ DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
 
-## <a name="update-scriptfileinfo-cmdlet"></a>Командлет Update-ScriptFileInfo
+<a id="update-scriptfileinfo-cmdlet" class="xliff"></a>
+## Командлет Update-ScriptFileInfo
 Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.
 ```powershell
 \# Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -575,7 +594,8 @@ Version Name Author Description
 2.0 Demo-ScriptWithComplet... manikb my new script file
 ```
 
-## <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a>Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
+<a id="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support" class="xliff"></a>
+## Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
 Используйте командлеты Register-PSRepository/Set-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.
 ```powershell
 \# Register an GalleryINT repository with Scripts and Modules support
@@ -633,8 +653,9 @@ ScriptPublishLocation : https://MyGallery.com/api/v2/package/
 ProviderOptions : {}
 ```
 
-## <a name="publish-script-cmdlet"></a>Публикация сценарным командлетом Publish-Script
-Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д.
+<a id="publish-script-cmdlet" class="xliff"></a>
+## Публикация сценарным командлетом Publish-Script
+Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д.
 ```powershell
 \# Publish the really basic script file with required metadata
 Publish-Script -Path C:\\ScriptSharingDemo\\Demo-Script.ps1 -Repository GalleryINT -NuGetApiKey cad91af7-a49c-4026-9570-a4c16564e785 -Verbose

@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_нахождение_команды"
-ms.technology: powershell
-ms.openlocfilehash: 99091130ea89023495e5e3aacafb292f67f2db30
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Find-Command
+ms.openlocfilehash: f867f12b1c6efad30a04581c6f36c5a77a2fb2ae
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="find-command"></a>Find-Command
+<a id="find-command" class="xliff"></a>
+# Find-Command
 
 Ищет команды PowerShell в модулях.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 Командлет Find-Command ищет команды PowerShell, такие как командлеты, псевдонимы, функции и рабочие процессы. Find-Command ищет их в модулях из зарегистрированных репозиториев.
 Для каждой команды, им обнаруженной, он возвращает объект PSGetCommandInfo. Вы можете передать объект PSGetCommandInfo в командлет Install-Module для установки модуля, содержащего конкретную команду.
 
@@ -30,16 +29,19 @@ translationtype: HT
 - Find-Command позволяет фильтровать язык поиска для определенного репозитория при помощи параметра -Filter.
 - Find-Command может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Command -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Find-Command](http://go.microsoft.com/fwlink/?LinkId=733636)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 ```powershell
 
 # Find a specific command

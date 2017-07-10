@@ -1,21 +1,19 @@
 ---
-title: "Раздел реестра DSCAutomationHostEnabled"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: eb5889668136def1b47a4999374711460a08179c
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Раздел реестра DSCAutomationHostEnabled"
+ms.openlocfilehash: e47c929b366f93738343eabc431aab5a4428352d
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/12/2017
 ---
 >Область применения: Windows PowerShell 5.0
 
-# <a name="dscautomationhostenabled-registry-key"></a>Раздел реестра DSCAutomationHostEnabled
+<a id="dscautomationhostenabled-registry-key" class="xliff"></a>
+# Раздел реестра DSCAutomationHostEnabled
 
 DSC использует раздел реестра **DSCAutomationHostEnabled** в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System** для включения конфигурации компьютера при начальной загрузке.
 DSCAutomationHostEnabled поддерживает три режима:
@@ -26,7 +24,8 @@ DSCAutomationHostEnabled поддерживает три режима:
 1 | Включение настройки компьютера при загрузке системы. |
 2 | Включение настройки компьютера, только если DSC находится в состоянии ожидания или в текущем состоянии. Это значение по умолчанию. |
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 
 Пример использования этой функции для запуска конфигураций при начальной загрузке системы см. в разделе [Настройка виртуальных машин при начальной загрузке с помощью DSC](bootstrapDsc.md).
 

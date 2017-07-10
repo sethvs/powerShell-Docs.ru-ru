@@ -1,37 +1,39 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_скрипт_публикации"
-ms.technology: powershell
-ms.openlocfilehash: 2619738ba76ed3b3c84d1a77771531ebd6955d6f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Publish-Script
+ms.openlocfilehash: 0d2fd87645d2286e87e68198844adce8909739cb
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="publish-script"></a>Publish-Script
+<a id="publish-script" class="xliff"></a>
+# Publish-Script
 
 Rомандлет Publish-Script публикует указанный сценарий в коллекции в Интернете.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
-Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д. Параметр Force командлета Publish-Script обеспечивает начальную загрузку NuGet.exe без запроса подтверждения.
+Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д. Параметр Force командлета Publish-Script обеспечивает начальную загрузку NuGet.exe без запроса подтверждения.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Publish-Script -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Publish-Script](http://go.microsoft.com/fwlink/?LinkId=619788)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 # Publish the really basic script file with required metadata

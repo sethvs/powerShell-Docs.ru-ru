@@ -1,22 +1,23 @@
 ---
-title: "Начало работы с настройкой требуемого состояния PowerShell"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 3a59f76919c0a63f269ca587d358020825412be4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Начало работы с настройкой требуемого состояния PowerShell"
+ms.openlocfilehash: 403badd11749cfa5c6a5d07e1b537fa3a5f954da
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="getting-started-with-powershell-desired-state-configuration"></a>Начало работы с настройкой требуемого состояния PowerShell #
+<a id="getting-started-with-powershell-desired-state-configuration" class="xliff"></a>
+# Начало работы с настройкой требуемого состояния PowerShell #
 
 В этом руководстве описывается, как приступить к созданию документов настройки требуемого состояния PowerShell и применять их к компьютерам. Предполагается, что пользователь уже знаком с командлетами, модулями и компонентами PowerShell. 
 
 
-## <a name="create-a-configuration"></a>Создание конфигурации ##
+<a id="create-a-configuration" class="xliff"></a>
+## Создание конфигурации ##
 
 [**Конфигурации**](https://msdn.microsoft.com/en-us/powershell/dsc/configurations) — это документы, которые описывают среду. Среды состоят из "**узлов**", которые обычно представляют собой компьютеры или виртуальные машины. 
 
@@ -39,7 +40,8 @@ configuration MyFirstConfiguration
 
 }
 ```
-## <a name="parts-of-a-configuration"></a>Элементы конфигурации ##
+<a id="parts-of-a-configuration" class="xliff"></a>
+## Элементы конфигурации ##
 **Configuration** — это ключевое слово, добавленное в PowerShell 4.0. Оно означает особый вид компонентов PowerShell, используемых настройкой требуемого состояния. В этом примере компоненту присвоено имя myFirstConfiguration. 
 
 Следующая строка представляет собой оператор импорта, который аналогичен импорту модуля. Его мы обсудим позже.

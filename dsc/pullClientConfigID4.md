@@ -1,17 +1,17 @@
 ---
-title: "Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 730f2f26e2811996e79cf0073a4ef65cad390687
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0"
+ms.openlocfilehash: 19328018d276cddd0877869b0ec69c14c51e4b85
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
+<a id="setting-up-a-pull-client-using-configuration-id-in-powershell-40" class="xliff"></a>
+# Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -46,10 +46,12 @@ SimpleMetaConfigurationForPull -Output "."
 Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ```
 
-## <a name="configuration-id"></a>Идентификатор конфигурации
+<a id="configuration-id" class="xliff"></a>
+## Идентификатор конфигурации
 Сценарий заносит в свойство **ConfigurationID** LCM значение GUID, которое было создано специально для этой цели (создать GUID можно, используя командлет **New-Guid**). Идентификатор **ConfigurationID** — это то, что LCM использует для поиска соответствующей конфигурации на опрашивающем сервере. MOF-файл конфигурации на опрашивающем сервере должен иметь имя `ConfigurationID.mof`, где *ConfigurationID* является значением свойства **ConfigurationID** LCM целевого узла.
 
-## <a name="pulling-from-an-smb-server"></a>Опрос с SMB-сервера
+<a id="pulling-from-an-smb-server" class="xliff"></a>
+## Опрос с SMB-сервера
 
 Если опрашивающий сервер настроен как файловый ресурс SMB, а не веб-служба, укажите **DscFileDownloadManager** вместо **WebDownLoadManager**.
 **DscFileDownloadManager** принимает свойство **SourcePath** вместо **ServerUrl**. Следующий сценарий настраивает LCM для опроса конфигураций из общего ресурса SMB "SmbDscShare" на сервере "CONTOSO-SERVER".
@@ -72,7 +74,8 @@ Configuration SimpleMetaConfigurationForPull
 SimpleMetaConfigurationForPull -Output "."
 ```
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
 - [Настройка опрашивающего SMB-сервера DSC](pullServerSMB.md)

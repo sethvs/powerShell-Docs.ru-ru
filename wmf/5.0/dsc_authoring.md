@@ -1,4 +1,16 @@
-# <a name="authoring-improvements-using-powershell-ise"></a>Усовершенствования создания с помощью интегрированной среды сценариев PowerShell
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 555e01e88647b40717417360fb74bb6554a9c122
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="authoring-improvements-using-powershell-ise" class="xliff"></a>
+# Усовершенствования создания с помощью интегрированной среды сценариев PowerShell
 
 Создание конфигураций DSC в интегрированной среде сценариев PowerShell стало гораздо проще благодаря следующим усовершенствованиям:
 
@@ -8,3 +20,4 @@
 - Улучшенное заполнение нажатием клавиши TAB для значений свойств ресурсов.
 
 **Примечание.** Прежде чем использовать сочетание клавиш CTRL+ПРОБЕЛ для вывода списка параметров, необходимо иметь пустую строку для значений свойств ресурсов. Нажатие клавиши **TAB** позволяет переключаться между параметрами.
+

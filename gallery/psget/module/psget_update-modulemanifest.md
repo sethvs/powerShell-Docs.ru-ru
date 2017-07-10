@@ -1,44 +1,47 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_обновление_манифеста_модуля"
-ms.technology: powershell
-ms.openlocfilehash: 85153872326c5af8f869bc2254040eca1a152f8b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Update-ModuleManifest
+ms.openlocfilehash: ce3f6f173535d98648eb51adb1dbf84764e4f434
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="update-modulemanifest"></a>Update-ModuleManifest
+<a id="update-modulemanifest" class="xliff"></a>
+# Update-ModuleManifest
 Обновляет файл манифеста модуля.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Update-ModuleManifest обновляет файл манифеста модуля (PSD1).
 
-### <a name="notes"></a>Заметки
+<a id="notes" class="xliff"></a>
+### Заметки
     - DscResourcesToExport поддерживается только в последней версии PowerShell, 5.0. При использовании предыдущей версии PowerShell обновить поле нельзя.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Update-ModuleManifest -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Update-ModuleManifest](http://go.microsoft.com/fwlink/?LinkId=619311)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 Этот новый командлет используется для обновления файла манифеста с помощью входных значений свойств. Он принимает все те же параметры, что и New-ModuleManifest.
 
-Нам известно, что многие создатели модулей стремятся указать "\*" в экспортированных значениях, таких как FunctionsToExport, CmdletsToExport и т. д. Во время публикации модуля в коллекции PowerShell неуказанные функции и команды будут занесены неправильно. Поэтому мы рекомендуем авторам модулей обновить манифесты с использованием соответствующих значений.
+Нам известно, что многие создатели модулей стремятся указать "\*" в экспортированных значениях, таких как FunctionsToExport, CmdletsToExport и т. д. Во время публикации модуля в коллекции PowerShell неуказанные функции и команды будут занесены неправильно. Поэтому мы рекомендуем авторам модулей обновить манифесты с использованием соответствующих значений.
 
-При наличии модулей, имеющих экспортированные свойства, Update-ModuleManifest заполнит указанный файл манифеста данными из экспортированных функций, командлетов, переменных и т. п:
+При наличии модулей, имеющих экспортированные свойства, Update-ModuleManifest заполнит указанный файл манифеста данными из экспортированных функций, командлетов, переменных и т. п:
 ```powershell
 Get-Content -Path "C:\Temp\PSGTEST-TestPackageMetadata\2.5\PSGTEST-TestPackageMetadata.psd1"
 @{

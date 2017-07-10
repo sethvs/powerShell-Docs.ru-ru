@@ -1,4 +1,16 @@
-# <a name="clipboard-cmdlets"></a>Командлеты Clipboard
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 8d5f8cc8c85d584b195483e464e878857629a78e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="clipboard-cmdlets" class="xliff"></a>
+# Командлеты Clipboard
 Командлеты**Get-Clipboard** и **Set-Clipboard** упрощают передачу содержимого в сеанс Windows PowerShell и из него. Например, если скопировать три файла с помощью проводника Windows в буфер обмена (скажем, выбрав их и нажав клавишу `ctrl-c`), можно затем легко получить содержимое буфера обмена в виде списка файлов:
 
 ```powershell 
@@ -19,3 +31,4 @@ Mode LastWriteTime Length Name
 
 
 Командлеты Clipboard поддерживают изображения, звуковые файлы, списки файлов и текст.
+

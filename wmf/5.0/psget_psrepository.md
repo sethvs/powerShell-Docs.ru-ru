@@ -1,4 +1,16 @@
-# <a name="register-a-powershell-repository"></a>Регистрация репозитория PowerShell
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 81ce13a082ad1d7a13ba5fd76a7595b55708f54e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="register-a-powershell-repository" class="xliff"></a>
+# Регистрация репозитория PowerShell
 Вы можете настроить работу PowerShellGet с внутренними репозиториями. Для этого были добавлены следующие компоненты.
 - Register-PSRepository: регистрирует репозиторий для текущего пользователя.
 - Unregister-PSRepository: удаляет зарегистрированный репозиторий для текущего пользователя.
@@ -31,3 +43,4 @@ Install-Module SomeModule
 \#Removing a repository
 Unregister-PSRepository DemoRepo
 ```
+

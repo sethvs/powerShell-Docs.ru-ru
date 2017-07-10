@@ -1,17 +1,17 @@
 ---
-title: "Прямой вызов методов ресурсов DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 97d97a36830088d6ee1296cda5310e087fc41893
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Прямой вызов методов ресурсов DSC"
+ms.openlocfilehash: ab00e66d526eda244500a41e450c56b0151274ee
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="calling-dsc-resource-methods-directly"></a>Прямой вызов методов ресурсов DSC
+<a id="calling-dsc-resource-methods-directly" class="xliff"></a>
+# Прямой вызов методов ресурсов DSC
 
 >Область применения: Windows PowerShell 5.0
 
@@ -23,7 +23,8 @@ translationtype: HT
 
 Ниже приведены примеры прямого вызова методов ресурсов:
 
-## <a name="ensure-a-file-is-present"></a>Проверка наличия файла
+<a id="ensure-a-file-is-present" class="xliff"></a>
+## Проверка наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Set -Property @{
@@ -32,7 +33,8 @@ $result = Invoke-DscResource -Name File -Method Set -Property @{
 $result | fl
 ```
 
-## <a name="test-that-a-file-is-present"></a>Тестирование наличия файла
+<a id="test-that-a-file-is-present" class="xliff"></a>
+## Тестирование наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Test -Property @{
@@ -41,7 +43,8 @@ $result = Invoke-DscResource -Name File -Method Test -Property @{
 $result | fl
 ```
 
-## <a name="get-the-contents-of-file"></a>Получение содержимого файла
+<a id="get-the-contents-of-file" class="xliff"></a>
+## Получение содержимого файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Get -Property @{
@@ -52,7 +55,8 @@ $result.ItemValue | fl
 
 >**Примечание**. Прямой вызов методов составного ресурса не поддерживается. Вместо этого вызывайте методы базовых ресурсов, входящих в составной ресурс.
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 - [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md) 
 - [Написание пользовательских ресурсов DSC с использованием классов PowerShell](authoringResourceClass.md)
 - [Отладка ресурсов DSC](debugResource.md)

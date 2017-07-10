@@ -1,23 +1,24 @@
 ---
-title: "Ресурс WindowsFeature в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 98c39d11122d26502723a302ebd7ad4cff0be35d
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс WindowsFeature в DSC"
+ms.openlocfilehash: a3433577a122f6c7e31360e094a089f6ceef77c2
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-windowsfeature-resource"></a>Ресурс WindowsFeature в DSC
+<a id="dsc-windowsfeature-resource" class="xliff"></a>
+# Ресурс WindowsFeature в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **WindowsFeature** в DSC Windows PowerShell предоставляет механизм добавления и удаления ролей и компонентов на целевом узле.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 WindowsFeature [string] #ResourceName
@@ -32,7 +33,8 @@ WindowsFeature [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -44,7 +46,8 @@ WindowsFeature [string] #ResourceName
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | Источник| Указывает расположение исходного файла для установки, если он необходим.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 ```powershell
 WindowsFeature RoleExample
 {

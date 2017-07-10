@@ -1,21 +1,22 @@
 ---
-title: "Ресурс nxUser в DSC для Linux"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 9d27299aca8dee3e0390c9c8fc900832eb7e960c
-ms.sourcegitcommit: b3724fac99e52c712b18c4effbb9ee13711d0238
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс nxUser в DSC для Linux"
+ms.openlocfilehash: d708edcee592835ce448752465125d451afbd45b
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-for-linux-nxuser-resource"></a>Ресурс nxUser в DSC для Linux
+<a id="dsc-for-linux-nxuser-resource" class="xliff"></a>
+# Ресурс nxUser в DSC для Linux
 
 Ресурс **nxUser** в DSC PowerShell предоставляет механизм управления локальными пользователями на узле Linux.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 nxUser <string> #ResourceName
@@ -34,7 +35,8 @@ nxUser <string> #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство |  Указывает имя учетной записи, для которой требуется обеспечить определенное состояние. | 
 |---|---|
@@ -49,7 +51,8 @@ nxUser <string> #ResourceName
 | GroupID| ИД основной группы пользователя.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — ResourceName, а его тип — ResourceType, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В следующем примере проверяется, что пользователь monuser существует и является членом группы DBusers.
 

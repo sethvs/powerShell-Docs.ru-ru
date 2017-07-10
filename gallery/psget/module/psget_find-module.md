@@ -1,22 +1,21 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_нахождение_модуля"
-ms.technology: powershell
-ms.openlocfilehash: b6fe3ffcbb366ee237acf0304ec4804b93e2b8ad
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Find-Module
+ms.openlocfilehash: 5c878a04d186f7f5970fba9e7f3cdb480cef21f6
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="find-module"></a>Find-Module
+<a id="find-module" class="xliff"></a>
+# Find-Module
 Находит в коллекции модули, соответствующие указанному условию.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 Командлет Find-Module обнаруживает в зарегистрированных репозиториях модули, которые отвечают заданным условиям.
 Для каждого найденного модуля Find-Module возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Module для установки этих модулей.
 
@@ -30,16 +29,19 @@ translationtype: HT
 - Find-Module позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-Module может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Find-Module](http://go.microsoft.com/fwlink/?LinkID=398574)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 ```powershell
 # Find a specific module
 Find-Module Azure

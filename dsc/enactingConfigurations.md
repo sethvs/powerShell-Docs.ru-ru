@@ -1,23 +1,24 @@
 ---
-title: "Применение конфигураций"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 7059d0a0ac3ad81353d1e758bc24fc236656c199
-ms.sourcegitcommit: 89e7ae30faff5f96641fc72764bdc76e0e257bc2
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Применение конфигураций"
+ms.openlocfilehash: db82788650186eb82f67b30b24cd45b719bbe314
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="enacting-configurations"></a>Применение конфигураций
+<a id="enacting-configurations" class="xliff"></a>
+# Применение конфигураций
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Настройку требуемого состояния PowerShell (DSC) можно применять двумя способами: в режиме принудительной отправки и в режиме опроса.
 
-## <a name="push-mode"></a>Режим принудительной отправки
+<a id="push-mode" class="xliff"></a>
+## Режим принудительной отправки
 
 ![Режим принудительной отправки](images/Push.png "Принципы работы")
 
@@ -28,7 +29,8 @@ translationtype: HT
 > __Примечание__. По умолчанию DSC выполняет конфигурацию в фоновом режиме. Для интерактивного выполнения конфигурации вызовите командлет [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) с параметром __-wait__.
 
 
-## <a name="pull-mode"></a>Режим опроса
+<a id="pull-mode" class="xliff"></a>
+## Режим опроса
 
 ![Режим запросов](images/Pull.png "Принципы работы")
 

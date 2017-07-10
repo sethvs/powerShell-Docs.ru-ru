@@ -1,18 +1,15 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Установка и использование Windows PowerShell Web Access"
-ms.technology: powershell
-ms.openlocfilehash: f2a908b670d1a0aba3ca0912aed0ff7e3c5bba1f
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: a860f7c22829da46f0458ea729fa0afd1fe4fb6f
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-#  <a name="install-and-use-windows-powershell-web-access"></a>Установка и использование Windows PowerShell Web Access
+<a id="install-and-use-windows-powershell-web-access" class="xliff"></a>
+#  Установка и использование Windows PowerShell Web Access
 
 Обновлено: 5 ноября 2013 г.
 
@@ -138,7 +135,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ------------------------------------------------------------------------
 
-#### <a name="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
+<a id="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets" class="xliff"></a>
+#### Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -225,7 +223,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 -   [Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS](#BKMK_gencert)
 
-#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication"></a>Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
+<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication" class="xliff"></a>
+#### Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -285,7 +284,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
     </tbody>
     </table>
 
-#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager"></a>Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
+<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager" class="xliff"></a>
+#### Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -352,7 +352,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
+<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
+#### Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -394,7 +395,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ------------------------------------------------------------------------
 
-#### <a name="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard"></a>Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
+<a id="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard" class="xliff"></a>
+#### Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
 
 1.  Если диспетчер серверов уже открыт, переходите к следующему шагу. Если диспетчер серверов еще не открыт, откройте его одним из следующих способов.
 
@@ -446,7 +448,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 -   
 
-#### <a name="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website"></a>Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
+<a id="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website" class="xliff"></a>
+#### Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -508,7 +511,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
         c:\windows\system32\icacls.exe $authorizationFile
 
-#### <a name="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate"></a>Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
+<a id="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate" class="xliff"></a>
+#### Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -586,7 +590,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
+<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
+#### Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -621,7 +626,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Для безопасной производственной среды следует всегда использовать действительный сертификат SSL, подписанный центром сертификации (ЦС). В этом разделе описано, как получить и установить действительный SSL-сертификат от центра сертификации.
 
-### <a name="to-configure-an-ssl-certificate-in-iis-manager"></a>Настройка SSL-сертификата в диспетчере служб IIS
+<a id="to-configure-an-ssl-certificate-in-iis-manager" class="xliff"></a>
+### Настройка SSL-сертификата в диспетчере служб IIS
 
 1.  В области дерева диспетчера служб IIS выберите сервер, на котором установлен компонент Windows PowerShell Web Access.
 

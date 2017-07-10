@@ -1,17 +1,17 @@
 ---
-title: "Ресурс User в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 0953000ba7930116679e4371f6acad5298725fdb
-ms.sourcegitcommit: 55b2457a19a2fa679fda8dc17a747ef21a98adc1
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс User в DSC"
+ms.openlocfilehash: a4e4e8af4fcfe5c997c460613174d8583261dedf
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-#<a name="dsc-user-resource"></a>Ресурс User в DSC#
+<a id="dsc-user-resource" class="xliff"></a>
+#Ресурс User в DSC
 
  
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -20,7 +20,8 @@ translationtype: HT
 Ресурс __User__ в DSC Windows PowerShell предоставляет механизм управления локальными учетными записями на целевом узле.
 
 
-##<a name="syntax"></a>Синтаксис##
+<a id="syntax" class="xliff"></a>
+##Синтаксис
 
 ```
 User [string] #ResourceName
@@ -38,7 +39,8 @@ User [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | UserName| Указывает имя учетной записи, для которой требуется обеспечить определенное состояние.| 
@@ -52,7 +54,8 @@ User [string] #ResourceName
 | PasswordNeverExpires| Указывает, может ли истечь срок действия пароля. Присвойте этому свойству значение __$true__, чтобы срок действия пароля никогда не истекал, и __$false__ в противном случае. Значение по умолчанию — __$false__.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 ```powershell
 User UserExample

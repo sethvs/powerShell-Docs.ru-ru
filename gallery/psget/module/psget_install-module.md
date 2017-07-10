@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_установка_модуля"
-ms.technology: powershell
-ms.openlocfilehash: 82e4bb1ec76b1a51e1a99de85bc77a5429d46e26
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Install-Module
+ms.openlocfilehash: 37e07cd32e7b2fd4a7a8e6cab179aecc3251baf3
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="install-module"></a>Install-Module
+<a id="install-module" class="xliff"></a>
+# Install-Module
 
 Устанавливает модули PowerShell из веб-репозиториев на локальный компьютер.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Install-Module скачивает один модуль (или несколько) из веб-коллекции, проверяет и устанавливает их на локальном компьютере в указанной области.
 
@@ -33,7 +32,8 @@ translationtype: HT
 - Параметр -Force позволяет переустановить модуль.
 - Параметр RequiredVersion позволяет установить указанную версию параллельно с существующими версиями в PowerShell 5.0 и более поздних версиях.
 
-### <a name="scope"></a>Scope
+<a id="scope" class="xliff"></a>
+### Scope
 Задает область установки модуля. Допустимые значения: AllUsers и CurrentUser.
 
 Область установки по умолчанию — AllUsers.
@@ -42,7 +42,8 @@ translationtype: HT
 
 Область CurrentUser устанавливает модули только в папку $home\Documents\WindowsPowerShell\Modules, чтобы они были доступны только текущему пользователю.
 
-## <a name="notes"></a>Заметки
+<a id="notes" class="xliff"></a>
+## Заметки
 
 Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.
 
@@ -59,16 +60,19 @@ Install-Module возвращает ошибку, если в веб-колле�
 Чтобы предотвратить выполнение модулей, содержащих вредоносный код, установленные модули не импортируются автоматически при установке. В целях безопасности рекомендуется проверить код модуля перед первым выполнением командлетов или функции из него.
 
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 ```powershell
 Get-Command -Name Install-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Install-Module](http://go.microsoft.com/fwlink/?LinkID=398573)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 
@@ -109,7 +113,8 @@ Install-Module ContosoClient -Force
 Install-Module -Name 
 ```
 
-## <a name="install-module-cmdlet-in-pipeline-operations"></a>Командлет Install-Module в операциях конвейера
+<a id="install-module-cmdlet-in-pipeline-operations" class="xliff"></a>
+## Командлет Install-Module в операциях конвейера
 
 ```powershell
 
@@ -136,11 +141,13 @@ Get-InstalledModule
 
 ```
 
-## <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
+<a id="side-by-side-version-support-on-powershell-50-or-newer" class="xliff"></a>
+## Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
 
 PowerShellGet поддерживает параллельную установку (SxS) разных версий модуля при использовании командлетов Install-Module, Update-Module и Publish-Module в Windows PowerShell 5.0 или более поздней версии.
 
-### <a name="install-module-examples"></a>Примеры использования Install-Module
+<a id="install-module-examples" class="xliff"></a>
+### Примеры использования Install-Module
 
 ```powershell
 # Install a version of the module
@@ -172,7 +179,8 @@ Version    Name                                Repository           Description
 
 ```
 
-## <a name="install-module-with-its-dependencies"></a>Установка модуля с зависимостями
+<a id="install-module-with-its-dependencies" class="xliff"></a>
+## Установка модуля с зависимостями
 
 ```powershell
 
@@ -266,7 +274,8 @@ Version    Name                                Repository           Description
 
 ```
 
-## <a name="error-scenarios"></a>Примеры, возвращающие ошибку
+<a id="error-scenarios" class="xliff"></a>
+## Примеры, возвращающие ошибку
 
 ```powershell
 

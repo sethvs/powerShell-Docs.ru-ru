@@ -1,22 +1,22 @@
 ---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
 title: "Новые сценарии и возможности в WMF 5.1"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 1ea650d5dd69251c0407133f649ea8efb1315dd2
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
-translationtype: HT
+ms.openlocfilehash: 02c27711c886916da56bb382b1bc0187f1e30805
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="new-scenarios-and-features-in-wmf-51"></a>Новые сценарии и возможности в WMF 5.1 #
+<a id="new-scenarios-and-features-in-wmf-51" class="xliff"></a>
+# Новые сценарии и возможности в WMF 5.1 #
 
 > Примечание. Эта информация является предварительной и может быть изменена.
 
-## <a name="powershell-editions"></a>Выпуски PowerShell ##
+<a id="powershell-editions" class="xliff"></a>
+## Выпуски PowerShell ##
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
 
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
@@ -28,11 +28,13 @@ translationtype: HT
 - [Фильтрация результатов командлета Get-Module по CompatiblePSEditions]()
 - [Запрет на выполнение сценариев в несовместимых выпусках PowerShell]()
 
-## <a name="catalog-cmdlets"></a>Командлеты для работы с каталогами  
+<a id="catalog-cmdlets" class="xliff"></a>
+## Командлеты для работы с каталогами  
 
 Мы добавили два новых командлета для создания и проверки файлов каталога Windows в модуль [Microsoft.Powershell.Security](https://technet.microsoft.com/en-us/library/hh847877.aspx).  
 
-###<a name="new-filecatalog"></a>New-FileCatalog 
+<a id="new-filecatalog" class="xliff"></a>
+###New-FileCatalog 
 --------------------------------
 
 Командлет New-FileCatalog создает файл каталога Windows для набора файлов и папок. Файл каталога содержит хэши для всех файлов, находящихся по указанным путям. Пользователь может распространять набор папок вместе с соответствующим файлом каталога, представляющим этих папки. С помощью файла каталога получатель может проверить, были ли изменены папки с момента создания каталога.    
@@ -53,7 +55,8 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 Для проверки целостности файла каталога (Pester.cat в приведенном выше примере) его нужно подписать с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).   
 
 
-###<a name="test-filecatalog"></a>Test-FileCatalog 
+<a id="test-filecatalog" class="xliff"></a>
+###Test-FileCatalog 
 --------------------------------
 
 Командлет Test-FileCatalog проверяет каталог, представляющий набор папок. 
@@ -67,7 +70,8 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти данные можно получить с помощью параметра *-Detailed*. Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
 
 
-## <a name="module-analysis-cache"></a>Кэш анализа модуля ##
+<a id="module-analysis-cache" class="xliff"></a>
+## Кэш анализа модуля ##
 Начиная с версии WMF 5.1 среда PowerShell предоставляет средства управления файлом, в котором кэшируются сведения о модуле, например экспортируемые им команды.
 
 По умолчанию этот кэш хранится в файле `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`.
@@ -94,7 +98,8 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 Новое значение этой переменной среды вступает в силу немедленно в текущем процессе.
 
-##<a name="specifying-module-version"></a>Указание версии модуля
+<a id="specifying-module-version" class="xliff"></a>
+##Указание версии модуля
 
 В WMF 5.1 `using module` работает так же, как другие связанные с модулями конструкции в PowerShell. Ранее не было возможности указать определенную версию модуля; при наличии нескольких версий возникала ошибка.
 
@@ -108,7 +113,9 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 * Если имеется несколько версий модуля, в PowerShell используется **та же логика разрешения**, что и в `Import-Module`, и ошибка не выводится. Это поведение аналогично поведению `Import-Module` и `Import-DscResource`.
 
 
-##<a name="improvements-to-pester"></a>Усовершенствования Pester
+<a id="improvements-to-pester" class="xliff"></a>
+##Усовершенствования Pester
 В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий были отправлены изменения https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которые улучшают работу Pester с Nano Server. 
 
 Изменения, произошедшие в версиях с 3.3.5 по 3.4.0, можно найти в файле ChangeLog.md по следующей ссылке: https://github.com/pester/Pester/blob/master/CHANGELOG.md.
+

@@ -1,17 +1,17 @@
 ---
-title: "Ресурсы DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 0a27a40b995393c41f0496a5f7fa3f56fbd865dd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурсы DSC"
+ms.openlocfilehash: 62bf352b929d661e585e145e5aab0f44f13010a1
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-resources"></a>Ресурсы DSC
+<a id="dsc-resources" class="xliff"></a>
+# Ресурсы DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 

@@ -1,17 +1,17 @@
 ---
-title: "Ресурс DSC ServiceSet"
-ms.date: 2016-05-23
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 798609d7e1e7d88e7a9f76f5fff12f63c6109c76
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс DSC ServiceSet"
+ms.openlocfilehash: 92fa4a442eb42e89195162b7831f1a96d40b84f5
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-serviceset-resource"></a>Ресурс DSC ServiceSet
+<a id="dsc-serviceset-resource" class="xliff"></a>
+# Ресурс DSC ServiceSet
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -20,7 +20,8 @@ translationtype: HT
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких служб.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 Service [string] #ResourceName
@@ -36,7 +37,8 @@ Service [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -50,7 +52,8 @@ Service [string] #ResourceName
 
 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 Приведенная ниже конфигурация запускает службы "Windows Audio" и "Службы удаленных рабочих столов".
 

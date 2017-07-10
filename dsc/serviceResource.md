@@ -1,24 +1,25 @@
 ---
-title: "Ресурс Service в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 6c1dce6a3f1b801f7bdf5bf778df8033e3d76280
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс Service в DSC"
+ms.openlocfilehash: 611729e5d971ebaf15ac947454cffadc6797927b
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-service-resource"></a>Ресурс Service в DSC
+<a id="dsc-service-resource" class="xliff"></a>
+# Ресурс Service в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 
 Ресурс **Service** в DSC Windows PowerShell предоставляет механизм управления службами на целевом узле.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 Service [string] #ResourceName
@@ -36,7 +37,8 @@ Service [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -51,7 +53,8 @@ Service [string] #ResourceName
 | Ensure | Указывает, имеется ли целевая служба в системе. Если целевая служба не должна существовать, укажите для этого свойства значение **Absent**. Если целевая служба должна существовать, укажите значение **Present** (используется по умолчанию).|
 | путь | Указывает путь к двоичному файлу для новой службы.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 ```powershell
 configuration ServiceTest

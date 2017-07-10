@@ -1,21 +1,21 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
 title: "psget_интеграция_oneget"
-ms.technology: powershell
-ms.openlocfilehash: afaba610d41d560d2d1196269ee188edd97c48ba
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 093860217c736278a7aede91cad40072efe5c38c
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-## <a name="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module"></a>Архитектура интерфейса PackageManagement и его связь с модулем PowerShellGet.
+<a id="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module" class="xliff"></a>
+## Архитектура интерфейса PackageManagement и его связь с модулем PowerShellGet.
 
-## <a name="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider"></a>Как использовать командлеты PackageManagement для обнаружения, установки, обновления и инвентаризации сценариев и модулей с помощью поставщика PowerShellGet.
+<a id="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider" class="xliff"></a>
+## Как использовать командлеты PackageManagement для обнаружения, установки, обновления и инвентаризации сценариев и модулей с помощью поставщика PowerShellGet.
 
-## <a name="pakagemanagement-commands"></a>Команды PakageManagement
+<a id="pakagemanagement-commands" class="xliff"></a>
+## Команды PakageManagement
 

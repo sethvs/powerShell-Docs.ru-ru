@@ -1,17 +1,17 @@
 ---
-title: "Написание пользовательских ресурсов DSC с использованием классов PowerShell"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: feec9b9e242ef6f43c272bfeb179d11944d1cb06
-ms.sourcegitcommit: 1002c473b88abb209e4188bb626d93675c3614e2
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Написание пользовательских ресурсов DSC с использованием классов PowerShell"
+ms.openlocfilehash: 6e482f45c7d09898d46de20f43dcf16ecf3da7da
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>Написание пользовательских ресурсов DSC с использованием классов PowerShell
+<a id="writing-a-custom-dsc-resource-with-powershell-classes" class="xliff"></a>
+# Написание пользовательских ресурсов DSC с использованием классов PowerShell
 
 > Область применения: Windows PowerShell 5.0
 
@@ -25,7 +25,8 @@ translationtype: HT
 
 >**Примечание**: универсальные коллекции не поддерживаются в ресурсах на основе классов.
 
-## <a name="folder-structure-for-a-class-resource"></a>Структура папок для ресурса класса
+<a id="folder-structure-for-a-class-resource" class="xliff"></a>
+## Структура папок для ресурса класса
 
 Для реализации настраиваемого ресурса DSC с помощью класса PowerShell создайте указанную ниже структуру папок. Класс определяется в файле **MyDscResource.psm1**, а манифест модуля — в файле **MyDscResource.psd1**.
 
@@ -36,7 +37,8 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
            MyDscResource.psd1 
 ```
 
-## <a name="create-the-class"></a>Создание класса
+<a id="create-the-class" class="xliff"></a>
+## Создание класса
 
 Для создания класса PowerShell необходимо ключевое слово class. Чтобы указать, что класс является ресурсом DSC, используйте атрибут **DscResource()**. Имя класса — это имя ресурса DSC.
 
@@ -46,7 +48,8 @@ class FileResource {
 }
 ```
 
-### <a name="declare-properties"></a>Объявление свойств
+<a id="declare-properties" class="xliff"></a>
+### Объявление свойств
 
 Схема ресурсов DSC определяется как свойства класса. Необходимо объявить три свойства описанным ниже образом.
 
@@ -81,7 +84,8 @@ enum Ensure
 }
 ```
 
-### <a name="implementing-the-methods"></a>Реализация методов
+<a id="implementing-the-methods" class="xliff"></a>
+### Реализация методов
 
 Методы **Get()**, **Set()** и **Test()** эквивалентны функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.
 
@@ -218,7 +222,8 @@ enum Ensure
     }
 ```
 
-### <a name="the-complete-file"></a>Полный файл
+<a id="the-complete-file" class="xliff"></a>
+### Полный файл
 Полный файл класса:
 
 ```powershell
@@ -417,7 +422,8 @@ class FileResource
 ```
 
 
-## <a name="create-a-manifest"></a>Создание манифеста
+<a id="create-a-manifest" class="xliff"></a>
+## Создание манифеста
 
 Чтобы сделать ресурс на основе класса доступным для модуля DSC, необходимо добавить в файл манифеста оператор **DscResourcesToExport**, который указывает модулю, что нужно экспортировать этот ресурс. Наш манифест выглядит следующим образом:
 
@@ -455,7 +461,8 @@ PowerShellVersion = '5.0'
 } 
 ```
 
-## <a name="test-the-resource"></a>Тестирование ресурса
+<a id="test-the-resource" class="xliff"></a>
+## Тестирование ресурса
 
 Сохранив файлы класса и манифеста в структуру папок, как описано выше, вы можете создать конфигурацию, использующую новый ресурс. Инструкции по запуску конфигурации DSC см. в статье [Активирование конфигураций](enactingConfigurations.md). Следующая конфигурация будет проверять, существует ли файл `c:\test\test.txt`, и, если его нет, копировать файл из `c:\test.txt` (необходимо создать файл `c:\test.txt` перед запуском конфигурации).
 
@@ -474,7 +481,49 @@ Test
 Start-DscConfiguration -Wait -Force Test
 ```
 
-## <a name="see-also"></a>См. также
-### <a name="concepts"></a>Концепции
+<a id="supporting-psdscrunascredential" class="xliff"></a>
+## Поддержка PsDscRunAsCredential
+
+>**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.
+
+Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.
+Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).
+
+<a id="require-or-disallow-psdscrunascredential-for-your-resource" class="xliff"></a>
+### Требование параметра PsDscRunAsCredential для ресурса или его запрещение
+
+Атрибут **DscResource()** принимает необязательный параметр **RunAsCredential**.
+Этот параметр принимает одно из трех значений:
+
+- `Optional` **PsDscRunAsCredential** необязателен для конфигураций, которые вызывают этот ресурс. Это значение по умолчанию.
+- `Mandatory` **PsDscRunAsCredential** должен использоваться для какой-либо конфигурации, которая вызывает этот ресурс.
+- Конфигурации `NotSupported`, которые вызывают этот ресурс, не могут использовать **PsDscRunAsCredential**.
+- `Default` аналогичен `Optional`.
+
+Например, используйте следующий атрибут, чтобы указать, что настраиваемый ресурс не поддерживает использование **PsDscRunAsCredential**:
+
+```powershell
+[DscResource(RunAsCredential=NotSupported)]
+class FileResource {
+}
+```
+
+<a id="access-the-user-context" class="xliff"></a>
+### Доступ к контексту пользователя
+
+Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$global:PsDscContext`.
+
+Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:
+
+```powershell
+if (PsDscContext.RunAsUser) {
+    Write-Verbose "User: $global:PsDscContext.RunAsUser";
+}
+```
+
+<a id="see-also" class="xliff"></a>
+## См. также
+<a id="concepts" class="xliff"></a>
+### Концепции
 [Создание пользовательских ресурсов DSC Windows PowerShell](authoringResource.md)
 

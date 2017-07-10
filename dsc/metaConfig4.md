@@ -1,23 +1,24 @@
 ---
-title: "Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: cec3aaf4e57d1efc3e29880e4a7f078bd1840901
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)"
+ms.openlocfilehash: 2e6e4731bdf6d7de6d13fc7f9b81698a192247e4
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)
+<a id="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm" class="xliff"></a>
+# Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Локальный диспетчер конфигураций — это механизм настройки требуемого состояния (DSC) Windows PowerShell. Он работает на всех целевых узлах и отвечает за вызов ресурсов конфигураций, включенных в сценарий конфигурации DSC. В этом разделе перечислены свойства локального диспетчера конфигураций и описано, как изменять параметры локального диспетчера конфигурации на целевом узле.
 
-## <a name="local-configuration-manager-properties"></a>Свойства локального диспетчера конфигураций
+<a id="local-configuration-manager-properties" class="xliff"></a>
+## Свойства локального диспетчера конфигураций
 Ниже перечислены свойства локального диспетчера конфигураций, которые можно задавать или извлекать.
  
 * **AllowModuleOverwrite**: определяет, могут ли новые конфигурации, загружаемые с сервера конфигураций, перезаписывать старые конфигурации, уже находящиеся на целевом узле. Возможные значения — True и False.
@@ -35,7 +36,8 @@ translationtype: HT
 * **RefreshFrequencyMins**: используется при настройке опрашивающего сервера. Представляет частоту (в минутах), с которой локальный диспетчер конфигураций подключается к опрашивающему серверу для загрузки текущей конфигурации. Это свойство может быть задано в сочетании со свойством ConfigurationModeFrequencyMins. Если свойство RefreshMode имеет значение PULL, целевой узел подключается к опрашивающему серверу с интервалом, заданным свойством RefreshFrequencyMins, и загружает текущую конфигурацию. Модуль обеспечения согласованности применяет последнюю конфигурацию, загруженную на целевой узел, с интервалом, заданным свойством ConfigurationModeFrequencyMins. Если значение свойства RefreshFrequencyMins не выражено целым числом, кратным значению свойства ConfigurationModeFrequencyMins, система его округлит. По умолчанию используется значение 30.
 * **RefreshMode**: возможные значения — **Push** (по умолчанию) и **Pull**. Если выбрана конфигурация push, файл конфигурации необходимо разместить на каждом целевом узле, используя любой клиентский компьютер. В режиме pull необходимо настроить опрашивающий сервер для локального диспетчера конфигураций для подключения и доступа к файлам конфигураций.
 
-### <a name="example-of-updating-local-configuration-manager-settings"></a>Примеры обновления настроек локального диспетчера конфигураций
+<a id="example-of-updating-local-configuration-manager-settings" class="xliff"></a>
+### Примеры обновления настроек локального диспетчера конфигураций
 
 Настройки локального диспетчера конфигураций на целевом узле можно обновить, включив блок **LocalConfigurationManager** в блоке узла в сценарий конфигурации, как показано в следующем примере.
 

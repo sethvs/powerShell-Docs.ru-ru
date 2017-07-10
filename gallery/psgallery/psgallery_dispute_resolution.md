@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_разрешение_споров"
-ms.technology: powershell
-ms.openlocfilehash: b7a76a6d8746b4a22154f8a8c7dde89d61046116
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 640d20371a51b08a5627b9beff1bb0ada4f06dd8
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dispute-resolution"></a>Разрешение спорных вопросов
+<a id="dispute-resolution" class="xliff"></a>
+# Разрешение спорных вопросов
 
 В этом документе описывается рекомендуемая процедура разрешения спорных вопросов, которая поможет членам общества разрешать разногласия с издателями коллекции PowerShell.
 
-## <a name="process"></a>Процесс
+<a id="process" class="xliff"></a>
+## Процесс
 
 1. Свяжитесь с владельцами спорного элемента с помощью ссылки **Связаться с владельцами** на странице подробностей об элементе.
 Объясните, в чем состоит проблема, прямо, но вежливо.
@@ -26,7 +25,8 @@ translationtype: HT
 Служба поддержки PowerShellGallery.com рассмотрит вашу проблему и попытается ее решить.
 
 
-## <a name="prohibited-use"></a>Запрещенное использование
+<a id="prohibited-use" class="xliff"></a>
+## Запрещенное использование
 
 Перечисленные ниже элементы или действия запрещены. Их нельзя добавлять в общедоступную коллекцию PowerShell (или совершать в ее рамках). Такие элементы будут немедленно удалены, без предупреждения.  При удалении элемента его владельцу будет отправлено уведомление.
 

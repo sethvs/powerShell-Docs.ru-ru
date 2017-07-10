@@ -1,18 +1,17 @@
 ---
-manager: carmonm
-ms.topic: article
+ms.date: 2017-06-12
 author: rpsqrd
-ms.author: ryanpu
-ms.prod: powershell
-keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.topic: conceptual
+keywords: "jea,powershell,безопасность"
 title: "Аудит и отчеты для JEA"
-ms.technology: powershell
-ms.openlocfilehash: 865055e873a065aef16a95d0f3297e550e40bc98
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
-translationtype: HT
+ms.openlocfilehash: 60bc7a4213c75735628207bb21078bf90f7b1ca3
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="auditing-and-reporting-on-jea"></a>Аудит и отчеты для JEA
+<a id="auditing-and-reporting-on-jea" class="xliff"></a>
+# Аудит и отчеты для JEA
 
 > Область применения: Windows PowerShell 5.0
 
@@ -21,7 +20,8 @@ translationtype: HT
 
 В этом разделе описываются различные способы проведения аудита для конечной точки JEA.
 
-## <a name="find-registered-jea-sessions-on-a-machine"></a>Поиск зарегистрированных сеансов JEA на компьютере
+<a id="find-registered-jea-sessions-on-a-machine" class="xliff"></a>
+## Поиск зарегистрированных сеансов JEA на компьютере
 
 Чтобы узнать, какие сеансы JEA зарегистрированы на компьютере, используйте командлет [Get-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration).
 
@@ -50,7 +50,8 @@ $jea = Get-PSSessionConfiguration -Name 'JEAMaintenance'
 $jea.RoleDefinitions.GetEnumerator() | Select-Object Name, @{ Name = 'Role Capabilities'; Expression = { $_.Value.RoleCapabilities } }
 ```
 
-## <a name="find-available-role-capabilities-on-the-machine"></a>Поиск доступных возможностей ролей на компьютере
+<a id="find-available-role-capabilities-on-the-machine" class="xliff"></a>
+## Поиск доступных возможностей ролей на компьютере
 
 Файлы возможностей ролей будут использоваться JEA, только если они хранятся в папке "RoleCapabilities" внутри допустимого модуля PowerShell.
 Все возможности ролей, доступные на компьютере, можно найти путем поиска по списку доступных модулей.
@@ -75,7 +76,8 @@ function Find-LocalRoleCapability {
 > [!NOTE]
 > Порядок результатов, получаемых из этой функции, необязательно соответствует порядку, в котором будут выбираться возможности ролей, когда несколько возможностей ролей имеют одинаковые имена.
 
-## <a name="check-effective-rights-for-a-specific-user"></a>Проверка действующих прав для конкретного пользователя
+<a id="check-effective-rights-for-a-specific-user" class="xliff"></a>
+## Проверка действующих прав для конкретного пользователя
 
 После настройки конечной точки JEA вам может потребоваться проверить, какие команды доступны определенному пользователю в сеансе JEA.
 Вы можете использовать [Get-PSSessionCapability](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Get-PSSessionCapability), чтобы перечислить все команды, применимые для пользователя, если тот решит запустить сеанс JEA с имеющимся членством в группах.
@@ -89,7 +91,8 @@ Get-PSSessionCapability -ConfigurationName 'JEAMaintenance' -Username 'CONTOSO\A
 Обычно это происходит, когда с помощью систем управления привилегированным доступом JIT реализуется временная принадлежность пользователей к группе безопасности.
 Всегда тщательно оценивайте сопоставление пользователей с ролями, а также содержимое каждой роли, чтобы убедиться, что пользователи получают доступ к минимальному набору команд, необходимых для успешного выполнения порученной им работы.
 
-## <a name="powershell-event-logs"></a>Журналы событий PowerShell
+<a id="powershell-event-logs" class="xliff"></a>
+## Журналы событий PowerShell
 
 Если в системе включено ведение журнала для модуля или блока сценария, в журнале событий Windows можно найти события для каждой команды, которую пользователь выполнял в своих сеансах JEA.
 Чтобы найти эти события, откройте средство просмотра событий Windows, перейдите к журналу событий **Microsoft-Windows-PowerShell/Operational** и найдите событие с идентификатором **4104**.
@@ -98,7 +101,8 @@ Get-PSSessionCapability -ConfigurationName 'JEAMaintenance' -Username 'CONTOSO\A
 Для сеансов JEA приводятся важные сведения о **ConnectedUser** — фактическом пользователе, создавшем сеанс JEA, а также о **RunAsUser** — учетной записи, используемой JEA для выполнения команды.
 Журналы событий приложений показывают изменения, внесенные RunAsUser, поэтому крайне важно включить ведение записей или журналов для модулей или сценариев, чтобы отследить вызов определенной команды до конкретного пользователя.
 
-## <a name="application-event-logs"></a>Журналы событий приложений
+<a id="application-event-logs" class="xliff"></a>
+## Журналы событий приложений
 
 При выполнении команды в сеансе JEA, который взаимодействует с внешним приложением или внешней службой, эти приложения могут записывать события в собственные журналы.
 В отличие от записей и журналов PowerShell, другие механизмы ведения журнала не фиксируют подключенного пользователя сеанса JEA, а лишь регистрируют виртуальную учетную запись запуска от имени или групповую управляемую учетную запись службы.
@@ -107,7 +111,8 @@ Get-PSSessionCapability -ConfigurationName 'JEAMaintenance' -Username 'CONTOSO\A
 Журнал WinRM может помочь сопоставить пользователей, от имени которых выполняется запуск, в журнале событий приложения с подключающимся пользователем.
 Событие с идентификатором **193** в журнале **Microsoft-Windows-Windows Remote Management/Operational** регистрирует идентификатор безопасности (SID) и имя учетной записи как для подключающегося пользователя, так и для пользователя, от имени которого выполняется запуск, при каждом создании сеанса JEA.
 
-## <a name="session-transcripts"></a>Записи сеансов
+<a id="session-transcripts" class="xliff"></a>
+## Записи сеансов
 
 Если вы настроили JEA для создания записи для каждого сеанса пользователя, в указанной папке будет храниться текстовая копия перечня всех действий каждого пользователя.
 
@@ -149,7 +154,9 @@ Running  Dns                DNS Server
 Выходные данные каждой команды также вызывают CommandInvocation, обычно Out-Default. InputObject в Out-Default представляет собой объект PowerShell, возвращаемый из команды.
 Сведения об этом объекте выводятся несколькими строчками ниже, в точности имитируя то, что увидел бы пользователь.
 
-## <a name="see-also"></a>См. также:
+<a id="see-also" class="xliff"></a>
+## См. также:
 
 - [Аудит действий пользователей в сеансе JEA](audit-and-report.md)
 - [Запись блога *PowerShell ♥ the Blue Team* по безопасности](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
+

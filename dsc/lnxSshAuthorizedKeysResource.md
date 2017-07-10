@@ -1,21 +1,22 @@
 ---
-title: "Ресурс nxSshAuthorizedKeys в DSC для Linux"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: edc906b4e9c925320c4ed00c5ab295189066ccb9
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Ресурс nxSshAuthorizedKeys в DSC для Linux"
+ms.openlocfilehash: 3c145eeb86d971dc00e1c7cea60fb50c83d7b9a2
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a>Ресурс nxSshAuthorizedKeys в DSC для Linux
+<a id="dsc-for-linux-nxsshauthorizedkeys-resource" class="xliff"></a>
+# Ресурс nxSshAuthorizedKeys в DSC для Linux
 
 Ресурс **NxAuthorizedKeys** в DSC PowerShell обеспечивает механизм управления авторизованными SSH-ключами для указанного пользователя.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 nxAuthorizedKeys <string> #ResourceName
@@ -29,7 +30,8 @@ nxAuthorizedKeys <string> #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -39,7 +41,8 @@ nxAuthorizedKeys <string> #ResourceName
 | Клавиши| Указывает содержимое ключа Требуется, если свойство **Ensure** имеет значение Present.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В следующем примере определяется общедоступный авторизованный SSH-ключ для пользователя monuser.
 

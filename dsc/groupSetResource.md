@@ -1,17 +1,18 @@
 ---
-title: "Ресурс DSC GroupSet"
-ms.date: 2016-05-16
-keywords: "powershell, DSC, встроенный, ресурс"
-description: "Предоставляет механизм для управления локальными группами на целевом узле."
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 6e5ea98febfe7541f35a84c37df73df580654340
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+description: "Предоставляет механизм для управления локальными группами на целевом узле."
+title: "Ресурс DSC GroupSet"
+ms.openlocfilehash: 0907a968bfc660adc873c28e8be6572d1d5cb993
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-groupset-resource"></a>Ресурс DSC GroupSet
+<a id="dsc-groupset-resource" class="xliff"></a>
+# Ресурс DSC GroupSet
 
 > Область применения: Windows PowerShell 5.0
 
@@ -19,7 +20,8 @@ translationtype: HT
 
 Используйте этот ресурс, если необходимо добавить один и тот же список участников в несколько групп или удалить его из нескольких групп, а также если необходимо удалить или добавить несколько групп с одинаковым списком участников.
 
-##<a name="syntax"></a>Синтаксис##
+<a id="syntax" class="xliff"></a>
+##Синтаксис
 ```
 Group [string] #ResourceName
 {
@@ -32,7 +34,8 @@ Group [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -44,7 +47,8 @@ Group [string] #ResourceName
 | MembersToInclude| Это свойство используется для добавления участников в существующее членство в группе. Значение этого свойства хранится в массиве строк в формате *домен*\\*имя_пользователя*. Если вы задали это свойство в конфигурации, не используйте свойство **Members**. Это приведет к ошибке.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-## <a name="example-1"></a>Пример 1
+<a id="example-1" class="xliff"></a>
+## Пример 1
 
 В приведенном ниже примере показано, как обеспечить существование двух групп: myGroup и myOtherGroup. 
 

@@ -1,12 +1,27 @@
-# <a name="the-powershell-gallery"></a>Коллекция PowerShell
+---
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery,psget"
+title: "Коллекция PowerShell"
+ms.openlocfilehash: 3e324f15b251822163c3ea9b6655767419a5ac4e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="the-powershell-gallery" class="xliff"></a>
+# Коллекция PowerShell
 
 Коллекция PowerShell — это центральный репозиторий для хранения содержимого PowerShell. Именно в коллекции можно найти новые команды PowerShell или ресурсы настройки требуемого состояния (DSC).
 
-# <a name="powershellget-overview"></a>Обзор PowerShellGet
+<a id="powershellget-overview" class="xliff"></a>
+## Обзор PowerShellGet
 
 Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты с веб-сайта https://www.PowerShellGallery.com и других частных репозиториев.
 
-## <a name="getting-started-with-the-gallery"></a>Начало работы с коллекцией
+<a id="getting-started-with-the-gallery" class="xliff"></a>
+## Начало работы с коллекцией
 
 Для установки элементов из коллекции требуется последняя версия модуля PowerShellGet, доступная в Windows 10, в Windows Management Framework (WMF) 5.0 или в установщике на основе MSI (для PowerShell 3 и 4).
 
@@ -24,7 +39,8 @@
 
 Дополнительные сведения об использовании команд PowerShellGet при работе с коллекцией см. в статье [Начало работы](psgallery/psgallery_gettingstarted.md). Вы также можете запустить командлет *Update-Help -Module PowerShellGet*, чтобы установить локальную справку по этим командам.
 
-## <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
+<a id="supported-operating-systems" class="xliff"></a>
+## Поддерживаемые операционные системы
 
 Для модуля **PowerShellGet** требуется **PowerShell 3.0 или более поздней версии**.
 
@@ -41,7 +57,8 @@
 Для **PowerShellGet** также требуется .NET Framework 4.5 или более поздней версии. Установить .NET Framework 4.5 или более поздней версии можно [отсюда](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx).
 
 
-## <a name="got-a-question-have-feedback"></a>Возник вопрос? Хотите поделиться мнением?
+<a id="got-a-question-have-feedback" class="xliff"></a>
+## Возник вопрос? Хотите поделиться мнением?
 
 Дополнительные сведения о коллекции PowerShell и PowerShellGet см. на странице [Начало работы](psgallery/psgallery_gettingstarted.md). Оставить отзыв или сообщить о проблеме можно на сайте [UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell).
 

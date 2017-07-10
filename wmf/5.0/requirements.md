@@ -1,4 +1,16 @@
-# <a name="system-requirements"></a>Системные требования
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: e4e5c6fff2eea12b9cfbba325d5519f6266218e8
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="system-requirements" class="xliff"></a>
+# Системные требования
 
 - Перед установкой WMF 5.0 RTM установите последние обновления для Windows.
 - WMF 5.0 RTM работает только в следующих операционных системах:
@@ -11,15 +23,18 @@
     | Windows 8.1 | Профессиональная, Корпоративная | | **x64:**  [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) </br> **x86:**  [Win8.1-KB3134758-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717963)|
     | Windows 7 с пакетом обновления 1 (SP1) | all | Установлена платформа [.NET Framework 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) и [.NET Framework 4.5 или выше](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx). | **x64:**  [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504)  </br> **x86:**  [Win7-KB3134760-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717962)|
 
-# <a name="installation-instructions"></a>Инструкции по установке
+<a id="installation-instructions" class="xliff"></a>
+# Инструкции по установке
 
-### <a name="to-install-wmf-50-from-windows-explorer-or-file-explorer"></a>Установка WMF 5.0 из проводника Windows Explorer (или File Explorer):
+<a id="to-install-wmf-50-from-windows-explorer-or-file-explorer" class="xliff"></a>
+### Установка WMF 5.0 из проводника Windows Explorer (или File Explorer):
 
 1. Перейдите в папку, куда был скачан MSU-файл.
 
 2. Дважды щелкните этот файл для его запуска.
 
-### <a name="to-install-wmf-50-from-command-prompt"></a>Установка WMF 5.0 из командной строки:
+<a id="to-install-wmf-50-from-command-prompt" class="xliff"></a>
+### Установка WMF 5.0 из командной строки:
 
 1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). В установке основных серверных компонентов для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
 
@@ -32,7 +47,8 @@
     - На компьютерах под управлением Windows 8.1 (x86) запустите **Win8.1-KB3134758-x86.msu /quiet**.
     - На компьютерах под управлением Windows 7 с пакетом обновления 1 (SP1) (x86) запустите **Win7-KB3134760-x86.msu /quiet**.
 
-### <a name="additional-installation-notes-for-windows-server-2008-r2-sp1-and-windows-7-sp1"></a>Дополнительные замечания по установке для Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1):
+<a id="additional-installation-notes-for-windows-server-2008-r2-sp1-and-windows-7-sp1" class="xliff"></a>
+### Дополнительные замечания по установке для Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1):
 
 Убедитесь, что выполнены следующие предварительные условия.
 - Установлен самый последний пакет обновления.
@@ -55,9 +71,11 @@ Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows
 
 Служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включена в Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1). Чтобы включить WinRM, запустите **Set-WSManQuickConfig** в сеансе с повышенными привилегиями Windows PowerShell.
 
-# <a name="uninstallation-instructions"></a>Инструкции по удалению
+<a id="uninstallation-instructions" class="xliff"></a>
+# Инструкции по удалению
 
-### <a name="using-command-prompt"></a>Использование командной строки
+<a id="using-command-prompt" class="xliff"></a>
+### Использование командной строки
 
 1.  Откройте окно **Командная строка**.
 
@@ -76,7 +94,8 @@ wusa /uninstall /kb:3134759
 wusa /uninstall /kb:3134760
 ```
 
-### <a name="using-control-panel"></a>Использование панели управления
+<a id="using-control-panel" class="xliff"></a>
+### Использование панели управления
 
 1.  Откройте **Панель управления**.
 
@@ -85,3 +104,4 @@ wusa /uninstall /kb:3134760
 3.  Щелкните **Просмотр установленных обновлений**.
 
 4.  Выберите **Windows Management Framework 5.0** в списке установленных обновлений. Это соответствует *KB3134758*, *KB3134759* или *KB3134760*. Щелкните **Удалить**.
+

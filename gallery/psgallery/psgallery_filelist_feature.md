@@ -1,25 +1,24 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_функция_filelist"
-ms.technology: powershell
-ms.openlocfilehash: e5d9b7d9c6d233bc84f76f5311e5580bb9e5cd77
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 8335a78d4b08696a88f73fe0fd6936833316f264
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="filelist-feature-in-the-gallery"></a>Функция FileList в коллекции
+<a id="filelist-feature-in-the-gallery" class="xliff"></a>
+# Функция FileList в коллекции
 
 Вы можете просматривать содержимое всех элементов, опубликованных в коллекции. 
 
 Эта функция состоит из двух частей: отображение списка файлов элемента и содержимого поддерживаемых типов файлов. В настоящее время поддерживается отображение содержимого файлов со следующими расширениями: PS1, PSM1, PSD1, PS1XML, XML и TXT. В следующих версиях будет добавлена поддержка дополнительных расширений. 
 
-## <a name="where-to-find-filelist"></a>Где находится FileList
+<a id="where-to-find-filelist" class="xliff"></a>
+## Где находится FileList
 На странице каждого отдельного элемента имеется раздел FileList и ссылка **Показать**. Щелкните ссылку "Показать". Откроется полный список элементов, содержащихся в элементе.
 
 Каждый поддерживаемый тип файлов отображается как гиперссылка, щелкнув которую вы перейдете на новую страницу, где содержимое файла будет показано с выделением синтаксиса PowerShell. Щелкнув заголовок или версию элемента, отображаемые в верхней части экрана, вы вернетесь на страницу подробностей об элементе.

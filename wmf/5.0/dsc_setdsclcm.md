@@ -1,4 +1,16 @@
-# <a name="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter"></a>Командлет Set-DscLocalConfigurationManager поддерживает параметр -force
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
+ms.openlocfilehash: 0aff3ff1fe12fbc7acce20cf7c802f58ace77bb9
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
+---
+<a id="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter" class="xliff"></a>
+# Командлет Set-DscLocalConfigurationManager поддерживает параметр -force
 
 Для командлета Set-DscLocalConfigurationManager добавлена поддержка нового параметра. Это позволит пользователю детерминировано выполнить сброс метаконфигурации на компьютере, когда в фоновом режиме выполняются другие операции, такие как проверка согласованности, так как это приведет к их остановке.
 
@@ -36,3 +48,4 @@ VERBOSE: \[DEV-10586-465\]: LCM: \[ End Set \] in 0.1410 seconds.
 VERBOSE: Operation 'Invoke CimMethod' complete.
 VERBOSE: Set-DscLocalConfigurationManager finished in 0.421 seconds.
 ```
+

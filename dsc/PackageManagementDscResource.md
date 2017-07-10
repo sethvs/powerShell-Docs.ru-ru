@@ -1,23 +1,24 @@
 ---
+ms.date: 2017-06-12
+author: eslesar
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс PackageManagement DSC"
-ms.date: 
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: brywang-msft
-manager: kriscv
-ms.prod: powershell
-ms.openlocfilehash: 33775be230a4e92e22784d991338510510f69889
-ms.sourcegitcommit: 89e7ae30faff5f96641fc72764bdc76e0e257bc2
-translationtype: HT
+ms.openlocfilehash: a984fbf5db561a696d89b60dde8b92096c6e4924
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-packagemanagement-resource"></a>Ресурс PackageManagement DSC
+<a id="dsc-packagemanagement-resource" class="xliff"></a>
+# Ресурс PackageManagement DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **PackageManagement** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм установки пакетов управления пакетами на целевом узле или их удаления. Для этого ресурса требуется модуль **PackageManagement**: http://PowerShellGallery.com.
 
-## <a name="syntax"></a>Синтаксис
+<a id="syntax" class="xliff"></a>
+## Синтаксис
 
 ```
 PackageManagement [string] #ResourceName
@@ -34,7 +35,8 @@ PackageManagement [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>Свойства
+<a id="properties" class="xliff"></a>
+## Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имя устанавливаемого или удаляемого пакета.| 
@@ -47,14 +49,16 @@ PackageManagement [string] #ResourceName
 | ProviderName| Указывает имя поставщика пакетов, на который распространяется область поиска пакетов. Чтобы получить имена поставщика, запустите командлет Get-PackageProvider.| 
 | AdditionalParameters| Специальные параметры поставщика, которые передаются как хэш-таблица. Например, для поставщика NuGet можно передать дополнительные параметры, такие как DestinationPath.| 
 
-## <a name="additional-parameters"></a>Дополнительные параметры
+<a id="additional-parameters" class="xliff"></a>
+## Дополнительные параметры
 В следующей таблице перечислены параметры свойства AdditionalParameters.
 |  Параметр  | Описание   | 
 |---|---|
 | DestinationPath| Используется поставщиками, такими как встроенный поставщик NuGet. Указывает расположение файла, в котором вы хотите установить пакет.|
 | InstallationPolicy| Используется поставщиками, такими как встроенный поставщик NuGet. Определяет, доверяете ли вы источнику пакета. Одно из двух значений: "Untrusted", "Trusted".|
 
-## <a name="example"></a>Пример
+<a id="example" class="xliff"></a>
+## Пример
 
 В этом примере устанавливается пакет NuGet **JQuery** и модуль PowerShell **GistProvider** с помощью ресурса DSC **PackageManagement**. В этом примере сначала обеспечивается доступность нужных источников пакета, а затем определяется ожидаемое состояние пакетов **JQuery** и **GistProvider** (для NuGet и PowerShell).
 
@@ -97,3 +101,4 @@ Configuration PackageTest
     }
 }
 ```
+

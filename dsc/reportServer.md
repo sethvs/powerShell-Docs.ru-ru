@@ -1,17 +1,17 @@
 ---
-title: "Использование сервера отчетов DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 17b56a0ce25d3154e21f18269926a0c41aae833b
-ms.sourcegitcommit: d7b28f28a09caa7fa48b0f66c5c437f128ce316f
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Использование сервера отчетов DSC"
+ms.openlocfilehash: dd61d6ffff43ac2d1ec663b566e39dfc7d6c6565
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="using-a-dsc-report-server"></a>Использование сервера отчетов DSC
+<a id="using-a-dsc-report-server" class="xliff"></a>
+# Использование сервера отчетов DSC
 
 > Область применения: Windows PowerShell 5.0
 
@@ -19,7 +19,8 @@ translationtype: HT
 
 В локальном диспетчере конфигураций (LCM) узла можно настроить отправку отчетов о состоянии конфигурации на опрашивающий сервер, которые затем можно запросить для извлечения содержащихся в них данных. Каждый раз при проверке и применении конфигурации узел отправляет отчет на сервер отчетов. Эти отчеты хранятся в базе данных на сервере, и их можно извлечь, вызвав веб-службу отчетов. Каждый отчет содержит сведения, например перечень примененных конфигураций и данные о том, успешно ли они были выполнены, использованные ресурсы, любые произошедшие ошибки, а также время начала и окончания.
 
-## <a name="configuring-a-node-to-send-reports"></a>Настройка узла для отправки отчетов
+<a id="configuring-a-node-to-send-reports" class="xliff"></a>
+## Настройка узла для отправки отчетов
 
 Запросить на узле отправку отчетов на сервер можно с помощью блока **ReportServerWeb** в конфигурации LCM узла (сведения о настройке LCM см. в разделе [Настройка локального диспетчера конфигураций](metaConfig.md)). Сервер, на который узел отправляет отчеты, необходимо настроить как опрашивающий веб-сервер (отправлять отчеты в общий ресурс SMB невозможно). Сведения о настройке опрашивающего сервера см. в разделе [Настройка опрашивающего веб-сервера DSC](pullServer.md). Сервер отчетов может быть той же службой, в которой узел извлекает конфигурации и получает ресурсы, или другой службой.
  
@@ -92,7 +93,8 @@ PullClientConfig
 
 >**Примечание**. При настройке опрашивающего сервера можно указать любое имя веб-службы, но свойство **ServerURL** должно соответствовать имени службы.
 
-## <a name="getting-report-data"></a>Получение данных из отчетов
+<a id="getting-report-data" class="xliff"></a>
+## Получение данных из отчетов
 
 Отчеты, отправляемые на опрашивающий сервер, добавляются в базу данных на сервере. Отчеты доступны путем вызовов веб-службы. Чтобы извлечь отчеты с указанного узла, отправьте HTTP-запрос в веб-службу отчетов в следующем формате: `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentId= 'MyNodeAgentId')/Reports` где `MyNodeAgentId` — это AgentId узла, с которого вы хотите получать отчеты. Вы можете получить AgentID узла, вызвав [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) на этом узле.
 
@@ -113,7 +115,8 @@ function GetReport
 }
 ```
     
-## <a name="viewing-report-data"></a>Просмотр данных из отчетов
+<a id="viewing-report-data" class="xliff"></a>
+## Просмотр данных из отчетов
 
 Если задать для переменной результат функции **GetReport**, можно просмотреть отдельные поля в элементе возвращаемого массива:
 
@@ -220,7 +223,8 @@ InDesiredState    : True
 
 Обратите внимание, что эти примеры призваны дать представление о том, что вы можете сделать с данными из отчетов. Общие сведения о работе с JSON в PowerShell см. в разделе [Работа с JSON и PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/).
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 - [Настройка локального диспетчера конфигураций](metaConfig.md)
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
 - [Настройка опрашивающего клиента с помощью имени конфигурации](pullClientConfigNames.md)

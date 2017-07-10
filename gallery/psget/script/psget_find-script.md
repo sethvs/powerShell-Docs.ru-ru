@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_нахождение_скрипта"
-ms.technology: powershell
-ms.openlocfilehash: 09f4d6eca9cf04d03fddbe23beea6a5bc0243657
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: "коллекция,powershell,командлет,psget"
+title: Find-Script
+ms.openlocfilehash: 15bf23b803250c7893fe970c2580592ea7c0a4b6
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="find-script"></a>Find-Script
+<a id="find-script" class="xliff"></a>
+# Find-Script
 
 Находит в коллекции в Интернете файлы сценариев PowerShell, соответствующие указанному условию.
 
-## <a name="description"></a>Описание
+<a id="description" class="xliff"></a>
+## Описание
 
 Командлет Find-Script обнаруживает в зарегистрированных репозиториях файлы сценариев, которые отвечают заданным условиям.
 Для каждого найденного сценария Find-Script возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Script для установки этих сценариев.
@@ -35,17 +34,20 @@ translationtype: HT
 
 **ПРИМЕЧАНИЕ.** Зарегистрированный PSRepository должен иметь допустимый параметр ScriptSourceLocation. Для установки значения ScriptSourceLocation можно использовать командлет Set-PSRepository.
 
-## <a name="cmdlet-syntax"></a>Синтаксис командлета
+<a id="cmdlet-syntax" class="xliff"></a>
+## Синтаксис командлета
 
 ```powershell
 Get-Command -Name Find-Script -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Ссылка на раздел справки по командлету в Интернете
 
 [Find-Script](http://go.microsoft.com/fwlink/?LinkId=619785)
 
-## <a name="example-commands"></a>Примеры команд
+<a id="example-commands" class="xliff"></a>
+## Примеры команд
 
 ```powershell
 # Find a script from the registered repository with ScriptSourceLocation

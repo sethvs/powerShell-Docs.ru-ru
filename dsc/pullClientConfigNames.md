@@ -1,17 +1,17 @@
 ---
-title: "Настройка опрашивающего клиента с помощью имен конфигураций"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 03db9843209038f7a14b46cf8a27316f1c63a819
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Настройка опрашивающего клиента с помощью имен конфигураций"
+ms.openlocfilehash: 9bfcac87300d30a59b66e60ed24add32e2420e21
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="setting-up-a-pull-client-using-configuration-names"></a>Настройка опрашивающего клиента с помощью имен конфигураций
+<a id="setting-up-a-pull-client-using-configuration-names" class="xliff"></a>
+# Настройка опрашивающего клиента с помощью имен конфигураций
 
 > Область применения: Windows PowerShell 5.0
 
@@ -73,7 +73,8 @@ Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigNames –Ve
 Вам по-прежнему следует использовать **ConfigurationID** с опрашивающим SMB-сервером.
 Сведения о настройке опрашивающего сервера с использованием **ConfigurationID** см. в разделе [Настройка опрашивающего клиента с помощью идентификатора конфигурации](PullClientConfigNames.md)
 
-## <a name="resource-and-report-servers"></a>Серверы ресурсов и отчетов
+<a id="resource-and-report-servers" class="xliff"></a>
+## Серверы ресурсов и отчетов
 
 Если указать только блок **ConfigurationRepositoryWeb** или **ConfigurationRepositoryShare** в конфигурации LCM (как в предыдущем примере), опрашивающий клиент будет получать ресурсы с указанного сервера, но не будет отправлять отчеты на этот сервер.
 Можно использовать один и тот же опрашивающий сервер для конфигураций, ресурсов и создания отчетов, но необходимо создать блок **ReportRepositoryWeb** для настройки отчетов.
@@ -148,7 +149,9 @@ configuration PullClientConfigNames
 PullClientConfigNames
 ```
 
-## <a name="see-also"></a>См. также
+<a id="see-also" class="xliff"></a>
+## См. также
 
 * [Настройка опрашивающего клиента с идентификатором конфигурации](PullClientConfigNames.md)
 * [Настройка опрашивающего веб-сервера DSC](pullServer.md)
+
