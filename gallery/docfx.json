@@ -12,7 +12,14 @@
     ],
     "globalMetadata": {
       "ROBOTS": "INDEX, FOLLOW",
-      "bilingual_type": "hover over"
+	"ms.prod": "powershell",
+        "ms.technology": "gallery",
+        "manager": "carmonm",
+        "ms.devlang": "powershell",
+        "ms.tgt_pltfr": "windows, macos, linux",
+        "author": "juanpablojofre",
+        "ms.author": "jpjofre",
+        "bilingual_type": "hover over"
     },
     "resource": [
       {
