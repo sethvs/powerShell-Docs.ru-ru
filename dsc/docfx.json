@@ -12,6 +12,12 @@
     ],
     "globalMetadata": {
       "ROBOTS": "INDEX, FOLLOW",
+	    "ms.prod": "powershell",
+            "ms.technology": "dsc",
+            "manager": "carmonm",
+            "ms.devlang": "powershell",
+            "ms.tgt_pltfr": "windows",
+            "ms.author": "eslesar",
       "bilingual_type": "hover over"
     },
     "resource": [
