@@ -10,39 +10,34 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="get-installedscript" class="xliff"></a>
-# Get-InstalledScript
+# <a name="get-installedscript"></a><span data-ttu-id="43a18-103">Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="43a18-103">Get-InstalledScript</span></span>
 
-Возвращает установленные сценарии на компьютере.
+<span data-ttu-id="43a18-104">Возвращает установленные сценарии на компьютере.</span><span class="sxs-lookup"><span data-stu-id="43a18-104">Gets installed scripts on a computer.</span></span>
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a><span data-ttu-id="43a18-105">Описание</span><span class="sxs-lookup"><span data-stu-id="43a18-105">Description</span></span>
 
-Командлет Get-InstalledScript возвращает установленные на компьютере сценарии PowerShell.
+<span data-ttu-id="43a18-106">Командлет Get-InstalledScript возвращает установленные на компьютере сценарии PowerShell.</span><span class="sxs-lookup"><span data-stu-id="43a18-106">The Get-InstalledScript cmdlet gets installed PowerShell scripts on a computer.</span></span>
 
-Для каждого установленного сценария Get-InstalledScript возвращает объект PSRepositoryItemInfo, который при необходимости можно передать командлету Uninstall-Script для удаления установленных сценариев.
+<span data-ttu-id="43a18-107">Для каждого установленного сценария Get-InstalledScript возвращает объект PSRepositoryItemInfo, который при необходимости можно передать командлету Uninstall-Script для удаления установленных сценариев.</span><span class="sxs-lookup"><span data-stu-id="43a18-107">For each installed script, Get-InstalledScript returns a PSRepositoryItemInfo object which can optionally be piped to Uninstall-Script for uninstalling the installed scripts.</span></span>
 
-- Get-InstalledScript может фильтровать сценарии по имени и версии.
-- Get-InstalledScript позволяет фильтровать сценарии с помощью следующих параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.
-  - Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).
-  - Эти параметры версии допускаются только с единственным именем сценария без каких-либо подстановочных знаков.
-  - Если параметр RequiredVersion не указан, командлет Get-InstalledScript возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана. 
-  - Если параметр RequiredVersion указан, Get-InstalledScript возвращает только версию установленного сценария, которая точно совпадает с указанной версией.
+- <span data-ttu-id="43a18-108">Get-InstalledScript может фильтровать сценарии по имени и версии.</span><span class="sxs-lookup"><span data-stu-id="43a18-108">Get-InstalledScript can filter installed scripts based on name, version parameters.</span></span>
+- <span data-ttu-id="43a18-109">Get-InstalledScript позволяет фильтровать сценарии с помощью следующих параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span><span class="sxs-lookup"><span data-stu-id="43a18-109">Get-InstalledScript can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
+  - <span data-ttu-id="43a18-110">Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).</span><span class="sxs-lookup"><span data-stu-id="43a18-110">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
+  - <span data-ttu-id="43a18-111">Эти параметры версии допускаются только с единственным именем сценария без каких-либо подстановочных знаков.</span><span class="sxs-lookup"><span data-stu-id="43a18-111">These version parameters are allowed only with the single script name without any wildcards.</span></span>
+  - <span data-ttu-id="43a18-112">Если параметр RequiredVersion не указан, командлет Get-InstalledScript возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана.</span><span class="sxs-lookup"><span data-stu-id="43a18-112">If the RequiredVersion parameter is not specified, Get-InstalledScript returns the latest version of the installed script that is equal to or greater than the minimum version specified or the latest version of the script if no minimum version is specified.</span></span> 
+  - <span data-ttu-id="43a18-113">Если параметр RequiredVersion указан, Get-InstalledScript возвращает только версию установленного сценария, которая точно совпадает с указанной версией.</span><span class="sxs-lookup"><span data-stu-id="43a18-113">If the RequiredVersion parameter is specified, Get-InstalledScript only returns the version of installed script that exactly matches the specified version.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a><span data-ttu-id="43a18-114">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="43a18-114">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Get-InstalledScript -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="43a18-115">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="43a18-115">Cmdlet online help reference</span></span>
 
-[Get-InstalledScript](http://go.microsoft.com/fwlink/?LinkId=619790)
+[<span data-ttu-id="43a18-116">Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="43a18-116">Get-InstalledScript</span></span>](http://go.microsoft.com/fwlink/?LinkId=619790)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a><span data-ttu-id="43a18-117">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="43a18-117">Example commands</span></span>
 
 ```powershell
 

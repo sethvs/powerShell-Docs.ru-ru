@@ -9,22 +9,19 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="desired-state-configuration-dsc-known-issues-and-limitations" class="xliff"></a>
-# Известные проблемы и ограничения настройки требуемого состояния (DSC)
+# <a name="desired-state-configuration-dsc-known-issues-and-limitations"></a><span data-ttu-id="1584d-102">Известные проблемы и ограничения настройки требуемого состояния (DSC)</span><span class="sxs-lookup"><span data-stu-id="1584d-102">Desired State Configuration (DSC) Known Issues and Limitations</span></span>
 
-<a id="breaking-change-certificates-used-to-encryptdecrypt-passwords-in-dsc-configurations-may-not-work-after-installing-wmf-50-rtm" class="xliff"></a>
-Критическое изменение: сертификаты, используемые для шифрования и расшифровки паролей в конфигурациях DSC, могут не работать после установки WMF 5.0 RTM
+<a name="breaking-change-certificates-used-to-encryptdecrypt-passwords-in-dsc-configurations-may-not-work-after-installing-wmf-50-rtm"></a><span data-ttu-id="1584d-103">Критическое изменение: сертификаты, используемые для шифрования и расшифровки паролей в конфигурациях DSC, могут не работать после установки WMF 5.0 RTM</span><span class="sxs-lookup"><span data-stu-id="1584d-103">Breaking Change: Certificates used to encrypt/decrypt passwords in DSC configurations may not work after installing WMF 5.0 RTM</span></span>
 --------------------------------------------------------------------------------------------------------------------------------
 
-В выпусках WMF 4.0 и WMF 5.0 Preview DSC не позволял использовать в конфигурациях пароли длиннее 121 символов. DSC требовал использования коротких паролей даже в тех случаях, когда были нужны длинные и надежные пароли. Это критическое изменение позволяет использовать в конфигурации DSC пароли произвольной длины.
+<span data-ttu-id="1584d-104">В выпусках WMF 4.0 и WMF 5.0 Preview DSC не позволял использовать в конфигурациях пароли длиннее 121 символов.</span><span class="sxs-lookup"><span data-stu-id="1584d-104">In WMF 4.0 and WMF 5.0 Preview releases, DSC would not allow passwords in the configuration to be of length more than 121 characters.</span></span> <span data-ttu-id="1584d-105">DSC требовал использования коротких паролей даже в тех случаях, когда были нужны длинные и надежные пароли.</span><span class="sxs-lookup"><span data-stu-id="1584d-105">DSC was forcing to use short passwords even if lengthy and strong password was desired.</span></span> <span data-ttu-id="1584d-106">Это критическое изменение позволяет использовать в конфигурации DSC пароли произвольной длины.</span><span class="sxs-lookup"><span data-stu-id="1584d-106">This breaking change allows passwords to be of arbitrary length in the DSC configuration.</span></span>
 
-**Разрешение.** Повторно создайте сертификат с использованием шифрования ключа или данных и расширенного ключа шифрования документов (1.3.6.1.4.1.311.80.1). Дополнительные сведения см. в статье TechNet <https://technet.microsoft.com/en-us/library/dn807171.aspx>.
+<span data-ttu-id="1584d-107">**Разрешение.** Повторно создайте сертификат с использованием шифрования ключа или данных и расширенного ключа шифрования документов (1.3.6.1.4.1.311.80.1).</span><span class="sxs-lookup"><span data-stu-id="1584d-107">**Resolution:** Re-create the certificate with Data Encipherment or Key Encipherment Key usage, and Document Encryption Enhanced Key usage (1.3.6.1.4.1.311.80.1).</span></span> <span data-ttu-id="1584d-108">Дополнительные сведения см. в статье TechNet <https://technet.microsoft.com/en-us/library/dn807171.aspx>.</span><span class="sxs-lookup"><span data-stu-id="1584d-108">Technet article <https://technet.microsoft.com/en-us/library/dn807171.aspx> has more information.</span></span>
 
 
-<a id="dsc-cmdlets-may-fail-after-installing-wmf-50-rtm" class="xliff"></a>
-После установки WMF 5.0 RTM может произойти сбой командлетов DSC
+<a name="dsc-cmdlets-may-fail-after-installing-wmf-50-rtm"></a><span data-ttu-id="1584d-109">После установки WMF 5.0 RTM может произойти сбой командлетов DSC</span><span class="sxs-lookup"><span data-stu-id="1584d-109">DSC cmdlets may fail after installing WMF 5.0 RTM</span></span>
 ------------------------------------------------------------------------------------
-Start-DscConfiguration и другие командлеты DSC могут завершаться со сбоем после установки WMF 5.0 RTM, выдавая следующую ошибку:
+<span data-ttu-id="1584d-110">Start-DscConfiguration и другие командлеты DSC могут завершаться со сбоем после установки WMF 5.0 RTM, выдавая следующую ошибку:</span><span class="sxs-lookup"><span data-stu-id="1584d-110">Start-DscConfiguration and other DSC cmdlets may fail after installing WMF 5.0 RTM with the following error:</span></span>
 ```powershell
     LCM failed to retrieve the property PendingJobStep from the object of class dscInternalCache .
     + CategoryInfo : ObjectNotFound: (root/Microsoft/...gurationManager:String) [], CimException
@@ -32,75 +29,67 @@ Start-DscConfiguration и другие командлеты DSC могут за�
     + PSComputerName : localhost
 ```
 
-**Решение.** Удалите DSCEngineCache.mof, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
+<span data-ttu-id="1584d-111">**Решение.** Удалите DSCEngineCache.mof, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):</span><span class="sxs-lookup"><span data-stu-id="1584d-111">**Resolution:** Delete DSCEngineCache.mof by running the following command in an elevated PowerShell session (Run as Administrator):</span></span>
     
 ```powershell
 Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 ```
 
 
-<a id="dsc-cmdlets-may-not-work-if-wmf-50-rtm-is-installed-on-top-of-wmf-50-production-preview" class="xliff"></a>
-Командлеты DSC могут не работать в случае установки WMF 5.0 RTM поверх WMF 5.0 Production Preview
+<a name="dsc-cmdlets-may-not-work-if-wmf-50-rtm-is-installed-on-top-of-wmf-50-production-preview"></a><span data-ttu-id="1584d-112">Командлеты DSC могут не работать в случае установки WMF 5.0 RTM поверх WMF 5.0 Production Preview</span><span class="sxs-lookup"><span data-stu-id="1584d-112">DSC cmdlets may not work if WMF 5.0 RTM is installed on top of WMF 5.0 Production Preview</span></span>
 ------------------------------------------------------
-**Решение.** Выполните следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
+<span data-ttu-id="1584d-113">**Решение.** Выполните следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):</span><span class="sxs-lookup"><span data-stu-id="1584d-113">**Resolution:** Run the following command in an elevated PowerShell session (run as administrator):</span></span>
 ```powershell
     mofcomp $env:windir\system32\wbem\DscCoreConfProv.mof
 ```
 
 
-<a id="lcm-can-go-into-an-unstable-state-while-using-get-dscconfiguration-in-debugmode" class="xliff"></a>
-LCM может перейти в нестабильное состояние при использовании Get-DscConfiguration в DebugMode
+<a name="lcm-can-go-into-an-unstable-state-while-using-get-dscconfiguration-in-debugmode"></a><span data-ttu-id="1584d-114">LCM может перейти в нестабильное состояние при использовании Get-DscConfiguration в DebugMode</span><span class="sxs-lookup"><span data-stu-id="1584d-114">LCM can go into an unstable state while using Get-DscConfiguration in DebugMode</span></span>
 -------------------------------------------------------------------------------
 
-Когда LCM находится в режиме DebugMode, нажатие клавиш CTRL+C для остановки обработки Get-DscConfiguration может привести к переключению LCM в нестабильное состояние, в котором не работает большинство командлетов DSC.
+<span data-ttu-id="1584d-115">Когда LCM находится в режиме DebugMode, нажатие клавиш CTRL+C для остановки обработки Get-DscConfiguration может привести к переключению LCM в нестабильное состояние, в котором не работает большинство командлетов DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-115">If LCM is in DebugMode, pressing CTRL+C to stop the processing of Get-DscConfiguration can cause LCM to go into an unstable state such that majority of DSC cmdlets won’t work.</span></span>
 
-**Решение.** Не нажимайте клавиши CTRL+C во время отладки командлет Get-DscConfiguration.
+<span data-ttu-id="1584d-116">**Решение.** Не нажимайте клавиши CTRL+C во время отладки командлет Get-DscConfiguration.</span><span class="sxs-lookup"><span data-stu-id="1584d-116">**Resolution:** Don’t press CTRL+C while debugging Get-DscConfiguration cmdlet.</span></span>
 
 
-<a id="stop-dscconfiguration-may-hang-in-debugmode" class="xliff"></a>
-STOP-DscConfiguration может зависнуть в DebugMode
+<a name="stop-dscconfiguration-may-hang-in-debugmode"></a><span data-ttu-id="1584d-117">STOP-DscConfiguration может зависнуть в DebugMode</span><span class="sxs-lookup"><span data-stu-id="1584d-117">Stop-DscConfiguration may hang in DebugMode</span></span>
 ------------------------------------------------------------------------------------------------------------------------
-Когда LCM находится в DebugMode, может зависнуть Stop-DscConfiguration при попытке остановить операцию, запущенную Get-DscConfiguration.
+<span data-ttu-id="1584d-118">Когда LCM находится в DebugMode, может зависнуть Stop-DscConfiguration при попытке остановить операцию, запущенную Get-DscConfiguration.</span><span class="sxs-lookup"><span data-stu-id="1584d-118">If LCM is in DebugMode, Stop-DscConfiguration may hang while trying to stop an operation started by Get-DscConfiguration</span></span>
 
-**Решение.** Завершите отладку операции, запущенной Get-DscConfiguration, как описано в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource).
+<span data-ttu-id="1584d-119">**Решение.** Завершите отладку операции, запущенной Get-DscConfiguration, как описано в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource).</span><span class="sxs-lookup"><span data-stu-id="1584d-119">**Resolution:** Finish the debugging of the operation started by Get-DscConfiguration as outlined in section ‘[Debugging DSC resources](https://msdn.microsoft.com/powershell/dsc/debugresource)’.</span></span>
 
 
-<a id="no-verbose-error-messages-are-shown-in-debugmode" class="xliff"></a>
-В DebugMode не отображаются подробные сообщения об ошибках
+<a name="no-verbose-error-messages-are-shown-in-debugmode"></a><span data-ttu-id="1584d-120">В DebugMode не отображаются подробные сообщения об ошибках</span><span class="sxs-lookup"><span data-stu-id="1584d-120">No Verbose Error Messages are shown in DebugMode</span></span>
 -----------------------------------------------------------------------------------
-Когда LCM находится в DebugMode, не отображаются подробные сообщения об ошибках из ресурсов DSC.
+<span data-ttu-id="1584d-121">Когда LCM находится в DebugMode, не отображаются подробные сообщения об ошибках из ресурсов DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-121">If LCM is in DebugMode, no verbose error messages are displayed from DSC Resources.</span></span>
 
-**Решение.** Отключите *DebugMode* для просмотра подробных сообщений из ресурсов.
+<span data-ttu-id="1584d-122">**Решение.** Отключите *DebugMode* для просмотра подробных сообщений из ресурсов.</span><span class="sxs-lookup"><span data-stu-id="1584d-122">**Resolution:** Disable *DebugMode* to see verbose messages from the resource</span></span>
 
 
-<a id="invoke-dscresource-operations-cannot-be-retrieved-by-get-dscconfigurationstatus-cmdlet" class="xliff"></a>
-Командлету Get-DscConfigurationStatus не удается получить операции Invoke-DscResource
+<a name="invoke-dscresource-operations-cannot-be-retrieved-by-get-dscconfigurationstatus-cmdlet"></a><span data-ttu-id="1584d-123">Командлету Get-DscConfigurationStatus не удается получить операции Invoke-DscResource</span><span class="sxs-lookup"><span data-stu-id="1584d-123">Invoke-DscResource operations cannot be retrieved by Get-DscConfigurationStatus cmdlet</span></span>
 --------------------------------------------------------------------------------------
-После использования командлета Invoke-DscResource для прямого вызова методов любого ресурса позднее записи такой операции не удается извлечь с помощью Get-DscConfigurationStatus.
+<span data-ttu-id="1584d-124">После использования командлета Invoke-DscResource для прямого вызова методов любого ресурса позднее записи такой операции не удается извлечь с помощью Get-DscConfigurationStatus.</span><span class="sxs-lookup"><span data-stu-id="1584d-124">After using Invoke-DscResource cmdlet to directly invoke any resource’s methods, the records of such operation cannot be retrieved through Get-DscConfigurationStatus at a later time.</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-125">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-125">**Resolution:** None.</span></span>
 
 
-<a id="get-dscconfigurationstatus-returns-pull-cycle-operations-as-type-consistency" class="xliff"></a>
-Get-DscConfigurationStatus возвращает операции цикла извлечения с типом *Consistency*
+<a name="get-dscconfigurationstatus-returns-pull-cycle-operations-as-type-consistency"></a><span data-ttu-id="1584d-126">Get-DscConfigurationStatus возвращает операции цикла извлечения с типом *Consistency*</span><span class="sxs-lookup"><span data-stu-id="1584d-126">Get-DscConfigurationStatus returns pull cycle operations as type *Consistency*</span></span>
 ---------------------------------------------------------------------------------
-Когда узел переведен в режим обновления PULL, для каждой выполненной операции извлечения командлет Get-DscConfigurationStatus сообщает тип операции, как *Consistency*, а не *Initial*.
+<span data-ttu-id="1584d-127">Когда узел переведен в режим обновления PULL, для каждой выполненной операции извлечения командлет Get-DscConfigurationStatus сообщает тип операции, как *Consistency*, а не *Initial*.</span><span class="sxs-lookup"><span data-stu-id="1584d-127">When a node is set to PULL refresh mode, for each pull operation performed, Get-DscConfigurationStatus cmdlet reports the operation type as *Consistency* instead of *Initial*</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-128">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-128">**Resolution:** None.</span></span>
 
-<a id="invoke-dscresource-cmdlet-does-not-return-message-in-the-order-they-were-produced" class="xliff"></a>
-Командлет Invoke-DscResource не возвращает сообщения в том порядке, в котором они были созданы
+<a name="invoke-dscresource-cmdlet-does-not-return-message-in-the-order-they-were-produced"></a><span data-ttu-id="1584d-129">Командлет Invoke-DscResource не возвращает сообщения в том порядке, в котором они были созданы</span><span class="sxs-lookup"><span data-stu-id="1584d-129">Invoke-DscResource cmdlet does not return message in the order they were produced</span></span>
 ---------------------------------------------------------------------------------
-Командлет Invoke-DscResource не возвращает подробные сообщения, предупреждения и сообщения об ошибках в том порядке, в котором они были созданы LCM или ресурсом DSC.
+<span data-ttu-id="1584d-130">Командлет Invoke-DscResource не возвращает подробные сообщения, предупреждения и сообщения об ошибках в том порядке, в котором они были созданы LCM или ресурсом DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-130">The Invoke-DscResource cmdlet does not return verbose, warning, and error messages in the order they were produced by LCM or the DSC resource.</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-131">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-131">**Resolution:** None.</span></span>
 
 
-<a id="dsc-resources-cannot-be-debugged-easily-when-used-with-invoke-dscresource" class="xliff"></a>
-Невозможна простая отладка ресурсов DSC при использовании Invoke-DscResource
+<a name="dsc-resources-cannot-be-debugged-easily-when-used-with-invoke-dscresource"></a><span data-ttu-id="1584d-132">Невозможна простая отладка ресурсов DSC при использовании Invoke-DscResource</span><span class="sxs-lookup"><span data-stu-id="1584d-132">DSC Resources cannot be debugged easily when used with Invoke-DscResource</span></span>
 -----------------------------------------------------------------------
-Когда LCM работает в режиме отладки (дополнительные сведения см. в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource)), командлет Invoke-DscResource не предоставляет сведения о пространстве выполнения, к которому требуется подключиться для отладки.
-**Решение.** Найдите пространство выполнения и подключитесь к нему с помощью командлетов **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** и **Debug-Runspace** для отладки ресурса DSC.
+<span data-ttu-id="1584d-133">Когда LCM работает в режиме отладки (дополнительные сведения см. в разделе [Отладка ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/debugresource)), командлет Invoke-DscResource не предоставляет сведения о пространстве выполнения, к которому требуется подключиться для отладки.</span><span class="sxs-lookup"><span data-stu-id="1584d-133">When LCM is running in debug mode (see [Debugging DSC resources](https://msdn.microsoft.com/powershell/dsc/debugresource) for more details), Invoke-DscResource cmdlet does not give information about runspace to connect to for debugging.</span></span>
+<span data-ttu-id="1584d-134">**Решение.** Найдите пространство выполнения и подключитесь к нему с помощью командлетов **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** и **Debug-Runspace** для отладки ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-134">**Resolution:** Discover and attach to the runspace using cmdlets **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** and **Debug-Runspace** to debug the DSC resource.</span></span>
 
 ```powershell
 # Find all the processes hosting PowerShell
@@ -128,86 +117,76 @@ Debug-Runspace -Id 2
 ```
 
 
-<a id="various-partial-configuration-documents-for-same-node-cannot-have-identical-resource-names" class="xliff"></a>
-Различные документы неполной конфигурации для одного узла не могут иметь одинаковые имена ресурсов
+<a name="various-partial-configuration-documents-for-same-node-cannot-have-identical-resource-names"></a><span data-ttu-id="1584d-135">Различные документы неполной конфигурации для одного узла не могут иметь одинаковые имена ресурсов</span><span class="sxs-lookup"><span data-stu-id="1584d-135">Various Partial Configuration documents for same node cannot have identical resource names</span></span>
 ------------------------------------------------------------------------------------------
 
-Идентичные имена ресурсов для нескольких неполных конфигураций, развернутых на одном узле, приводят к ошибке во время выполнения.
+<span data-ttu-id="1584d-136">Идентичные имена ресурсов для нескольких неполных конфигураций, развернутых на одном узле, приводят к ошибке во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="1584d-136">For several partial configurations that are deployed onto a single node, identical names of resources cause run time error.</span></span>
 
-**Решение.** Используйте разные имена для одинаковых ресурсов в различных неполных конфигурациях.
+<span data-ttu-id="1584d-137">**Решение.** Используйте разные имена для одинаковых ресурсов в различных неполных конфигурациях.</span><span class="sxs-lookup"><span data-stu-id="1584d-137">**Resolution:** Use different names for even same resources in different partial configurations.</span></span>
 
 
-<a id="start-dscconfiguration-useexisting-does-not-work-with--credential" class="xliff"></a>
-Start-DscConfiguration –UseExisting не работает с параметром -Credential
+<a name="start-dscconfiguration-useexisting-does-not-work-with--credential"></a><span data-ttu-id="1584d-138">Start-DscConfiguration –UseExisting не работает с параметром -Credential</span><span class="sxs-lookup"><span data-stu-id="1584d-138">Start-DscConfiguration –UseExisting does not work with -Credential</span></span>
 ------------------------------------------------------------------
 
-При использовании Start-DscConfiguration с параметром –UseExisting параметр –Credential игнорируется. DSC использует удостоверение процесса по умолчанию для продолжения операции. Это вызывает ошибку, если для продолжения работы на удаленном узле требуются другие учетные данные.
+<span data-ttu-id="1584d-139">При использовании Start-DscConfiguration с параметром –UseExisting параметр –Credential игнорируется.</span><span class="sxs-lookup"><span data-stu-id="1584d-139">When using Start-DscConfiguration with –UseExisting parameter, the –Credential parameter is ignored.</span></span> <span data-ttu-id="1584d-140">DSC использует удостоверение процесса по умолчанию для продолжения операции.</span><span class="sxs-lookup"><span data-stu-id="1584d-140">DSC uses default process identity to proceed the operation.</span></span> <span data-ttu-id="1584d-141">Это вызывает ошибку, если для продолжения работы на удаленном узле требуются другие учетные данные.</span><span class="sxs-lookup"><span data-stu-id="1584d-141">This causes error when a different credential is needed to proceed on remote node.</span></span>
 
-**Решение.** Используйте сеанс CIM для удаленных операций DSC:
+<span data-ttu-id="1584d-142">**Решение.** Используйте сеанс CIM для удаленных операций DSC:</span><span class="sxs-lookup"><span data-stu-id="1584d-142">**Resolution:** Use CIM session for remote DSC operations:</span></span>
 ```powershell
 $session = New-CimSession -ComputerName $node -Credential $credential
 Start-DscConfiguration -UseExisting -CimSession $session
 ```
 
 
-<a id="ipv6-addresses-as-node-names-in-dsc-configurations" class="xliff"></a>
-IPv6-адреса в качестве имен узлов в конфигурациях DSC
+<a name="ipv6-addresses-as-node-names-in-dsc-configurations"></a><span data-ttu-id="1584d-143">IPv6-адреса в качестве имен узлов в конфигурациях DSC</span><span class="sxs-lookup"><span data-stu-id="1584d-143">IPv6 Addresses as Node Names in DSC configurations</span></span>
 --------------------------------------------------
-В этом выпуске не поддерживается использование IPv6-адресов в качестве имен узлов в сценариях конфигурации DSC.
+<span data-ttu-id="1584d-144">В этом выпуске не поддерживается использование IPv6-адресов в качестве имен узлов в сценариях конфигурации DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-144">IPv6 addresses as node names in DSC configuration scripts are not supported in this release.</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-145">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-145">**Resolution:** None.</span></span>
 
 
-<a id="debugging-of-class-based-dsc-resources" class="xliff"></a>
-Отладка ресурсов DSC, основанных на классах
+<a name="debugging-of-class-based-dsc-resources"></a><span data-ttu-id="1584d-146">Отладка ресурсов DSC, основанных на классах</span><span class="sxs-lookup"><span data-stu-id="1584d-146">Debugging of Class-Based DSC Resources</span></span>
 --------------------------------------
-В этом выпуске отладка ресурсов DSC на основе классов не поддерживается.
+<span data-ttu-id="1584d-147">В этом выпуске отладка ресурсов DSC на основе классов не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1584d-147">Debugging of class-based DSC Resources is not supported in this release.</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-148">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-148">**Resolution:** None.</span></span>
 
 
-<a id="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource" class="xliff"></a>
-Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC 
+<a name="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a><span data-ttu-id="1584d-149">Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC</span><span class="sxs-lookup"><span data-stu-id="1584d-149">Variables & Functions defined in $script scope in DSC Class-Based Resource are not preserved across multiple calls to a DSC Resource</span></span> 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-Несколько последовательных вызовов Start-DSCConfiguration завершаются ошибкой, если конфигурация использует любой ресурс на основе класса, у которого переменные или функции определены в области $script.
+<span data-ttu-id="1584d-150">Несколько последовательных вызовов Start-DSCConfiguration завершаются ошибкой, если конфигурация использует любой ресурс на основе класса, у которого переменные или функции определены в области $script.</span><span class="sxs-lookup"><span data-stu-id="1584d-150">Multiple consecutive calls to Start-DSCConfiguration will fail if configuration is using any class-based resource which has variables or functions defined in $script scope.</span></span>
 
-**Решение.** Определите все переменные и функции в самом классе ресурса DSC. Переменных и функций области $script быть не должно.
+<span data-ttu-id="1584d-151">**Решение.** Определите все переменные и функции в самом классе ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="1584d-151">**Resolution:** Define all variables and functions in DSC Resource class itself.</span></span> <span data-ttu-id="1584d-152">Переменных и функций области $script быть не должно.</span><span class="sxs-lookup"><span data-stu-id="1584d-152">No $script scope variables/functions.</span></span>
 
 
-<a id="dsc-resource-debugging-when-a-resource-is-using-psdscrunascredential" class="xliff"></a>
-Отладка ресурсов DSC, когда ресурс использует PSDscRunAsCredential
+<a name="dsc-resource-debugging-when-a-resource-is-using-psdscrunascredential"></a><span data-ttu-id="1584d-153">Отладка ресурсов DSC, когда ресурс использует PSDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="1584d-153">DSC Resource Debugging when a resource is using PSDscRunAsCredential</span></span>
 ----------------------------------------------------------------------
-В этом выпуске отладка ресурсов DSC, когда ресурс использует свойство *PSDscRunAsCredential* в конфигурации, не поддерживается .
+<span data-ttu-id="1584d-154">В этом выпуске отладка ресурсов DSC, когда ресурс использует свойство *PSDscRunAsCredential* в конфигурации, не поддерживается .</span><span class="sxs-lookup"><span data-stu-id="1584d-154">DSC Resource debugging when a resource is using the *PSDscRunAsCredential* property in the configuration is not suported in this release.</span></span>
 
-**Решение.** Отсутствует.
+<span data-ttu-id="1584d-155">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-155">**Resolution:** None.</span></span>
 
 
-<a id="psdscrunascredential-is-not-supported-for-dsc-composite-resources" class="xliff"></a>
-PsDscRunAsCredential не поддерживается для составных ресурсов DSC
+<a name="psdscrunascredential-is-not-supported-for-dsc-composite-resources"></a><span data-ttu-id="1584d-156">PsDscRunAsCredential не поддерживается для составных ресурсов DSC</span><span class="sxs-lookup"><span data-stu-id="1584d-156">PsDscRunAsCredential is not supported for DSC Composite Resources</span></span>
 ----------------------------------------------------------------
 
-**Решение.** Используйте свойство Credential, если оно доступно. Например, ServiceSet и WindowsFeatureSet.
+<span data-ttu-id="1584d-157">**Решение.** Используйте свойство Credential, если оно доступно.</span><span class="sxs-lookup"><span data-stu-id="1584d-157">**Resolution:** Use Credential property if available.</span></span> <span data-ttu-id="1584d-158">Например, ServiceSet и WindowsFeatureSet.</span><span class="sxs-lookup"><span data-stu-id="1584d-158">Example ServiceSet and WindowsFeatureSet</span></span>
 
 
-<a id="get-dscresource--syntax-does-not-reflect-psdscrunascredential-correctly" class="xliff"></a>
-*Get-DscResource -Syntax* неправильно отражает PsDscRunAsCredential
+<a name="get-dscresource--syntax-does-not-reflect-psdscrunascredential-correctly"></a><span data-ttu-id="1584d-159">*Get-DscResource -Syntax* неправильно отражает PsDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="1584d-159">*Get-DscResource -Syntax* does not reflect PsDscRunAsCredential correctly</span></span>
 -------------------------------------------------------------------------
-Get-DscResource -Synta отражает PsDscRunAsCredential неправильно, когда ресурс помечает его как обязательный или не поддерживает его.
+<span data-ttu-id="1584d-160">Get-DscResource -Synta отражает PsDscRunAsCredential неправильно, когда ресурс помечает его как обязательный или не поддерживает его.</span><span class="sxs-lookup"><span data-stu-id="1584d-160">Get-DscResource -Syntax does not reflect PsDscRunAsCredential correctly when resource marks it as mandatory or does not support it.</span></span>
 
-**Решение.** Отсутствует. Однако создание конфигурации в интегрированной среде сценариев отражает правильные метаданные о свойстве PsDscRunAsCredential при использовании технологии IntelliSense.
+<span data-ttu-id="1584d-161">**Решение.** Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="1584d-161">**Resolution:** None.</span></span> <span data-ttu-id="1584d-162">Однако создание конфигурации в интегрированной среде сценариев отражает правильные метаданные о свойстве PsDscRunAsCredential при использовании технологии IntelliSense.</span><span class="sxs-lookup"><span data-stu-id="1584d-162">However, authoring configuration in ISE reflects correct metadata about PsDscRunAsCredential property when using IntelliSense.</span></span>
 
 
-<a id="windowsoptionalfeature-is-not-available-in-windows-7" class="xliff"></a>
-WindowsOptionalFeature недоступен в Windows 7
+<a name="windowsoptionalfeature-is-not-available-in-windows-7"></a><span data-ttu-id="1584d-163">WindowsOptionalFeature недоступен в Windows 7</span><span class="sxs-lookup"><span data-stu-id="1584d-163">WindowsOptionalFeature is not available in Windows 7</span></span>
 -----------------------------------------------------
 
-Ресурс DSC WindowsOptionalFeature недоступен в Windows 7. Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.
+<span data-ttu-id="1584d-164">Ресурс DSC WindowsOptionalFeature недоступен в Windows 7.</span><span class="sxs-lookup"><span data-stu-id="1584d-164">The WindowsOptionalFeature DSC resource is not available in Windows 7.</span></span> <span data-ttu-id="1584d-165">Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.</span><span class="sxs-lookup"><span data-stu-id="1584d-165">This resource requires the DISM module, and DISM cmdlets that are available starting in Windows 8 and newer releases of the Windows operating system.</span></span>
 
-<a id="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected" class="xliff"></a>
-Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось   
+<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a><span data-ttu-id="1584d-166">Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось</span><span class="sxs-lookup"><span data-stu-id="1584d-166">For Class-based DSC resources, Import-DscResource -ModuleVersion may not work as expected</span></span>   
 ------------------------------------------------------------------------------------------
-Если у узла компиляции нескольких версий модуля ресурса DSC на основе класса, `Import-DscResource -ModuleVersion` не может получить указанную версию и вызывает следующую ошибку компиляции.
+<span data-ttu-id="1584d-167">Если у узла компиляции нескольких версий модуля ресурса DSC на основе класса, `Import-DscResource -ModuleVersion` не может получить указанную версию и вызывает следующую ошибку компиляции.</span><span class="sxs-lookup"><span data-stu-id="1584d-167">If the compilation node has multiple version of a class-based DSC resource module, `Import-DscResource -ModuleVersion` does not pick the specified version and results in following compilation error.</span></span>
 
 ```
 ImportClassResourcesFromModule : Exception calling "ImportClassResourcesFromModule" with "3" argument(s): "Keyword 'MyTestResource' already defined in the configuration."
@@ -218,21 +197,20 @@ At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
     + FullyQualifiedErrorId : PSInvalidOperationException,ImportClassResourcesFromModule
 ```
 
-**Решение**. Импортируйте требуемую версию, определив объект *ModuleSpecification* для `-ModuleName` с ключом `RequiredVersion`, указанным следующим образом:
+<span data-ttu-id="1584d-168">**Решение**. Импортируйте требуемую версию, определив объект *ModuleSpecification* для `-ModuleName` с ключом `RequiredVersion`, указанным следующим образом:</span><span class="sxs-lookup"><span data-stu-id="1584d-168">**Resolution:** Import the required version by defining the *ModuleSpecification* object to the `-ModuleName` with `RequiredVersion` key specified as follows:</span></span>
 ``` PowerShell  
 Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
 ```  
 
-<a id="some-dsc-resources-like-registry-resource-may-start-to-take-a-long-time-to-process-the-request" class="xliff"></a>
-Для обработки запросов некоторым ресурсам DSC, например ресурсу реестра, может требоваться много времени.
+<a name="some-dsc-resources-like-registry-resource-may-start-to-take-a-long-time-to-process-the-request"></a><span data-ttu-id="1584d-169">Для обработки запросов некоторым ресурсам DSC, например ресурсу реестра, может требоваться много времени.</span><span class="sxs-lookup"><span data-stu-id="1584d-169">Some DSC resources like registry resource may start to take a long time to process the request.</span></span>
 --------------------------------------------------------------------------------------------------------------------------------
 
-**Решение 1.** Создайте запланированную задачу, которая периодически очищает папку.
+<span data-ttu-id="1584d-170">**Решение 1.** Создайте запланированную задачу, которая периодически очищает папку.</span><span class="sxs-lookup"><span data-stu-id="1584d-170">**Resolution1:** Create a schedule task that cleans up the following folder periodically.</span></span>
 ``` PowerShell 
 $env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis 
 ```
 
-**Решение 2.** Измените конфигурацию DSC так, чтобы очистка папки *CommandAnalysis* выполнялась в конце конфигурации.
+<span data-ttu-id="1584d-171">**Решение 2.** Измените конфигурацию DSC так, чтобы очистка папки *CommandAnalysis* выполнялась в конце конфигурации.</span><span class="sxs-lookup"><span data-stu-id="1584d-171">**Resolution2:** Change the DSC configuration to clean up the *CommandAnalysis* folder at the end of the configuration.</span></span>
 ``` PowerShell
 Configuration $configName
 {

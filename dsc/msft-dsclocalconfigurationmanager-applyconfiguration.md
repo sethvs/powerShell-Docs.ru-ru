@@ -10,16 +10,14 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="applyconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод ApplyConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="applyconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="44f85-103">Метод ApplyConfiguration класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="44f85-103">ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Использует агент конфигурации для применения конфигурации, которая находится в состоянии ожидания. 
+<span data-ttu-id="44f85-104">Использует агент конфигурации для применения конфигурации, которая находится в состоянии ожидания.</span><span class="sxs-lookup"><span data-stu-id="44f85-104">Uses the Configuration Agent to apply the configuration that is pending.</span></span> 
 
-Если нет ожидающих конфигураций, этот метод повторно применяет текущую конфигурацию.
+<span data-ttu-id="44f85-105">Если нет ожидающих конфигураций, этот метод повторно применяет текущую конфигурацию.</span><span class="sxs-lookup"><span data-stu-id="44f85-105">If there is no configuration pending, this method reapplies the current configuration.</span></span>
 
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a><span data-ttu-id="44f85-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="44f85-106">Syntax</span></span>
 ------
 
 ```mof
@@ -28,37 +26,32 @@ uint32 ApplyConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-## Параметры
+## <a name="parameters"></a><span data-ttu-id="44f85-107">Параметры</span><span class="sxs-lookup"><span data-stu-id="44f85-107">Parameters</span></span>
 ----------
 
-*force* \[in\]  
-Если параметр имеет значение **true**, текущая конфигурация применяется повторно даже при наличии конфигурации в состоянии ожидания.
+<span data-ttu-id="44f85-108">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="44f85-108">*force* \[in\]</span></span>  
+<span data-ttu-id="44f85-109">Если параметр имеет значение **true**, текущая конфигурация применяется повторно даже при наличии конфигурации в состоянии ожидания.</span><span class="sxs-lookup"><span data-stu-id="44f85-109">If this is **true**, the current configuration is reapplied, even if there is a configuration pending.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="44f85-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="44f85-110">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="44f85-111">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="44f85-111">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="44f85-112">Замечания</span><span class="sxs-lookup"><span data-stu-id="44f85-112">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="44f85-113">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="44f85-113">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="44f85-114">Требования</span><span class="sxs-lookup"><span data-stu-id="44f85-114">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="44f85-115">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="44f85-115">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="44f85-116">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="44f85-116">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="44f85-117">См. также:</span><span class="sxs-lookup"><span data-stu-id="44f85-117">See also</span></span>
+
+
+[<span data-ttu-id="44f85-118">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="44f85-118">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
  
 

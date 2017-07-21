@@ -10,49 +10,42 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="44e2e-103">Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="44e2e-103">DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Отключает отладку ресурсов DSC.
+<span data-ttu-id="44e2e-104">Отключает отладку ресурсов DSC.</span><span class="sxs-lookup"><span data-stu-id="44e2e-104">Disables DSC resource debugging.</span></span>
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a><span data-ttu-id="44e2e-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="44e2e-105">Syntax</span></span>
 ------
 
 ```mof
 uint32 DisableDebugConfiguration();
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a><span data-ttu-id="44e2e-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="44e2e-106">Parameters</span></span>
 ----------
 
-Этот метод не имеет параметров.
+<span data-ttu-id="44e2e-107">Этот метод не имеет параметров.</span><span class="sxs-lookup"><span data-stu-id="44e2e-107">This method has no parameters.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="44e2e-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="44e2e-108">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="44e2e-109">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="44e2e-109">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="44e2e-110">Замечания</span><span class="sxs-lookup"><span data-stu-id="44e2e-110">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="44e2e-111">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="44e2e-111">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="44e2e-112">Требования</span><span class="sxs-lookup"><span data-stu-id="44e2e-112">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="44e2e-113">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="44e2e-113">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="44e2e-114">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="44e2e-114">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="44e2e-115">См. также:</span><span class="sxs-lookup"><span data-stu-id="44e2e-115">See also</span></span>
+
+
+[<span data-ttu-id="44e2e-116">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="44e2e-116">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
  
 

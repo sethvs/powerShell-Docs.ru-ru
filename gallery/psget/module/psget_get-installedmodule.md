@@ -10,38 +10,33 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="get-installedmodule" class="xliff"></a>
-# Get-InstalledModule
+# <a name="get-installedmodule"></a><span data-ttu-id="5c0a7-103">Get-InstalledModule</span><span class="sxs-lookup"><span data-stu-id="5c0a7-103">Get-InstalledModule</span></span>
 
-Возвращает установленные модули на компьютере.
+<span data-ttu-id="5c0a7-104">Возвращает установленные модули на компьютере.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-104">Gets installed modules on a computer.</span></span>
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a><span data-ttu-id="5c0a7-105">Описание</span><span class="sxs-lookup"><span data-stu-id="5c0a7-105">Description</span></span>
 
-Командлет Get-InstalledModule возвращает модули PowerShell, которые были установлены командлетом Install-Module.
+<span data-ttu-id="5c0a7-106">Командлет Get-InstalledModule возвращает модули PowerShell, которые были установлены командлетом Install-Module.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-106">The Get-InstalledModule cmdlet gets installed PowerShell modules on a computer which were installed using Install-Module cmdlet.</span></span>
 
-Для каждого установленного модуля Get-InstalledModule возвращает объект PSRepositoryItemInfo, который при необходимости можно передать командлету Uninstall-Module для удаления установленных модулей.
+<span data-ttu-id="5c0a7-107">Для каждого установленного модуля Get-InstalledModule возвращает объект PSRepositoryItemInfo, который при необходимости можно передать командлету Uninstall-Module для удаления установленных модулей.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-107">For each installed module, Get-InstalledModule returns a PSRepositoryItemInfo object which can optionally be piped to Uninstall-Module for uninstalling the installed modules.</span></span>
 
-- Get-InstalledModule может фильтровать модули по имени и версии.
-- Get-InstalledModule позволяет фильтровать модули при помощи следующих параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.
-  - Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).
-  - Эти параметры версии допускаются только с единственным именем модуля без каких-либо подстановочных знаков.
-  - Если параметр RequiredVersion не указан, командлет Get-InstalledModule возвращает последнюю версию установленного модуля, которая не ниже указанной минимальной версии, или последнюю версию модуля, если минимальная версия не указана. 
-  - Если параметр RequiredVersion указан, Get-InstalledModule возвращает только версию установленного модуля, которая точно совпадает с указанной версией.
+- <span data-ttu-id="5c0a7-108">Get-InstalledModule может фильтровать модули по имени и версии.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-108">Get-InstalledModule can filter installed modules based on name, version parameters.</span></span>
+- <span data-ttu-id="5c0a7-109">Get-InstalledModule позволяет фильтровать модули при помощи следующих параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-109">Get-InstalledModule can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
+  - <span data-ttu-id="5c0a7-110">Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).</span><span class="sxs-lookup"><span data-stu-id="5c0a7-110">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
+  - <span data-ttu-id="5c0a7-111">Эти параметры версии допускаются только с единственным именем модуля без каких-либо подстановочных знаков.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-111">These version parameters are allowed only with the single module name without any wildcards.</span></span>
+  - <span data-ttu-id="5c0a7-112">Если параметр RequiredVersion не указан, командлет Get-InstalledModule возвращает последнюю версию установленного модуля, которая не ниже указанной минимальной версии, или последнюю версию модуля, если минимальная версия не указана.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-112">If the RequiredVersion parameter is not specified, Get-InstalledModule returns the latest version of the installed module that is equal to or greater than the minimum version specified or the latest version of the module if no minimum version is specified.</span></span> 
+  - <span data-ttu-id="5c0a7-113">Если параметр RequiredVersion указан, Get-InstalledModule возвращает только версию установленного модуля, которая точно совпадает с указанной версией.</span><span class="sxs-lookup"><span data-stu-id="5c0a7-113">If the RequiredVersion parameter is specified, Get-InstalledModule only returns the version of installed module that exactly matches the specified version.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a><span data-ttu-id="5c0a7-114">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="5c0a7-114">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Get-InstalledModule -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="5c0a7-115">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="5c0a7-115">Cmdlet online help reference</span></span>
 
-[Get-InstalledModule](http://go.microsoft.com/fwlink/?LinkId=526863)
+[<span data-ttu-id="5c0a7-116">Get-InstalledModule</span><span class="sxs-lookup"><span data-stu-id="5c0a7-116">Get-InstalledModule</span></span>](http://go.microsoft.com/fwlink/?LinkId=526863)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a><span data-ttu-id="5c0a7-117">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="5c0a7-117">Example commands</span></span>
 
 ```powershell
 
@@ -105,8 +100,7 @@ InstalledLocation          : C:\Program Files\WindowsPowerShell\Modules\DJoin\1.
 
 
 
-<a id="installeddate-and-updateddate-properties-in-psgetrepositoryiteminfo-object" class="xliff"></a>
-## Свойства InstalledDate и UpdatedDate в объекте PSGetRepositoryItemInfo
+## <a name="installeddate-and-updateddate-properties-in-psgetrepositoryiteminfo-object"></a><span data-ttu-id="5c0a7-118">Свойства InstalledDate и UpdatedDate в объекте PSGetRepositoryItemInfo</span><span class="sxs-lookup"><span data-stu-id="5c0a7-118">InstalledDate and UpdatedDate properties in PSGetRepositoryItemInfo object</span></span>
 
     During the install operation:
         InstalledDate: current DateTime (Get-Date) value

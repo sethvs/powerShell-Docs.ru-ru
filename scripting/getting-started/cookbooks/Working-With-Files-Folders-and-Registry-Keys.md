@@ -1,25 +1,21 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Работа с файлами, папками и разделами реестра"
-ms.technology: powershell
 ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
-ms.openlocfilehash: 5d76098261c0288c83b4a27063ca36c23d606103
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 2bae8d6931c84bee4aa30a43742acd052b82d079
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="working-with-files-folders-and-registry-keys"></a>Работа с файлами, папками и разделами реестра
-Windows PowerShell использует существительное **Item**, чтобы ссылаться на элементы, найденные на диске Windows PowerShell. При работе с поставщиком FileSystem Windows PowerShell **Item** может быть файлом, папкой или диском Windows PowerShell. Создание списков элементов и работа с ними является критически важной задачей в большинстве административных учреждений, поэтому необходимо подробно обсудить ее.
+# <a name="working-with-files-folders-and-registry-keys"></a><span data-ttu-id="cfbcf-103">Работа с файлами, папками и разделами реестра</span><span class="sxs-lookup"><span data-stu-id="cfbcf-103">Working With Files, Folders and Registry Keys</span></span>
+<span data-ttu-id="cfbcf-104">Windows PowerShell использует существительное **Item**, чтобы ссылаться на элементы, найденные на диске Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-104">Windows PowerShell uses the noun **Item** to refer to items found on a Windows PowerShell drive.</span></span> <span data-ttu-id="cfbcf-105">При работе с поставщиком FileSystem Windows PowerShell **Item** может быть файлом, папкой или диском Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-105">When dealing with the Windows PowerShell FileSystem provider, an **Item** might be a file, a folder, or the Windows PowerShell drive.</span></span> <span data-ttu-id="cfbcf-106">Создание списков элементов и работа с ними является критически важной задачей в большинстве административных учреждений, поэтому необходимо подробно обсудить ее.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-106">Listing and working with these items is a critical basic task in most administrative settings, so we want to discuss these tasks in detail.</span></span>
 
-### <a name="enumerating-files-folders-and-registry-keys-get-childitem"></a>Перечисление файлов, папок и разделов реестра (Get-ChildItem)
-Так как получение коллекции элементов из определенного расположения является обычной задачей, командлет **Get-ChildItem** разработан специально для возврата всех элементов, найденных в контейнере, например в папке.
+### <a name="enumerating-files-folders-and-registry-keys-get-childitem"></a><span data-ttu-id="cfbcf-107">Перечисление файлов, папок и разделов реестра (Get-ChildItem)</span><span class="sxs-lookup"><span data-stu-id="cfbcf-107">Enumerating Files, Folders, and Registry Keys (Get-ChildItem)</span></span>
+<span data-ttu-id="cfbcf-108">Так как получение коллекции элементов из определенного расположения является обычной задачей, командлет **Get-ChildItem** разработан специально для возврата всех элементов, найденных в контейнере, например в папке.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-108">Since getting a collection of items from a particular location is such a common task, the **Get-ChildItem** cmdlet is designed specifically to return all items found within a container such as a folder.</span></span>
 
-Если необходимо вернуть все файлы и папки, которые находятся непосредственно в папке C:\\Windows, введите:
+<span data-ttu-id="cfbcf-109">Если необходимо вернуть все файлы и папки, которые находятся непосредственно в папке C:\\Windows, введите:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-109">If you want to return all files and folders that are contained directly within the folder C:\\Windows, type:</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\Windows
@@ -32,18 +28,18 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-Списки выглядят аналогично тем спискам, которые появляются при вводе команды **dir** в **Cmd.exe** или команды **ls** в командной оболочке UNIX.
+<span data-ttu-id="cfbcf-110">Списки выглядят аналогично тем спискам, которые появляются при вводе команды **dir** в **Cmd.exe** или команды **ls** в командной оболочке UNIX.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-110">The listing looks similar to what you would see when you enter the **dir** command in **Cmd.exe**, or the **ls** command in a UNIX command shell.</span></span>
 
-С помощью параметров командлета **Get-ChildItem** можно создавать очень сложные списки. Далее рассмотрим несколько сценариев. Синтаксис командлета **Get-ChildItem** можно увидеть, введя:
+<span data-ttu-id="cfbcf-111">С помощью параметров командлета **Get-ChildItem** можно создавать очень сложные списки.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-111">You can perform very complex listings by using parameters of the **Get-ChildItem** cmdlet.</span></span> <span data-ttu-id="cfbcf-112">Далее рассмотрим несколько сценариев.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-112">We will look at a few scenarios next.</span></span> <span data-ttu-id="cfbcf-113">Синтаксис командлета **Get-ChildItem** можно увидеть, введя:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-113">You can see the syntax the **Get-ChildItem** cmdlet by typing:</span></span>
 
 ```
 PS> Get-Command -Name Get-ChildItem -Syntax
 ```
 
-Эти параметры можно скомбинировать и сопоставить для получения настраиваемых выходных данных.
+<span data-ttu-id="cfbcf-114">Эти параметры можно скомбинировать и сопоставить для получения настраиваемых выходных данных.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-114">These parameters can be mixed and matched to get highly customized output.</span></span>
 
-#### <a name="listing-all-contained-items--recurse"></a>Перечисление всех элементов в контейнере (-Recurse)
-Чтобы увидеть оба элемента в папке Windows и все элементы во вложенных папках, используйте параметр **Recurse** для **Get-ChildItem**. В списке отображается все, что находится в папке Windows, а также элементы в ее вложенных папках. Например:
+#### <a name="listing-all-contained-items--recurse"></a><span data-ttu-id="cfbcf-115">Перечисление всех элементов в контейнере (-Recurse)</span><span class="sxs-lookup"><span data-stu-id="cfbcf-115">Listing all Contained Items (-Recurse)</span></span>
+<span data-ttu-id="cfbcf-116">Чтобы увидеть оба элемента в папке Windows и все элементы во вложенных папках, используйте параметр **Recurse** для **Get-ChildItem**.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-116">To see both the items inside a Windows folder and any items that are contained within the subfolders, use the **Recurse** parameter of **Get-ChildItem**.</span></span> <span data-ttu-id="cfbcf-117">В списке отображается все, что находится в папке Windows, а также элементы в ее вложенных папках.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-117">The listing displays everything within the Windows folder and the items in its subfolders.</span></span> <span data-ttu-id="cfbcf-118">Например:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-118">For example:</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\WINDOWS -Recurse
@@ -56,8 +52,8 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-#### <a name="filtering-items-by-name--name"></a>Фильтрация элементов по имени (-Name)
-Чтобы отобразить только имена элементов, используйте параметр **Name** для **Get-Childitem**:
+#### <a name="filtering-items-by-name--name"></a><span data-ttu-id="cfbcf-119">Фильтрация элементов по имени (-Name)</span><span class="sxs-lookup"><span data-stu-id="cfbcf-119">Filtering Items by Name (-Name)</span></span>
+<span data-ttu-id="cfbcf-120">Чтобы отобразить только имена элементов, используйте параметр **Name** для **Get-Childitem**:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-120">To display only the names of items, use the **Name** parameter of **Get-Childitem**:</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\WINDOWS -Name
@@ -67,29 +63,29 @@ assembly
 ...
 ```
 
-#### <a name="forcibly-listing-hidden-items--force"></a>Принудительное перечисление скрытых элементов (-Force)
-В выходных данных команды **Get-ChildItem** не отображаются элементы, которые обычно невидимы в проводнике или Cmd.exe. Чтобы показать скрытые элементы, используйте параметр **Force** для **Get-ChildItem**. Например:
+#### <a name="forcibly-listing-hidden-items--force"></a><span data-ttu-id="cfbcf-121">Принудительное перечисление скрытых элементов (-Force)</span><span class="sxs-lookup"><span data-stu-id="cfbcf-121">Forcibly Listing Hidden Items (-Force)</span></span>
+<span data-ttu-id="cfbcf-122">В выходных данных команды **Get-ChildItem** не отображаются элементы, которые обычно невидимы в проводнике или Cmd.exe.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-122">Items that are normally invisible in File Explorer or Cmd.exe are not displayed in the output of a **Get-ChildItem** command.</span></span> <span data-ttu-id="cfbcf-123">Чтобы показать скрытые элементы, используйте параметр **Force** для **Get-ChildItem**.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-123">To display hidden items, use the **Force** parameter of **Get-ChildItem**.</span></span> <span data-ttu-id="cfbcf-124">Например:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-124">For example:</span></span>
 
 ```
 Get-ChildItem -Path C:\Windows -Force
 ```
 
-Этот параметр называется Force, так как позволяет принудительно переопределить обычное поведение команды **Get-ChildItem**. Параметр Force широко используется для принудительного выполнения действия командлетом. Тем не менее, он не будет выполнять действия, компрометирующие систему безопасности.
+<span data-ttu-id="cfbcf-125">Этот параметр называется Force, так как позволяет принудительно переопределить обычное поведение команды **Get-ChildItem**.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-125">This parameter is named Force because you can forcibly override the normal behavior of the **Get-ChildItem** command.</span></span> <span data-ttu-id="cfbcf-126">Параметр Force широко используется для принудительного выполнения действия командлетом. Тем не менее, он не будет выполнять действия, компрометирующие систему безопасности.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-126">Force is a widely used parameter that forces an action that a cmdlet would not normally perform, although it will not perform any action that compromises the security of the system.</span></span>
 
-#### <a name="matching-item-names-with-wildcards"></a>Сопоставление имен элементов с подстановочными знаками
-Команда **Get-ChildItem** допускает подстановочные знаки в пути к перечисляемым элементам.
+#### <a name="matching-item-names-with-wildcards"></a><span data-ttu-id="cfbcf-127">Сопоставление имен элементов с подстановочными знаками</span><span class="sxs-lookup"><span data-stu-id="cfbcf-127">Matching Item Names with Wildcards</span></span>
+<span data-ttu-id="cfbcf-128">Команда **Get-ChildItem** допускает подстановочные знаки в пути к перечисляемым элементам.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-128">**The Get-ChildItem** command accepts wildcards in the path of the items to list.</span></span>
 
-Так как сопоставление с подстановочными знаками обрабатывается подсистемой Windows PowerShell, все командлеты, которые принимают подстановочные знаки, используют одну нотацию и имеют одно поведение сопоставления. В нотацию подстановочных знаков Windows PowerShell входит:
+<span data-ttu-id="cfbcf-129">Так как сопоставление с подстановочными знаками обрабатывается подсистемой Windows PowerShell, все командлеты, которые принимают подстановочные знаки, используют одну нотацию и имеют одно поведение сопоставления.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-129">Because wildcard matching is handled by the Windows PowerShell engine, all cmdlets that accepts wildcards use the same notation and have the same matching behavior.</span></span> <span data-ttu-id="cfbcf-130">В нотацию подстановочных знаков Windows PowerShell входит:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-130">The Windows PowerShell wildcard notation includes:</span></span>
 
--   Звездочка (\*) — соответствует нулю или большему количеству вхождений любого символа.
+-   <span data-ttu-id="cfbcf-131">Звездочка (\*) — соответствует нулю или большему количеству вхождений любого символа.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-131">Asterisk (\*)matches zero or more occurrences of any character.</span></span>
 
--   знак вопроса (?) — соответствует ровно одному символу;
+-   <span data-ttu-id="cfbcf-132">знак вопроса (?) — соответствует ровно одному символу;</span><span class="sxs-lookup"><span data-stu-id="cfbcf-132">Question mark (?) matches exactly one character.</span></span>
 
--   Открывающая квадратная скобка (\[) и закрывающая квадратная скобка (]) — заключают в себя набор символов для сопоставления.
+-   <span data-ttu-id="cfbcf-133">Открывающая квадратная скобка (\[) и закрывающая квадратная скобка (]) — заключают в себя набор символов для сопоставления.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-133">Left bracket (\[) character and right bracket (]) character surround a set of characters to be matched.</span></span>
 
-Далее приводится несколько примеров работы спецификации из подстановочных знаков.
+<span data-ttu-id="cfbcf-134">Далее приводится несколько примеров работы спецификации из подстановочных знаков.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-134">Here are some examples of how wildcard specification works.</span></span>
 
-Чтобы найти в каталоге Windows все файлы, имеющие суффикс **.log** и ровно пять символов в основном имени, введите следующую команду:
+<span data-ttu-id="cfbcf-135">Чтобы найти в каталоге Windows все файлы, имеющие суффикс **.log** и ровно пять символов в основном имени, введите следующую команду:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-135">To find all files in the Windows directory with the suffix **.log** and exactly five characters in the base name, enter the following command:</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\Windows\?????.log
@@ -105,39 +101,51 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-Чтобы найти в каталоге Windows все файлы с именами, начинающимися на букву **x**, введите:
+<span data-ttu-id="cfbcf-136">Чтобы найти в каталоге Windows все файлы с именами, начинающимися на букву **x**, введите:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-136">To find all files that begin with the letter **x** in the Windows directory, type:</span></span>
 
 ```
 Get-ChildItem -Path C:\Windows\x*
 ```
 
-Чтобы найти все файлы с именами, начинающимися на **x** или **z**, введите:
+<span data-ttu-id="cfbcf-137">Чтобы найти все файлы с именами, начинающимися на **x** или **z**, введите:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-137">To find all files whose names begin with **x** or **z**, type:</span></span>
 
 ```
 Get-ChildItem -Path C:\Windows\[xz]*
 ```
 
-#### <a name="excluding-items--exclude"></a>Исключение элементов (-Exclude)
-Вы можете исключить определенные элементы с помощью параметра **Exclude** для Get-ChildItem. Это позволит вам выполнить сложную фильтрацию в одном операторе.
+#### <a name="excluding-items--exclude"></a><span data-ttu-id="cfbcf-138">Исключение элементов (-Exclude)</span><span class="sxs-lookup"><span data-stu-id="cfbcf-138">Excluding Items (-Exclude)</span></span>
+<span data-ttu-id="cfbcf-139">Вы можете исключить определенные элементы с помощью параметра **Exclude** для Get-ChildItem.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-139">You can exclude specific items by using the **Exclude** parameter of Get-ChildItem.</span></span> <span data-ttu-id="cfbcf-140">Это позволит вам выполнить сложную фильтрацию в одном операторе.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-140">This lets you perform complex filtering in a single statement.</span></span>
 
-Например, предположим, что вы пытаетесь найти библиотеку службы времени Windows в папке System32 и все, что вам известно об имени библиотеки, — то, что оно начинается на W и содержит "32".
+<span data-ttu-id="cfbcf-141">Например, предположим, что вы пытаетесь найти библиотеку службы времени Windows в папке System32 и все, что вам известно об имени библиотеки, — то, что оно начинается на W и содержит "32".</span><span class="sxs-lookup"><span data-stu-id="cfbcf-141">For example, suppose you are trying to find the Windows Time Service DLL in the System32 folder, and all you can remember about the DLL name is that it begins with "W" and has "32" in it.</span></span>
 
-Выражение **w\&#42;32\&#42;.dll** найдет все библиотеки DLL, удовлетворяющие условию, но может также вернуть библиотеки Windows 95 и библиотеки, совместимые с 16-разрядной версией Windows, в именах которых содержится "95" или "16". Файлы с такими числами в именах можно пропустить, используя параметр **Exclude** с шаблоном **\&#42;\[9516]\&#42;**:
+<span data-ttu-id="cfbcf-142">Выражение **w\&#42;32\&#42;.dll** найдет все библиотеки DLL, удовлетворяющие условию, но может также вернуть библиотеки Windows 95 и библиотеки, совместимые с 16-разрядной версией Windows, в именах которых содержится "95" или "16".</span><span class="sxs-lookup"><span data-stu-id="cfbcf-142">An expression like **w\&#42;32\&#42;.dll** will find all DLLs that satisfy the conditions, but it may also return the Windows 95 and 16-bit Windows compatibility DLLs that include "95" or "16" in their names.</span></span> <span data-ttu-id="cfbcf-143">Файлы с такими числами в именах можно пропустить, используя параметр **Exclude** с шаблоном **\&#42;\[9516]\&#42;**:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-143">You can omit files that have any of these numbers in their names by using the **Exclude** parameter with the pattern **\&#42;\[9516]\&#42;**:</span></span>
 
-<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]* Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32 Mode                LastWriteTime     Length Name ----                -------------     ------ ---- -a---        2004-08-04   8:00 AM     174592 w32time.dll -a---        2004-08-04   8:00 AM      22016 w32topl.dll -a---        2004-08-04   8:00 AM     101888 win32spl.dll -a---        2004-08-04   8:00 AM     172032 wldap32.dll -a---        2004-08-04   8:00 AM     264192 wow32.dll -a---        2004-08-04   8:00 AM      82944 ws2_32.dll -a---        2004-08-04   8:00 AM      42496 wsnmp32.dll -a---        2004-08-04   8:00 AM      22528 wsock32.dll -a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
+<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]*
+Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        2004-08-04   8:00 AM     174592 w32time.dll
+-a---        2004-08-04   8:00 AM      22016 w32topl.dll
+-a---        2004-08-04   8:00 AM     101888 win32spl.dll
+-a---        2004-08-04   8:00 AM     172032 wldap32.dll
+-a---        2004-08-04   8:00 AM     264192 wow32.dll
+-a---        2004-08-04   8:00 AM      82944 ws2_32.dll
+-a---        2004-08-04   8:00 AM      42496 wsnmp32.dll
+-a---        2004-08-04   8:00 AM      22528 wsock32.dll
+-a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
 
-#### <a name="mixing-get-childitem-parameters"></a>Смешение параметров Get-ChildItem
-В одной команде можно использовать несколько параметров **Get-ChildItem**. Перед тем как комбинировать параметры, убедитесь, что понимаете принципы сопоставления подстановочных знаков. Например, следующая команда не возвращает результатов:
+#### <a name="mixing-get-childitem-parameters"></a><span data-ttu-id="cfbcf-144">Смешение параметров Get-ChildItem</span><span class="sxs-lookup"><span data-stu-id="cfbcf-144">Mixing Get-ChildItem Parameters</span></span>
+<span data-ttu-id="cfbcf-145">В одной команде можно использовать несколько параметров **Get-ChildItem**.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-145">You can use several of the parameters of the **Get-ChildItem** cmdlet in the same command.</span></span> <span data-ttu-id="cfbcf-146">Перед тем как комбинировать параметры, убедитесь, что понимаете принципы сопоставления подстановочных знаков.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-146">Before you mix parameters, be sure that you understand wildcard matching.</span></span> <span data-ttu-id="cfbcf-147">Например, следующая команда не возвращает результатов:</span><span class="sxs-lookup"><span data-stu-id="cfbcf-147">For example, the following command returns no results:</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\Windows\*.dll -Recurse -Exclude [a-y]*.dll
 ```
 
-Результаты отсутствуют, даже если существуют две библиотеки, которые начинаются на букву z в папке Windows.
+<span data-ttu-id="cfbcf-148">Результаты отсутствуют, даже если существуют две библиотеки, которые начинаются на букву z в папке Windows.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-148">There are no results, even though there are two DLLs that begin with the letter "z" in the Windows folder.</span></span>
 
-Результаты не возвращены, так как подстановочный знак указан как часть пути. Хотя команда и была рекурсивной, командлет **Get-ChildItem** ограничил элементы до тех, которые находятся в папке Windows с именами, заканчивающимися на .dll.
+<span data-ttu-id="cfbcf-149">Результаты не возвращены, так как подстановочный знак указан как часть пути.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-149">No results were returned because we specified the wildcard as part of the path.</span></span> <span data-ttu-id="cfbcf-150">Хотя команда и была рекурсивной, командлет **Get-ChildItem** ограничил элементы до тех, которые находятся в папке Windows с именами, заканчивающимися на .dll.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-150">Even though the command was recursive, the **Get-ChildItem** cmdlet restricted the items to those that are in the Windows folder with names ending with ".dll".</span></span>
 
-Чтобы указать рекурсивный поиск для файлов, имена которых соответствуют специальному шаблону, используйте параметр **-Include**.
+<span data-ttu-id="cfbcf-151">Чтобы указать рекурсивный поиск для файлов, имена которых соответствуют специальному шаблону, используйте параметр **-Include**.</span><span class="sxs-lookup"><span data-stu-id="cfbcf-151">To specify a recursive search for files whose names match a special pattern, use the **-Include** parameter.</span></span>
 
 ```
 PS> Get-ChildItem -Path C:\Windows -Include *.dll -Recurse -Exclude [a-y]*.dll

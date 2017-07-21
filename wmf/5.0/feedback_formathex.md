@@ -9,19 +9,17 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="format-hex" class="xliff"></a>
-# Format-Hex
-**Format-Hex** позволяет просматривать текст или двоичные данные в шестнадцатеричном формате. См. раздел [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex).
+# <a name="format-hex"></a><span data-ttu-id="87cce-102">Format-Hex</span><span class="sxs-lookup"><span data-stu-id="87cce-102">Format-Hex</span></span>
+<span data-ttu-id="87cce-103">**Format-Hex** позволяет просматривать текст или двоичные данные в шестнадцатеричном формате. См. раздел [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex).</span><span class="sxs-lookup"><span data-stu-id="87cce-103">**Format-Hex** lets you view text or binary data in hexadecimal format; see [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)</span></span>
 
-<a id="example-1" class="xliff"></a>
-## Пример 1
-Просмотрите содержимое строки в шестнадцатеричном формате.
+## <a name="example-1"></a><span data-ttu-id="87cce-104">Пример 1</span><span class="sxs-lookup"><span data-stu-id="87cce-104">Example 1</span></span>
+<span data-ttu-id="87cce-105">Просмотрите содержимое строки в шестнадцатеричном формате.</span><span class="sxs-lookup"><span data-stu-id="87cce-105">View the contents of a string in hexadecimal format.</span></span>
 
 ```PowerShell
 "This is a very long line to force the line folding in Format-Hex cmdlet" | Format-Hex
 ```
 
-Выходные данные
+<span data-ttu-id="87cce-106">Выходные данные</span><span class="sxs-lookup"><span data-stu-id="87cce-106">Outputs</span></span>
 ```
 PS C:\> This is a very long line to force the line folding in Format-Hex cmdlet" | Format-Hex
 

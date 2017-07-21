@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="cryptographic-message-syntax-cms-cmdlets" class="xliff"></a>
-# Командлеты Cryptographic Message Syntax (CMS)
+# <a name="cryptographic-message-syntax-cms-cmdlets"></a><span data-ttu-id="e933f-102">Командлеты Cryptographic Message Syntax (CMS)</span><span class="sxs-lookup"><span data-stu-id="e933f-102">Cryptographic Message Syntax (CMS) cmdlets</span></span>
 
-Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652).
+<span data-ttu-id="e933f-103">Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652).</span><span class="sxs-lookup"><span data-stu-id="e933f-103">The Cryptographic Message Syntax cmdlets support encryption and decryption of content using the IETF standard format for cryptographically protecting messages as documented by [RFC5652](http://tools.ietf.org/html/rfc5652).</span></span>
 
 ```powershell
 Get-CmsMessage [-Content] <string>
@@ -27,13 +26,13 @@ Unprotect-CmsMessage [-Path] <string> [[-To] <CmsMessageRecipient[]>] [-IncludeC
 Unprotect-CmsMessage [-LiteralPath] <string> [[-To] <CmsMessageRecipient[]>] [-IncludeContext]
 ```
 
-Стандарт шифрования CMS реализует шифрование с открытым ключом, при котором ключи, используемые для шифрования содержимого (*открытый ключ*) и для его расшифровки (*закрытый ключ*), существуют отдельно.
+<span data-ttu-id="e933f-104">Стандарт шифрования CMS реализует шифрование с открытым ключом, при котором ключи, используемые для шифрования содержимого (*открытый ключ*) и для его расшифровки (*закрытый ключ*), существуют отдельно.</span><span class="sxs-lookup"><span data-stu-id="e933f-104">The CMS encryption standard implements public key cryptography, where the keys used to encrypt content (the *public key*) and the keys used to decrypt content (the *private key*) are separate.</span></span>
 
-Открытый ключ можно свободно распространять, так как он не относится к конфиденциальным сведениям. Если какое-либо содержимое зашифровано с помощью данного открытого ключа, расшифровать его позволяет только имеющийся у вас закрытый ключ. Дополнительные сведения о шифровании с открытым ключом см. на странице по адресу: <http://en.wikipedia.org/wiki/Public-key_cryptography>.
+<span data-ttu-id="e933f-105">Открытый ключ можно свободно распространять, так как он не относится к конфиденциальным сведениям.</span><span class="sxs-lookup"><span data-stu-id="e933f-105">Your public key can be shared widely, and is not sensitive data.</span></span> <span data-ttu-id="e933f-106">Если какое-либо содержимое зашифровано с помощью данного открытого ключа, расшифровать его позволяет только имеющийся у вас закрытый ключ.</span><span class="sxs-lookup"><span data-stu-id="e933f-106">If any content is encrypted with this public key, only your private key can decrypt it.</span></span> <span data-ttu-id="e933f-107">Дополнительные сведения о шифровании с открытым ключом см. на странице по адресу: <http://en.wikipedia.org/wiki/Public-key_cryptography>.</span><span class="sxs-lookup"><span data-stu-id="e933f-107">For more information about Public Key Cryptography, see: <http://en.wikipedia.org/wiki/Public-key_cryptography>.</span></span>
 
-Для распознавания в PowerShell сертификатам шифрования требуется уникальный идентификатор использования ключа (EKU), который определяет их в качестве сертификатов шифрования данных (например, идентификаторы для "Подписывание кода", "Зашифрованная почта").
+<span data-ttu-id="e933f-108">Для распознавания в PowerShell сертификатам шифрования требуется уникальный идентификатор использования ключа (EKU), который определяет их в качестве сертификатов шифрования данных (например, идентификаторы для "Подписывание кода", "Зашифрованная почта").</span><span class="sxs-lookup"><span data-stu-id="e933f-108">To be recognized in PowerShell, encryption certificates require a unique key usage identifier (EKU) to identify them as data encryption certificates (like the identifiers for 'Code Signing', 'Encrypted Mail').</span></span>
 
-Ниже приведен пример создания сертификата, который хорошо подходит для шифрования документов:
+<span data-ttu-id="e933f-109">Ниже приведен пример создания сертификата, который хорошо подходит для шифрования документов:</span><span class="sxs-lookup"><span data-stu-id="e933f-109">Here is an example of creating a certificate that is good for Document Encryption:</span></span>
 
 ```powershell
 (Change the text in **Subject** to your name, email, or other identifier), and put in a file (i.e.: DocumentEncryption.inf):
@@ -57,12 +56,12 @@ ValidityPeriodUnits = "1000"
 %szOID\_ENHANCED\_KEY\_USAGE% = "{text}%szOID\_DOCUMENT\_ENCRYPTION%"
 ```
 
-Далее выполните:
+<span data-ttu-id="e933f-110">Далее выполните:</span><span class="sxs-lookup"><span data-stu-id="e933f-110">Then run:</span></span>
 ```powershell
 certreq -new DocumentEncryption.inf DocumentEncryption.cer
 ```
 
-Теперь вы можете шифровать и расшифровывать содержимое:
+<span data-ttu-id="e933f-111">Теперь вы можете шифровать и расшифровывать содержимое:</span><span class="sxs-lookup"><span data-stu-id="e933f-111">And you can now encrypt and decrypt content:</span></span>
 
 ```powershell
 $protected = "Hello World" | Protect-CmsMessage -To "\*me@somewhere.com\*[](mailto:*leeholm@microsoft.com*)"
@@ -82,14 +81,14 @@ $protected | Unprotect-CmsMessage
 Hello World
 ```
 
-Любой параметр типа **CMSMessageRecipient** поддерживает идентификаторы в следующих форматах:
-- Фактический сертификат (в том виде, в котором он получен от поставщика сертификатов)
-- Путь к файлу, содержащему сертификат
-- Путь к каталогу, содержащему сертификат
-- Отпечаток сертификата (используемый для поиска в хранилище сертификатов)
-- Имя субъекта сертификата (используемое для поиска в хранилище сертификатов)
+<span data-ttu-id="e933f-112">Любой параметр типа **CMSMessageRecipient** поддерживает идентификаторы в следующих форматах:</span><span class="sxs-lookup"><span data-stu-id="e933f-112">Any parameter of type **CMSMessageRecipient** supports identifiers in the following formats:</span></span>
+- <span data-ttu-id="e933f-113">Фактический сертификат (в том виде, в котором он получен от поставщика сертификатов)</span><span class="sxs-lookup"><span data-stu-id="e933f-113">An actual certificate (as retrieved from the certificate provider)</span></span>
+- <span data-ttu-id="e933f-114">Путь к файлу, содержащему сертификат</span><span class="sxs-lookup"><span data-stu-id="e933f-114">Path to the a file containing the certificate</span></span>
+- <span data-ttu-id="e933f-115">Путь к каталогу, содержащему сертификат</span><span class="sxs-lookup"><span data-stu-id="e933f-115">Path to a directory containing the certificate</span></span>
+- <span data-ttu-id="e933f-116">Отпечаток сертификата (используемый для поиска в хранилище сертификатов)</span><span class="sxs-lookup"><span data-stu-id="e933f-116">Thumbprint of the certificate (used to look in the certificate store)</span></span>
+- <span data-ttu-id="e933f-117">Имя субъекта сертификата (используемое для поиска в хранилище сертификатов)</span><span class="sxs-lookup"><span data-stu-id="e933f-117">Subject name of the certificate (used to look in the certificate store)</span></span>
 
-Чтобы просмотреть сертификаты шифрования документов в поставщике сертификатов, можно использовать динамический параметр **-DocumentEncryptionCert**:
+<span data-ttu-id="e933f-118">Чтобы просмотреть сертификаты шифрования документов в поставщике сертификатов, можно использовать динамический параметр **-DocumentEncryptionCert**:</span><span class="sxs-lookup"><span data-stu-id="e933f-118">To view document encryption certificates in the certificate provider, you can use the **-DocumentEncryptionCert** dynamic parameter:</span></span>
 
 ```powershell
 dir -DocumentEncryptionCert

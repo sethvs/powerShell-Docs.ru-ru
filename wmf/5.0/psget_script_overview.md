@@ -9,11 +9,10 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershell-script-discovery-install-and-management-with-powershellget" class="xliff"></a>
-# Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet
+# <a name="powershell-script-discovery-install-and-management-with-powershellget"></a><span data-ttu-id="29f26-102">Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet</span><span class="sxs-lookup"><span data-stu-id="29f26-102">PowerShell Script Discovery, Install and Management with PowerShellGet</span></span>
 
-Компонент совместного использования сценариев был добавлен в PowerShellGet в выпуске WMF 5.0 RTM.
-Для поддержки сценариев PowerShell в модуль PowerShellGet добавлены следующие новые командлеты.
+<span data-ttu-id="29f26-103">Компонент совместного использования сценариев был добавлен в PowerShellGet в выпуске WMF 5.0 RTM.</span><span class="sxs-lookup"><span data-stu-id="29f26-103">PowerShell Script sharing feature got added to the PowerShellGet in the WMF 5.0 RTM release.</span></span>
+<span data-ttu-id="29f26-104">Для поддержки сценариев PowerShell в модуль PowerShellGet добавлены следующие новые командлеты.</span><span class="sxs-lookup"><span data-stu-id="29f26-104">The following new cmdlets are added to the PowerShellGet module for supporting the PowerShell Scripts.</span></span>
 ```powershell
 PS C:\\windows\\system32&gt; Get-Command \*script\* -Module PowerShellGet | Sort-Object -Property Noun, Verb
 CommandType Name Version Source
@@ -40,7 +39,7 @@ Function Update-ScriptFileInfo 1.0.0.1 PowerShellGet
 -   **Test-ScriptFileInfo** cmdlet lets you to validate and get the script file metadata.
 ```
 
-Синтаксис для командлетов совместного использования сценариев:
+<span data-ttu-id="29f26-105">Синтаксис для командлетов совместного использования сценариев:</span><span class="sxs-lookup"><span data-stu-id="29f26-105">Syntax of script sharing Cmdlets:</span></span>
 ```powershell
 **New-ScriptFileInfo** \[-Path\] &lt;string&gt; -Description &lt;string&gt; \[-Version &lt;version&gt;\] \[-Author &lt;string&gt;\] \[-Guid &lt;guid&gt;\] \[-CompanyName &lt;string&gt;\] \[-Copyright &lt;string&gt;\] \[-RequiredModules &lt;Object\[\]&gt;\] \[-ExternalModuleDependencies &lt;string\[\]&gt;\] \[-RequiredScripts &lt;string\[\]&gt;\] \[-ExternalScriptDependencies &lt;string\[\]&gt;\] \[-Tags &lt;string\[\]&gt;\] \[-ProjectUri &lt;uri&gt;\] \[-LicenseUri &lt;uri&gt;\] \[-IconUri &lt;uri&gt;\] \[-ReleaseNotes &lt;string\[\]&gt;\] \[-PassThru\] \[-Force\] \[-WhatIf\] \[-Confirm\] \[&lt;CommonParameters&gt;\]
 

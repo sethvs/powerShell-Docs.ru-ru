@@ -1,43 +1,40 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell,командлет,коллекция"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgalleryint_состояние"
-ms.technology: powershell
-ms.openlocfilehash: 58f06ca061a4f171288e75b30698910c701f1da1
-ms.sourcegitcommit: ba8ed836799ef465e507fa1b8d341ba38459d863
-translationtype: HT
+ms.openlocfilehash: 0b2f1ebcb365fcd24438a028a9c8181449266a8b
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
-<a name="powershell-gallery-status"></a>Состояние коллекции PowerShell
+<a name="powershell-gallery-status"></a><span data-ttu-id="5c26c-103">Состояние коллекции PowerShell</span><span class="sxs-lookup"><span data-stu-id="5c26c-103">PowerShell Gallery Status</span></span>
 =========================
 
-## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов
+## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a><span data-ttu-id="5c26c-104">27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов</span><span class="sxs-lookup"><span data-stu-id="5c26c-104">03/27/2017 - RESOLVED: Unable to see individual module and script pages</span></span>
 
-__Сводка по влиянию__. Прямые ссылки на отдельные страницы модулей и скриптов на сайте https://www.powershellgallery.com были недоступны. Это было актуально для всех регионов. Это не повлияло на командлеты PowerShellGet: Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt по-прежнему работали.
+<span data-ttu-id="5c26c-105">__Сводка по влиянию__. Прямые ссылки на отдельные страницы модулей и скриптов на сайте https://www.powershellgallery.com были недоступны.</span><span class="sxs-lookup"><span data-stu-id="5c26c-105">__Summary of Impact__: Direct links to individual module and script pages on https://www.powershellgallery.com were broken.</span></span> <span data-ttu-id="5c26c-106">Это было актуально для всех регионов.</span><span class="sxs-lookup"><span data-stu-id="5c26c-106">This was being reported across all the regions.</span></span> <span data-ttu-id="5c26c-107">Это не повлияло на командлеты PowerShellGet: Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Script по-прежнему работали.</span><span class="sxs-lookup"><span data-stu-id="5c26c-107">This did not impact any of the PowerShellGet cmdlets ie., Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Script continued to work.</span></span>
 
-__Причина__. Инженеры определили причину как проблему при включении кнопок социальных сетей (например, Facebook) на страницу.  
+<span data-ttu-id="5c26c-108">__Причина__. Инженеры определили причину как проблему при включении кнопок социальных сетей (например, Facebook) на страницу.</span><span class="sxs-lookup"><span data-stu-id="5c26c-108">__Root Cause__: Engineers identified the cause as an issue bringing up social media buttons like Facebook onto the page.</span></span>  
 
-__Решение__. Инженеры исправили проблему, отключив сведения о числе подключений через Facebook.
+<span data-ttu-id="5c26c-109">__Решение__. Инженеры исправили проблему, отключив сведения о числе подключений через Facebook.</span><span class="sxs-lookup"><span data-stu-id="5c26c-109">__Resolution__: Engineers fixed the problem by disabling the Facebook count information.</span></span>
 
-__Дальнейшие действия__. Мы открыли обращение о внутреннем отслеживании, чтобы исправить использование API Facebook.
+<span data-ttu-id="5c26c-110">__Дальнейшие действия__. Мы открыли обращение о внутреннем отслеживании, чтобы исправить использование API Facebook.</span><span class="sxs-lookup"><span data-stu-id="5c26c-110">__Next Steps__: We opened an internal tracking issue to fix our usage of Facebook API.</span></span>
 
-## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a>15.12.2016 — не удается отправить сообщения электронной почты через веб-сайт PowerShellGallery
+## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a><span data-ttu-id="5c26c-111">15.12.2016 — не удается отправить сообщения электронной почты через веб-сайт PowerShellGallery</span><span class="sxs-lookup"><span data-stu-id="5c26c-111">12/15/2016 - Unable to send emails via PowerShellGallery website</span></span>
 
-__Сводка по влиянию__. Между 13.12.2016 и 15.12.2016 все сообщения, отправленные через функции "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", не были получены администраторами коллекции PowerShell.  
-__Первопричина__. Инженеры выявили, что причина состояла в проблеме проверки подлинности на SMTP-сервере.  
-__Решение__. Инженеры смогли устранить проблему проверки подлинности и восстановить подключение к SMTP-серверу.  
-__Дальнейшие действия__. Если вы использовали ссылки "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", чтобы отправить почту по адресу cgadmin@microsoft.com в это время, и не получили ответа, повторите попытку. Приносим извинения за причиненные неудобства.   
+<span data-ttu-id="5c26c-112">__Сводка по влиянию__. Между 13.12.2016 и 15.12.2016 все сообщения, отправленные через функции "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", не были получены администраторами коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="5c26c-112">__Summary of Impact__: Between 12/13/2016 and 12/15/2016, any messages sent via Contact Owners, Manage Owners, Contact Support, or Report Abuse were not received by the PowerShell Gallery Administrators.</span></span>  
+<span data-ttu-id="5c26c-113">__Первопричина__. Инженеры выявили, что причина состояла в проблеме проверки подлинности на SMTP-сервере.</span><span class="sxs-lookup"><span data-stu-id="5c26c-113">__Root Cause__: Engineers identified the cause as an authentication issue with the SMTP server.</span></span>  
+<span data-ttu-id="5c26c-114">__Решение__. Инженеры смогли устранить проблему проверки подлинности и восстановить подключение к SMTP-серверу.</span><span class="sxs-lookup"><span data-stu-id="5c26c-114">__Resolution__: Engineers were able to resolve the authentication issue and restore connection to the SMTP server.</span></span>  
+<span data-ttu-id="5c26c-115">__Дальнейшие действия__. Если вы использовали ссылки "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", чтобы отправить почту по адресу cgadmin@microsoft.com в это время, и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="5c26c-115">__Next Steps__: If you used the Contact Owners, Manage Owners, Contact Support, or Report Abuse links to send mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="5c26c-116">Приносим извинения за причиненные неудобства.</span><span class="sxs-lookup"><span data-stu-id="5c26c-116">We apologize for the inconvenience.</span></span>   
 
 
-## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a>10.08.2016 — устранена ошибка: не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com.
-__Сводка влияния__. С 05.08.2016 по 10.08.2016 клиентам не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com или использовать функцию "Обратная связь".  
-__Первопричина__. Инженеры выявили, что причина состояла в изменении конфигурации учетной записи электронной почты.  
-__Решение__. Инженеры устранили проблему в конфигурации.  
-__Дальнейшие действия__. Если вы использовали ссылку "Обратная связь" или отправляли почту по адресу cgadmin@microsoft.com в это время и не получили ответа, повторите попытку. Благодарим за терпение.
+## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a><span data-ttu-id="5c26c-117">10.08.2016 — устранена ошибка: не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="5c26c-117">8/10/2016 - Resolved: Unable to send emails to cgadmin@microsoft.com</span></span>
+<span data-ttu-id="5c26c-118">__Сводка по влиянию__. С 05.08.2016 по 10.08.2016 клиентам не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com или использовать функцию "Обратная связь".</span><span class="sxs-lookup"><span data-stu-id="5c26c-118">__Summary of Impact__: Between 8/5/2016 and 8/10/2016, customers were unable to send emails to cgadmin@microsoft.com, or use the Contact Us feature.</span></span>  
+<span data-ttu-id="5c26c-119">__Первопричина__. Инженеры выявили, что причина состояла в изменении конфигурации учетной записи электронной почты.</span><span class="sxs-lookup"><span data-stu-id="5c26c-119">__Root Cause__: Engineers identified the cause as a configuration change of the email account.</span></span>  
+<span data-ttu-id="5c26c-120">__Решение__. Инженеры устранили проблему в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5c26c-120">__Resolution__: Engineers worked to resolve the configuration issue.</span></span>  
+<span data-ttu-id="5c26c-121">__Дальнейшие действия__. Если вы использовали ссылку "Обратная связь" или отправляли почту по адресу cgadmin@microsoft.com в это время и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="5c26c-121">__Next Steps__: If you used the Contact Us link or sent mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="5c26c-122">Благодарим за терпение.</span><span class="sxs-lookup"><span data-stu-id="5c26c-122">Thank you for your patience.</span></span>
 
 

@@ -1,33 +1,29 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Использование области консоли в интегрированной среде сценариев Windows PowerShell"
-ms.technology: powershell
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
-ms.openlocfilehash: 68dd5499e4f0686a77f33265016414c7c4eb0618
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 1bb7a18c64fc12130b5af78ef55e68047d54da65
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="how-to-use-the-console-pane-in-the-windows-powershell-ise"></a>Использование области консоли в интегрированной среде сценариев Windows PowerShell
-Область консоли в интегрированной среде скриптов Windows PowerShell® работает точно так же, как окно автономной консоли Windows PowerShell ISE.
+# <a name="how-to-use-the-console-pane-in-the-windows-powershell-ise"></a><span data-ttu-id="d3e8c-103">Использование области консоли в интегрированной среде сценариев Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d3e8c-103">How to Use the Console Pane in the Windows PowerShell ISE</span></span>
+<span data-ttu-id="d3e8c-104">Область консоли в интегрированной среде скриптов Windows PowerShell® работает точно так же, как окно автономной консоли Windows PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-104">The Console pane in the Windows PowerShell® Integrated Scripting Environment (ISE) operates exactly like the stand-alone Windows PowerShell ISE console window.</span></span>
 
-Для выполнения команды в области консоли введите команду и нажмите клавишу ВВОД. Чтобы ввести несколько команд, которые необходимо выполнить последовательно, нажимайте между ними клавиши SHIFT+ВВОД. Сведения о вводе команд см. в статье [Использование заполнения нажатием клавиши TAB в области сценариев и области консоли](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).
+<span data-ttu-id="d3e8c-105">Для выполнения команды в области консоли введите команду и нажмите клавишу ВВОД.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-105">To run a command in the Console Pane, type a command, and then press ENTER.</span></span> <span data-ttu-id="d3e8c-106">Чтобы ввести несколько команд, которые необходимо выполнить последовательно, нажимайте между ними клавиши SHIFT+ВВОД.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-106">To enter multiple commands that you want to execute in sequence, type SHIFT+ENTER between commands.</span></span> <span data-ttu-id="d3e8c-107">Сведения о вводе команд см. в статье [Использование заполнения нажатием клавиши TAB в области сценариев и области консоли](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).</span><span class="sxs-lookup"><span data-stu-id="d3e8c-107">See [How to Use Tab Completion in the Script Pane and Console Pane](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.</span></span>
 
-Чтобы остановить команду, нажмите кнопку **Остановить операцию** на панели инструментов или нажмите клавиши CTRL+BREAK. В случае однозначного контекста для остановки команды также можно использовать сочетание клавиш CTRL+C. Например, если в текущей области выбран какой-либо текст, клавиши CTRL+C закреплены за операцией копирования.
+<span data-ttu-id="d3e8c-108">Чтобы остановить команду, нажмите кнопку **Остановить операцию** на панели инструментов или нажмите клавиши CTRL+BREAK.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-108">To stop a command, on the toolbar, click **Stop Operation**, or press CTRL+BREAK.</span></span> <span data-ttu-id="d3e8c-109">В случае однозначного контекста для остановки команды также можно использовать сочетание клавиш CTRL+C.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-109">You can also use CTRL+C to stop a command if the context is unambiguous.</span></span> <span data-ttu-id="d3e8c-110">Например, если в текущей области выбран какой-либо текст, клавиши CTRL+C закреплены за операцией копирования.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-110">For example, if some text has been selected in the current Pane, then CTRL+C maps to the copy operation.</span></span>
 
-Начиная с Windows PowerShell версии 3, область вывода была объединена с областью консоли. Это удобно тем, что работа осуществляется, как и в автономной консоли Windows PowerShell, и устраняются различия в процедурах, которые были необходимы при раздельном использовании областей. Можно сделать следующее.
+<span data-ttu-id="d3e8c-111">Начиная с Windows PowerShell версии 3, область вывода была объединена с областью консоли.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-111">Beginning in Windows PowerShell v3, the Output pane was combined with the Console pane.</span></span> <span data-ttu-id="d3e8c-112">Это удобно тем, что работа осуществляется, как и в автономной консоли Windows PowerShell, и устраняются различия в процедурах, которые были необходимы при раздельном использовании областей.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-112">This has the benefit of behaving like the stand-alone Windows PowerShell console and eliminates the differences in procedures that were needed when they were separate.</span></span> <span data-ttu-id="d3e8c-113">Можно сделать следующее.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-113">You can:</span></span>
 
--   Выделите и скопируйте текст из области консоли в буфер обмена для вставки в любое другое окно. Чтобы выделить текст, нажмите и удерживайте кнопку мыши в области вывода при перетаскивании указателя над требуемым текстом. Для выбора текста также можно использовать клавиши со стрелками, удерживая при этом клавишу **SHIFT**. После этого нажмите клавиши CTRL+C или щелкните значок **Копировать** на панели инструментов.
+-   <span data-ttu-id="d3e8c-114">Выделите и скопируйте текст из области консоли в буфер обмена для вставки в любое другое окно.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-114">Select and copy text from the Console pane to the Clipboard for pasting in any other window.</span></span> <span data-ttu-id="d3e8c-115">Чтобы выделить текст, нажмите и удерживайте кнопку мыши в области вывода при перетаскивании указателя над требуемым текстом.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-115">To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture.</span></span> <span data-ttu-id="d3e8c-116">Для выбора текста также можно использовать клавиши со стрелками, удерживая при этом клавишу **SHIFT**.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-116">You can also use the cursor arrow keys while holding **SHIFT** to select text.</span></span> <span data-ttu-id="d3e8c-117">После этого нажмите клавиши CTRL+C или щелкните значок **Копировать** на панели инструментов.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-117">Then press CTRL+C or click the **Copy** icon in the toolbar.</span></span>
 
--   Вставьте выбранный текст в текущей позиции курсора. Щелкните значок **Вставить** на панели инструментов.
+-   <span data-ttu-id="d3e8c-118">Вставьте выбранный текст в текущей позиции курсора.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-118">Paste the selected text at a current cursor position.</span></span> <span data-ttu-id="d3e8c-119">Щелкните значок **Вставить** на панели инструментов.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-119">Click the **Paste** icon on the toolbar.</span></span>
 
--   Очистите весь текст в области консоли. Чтобы очистить область консоли, щелкните значок **Очистить область консоли** на панели инструментов или выполните команду **Clear-Host** (можно использовать ее псевдоним **cls**).
+-   <span data-ttu-id="d3e8c-120">Очистите весь текст в области консоли.</span><span class="sxs-lookup"><span data-stu-id="d3e8c-120">Clear all the text in the Console pane.</span></span> <span data-ttu-id="d3e8c-121">Чтобы очистить область консоли, щелкните значок **Очистить область консоли** на панели инструментов или выполните команду **Clear-Host** (можно использовать ее псевдоним **cls**).</span><span class="sxs-lookup"><span data-stu-id="d3e8c-121">To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear-Host** or its alias, **cls**.</span></span>
 
-## <a name="see-also"></a>См. также
-- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
+## <a name="see-also"></a><span data-ttu-id="d3e8c-122">См. также</span><span class="sxs-lookup"><span data-stu-id="d3e8c-122">See Also</span></span>
+- [<span data-ttu-id="d3e8c-123">Использование интегрированной среды сценариев Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d3e8c-123">Using the Windows PowerShell ISE</span></span>](Using-the-Windows-PowerShell-ISE.md)
 

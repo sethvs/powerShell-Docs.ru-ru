@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="audit-powershell-usage-using-transcription-and-logging" class="xliff"></a>
-# Аудит использования PowerShell с помощью записи и ведения журнала
+# <a name="audit-powershell-usage-using-transcription-and-logging"></a><span data-ttu-id="16ef4-102">Аудит использования PowerShell с помощью записи и ведения журнала</span><span class="sxs-lookup"><span data-stu-id="16ef4-102">Audit PowerShell Usage using Transcription and Logging</span></span>
 
-- [Расширенные параметры транскрибирования](audit_transcript.md)
-- [Трассировка сценариев и ведения журналов для них](audit_script.md)
-- [Командлеты Cryptographic Message Syntax (CMS)](audit_cms.md)
+- [<span data-ttu-id="16ef4-103">Расширенные параметры транскрибирования</span><span class="sxs-lookup"><span data-stu-id="16ef4-103">Enhanced Transcription Options</span></span>](audit_transcript.md)
+- [<span data-ttu-id="16ef4-104">Трассировка сценариев и ведения журналов для них</span><span class="sxs-lookup"><span data-stu-id="16ef4-104">Script Tracing and Logging</span></span>](audit_script.md)
+- [<span data-ttu-id="16ef4-105">Командлеты Cryptographic Message Syntax (CMS)</span><span class="sxs-lookup"><span data-stu-id="16ef4-105">Cryptographic Message Syntax (CMS) cmdlets</span></span>](audit_cms.md)
 

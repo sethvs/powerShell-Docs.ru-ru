@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="information-stream" class="xliff"></a>
-# Поток информации
+# <a name="information-stream"></a><span data-ttu-id="9a43e-102">Поток информации</span><span class="sxs-lookup"><span data-stu-id="9a43e-102">Information Stream</span></span>
 
-Теперь для передачи структурированных данных между сценарием и его узлом можно использовать новый поток структурированной информации. Командлет **Write-Host** также был изменен для передачи выходных данных в поток информации, где их можно собрать или отключить. Новый командлет **Write-Information** (вместе с соответствующим API WriteInformation), используемый с общими параметрами **-InformationVariable** и **-InformationAction**, обладает повышенной гибкостью и расширенными возможностями.
+<span data-ttu-id="9a43e-103">Теперь для передачи структурированных данных между сценарием и его узлом можно использовать новый поток структурированной информации.</span><span class="sxs-lookup"><span data-stu-id="9a43e-103">A new structured Information stream can now be used to transmit structured data between a script and its host.</span></span> <span data-ttu-id="9a43e-104">Командлет **Write-Host** также был изменен для передачи выходных данных в поток информации, где их можно собрать или отключить.</span><span class="sxs-lookup"><span data-stu-id="9a43e-104">**Write-Host** has also been updated to emit its output to the Information stream where you can now capture or silence it.</span></span> <span data-ttu-id="9a43e-105">Новый командлет **Write-Information** (вместе с соответствующим API WriteInformation), используемый с общими параметрами **-InformationVariable** и **-InformationAction**, обладает повышенной гибкостью и расширенными возможностями.</span><span class="sxs-lookup"><span data-stu-id="9a43e-105">The new **Write-Information** cmdlet (along with a corresponding WriteInformation API) used with **-InformationVariable** and **-InformationAction** common parameters enables more flexibility and capability.</span></span>
 
 ```powershell
 PS C:\Users\demo> ## Here's a typical PowerShell script

@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="declare-implemented-interface" class="xliff"></a>
-# Объявление реализованного интерфейса
+# <a name="declare-implemented-interface"></a><span data-ttu-id="43172-102">Объявление реализованного интерфейса</span><span class="sxs-lookup"><span data-stu-id="43172-102">Declare Implemented Interface</span></span>
 
-Реализованные интерфейсы можно объявить после базовых типов или сразу после двоеточия (:), если базовый тип не указан. Все имена типов следует разделять запятыми. Это очень похоже на синтаксис C#.
+<span data-ttu-id="43172-103">Реализованные интерфейсы можно объявить после базовых типов или сразу после двоеточия (:), если базовый тип не указан.</span><span class="sxs-lookup"><span data-stu-id="43172-103">You can declare implemented interfaces after base types, or immediately after a colon (:), if there is no base type specified.</span></span> <span data-ttu-id="43172-104">Все имена типов следует разделять запятыми.</span><span class="sxs-lookup"><span data-stu-id="43172-104">Separate all type names by using commas.</span></span> <span data-ttu-id="43172-105">Это очень похоже на синтаксис C#.</span><span class="sxs-lookup"><span data-stu-id="43172-105">It’s very similar to C# syntax.</span></span>
 
 ```PowerShell
 class MyComparable : system.IComparable

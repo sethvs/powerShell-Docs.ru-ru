@@ -1,26 +1,22 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Модуль Microsoft.PowerShell.Management"
-ms.technology: powershell
 ms.assetid: 03d69ab7-89d8-4cff-863e-d5f3864fee5a
-ms.openlocfilehash: ca0e729e9382c82ae6db82043f02bfb83a382bbf
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 5597844ec475f872d814bce464c2b05d2988e4a2
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="microsoftpowershellmanagement-module"></a>Модуль Microsoft.PowerShell.Management
-В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Management**. Модуль **Microsoft.PowerShell.Management** устанавливается вместе с Windows PowerShell.
+# <a name="microsoftpowershellmanagement-module"></a><span data-ttu-id="d85f1-103">Модуль Microsoft.PowerShell.Management</span><span class="sxs-lookup"><span data-stu-id="d85f1-103">Microsoft.PowerShell.Management Module</span></span>
+<span data-ttu-id="d85f1-104">В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Management**.</span><span class="sxs-lookup"><span data-stu-id="d85f1-104">This section contains the help topics for the **Microsoft.PowerShell.Management** module.</span></span> <span data-ttu-id="d85f1-105">Модуль **Microsoft.PowerShell.Management** устанавливается вместе с Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d85f1-105">The **Microsoft.PowerShell.Management** module is installed with Windows PowerShell.</span></span>
 
-## <a name="help-topics"></a>Разделы справки
-[Командлеты управления Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=245862)
+## <a name="help-topics"></a><span data-ttu-id="d85f1-106">Разделы справки</span><span class="sxs-lookup"><span data-stu-id="d85f1-106">Help Topics</span></span>
+[<span data-ttu-id="d85f1-107">Командлеты управления Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d85f1-107">Windows PowerShell Management Cmdlets</span></span>](http://go.microsoft.com/fwlink/?LinkID=245862)
 
-## <a name="see-also"></a>См. также
-- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-- [Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-- [Работа со скриптами в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+## <a name="see-also"></a><span data-ttu-id="d85f1-108">См. также</span><span class="sxs-lookup"><span data-stu-id="d85f1-108">See Also</span></span>
+- [<span data-ttu-id="d85f1-109">Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="d85f1-109">Windows PowerShell 5.0</span></span>](Windows-PowerShell-5.0.md)
+- [<span data-ttu-id="d85f1-110">Windows PowerShell Core</span><span class="sxs-lookup"><span data-stu-id="d85f1-110">Windows PowerShell Core</span></span>](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [<span data-ttu-id="d85f1-111">Работа со скриптами в Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d85f1-111">Scripting with Windows PowerShell</span></span>](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

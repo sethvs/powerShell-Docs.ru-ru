@@ -10,11 +10,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershellget-overview" class="xliff"></a>
-# Обзор PowerShellGet
+# <a name="powershellget-overview"></a><span data-ttu-id="4e58a-103">Обзор PowerShellGet</span><span class="sxs-lookup"><span data-stu-id="4e58a-103">PowerShellGet Overview</span></span>
 
-Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты с веб-сайта https://www.PowerShellGallery.com и других частных репозиториев.
+<span data-ttu-id="4e58a-104">Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты с веб-сайта https://www.PowerShellGallery.com и других частных репозиториев.</span><span class="sxs-lookup"><span data-stu-id="4e58a-104">PowerShellGet module contains cmdlets for discovering, installing, updating and publishing the PowerShell artifacts like Modules, DSC Resources, Role Capabilities and Scripts from the https://www.PowerShellGallery.com and other private repositories.</span></span>
 
-<a id="powershellget-cmdlet-referencepsgetcmdletsreferencemd" class="xliff"></a>
-## [Справочник по командлетам PowerShellGet](./psget_cmdlets_reference.md)
+## <a name="powershellget-cmdlet-referencepsgetcmdletsreferencemd"></a>[<span data-ttu-id="4e58a-105">Справочник по командлетам PowerShellGet</span><span class="sxs-lookup"><span data-stu-id="4e58a-105">PowerShellGet cmdlet reference</span></span>](./psget_cmdlets_reference.md)
 

@@ -10,29 +10,24 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="uninstall-script" class="xliff"></a>
-# Uninstall-Script
+# <a name="uninstall-script"></a><span data-ttu-id="46a2e-103">Uninstall-Script</span><span class="sxs-lookup"><span data-stu-id="46a2e-103">Uninstall-Script</span></span>
 
-Удаляет файл сценария, который был установлен с помощью PowerShellGet.
+<span data-ttu-id="46a2e-104">Удаляет файл сценария, который был установлен с помощью PowerShellGet.</span><span class="sxs-lookup"><span data-stu-id="46a2e-104">Uninstalls a script file which was installed using PowerShellGet.</span></span>
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a><span data-ttu-id="46a2e-105">Описание</span><span class="sxs-lookup"><span data-stu-id="46a2e-105">Description</span></span>
 
-Командлет Uninstall-Script удаляет указанные файлы сценариев, которые были установлены в сетевом репозитории.
+<span data-ttu-id="46a2e-106">Командлет Uninstall-Script удаляет указанные файлы сценариев, которые были установлены в сетевом репозитории.</span><span class="sxs-lookup"><span data-stu-id="46a2e-106">The Uninstall-Script cmdlet uninstalls the specified script files which were installed from the online repository.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a><span data-ttu-id="46a2e-107">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="46a2e-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Uninstall-Script -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="46a2e-108">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="46a2e-108">Cmdlet online help reference</span></span>
 
-[Uninstall-Script](http://go.microsoft.com/fwlink/?LinkId=619789)
+[<span data-ttu-id="46a2e-109">Uninstall-Script</span><span class="sxs-lookup"><span data-stu-id="46a2e-109">Uninstall-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619789)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a><span data-ttu-id="46a2e-110">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="46a2e-110">Example commands</span></span>
 
 ```powershell
 Get-InstalledScript | Uninstall-Script -WhatIf

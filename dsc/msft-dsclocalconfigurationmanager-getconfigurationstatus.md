@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getconfigurationstatus-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager
+# <a name="getconfigurationstatus-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="1c368-103">Метод GetConfigurationStatus класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="1c368-103">GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Получает журнал состояния конфигурации.
+<span data-ttu-id="1c368-104">Получает журнал состояния конфигурации.</span><span class="sxs-lookup"><span data-stu-id="1c368-104">Get the configuration status history.</span></span>
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a><span data-ttu-id="1c368-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1c368-105">Syntax</span></span>
 ------
 
 ```mof
@@ -26,40 +24,35 @@ uint32 GetConfigurationStatus(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a><span data-ttu-id="1c368-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="1c368-106">Parameters</span></span>
 ----------
 
-*All* \[in\]  
-Значение **true**, если этот метод должен возвращать сведения обо всех запусках конфигурации на компьютере, включая применение конфигурации и проверку согласованности.
+<span data-ttu-id="1c368-107">*All* \[in\]</span><span class="sxs-lookup"><span data-stu-id="1c368-107">*All* \[in\]</span></span>  
+<span data-ttu-id="1c368-108">Значение **true**, если этот метод должен возвращать сведения обо всех запусках конфигурации на компьютере, включая применение конфигурации и проверку согласованности.</span><span class="sxs-lookup"><span data-stu-id="1c368-108">**true** if this method should return information about all the configuration runs on the machine, including the configuration application and the consistency check.</span></span>
 
-*configurationStatus* \[out\]  
-Выходные данные содержат встроенный экземпляр класса **MSFT_DSCConfigurationStatus**, который определяет параметры.
+<span data-ttu-id="1c368-109">*configurationStatus* \[out\]</span><span class="sxs-lookup"><span data-stu-id="1c368-109">*configurationStatus* \[out\]</span></span>  
+<span data-ttu-id="1c368-110">Выходные данные содержат встроенный экземпляр класса **MSFT_DSCConfigurationStatus**, который определяет параметры.</span><span class="sxs-lookup"><span data-stu-id="1c368-110">On return, contains an embedded instance of the **MSFT_DSCConfigurationStatus** class that defines the settings.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="1c368-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="1c368-111">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="1c368-112">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="1c368-112">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="1c368-113">Замечания</span><span class="sxs-lookup"><span data-stu-id="1c368-113">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="1c368-114">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="1c368-114">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="1c368-115">Требования</span><span class="sxs-lookup"><span data-stu-id="1c368-115">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="1c368-116">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="1c368-116">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="1c368-117">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="1c368-117">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="1c368-118">См. также:</span><span class="sxs-lookup"><span data-stu-id="1c368-118">See also</span></span>
+
+
+[<span data-ttu-id="1c368-119">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="1c368-119">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

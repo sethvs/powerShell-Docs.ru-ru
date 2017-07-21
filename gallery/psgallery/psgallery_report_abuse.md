@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="report-abuse" class="xliff"></a>
-# Сообщение о нарушении
+# <a name="report-abuse"></a><span data-ttu-id="08502-103">Сообщение о нарушении</span><span class="sxs-lookup"><span data-stu-id="08502-103">Report Abuse</span></span>
 
-Если вы найдете элемент, нарушающий какие-либо из этих условий, щелкните ссылку **Сообщить о нарушении** на странице подробностей об элементе и отправьте отчет.
+<span data-ttu-id="08502-104">Если вы найдете элемент, нарушающий какие-либо из этих условий, щелкните ссылку **Сообщить о нарушении** на странице подробностей об элементе и отправьте отчет.</span><span class="sxs-lookup"><span data-stu-id="08502-104">If you find a item that is in violation of any of these items, click the **Report Abuse** link on the item details page and submit a report.</span></span>
 

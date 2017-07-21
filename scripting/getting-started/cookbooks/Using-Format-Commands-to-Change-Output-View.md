@@ -1,26 +1,22 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Использование команд Format для изменения представления вывода"
-ms.technology: powershell
 ms.assetid: 63515a06-a6f7-4175-a45e-a0537f4f6d05
-ms.openlocfilehash: 0ab2e2b669e07b8b1bff16586bc7243d4cecaa1d
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 0163fcb21d586fc98902d9bdcfab6fe4eb97c225
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="using-format-commands-to-change-output-view"></a>Использование команд Format для изменения представления вывода
-Windows PowerShell содержит набор командлетов, позволяющих пользователю контролировать, какие свойства должны отображаться для определенных объектов. Имена всех этих командлетов начинаются глаголом **Format**. Они позволяют выбрать для отображения одно или несколько свойств.
+# <a name="using-format-commands-to-change-output-view"></a><span data-ttu-id="dc33c-103">Использование команд Format для изменения представления вывода</span><span class="sxs-lookup"><span data-stu-id="dc33c-103">Using Format Commands to Change Output View</span></span>
+<span data-ttu-id="dc33c-104">Windows PowerShell содержит набор командлетов, позволяющих пользователю контролировать, какие свойства должны отображаться для определенных объектов.</span><span class="sxs-lookup"><span data-stu-id="dc33c-104">Windows PowerShell has a set of cmdlets that allow you to control which properties are displayed for particular objects.</span></span> <span data-ttu-id="dc33c-105">Имена всех этих командлетов начинаются глаголом **Format**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-105">The names of all the cmdlets begin with the verb **Format**.</span></span> <span data-ttu-id="dc33c-106">Они позволяют выбрать для отображения одно или несколько свойств.</span><span class="sxs-lookup"><span data-stu-id="dc33c-106">They let you select one or more properties to show.</span></span>
 
-С глагола **Format** начинаются командлеты **Format-Wide**, **Format-List**, **Format-Table** и **Format-Custom**. В этом руководстве пользователя рассматриваются только командлеты **Format-Wide**, **Format-List** и **Format-Table**.
+<span data-ttu-id="dc33c-107">С глагола **Format** начинаются командлеты **Format-Wide**, **Format-List**, **Format-Table** и **Format-Custom**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-107">The **Format** cmdlets are **Format-Wide**, **Format-List**, **Format-Table**, and **Format-Custom**.</span></span> <span data-ttu-id="dc33c-108">В этом руководстве пользователя рассматриваются только командлеты **Format-Wide**, **Format-List** и **Format-Table**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-108">We will only describe the **Format-Wide**, **Format-List**, and **Format-Table** cmdlets in this user's guide.</span></span>
 
-Каждый командлет форматирования имеет свойства по умолчанию, которые используются, если не задается отображение каких-либо определенных свойств. Для указания свойств, которые нужно отобразить, каждый командлет использует одно и то же имя параметра **Property**. Так как командлет **Format-Wide** отображает только одно свойство, для его параметра **Property** задается только одно значение, но в качестве значений параметров свойств у командлетов **Format-List** и **Format-Table** задается список имен свойств.
+<span data-ttu-id="dc33c-109">Каждый командлет форматирования имеет свойства по умолчанию, которые используются, если не задается отображение каких-либо определенных свойств.</span><span class="sxs-lookup"><span data-stu-id="dc33c-109">Each format cmdlet has default properties that will be used if you do not specify specific properties to display.</span></span> <span data-ttu-id="dc33c-110">Для указания свойств, которые нужно отобразить, каждый командлет использует одно и то же имя параметра **Property**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-110">Each cmdlet also uses the same parameter name, **Property**, to specify which properties you want to display.</span></span> <span data-ttu-id="dc33c-111">Так как командлет **Format-Wide** отображает только одно свойство, для его параметра **Property** задается только одно значение, но в качестве значений параметров свойств у командлетов **Format-List** и **Format-Table** задается список имен свойств.</span><span class="sxs-lookup"><span data-stu-id="dc33c-111">Because **Format-Wide** only shows a single property, its **Property** parameter only takes a single value, but the property parameters of **Format-List** and **Format-Table** will accept a list of property names.</span></span>
 
-Если команда **Get-Process -Name powershell** используется во время работы двух экземпляров Windows PowerShell, формируются следующие выходные данные:
+<span data-ttu-id="dc33c-112">Если команда **Get-Process -Name powershell** используется во время работы двух экземпляров Windows PowerShell, формируются следующие выходные данные:</span><span class="sxs-lookup"><span data-stu-id="dc33c-112">If you use the command **Get-Process -Name powershell** with two instances of Windows PowerShell running, you get output that looks like this:</span></span>
 
 ```
 Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
@@ -29,10 +25,10 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     331       9    23284      29084   143     1.06   3448 powershell
 ```
 
-Оставшаяся часть этого раздела посвящена ознакомлению с тем, как использовать командлеты **Format** для изменения способа отображения выходных данных команды.
+<span data-ttu-id="dc33c-113">Оставшаяся часть этого раздела посвящена ознакомлению с тем, как использовать командлеты **Format** для изменения способа отображения выходных данных команды.</span><span class="sxs-lookup"><span data-stu-id="dc33c-113">In the rest of this section, we will explore how to use **Format** cmdlets to change the way the output of this command is displayed.</span></span>
 
-### <a name="using-format-wide-for-single-item-output"></a>Применение командлета Format-Wide для вывода с одним элементом
-По умолчанию командлет **Format-Wide** отображает только свойство по умолчанию для объекта. Данные, связанные с каждым объектом, отображаются в одном столбце:
+### <a name="using-format-wide-for-single-item-output"></a><span data-ttu-id="dc33c-114">Применение командлета Format-Wide для вывода с одним элементом</span><span class="sxs-lookup"><span data-stu-id="dc33c-114">Using Format-Wide for Single-Item Output</span></span>
+<span data-ttu-id="dc33c-115">По умолчанию командлет **Format-Wide** отображает только свойство по умолчанию для объекта.</span><span class="sxs-lookup"><span data-stu-id="dc33c-115">The **Format-Wide** cmdlet, by default, displays only the default property of an object.</span></span> <span data-ttu-id="dc33c-116">Данные, связанные с каждым объектом, отображаются в одном столбце:</span><span class="sxs-lookup"><span data-stu-id="dc33c-116">The information associated with each object is displayed in a single column:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Wide
@@ -40,7 +36,7 @@ PS> Get-Process -Name powershell | Format-Wide
 powershell                              powershell
 ```
 
-Можно также задать свойство, отличное от используемого по умолчанию:
+<span data-ttu-id="dc33c-117">Можно также задать свойство, отличное от используемого по умолчанию:</span><span class="sxs-lookup"><span data-stu-id="dc33c-117">You can also specify a non-default property:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Wide -Property Id
@@ -48,15 +44,15 @@ PS> Get-Process -Name powershell | Format-Wide -Property Id
 2760                                    3448
 ```
 
-#### <a name="controlling-format-wide-display-with-column"></a>Настройка отображения командлета Format-Wide с помощью параметра Column
-С помощью командлета **Format-Wide** одновременно можно отобразить только одно свойство. Это может быть полезным при отображении простых списков, у которых в каждой строке отображается только один элемент. Для получения простого списка нужно установить для параметра **Column** значение 1, введя следующее:
+#### <a name="controlling-format-wide-display-with-column"></a><span data-ttu-id="dc33c-118">Настройка отображения командлета Format-Wide с помощью параметра Column</span><span class="sxs-lookup"><span data-stu-id="dc33c-118">Controlling Format-Wide Display with Column</span></span>
+<span data-ttu-id="dc33c-119">С помощью командлета **Format-Wide** одновременно можно отобразить только одно свойство.</span><span class="sxs-lookup"><span data-stu-id="dc33c-119">With the **Format-Wide** cmdlet, you can only display a single property at a time.</span></span> <span data-ttu-id="dc33c-120">Это может быть полезным при отображении простых списков, у которых в каждой строке отображается только один элемент.</span><span class="sxs-lookup"><span data-stu-id="dc33c-120">This makes it useful for displaying simple lists that show only one element per line.</span></span> <span data-ttu-id="dc33c-121">Для получения простого списка нужно установить для параметра **Column** значение 1, введя следующее:</span><span class="sxs-lookup"><span data-stu-id="dc33c-121">To get a simple listing, set the value of the **Column** parameter to 1 by typing:</span></span>
 
 ```
 Get-Command Format-Wide -Property Name -Column 1
 ```
 
-### <a name="using-format-list-for-a-list-view"></a>Использование командлета Format-List для представления в виде списка
-Командлет **Format-List** показывает объект в виде списка, в котором каждое свойство имеет метку и отображается в отдельной строке:
+### <a name="using-format-list-for-a-list-view"></a><span data-ttu-id="dc33c-122">Использование командлета Format-List для представления в виде списка</span><span class="sxs-lookup"><span data-stu-id="dc33c-122">Using Format-List for a List View</span></span>
+<span data-ttu-id="dc33c-123">Командлет **Format-List** показывает объект в виде списка, в котором каждое свойство имеет метку и отображается в отдельной строке:</span><span class="sxs-lookup"><span data-stu-id="dc33c-123">The **Format-List** cmdlet displays an object in the form of a listing, with each property labeled and displayed on a separate line:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-List
@@ -72,7 +68,7 @@ CPU     : 1.0625
 Name    : powershell
 ```
 
-Можно указать произвольное число свойств:
+<span data-ttu-id="dc33c-124">Можно указать произвольное число свойств:</span><span class="sxs-lookup"><span data-stu-id="dc33c-124">You can specify as many properties as you want:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-List -Property ProcessName,FileVersion
@@ -89,17 +85,17 @@ StartTime   : 2006-05-24 13:54:28
 Id          : 3448
 ```
 
-#### <a name="getting-detailed-information-by-using-format-list-with-wildcards"></a>Получение подробных сведений с помощью подстановочных знаков в командлете Format-List
-Командлет **Format-List** позволяет использовать подстановочные знаки в качестве значения параметра **Property**. Это дает возможность отображать подробные сведения. Часто объекты содержат больше информации, чем необходимо. Поэтому Windows PowerShell по умолчанию выводит значения не всех свойств. Чтобы вывести список всех свойств объекта, используйте команду **Format-List -Property \&#42;**. Следующая команда формирует более 60 строк выходных данных для одного процесса:
+#### <a name="getting-detailed-information-by-using-format-list-with-wildcards"></a><span data-ttu-id="dc33c-125">Получение подробных сведений с помощью подстановочных знаков в командлете Format-List</span><span class="sxs-lookup"><span data-stu-id="dc33c-125">Getting Detailed Information by Using Format-List with Wildcards</span></span>
+<span data-ttu-id="dc33c-126">Командлет **Format-List** позволяет использовать подстановочные знаки в качестве значения параметра **Property**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-126">The **Format-List** cmdlet lets you use a wildcard as the value of its **Property** parameter.</span></span> <span data-ttu-id="dc33c-127">Это дает возможность отображать подробные сведения.</span><span class="sxs-lookup"><span data-stu-id="dc33c-127">This lets you display detailed information.</span></span> <span data-ttu-id="dc33c-128">Часто объекты содержат больше информации, чем необходимо. Поэтому Windows PowerShell по умолчанию выводит значения не всех свойств.</span><span class="sxs-lookup"><span data-stu-id="dc33c-128">Often, objects include more information than you need, which is why Windows PowerShell does not show all property values by default.</span></span> <span data-ttu-id="dc33c-129">Чтобы вывести список всех свойств объекта, используйте команду **Format-List -Property \&#42;**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-129">To show all of properties of an object, use the **Format-List -Property \&#42;** command.</span></span> <span data-ttu-id="dc33c-130">Следующая команда формирует более 60 строк выходных данных для одного процесса:</span><span class="sxs-lookup"><span data-stu-id="dc33c-130">The following command generates over 60 lines of output for a single process:</span></span>
 
 ```
 Get-Process -Name powershell | Format-List -Property *
 ```
 
-Хотя команда **Format-List** и полезна для вывода подробных сведений, для получения сведений, содержащих много элементов, обычно удобнее использовать упрощенное табличное представление.
+<span data-ttu-id="dc33c-131">Хотя команда **Format-List** и полезна для вывода подробных сведений, для получения сведений, содержащих много элементов, обычно удобнее использовать упрощенное табличное представление.</span><span class="sxs-lookup"><span data-stu-id="dc33c-131">Although the **Format-List** command is useful for showing detail, if you want an overview of output that includes many items, a simpler tabular view is often more useful.</span></span>
 
-### <a name="using-format-table-for-tabular-output"></a>Применение командлета Format-Table для табличного вывода
-Если использовать командлет **Format-Table** без указания имен свойств для форматирования вывода команды **Get-Process**, будут получены точно такие же выходные данные, что и без использования форматирования. Это вызвано тем, что процессы обычно показываются в виде таблицы, как и большинство объектов Windows PowerShell.
+### <a name="using-format-table-for-tabular-output"></a><span data-ttu-id="dc33c-132">Применение командлета Format-Table для табличного вывода</span><span class="sxs-lookup"><span data-stu-id="dc33c-132">Using Format-Table for Tabular Output</span></span>
+<span data-ttu-id="dc33c-133">Если использовать командлет **Format-Table** без указания имен свойств для форматирования вывода команды **Get-Process**, будут получены точно такие же выходные данные, что и без использования форматирования.</span><span class="sxs-lookup"><span data-stu-id="dc33c-133">If you use the **Format-Table** cmdlet with no property names specified to format the output of the **Get-Process** command, you get exactly the same output as you do without performing any formatting.</span></span> <span data-ttu-id="dc33c-134">Это вызвано тем, что процессы обычно показываются в виде таблицы, как и большинство объектов Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="dc33c-134">The reason is that processes are usually displayed in a tabular format, as are most Windows PowerShell objects.</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table
@@ -110,8 +106,8 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     332       9    23140        632   141     1.06   3448 powershell
 ```
 
-#### <a name="improving-format-table-output-autosize"></a>Улучшение вывода командлета Format-Table (параметр AutoSize)
-Хотя табличное представление и полезно при выводе большого количества сведений для сравнения, интерпретация данных может вызвать затруднения, если экран слишком узок и не вмещает все данные. Например, если отобразить путь процесса, идентификатор, имя и организацию, данные в столбцах пути процесса и организации окажутся обрезанными:
+#### <a name="improving-format-table-output-autosize"></a><span data-ttu-id="dc33c-135">Улучшение вывода командлета Format-Table (параметр AutoSize)</span><span class="sxs-lookup"><span data-stu-id="dc33c-135">Improving Format-Table Output (AutoSize)</span></span>
+<span data-ttu-id="dc33c-136">Хотя табличное представление и полезно при выводе большого количества сведений для сравнения, интерпретация данных может вызвать затруднения, если экран слишком узок и не вмещает все данные.</span><span class="sxs-lookup"><span data-stu-id="dc33c-136">Although a tabular view is useful for displaying a lot of comparable information, it may be difficult to interpret if the display is too narrow for the data.</span></span> <span data-ttu-id="dc33c-137">Например, если отобразить путь процесса, идентификатор, имя и организацию, данные в столбцах пути процесса и организации окажутся обрезанными:</span><span class="sxs-lookup"><span data-stu-id="dc33c-137">For example, if you try to display process path, ID, name, and company, you get truncated output for the process path and the company column:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Property Path,Name,Id,Company
@@ -121,7 +117,7 @@ Path                Name                                 Id Company
 C:\Program Files... powershell                         2836 Microsoft Corpor...
 ```
 
-Если указать параметр **AutoSize** при выполнении команды **Format-Table**, Windows PowerShell вычислит ширину столбцов по ширине реально отображаемых данных. Это улучшит внешний вид столбца **Path**, но значение столбца с названием организации останется обрезанным:
+<span data-ttu-id="dc33c-138">Если указать параметр **AutoSize** при выполнении команды **Format-Table**, Windows PowerShell вычислит ширину столбцов по ширине реально отображаемых данных.</span><span class="sxs-lookup"><span data-stu-id="dc33c-138">If you specify the **AutoSize** parameter when you run the **Format-Table** command, Windows PowerShell will calculate column widths based on the actual data you are going to display.</span></span> <span data-ttu-id="dc33c-139">Это улучшит внешний вид столбца **Path**, но значение столбца с названием организации останется обрезанным:</span><span class="sxs-lookup"><span data-stu-id="dc33c-139">This makes the **Path** column readable, but the company column remains truncated:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Property Path,Name,Id,Company -
@@ -132,7 +128,7 @@ Path                                                    Name         Id Company
 C:\Program Files\Windows PowerShell\v1.0\powershell.exe powershell 2836 Micr...
 ```
 
-Командлет **Format-Table** может обрезать данные, но это происходит только на правой границе экрана. Свойствам, за исключением последнего отображаемого, выделяется столько места, сколько нужно для корректного вывода самого длинного элемента данных. Если поменять местами элементы **Path** и **Company** в списке значений **Property**, название организации отображается полностью, но путь обрезан:
+<span data-ttu-id="dc33c-140">Командлет **Format-Table** может обрезать данные, но это происходит только на правой границе экрана.</span><span class="sxs-lookup"><span data-stu-id="dc33c-140">The **Format-Table** cmdlet might still truncate data, but it will only do so at the end of the screen.</span></span> <span data-ttu-id="dc33c-141">Свойствам, за исключением последнего отображаемого, выделяется столько места, сколько нужно для корректного вывода самого длинного элемента данных.</span><span class="sxs-lookup"><span data-stu-id="dc33c-141">Properties, other than the last one displayed, are given as much size as they need for their longest data element to display correctly.</span></span> <span data-ttu-id="dc33c-142">Если поменять местами элементы **Path** и **Company** в списке значений **Property**, название организации отображается полностью, но путь обрезан:</span><span class="sxs-lookup"><span data-stu-id="dc33c-142">You can see that company name is visible but path is truncated if you swap the locations of **Path** and **Company** in the **Property** value list:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Property Company,Name,Id,Path -
@@ -143,7 +139,7 @@ Company               Name         Id Path
 Microsoft Corporation powershell 2836 C:\Program Files\Windows PowerShell\v1...
 ```
 
-Команда **Format-Table** предполагает, что чем ближе свойство к началу списка свойств, тем оно важнее. В связи с этим предпринимается попытка отобразить полностью свойства, находящиеся ближе всего к началу. Если команда **Format-Table** не может отобразить все свойства, она удаляет некоторые столбцы из выходных данных и выдает предупреждение. Такое поведение можно наблюдать, если поместить свойство **Name** в конец списка:
+<span data-ttu-id="dc33c-143">Команда **Format-Table** предполагает, что чем ближе свойство к началу списка свойств, тем оно важнее.</span><span class="sxs-lookup"><span data-stu-id="dc33c-143">The **Format-Table** command assumes that the nearer a property is to the beginning of the property list, the more important it is.</span></span> <span data-ttu-id="dc33c-144">В связи с этим предпринимается попытка отобразить полностью свойства, находящиеся ближе всего к началу.</span><span class="sxs-lookup"><span data-stu-id="dc33c-144">So it attempts to display the properties nearest the beginning completely.</span></span> <span data-ttu-id="dc33c-145">Если команда **Format-Table** не может отобразить все свойства, она удаляет некоторые столбцы из выходных данных и выдает предупреждение.</span><span class="sxs-lookup"><span data-stu-id="dc33c-145">If the **Format-Table** command cannot display all the properties, it will remove some columns from the display and provide a warning.</span></span> <span data-ttu-id="dc33c-146">Такое поведение можно наблюдать, если поместить свойство **Name** в конец списка:</span><span class="sxs-lookup"><span data-stu-id="dc33c-146">You can see this behavior if you make **Name** the last property in the list:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Property Company,Path,Id,Name -
@@ -157,10 +153,10 @@ Company               Path                                                    I
 Microsoft Corporation C:\Program Files\Windows PowerShell\v1.0\powershell.exe 6
 ```
 
-В приведенных выше входных данных столбец идентификатора обрезан, чтобы его значение уместилось в списке, а заголовки столбцов расположены вертикально. Автоматическое изменение размера столбцов не всегда дает желаемый результат.
+<span data-ttu-id="dc33c-147">В приведенных выше входных данных столбец идентификатора обрезан, чтобы его значение уместилось в списке, а заголовки столбцов расположены вертикально.</span><span class="sxs-lookup"><span data-stu-id="dc33c-147">In the output above, the ID column is truncated to make it fit into the listing, and the column headings are stacked up.</span></span> <span data-ttu-id="dc33c-148">Автоматическое изменение размера столбцов не всегда дает желаемый результат.</span><span class="sxs-lookup"><span data-stu-id="dc33c-148">Automatically resizing the columns does not always do what you want.</span></span>
 
-#### <a name="wrapping-format-table-output-in-columns-wrap"></a>Перенос на следующую строку вывода командлета Format-Table в столбцах (параметр Wrap)
-Длинные данные командлета **Format-Table** можно принудительно перенести на следующую строку в пределах столбца с помощью параметра **Wrap**. Использование параметра **Wrap** в отдельности не всегда приводит к ожидаемому результату, так как если не указан еще и параметр **AutoSize**, применяются параметры по умолчанию:
+#### <a name="wrapping-format-table-output-in-columns-wrap"></a><span data-ttu-id="dc33c-149">Перенос на следующую строку вывода командлета Format-Table в столбцах (параметр Wrap)</span><span class="sxs-lookup"><span data-stu-id="dc33c-149">Wrapping Format-Table Output in Columns (Wrap)</span></span>
+<span data-ttu-id="dc33c-150">Длинные данные командлета **Format-Table** можно принудительно перенести на следующую строку в пределах столбца с помощью параметра **Wrap**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-150">You can force lengthy **Format-Table** data to wrap within its display column by using the **Wrap** parameter.</span></span> <span data-ttu-id="dc33c-151">Использование параметра **Wrap** в отдельности не всегда приводит к ожидаемому результату, так как если не указан еще и параметр **AutoSize**, применяются параметры по умолчанию:</span><span class="sxs-lookup"><span data-stu-id="dc33c-151">Using the **Wrap** parameter alone will not necessarily do what you expect, since it uses default settings if you do not also specify **AutoSize**:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Wrap -Property Name,Id,Company,
@@ -173,9 +169,9 @@ powershell                         2836 Microsoft Corporati C:\Program Files\Wi
                                                             .0\powershell.exe
 ```
 
-Преимущество использования параметра **Wrap** без других параметров заключается в отсутствии существенного замедления обработки. Использование параметра **AutoSize** во время выполнения рекурсивного вывода списка файлов в большом каталоге может потребовать значительного объема памяти и времени перед отображением первых выходных данных.
+<span data-ttu-id="dc33c-152">Преимущество использования параметра **Wrap** без других параметров заключается в отсутствии существенного замедления обработки.</span><span class="sxs-lookup"><span data-stu-id="dc33c-152">An advantage of using the **Wrap** parameter by itself is that it does not slow down processing very much.</span></span> <span data-ttu-id="dc33c-153">Использование параметра **AutoSize** во время выполнения рекурсивного вывода списка файлов в большом каталоге может потребовать значительного объема памяти и времени перед отображением первых выходных данных.</span><span class="sxs-lookup"><span data-stu-id="dc33c-153">If you perform a recursive file listing of a large directory system, it might take a very long time and use a lot of memory before displaying the first output items if you use **AutoSize**.</span></span>
 
-Если загрузка системы не имеет решающего значения, параметр **AutoSize** хорошо работает в сочетании с параметром **Wrap**. Начальным столбцам всегда выделяется необходимый размер для вывода элементов в одной строке, как и при указании параметра **AutoSize** без параметра **Wrap**. Единственное отличие состоит в том, что последний столбец будет при необходимости перенесен на следующую строку:
+<span data-ttu-id="dc33c-154">Если загрузка системы не имеет решающего значения, параметр **AutoSize** хорошо работает в сочетании с параметром **Wrap**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-154">If you are not concerned about system load, then **AutoSize** works well with the **Wrap** parameter.</span></span> <span data-ttu-id="dc33c-155">Начальным столбцам всегда выделяется необходимый размер для вывода элементов в одной строке, как и при указании параметра **AutoSize** без параметра **Wrap**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-155">The initial columns are always allotted as much width as they need to display items on one line, just as when you specify **AutoSize** without the **Wrap** parameter.</span></span> <span data-ttu-id="dc33c-156">Единственное отличие состоит в том, что последний столбец будет при необходимости перенесен на следующую строку:</span><span class="sxs-lookup"><span data-stu-id="dc33c-156">The only difference is that the final column will be wrapped if necessary:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Wrap -AutoSize -Property Name,I
@@ -187,7 +183,7 @@ powershell 2836 Microsoft Corporation C:\Program Files\Windows PowerShell\v1.0\
                                       powershell.exe
 ```
 
-Некоторые столбцы могут не быть показаны, если первым указать самый широкий столбец, поэтому безопаснее указывать первыми самые маленькие элементы данных. В следующем примере первым указан чрезвычайно большой элемент — путь. Даже при переносе на следующую строку последний столбец **Name** теряется:
+<span data-ttu-id="dc33c-157">Некоторые столбцы могут не быть показаны, если первым указать самый широкий столбец, поэтому безопаснее указывать первыми самые маленькие элементы данных.</span><span class="sxs-lookup"><span data-stu-id="dc33c-157">Some columns might not be displayed if you specify the widest columns first, so it is safest to specify the smallest data elements first.</span></span> <span data-ttu-id="dc33c-158">В следующем примере первым указан чрезвычайно большой элемент — путь. Даже при переносе на следующую строку последний столбец **Name** теряется:</span><span class="sxs-lookup"><span data-stu-id="dc33c-158">In the following example, we specify the extremely wide path element first, and even with wrapping, we still lose the final **Name** column:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Wrap -AutoSize -Property Path,I
@@ -201,8 +197,8 @@ C:\Program Files\Windows PowerShell\v1.0\powershell.exe 2836 Microsoft Corporat
                                                              ion
 ```
 
-#### <a name="organizing-table-output--groupby"></a>Организация табличного вывода (параметр -GroupBy)
-Другим полезным параметром управления табличным выводом является **GroupBy**. Длинные табличные списки особенно тяжелы для сравнения. Параметр **GroupBy** группирует выходные данные в соответствии со значением свойства. Например, можно сгруппировать процессы по организации для упрощения проверки, исключая название организации из списка свойства:
+#### <a name="organizing-table-output--groupby"></a><span data-ttu-id="dc33c-159">Организация табличного вывода (параметр -GroupBy)</span><span class="sxs-lookup"><span data-stu-id="dc33c-159">Organizing Table Output (-GroupBy)</span></span>
+<span data-ttu-id="dc33c-160">Другим полезным параметром управления табличным выводом является **GroupBy**.</span><span class="sxs-lookup"><span data-stu-id="dc33c-160">Another useful parameter for tabular output control is **GroupBy**.</span></span> <span data-ttu-id="dc33c-161">Длинные табличные списки особенно тяжелы для сравнения.</span><span class="sxs-lookup"><span data-stu-id="dc33c-161">Longer tabular listings in particular may be hard to compare.</span></span> <span data-ttu-id="dc33c-162">Параметр **GroupBy** группирует выходные данные в соответствии со значением свойства.</span><span class="sxs-lookup"><span data-stu-id="dc33c-162">The **GroupBy** parameter groups output based on a property value.</span></span> <span data-ttu-id="dc33c-163">Например, можно сгруппировать процессы по организации для упрощения проверки, исключая название организации из списка свойства:</span><span class="sxs-lookup"><span data-stu-id="dc33c-163">For example, we can group processes by company for easier inspection, omitting the company value from the property listing:</span></span>
 
 ```
 PS> Get-Process -Name powershell | Format-Table -Wrap -AutoSize -Property Name,I

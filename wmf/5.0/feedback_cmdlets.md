@@ -9,7 +9,6 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-and-updated-cmdlets-based-on-community-feedback" class="xliff"></a>
-# Новые и обновленные командлеты, основанные на отзывах сообщества 
-Основываясь на отзывах членов сообщества, полученных через [Connect](https://connect.microsoft.com/powershell), мы добавили несколько новых командлетов Utility, а также изменили существующие командлеты. Мы продолжаем принимать отзывы и стараемся обработать максимальное число запросов.
+# <a name="new-and-updated-cmdlets-based-on-community-feedback"></a><span data-ttu-id="c14c3-102">Новые и обновленные командлеты, основанные на отзывах сообщества</span><span class="sxs-lookup"><span data-stu-id="c14c3-102">New and updated cmdlets based on community feedback</span></span> 
+<span data-ttu-id="c14c3-103">Основываясь на отзывах членов сообщества, полученных через [Connect](https://connect.microsoft.com/powershell), мы добавили несколько новых командлетов Utility, а также изменили существующие командлеты.</span><span class="sxs-lookup"><span data-stu-id="c14c3-103">We have added some new Utility cmdlets, and updated existing cmdlets based on feedback from the community via [Connect](https://connect.microsoft.com/powershell).</span></span> <span data-ttu-id="c14c3-104">Мы продолжаем принимать отзывы и стараемся обработать максимальное число запросов.</span><span class="sxs-lookup"><span data-stu-id="c14c3-104">We continue to go through the feedback, and address as many of your requests as possible.</span></span>
 

@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-for-linux-nxpackage-resource" class="xliff"></a>
-# Ресурс nxPackage в DSC для Linux
+# <a name="dsc-for-linux-nxpackage-resource"></a><span data-ttu-id="1d9bd-103">Ресурс nxPackage в DSC для Linux</span><span class="sxs-lookup"><span data-stu-id="1d9bd-103">DSC for Linux nxPackage Resource</span></span>
 
-Ресурс **nxPackage** в настройке требуемого состояния PowerShell предоставляет механизм управления пакетами на узле Linux.
+<span data-ttu-id="1d9bd-104">Ресурс **nxPackage** в настройке требуемого состояния PowerShell предоставляет механизм управления пакетами на узле Linux.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-104">The **nxPackage** resource in PowerShell Desired State Configuration (DSC) provides a mechanism to manage packages on a Linux node.</span></span>
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a><span data-ttu-id="1d9bd-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1d9bd-105">Syntax</span></span>
 
 ```
 nxPackage <string> #ResourceName
@@ -33,24 +31,22 @@ nxPackage <string> #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a><span data-ttu-id="1d9bd-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="1d9bd-106">Properties</span></span>
 
-|  Свойство |  Описание | 
+|  <span data-ttu-id="1d9bd-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="1d9bd-107">Property</span></span> |  <span data-ttu-id="1d9bd-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1d9bd-108">Description</span></span> | 
 |---|---|
-| Название| Указывает имя пакета, для которого требуется обеспечить определенное состояние.| 
-| Ensure| Определяет, нужно ли проверять существование пакета. Чтобы убедиться, что пакет существует, укажите для этого свойства значение Present. Чтобы убедиться, что пакет не существует, укажите для этого свойства значение Absent. Значение по умолчанию — Present.|  
-| PackageManager| Поддерживаются значения yum, apt и zypper. Указывает, какой диспетчер пакетов нужно использовать при установке пакетов. Если свойство **FilePath** указано, пакет будет установлен по указанному пути. В противном случае для установки пакета будет использоваться диспетчер пакетов из предварительно настроенного репозитория. Если ни одно из свойств **PackageManager** и **FilePath** не указано, будет использоваться диспетчер пакетов, предусмотренный для системы по умолчанию.| 
-| FilePath| Путь к файлу пакета.| 
-| PackageGroup| Если свойство имеет значение **$true**, в качестве параметра **Name** должно быть задано имя группы пакетов для использования с **PackageManager**. **PackageGroup** не используется, если задано свойство **FilePath**.| 
-| Аргументы| Строка аргументов, которая будет передана в пакет в указанном виде.| 
-| ReturnCode| Ожидаемый код возврата. Если фактический код возврата не соответствует указанному здесь значению, настройка вернет ошибку.| 
-| DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
+| <span data-ttu-id="1d9bd-109">Название</span><span class="sxs-lookup"><span data-stu-id="1d9bd-109">Name</span></span>| <span data-ttu-id="1d9bd-110">Указывает имя пакета, для которого требуется обеспечить определенное состояние.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-110">The name of the package for which you want to ensure a specific state.</span></span>| 
+| <span data-ttu-id="1d9bd-111">Ensure</span><span class="sxs-lookup"><span data-stu-id="1d9bd-111">Ensure</span></span>| <span data-ttu-id="1d9bd-112">Определяет, нужно ли проверять существование пакета.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-112">Determines whether to check if the package exists.</span></span> <span data-ttu-id="1d9bd-113">Чтобы убедиться, что пакет существует, укажите для этого свойства значение Present.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-113">Set this property to "Present" to ensure the package exists.</span></span> <span data-ttu-id="1d9bd-114">Чтобы убедиться, что пакет не существует, укажите для этого свойства значение Absent.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-114">Set it to "Absent" to ensure the package does not exist.</span></span> <span data-ttu-id="1d9bd-115">Значение по умолчанию — Present.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-115">The default value is "Present".</span></span>|  
+| <span data-ttu-id="1d9bd-116">PackageManager</span><span class="sxs-lookup"><span data-stu-id="1d9bd-116">PackageManager</span></span>| <span data-ttu-id="1d9bd-117">Поддерживаются значения yum, apt и zypper.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-117">Supported values are "yum", "apt", and "zypper".</span></span> <span data-ttu-id="1d9bd-118">Указывает, какой диспетчер пакетов нужно использовать при установке пакетов.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-118">Specifies the package manager to use when installing packages.</span></span> <span data-ttu-id="1d9bd-119">Если свойство **FilePath** указано, пакет будет установлен по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-119">If **FilePath** is specified, the provided path will be used to install the package.</span></span> <span data-ttu-id="1d9bd-120">В противном случае для установки пакета будет использоваться диспетчер пакетов из предварительно настроенного репозитория.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-120">Otherwise, a Package Manager will be used to install the package from a pre-configured repository.</span></span> <span data-ttu-id="1d9bd-121">Если ни одно из свойств **PackageManager** и **FilePath** не указано, будет использоваться диспетчер пакетов, предусмотренный для системы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-121">If neither **PackageManager** nor **FilePath** are provided, the default package manager for the system will be used.</span></span>| 
+| <span data-ttu-id="1d9bd-122">FilePath</span><span class="sxs-lookup"><span data-stu-id="1d9bd-122">FilePath</span></span>| <span data-ttu-id="1d9bd-123">Путь к файлу пакета.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-123">The file path where the package resides</span></span>| 
+| <span data-ttu-id="1d9bd-124">PackageGroup</span><span class="sxs-lookup"><span data-stu-id="1d9bd-124">PackageGroup</span></span>| <span data-ttu-id="1d9bd-125">Если свойство имеет значение **$true**, в качестве параметра **Name** должно быть задано имя группы пакетов для использования с **PackageManager**.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-125">If **$true**, the **Name** is expected to be the name of a package group for use with a **PackageManager**.</span></span> <span data-ttu-id="1d9bd-126">**PackageGroup** не используется, если задано свойство **FilePath**.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-126">**PacakgeGroup** is not valid when providing a **FilePath**.</span></span>| 
+| <span data-ttu-id="1d9bd-127">Аргументы</span><span class="sxs-lookup"><span data-stu-id="1d9bd-127">Arguments</span></span>| <span data-ttu-id="1d9bd-128">Строка аргументов, которая будет передана в пакет в указанном виде.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-128">A string of arguments that will be passed to the package exactly as provided.</span></span>| 
+| <span data-ttu-id="1d9bd-129">ReturnCode</span><span class="sxs-lookup"><span data-stu-id="1d9bd-129">ReturnCode</span></span>| <span data-ttu-id="1d9bd-130">Ожидаемый код возврата.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-130">The expected return code.</span></span> <span data-ttu-id="1d9bd-131">Если фактический код возврата не соответствует указанному здесь значению, настройка вернет ошибку.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-131">If the actual return code does not match the expected value provided here, the configuration will return an error.</span></span>| 
+| <span data-ttu-id="1d9bd-132">DependsOn</span><span class="sxs-lookup"><span data-stu-id="1d9bd-132">DependsOn</span></span> | <span data-ttu-id="1d9bd-133">Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-133">Indicates that the configuration of another resource must run before this resource is configured.</span></span> <span data-ttu-id="1d9bd-134">Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-134">For example, if the **ID** of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`.</span></span>| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a><span data-ttu-id="1d9bd-135">Пример</span><span class="sxs-lookup"><span data-stu-id="1d9bd-135">Example</span></span>
 
-В следующем примере с помощью диспетчера пакетов Yum проверяется, установлен ли пакет с именем httpd на компьютере Linux.
+<span data-ttu-id="1d9bd-136">В следующем примере с помощью диспетчера пакетов Yum проверяется, установлен ли пакет с именем httpd на компьютере Linux.</span><span class="sxs-lookup"><span data-stu-id="1d9bd-136">The following example ensures that the package named "httpd" is installed on a Linux computer, using the “Yum” package manager.</span></span>
 
 ```
 Import-DSCResource -Module nx 

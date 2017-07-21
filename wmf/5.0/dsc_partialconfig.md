@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="configure-node-with-multiple-configuration-fragments-partial-configurations" class="xliff"></a>
-# Настройка узла с помощью нескольких фрагментов конфигурации (неполные конфигурации)
+# <a name="configure-node-with-multiple-configuration-fragments-partial-configurations"></a><span data-ttu-id="f35d6-102">Настройка узла с помощью нескольких фрагментов конфигурации (неполные конфигурации)</span><span class="sxs-lookup"><span data-stu-id="f35d6-102">Configure Node with multiple configuration fragments (partial configurations)</span></span>
 
-WMF 5.0 помогает доставлять документы конфигурации на узел фрагментами. Дополнительные сведения см. в разделе [Частичные конфигурации](https://msdn.microsoft.com/powershell/dsc/partialconfigs).
+<span data-ttu-id="f35d6-103">WMF 5.0 помогает доставлять документы конфигурации на узел фрагментами.</span><span class="sxs-lookup"><span data-stu-id="f35d6-103">WMF 5.0 helps you deliver configuration documents to a node in fragments.</span></span> <span data-ttu-id="f35d6-104">Дополнительные сведения см. в разделе [Частичные конфигурации](https://msdn.microsoft.com/powershell/dsc/partialconfigs).</span><span class="sxs-lookup"><span data-stu-id="f35d6-104">For more information, see [Partial configurations](https://msdn.microsoft.com/powershell/dsc/partialconfigs).</span></span>
 

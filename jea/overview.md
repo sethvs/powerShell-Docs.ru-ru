@@ -10,50 +10,47 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="just-enough-administration" class="xliff"></a>
-# Just Enough Administration (JEA)
+# <a name="just-enough-administration"></a><span data-ttu-id="c2e3c-103">Just Enough Administration (JEA)</span><span class="sxs-lookup"><span data-stu-id="c2e3c-103">Just Enough Administration</span></span>
 
-Just Enough Administration (JEA) — это технология безопасности, позволяющая делегировать администрирование в отношении всего, чем можно управлять через PowerShell.
-JEA позволяет сделать следующее:
+<span data-ttu-id="c2e3c-104">Just Enough Administration (JEA) — это технология безопасности, позволяющая делегировать администрирование в отношении всего, чем можно управлять через PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-104">Just Enough Administration (JEA) is a security technology that enables delegated administration for anything that can be managed with PowerShell.</span></span>
+<span data-ttu-id="c2e3c-105">JEA позволяет сделать следующее:</span><span class="sxs-lookup"><span data-stu-id="c2e3c-105">With JEA, you can:</span></span>
 
-- Вы можете **уменьшить число администраторов на компьютерах**, используя виртуальные учетные записи или групповые управляемые учетные записи службы, которые допускают выполнение привилегированных действий от имени обычных пользователей.
-- **Ограничить доступные пользователям действия**, указав, какие командлеты, функции и внешние команды могут выполнять пользователи.
-- **Лучше понять, что делают ваши пользователи**, с помощью детализированных записей и журналов, показывающих выполняемые пользователями команды во время сеанса.
+- <span data-ttu-id="c2e3c-106">Вы можете **уменьшить число администраторов на компьютерах**, используя виртуальные учетные записи или групповые управляемые учетные записи службы, которые допускают выполнение привилегированных действий от имени обычных пользователей.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-106">**Reduce the number of administrators on your machines** by leveraging virtual accounts or group managed service accounts that perform privileged actions on behalf of regular users.</span></span>
+- <span data-ttu-id="c2e3c-107">**Ограничить доступные пользователям действия**, указав, какие командлеты, функции и внешние команды могут выполнять пользователи.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-107">**Limit what users can do** by specifying which cmdlets, functions, and external commands they can run.</span></span>
+- <span data-ttu-id="c2e3c-108">**Лучше понять, что делают ваши пользователи**, с помощью детализированных записей и журналов, показывающих выполняемые пользователями команды во время сеанса.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-108">**Better understand what your users are doing** with transcripts and logs that show you exactly which commands a user executed during their session.</span></span>
 
-**Почему это важно?**
+<span data-ttu-id="c2e3c-109">**Почему это важно?**</span><span class="sxs-lookup"><span data-stu-id="c2e3c-109">**Why is this important?**</span></span>
 
-Высокопривилегированные учетные записи, используемые для администрирования серверов, представляют серьезную угрозу для безопасности.
-Если злоумышленнику удастся скомпрометировать одну из таких учетных записей, он сможет осуществлять [распределенные атаки](http://aka.ms/pth) по всей организации.
-Каждая скомпрометированная учетная запись предоставляет ему доступ к другим учетным записям и ресурсам, повышая вероятность кражи конфиденциальной корпоративной информации, проведения атаки типа "отказ в обслуживании" и других нежелательных операций.
+<span data-ttu-id="c2e3c-110">Высокопривилегированные учетные записи, используемые для администрирования серверов, представляют серьезную угрозу для безопасности.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-110">Highly privileged accounts used to administer your servers pose a serious security risk.</span></span>
+<span data-ttu-id="c2e3c-111">Если злоумышленнику удастся скомпрометировать одну из таких учетных записей, он сможет осуществлять [распределенные атаки](http://aka.ms/pth) по всей организации.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-111">Should an attacker compromise one of these accounts, they could launch [lateral attacks](http://aka.ms/pth) across your organization.</span></span>
+<span data-ttu-id="c2e3c-112">Каждая скомпрометированная учетная запись предоставляет ему доступ к другим учетным записям и ресурсам, повышая вероятность кражи конфиденциальной корпоративной информации, проведения атаки типа "отказ в обслуживании" и других нежелательных операций.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-112">Each account they compromise can give them access to even more accounts and resources, putting them one step closer to stealing company secrets, launching a denial-of-service attack, and more.</span></span>
 
-Однако удаление прав администратора реализовать не всегда просто.
-Рассмотрим распространенный сценарий, когда роль DNS установлена на том же компьютере, что и контроллер домена Active Directory.
-Администраторам DNS требуются права локального администратора для устранения проблем с DNS-сервером, но для этого их необходимо включить в высокопривилегированную группу безопасности администраторов домена.
-При этом они получат контроль над всем доменом и доступ ко всем ресурсам на соответствующем компьютере.
+<span data-ttu-id="c2e3c-113">Однако удаление прав администратора реализовать не всегда просто.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-113">It is not always easy to remove administrative privileges, either.</span></span>
+<span data-ttu-id="c2e3c-114">Рассмотрим распространенный сценарий, когда роль DNS установлена на том же компьютере, что и контроллер домена Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-114">Consider the common scenario where the DNS role is installed on the same machine as your Active Directory Domain Controller.</span></span>
+<span data-ttu-id="c2e3c-115">Администраторам DNS требуются права локального администратора для устранения проблем с DNS-сервером, но для этого их необходимо включить в высокопривилегированную группу безопасности администраторов домена.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-115">Your DNS administrators require local administrator privileges to fix issues with the DNS server, but in order to do so you have to make them members of the highly privileged "Domain Admins" security group.</span></span>
+<span data-ttu-id="c2e3c-116">При этом они получат контроль над всем доменом и доступ ко всем ресурсам на соответствующем компьютере.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-116">This approach effectively gives DNS Administrators control over your whole domain and access to all resources on that machine.</span></span>
 
-JEA помогает решить эту проблему, позволяя применять принцип *предоставления минимальных прав*.
-При наличии JEA вы можете настроить для администраторов DNS конечную точку управления, предоставляющую им доступ только к командам PowerShell, которые нужны им для работы.
-Это означает, что вы можете предоставить соответствующие права доступа для восстановления поврежденного кэша DNS или перезапуска DNS-сервера без случайного предоставления прав доступа к Active Directory, на просмотр файловой системы или на запуск потенциально опасных сценариев.
-Более того, если в сеансе JEA настроено использование временных привилегированных виртуальных учетных записей, ваши администраторы DNS смогут подключаться к серверу с помощью учетных данных *без административных полномочий* и при этом выполнять команды, для которых обычно требуются права администратора.
-Эта возможность позволяет удалить пользователей из ролей локальных администраторов и администраторов домена с обширными правами доступа, а также детально настроить операции, доступные им на каждом компьютере.
+<span data-ttu-id="c2e3c-117">JEA помогает решить эту проблему, позволяя применять принцип *предоставления минимальных прав*.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-117">JEA helps address this problem by helping you adopt the principle of *Least Privilege*.</span></span>
+<span data-ttu-id="c2e3c-118">При наличии JEA вы можете настроить для администраторов DNS конечную точку управления, предоставляющую им доступ только к командам PowerShell, которые нужны им для работы.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-118">With JEA, you can configure a management endpoint for DNS administrators that gives them access to all the PowerShell commands they need to get their job done, but nothing more.</span></span>
+<span data-ttu-id="c2e3c-119">Это означает, что вы можете предоставить соответствующие права доступа для восстановления поврежденного кэша DNS или перезапуска DNS-сервера без случайного предоставления прав доступа к Active Directory, на просмотр файловой системы или на запуск потенциально опасных сценариев.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-119">This means you can provide the appropriate access to repair a poisoned DNS cache or restart the DNS server without unintentionally giving them rights to Active Directory, or to browse the file system, or run potentially dangerous scripts.</span></span>
+<span data-ttu-id="c2e3c-120">Более того, если в сеансе JEA настроено использование временных привилегированных виртуальных учетных записей, ваши администраторы DNS смогут подключаться к серверу с помощью учетных данных *без административных полномочий* и при этом выполнять команды, для которых обычно требуются права администратора.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-120">Better yet, when the JEA session is configured to use temporary privileged virtual accounts, your DNS administrators can connect to the server using *non-admin* credentials and still be able to run commands which typically require admin privileges.</span></span>
+<span data-ttu-id="c2e3c-121">Эта возможность позволяет удалить пользователей из ролей локальных администраторов и администраторов домена с обширными правами доступа, а также детально настроить операции, доступные им на каждом компьютере.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-121">This capability enables you to remove users from widely-privileged local/domain administrator roles and instead carefully control what they are able to do on each machine.</span></span>
 
-<a id="get-started-with-jea" class="xliff"></a>
-## Приступая к работе с JEA
+## <a name="get-started-with-jea"></a><span data-ttu-id="c2e3c-122">Приступая к работе с JEA</span><span class="sxs-lookup"><span data-stu-id="c2e3c-122">Get Started with JEA</span></span>
 
-Вы можете начать использовать JEA уже сегодня на любом компьютере под управлением Windows Server 2016 или Windows 10.
-Кроме того, JEA можно запустить в более старых операционных системах с обновлением Windows Management Framework.
-Чтобы ознакомиться с дополнительными сведениями о требованиях для использования JEA и узнать, как создать, использовать конечную точку JEA и осуществлять ее аудит, см. следующие разделы:
+<span data-ttu-id="c2e3c-123">Вы можете начать использовать JEA уже сегодня на любом компьютере под управлением Windows Server 2016 или Windows 10.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-123">You can start using JEA today on any machine running Windows Server 2016 or Windows 10.</span></span>
+<span data-ttu-id="c2e3c-124">Кроме того, JEA можно запустить в более старых операционных системах с обновлением Windows Management Framework.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-124">You can also run JEA on older operating systems with a Windows Management Framework update.</span></span>
+<span data-ttu-id="c2e3c-125">Чтобы ознакомиться с дополнительными сведениями о требованиях для использования JEA и узнать, как создать, использовать конечную точку JEA и осуществлять ее аудит, см. следующие разделы:</span><span class="sxs-lookup"><span data-stu-id="c2e3c-125">To learn more about the requirements to use JEA and to learn how to create, use, and audit a JEA endpoint, check out the following topics:</span></span>
 
-- [Предварительные требования](prerequisites.md): настройка среды для использования JEA.
-- [Возможности ролей](role-capabilities.md): описание создания ролей, которые определяют, что именно могут делать пользователи в рамках сеанса JEA.
-- [Конфигурации сеансов](session-configurations.md): описание настройки конечных точек JEA, сопоставляющих пользователей с ролями, и задать удостоверение JEA.
-- [Регистрация JEA](register-jea.md): создание конечной точки JEA и разрешение подключения к ней пользователей.
-- [Использование JEA](using-jea.md): описание разных способов использования JEA.
-- [Вопросы безопасности](security-considerations.md): рекомендации по безопасности и влияние параметров конфигурации JEA.
-- [Аудит и отчеты для JEA](audit-and-report.md): сведения об аудите и ведении отчетов для конечных точек JEA.
+- <span data-ttu-id="c2e3c-126">[Предварительные требования](prerequisites.md): настройка среды для использования JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-126">[Prerequisites](prerequisites.md) - explains how to set up your environment to use JEA.</span></span>
+- <span data-ttu-id="c2e3c-127">[Возможности ролей](role-capabilities.md): описание создания ролей, которые определяют, что именно могут делать пользователи в рамках сеанса JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-127">[Role Capabilities](role-capabilities.md) - explains how to create roles which determine what a user is allowed to do in a JEA session.</span></span>
+- <span data-ttu-id="c2e3c-128">[Конфигурации сеансов](session-configurations.md): описание настройки конечных точек JEA, сопоставляющих пользователей с ролями, и задать удостоверение JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-128">[Session Configurations](session-configurations.md) - explains how to configure JEA endpoints that map users to roles and set the JEA identity</span></span>
+- <span data-ttu-id="c2e3c-129">[Регистрация JEA](register-jea.md): создание конечной точки JEA и разрешение подключения к ней пользователей.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-129">[Registering JEA](register-jea.md) - create a JEA endpoint and make it available for users to connect to.</span></span>
+- <span data-ttu-id="c2e3c-130">[Использование JEA](using-jea.md): описание разных способов использования JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-130">[Using JEA](using-jea.md) - learn the various ways you can use JEA.</span></span>
+- <span data-ttu-id="c2e3c-131">[Вопросы безопасности](security-considerations.md): рекомендации по безопасности и влияние параметров конфигурации JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-131">[Security Considerations](security-considerations.md) - review security best practices and implications of JEA configuration options.</span></span>
+- <span data-ttu-id="c2e3c-132">[Аудит и отчеты для JEA](audit-and-report.md): сведения об аудите и ведении отчетов для конечных точек JEA.</span><span class="sxs-lookup"><span data-stu-id="c2e3c-132">[Audit and Report on JEA](audit-and-report.md) - learn how to audit and report on JEA endpoints.</span></span>
 
-<a id="samples-and-dsc-resource" class="xliff"></a>
-## Примеры и ресурсы DSC
+## <a name="samples-and-dsc-resource"></a><span data-ttu-id="c2e3c-133">Примеры и ресурсы DSC</span><span class="sxs-lookup"><span data-stu-id="c2e3c-133">Samples and DSC resource</span></span>
 
-Примеры конфигураций JEA и ресурсов JEA DSC см. в [репозитории JEA в GitHub](https://github.com/PowerShell/JEA).
+<span data-ttu-id="c2e3c-134">Примеры конфигураций JEA и ресурсов JEA DSC см. в [репозитории JEA в GitHub](https://github.com/PowerShell/JEA).</span><span class="sxs-lookup"><span data-stu-id="c2e3c-134">Sample JEA configurations and the JEA DSC resource can be found in the [JEA GitHub repository](https://github.com/PowerShell/JEA).</span></span>
 

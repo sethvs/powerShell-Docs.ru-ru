@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="sendconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод SendConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="sendconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="92d6f-103">Метод SendConfiguration класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="92d6f-103">SendConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Отправляет документ конфигурации на управляемый узел и сохраняет его как ожидающее изменение.
+<span data-ttu-id="92d6f-104">Отправляет документ конфигурации на управляемый узел и сохраняет его как ожидающее изменение.</span><span class="sxs-lookup"><span data-stu-id="92d6f-104">Sends the configuration document to the managed node and saves it as a pending change.</span></span>
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a><span data-ttu-id="92d6f-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="92d6f-105">Syntax</span></span>
 ------
 
 ```mof
@@ -26,40 +24,35 @@ uint32 SendConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a><span data-ttu-id="92d6f-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="92d6f-106">Parameters</span></span>
 ----------
 
-*ConfigurationData* \[in\]  
-Данные среды для конфигурации.
+<span data-ttu-id="92d6f-107">*ConfigurationData* \[in\]</span><span class="sxs-lookup"><span data-stu-id="92d6f-107">*ConfigurationData* \[in\]</span></span>  
+<span data-ttu-id="92d6f-108">Данные среды для конфигурации.</span><span class="sxs-lookup"><span data-stu-id="92d6f-108">The environment data for the configuration.</span></span>
 
-*force* \[in\]  
-Значение **true** для принудительной остановки конфигурации.
+<span data-ttu-id="92d6f-109">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="92d6f-109">*force* \[in\]</span></span>  
+<span data-ttu-id="92d6f-110">Значение **true** для принудительной остановки конфигурации.</span><span class="sxs-lookup"><span data-stu-id="92d6f-110">**true** to force the configuration to stop.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="92d6f-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="92d6f-111">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="92d6f-112">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="92d6f-112">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="92d6f-113">Замечания</span><span class="sxs-lookup"><span data-stu-id="92d6f-113">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="92d6f-114">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="92d6f-114">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="92d6f-115">Требования</span><span class="sxs-lookup"><span data-stu-id="92d6f-115">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="92d6f-116">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="92d6f-116">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="92d6f-117">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="92d6f-117">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="92d6f-118">См. также:</span><span class="sxs-lookup"><span data-stu-id="92d6f-118">See also</span></span>
+
+
+[<span data-ttu-id="92d6f-119">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="92d6f-119">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

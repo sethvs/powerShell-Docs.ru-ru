@@ -1,34 +1,30 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Объект ISEAddOnTool"
-ms.technology: powershell
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-ms.openlocfilehash: c1ab4220fdede7cabec99fd2d9dfb39648503f28
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 15f0cdd1425b9f87edeb0404fc385275e4a9d1d8
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="the-iseaddontool-object"></a>Объект ISEAddOnTool
-  Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command). После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
+# <a name="the-iseaddontool-object"></a><span data-ttu-id="ee9aa-103">Объект ISEAddOnTool</span><span class="sxs-lookup"><span data-stu-id="ee9aa-103">The ISEAddOnTool Object</span></span>
+  <span data-ttu-id="ee9aa-104">Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-104">An **ISEAddonTool** object represents an installed add-on tool that provides additional functionality toWindows PowerShell ISE.</span></span> <span data-ttu-id="ee9aa-105">В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command).</span><span class="sxs-lookup"><span data-stu-id="ee9aa-105">An example is the **Commands** tool that you can display by clicking **View**, then **Show Command Add-on**.</span></span> <span data-ttu-id="ee9aa-106">После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-106">This tool is then accessible to you by manipulating the various available **ISEAddOnTool** objects.</span></span>
 
- Каждую надстройку можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
+ <span data-ttu-id="ee9aa-107">Каждую надстройку можно связать с вертикальной или горизонтальной панелью.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-107">Each add-on tool can be associated with either the vertical pane or the horizontal pane.</span></span> <span data-ttu-id="ee9aa-108">Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-108">The vertical pane is docked to the right edge of Windows PowerShell ISE.</span></span> <span data-ttu-id="ee9aa-109">Горизонтальная панель прикрепляется к нижнему краю.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-109">The horizontal pane is docked to the bottom edge.</span></span>
 
- Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек. Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md).
+ <span data-ttu-id="ee9aa-110">Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-110">Each PowerShell tab in Windows PowerShell ISE can have its own set of add-on tools installed.</span></span> <span data-ttu-id="ee9aa-111">Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md).</span><span class="sxs-lookup"><span data-stu-id="ee9aa-111">See [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) and [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md) to access the collection of tools available to the currently selected tab or the same properties on any of the **PowerShellTab** objects in the [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) collection object.</span></span>
 
-## <a name="methods"></a>Методы
- Для объектов этого класса нет доступных методов интегрированной среды сценариев Windows PowerShell.
+## <a name="methods"></a><span data-ttu-id="ee9aa-112">Методы</span><span class="sxs-lookup"><span data-stu-id="ee9aa-112">Methods</span></span>
+ <span data-ttu-id="ee9aa-113">Для объектов этого класса нет доступных методов интегрированной среды сценариев Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-113">There are no Windows PowerShell ISE-specific methods available for objects of this class.</span></span>
 
-## <a name="properties"></a>Свойства
+## <a name="properties"></a><span data-ttu-id="ee9aa-114">Свойства</span><span class="sxs-lookup"><span data-stu-id="ee9aa-114">Properties</span></span>
 
-###  <a name="a-namecontrola-control"></a><a name="Control"></a> Control
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
+###  <span data-ttu-id="ee9aa-115"><a name="Control"></a> Control</span><span class="sxs-lookup"><span data-stu-id="ee9aa-115"><a name="Control"></a> Control</span></span>
+  <span data-ttu-id="ee9aa-116">Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-116">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</span></span>
 
- Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.
+ <span data-ttu-id="ee9aa-117">Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-117">The **Control** property provides read access to many of the details of the Commands add-on tool.</span></span>
 
 ```
 # View the properties of the Commands add-on tool.
@@ -141,10 +137,10 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 
 ```
 
-###  <a name="a-nameisvisiblea-isvisible"></a><a name="IsVisible"></a> IsVisible
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
+###  <span data-ttu-id="ee9aa-118"><a name="IsVisible"></a> IsVisible</span><span class="sxs-lookup"><span data-stu-id="ee9aa-118"><a name="IsVisible"></a> IsVisible</span></span>
+  <span data-ttu-id="ee9aa-119">Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-119">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</span></span>
 
- Логическое свойство, которое определяет видимость надстройки в соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или ******$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
+ <span data-ttu-id="ee9aa-120">Логическое свойство, которое определяет видимость надстройки в соответствующей области.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-120">The Boolean property that indicates whether the add-on tool is currently visible in its assigned pane.</span></span> <span data-ttu-id="ee9aa-121">Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или ******$true**, чтобы оно отображалось на вкладке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-121">If it is visible, you can set the **IsVisible** property to **$false** to hide the tool, or set the **IsVisible** property to **$true** to make an add-on tool visible on its PowerShell tab.</span></span> <span data-ttu-id="ee9aa-122">Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-122">Note that after an add-on tool is hidden, it is no longer accessible through the **CurrentVisibleHorizontalTool** or **CurrentVisibleVerticalTool** objects, and therefore cannot be made visible by using this property on that object.</span></span>
 
 ```
 # Hide the current tool in the vertical tool pane
@@ -154,10 +150,10 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 
 ```
 
-###  <a name="a-namenamea-name"></a><a name="name"></a> Name
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
+###  <span data-ttu-id="ee9aa-123"><a name="name"></a> Name</span><span class="sxs-lookup"><span data-stu-id="ee9aa-123"><a name="name"></a> Name</span></span>
+  <span data-ttu-id="ee9aa-124">Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-124">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</span></span>
 
- Свойство только для чтения, которое получает имя надстройки.
+ <span data-ttu-id="ee9aa-125">Свойство только для чтения, которое получает имя надстройки.</span><span class="sxs-lookup"><span data-stu-id="ee9aa-125">The read-only property that gets the name of the add-on tool.</span></span>
 
 ```
 # Gets the name of the visible vertical pane add-on tool.
@@ -166,9 +162,9 @@ Commands
 
 ```
 
-## <a name="see-also"></a>См. также
-- [Объект ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
-- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
-- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
+## <a name="see-also"></a><span data-ttu-id="ee9aa-126">См. также</span><span class="sxs-lookup"><span data-stu-id="ee9aa-126">See Also</span></span>
+- [<span data-ttu-id="ee9aa-127">Объект ISEAddOnToolCollection</span><span class="sxs-lookup"><span data-stu-id="ee9aa-127">The ISEAddOnToolCollection Object</span></span>](The-ISEAddOnToolCollection-Object.md)
+- [<span data-ttu-id="ee9aa-128">Объектная модель скриптов интегрированной среды скриптов Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee9aa-128">The Windows PowerShell ISE Scripting Object Model</span></span>](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [<span data-ttu-id="ee9aa-129">Справочник по объектной модели интегрированной среды скриптов Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee9aa-129">Windows PowerShell ISE Object Model Reference</span></span>](Windows-PowerShell-ISE-Object-Model-Reference.md)
+- [<span data-ttu-id="ee9aa-130">Иерархия объектной модели интегрированной среды скриптов</span><span class="sxs-lookup"><span data-stu-id="ee9aa-130">The ISE Object Model Hierarchy</span></span>](The-ISE-Object-Model-Hierarchy.md)
 

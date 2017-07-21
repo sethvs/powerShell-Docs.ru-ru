@@ -9,15 +9,14 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="detailed-information-about-lcm-state" class="xliff"></a>
-# Подробные сведения о состоянии LCM
+# <a name="detailed-information-about-lcm-state"></a><span data-ttu-id="2586a-102">Подробные сведения о состоянии LCM</span><span class="sxs-lookup"><span data-stu-id="2586a-102">Detailed information about LCM state</span></span>
 
-Мы внесли улучшения процесс предоставления сведений о состоянии LCM. LCMState, возвращаемый Get-DscLocalConfigurationManager, теперь может содержать следующие значения:
+<span data-ttu-id="2586a-103">Мы внесли улучшения процесс предоставления сведений о состоянии LCM.</span><span class="sxs-lookup"><span data-stu-id="2586a-103">We have made improvements in exposing details about the LCM state.</span></span> <span data-ttu-id="2586a-104">LCMState, возвращаемый Get-DscLocalConfigurationManager, теперь может содержать следующие значения:</span><span class="sxs-lookup"><span data-stu-id="2586a-104">The LCMState that is returned by Get-DscLocalConfigurationManager can now contain the following values:</span></span>
 
-* **Idle**
-* **Busy**
-* **PendingReboot**
-* **PendingConfiguration**
+* <span data-ttu-id="2586a-105">**Idle**</span><span class="sxs-lookup"><span data-stu-id="2586a-105">**Idle**</span></span>
+* <span data-ttu-id="2586a-106">**Busy**</span><span class="sxs-lookup"><span data-stu-id="2586a-106">**Busy**</span></span>
+* <span data-ttu-id="2586a-107">**PendingReboot**</span><span class="sxs-lookup"><span data-stu-id="2586a-107">**PendingReboot**</span></span>
+* <span data-ttu-id="2586a-108">**PendingConfiguration**</span><span class="sxs-lookup"><span data-stu-id="2586a-108">**PendingConfiguration**</span></span>
 
-Мы также добавили свойство LCMStateDetail, содержащее дополнительные сведения о состоянии.
+<span data-ttu-id="2586a-109">Мы также добавили свойство LCMStateDetail, содержащее дополнительные сведения о состоянии.</span><span class="sxs-lookup"><span data-stu-id="2586a-109">We have also added an LCMStateDetail property that contains more information about the state.</span></span>
 

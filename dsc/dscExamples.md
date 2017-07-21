@@ -10,11 +10,10 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-examples" class="xliff"></a>
-# Примеры DSC
+# <a name="dsc-examples"></a><span data-ttu-id="10a88-103">Примеры DSC</span><span class="sxs-lookup"><span data-stu-id="10a88-103">DSC examples</span></span>
 
-В этом разделе содержатся примеры DSC:
+<span data-ttu-id="10a88-104">В этом разделе содержатся примеры DSC:</span><span class="sxs-lookup"><span data-stu-id="10a88-104">This section contains DSC examples:</span></span>
 
-- [Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC](dscCiCd.md);
-- [Разделение данных конфигурации и данных среды](separatingEnvData.md)
+- <span data-ttu-id="10a88-105">[Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC](dscCiCd.md);</span><span class="sxs-lookup"><span data-stu-id="10a88-105">[Building a CI-CD pipeline with DSC, Pester, and Visual Studio Team Services](dscCiCd.md)</span></span>
+- [<span data-ttu-id="10a88-106">Разделение данных конфигурации и данных среды</span><span class="sxs-lookup"><span data-stu-id="10a88-106">Separating configuration and environment data</span></span>](separatingEnvData.md)
 

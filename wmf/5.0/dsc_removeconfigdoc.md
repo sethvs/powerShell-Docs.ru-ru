@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="remove-dsc-documents" class="xliff"></a>
-# Удаление документов DSC
+# <a name="remove-dsc-documents"></a><span data-ttu-id="ab081-102">Удаление документов DSC</span><span class="sxs-lookup"><span data-stu-id="ab081-102">Remove DSC documents</span></span>
 
-При доставке документа конфигурации в DSC он проходит через различные этапы (ожидающий, текущий, предыдущий). В рамках [KB3000850](https://support.microsoft.com/en-us/kb/3000850) мы добавили для DSC в Windows PowerShell 4.0 новый командлет — Remove-DscConfigurationDocument. 
+<span data-ttu-id="ab081-103">При доставке документа конфигурации в DSC он проходит через различные этапы (ожидающий, текущий, предыдущий).</span><span class="sxs-lookup"><span data-stu-id="ab081-103">When a configuration document is delivered to DSC, the document goes through various stages (pending, current, previous).</span></span> <span data-ttu-id="ab081-104">В рамках [KB3000850](https://support.microsoft.com/en-us/kb/3000850) мы добавили для DSC в Windows PowerShell 4.0 новый командлет — Remove-DscConfigurationDocument.</span><span class="sxs-lookup"><span data-stu-id="ab081-104">We added a new cmdlet to DSC in Windows PowerShell 4.0, Remove-DscConfigurationDocument, as part of [KB3000850](https://support.microsoft.com/en-us/kb/3000850).</span></span> 
 

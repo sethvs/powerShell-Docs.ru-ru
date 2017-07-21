@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="stopconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="stopconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="e2650-103">Метод StopConfiguration класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="e2650-103">StopConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Останавливает выполняемое изменение конфигурации.
+<span data-ttu-id="e2650-104">Останавливает выполняемое изменение конфигурации.</span><span class="sxs-lookup"><span data-stu-id="e2650-104">Stops the configuration change that is in progress.</span></span>
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a><span data-ttu-id="e2650-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e2650-105">Syntax</span></span>
 ------
 
 ```mof
@@ -25,37 +23,32 @@ uint32 StopConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a><span data-ttu-id="e2650-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="e2650-106">Parameters</span></span>
 ----------
 
-*force* \[in\]  
-Значение **true** для принудительной остановки конфигурации.
+<span data-ttu-id="e2650-107">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="e2650-107">*force* \[in\]</span></span>  
+<span data-ttu-id="e2650-108">Значение **true** для принудительной остановки конфигурации.</span><span class="sxs-lookup"><span data-stu-id="e2650-108">**true** to force the configuration to stop.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="e2650-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="e2650-109">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="e2650-110">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="e2650-110">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="e2650-111">Замечания</span><span class="sxs-lookup"><span data-stu-id="e2650-111">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="e2650-112">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="e2650-112">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="e2650-113">Требования</span><span class="sxs-lookup"><span data-stu-id="e2650-113">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="e2650-114">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="e2650-114">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="e2650-115">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="e2650-115">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="e2650-116">См. также:</span><span class="sxs-lookup"><span data-stu-id="e2650-116">See also</span></span>
+
+
+[<span data-ttu-id="e2650-117">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="e2650-117">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

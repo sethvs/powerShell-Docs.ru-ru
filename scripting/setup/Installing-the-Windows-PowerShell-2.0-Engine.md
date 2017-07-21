@@ -1,85 +1,81 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Установка подсистемы Windows PowerShell 2.0"
-ms.technology: powershell
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
-ms.openlocfilehash: a59cc4ff26d6c5d5d05b4186cec1fb909751418e
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 37a300d2f0517a819f520c44f0eb92e168444890
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="installing-the-windows-powershell-20-engine"></a>Установка подсистемы Windows PowerShell 2.0
-В этом разделе описывается установка модуля Windows PowerShell 2.0.
+# <a name="installing-the-windows-powershell-20-engine"></a><span data-ttu-id="79e14-103">Установка подсистемы Windows PowerShell 2.0</span><span class="sxs-lookup"><span data-stu-id="79e14-103">Installing the Windows PowerShell 2.0 Engine</span></span>
+<span data-ttu-id="79e14-104">В этом разделе описывается установка модуля Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-104">This topic explains how to install the Windows PowerShell 2.0 Engine.</span></span>
 
-Windows PowerShell 3.0 предназначен для обратной совместимости с Windows PowerShell 2.0. Командлеты, поставщики, оснастки, модули и сценарии, написанные для Windows PowerShell 2.0, выполняются и в Windows PowerShell 3.0, и Windows PowerShell 4.0 без изменений. Однако из-за изменений в политике активации среды выполнения в Microsoft .NET Framework 4 основные программы Windows PowerShell, написанные для Windows PowerShell 2.0 и скомпилированные с помощью среды CLR 2.0, не могут выполняться в последующих выпусках Windows PowerShell 4.0, компилируемых в среде CLR 2.0, без изменений.
+<span data-ttu-id="79e14-105">Windows PowerShell 3.0 предназначен для обратной совместимости с Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-105">Windows PowerShell 3.0 is designed to be backwards compatible with Windows PowerShell 2.0.</span></span> <span data-ttu-id="79e14-106">Командлеты, поставщики, оснастки, модули и сценарии, написанные для Windows PowerShell 2.0, выполняются и в Windows PowerShell 3.0, и Windows PowerShell 4.0 без изменений.</span><span class="sxs-lookup"><span data-stu-id="79e14-106">Cmdlets, providers, snap-ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 3.0 and Windows PowerShell 4.0.</span></span> <span data-ttu-id="79e14-107">Однако из-за изменений в политике активации среды выполнения в Microsoft .NET Framework 4 основные программы Windows PowerShell, написанные для Windows PowerShell 2.0 и скомпилированные с помощью среды CLR 2.0, не могут выполняться в последующих выпусках Windows PowerShell 4.0, компилируемых в среде CLR 2.0, без изменений.</span><span class="sxs-lookup"><span data-stu-id="79e14-107">However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, Windows PowerShell host programs that were written for Windows PowerShell 2.0 and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in later releases of Windows PowerShell, which is compiled with CLR 4.0.</span></span>
 
-Чтобы обеспечить обратную совместимость с командами и основными программами, которые были затронуты этими изменениями, подсистемы Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 рассчитаны на параллельное выполнение. Кроме того, подсистема Windows PowerShell 2.0 входит в Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012 и Windows Management Framework 3.0. Подсистема Windows PowerShell 2.0 предназначена для использования только в том случае, если выполнение существующего сценария или существующей основной программы невозможно из-за несовместимости с Windows PowerShell 3.0, Windows PowerShell 4.0 или Microsoft .NET Framework 4. Такие ситуации довольно редки.
+<span data-ttu-id="79e14-108">Чтобы обеспечить обратную совместимость с командами и основными программами, которые были затронуты этими изменениями, подсистемы Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 рассчитаны на параллельное выполнение.</span><span class="sxs-lookup"><span data-stu-id="79e14-108">To maintain backward compatibility with commands and host programs that are affected by these changes, the Windows PowerShell 2.0, Windows PowerShell 3.0, and Windows PowerShell 4.0 engines are designed to run side-by-side.</span></span> <span data-ttu-id="79e14-109">Кроме того, подсистема Windows PowerShell 2.0 входит в Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012 и Windows Management Framework 3.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-109">Also, the Windows PowerShell 2.0 Engine is included in Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012, and Windows Management Framework 3.0.</span></span> <span data-ttu-id="79e14-110">Подсистема Windows PowerShell 2.0 предназначена для использования только в том случае, если выполнение существующего сценария или существующей основной программы невозможно из-за несовместимости с Windows PowerShell 3.0, Windows PowerShell 4.0 или Microsoft .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="79e14-110">The Windows PowerShell 2.0 Engine is intended to be used only when an existing script or host program cannot run because it is incompatible with Windows PowerShell 3.0, Windows PowerShell 4.0, or Microsoft .NET Framework 4.</span></span> <span data-ttu-id="79e14-111">Такие ситуации довольно редки.</span><span class="sxs-lookup"><span data-stu-id="79e14-111">Such cases are expected to be rare.</span></span>
 
-Обработчик Windows PowerShell 2.0 представляет собой дополнительный компонент Windows Server 2012 R2, Windows 8.1, Windows® 8 и Windows Server® 2012. В более ранних версиях Windows при установке Windows Management Framework 3.0 установка Windows PowerShell 3.0 полностью заменяет установку Windows PowerShell 2.0 в каталоге установки Windows PowerShell. При этом подсистема Windows PowerShell 2.0 сохраняется.
+<span data-ttu-id="79e14-112">Обработчик Windows PowerShell 2.0 представляет собой дополнительный компонент Windows Server 2012 R2, Windows 8.1, Windows® 8 и Windows Server® 2012.</span><span class="sxs-lookup"><span data-stu-id="79e14-112">The Windows PowerShell 2.0 Engine is an optional feature of Windows Server 2012 R2, Windows 8.1, Windows® 8 and Windows Server® 2012.</span></span> <span data-ttu-id="79e14-113">В более ранних версиях Windows при установке Windows Management Framework 3.0 установка Windows PowerShell 3.0 полностью заменяет установку Windows PowerShell 2.0 в каталоге установки Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="79e14-113">On earlier versions of Windows, when you install Windows Management Framework 3.0, the Windows PowerShell 3.0 installation completely replaces the Windows PowerShell 2.0 installation in the Windows PowerShell installation directory.</span></span> <span data-ttu-id="79e14-114">При этом подсистема Windows PowerShell 2.0 сохраняется.</span><span class="sxs-lookup"><span data-stu-id="79e14-114">However, the Windows PowerShell 2.0 Engine is retained.</span></span>
 
-Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md).
+<span data-ttu-id="79e14-115">Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md).</span><span class="sxs-lookup"><span data-stu-id="79e14-115">For information about starting the Windows PowerShell 2.0 Engine, see [Starting the Windows PowerShell 2.0 Engine](Starting-the-Windows-PowerShell-2.0-Engine.md).</span></span>
 
-## <a name="on-windows-81-and-windows-8"></a>Windows 8.1 и Windows 8
-В Windows 8.1 и Windows 8 функция подсистемы Windows PowerShell 2.0 по умолчанию включена. Однако для его использования следует включить параметр для необходимой ему платформы Microsoft .NET Framework 3.5. Этот раздел также поясняет, как включать и отключить компонент подсистемы Windows PowerShell 2.0.
+## <a name="on-windows-81-and-windows-8"></a><span data-ttu-id="79e14-116">Windows 8.1 и Windows 8</span><span class="sxs-lookup"><span data-stu-id="79e14-116">On Windows 8.1 and Windows 8</span></span>
+<span data-ttu-id="79e14-117">В Windows 8.1 и Windows 8 функция подсистемы Windows PowerShell 2.0 по умолчанию включена.</span><span class="sxs-lookup"><span data-stu-id="79e14-117">On Windows 8.1 and Windows 8, the Windows PowerShell 2.0 Engine feature is turned on by default.</span></span> <span data-ttu-id="79e14-118">Однако для его использования следует включить параметр для необходимой ему платформы Microsoft .NET Framework 3.5.</span><span class="sxs-lookup"><span data-stu-id="79e14-118">However, to use it, you need to turn on the option for Microsoft .NET Framework 3.5, which it requires.</span></span> <span data-ttu-id="79e14-119">Этот раздел также поясняет, как включать и отключить компонент подсистемы Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-119">This section also explains how to turn the Windows PowerShell 2.0 Engine feature on and off.</span></span>
 
-#### <a name="to-turn-on-net-framework-35"></a>Включение .NET Framework 3.5
+#### <a name="to-turn-on-net-framework-35"></a><span data-ttu-id="79e14-120">Включение .NET Framework 3.5</span><span class="sxs-lookup"><span data-stu-id="79e14-120">To turn on .NET Framework 3.5</span></span>
 
-1.  На экране **Пуск** введите **компоненты Windows**.
+1.  <span data-ttu-id="79e14-121">На экране **Пуск** введите **компоненты Windows**.</span><span class="sxs-lookup"><span data-stu-id="79e14-121">On the **Start** screen, type **Windows Features**.</span></span>
 
-2.  В панели **Приложения** щелкните **Параметры**, а затем выберите **Включение или отключение компонентов Windows**.
+2.  <span data-ttu-id="79e14-122">В панели **Приложения** щелкните **Параметры**, а затем выберите **Включение или отключение компонентов Windows**.</span><span class="sxs-lookup"><span data-stu-id="79e14-122">On the **Apps** bar, click **Settings**, and then click **Turn Windows features on or off**.</span></span>
 
-3.  В поле **Компоненты Windows** выберите элемент **.NET Framework 3.5 (включает .NET 2.0 и 3.0)**.
+3.  <span data-ttu-id="79e14-123">В поле **Компоненты Windows** выберите элемент **.NET Framework 3.5 (включает .NET 2.0 и 3.0)**.</span><span class="sxs-lookup"><span data-stu-id="79e14-123">In the **Windows Features** box, click **.NET Framework 3.5 (includes .NET 2.0 and 3.0** to select it.</span></span>
 
-    При выборе элемента **.NET Framework 3.5 (включает .NET 2.0 и 3.0)** поле заливается, указывая, что выбрана только часть компонента. Этого достаточно для подсистемы Windows PowerShell 2.0.
+    <span data-ttu-id="79e14-124">При выборе элемента **.NET Framework 3.5 (включает .NET 2.0 и 3.0)** поле заливается, указывая, что выбрана только часть компонента.</span><span class="sxs-lookup"><span data-stu-id="79e14-124">When you select **.NET Framework 3.5 (includes .NET 2.0 and 3.0**, the box fills to indicate that only part of the feature is selected.</span></span> <span data-ttu-id="79e14-125">Этого достаточно для подсистемы Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-125">However, this is sufficient for the Windows PowerShell 2.0 Engine.</span></span>
 
-#### <a name="to-turn-the-windows-powershell-20-engine-on-and-off"></a>Включение и отключение подсистемы Windows PowerShell 2.0
+#### <a name="to-turn-the-windows-powershell-20-engine-on-and-off"></a><span data-ttu-id="79e14-126">Включение и отключение подсистемы Windows PowerShell 2.0</span><span class="sxs-lookup"><span data-stu-id="79e14-126">To turn the Windows PowerShell 2.0 Engine on and off</span></span>
 
-1.  На экране **Пуск** введите **компоненты Windows**.
+1.  <span data-ttu-id="79e14-127">На экране **Пуск** введите **компоненты Windows**.</span><span class="sxs-lookup"><span data-stu-id="79e14-127">On the **Start** screen, type **Windows Features**.</span></span>
 
-2.  В панели **Приложения** щелкните **Параметры**, а затем выберите **Включение или отключение компонентов Windows**.
+2.  <span data-ttu-id="79e14-128">В панели **Приложения** щелкните **Параметры**, а затем выберите **Включение или отключение компонентов Windows**.</span><span class="sxs-lookup"><span data-stu-id="79e14-128">On the **Apps** bar, click **Settings**, and then click **Turn Windows features on or off**.</span></span>
 
-3.  В поле **Компоненты Windows** разверните узел **Windows PowerShell 2.0** и установите либо снимите флажок **Windows PowerShell 2.0 Engine**.
+3.  <span data-ttu-id="79e14-129">В поле **Компоненты Windows** разверните узел **Windows PowerShell 2.0** и установите либо снимите флажок **Windows PowerShell 2.0 Engine**.</span><span class="sxs-lookup"><span data-stu-id="79e14-129">In the **Windows Features** box, expand the **Windows PowerShell 2.0** node, and click the **Windows PowerShell 2.0 Engine** box to select or clear it.</span></span>
 
-## <a name="on-windows-server-2012-r2-and-windows-server-2012"></a>Windows Server 2012 или Windows Server 2012 R2
-Для добавления подсистемы Windows PowerShell 2.0 и компонентов Microsoft .NET Framework 3.5 используйте описанные ниже процедуры. Подсистеме Windows PowerShell 2.0 требуется Microsoft .NET Framework версии не ниже 2.0.50727. Этому требованию удовлетворяет Microsoft .NET Framework 3.5.
+## <a name="on-windows-server-2012-r2-and-windows-server-2012"></a><span data-ttu-id="79e14-130">Windows Server 2012 или Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="79e14-130">On Windows Server 2012 R2 and Windows Server 2012</span></span>
+<span data-ttu-id="79e14-131">Для добавления подсистемы Windows PowerShell 2.0 и компонентов Microsoft .NET Framework 3.5 используйте описанные ниже процедуры.</span><span class="sxs-lookup"><span data-stu-id="79e14-131">Use the following procedures to add the Windows PowerShell 2.0 Engine and Microsoft .NET Framework 3.5 features.</span></span> <span data-ttu-id="79e14-132">Подсистеме Windows PowerShell 2.0 требуется Microsoft .NET Framework версии не ниже 2.0.50727.</span><span class="sxs-lookup"><span data-stu-id="79e14-132">The Windows PowerShell 2.0 Engine requires Microsoft .NET Framework 2.0.50727 at a minimum.</span></span> <span data-ttu-id="79e14-133">Этому требованию удовлетворяет Microsoft .NET Framework 3.5.</span><span class="sxs-lookup"><span data-stu-id="79e14-133">This requirement is fulfilled by Microsoft .NET Framework 3.5.</span></span>
 
-#### <a name="to-add-the-net-framework-35-feature"></a>Добавление компонента .NET Framework 3.5
+#### <a name="to-add-the-net-framework-35-feature"></a><span data-ttu-id="79e14-134">Добавление компонента .NET Framework 3.5</span><span class="sxs-lookup"><span data-stu-id="79e14-134">To add the .NET Framework 3.5 feature</span></span>
 
-1.  В меню **Управление** **диспетчера сервера** выберите **Добавить роли и компоненты**.
+1.  <span data-ttu-id="79e14-135">В меню **Управление** **диспетчера сервера** выберите **Добавить роли и компоненты**.</span><span class="sxs-lookup"><span data-stu-id="79e14-135">In **Server Manager**, from the **Manage** menu, select **Add Roles and Features**.</span></span>
 
-    Можно также щелкнуть **Все серверы** в **диспетчере сервера**, щелкнуть имя сервера правой кнопкой мыши и выбрать **Добавить роли и компоненты**.
+    <span data-ttu-id="79e14-136">Можно также щелкнуть **Все серверы** в **диспетчере сервера**, щелкнуть имя сервера правой кнопкой мыши и выбрать **Добавить роли и компоненты**.</span><span class="sxs-lookup"><span data-stu-id="79e14-136">Or in **Server Manager**, click **All Servers**, right-click a server name, and then select **Add Roles and Features**.</span></span>
 
-2.  На странице **Тип установки** выберите **Установка ролей или компонентов**.
+2.  <span data-ttu-id="79e14-137">На странице **Тип установки** выберите **Установка ролей или компонентов**.</span><span class="sxs-lookup"><span data-stu-id="79e14-137">On the **Installation Type** page, select **Role-based or feature-based installation**.</span></span>
 
-3.  На странице **Компоненты** разверните узел **Компоненты .NET Framework 3.5** и выберите команду **.NET Framework 3.5 (включает .NET 2.0 и 3.0)**.
+3.  <span data-ttu-id="79e14-138">На странице **Компоненты** разверните узел **Компоненты .NET Framework 3.5** и выберите команду **.NET Framework 3.5 (включает .NET 2.0 и 3.0)**.</span><span class="sxs-lookup"><span data-stu-id="79e14-138">On the **Features** page, expand the **.NET 3.5 Framework Features** node and select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)**.</span></span>
 
-    Другие параметры в этом узле для подсистемы Windows PowerShell 2.0 не требуются.
+    <span data-ttu-id="79e14-139">Другие параметры в этом узле для подсистемы Windows PowerShell 2.0 не требуются.</span><span class="sxs-lookup"><span data-stu-id="79e14-139">The other options under that node are not required for the Windows PowerShell 2.0 Engine.</span></span>
 
-#### <a name="to-add-the-windows-powershell-20-engine-feature"></a>Добавление функции подсистемы Windows PowerShell 2.0
+#### <a name="to-add-the-windows-powershell-20-engine-feature"></a><span data-ttu-id="79e14-140">Добавление функции подсистемы Windows PowerShell 2.0</span><span class="sxs-lookup"><span data-stu-id="79e14-140">To add the Windows PowerShell 2.0 Engine feature</span></span>
 
--   В меню **Управление** **диспетчера сервера** выберите **Добавить роли и компоненты**.
+-   <span data-ttu-id="79e14-141">В меню **Управление** **диспетчера сервера** выберите **Добавить роли и компоненты**.</span><span class="sxs-lookup"><span data-stu-id="79e14-141">In **Server Manager**, from the **Manage** menu, select **Add Roles and Features**.</span></span>
 
-    Можно также щелкнуть **Все серверы** в **диспетчере сервера**, щелкнуть имя сервера правой кнопкой мыши и выбрать **Добавить роли и компоненты**.
+    <span data-ttu-id="79e14-142">Можно также щелкнуть **Все серверы** в **диспетчере сервера**, щелкнуть имя сервера правой кнопкой мыши и выбрать **Добавить роли и компоненты**.</span><span class="sxs-lookup"><span data-stu-id="79e14-142">Or **Server Manager**, click **All Servers**, right-click a server name, and then select **Add Roles and Features**.</span></span>
 
--   На странице **Тип установки** выберите **Установка ролей или компонентов**.
+-   <span data-ttu-id="79e14-143">На странице **Тип установки** выберите **Установка ролей или компонентов**.</span><span class="sxs-lookup"><span data-stu-id="79e14-143">On the **Installation Type** page, select **Role-based or feature-based installation**.</span></span>
 
--   На странице **Компоненты** раскройте **Windows PowerShell (установлено)** и выберите пункт **Подсистема Windows PowerShell 2.0**.
+-   <span data-ttu-id="79e14-144">На странице **Компоненты** раскройте **Windows PowerShell (установлено)** и выберите пункт **Подсистема Windows PowerShell 2.0**.</span><span class="sxs-lookup"><span data-stu-id="79e14-144">On the **Features** page, expand the **Windows PowerShell (Installed)** node and select **Windows PowerShell 2.0 Engine**.</span></span>
 
-Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md).
+<span data-ttu-id="79e14-145">Дополнительные сведения о запуске подсистемы Windows PowerShell 2.0 см. в статье [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md).</span><span class="sxs-lookup"><span data-stu-id="79e14-145">For information about starting the Windows PowerShell 2.0 Engine, see [Starting the Windows PowerShell 2.0 Engine](Starting-the-Windows-PowerShell-2.0-Engine.md).</span></span>
 
-## <a name="on-earlier-systems"></a>В предыдущих версиях систем
-Пакет [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881), устанавливающий Windows PowerShell 4.0 в Windows 7, Windows Server 2008 R2 и Windows Server 2012, включает подсистему Windows PowerShell 2.0. Подсистема Windows PowerShell 2.0 включена и готова к использованию без дополнительной установки, настройки или конфигурации.
+## <a name="on-earlier-systems"></a><span data-ttu-id="79e14-146">В предыдущих версиях систем</span><span class="sxs-lookup"><span data-stu-id="79e14-146">On Earlier Systems</span></span>
+<span data-ttu-id="79e14-147">Пакет [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881), устанавливающий Windows PowerShell 4.0 в Windows 7, Windows Server 2008 R2 и Windows Server 2012, включает подсистему Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-147">The [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) package that installs Windows PowerShell 4.0 on Windows 7, Windows Server 2008 R2, and Windows Server 2012, includes the Windows PowerShell 2.0 Engine.</span></span> <span data-ttu-id="79e14-148">Подсистема Windows PowerShell 2.0 включена и готова к использованию без дополнительной установки, настройки или конфигурации.</span><span class="sxs-lookup"><span data-stu-id="79e14-148">The Windows PowerShell 2.0 Engine is enabled and ready to use, if necessary, without additional installation, setup, or configuration.</span></span>
 
-Пакет Windows Management Framework 3.0, устанавливающий Windows PowerShell 3.0 в Windows 7, Windows Server 2008 R2 и Windows Server 2008, включает подсистему Windows PowerShell 2.0. Подсистема Windows PowerShell 2.0 включена и готова к использованию без дополнительной установки, настройки или конфигурации.
+<span data-ttu-id="79e14-149">Пакет Windows Management Framework 3.0, устанавливающий Windows PowerShell 3.0 в Windows 7, Windows Server 2008 R2 и Windows Server 2008, включает подсистему Windows PowerShell 2.0.</span><span class="sxs-lookup"><span data-stu-id="79e14-149">The Windows Management Framework 3.0 package that installs Windows PowerShell 3.0 on Windows 7, Windows Server 2008 R2, and Windows Server 2008, includes the Windows PowerShell 2.0 Engine.</span></span> <span data-ttu-id="79e14-150">Подсистема Windows PowerShell 2.0 включена и готова к использованию без дополнительной установки, настройки или конфигурации.</span><span class="sxs-lookup"><span data-stu-id="79e14-150">The Windows PowerShell 2.0 Engine is enabled and ready to use, if necessary, without additional installation, setup, or configuration.</span></span>
 
-## <a name="see-also"></a>См. также
-- [Требования Windows PowerShell к системе](Windows-PowerShell-System-Requirements.md)
-- [Установка Windows PowerShell](Installing-Windows-PowerShell.md)
-- [Запуск Windows PowerShell](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
-- [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md)
+## <a name="see-also"></a><span data-ttu-id="79e14-151">См. также</span><span class="sxs-lookup"><span data-stu-id="79e14-151">See Also</span></span>
+- [<span data-ttu-id="79e14-152">Требования Windows PowerShell к системе</span><span class="sxs-lookup"><span data-stu-id="79e14-152">Windows PowerShell System Requirements</span></span>](Windows-PowerShell-System-Requirements.md)
+- [<span data-ttu-id="79e14-153">Установка Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="79e14-153">Installing Windows PowerShell</span></span>](Installing-Windows-PowerShell.md)
+- [<span data-ttu-id="79e14-154">Запуск Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="79e14-154">Starting Windows PowerShell</span></span>](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+- [<span data-ttu-id="79e14-155">Запуск подсистемы Windows PowerShell 2.0</span><span class="sxs-lookup"><span data-stu-id="79e14-155">Starting the Windows PowerShell 2.0 Engine</span></span>](Starting-the-Windows-PowerShell-2.0-Engine.md)
 

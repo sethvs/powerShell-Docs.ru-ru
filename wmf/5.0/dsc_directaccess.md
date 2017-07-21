@@ -9,11 +9,10 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="direct-access-to-dsc-resource-methods" class="xliff"></a>
-# Прямой доступ к методам ресурсов DSC
+# <a name="direct-access-to-dsc-resource-methods"></a><span data-ttu-id="69aab-102">Прямой доступ к методам ресурсов DSC</span><span class="sxs-lookup"><span data-stu-id="69aab-102">Direct access to DSC resource methods</span></span>
 
 
-Добавлен командлет [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx) для прямого доступа к ресурсам DSC и их методам (Get, Set или Test). Он может использоваться третьими сторонами, желающими воспользоваться преимуществами ресурсов DSC.
+<span data-ttu-id="69aab-103">Добавлен командлет [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx) для прямого доступа к ресурсам DSC и их методам (Get, Set или Test).</span><span class="sxs-lookup"><span data-stu-id="69aab-103">The [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx) cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).</span></span> <span data-ttu-id="69aab-104">Он может использоваться третьими сторонами, желающими воспользоваться преимуществами ресурсов DSC.</span><span class="sxs-lookup"><span data-stu-id="69aab-104">It can be used by third-parties that want to take advantage of DSC resources.</span></span>
 
-Дополнительные сведения см. в разделе [Прямой вызов методов ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/directcallresource).
+<span data-ttu-id="69aab-105">Дополнительные сведения см. в разделе [Прямой вызов методов ресурсов DSC](https://msdn.microsoft.com/powershell/dsc/directcallresource).</span><span class="sxs-lookup"><span data-stu-id="69aab-105">For more information, see [Calling DSC resource methods directly](https://msdn.microsoft.com/powershell/dsc/directcallresource).</span></span>
 

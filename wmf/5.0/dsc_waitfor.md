@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="specifying-cross-node-dependencies" class="xliff"></a>
-# Указание межузловых зависимостей
+# <a name="specifying-cross-node-dependencies"></a><span data-ttu-id="0b9f9-102">Указание межузловых зависимостей</span><span class="sxs-lookup"><span data-stu-id="0b9f9-102">Specifying Cross Node Dependencies</span></span>
 
-Встроенные ресурсы WaitFor\* (`WaitForAll`, `WaitForAny` и `WaitForSome`) позволяют указать зависимости между компьютерами во время выполнения конфигурации без внешней оркестрации. 
+<span data-ttu-id="0b9f9-103">Встроенные ресурсы WaitFor\* (`WaitForAll`, `WaitForAny` и `WaitForSome`) позволяют указать зависимости между компьютерами во время выполнения конфигурации без внешней оркестрации.</span><span class="sxs-lookup"><span data-stu-id="0b9f9-103">By using the built-in WaitFor\* resources (`WaitForAll`, `WaitForAny`, and `WaitForSome`), you can now specify dependencies across computers during configuration runs without external orchestration.</span></span> 
 
-Дополнительные сведения см. в разделе [Указание межузловых зависимостей](https://msdn.microsoft.com/powershell/dsc/crossnodedependencies).
+<span data-ttu-id="0b9f9-104">Дополнительные сведения см. в разделе [Указание межузловых зависимостей](https://msdn.microsoft.com/powershell/dsc/crossnodedependencies).</span><span class="sxs-lookup"><span data-stu-id="0b9f9-104">For more information, see [Specifying cross-node dependencies](https://msdn.microsoft.com/powershell/dsc/crossnodedependencies)</span></span>
 

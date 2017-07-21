@@ -1,26 +1,22 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Модуль Microsoft.PowerShell.Diagnostics"
-ms.technology: powershell
 ms.assetid: f5aab004-d759-4f8b-9064-a30095ad4257
-ms.openlocfilehash: 7e3c4a3ac549f874e060441f1ec12f65c3f69496
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 38f8e4100539fcac738f4f54d56b0fa74b0aca22
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="microsoftpowershelldiagnostics-module"></a>Модуль Microsoft.PowerShell.Diagnostics
-В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Diagnostics**. Модуль **Microsoft.PowerShell.Diagnostics** включает командлеты, управляющие журналами событий, счетчиками производительности и трассировкой событий Windows. Он устанавливается вместе с Windows PowerShell.
+# <a name="microsoftpowershelldiagnostics-module"></a><span data-ttu-id="9a508-103">Модуль Microsoft.PowerShell.Diagnostics</span><span class="sxs-lookup"><span data-stu-id="9a508-103">Microsoft.PowerShell.Diagnostics Module</span></span>
+<span data-ttu-id="9a508-104">В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Diagnostics**.</span><span class="sxs-lookup"><span data-stu-id="9a508-104">This section contains the help topics for the **Microsoft.PowerShell.Diagnostics** module.</span></span> <span data-ttu-id="9a508-105">Модуль **Microsoft.PowerShell.Diagnostics** включает командлеты, управляющие журналами событий, счетчиками производительности и трассировкой событий Windows.</span><span class="sxs-lookup"><span data-stu-id="9a508-105">The **Microsoft.PowerShell.Diagnostics** module contains cmdlets that manage event logs, performance counters, and Event Tracing for Windows (ETW).</span></span> <span data-ttu-id="9a508-106">Он устанавливается вместе с Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9a508-106">It is installed with Windows PowerShell.</span></span>
 
-## <a name="help-topics"></a>Разделы справки
-[Командлеты модуля Diagnostics Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=245858)
+## <a name="help-topics"></a><span data-ttu-id="9a508-107">Разделы справки</span><span class="sxs-lookup"><span data-stu-id="9a508-107">Help topics</span></span>
+[<span data-ttu-id="9a508-108">Командлеты модуля Diagnostics Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="9a508-108">Windows PowerShell Diagnostics Cmdlets</span></span>](http://go.microsoft.com/fwlink/?LinkID=245858)
 
-## <a name="see-also"></a>См. также
-- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-- [Windows PowerShell Core](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-- [Работа со скриптами в Windows PowerShell](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+## <a name="see-also"></a><span data-ttu-id="9a508-109">См. также</span><span class="sxs-lookup"><span data-stu-id="9a508-109">See Also</span></span>
+- [<span data-ttu-id="9a508-110">Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="9a508-110">Windows PowerShell 5.0</span></span>](Windows-PowerShell-5.0.md)
+- [<span data-ttu-id="9a508-111">Windows PowerShell Core</span><span class="sxs-lookup"><span data-stu-id="9a508-111">Windows PowerShell Core</span></span>](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [<span data-ttu-id="9a508-112">Работа со скриптами в Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="9a508-112">Scripting with Windows PowerShell</span></span>](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

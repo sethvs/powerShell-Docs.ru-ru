@@ -10,17 +10,15 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="composite-resources-using-a-dsc-configuration-as-a-resource" class="xliff"></a>
-# Составные ресурсы: использование DSC как ресурса
+# <a name="composite-resources-using-a-dsc-configuration-as-a-resource"></a><span data-ttu-id="9a4ca-103">Составные ресурсы: использование DSC как ресурса</span><span class="sxs-lookup"><span data-stu-id="9a4ca-103">Composite resources: Using a DSC configuration as a resource</span></span>
 
-> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
+> <span data-ttu-id="9a4ca-104">Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="9a4ca-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-На практике конфигурации часто становятся длинными и сложными — вызывают множество разных ресурсов и задают большое количество свойств. Для решения этой проблемы можно использовать настройку требуемого состояния (DSC) Windows PowerShell как ресурс для других конфигураций. Мы называем это составным ресурсом. Составной ресурс — это конфигурация DSC с возможностью настройки параметров. Параметры конфигурации выступают как свойства ресурса. Конфигурация сохраняется как файл с расширением **.schema.psm1** и применяется вместо MOF-схемы и ресурса сценария в типовом ресурсе DSC (дополнительные сведения о ресурсах DSC см. в статье [Ресурсы настройки требуемого состояния Windows PowerShell](resources.md).
+<span data-ttu-id="9a4ca-105">На практике конфигурации часто становятся длинными и сложными — вызывают множество разных ресурсов и задают большое количество свойств.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-105">In real-world situations, configurations can become long and complex, calling many different resources and setting a vast number of properties.</span></span> <span data-ttu-id="9a4ca-106">Для решения этой проблемы можно использовать настройку требуемого состояния (DSC) Windows PowerShell как ресурс для других конфигураций.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-106">To help address this complexity, you can use a Windows PowerShell Desired State Configuration (DSC) configuration as a resource for other configurations.</span></span> <span data-ttu-id="9a4ca-107">Мы называем это составным ресурсом.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-107">We call this a composite resource.</span></span> <span data-ttu-id="9a4ca-108">Составной ресурс — это конфигурация DSC с возможностью настройки параметров.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-108">A composite resource is a DSC configuration that takes parameters.</span></span> <span data-ttu-id="9a4ca-109">Параметры конфигурации выступают как свойства ресурса.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-109">The parameters of the configuration act as the properties of the resource.</span></span> <span data-ttu-id="9a4ca-110">Конфигурация сохраняется как файл с расширением **.schema.psm1** и применяется вместо MOF-схемы и ресурса сценария в типовом ресурсе DSC (дополнительные сведения о ресурсах DSC см. в статье [Ресурсы настройки требуемого состояния Windows PowerShell](resources.md).</span><span class="sxs-lookup"><span data-stu-id="9a4ca-110">The configuration is saved as a file with a **.schema.psm1** extension, and takes the place of both the MOF schema and the resource script in a typical DSC resource (for more information about DSC resources, see [Windows PowerShell Desired State Configuration Resources](resources.md).</span></span>
 
-<a id="creating-the-composite-resource" class="xliff"></a>
-## Создание составного ресурса
+## <a name="creating-the-composite-resource"></a><span data-ttu-id="9a4ca-111">Создание составного ресурса</span><span class="sxs-lookup"><span data-stu-id="9a4ca-111">Creating the composite resource</span></span>
 
-В нашем примере создается конфигурация, которая вызывает ряд существующих ресурсов для настройки виртуальных машин. Вместо указания значений для настройки в блоках конфигурации она принимает ряд параметров, которые будут использоваться в блоках конфигурации.
+<span data-ttu-id="9a4ca-112">В нашем примере создается конфигурация, которая вызывает ряд существующих ресурсов для настройки виртуальных машин.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-112">In our example, we create a configuration that invokes a number of existing resources to configure virtual machines.</span></span> <span data-ttu-id="9a4ca-113">Вместо указания значений для настройки в блоках конфигурации она принимает ряд параметров, которые будут использоваться в блоках конфигурации.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-113">Instead of specifying the values to be set in configuration blocks, the configuration takes a number of parameters that are then used in the configuration blocks.</span></span>
 
 ```powershell
 Configuration xVirtualMachine
@@ -134,16 +132,15 @@ Configuration xVirtualMachine
 }
 ```
 
-<a id="saving-the-configuration-as-a-composite-resource" class="xliff"></a>
-### Сохранение конфигурации как составного ресурса
+### <a name="saving-the-configuration-as-a-composite-resource"></a><span data-ttu-id="9a4ca-114">Сохранение конфигурации как составного ресурса</span><span class="sxs-lookup"><span data-stu-id="9a4ca-114">Saving the configuration as a composite resource</span></span>
 
-Чтобы использовать параметризованную конфигурацию как ресурс DSC, сохраните ее в структуре папок, как и любой другой ресурс на базе MOF, и присвойте имя с расширением **. schema.psm1**. В этом примере мы назовем файл **xVirtualMachine.schema.psm1**. Кроме того, необходимо создать манифест с именем **xVirtualMachine.psd1**, содержащий указанную ниже строку. Он дополняет **MyDscResources.psd1** — манифест модуля для всех ресурсов в папке **MyDscResources**.
+<span data-ttu-id="9a4ca-115">Чтобы использовать параметризованную конфигурацию как ресурс DSC, сохраните ее в структуре папок, как и любой другой ресурс на базе MOF, и присвойте имя с расширением **. schema.psm1**.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-115">To use the parameterized configuration as a DSC resource, save it in a directory structure like that of any other MOF-based resource, and name it with a **.schema.psm1** extension.</span></span> <span data-ttu-id="9a4ca-116">В этом примере мы назовем файл **xVirtualMachine.schema.psm1**.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-116">For this example, we’ll name the file **xVirtualMachine.schema.psm1**.</span></span> <span data-ttu-id="9a4ca-117">Кроме того, необходимо создать манифест с именем **xVirtualMachine.psd1**, содержащий указанную ниже строку.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-117">You also need to create a manifest named **xVirtualMachine.psd1** that contains the following line.</span></span> <span data-ttu-id="9a4ca-118">Он дополняет **MyDscResources.psd1** — манифест модуля для всех ресурсов в папке **MyDscResources**.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-118">Note that this is in addition to **MyDscResources.psd1**, the module manifest for all resources under the **MyDscResources** folder.</span></span>
 
 ```powershell
 RootModule = 'xVirtualMachine.schema.psm1'
 ```
 
-После выполнения этих действия структура папок должна выглядеть следующим образом:
+<span data-ttu-id="9a4ca-119">После выполнения этих действия структура папок должна выглядеть следующим образом:</span><span class="sxs-lookup"><span data-stu-id="9a4ca-119">When you are done, the folder structure should be as follows.</span></span>
 
 ```
 $env: psmodulepath
@@ -155,12 +152,11 @@ $env: psmodulepath
                 |- xVirtualMachine.schema.psm1
 ```
 
-Теперь ресурс можно обнаружить с помощью командлета Get-DscResource, а его свойство — с помощью того же командлета или комбинации клавиш **Ctrl + Space**, активирующей автозаполнение в интегрированной среде сценариев Windows PowerShell.
+<span data-ttu-id="9a4ca-120">Теперь ресурс можно обнаружить с помощью командлета Get-DscResource, а его свойство — с помощью того же командлета или комбинации клавиш **Ctrl + Space**, активирующей автозаполнение в интегрированной среде сценариев Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-120">The resource is now discoverable by using the Get-DscResource cmdlet, and its properties are discoverable by either that cmdlet or by using **Ctrl+Space** auto-complete in the Windows PowerShell ISE.</span></span>
 
-<a id="using-the-composite-resource" class="xliff"></a>
-## Применение составного ресурса
+## <a name="using-the-composite-resource"></a><span data-ttu-id="9a4ca-121">Применение составного ресурса</span><span class="sxs-lookup"><span data-stu-id="9a4ca-121">Using the composite resource</span></span>
 
-Теперь создадим конфигурацию, которая вызывает составной ресурс. Эта конфигурация вызывает составной ресурс xVirtualMachine для создания виртуальной машины, а затем ресурс **xComputer**, чтобы ее переименовать.
+<span data-ttu-id="9a4ca-122">Теперь создадим конфигурацию, которая вызывает составной ресурс.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-122">Next we create a configuration that calls the composite resource.</span></span> <span data-ttu-id="9a4ca-123">Эта конфигурация вызывает составной ресурс xVirtualMachine для создания виртуальной машины, а затем ресурс **xComputer**, чтобы ее переименовать.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-123">This configuration calls the xVirtualMachine composite resource to create a virtual machine, and then calls the **xComputer** resource to rename it.</span></span>
 
 ```powershell
 
@@ -193,17 +189,16 @@ configuration RenameVM
 }
 ```
 
-<a id="supporting-psdscrunascredential" class="xliff"></a>
-## Поддержка PsDscRunAsCredential
+## <a name="supporting-psdscrunascredential"></a><span data-ttu-id="9a4ca-124">Поддержка PsDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="9a4ca-124">Supporting PsDscRunAsCredential</span></span>
 
->**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.
+><span data-ttu-id="9a4ca-125">**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-125">**Note:** **PsDscRunAsCredential** is supported in PowerShell 5.0 and later.</span></span>
 
-Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.
-Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).
+<span data-ttu-id="9a4ca-126">Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-126">The **PsDscRunAsCredential** property can be used in [DSC configurations](configurations.md) resource block to specify that the resource should be run under a specified set of credentials.</span></span>
+<span data-ttu-id="9a4ca-127">Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).</span><span class="sxs-lookup"><span data-stu-id="9a4ca-127">For more information, see [Running DSC with user credentials](runAsUser.md).</span></span>
 
-Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$PsDscContext`.
+<span data-ttu-id="9a4ca-128">Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$PsDscContext`.</span><span class="sxs-lookup"><span data-stu-id="9a4ca-128">To access the user context from within a custom resource, you can use the automatic variable `$PsDscContext`.</span></span>
 
-Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:
+<span data-ttu-id="9a4ca-129">Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:</span><span class="sxs-lookup"><span data-stu-id="9a4ca-129">For example the following code would write the user context under which the resource is running to the verbose output stream:</span></span>
 
 ```powershell
 if (PsDscContext.RunAsUser) {
@@ -211,10 +206,8 @@ if (PsDscContext.RunAsUser) {
 }
 ```
 
-<a id="see-also" class="xliff"></a>
-## См. также
-<a id="concepts" class="xliff"></a>
-### Концепции
-* [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md)
-* [Начало работы с настройкой требуемого состояния Windows PowerShell](overview.md)
+## <a name="see-also"></a><span data-ttu-id="9a4ca-130">См. также</span><span class="sxs-lookup"><span data-stu-id="9a4ca-130">See Also</span></span>
+### <a name="concepts"></a><span data-ttu-id="9a4ca-131">Концепции</span><span class="sxs-lookup"><span data-stu-id="9a4ca-131">Concepts</span></span>
+* [<span data-ttu-id="9a4ca-132">Написание пользовательских ресурсов DSC с использованием MOF</span><span class="sxs-lookup"><span data-stu-id="9a4ca-132">Writing a custom DSC resource with MOF</span></span>](authoringResourceMOF.md)
+* [<span data-ttu-id="9a4ca-133">Начало работы с настройкой требуемого состояния Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="9a4ca-133">Get Started with Windows PowerShell Desired State Configuration</span></span>](overview.md)
 

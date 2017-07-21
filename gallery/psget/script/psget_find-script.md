@@ -10,44 +10,39 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-script" class="xliff"></a>
-# Find-Script
+# <a name="find-script"></a><span data-ttu-id="c3b51-103">Find-Script</span><span class="sxs-lookup"><span data-stu-id="c3b51-103">Find-Script</span></span>
 
-Находит в коллекции в Интернете файлы сценариев PowerShell, соответствующие указанному условию.
+<span data-ttu-id="c3b51-104">Находит в коллекции в Интернете файлы сценариев PowerShell, соответствующие указанному условию.</span><span class="sxs-lookup"><span data-stu-id="c3b51-104">Finds the PowerShell script files from an online gallery that match specified criteria.</span></span>
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a><span data-ttu-id="c3b51-105">Описание</span><span class="sxs-lookup"><span data-stu-id="c3b51-105">Description</span></span>
 
-Командлет Find-Script обнаруживает в зарегистрированных репозиториях файлы сценариев, которые отвечают заданным условиям.
-Для каждого найденного сценария Find-Script возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Script для установки этих сценариев.
-Командлет Find-Script позволяет обнаруживать файлы сценариев по разным условиям, таким как имя, тег, фильтр, имя команды, диапазон версий, точная версия, все версии, включая зависимости, в отдельных или всех зарегистрированных репозиториях.
+<span data-ttu-id="c3b51-106">Командлет Find-Script обнаруживает в зарегистрированных репозиториях файлы сценариев, которые отвечают заданным условиям.</span><span class="sxs-lookup"><span data-stu-id="c3b51-106">Find-Script discovers the script files from registered repositories that matches the specified criteria.</span></span>
+<span data-ttu-id="c3b51-107">Для каждого найденного сценария Find-Script возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Script для установки этих сценариев.</span><span class="sxs-lookup"><span data-stu-id="c3b51-107">For each script found, Find-Script returns a PSRepositoryItemInfo object which can optionally be piped to Install-Script for installing the scripts.</span></span>
+<span data-ttu-id="c3b51-108">Командлет Find-Script позволяет обнаруживать файлы сценариев по разным условиям, таким как имя, тег, фильтр, имя команды, диапазон версий, точная версия, все версии, включая зависимости, в отдельных или всех зарегистрированных репозиториях.</span><span class="sxs-lookup"><span data-stu-id="c3b51-108">Find-Script cmdlet lets you to discover the script files with different search criteria like name, tag, filter, command name, version range, exact version, all versions, including its dependencies and from specific or all registered repositories.</span></span>
 
-- Find-Script позволяет фильтровать содержимое сценария с помощью параметров -Command, -DscResource и -Includes.
-- Find-Script позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.
-  - Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).
-  - Эти параметры версии допускаются только с единственным именем сценария без каких-либо подстановочных знаков.
-  - Если параметр RequiredVersion не указан, командлет Find-Script возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана. 
-  - Если параметр RequiredVersion указан, Find-Script возвращает только версию сценария, которая точно совпадает с указанной версией.
-- Find-Script позволяет фильтровать метаданные сценария с помощью параметра -Tag.
-- Find-Script позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
-- Find-Script может фильтровать сценарии из всех или некоторых из зарегистрированных репозиториев.
+- <span data-ttu-id="c3b51-109">Find-Script позволяет фильтровать содержимое сценария с помощью параметров -Command, -DscResource и -Includes.</span><span class="sxs-lookup"><span data-stu-id="c3b51-109">Find-Script can filter based on script contents with the -Command and -Includes parameters.</span></span>
+- <span data-ttu-id="c3b51-110">Find-Script позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span><span class="sxs-lookup"><span data-stu-id="c3b51-110">Find-Script can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
+  - <span data-ttu-id="c3b51-111">Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).</span><span class="sxs-lookup"><span data-stu-id="c3b51-111">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
+  - <span data-ttu-id="c3b51-112">Эти параметры версии допускаются только с единственным именем сценария без каких-либо подстановочных знаков.</span><span class="sxs-lookup"><span data-stu-id="c3b51-112">These version parameters are allowed only with the single script name without any wildcards.</span></span>
+  - <span data-ttu-id="c3b51-113">Если параметр RequiredVersion не указан, командлет Find-Script возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана.</span><span class="sxs-lookup"><span data-stu-id="c3b51-113">If the RequiredVersion parameter is not specified, Find-Script returns the latest version of the script that is equal to or greater than the minimum version specified or the latest version of the script if no minimum version is specified.</span></span> 
+  - <span data-ttu-id="c3b51-114">Если параметр RequiredVersion указан, Find-Script возвращает только версию сценария, которая точно совпадает с указанной версией.</span><span class="sxs-lookup"><span data-stu-id="c3b51-114">If the RequiredVersion parameter is specified, Find-Script only returns the version of script that exactly matches the specified version.</span></span>
+- <span data-ttu-id="c3b51-115">Find-Script позволяет фильтровать метаданные сценария с помощью параметра -Tag.</span><span class="sxs-lookup"><span data-stu-id="c3b51-115">Find-Script can filter on script metadata with the -Tag parameter.</span></span>
+- <span data-ttu-id="c3b51-116">Find-Script позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.</span><span class="sxs-lookup"><span data-stu-id="c3b51-116">Find-Script can filter on repository-specific search language with the -Filter parameter.</span></span>
+- <span data-ttu-id="c3b51-117">Find-Script может фильтровать сценарии из всех или некоторых из зарегистрированных репозиториев.</span><span class="sxs-lookup"><span data-stu-id="c3b51-117">Find-Script can filter on scripts from all or few of the registered repositories.</span></span>
 
-**ПРИМЕЧАНИЕ.** Зарегистрированный PSRepository должен иметь допустимый параметр ScriptSourceLocation. Для установки значения ScriptSourceLocation можно использовать командлет Set-PSRepository.
+<span data-ttu-id="c3b51-118">**ПРИМЕЧАНИЕ.** Зарегистрированный PSRepository должен иметь допустимый параметр ScriptSourceLocation.</span><span class="sxs-lookup"><span data-stu-id="c3b51-118">**NOTE:** Registered PSRepository should have a valid ScriptSourceLocation.</span></span> <span data-ttu-id="c3b51-119">Для установки значения ScriptSourceLocation можно использовать командлет Set-PSRepository.</span><span class="sxs-lookup"><span data-stu-id="c3b51-119">You can use the Set-PSRepository to set ScriptSourceLocation value.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a><span data-ttu-id="c3b51-120">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="c3b51-120">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Find-Script -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="c3b51-121">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="c3b51-121">Cmdlet online help reference</span></span>
 
-[Find-Script](http://go.microsoft.com/fwlink/?LinkId=619785)
+[<span data-ttu-id="c3b51-122">Find-Script</span><span class="sxs-lookup"><span data-stu-id="c3b51-122">Find-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619785)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a><span data-ttu-id="c3b51-123">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="c3b51-123">Example commands</span></span>
 
 ```powershell
 # Find a script from the registered repository with ScriptSourceLocation

@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="wow64-support-for-configuration-keyword" class="xliff"></a>
-# Поддержка ключевого слова Configuration в WOW64
+# <a name="wow64-support-for-configuration-keyword"></a><span data-ttu-id="ced0e-102">Поддержка ключевого слова Configuration в WOW64</span><span class="sxs-lookup"><span data-stu-id="ced0e-102">WOW64 support for Configuration Keyword</span></span>
 
-Ключевое слово Configuration теперь поддерживается в WOW64 на 64-разрядном компьютере. Это означает, что конфигурации DSC можно определить и скомпилировать в 32-разрядном процессе, таком как интегрированная среда сценариев Windows PowerShell (x86), выполняемом на 64-разрядном компьютере.
+<span data-ttu-id="ced0e-103">Ключевое слово Configuration теперь поддерживается в WOW64 на 64-разрядном компьютере.</span><span class="sxs-lookup"><span data-stu-id="ced0e-103">The Configuration keyword is now supported in WOW64 on a 64-bit computer.</span></span> <span data-ttu-id="ced0e-104">Это означает, что конфигурации DSC можно определить и скомпилировать в 32-разрядном процессе, таком как интегрированная среда сценариев Windows PowerShell (x86), выполняемом на 64-разрядном компьютере.</span><span class="sxs-lookup"><span data-stu-id="ced0e-104">This means that a DSC configuration can be defined and compiled within a 32-bit process such as Windows PowerShell ISE (x86) running on a 64-bit computer.</span></span>
 

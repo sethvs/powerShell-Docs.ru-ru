@@ -10,43 +10,37 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="update-module" class="xliff"></a>
-# Update-Module
+# <a name="update-module"></a><span data-ttu-id="48664-103">Update-Module</span><span class="sxs-lookup"><span data-stu-id="48664-103">Update-Module</span></span>
 
-Скачивает последние версии указанных модулей из веб-коллекции и устанавливает их на локальном компьютере.
+<span data-ttu-id="48664-104">Скачивает последние версии указанных модулей из веб-коллекции и устанавливает их на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="48664-104">Downloads and installs the newest version of specified modules from an online gallery to the local computer.</span></span>
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a><span data-ttu-id="48664-105">Описание</span><span class="sxs-lookup"><span data-stu-id="48664-105">Description</span></span>
 
-Командлет Update-Module устанавливает более новую версию модуля Windows PowerShell, который был установлен из веб-коллекции командлетом Install-Module на локальный компьютер.
+<span data-ttu-id="48664-106">Командлет Update-Module устанавливает более новую версию модуля Windows PowerShell, который был установлен из веб-коллекции командлетом Install-Module на локальный компьютер.</span><span class="sxs-lookup"><span data-stu-id="48664-106">The Update-Module cmdlet installs a newer version of a Windows PowerShell module that was installed from the online gallery by running Install-Module on the local computer.</span></span>
 
-По умолчанию устанавливается самая последняя версия указанного модуля, доступная в веб-коллекции, если не указана конкретная версия. Можно обновить существующий установленный модуль, указав имя модуля. Командлет Update-Module ищет в $env:PSModulePath обновляемый модуль.
+<span data-ttu-id="48664-107">По умолчанию устанавливается самая последняя версия указанного модуля, доступная в веб-коллекции, если не указана конкретная версия.</span><span class="sxs-lookup"><span data-stu-id="48664-107">By default, the newest version of the specified module available in online gallery is installed, unless you specify a required version.</span></span> <span data-ttu-id="48664-108">Можно обновить существующий установленный модуль, указав имя модуля. Командлет Update-Module ищет в $env:PSModulePath обновляемый модуль.</span><span class="sxs-lookup"><span data-stu-id="48664-108">You can update an existing, installed module by specifying the name of the module; Update-Module searches $env:PSModulePath for the module that you want to update.</span></span>
 
-При запуске Update-Module без параметра Name будут обновлены все модули, которые можно обновить на локальном компьютере.
+<span data-ttu-id="48664-109">При запуске Update-Module без параметра Name будут обновлены все модули, которые можно обновить на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="48664-109">Running Update-Module without the Name parameter updates all modules that can be updated on the local computer.</span></span>
 
-<a id="notes" class="xliff"></a>
-### Заметки
+### <a name="notes"></a><span data-ttu-id="48664-110">Заметки</span><span class="sxs-lookup"><span data-stu-id="48664-110">Notes</span></span>
 
-- Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.
-- Если модуль, указанный в параметре Name, не был установлен командлетом Install-Module, возникнет ошибка. Командлет Update-Module можно выполнять только для модулей, установленных из веб-коллекции при помощи Install-Module.
-- Если командлет Update-Module пытается обновить двоичные файлы, которые используются, то он возвращает ошибку, указывающую на проблемные процессы и информирующую пользователя о необходимости повторного своего запуска после остановки таких процессов.
-- В PowerShell 5.0 и более поздних версиях при обновлении командлетом Update-Module модуля он добавляет последнюю (или указанную) версию модуля. Так старая и более новая версии размещаются параллельно в одном и том же каталоге. Теперь было бы полезно показать пример выходных данных этих команд.
+- <span data-ttu-id="48664-111">Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.</span><span class="sxs-lookup"><span data-stu-id="48664-111">This cmdlet runs on Windows PowerShell 3.0 or later releases of Windows PowerShell, on Windows 7 or Windows 2008 R2 and later releases of Windows.</span></span>
+- <span data-ttu-id="48664-112">Если модуль, указанный в параметре Name, не был установлен командлетом Install-Module, возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="48664-112">If the module that you specify with the Name parameter was not installed by using Install-Module, an error occurs.</span></span> <span data-ttu-id="48664-113">Командлет Update-Module можно выполнять только для модулей, установленных из веб-коллекции при помощи Install-Module.</span><span class="sxs-lookup"><span data-stu-id="48664-113">You can only run Update-Module on modules that you installed from the online gallery by running Install-Module.</span></span>
+- <span data-ttu-id="48664-114">Если командлет Update-Module пытается обновить двоичные файлы, которые используются, то он возвращает ошибку, указывающую на проблемные процессы и информирующую пользователя о необходимости повторного своего запуска после остановки таких процессов.</span><span class="sxs-lookup"><span data-stu-id="48664-114">If Update-Module attempts to update binaries that are in use, Update-Module returns an error that identifies the problem processes, and informs the user to retry Update-Module after stopping the processes.</span></span>
+- <span data-ttu-id="48664-115">В PowerShell 5.0 и более поздних версиях при обновлении командлетом Update-Module модуля он добавляет последнюю (или указанную) версию модуля. Так старая и более новая версии размещаются параллельно в одном и том же каталоге.</span><span class="sxs-lookup"><span data-stu-id="48664-115">On PowerShell 5.0 or newer versions, when Update-Module updates a module, it adds the latest (or specified) version of the module, so the older and newer versions are now side-by-side in the same directory.</span></span> <span data-ttu-id="48664-116">Теперь было бы полезно показать пример выходных данных этих команд.</span><span class="sxs-lookup"><span data-stu-id="48664-116">It would be useful to say so and to show an example of the output from these commands.</span></span>
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a><span data-ttu-id="48664-117">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="48664-117">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Update-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="48664-118">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="48664-118">Cmdlet online help reference</span></span>
 
-[Update-Module](http://go.microsoft.com/fwlink/?LinkID=398576)
+[<span data-ttu-id="48664-119">Update-Module</span><span class="sxs-lookup"><span data-stu-id="48664-119">Update-Module</span></span>](http://go.microsoft.com/fwlink/?LinkID=398576)
 
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a><span data-ttu-id="48664-120">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="48664-120">Example commands</span></span>
 
 ```powershell
 PS C:\\windows\\system32> Update-Module -Name ContosoServer -RequiredVersion 1.5
@@ -90,8 +84,7 @@ Version Name Repository Description
 ```
 
 
-<a id="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies" class="xliff"></a>
-###  Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.
+###  <a name="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies"></a><span data-ttu-id="48664-121">Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.</span><span class="sxs-lookup"><span data-stu-id="48664-121">Update the TestDepWithNestedRequiredModules1 module with dependencies.</span></span>
 ```powershell
 Find-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -AllVersions
 

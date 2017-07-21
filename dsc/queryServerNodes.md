@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-function-to-query-node-information-from-pull-server" class="xliff"></a>
-# Функция DSC для запроса сведений об узле с опрашивающего сервера.
+# <a name="dsc-function-to-query-node-information-from-pull-server"></a><span data-ttu-id="38acc-103">Функция DSC для запроса сведений об узле с опрашивающего сервера.</span><span class="sxs-lookup"><span data-stu-id="38acc-103">DSC function to query node information from pull server.</span></span>
 
 ```powershell
 function QueryNodeInformation
@@ -40,9 +39,9 @@ Param (
 }
 ```
 
-Замените параметр `Uri` на универсальный код ресурса (URI) опрашивающего сервера. Если вы хотите получать сведения об узле в формате XML, задайте для `ContentType` значение `application/xml`.
+<span data-ttu-id="38acc-104">Замените параметр `Uri` на универсальный код ресурса (URI) опрашивающего сервера.</span><span class="sxs-lookup"><span data-stu-id="38acc-104">Replace the `Uri` parameter with the URI for your pull server.</span></span> <span data-ttu-id="38acc-105">Если вы хотите получать сведения об узле в формате XML, задайте для `ContentType` значение `application/xml`.</span><span class="sxs-lookup"><span data-stu-id="38acc-105">If you want the node information in XML format, set `ContentType` to `application/xml`.</span></span>
 
-Чтобы извлечь сведения об узле из параметра `$json`, сделайте следующее:
+<span data-ttu-id="38acc-106">Чтобы извлечь сведения об узле из параметра `$json`, сделайте следующее:</span><span class="sxs-lookup"><span data-stu-id="38acc-106">To retrieve the node information from the `$json` parameter, use the following:</span></span>
 
 ```powershell
 $json = QueryNodeInformation –Uri http://localhost:7070/PSDSCComplianceServer.svc/Status 

@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="sendconfigurationapplyasync-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager
+# <a name="sendconfigurationapplyasync-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="5150b-103">Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="5150b-103">SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-Асинхронно отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.
+<span data-ttu-id="5150b-104">Асинхронно отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5150b-104">Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.</span></span>
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a><span data-ttu-id="5150b-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5150b-105">Syntax</span></span>
 ------
 
 ```mof
@@ -27,43 +25,38 @@ uint32 SendConfigurationApplyAsync(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a><span data-ttu-id="5150b-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="5150b-106">Parameters</span></span>
 ----------
 
-*ConfigurationData* \[in\]  
-Данные среды для конфигурации.
+<span data-ttu-id="5150b-107">*ConfigurationData* \[in\]</span><span class="sxs-lookup"><span data-stu-id="5150b-107">*ConfigurationData* \[in\]</span></span>  
+<span data-ttu-id="5150b-108">Данные среды для конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5150b-108">The environment data for the configuration.</span></span>
 
-*force* \[in\]  
-Значение **true** для принудительной остановки конфигурации.
+<span data-ttu-id="5150b-109">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="5150b-109">*force* \[in\]</span></span>  
+<span data-ttu-id="5150b-110">Значение **true** для принудительной остановки конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5150b-110">**true** to force the configuration to stop.</span></span>
 
-*jobId* \[in\]  
-Идентификатор задания, для которого отправляется конфигурация.
+<span data-ttu-id="5150b-111">*jobId* \[in\]</span><span class="sxs-lookup"><span data-stu-id="5150b-111">*jobId* \[in\]</span></span>  
+<span data-ttu-id="5150b-112">Идентификатор задания, для которого отправляется конфигурация.</span><span class="sxs-lookup"><span data-stu-id="5150b-112">The ID of the job for which to send the configuration.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a><span data-ttu-id="5150b-113">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="5150b-113">Return value</span></span>
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+<span data-ttu-id="5150b-114">Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.</span><span class="sxs-lookup"><span data-stu-id="5150b-114">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a><span data-ttu-id="5150b-115">Замечания</span><span class="sxs-lookup"><span data-stu-id="5150b-115">Remarks</span></span>
 
-Это статический метод.
+<span data-ttu-id="5150b-116">Это статический метод.</span><span class="sxs-lookup"><span data-stu-id="5150b-116">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="5150b-117">Требования</span><span class="sxs-lookup"><span data-stu-id="5150b-117">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="5150b-118">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="5150b-118">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## См. также:
+><span data-ttu-id="5150b-119">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="5150b-119">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="5150b-120">См. также:</span><span class="sxs-lookup"><span data-stu-id="5150b-120">See also</span></span>
+
+
+[<span data-ttu-id="5150b-121">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="5150b-121">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

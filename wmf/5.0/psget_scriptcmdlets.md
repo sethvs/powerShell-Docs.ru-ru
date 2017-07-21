@@ -9,14 +9,12 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershellget-cmdlets-for-script-management" class="xliff"></a>
-# Командлеты PowerShellGet для управления сценариями
+# <a name="powershellget-cmdlets-for-script-management"></a><span data-ttu-id="af2ca-102">Командлеты PowerShellGet для управления сценариями</span><span class="sxs-lookup"><span data-stu-id="af2ca-102">PowerShellGet Cmdlets for Script Management</span></span>
 
-<a id="find-script-cmdlet" class="xliff"></a>
-## Командлет Find-Script
-Командлет Find-Script позволяет обнаруживать файлы сценариев по разным условиям, таким как имя, тег, фильтр, имя команды, диапазон версий, точная версия, все версии, включая зависимости, в отдельных или всех зарегистрированных репозиториях.
+## <a name="find-script-cmdlet"></a><span data-ttu-id="af2ca-103">Командлет Find-Script</span><span class="sxs-lookup"><span data-stu-id="af2ca-103">Find-Script cmdlet</span></span>
+<span data-ttu-id="af2ca-104">Командлет Find-Script позволяет обнаруживать файлы сценариев по разным условиям, таким как имя, тег, фильтр, имя команды, диапазон версий, точная версия, все версии, включая зависимости, в отдельных или всех зарегистрированных репозиториях.</span><span class="sxs-lookup"><span data-stu-id="af2ca-104">Find-Script cmdlet lets you to discover the script files with different search criteria like name, tag, filter, command name, version range, exact version, all versions, including its dependencies and from specific or all registered repositories.</span></span>
 
-Пример использования:
+<span data-ttu-id="af2ca-105">Пример использования:</span><span class="sxs-lookup"><span data-stu-id="af2ca-105">Example usage:</span></span>
 ```powershell
 \# Find a script from the registered repository with ScriptSourceLocation
 Find-Script -Repository GalleryINT -Name Required-Script2
@@ -152,9 +150,8 @@ Workflow {Test-WorkflowFromScript\_Fabrikam-ClientScript}
 Command {Test-FunctionFromScript\_Fabrikam-ClientScript, Test-WorkflowFromScript\_Fabrikam-ClientScript}
 ```
 
-<a id="save-script-cmdlet" class="xliff"></a>
-## Командлет Save-Script
-Командлет Save-Script позволяет просмотреть файл сценария, сохранив его в указанном расположении.
+## <a name="save-script-cmdlet"></a><span data-ttu-id="af2ca-106">Командлет Save-Script</span><span class="sxs-lookup"><span data-stu-id="af2ca-106">Save-Script cmdlet</span></span>
+<span data-ttu-id="af2ca-107">Командлет Save-Script позволяет просмотреть файл сценария, сохранив его в указанном расположении.</span><span class="sxs-lookup"><span data-stu-id="af2ca-107">Save-Script cmdlet lets you to review the script file by saving it to a specified location.</span></span>
 ```powershell
 \# Save a script file to the specified location for the script analysis
 \# Piping the Find-Script output to Save-Script cmdlet
@@ -166,11 +163,10 @@ Version Name Author Description
 1.5 Fabrikam-ClientScript manikb Description for the Fabrikam-ClientScript script
 ```
 
-<a id="install-script-and-get-installedscript-cmdlets" class="xliff"></a>
-## Командлеты Install-Script и Get-InstalledScript
-Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области. По умолчанию сценарии устанавливаются в область AllUsers. Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.
+## <a name="install-script-and-get-installedscript-cmdlets"></a><span data-ttu-id="af2ca-108">Командлеты Install-Script и Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="af2ca-108">Install-Script and Get-InstalledScript cmdlets</span></span>
+<span data-ttu-id="af2ca-109">Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области.</span><span class="sxs-lookup"><span data-stu-id="af2ca-109">Install-Script cmdlet lets you to install a specific script file along with its dependencies to the specified scope.</span></span> <span data-ttu-id="af2ca-110">По умолчанию сценарии устанавливаются в область AllUsers.</span><span class="sxs-lookup"><span data-stu-id="af2ca-110">By default, scripts are installed to the AllUsers scope.</span></span> <span data-ttu-id="af2ca-111">Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="af2ca-111">Get-InstalledScript cmdlet lets you to get the list of script files which were installed using Install-Script cmdlet.</span></span>
 
-Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH. Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script. Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.
+<span data-ttu-id="af2ca-112">Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH.</span><span class="sxs-lookup"><span data-stu-id="af2ca-112">Use note: To allow management and locating of scripts once they are installed, Install-script will create a default folder for storing scripts at $home\Documents\WindowsPowerShell\Scripts, and add that folder to your PATH environment.</span></span> <span data-ttu-id="af2ca-113">Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script.</span><span class="sxs-lookup"><span data-stu-id="af2ca-113">If modifying the path is a concern, use Save-Script instead of Install-Script.</span></span> <span data-ttu-id="af2ca-114">Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.</span><span class="sxs-lookup"><span data-stu-id="af2ca-114">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</span></span>
 ```powershell
 \# Install locations for scripts:
 \# Default scope is AllUsers.
@@ -226,7 +222,7 @@ InstalledLocation : C:\\Users\\manikb\\Documents\\WindowsPowerShell\\Scripts
 Installed script file is immediately available for usage.
 ```
 
-Для его получения можно также использовать Get-Command –Name &lt;InstalledScriptFileName&gt;. При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.
+<span data-ttu-id="af2ca-115">Для его получения можно также использовать Get-Command –Name &lt;InstalledScriptFileName&gt;.</span><span class="sxs-lookup"><span data-stu-id="af2ca-115">You can also use Get-Command –Name &lt;InstalledScriptFileName&gt; to get it.</span></span> <span data-ttu-id="af2ca-116">При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.</span><span class="sxs-lookup"><span data-stu-id="af2ca-116">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -348,9 +344,8 @@ Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
 
-<a id="update-script-cmdlet" class="xliff"></a>
-## Командлет Update-Script
-Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.
+## <a name="update-script-cmdlet"></a><span data-ttu-id="af2ca-117">Командлет Update-Script</span><span class="sxs-lookup"><span data-stu-id="af2ca-117">Update-Script cmdlet</span></span>
+<span data-ttu-id="af2ca-118">Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="af2ca-118">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
 Get-InstalledScript -Name Fabrikam-Script
@@ -391,8 +386,7 @@ Version Name Type Repository Description
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
 
-<a id="uninstall-script-cmdlet" class="xliff"></a>
-## Командлет Uninstall-Script
+## <a name="uninstall-script-cmdlet"></a><span data-ttu-id="af2ca-119">Командлет Uninstall-Script</span><span class="sxs-lookup"><span data-stu-id="af2ca-119">Uninstall-Script cmdlet</span></span>
 ```powershell
 Uninstall-Script cmdlet lets you to uninstall the installed script files.
 Get-InstalledScript | Uninstall-Script -WhatIf
@@ -429,9 +423,8 @@ At C:\\Program Files\\WindowsPowerShell\\Modules\\PowerShellGet\\1.0.0.1\\PSModu
 + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
 ```
 
-<a id="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets" class="xliff"></a>
-## Командлеты New-ScriptFileInfo и Test-ScriptFileInfo
-Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. Командлет Test-ScriptFileInfo позволяет проверить и получить метаданные файла сценария.
+## <a name="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets"></a><span data-ttu-id="af2ca-120">Командлеты New-ScriptFileInfo и Test-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="af2ca-120">New-ScriptFileInfo and Test-ScriptFileInfo cmdlets</span></span>
+<span data-ttu-id="af2ca-121">Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. Командлет Test-ScriptFileInfo позволяет проверить и получить метаданные файла сценария.</span><span class="sxs-lookup"><span data-stu-id="af2ca-121">New-ScriptFileInfo cmdlet lets you to create a new script file with metadata like Version, Guid, Author, and Description, etc. Test-ScriptFileInfo cmdlet lets you to validate and get the script file metadata.</span></span>
 ```powershell
 \# Create a new script file with minimum required metadata values
 New-ScriptFileInfo -Path C:\\ScriptSharingDemo\\Demo-Script.ps1 -Description "Script file description goes here"
@@ -582,9 +575,8 @@ DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
 
-<a id="update-scriptfileinfo-cmdlet" class="xliff"></a>
-## Командлет Update-ScriptFileInfo
-Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.
+## <a name="update-scriptfileinfo-cmdlet"></a><span data-ttu-id="af2ca-122">Командлет Update-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="af2ca-122">Update-ScriptFileInfo cmdlet</span></span>
+<span data-ttu-id="af2ca-123">Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.</span><span class="sxs-lookup"><span data-stu-id="af2ca-123">Update-ScriptFileInfo cmdlet lets you to update the existing script file metadata.</span></span>
 ```powershell
 \# Use Update-ScriptFileInfo cmdlet to update the script metadata
 Update-ScriptFileInfo -Path C:\\ScriptSharingDemo\\Demo-ScriptWithCompletePSScriptInfo.ps1 -Version 2.0
@@ -594,9 +586,8 @@ Version Name Author Description
 2.0 Demo-ScriptWithComplet... manikb my new script file
 ```
 
-<a id="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support" class="xliff"></a>
-## Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
-Используйте командлеты Register-PSRepository/Set-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.
+## <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a><span data-ttu-id="af2ca-124">Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев</span><span class="sxs-lookup"><span data-stu-id="af2ca-124">Register-PSRepository and Set-PSRepository cmdlets with script sharing support</span></span>
+<span data-ttu-id="af2ca-125">Используйте командлеты Register-PSRepository/Set-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.</span><span class="sxs-lookup"><span data-stu-id="af2ca-125">Use Register-PSRepository/Set-PSRepository cmdlets to add the **ScriptSourceLocation** and **ScriptPublishLocation** to the PSRepository.</span></span>
 ```powershell
 \# Register an GalleryINT repository with Scripts and Modules support
 Register-PSRepository -Name GalleryINT \`
@@ -653,9 +644,8 @@ ScriptPublishLocation : https://MyGallery.com/api/v2/package/
 ProviderOptions : {}
 ```
 
-<a id="publish-script-cmdlet" class="xliff"></a>
-## Публикация сценарным командлетом Publish-Script
-Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д.
+## <a name="publish-script-cmdlet"></a><span data-ttu-id="af2ca-126">Публикация сценарным командлетом Publish-Script</span><span class="sxs-lookup"><span data-stu-id="af2ca-126">Publish-Script cmdlet</span></span>
+<span data-ttu-id="af2ca-127">Командлет Publish-Script позволяет опубликовать файл сценария с допустимым метаданными, такими как Version, Guid, Author, Description и т. д.</span><span class="sxs-lookup"><span data-stu-id="af2ca-127">Publish-Script cmdlet lets you to publish your script file with valid metadata like Version, Guid, Author, and Description, etc.</span></span>
 ```powershell
 \# Publish the really basic script file with required metadata
 Publish-Script -Path C:\\ScriptSharingDemo\\Demo-Script.ps1 -Repository GalleryINT -NuGetApiKey cad91af7-a49c-4026-9570-a4c16564e785 -Verbose

@@ -33,10 +33,14 @@
 ### [Ресурс Service](serviceResource.md)
 ### [Ресурс ServiceSet](serviceSetResource.md)
 ### [Ресурс User](userResource.md)
+### [Ресурс WaitForAll](waitForAllResource.md)
+### [Ресурс WaitForAny](waitForAnyResource.md)
+### [Ресурс WaitForSome](waitForSomeResource.md)
 ### [Ресурс WindowsFeature](windowsfeatureResource.md)
 ### [Ресурс WindowsFeatureSet](windowsFeatureSetResource.md)
 ### [Ресурс WindowsOptionalFeature](windowsOptionalFeatureResource.md)
 ### [Ресурс WindowsOptionalFeatureSet](windowsOptionalFeatureSetResource.md)
+### [Ресурс WindowsPackageCab](windowsPackageCabResource.md)
 ### [Ресурс WindowsProcess](windowsProcessResource.md)
 ## [Создание настраиваемых ресурсов](authoringResource.md) 
 ### [Настраиваемые ресурсы на основе MOF-файла](authoringResourceMOF.md)
@@ -59,6 +63,10 @@
 ### [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md)
 ## [Использование сервера отчетов DSC](reportServer.md)
 ## [Рекомендации по опрашивающим серверам](secureServer.md)
+
+# [Примеры DSC](dscExamples.md)
+## [Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью PowerShell, DSC, Pester и Visual Studio Team Services](dscCiCd.md)
+## [Разделение данных конфигурации и данных среды](separatingEnvData.md)
 
 # [Устранение неполадок в DSC](troubleshooting.md)
 

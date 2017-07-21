@@ -10,19 +10,17 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="using-resources-with-multiple-versions" class="xliff"></a>
-# Использование ресурсов с несколькими версиями
+# <a name="using-resources-with-multiple-versions"></a><span data-ttu-id="2e459-103">Использование ресурсов с несколькими версиями</span><span class="sxs-lookup"><span data-stu-id="2e459-103">Using resources with multiple versions</span></span>
 
-> Область применения: Windows PowerShell 5.0
+> <span data-ttu-id="2e459-104">Область применения: Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="2e459-104">Applies To: Windows PowerShell 5.0</span></span>
 
-В PowerShell 5.0 ресурсы DSC могут иметь несколько версий, и эти версии можно устанавливать на компьютере параллельно. Это реализуется благодаря наличию нескольких версий модуля ресурсов, которые содержатся в одной папке модуля.
+<span data-ttu-id="2e459-105">В PowerShell 5.0 ресурсы DSC могут иметь несколько версий, и эти версии можно устанавливать на компьютере параллельно.</span><span class="sxs-lookup"><span data-stu-id="2e459-105">In PowerShell 5.0, DSC resources can have multiple versions, and versions can be installed on a computer side-by-side.</span></span> <span data-ttu-id="2e459-106">Это реализуется благодаря наличию нескольких версий модуля ресурсов, которые содержатся в одной папке модуля.</span><span class="sxs-lookup"><span data-stu-id="2e459-106">This is implemented by having multiple versions of a resource module that are contained in the same module folder.</span></span>
 
-<a id="installing-multiple-resource-versions-side-by-side" class="xliff"></a>
-## Параллельная установка нескольких версий ресурса
+## <a name="installing-multiple-resource-versions-side-by-side"></a><span data-ttu-id="2e459-107">Параллельная установка нескольких версий ресурса</span><span class="sxs-lookup"><span data-stu-id="2e459-107">Installing multiple resource versions side-by-side</span></span>
 
-Параметры **MinimumVersion**, **MaximumVersion** и **RequiredVersion** командлета [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) можно использовать, чтобы указать версию модуля для установки. Вызов командлета **Install-Module** без указания версии устанавливает последнюю версию.
+<span data-ttu-id="2e459-108">Параметры **MinimumVersion**, **MaximumVersion** и **RequiredVersion** командлета [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) можно использовать, чтобы указать версию модуля для установки.</span><span class="sxs-lookup"><span data-stu-id="2e459-108">You can use the **MinimumVersion**, **MaximumVersion**, and **RequiredVersion** parameters of the [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet to specify which version of a module to install.</span></span> <span data-ttu-id="2e459-109">Вызов командлета **Install-Module** без указания версии устанавливает последнюю версию.</span><span class="sxs-lookup"><span data-stu-id="2e459-109">Calling **Install-Module** without specifying a version installs the most recent version.</span></span>
 
-Например, существует несколько версий модуля **xFailOverCluster**, каждая из которых содержит ресурс **xCluster**. Результат вызова командлета **Install-Module** без указания номера версии будет следующим.
+<span data-ttu-id="2e459-110">Например, существует несколько версий модуля **xFailOverCluster**, каждая из которых содержит ресурс **xCluster**.</span><span class="sxs-lookup"><span data-stu-id="2e459-110">For example, there are multiple versions of the **xFailOverCluster** module, each of which contains an **xCluster** resouce.</span></span> <span data-ttu-id="2e459-111">Результат вызова командлета **Install-Module** без указания номера версии будет следующим.</span><span class="sxs-lookup"><span data-stu-id="2e459-111">The result of calling **Install-Module** without specifying the version number is as follows:</span></span>
 
 ```powershell
 C:\Program Files\WindowsPowerShell\Modules\xFailOverCluster> Install-Module xFailOverCluster
@@ -33,7 +31,7 @@ ImplementedAs   Name                      ModuleName                     Version
 PowerShell      xCluster                  xFailOverCluster               1.2.0.0    {DomainAdministratorCredential, ...
 ```
 
-Если снова вызвать командлет **Install-Module** и указать для параметра **RequiredVersion** значение 1.1.0.0, результат будет следующим:
+<span data-ttu-id="2e459-112">Если снова вызвать командлет **Install-Module** и указать для параметра **RequiredVersion** значение 1.1.0.0, результат будет следующим:</span><span class="sxs-lookup"><span data-stu-id="2e459-112">Now, if you call **Install-Module** again, but specify a **RequiredVersion** of 1.1.0.0, it results in the following:</span></span>
 
 ```powershell
 C:\Program Files\WindowsPowerShell\Modules\xFailOverCluster> Install-Module xFailOverCluster -RequiredVersion 1.1
@@ -45,12 +43,11 @@ PowerShell      xCluster                  xFailOverCluster               1.1    
 PowerShell      xCluster                  xFailOverCluster               1.2.0.0    {DomainAdministratorCredential, Name, ...
 ```
 
-<a id="specifying-a-resource-version-in-a-configuration" class="xliff"></a>
-## Указание версии ресурса в конфигурации
+## <a name="specifying-a-resource-version-in-a-configuration"></a><span data-ttu-id="2e459-113">Указание версии ресурса в конфигурации</span><span class="sxs-lookup"><span data-stu-id="2e459-113">Specifying a resource version in a configuration</span></span>
 
-Если имеется несколько ресурсов, установленных на компьютере, необходимо указать версию нужного ресурса при его использовании в конфигурации. Это делается путем указания параметра **ModuleVersion** ключевого слова **Import-DscResource**. Если не указать версию модуля ресурсов для ресурса, имеющего несколько установленных версий, конфигурация породит ошибку.
+<span data-ttu-id="2e459-114">Если имеется несколько ресурсов, установленных на компьютере, необходимо указать версию нужного ресурса при его использовании в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="2e459-114">If you have multiple resources installed on a computer, you must specify the version of that resource when you use it in a configuration.</span></span> <span data-ttu-id="2e459-115">Это делается путем указания параметра **ModuleVersion** ключевого слова **Import-DscResource**.</span><span class="sxs-lookup"><span data-stu-id="2e459-115">You do this by specifying the **ModuleVersion** parameter of the **Import-DscResource** keyword.</span></span> <span data-ttu-id="2e459-116">Если не указать версию модуля ресурсов для ресурса, имеющего несколько установленных версий, конфигурация породит ошибку.</span><span class="sxs-lookup"><span data-stu-id="2e459-116">If you fail to specify the version of a resource module of a resource of which you have more than one version installed, the configuration generates an error.</span></span>
 
-В конфигурации ниже показано, как указать версию ресурса для вызова:
+<span data-ttu-id="2e459-117">В конфигурации ниже показано, как указать версию ресурса для вызова:</span><span class="sxs-lookup"><span data-stu-id="2e459-117">The following configuration shows how to specify the version of the resource to call:</span></span>
 
 ```powershell
 configuration VersionTest
@@ -69,7 +66,7 @@ configuration VersionTest
 }     
 ```
 
->Примечание. Параметр ModuleVersion ключевого слова Import-DscResource недоступен в PowerShell 4.0. В PowerShell 4.0 версию модуля можно задать, передав объект спецификации модуля в параметр ModuleName ключевого слова Import-DscResource. Объект спецификации модуля представляет собой хэш-таблицу, содержащую ключи ModuleName и RequiredVersion. Например:
+><span data-ttu-id="2e459-118">Примечание. Параметр ModuleVersion ключевого слова Import-DscResource недоступен в PowerShell 4.0.</span><span class="sxs-lookup"><span data-stu-id="2e459-118">Note: The ModuleVersion parameter of Import-DscResource is not available in PowerShell 4.0.</span></span> <span data-ttu-id="2e459-119">В PowerShell 4.0 версию модуля можно задать, передав объект спецификации модуля в параметр ModuleName ключевого слова Import-DscResource.</span><span class="sxs-lookup"><span data-stu-id="2e459-119">In PowerShell 4.0, you can specify a module version by passing a module specification object to the ModuleName parameter of Import-DscResource.</span></span> <span data-ttu-id="2e459-120">Объект спецификации модуля представляет собой хэш-таблицу, содержащую ключи ModuleName и RequiredVersion.</span><span class="sxs-lookup"><span data-stu-id="2e459-120">A module specification object is a hash table that contains ModuleName and RequiredVersion  keys.</span></span> <span data-ttu-id="2e459-121">Например:</span><span class="sxs-lookup"><span data-stu-id="2e459-121">For example:</span></span>
 
 ```powershell
 configuration VersionTest
@@ -88,10 +85,9 @@ configuration VersionTest
 }     
 ```
 
-Этот способ также будет работать в PowerShell 5.0, однако рекомендуется использовать параметр **ModuleVersion**.
+<span data-ttu-id="2e459-122">Этот способ также будет работать в PowerShell 5.0, однако рекомендуется использовать параметр **ModuleVersion**.</span><span class="sxs-lookup"><span data-stu-id="2e459-122">This will also work in PowerShell 5.0, but it is recommended that you use the **ModuleVersion** parameter.</span></span>
 
-<a id="see-also" class="xliff"></a>
-## См. также:
-* [Конфигурации DSC](configurations.md)
-* [Ресурсы DSC](resources.md)
+## <a name="see-also"></a><span data-ttu-id="2e459-123">См. также:</span><span class="sxs-lookup"><span data-stu-id="2e459-123">See also</span></span>
+* [<span data-ttu-id="2e459-124">Конфигурации DSC</span><span class="sxs-lookup"><span data-stu-id="2e459-124">DSC Configurations</span></span>](configurations.md)
+* [<span data-ttu-id="2e459-125">Ресурсы DSC</span><span class="sxs-lookup"><span data-stu-id="2e459-125">DSC Resources</span></span>](resources.md)
 

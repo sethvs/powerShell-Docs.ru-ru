@@ -9,15 +9,14 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="creating-and-connecting-to-a-jea-endpoint" class="xliff"></a>
-# Создание конечной точки JEA и подключение к ней
-Чтобы создать конечную точку JEA, необходимо создать и зарегистрировать специально настроенный файл конфигурации сеанса PowerShell. Для этого можно воспользоваться командлетом **New-PSSessionConfigurationFile**.
+# <a name="creating-and-connecting-to-a-jea-endpoint"></a><span data-ttu-id="c6ea2-102">Создание конечной точки JEA и подключение к ней</span><span class="sxs-lookup"><span data-stu-id="c6ea2-102">Creating and Connecting to a JEA Endpoint</span></span>
+<span data-ttu-id="c6ea2-103">Чтобы создать конечную точку JEA, необходимо создать и зарегистрировать специально настроенный файл конфигурации сеанса PowerShell. Для этого можно воспользоваться командлетом **New-PSSessionConfigurationFile**.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-103">To create a JEA endpoint, you need to create and register a specially-configured PowerShell Session Configuration file, which can be generated with the **New-PSSessionConfigurationFile** cmdlet.</span></span>
 
 ```powershell
 New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -TranscriptDirectory "C:\ProgramData\JEATranscripts" -RunAsVirtualAccount -RoleDefinitions @{ 'CONTOSO\NonAdmin_Operators' = @{ RoleCapabilities = 'Maintenance' }} -Path "$env:ProgramData\JEAConfiguration\Demo.pssc" 
 ```
 
-В результате получается файл конфигурации сеанса, который выглядит следующим образом: 
+<span data-ttu-id="c6ea2-104">В результате получается файл конфигурации сеанса, который выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="c6ea2-104">This will create a session configuration file that looks like this:</span></span> 
 ```powershell
 @{
 
@@ -55,20 +54,20 @@ RoleDefinitions = @{
 
 } 
 ```
-При создании конечной точки JEA необходимо настроить следующие параметры команды (и соответствующие ключи в файле):
-1.  Установите для SessionType значение RestrictedRemoteServer.
-2.  Установите для RunAsVirtualAccount значение **$true**.
-3.  Установите для TranscriptPath каталог, где после каждого сеанса будут сохраняться записи с запросом на повышение прав.
-4.  Задайте для RoleDefinitions хэш-таблицу, определяющую, какие группы имеют доступ к отдельным возможностям роли.  Это поле определяет, **кто** и какие **действия** может выполнять на этой конечной точке.   Возможности роли — это специальные файлы, которые будут описаны чуть позже.
+<span data-ttu-id="c6ea2-105">При создании конечной точки JEA необходимо настроить следующие параметры команды (и соответствующие ключи в файле):</span><span class="sxs-lookup"><span data-stu-id="c6ea2-105">When creating a JEA endpoint, the following parameters of the command (and corresponding keys in the file) must be set:</span></span>
+1.  <span data-ttu-id="c6ea2-106">Установите для SessionType значение RestrictedRemoteServer.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-106">SessionType to RestrictedRemoteServer</span></span>
+2.  <span data-ttu-id="c6ea2-107">Установите для RunAsVirtualAccount значение **$true**.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-107">RunAsVirtualAccount to **$true**</span></span>
+3.  <span data-ttu-id="c6ea2-108">Установите для TranscriptPath каталог, где после каждого сеанса будут сохраняться записи с запросом на повышение прав.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-108">TranscriptPath to the directory where “over the shoulder” transcripts will be saved after each session</span></span>
+4.  <span data-ttu-id="c6ea2-109">Задайте для RoleDefinitions хэш-таблицу, определяющую, какие группы имеют доступ к отдельным возможностям роли.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-109">RoleDefinitions to a hashtable that defines which groups have access to which “Role Capabilities.”</span></span>  <span data-ttu-id="c6ea2-110">Это поле определяет, **кто** и какие **действия** может выполнять на этой конечной точке.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-110">This field defines **who** can do **what** on this endpoint.</span></span>   <span data-ttu-id="c6ea2-111">Возможности роли — это специальные файлы, которые будут описаны чуть позже.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-111">Role Capabilities are special files that will be explained shortly.</span></span>
 
 
-Поле RoleDefinitions определяет, какие группы имеют доступ к отдельным возможностям роли.  Возможность роли — это файл, который определяет набор возможностей, предоставляемых подключающимся пользователям.  Возможности роли можно создать с помощью команды **New-PSRoleCapabilityFile**.
+<span data-ttu-id="c6ea2-112">Поле RoleDefinitions определяет, какие группы имеют доступ к отдельным возможностям роли.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-112">The RoleDefinitions field defines which groups had access to which Role Capabilities.</span></span>  <span data-ttu-id="c6ea2-113">Возможность роли — это файл, который определяет набор возможностей, предоставляемых подключающимся пользователям.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-113">A Role Capability is a file that defines a set of capabilities that will be exposed to connecting users.</span></span>  <span data-ttu-id="c6ea2-114">Возможности роли можно создать с помощью команды **New-PSRoleCapabilityFile**.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-114">You can create Role Capabilities with the **New-PSRoleCapabilityFile** command.</span></span>
 
 ```powershell
 New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc" 
 ```
 
-Она создает шаблон возможности роли, имеющий следующий вид:
+<span data-ttu-id="c6ea2-115">Она создает шаблон возможности роли, имеющий следующий вид:</span><span class="sxs-lookup"><span data-stu-id="c6ea2-115">This will generate a template role capability that looks like this:</span></span>
 ```
 @{
 
@@ -132,22 +131,21 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 } 
 
 ```
-Для использования в конфигурации сеанса JEA возможности роли следует сохранить как допустимый модуль PowerShell в каталоге RoleCapabilities. При необходимости модуль может иметь несколько файлов возможностей роли.
+<span data-ttu-id="c6ea2-116">Для использования в конфигурации сеанса JEA возможности роли следует сохранить как допустимый модуль PowerShell в каталоге RoleCapabilities.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-116">To be used by a JEA session configuration, Role Capabilities must be saved as a valid PowerShell module in a directory named “RoleCapabilities”.</span></span> <span data-ttu-id="c6ea2-117">При необходимости модуль может иметь несколько файлов возможностей роли.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-117">A module may have multiple role capability files, if desired.</span></span>
 
-Чтобы приступить к настройке того, какие командлеты, функции, псевдонимы и сценарии доступны пользователю при подключении к сеансу JEA, добавьте в файл возможности роли свои правила, следуя закомментированному шаблону. Более подробные сведения о настройке возможностей роли см. в полном [руководстве по работе](http://aka.ms/JEA).
+<span data-ttu-id="c6ea2-118">Чтобы приступить к настройке того, какие командлеты, функции, псевдонимы и сценарии доступны пользователю при подключении к сеансу JEA, добавьте в файл возможности роли свои правила, следуя закомментированному шаблону.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-118">To start configuring which cmdlets, functions, aliases, and scripts a user may access when connecting to a JEA session, add your own rules to the Role Capability file following the commented out templates.</span></span> <span data-ttu-id="c6ea2-119">Более подробные сведения о настройке возможностей роли см. в полном [руководстве по работе](http://aka.ms/JEA).</span><span class="sxs-lookup"><span data-stu-id="c6ea2-119">For a deeper look into how you can configure Role Capabilities, check out the full [experience guide](http://aka.ms/JEA).</span></span>
 
-Наконец, завершив настройку конфигурации сеанса и соответствующих возможностей роли, зарегистрируйте эту конфигурацию сеанса и создайте конечную точку, запустив **Register-PSSessionConfiguration**.
+<span data-ttu-id="c6ea2-120">Наконец, завершив настройку конфигурации сеанса и соответствующих возможностей роли, зарегистрируйте эту конфигурацию сеанса и создайте конечную точку, запустив **Register-PSSessionConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-120">Finally, once you have finished customizing your session configuration and related Role Capabilities, register this session configuration and create the endpoint by running **Register-PSSessionConfiguration**.</span></span>
 
 ```powershell
 Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc" 
 ```
 
-<a id="connect-to-a-jea-endpoint" class="xliff"></a>
-## Подключение к конечной точке JEA
-Подключение к конечной точке JEA осуществляется аналогично подключению к любой конечной точке PowerShell.  Необходимо просто назначить конечной точке JEA имя в качестве параметра ConfigurationName для **New-PSSession**, **Invoke-Command** или **Enter-PSSession**.
+## <a name="connect-to-a-jea-endpoint"></a><span data-ttu-id="c6ea2-121">Подключение к конечной точке JEA</span><span class="sxs-lookup"><span data-stu-id="c6ea2-121">Connect to a JEA Endpoint</span></span>
+<span data-ttu-id="c6ea2-122">Подключение к конечной точке JEA осуществляется аналогично подключению к любой конечной точке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-122">Connecting to a JEA Endpoint works the same way connecting to any other PowerShell endpoint works.</span></span>  <span data-ttu-id="c6ea2-123">Необходимо просто назначить конечной точке JEA имя в качестве параметра ConfigurationName для **New-PSSession**, **Invoke-Command** или **Enter-PSSession**.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-123">You simply have to give your JEA endpoint name as the “ConfigurationName” parameter for **New-PSSession**, **Invoke-Command**, or **Enter-PSSession**.</span></span>
 
 ```powershell
 Enter-PSSession -ConfigurationName Maintenance -ComputerName localhost
 ```
-После подключения к сеансу JEA вы сможете выполнять только те команды, которые входят в число разрешенных для доступных вам возможностей роли. При попытке запустить любую другую команду возникает ошибка.
+<span data-ttu-id="c6ea2-124">После подключения к сеансу JEA вы сможете выполнять только те команды, которые входят в число разрешенных для доступных вам возможностей роли.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-124">Once you have connected to the JEA session, you will be limited to running the commands whitelisted in the Role Capabilities that you have access to.</span></span> <span data-ttu-id="c6ea2-125">При попытке запустить любую другую команду возникает ошибка.</span><span class="sxs-lookup"><span data-stu-id="c6ea2-125">If you try to run any command not allowed for your role, you will encounter an error.</span></span>
 

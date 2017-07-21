@@ -9,19 +9,17 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-built-in-dsc-resources" class="xliff"></a>
-# Новые встроенные ресурсы DSC
+# <a name="new-built-in-dsc-resources"></a><span data-ttu-id="32f98-102">Новые встроенные ресурсы DSC</span><span class="sxs-lookup"><span data-stu-id="32f98-102">New built-in DSC resources</span></span>
 
-WMF 5.0 RTM имеет 4 новых ресурса DSC: 
-* WindowsFeatureSet
-* WindowsOptionalFeatureSet
-* ServiceSet
-* ProcessSet 
+<span data-ttu-id="32f98-103">WMF 5.0 RTM имеет 4 новых ресурса DSC:</span><span class="sxs-lookup"><span data-stu-id="32f98-103">WMF 5.0 RTM has 4 new DSC resources:</span></span> 
+* <span data-ttu-id="32f98-104">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-104">WindowsFeatureSet</span></span>
+* <span data-ttu-id="32f98-105">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-105">WindowsOptionalFeatureSet</span></span>
+* <span data-ttu-id="32f98-106">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="32f98-106">ServiceSet</span></span>
+* <span data-ttu-id="32f98-107">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="32f98-107">ProcessSet</span></span> 
 
-Они предоставляют простой способ настроить несколько экземпляров с помощью одного вызова ресурса.
+<span data-ttu-id="32f98-108">Они предоставляют простой способ настроить несколько экземпляров с помощью одного вызова ресурса.</span><span class="sxs-lookup"><span data-stu-id="32f98-108">These resources provide an easy way to configure multiple instances using a single resource call.</span></span>
 
-<a id="windowsfeatureset" class="xliff"></a>
-## WindowsFeatureSet
+## <a name="windowsfeatureset"></a><span data-ttu-id="32f98-109">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-109">WindowsFeatureSet</span></span>
 
 ```powershell
 # Get the syntax of WindowsFeatureSet resource
@@ -39,8 +37,7 @@ WindowsFeatureSet [String] #ResourceName
 }
 ```
 
-<a id="windowsoptionalfeatureset" class="xliff"></a>
-## WindowsOptionalFeatureSet 
+## <a name="windowsoptionalfeatureset"></a><span data-ttu-id="32f98-110">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-110">WindowsOptionalFeatureSet</span></span> 
 
 ```powershell
 # Get the syntax of WindowsOptionalFeatureSet resource
@@ -59,8 +56,7 @@ WindowsOptionalFeatureSet [String] #ResourceName
 }
 ```
 
-<a id="serviceset" class="xliff"></a>
-## ServiceSet 
+## <a name="serviceset"></a><span data-ttu-id="32f98-111">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="32f98-111">ServiceSet</span></span> 
 
 ```powershell
 # Get the syntax of ServiceSet resource
@@ -78,8 +74,7 @@ ServiceSet [String] #ResourceName
 }
 ```
 
-<a id="processset" class="xliff"></a>
-## ProcessSet 
+## <a name="processset"></a><span data-ttu-id="32f98-112">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="32f98-112">ProcessSet</span></span> 
 
 ```powershell
 # Get the syntax of ProcessSet resource

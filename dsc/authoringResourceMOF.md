@@ -10,22 +10,19 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="writing-a-custom-dsc-resource-with-mof" class="xliff"></a>
-# Написание пользовательских ресурсов DSC с использованием MOF
+# <a name="writing-a-custom-dsc-resource-with-mof"></a><span data-ttu-id="9227a-103">Написание пользовательских ресурсов DSC с использованием MOF</span><span class="sxs-lookup"><span data-stu-id="9227a-103">Writing a custom DSC resource with MOF</span></span>
 
-> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
+> <span data-ttu-id="9227a-104">Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="9227a-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-В этом разделе мы определим схему для настраиваемого ресурса настройки требуемого состояния (DSC) Windows PowerShell в MOF-файле и реализуем этот ресурс в файле сценария Windows PowerShell. Этот ресурс применяется для создания и обслуживания веб-сайтов.
+<span data-ttu-id="9227a-105">В этом разделе мы определим схему для настраиваемого ресурса настройки требуемого состояния (DSC) Windows PowerShell в MOF-файле и реализуем этот ресурс в файле сценария Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9227a-105">In this topic, we will define the schema for a Windows PowerShell Desired State Configuration (DSC) custom resource in a MOF file, and implement the resource in a Windows PowerShell script file.</span></span> <span data-ttu-id="9227a-106">Этот ресурс применяется для создания и обслуживания веб-сайтов.</span><span class="sxs-lookup"><span data-stu-id="9227a-106">This custom resource is for creating and maintaining a web site.</span></span>
 
-<a id="creating-the-mof-schema" class="xliff"></a>
-## Создание схемы MOF
+## <a name="creating-the-mof-schema"></a><span data-ttu-id="9227a-107">Создание схемы MOF</span><span class="sxs-lookup"><span data-stu-id="9227a-107">Creating the MOF schema</span></span>
 
-Схема определяет свойства ресурса, которые можно настроить с помощью сценария DSC.
+<span data-ttu-id="9227a-108">Схема определяет свойства ресурса, которые можно настроить с помощью сценария DSC.</span><span class="sxs-lookup"><span data-stu-id="9227a-108">The schema defines the properties of your resource that can be configured by a DSC configuration script.</span></span>
 
-<a id="folder-structure-for-a-mof-resource" class="xliff"></a>
-### Структура папок для ресурса MOF
+### <a name="folder-structure-for-a-mof-resource"></a><span data-ttu-id="9227a-109">Структура папок для ресурса MOF</span><span class="sxs-lookup"><span data-stu-id="9227a-109">Folder structure for a MOF resource</span></span>
 
-Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок. Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1. При необходимости можно создать файл манифеста (PSD1) для модуля.
+<span data-ttu-id="9227a-110">Для реализации настраиваемого ресурса DSC в схеме MOF создайте указанную ниже структуру папок.</span><span class="sxs-lookup"><span data-stu-id="9227a-110">To implement a DSC custom resource with a MOF schema, create the following folder structure.</span></span> <span data-ttu-id="9227a-111">Схема MOF определяется в файле Demo_IISWebsite.schema.mof, а сценарий ресурса — в файле Demo_IISWebsite.psm1.</span><span class="sxs-lookup"><span data-stu-id="9227a-111">The MOF schema is defined in the file Demo_IISWebsite.schema.mof, and the resource script is defined in Demo_IISWebsite.psm1.</span></span> <span data-ttu-id="9227a-112">При необходимости можно создать файл манифеста (PSD1) для модуля.</span><span class="sxs-lookup"><span data-stu-id="9227a-112">Optionally, you can create a module manifest (psd1) file.</span></span>
 
 ```
 $env:ProgramFiles\WindowsPowerShell\Modules (folder)
@@ -37,12 +34,11 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
                 |- Demo_IISWebsite.schema.mof (file, required)
 ```
 
-Обратите внимание, что папку DSCResources необходимо создать в папке верхнего уровня, а имя папки для каждого ресурса должно совпадать с именем ресурса.
+<span data-ttu-id="9227a-113">Обратите внимание, что папку DSCResources необходимо создать в папке верхнего уровня, а имя папки для каждого ресурса должно совпадать с именем ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-113">Note that it is necessary to create a folder named DSCResources under the top-level folder, and that the folder for each resource must have the same name as the resource.</span></span>
 
-<a id="the-contents-of-the-mof-file" class="xliff"></a>
-### Содержание MOF-файла
+### <a name="the-contents-of-the-mof-file"></a><span data-ttu-id="9227a-114">Содержание MOF-файла</span><span class="sxs-lookup"><span data-stu-id="9227a-114">The contents of the MOF file</span></span>
 
-Приведем пример файла MOF, который можно использовать как настраиваемый ресурс веб-сайта. Чтобы воспользоваться этим примером, сохраните данную схему в файле с именем *Demo_IISWebsite.schema.mof*.
+<span data-ttu-id="9227a-115">Приведем пример файла MOF, который можно использовать как настраиваемый ресурс веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="9227a-115">Following is an example MOF file that can be used for a custom website resource.</span></span> <span data-ttu-id="9227a-116">Чтобы воспользоваться этим примером, сохраните данную схему в файле с именем *Demo_IISWebsite.schema.mof*.</span><span class="sxs-lookup"><span data-stu-id="9227a-116">To follow this example, save this schema to a file, and call the file *Demo_IISWebsite.schema.mof*.</span></span>
 
 ```
 [ClassVersion("1.0.0"), FriendlyName("Website")]
@@ -59,25 +55,24 @@ class Demo_IISWebsite : OMI_BaseResource
 };
 ```
 
-В представленном выше коде обратите внимание на следующее.
+<span data-ttu-id="9227a-117">В представленном выше коде обратите внимание на следующее.</span><span class="sxs-lookup"><span data-stu-id="9227a-117">Note the following about the previous code:</span></span>
 
-* `FriendlyName` определяет имя, которое можно использовать для ссылки на этот настраиваемый ресурс в сценариях DSC. В этом примере `Website` — эквивалент понятного имени `Archive` для встроенного ресурса архива.
-* Класс, определяемый для настраиваемого ресурса, должен быть производным от `OMI_BaseResource`.
-* Квалификатор типа `[Key]` в свойстве означает, что это свойство служит для уникальной идентификации экземпляра ресурса. Необходимо указать по крайней мере одно свойство `[Key]`.
-* Квалификатор `[Required]` означает, что свойство является обязательным (значение необходимо указывать в любом сценарии настройки, где используется ресурс).
-* Квалификатор `[write]` означает, что свойство не является обязательным при использовании настраиваемого ресурса в сценарии настройки. Квалификатор `[read]` означает, что свойство не может задаваться конфигурацией и предназначено только для целей отчетности.
-* `Values` ограничивает значения, которые могут быть присвоены свойству, списком значений, определенных в `ValueMap`. Дополнительные сведения см. в статье [ValueMap и квалификаторы значений](https://msdn.microsoft.com/library/windows/desktop/aa393965.aspx).
-* Для сохранения единообразия встроенных ресурсов DSC рекомендуется включать в ресурс свойство `Ensure` с значениями `Present` и `Absent`.
-* Имя настраиваемого ресурса должно иметь формат `classname.schema.mof`, где `classname` — это идентификатор, следующий за ключевым словом `class` в определении схемы.
+* <span data-ttu-id="9227a-118">`FriendlyName` определяет имя, которое можно использовать для ссылки на этот настраиваемый ресурс в сценариях DSC.</span><span class="sxs-lookup"><span data-stu-id="9227a-118">`FriendlyName` defines the name you can use to refer to this custom resource in DSC configuration scripts.</span></span> <span data-ttu-id="9227a-119">В этом примере `Website` — эквивалент понятного имени `Archive` для встроенного ресурса архива.</span><span class="sxs-lookup"><span data-stu-id="9227a-119">In this example, `Website` is equivalent to the friendly name `Archive` for the built-in Archive resource.</span></span>
+* <span data-ttu-id="9227a-120">Класс, определяемый для настраиваемого ресурса, должен быть производным от `OMI_BaseResource`.</span><span class="sxs-lookup"><span data-stu-id="9227a-120">The class you define for your custom resource must derive from `OMI_BaseResource`.</span></span>
+* <span data-ttu-id="9227a-121">Квалификатор типа `[Key]` в свойстве означает, что это свойство служит для уникальной идентификации экземпляра ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-121">The type qualifier, `[Key]`, on a property indicates that this property will uniquely identify the resource instance.</span></span> <span data-ttu-id="9227a-122">Необходимо указать по крайней мере одно свойство `[Key]`.</span><span class="sxs-lookup"><span data-stu-id="9227a-122">At least one `[Key]` property is required.</span></span>
+* <span data-ttu-id="9227a-123">Квалификатор `[Required]` означает, что свойство является обязательным (значение необходимо указывать в любом сценарии настройки, где используется ресурс).</span><span class="sxs-lookup"><span data-stu-id="9227a-123">The `[Required]` qualifier indicates that the property is required (a value must be specified in any configuration script that uses this resource).</span></span>
+* <span data-ttu-id="9227a-124">Квалификатор `[write]` означает, что свойство не является обязательным при использовании настраиваемого ресурса в сценарии настройки.</span><span class="sxs-lookup"><span data-stu-id="9227a-124">The `[write]` qualifier indicates that this property is optional when using the custom resource in a configuration script.</span></span> <span data-ttu-id="9227a-125">Квалификатор `[read]` означает, что свойство не может задаваться конфигурацией и предназначено только для целей отчетности.</span><span class="sxs-lookup"><span data-stu-id="9227a-125">The `[read]` qualifier indicates that a property cannot be set by a configuration, and is for reporting purposes only.</span></span>
+* <span data-ttu-id="9227a-126">`Values` ограничивает значения, которые могут быть присвоены свойству, списком значений, определенных в `ValueMap`.</span><span class="sxs-lookup"><span data-stu-id="9227a-126">`Values` restricts the values that can be assigned to the property to the list of values defined in `ValueMap`.</span></span> <span data-ttu-id="9227a-127">Дополнительные сведения см. в статье [ValueMap и квалификаторы значений](https://msdn.microsoft.com/library/windows/desktop/aa393965.aspx).</span><span class="sxs-lookup"><span data-stu-id="9227a-127">For more information, see [ValueMap and Value Qualifiers](https://msdn.microsoft.com/library/windows/desktop/aa393965.aspx).</span></span>
+* <span data-ttu-id="9227a-128">Для сохранения единообразия встроенных ресурсов DSC рекомендуется включать в ресурс свойство `Ensure` с значениями `Present` и `Absent`.</span><span class="sxs-lookup"><span data-stu-id="9227a-128">Including a property called `Ensure` with values `Present` and `Absent` in your resource is recommended as a way to maintain a consistent style with built-in DSC resources.</span></span>
+* <span data-ttu-id="9227a-129">Имя настраиваемого ресурса должно иметь формат `classname.schema.mof`, где `classname` — это идентификатор, следующий за ключевым словом `class` в определении схемы.</span><span class="sxs-lookup"><span data-stu-id="9227a-129">Name the schema file for your custom resource as follows: `classname.schema.mof`, where `classname` is the identifier that follows the `class` keyword in your schema definition.</span></span>
 
-<a id="writing-the-resource-script" class="xliff"></a>
-### Создание сценария ресурсов
+### <a name="writing-the-resource-script"></a><span data-ttu-id="9227a-130">Создание сценария ресурсов</span><span class="sxs-lookup"><span data-stu-id="9227a-130">Writing the resource script</span></span>
 
-Сценарий ресурса реализует логику ресурса. В этот модуль необходимо включить три функции: **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Все три функции должны принимать набор параметров, идентичный набору свойств, заданных в схеме MOF для вашего ресурса. В этом документе такой набор свойств называется "свойства ресурса". Сохраните эти три функции в файл <ResourceName>.psm1. В следующем примере функции сохраняются в файл с именем Demo_IISWebsite.psm1.
+<span data-ttu-id="9227a-131">Сценарий ресурса реализует логику ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-131">The resource script implements the logic of the resource.</span></span> <span data-ttu-id="9227a-132">В этот модуль необходимо включить три функции: **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**.</span><span class="sxs-lookup"><span data-stu-id="9227a-132">In this module, you must include three functions called **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource**.</span></span> <span data-ttu-id="9227a-133">Все три функции должны принимать набор параметров, идентичный набору свойств, заданных в схеме MOF для вашего ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-133">All three functions must take a parameter set that is identical to the set of properties defined in the MOF schema that you created for your resource.</span></span> <span data-ttu-id="9227a-134">В этом документе такой набор свойств называется "свойства ресурса".</span><span class="sxs-lookup"><span data-stu-id="9227a-134">In this document, this set of properties is referred to as the “resource properties.”</span></span> <span data-ttu-id="9227a-135">Сохраните эти три функции в файл <ResourceName>.psm1.</span><span class="sxs-lookup"><span data-stu-id="9227a-135">Store these three functions in a file called <ResourceName>.psm1.</span></span> <span data-ttu-id="9227a-136">В следующем примере функции сохраняются в файл с именем Demo_IISWebsite.psm1.</span><span class="sxs-lookup"><span data-stu-id="9227a-136">In the following example, the functions are stored in a file called Demo_IISWebsite.psm1.</span></span>
 
-> **Примечание**. Многократное выполнение одного и того же сценария настройки для ресурса не вызывает ошибок, а состояние ресурса остается таким же, как при однократном выполнении. Для этого функции **Get-TargetResource** и **Test-TargetResource** не должны изменять ресурс, а вызов функции **Set-TargetResource** с одними и теми же параметрами больше одного раза подряд должен быть эквивалентен однократному вызову этой функции.
+> <span data-ttu-id="9227a-137">**Примечание**. Многократное выполнение одного и того же сценария настройки для ресурса не вызывает ошибок, а состояние ресурса остается таким же, как при однократном выполнении.</span><span class="sxs-lookup"><span data-stu-id="9227a-137">**Note**: When you run the same configuration script on your resource more than once, you should receive no errors and the resource should remain in the same state as running the script once.</span></span> <span data-ttu-id="9227a-138">Для этого функции **Get-TargetResource** и **Test-TargetResource** не должны изменять ресурс, а вызов функции **Set-TargetResource** с одними и теми же параметрами больше одного раза подряд должен быть эквивалентен однократному вызову этой функции.</span><span class="sxs-lookup"><span data-stu-id="9227a-138">To accomplish this, ensure that your **Get-TargetResource** and **Test-TargetResource** functions leave the resource unchanged, and that invoking the **Set-TargetResource** function more than once in a sequence with the same parameter values is always equivalent to invoking it once.</span></span>
 
-В реализации функции **Get-TargetResource** используйте значения свойств основных ресурсов, предоставляемых в качестве параметров, для проверки состояния указанного экземпляра ресурса. Эта функция должна возвращать хэш-таблицу со списком всех свойств ресурса в виде ключей и фактических значений этих свойств в виде соответствующих значений. Пример кода:
+<span data-ttu-id="9227a-139">В реализации функции **Get-TargetResource** используйте значения свойств основных ресурсов, предоставляемых в качестве параметров, для проверки состояния указанного экземпляра ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-139">In the **Get-TargetResource** function implementation, use the key resource property values that are provided as parameters to check the status of the specified resource instance.</span></span> <span data-ttu-id="9227a-140">Эта функция должна возвращать хэш-таблицу со списком всех свойств ресурса в виде ключей и фактических значений этих свойств в виде соответствующих значений.</span><span class="sxs-lookup"><span data-stu-id="9227a-140">This function must return a hash table that lists all the resource properties as keys and the actual values of these properties as the corresponding values.</span></span> <span data-ttu-id="9227a-141">Пример кода:</span><span class="sxs-lookup"><span data-stu-id="9227a-141">The following code provides an example.</span></span>
 
 ```powershell
 # DSC uses the Get-TargetResource function to fetch the status of the resource instance specified in the parameters for the target machine
@@ -128,13 +123,13 @@ function Get-TargetResource
 }
 ```
 
-В зависимости от того, какие значения заданы для свойств ресурса в сценарии конфигурации, **Set-TargetResource** должен выполнять одно из следующих действий:
+<span data-ttu-id="9227a-142">В зависимости от того, какие значения заданы для свойств ресурса в сценарии конфигурации, **Set-TargetResource** должен выполнять одно из следующих действий:</span><span class="sxs-lookup"><span data-stu-id="9227a-142">Depending on the values that are specified for the resource properties in the configuration script, the **Set-TargetResource** must do one of the following:</span></span>
 
-* Создание веб-сайта
-* Обновление существующего веб-сайта
-* Удаление существующего веб-сайта
+* <span data-ttu-id="9227a-143">Создание веб-сайта</span><span class="sxs-lookup"><span data-stu-id="9227a-143">Create a new website</span></span>
+* <span data-ttu-id="9227a-144">Обновление существующего веб-сайта</span><span class="sxs-lookup"><span data-stu-id="9227a-144">Update an existing website</span></span>
+* <span data-ttu-id="9227a-145">Удаление существующего веб-сайта</span><span class="sxs-lookup"><span data-stu-id="9227a-145">Delete an existing website</span></span>
 
-Это демонстрируется в следующем примере:
+<span data-ttu-id="9227a-146">Это демонстрируется в следующем примере:</span><span class="sxs-lookup"><span data-stu-id="9227a-146">The following example illustrates this.</span></span>
 
 ```powershell
 # The Set-TargetResource function is used to create, delete or configure a website on the target machine. 
@@ -171,9 +166,9 @@ function Set-TargetResource
 }
 ```
 
-И наконец, функция **Test-TargetResource** должна принимать тот же набор параметров, что и функции **Get-TargetResource** и **Set-TargetResource**. В собственной реализации функции **Test-TargetResource** проверьте состояние экземпляра ресурса, заданное основными параметрами. Если фактическое состояние экземпляра ресурса не соответствует значениям, указанным в наборе параметров, возвращается **$false**. В противном случае возвращается **$true**.
+<span data-ttu-id="9227a-147">И наконец, функция **Test-TargetResource** должна принимать тот же набор параметров, что и функции **Get-TargetResource** и **Set-TargetResource**.</span><span class="sxs-lookup"><span data-stu-id="9227a-147">Finally, the **Test-TargetResource** function must take the same parameter set as **Get-TargetResource** and **Set-TargetResource**.</span></span> <span data-ttu-id="9227a-148">В собственной реализации функции **Test-TargetResource** проверьте состояние экземпляра ресурса, заданное основными параметрами.</span><span class="sxs-lookup"><span data-stu-id="9227a-148">In your implementation of **Test-TargetResource**, check the status of the resource instance that is specified in the key parameters.</span></span> <span data-ttu-id="9227a-149">Если фактическое состояние экземпляра ресурса не соответствует значениям, указанным в наборе параметров, возвращается **$false**.</span><span class="sxs-lookup"><span data-stu-id="9227a-149">If the actual status of the resource instance does not match the values specified in the parameter set, return **$false**.</span></span> <span data-ttu-id="9227a-150">В противном случае возвращается **$true**.</span><span class="sxs-lookup"><span data-stu-id="9227a-150">Otherwise, return **$true**.</span></span>
 
-Следующий код реализует функцию **Test-TargetResource**:
+<span data-ttu-id="9227a-151">Следующий код реализует функцию **Test-TargetResource**:</span><span class="sxs-lookup"><span data-stu-id="9227a-151">The following code implements the **Test-TargetResource** function.</span></span>
 
 ```powershell
 function Test-TargetResource
@@ -220,14 +215,13 @@ $result
 }
 ```
 
-**Примечание**. Чтобы упростить отладку, используйте в реализации трех предыдущих функций командлет **Write-Verbose**. 
->Он записывает текст в поток подробных сообщений. 
->По умолчанию поток подробных сообщений не отображается, однако его можно вывести на экран, изменив значение переменной **$VerbosePreference** или применив в командлетах DSC параметр **Verbose** со значением new.
+<span data-ttu-id="9227a-152">**Примечание**. Чтобы упростить отладку, используйте в реализации трех предыдущих функций командлет **Write-Verbose**.</span><span class="sxs-lookup"><span data-stu-id="9227a-152">**Note**: For easier debugging, use the **Write-Verbose** cmdlet in your implementation of the previous three functions.</span></span> 
+><span data-ttu-id="9227a-153">Он записывает текст в поток подробных сообщений.</span><span class="sxs-lookup"><span data-stu-id="9227a-153">This cmdlet writes text to the verbose message stream.</span></span> 
+><span data-ttu-id="9227a-154">По умолчанию поток подробных сообщений не отображается, однако его можно вывести на экран, изменив значение переменной **$VerbosePreference** или применив в командлетах DSC параметр **Verbose** со значением new.</span><span class="sxs-lookup"><span data-stu-id="9227a-154">By default, the verbose message stream is not displayed, but you can display it by changing the value of the **$VerbosePreference** variable or by using the **Verbose** parameter in the DSC cmdlets = new.</span></span>
 
-<a id="creating-the-module-manifest" class="xliff"></a>
-### Создание манифеста модуля
+### <a name="creating-the-module-manifest"></a><span data-ttu-id="9227a-155">Создание манифеста модуля</span><span class="sxs-lookup"><span data-stu-id="9227a-155">Creating the module manifest</span></span>
 
-Командлет **New-ModuleManifest** позволяет определить файл <ResourceName>.psd1 для модуля настраиваемого ресурса. При вызове этого командлета необходимо сослаться на модуль сценария (PSM1-файл), описанный в предыдущем разделе. Включите в список функций для экспорта функции **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**. Пример файла манифеста:
+<span data-ttu-id="9227a-156">Командлет **New-ModuleManifest** позволяет определить файл <ResourceName>.psd1 для модуля настраиваемого ресурса.</span><span class="sxs-lookup"><span data-stu-id="9227a-156">Finally, use the **New-ModuleManifest** cmdlet to define a <ResourceName>.psd1 file for your custom resource module.</span></span> <span data-ttu-id="9227a-157">При вызове этого командлета необходимо сослаться на модуль сценария (PSM1-файл), описанный в предыдущем разделе.</span><span class="sxs-lookup"><span data-stu-id="9227a-157">When you invoke this cmdlet, reference the script module (.psm1) file described in the previous section.</span></span> <span data-ttu-id="9227a-158">Включите в список функций для экспорта функции **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**.</span><span class="sxs-lookup"><span data-stu-id="9227a-158">Include **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** in the list of functions to export.</span></span> <span data-ttu-id="9227a-159">Пример файла манифеста:</span><span class="sxs-lookup"><span data-stu-id="9227a-159">Following is an example manifest file.</span></span>
 
 ```powershell
 # Module manifest for module 'Demo.IIS.Website'
@@ -281,17 +275,16 @@ FunctionsToExport = @("Get-TargetResource", "Set-TargetResource", "Test-TargetRe
 }
 ```
 
-<a id="supporting-psdscrunascredential" class="xliff"></a>
-## Поддержка PsDscRunAsCredential
+## <a name="supporting-psdscrunascredential"></a><span data-ttu-id="9227a-160">Поддержка PsDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="9227a-160">Supporting PsDscRunAsCredential</span></span>
 
->**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.
+><span data-ttu-id="9227a-161">**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="9227a-161">**Note:** **PsDscRunAsCredential** is supported in PowerShell 5.0 and later.</span></span>
 
-Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.
-Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).
+<span data-ttu-id="9227a-162">Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.</span><span class="sxs-lookup"><span data-stu-id="9227a-162">The **PsDscRunAsCredential** property can be used in [DSC configurations](configurations.md) resource block to specify that the resource should be run under a specified set of credentials.</span></span>
+<span data-ttu-id="9227a-163">Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).</span><span class="sxs-lookup"><span data-stu-id="9227a-163">For more information, see [Running DSC with user credentials](runAsUser.md).</span></span>
 
-Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$PsDscContext`.
+<span data-ttu-id="9227a-164">Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$PsDscContext`.</span><span class="sxs-lookup"><span data-stu-id="9227a-164">To access the user context from within a custom resource, you can use the automatic variable `$PsDscContext`.</span></span>
 
-Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:
+<span data-ttu-id="9227a-165">Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:</span><span class="sxs-lookup"><span data-stu-id="9227a-165">For example the following code would write the user context under which the resource is running to the verbose output stream:</span></span>
 
 ```powershell
 if (PsDscContext.RunAsUser) {

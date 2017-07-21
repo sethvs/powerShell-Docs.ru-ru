@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="additional-value-for-refreshmode-property" class="xliff"></a>
-# Дополнительное значение для свойства RefreshMode
+# <a name="additional-value-for-refreshmode-property"></a><span data-ttu-id="be530-102">Дополнительное значение для свойства RefreshMode</span><span class="sxs-lookup"><span data-stu-id="be530-102">Additional value for RefreshMode property</span></span>
 
-В этом выпуске появилось новое значение `RefreshMode` — **Disabled**. Когда включен этот режим, LCM не осуществляет управление документами. Дополнительные сведения см. в разделе [Настройка локального диспетчера конфигураций](https://msdn.microsoft.com/powershell/dsc/metaconfig).
+<span data-ttu-id="be530-103">В этом выпуске появилось новое значение `RefreshMode` — **Disabled**.</span><span class="sxs-lookup"><span data-stu-id="be530-103">This release introduces a new `RefreshMode` value, **Disabled**.</span></span> <span data-ttu-id="be530-104">Когда включен этот режим, LCM не осуществляет управление документами.</span><span class="sxs-lookup"><span data-stu-id="be530-104">When this mode is set, LCM does not do document management.</span></span> <span data-ttu-id="be530-105">Дополнительные сведения см. в разделе [Настройка локального диспетчера конфигураций](https://msdn.microsoft.com/powershell/dsc/metaconfig).</span><span class="sxs-lookup"><span data-stu-id="be530-105">For more information, see [Configuring the Local Configuration Manager](https://msdn.microsoft.com/powershell/dsc/metaconfig).</span></span>
 

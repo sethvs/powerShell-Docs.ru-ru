@@ -9,7 +9,6 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="feedback" class="xliff"></a>
-# Отзывы
-Чтобы сообщить о возникших проблемах или оставить отзыв, воспользуйтесь [сайтом UserVoice PowerShell](http://windowsserver.uservoice.com/forums/301869-powershell).
+# <a name="feedback"></a><span data-ttu-id="db1e9-102">Отзывы</span><span class="sxs-lookup"><span data-stu-id="db1e9-102">Feedback</span></span>
+<span data-ttu-id="db1e9-103">Чтобы сообщить о возникших проблемах или оставить отзыв, воспользуйтесь [сайтом UserVoice PowerShell](http://windowsserver.uservoice.com/forums/301869-powershell).</span><span class="sxs-lookup"><span data-stu-id="db1e9-103">For reporting issues or providing feedback, use the [PowerShell UserVoice site](http://windowsserver.uservoice.com/forums/301869-powershell).</span></span>
 

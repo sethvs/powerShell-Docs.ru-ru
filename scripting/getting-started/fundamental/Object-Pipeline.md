@@ -1,22 +1,18 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Конвейер объектов"
-ms.technology: powershell
 ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
-ms.openlocfilehash: 531c3c00ddcc0cc8299875392832fb1dad9f49d8
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 3fa41cc744cf3ab66fc5ef186ead8eb919429a76
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
-# <a name="object-pipeline"></a>Конвейер объектов
-Конвейеры представляют собой последовательность соединенных сегментов канала. Элементы, перемещающиеся по конвейеру, проходят через каждый сегмент. Для создания конвейера в Windows PowerShell команды соединяются друг с другом с помощью оператора канала "|". Результат каждой команды используется в качестве входных данных для следующей.
+# <a name="object-pipeline"></a><span data-ttu-id="5f07b-103">Конвейер объектов</span><span class="sxs-lookup"><span data-stu-id="5f07b-103">Object Pipeline</span></span>
+<span data-ttu-id="5f07b-104">Конвейеры представляют собой последовательность соединенных сегментов канала.</span><span class="sxs-lookup"><span data-stu-id="5f07b-104">Pipelines act like a series of connected segments of pipe.</span></span> <span data-ttu-id="5f07b-105">Элементы, перемещающиеся по конвейеру, проходят через каждый сегмент.</span><span class="sxs-lookup"><span data-stu-id="5f07b-105">Items moving along the pipeline pass through each segment.</span></span> <span data-ttu-id="5f07b-106">Для создания конвейера в Windows PowerShell команды соединяются друг с другом с помощью оператора канала "|".</span><span class="sxs-lookup"><span data-stu-id="5f07b-106">To create a pipeline in Windows PowerShell, you connect commands together with the pipe operator "|".</span></span> <span data-ttu-id="5f07b-107">Результат каждой команды используется в качестве входных данных для следующей.</span><span class="sxs-lookup"><span data-stu-id="5f07b-107">The output of each command is used as input to the next command.</span></span>
 
-Пожалуй, конвейеры являются наиболее полезной концепцией в интерфейсах командной строки. При правильном использовании они не только упрощают ввод сложных команд, но также и облегчают наблюдение за потоком работы в командах. Полезной особенностью конвейеров является и то, что они обрабатывают каждый элемент отдельно, поэтому их не нужно изменять в зависимости от числа имеющихся элементов. Кроме того, каждая команда в конвейере (которая называется элементом конвейера) обычно передает свои выходные данные в следующую команду конвейера поэлементно. Обычно это снижает потребность сложных команд в ресурсах и позволяет немедленно начать получение выходных данных.
+<span data-ttu-id="5f07b-108">Пожалуй, конвейеры являются наиболее полезной концепцией в интерфейсах командной строки.</span><span class="sxs-lookup"><span data-stu-id="5f07b-108">Pipelines are arguably the most valuable concept used in command-line interfaces.</span></span> <span data-ttu-id="5f07b-109">При правильном использовании они не только упрощают ввод сложных команд, но также и облегчают наблюдение за потоком работы в командах.</span><span class="sxs-lookup"><span data-stu-id="5f07b-109">Properly used, pipelines not only reduce the effort involved in entering complex commands, but also make it easier to see the flow of work in the commands.</span></span> <span data-ttu-id="5f07b-110">Полезной особенностью конвейеров является и то, что они обрабатывают каждый элемент отдельно, поэтому их не нужно изменять в зависимости от числа имеющихся элементов.</span><span class="sxs-lookup"><span data-stu-id="5f07b-110">A related useful characteristic of pipelines is that because they operate on each item separately, you do not have to modify them based on whether you will have zero, one, or many items in the pipeline.</span></span> <span data-ttu-id="5f07b-111">Кроме того, каждая команда в конвейере (которая называется элементом конвейера) обычно передает свои выходные данные в следующую команду конвейера поэлементно.</span><span class="sxs-lookup"><span data-stu-id="5f07b-111">Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item-by-item.</span></span> <span data-ttu-id="5f07b-112">Обычно это снижает потребность сложных команд в ресурсах и позволяет немедленно начать получение выходных данных.</span><span class="sxs-lookup"><span data-stu-id="5f07b-112">This usually reduces the resource demand of complex commands and allows you to begin getting the output immediately.</span></span>
 
-В этой главе описано, чем конвейер Windows PowerShell отличается от конвейеров наиболее популярных оболочек, и затем показаны некоторые основные средства, позволяющие управлять выходными данными конвейера и наблюдать за его работой.
+<span data-ttu-id="5f07b-113">В этой главе описано, чем конвейер Windows PowerShell отличается от конвейеров наиболее популярных оболочек, и затем показаны некоторые основные средства, позволяющие управлять выходными данными конвейера и наблюдать за его работой.</span><span class="sxs-lookup"><span data-stu-id="5f07b-113">In this chapter, we will describe how the Windows PowerShell pipeline differs from the pipelines of most popular shells, and then demonstrate some basic tools that you can use to help control pipeline output and also to see how the pipeline operates.</span></span>
 

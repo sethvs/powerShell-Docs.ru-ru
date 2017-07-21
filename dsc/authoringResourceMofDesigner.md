@@ -10,28 +10,26 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/29/2017
 ---
-<a id="using-the-resource-designer-tool" class="xliff"></a>
-# Использование конструктора ресурсов
+# <a name="using-the-resource-designer-tool"></a><span data-ttu-id="d122f-103">Использование конструктора ресурсов</span><span class="sxs-lookup"><span data-stu-id="d122f-103">Using the Resource Designer tool</span></span>
 
-> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
+> <span data-ttu-id="d122f-104">Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="d122f-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-Конструктор ресурсов — это набор командлетов, предоставляемых модулем **xDscResourceDesigner** и упрощающих создание ресурсов настройки требуемого состояния (DSC) Windows PowerShell. Командлеты в этом ресурсе помогают создать MOF-схему, модуль сценария и структуру папок для нового ресурса. Дополнительные сведения о ресурсах DSC см. в статье [Встроенные ресурсы настройки требуемого состояния (DSC) Windows PowerShell](authoringResource.md).
-В этом разделе мы создадим ресурс DSC, управляющий пользователями Active Directory.
-Для установки модуля **xDscResourceDesigner** используйте командлет [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx).
+<span data-ttu-id="d122f-105">Конструктор ресурсов — это набор командлетов, предоставляемых модулем **xDscResourceDesigner** и упрощающих создание ресурсов настройки требуемого состояния (DSC) Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d122f-105">The Resource Designer tool is a set of cmdlets exposed by the **xDscResourceDesigner** module that make creating Windows PowerShell Desired State Configuration (DSC) resources easier.</span></span> <span data-ttu-id="d122f-106">Командлеты в этом ресурсе помогают создать MOF-схему, модуль сценария и структуру папок для нового ресурса.</span><span class="sxs-lookup"><span data-stu-id="d122f-106">The cmdlets in this resource help create the MOF schema, the script module, and the directory structure for your new resource.</span></span> <span data-ttu-id="d122f-107">Дополнительные сведения о ресурсах DSC см. в статье [Встроенные ресурсы настройки требуемого состояния (DSC) Windows PowerShell](authoringResource.md).</span><span class="sxs-lookup"><span data-stu-id="d122f-107">For more information about DSC resources, see [Build Custom Windows PowerShell Desired State Configuration Resources](authoringResource.md).</span></span>
+<span data-ttu-id="d122f-108">В этом разделе мы создадим ресурс DSC, управляющий пользователями Active Directory.</span><span class="sxs-lookup"><span data-stu-id="d122f-108">In this topic, we will create a DSC resource that manages Active Directory users.</span></span>
+<span data-ttu-id="d122f-109">Для установки модуля **xDscResourceDesigner** используйте командлет [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx).</span><span class="sxs-lookup"><span data-stu-id="d122f-109">Use the [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet to install the **xDscResourceDesigner** module.</span></span>
 
->**Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0. Вы можете скачать модуль **PowerShellGet**для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186).
+><span data-ttu-id="d122f-110">**Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0.</span><span class="sxs-lookup"><span data-stu-id="d122f-110">**Note**: **Install-Module** is included in the **PowerShellGet** module, which is included in PowerShell 5.0.</span></span> <span data-ttu-id="d122f-111">Вы можете скачать модуль **PowerShellGet**для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186).</span><span class="sxs-lookup"><span data-stu-id="d122f-111">You can download the **PowerShellGet** module for PowerShell 3.0 and 4.0 at [PackageManagement PowerShell Modules Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49186).</span></span>
 
-<a id="creating-resource-properties" class="xliff"></a>
-## Создание свойств ресурсов
-В первую очередь необходимо решить, какие свойства будут представлены в ресурсе. В этом примере мы определим пользователя Active Directory со следующими свойствами.
+## <a name="creating-resource-properties"></a><span data-ttu-id="d122f-112">Создание свойств ресурсов</span><span class="sxs-lookup"><span data-stu-id="d122f-112">Creating resource properties</span></span>
+<span data-ttu-id="d122f-113">В первую очередь необходимо решить, какие свойства будут представлены в ресурсе.</span><span class="sxs-lookup"><span data-stu-id="d122f-113">The first thing we need to do is decide on properties that the resource will expose.</span></span> <span data-ttu-id="d122f-114">В этом примере мы определим пользователя Active Directory со следующими свойствами.</span><span class="sxs-lookup"><span data-stu-id="d122f-114">For this example, we will define an Active Directory user with the following properties.</span></span>
  
-Имя параметра Описание
-* **UserName**: основное свойство, которое служит уникальным идентификатором пользователя.
-* **Ensure**: указывает, должна ли учетная запись пользователя присутствовать (Present) или отсутствовать (Absent). Этот параметр имеет только два возможных значения.
-* **DomainCredential**: доменный пароль для пользователя.
-* **Password**: пароль для пользователя, позволяющий конфигурации при необходимости изменить пароль пользователя.
+<span data-ttu-id="d122f-115">Имя параметра Описание</span><span class="sxs-lookup"><span data-stu-id="d122f-115">Parameter name  Description</span></span>
+* <span data-ttu-id="d122f-116">**UserName**: основное свойство, которое служит уникальным идентификатором пользователя.</span><span class="sxs-lookup"><span data-stu-id="d122f-116">**UserName**: Key property that uniquely identifies a user.</span></span>
+* <span data-ttu-id="d122f-117">**Ensure**: указывает, должна ли учетная запись пользователя присутствовать (Present) или отсутствовать (Absent).</span><span class="sxs-lookup"><span data-stu-id="d122f-117">**Ensure**: Specifies whether the user account should be Present or Absent.</span></span> <span data-ttu-id="d122f-118">Этот параметр имеет только два возможных значения.</span><span class="sxs-lookup"><span data-stu-id="d122f-118">This parameter will have only two possible values.</span></span>
+* <span data-ttu-id="d122f-119">**DomainCredential**: доменный пароль для пользователя.</span><span class="sxs-lookup"><span data-stu-id="d122f-119">**DomainCredential**: The domain password for the user.</span></span>
+* <span data-ttu-id="d122f-120">**Password**: пароль для пользователя, позволяющий конфигурации при необходимости изменить пароль пользователя.</span><span class="sxs-lookup"><span data-stu-id="d122f-120">**Password**: The desired password for the user to allow a configuration to change the user password if necessary.</span></span>
 
-Для создания свойств используется командлет **New-xDscResourceProperty**. Описанные выше свойства создаются следующими командами PowerShell.
+<span data-ttu-id="d122f-121">Для создания свойств используется командлет **New-xDscResourceProperty**.</span><span class="sxs-lookup"><span data-stu-id="d122f-121">To create the properties, we use the **New-xDscResourceProperty** cmdlet.</span></span> <span data-ttu-id="d122f-122">Описанные выше свойства создаются следующими командами PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d122f-122">The following PowerShell commands create the properties described above.</span></span>
 
 ```powershell
 $UserName = New-xDscResourceProperty –Name UserName -Type String -Attribute Key
@@ -40,18 +38,17 @@ $DomainCredential = New-xDscResourceProperty –Name DomainCredential-Type PSCre
 $Password = New-xDscResourceProperty –Name Password -Type PSCredential -Attribute Write
 ```
 
-<a id="create-the-resource" class="xliff"></a>
-## Создание ресурсов
+## <a name="create-the-resource"></a><span data-ttu-id="d122f-123">Создание ресурсов</span><span class="sxs-lookup"><span data-stu-id="d122f-123">Create the resource</span></span>
 
-Теперь, когда свойства ресурса созданы, можно вызвать командлет **New-xDscResource** для создания ресурса. Командлет **New-xDscResource** выводит список свойств в виде параметров. Кроме того, он принимает путь для создания модуля, имя нового ресурса и имя модуля, в котором он будет храниться. Ресурс создает следующая команда PowerShell.
+<span data-ttu-id="d122f-124">Теперь, когда свойства ресурса созданы, можно вызвать командлет **New-xDscResource** для создания ресурса.</span><span class="sxs-lookup"><span data-stu-id="d122f-124">Now that the resource properties have been created, we can call the **New-xDscResource** cmdlet to create the resource.</span></span> <span data-ttu-id="d122f-125">Командлет **New-xDscResource** выводит список свойств в виде параметров.</span><span class="sxs-lookup"><span data-stu-id="d122f-125">The **New-xDscResource** cmdlet takes the list of properties as parameters.</span></span> <span data-ttu-id="d122f-126">Кроме того, он принимает путь для создания модуля, имя нового ресурса и имя модуля, в котором он будет храниться.</span><span class="sxs-lookup"><span data-stu-id="d122f-126">It also takes the path where the module should be created, the name of the new resource, and the name of the module in which it is contained.</span></span> <span data-ttu-id="d122f-127">Ресурс создает следующая команда PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d122f-127">The following PowerShell command creates the resource.</span></span>
 
 ```powershell
 New-xDscResource –Name Demo_ADUser –Property $UserName, $Ensure, $DomainCredential, $Password –Path ‘C:\Program Files\WindowsPowerShell\Modules’ –ModuleName Demo_DSCModule
 ```
 
-Командлет **New-xDscResource** создает MOF-схему, каркас сценария для ресурса, необходимую структуру папок, а также манифест для модуля, предоставляющего новый ресурс.
+<span data-ttu-id="d122f-128">Командлет **New-xDscResource** создает MOF-схему, каркас сценария для ресурса, необходимую структуру папок, а также манифест для модуля, предоставляющего новый ресурс.</span><span class="sxs-lookup"><span data-stu-id="d122f-128">The **New-xDscResource** cmdlet creates the MOF schema, a skeleton resource script, the required directory structure for your new resource, and a manifest for the module that exposes the new resource.</span></span>
 
-MOF-схема находится в файле **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.schema.mof** и имеет следующее содержание:
+<span data-ttu-id="d122f-129">MOF-схема находится в файле **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.schema.mof** и имеет следующее содержание:</span><span class="sxs-lookup"><span data-stu-id="d122f-129">The MOF schema file is at **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.schema.mof**, and its contents are as follows.</span></span>
 
 ```
 [ClassVersion("1.0.0.0"), FriendlyName("Demo_ADUser")]
@@ -64,7 +61,7 @@ class Demo_ADUser : OMI_BaseResource
 };
 ```
 
-Сценарий ресурса находится в файле **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.psm1**. Он не содержит фактической логики реализации ресурса — ее необходимо добавить самостоятельно. Каркас сценария выглядит следующим образом.
+<span data-ttu-id="d122f-130">Сценарий ресурса находится в файле **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.psm1**.</span><span class="sxs-lookup"><span data-stu-id="d122f-130">The resource script is at **C:\Program Files\WindowsPowerShell\Modules\Demo_DSCModule\DSCResources\Demo_ADUser\Demo_ADUser.psm1**.</span></span> <span data-ttu-id="d122f-131">Он не содержит фактической логики реализации ресурса — ее необходимо добавить самостоятельно.</span><span class="sxs-lookup"><span data-stu-id="d122f-131">It does not include the actual logic to implement the resource, which you must add yourself.</span></span> <span data-ttu-id="d122f-132">Каркас сценария выглядит следующим образом.</span><span class="sxs-lookup"><span data-stu-id="d122f-132">The contents of the skeleton script are as follows.</span></span>
 
 ```powershell
 function Get-TargetResource
@@ -164,30 +161,25 @@ function Test-TargetResource
 Export-ModuleMember -Function *-TargetResource
 ```
 
-<a id="updating-the-resource" class="xliff"></a>
-## Обновление ресурса
+## <a name="updating-the-resource"></a><span data-ttu-id="d122f-133">Обновление ресурса</span><span class="sxs-lookup"><span data-stu-id="d122f-133">Updating the resource</span></span>
 
-Если вам нужно добавить или изменить список параметров для ресурса, используйте командлет **Update-xDscResource**. Этот командлет обновляет ресурс с учетом нового списка параметров. Если логика в сценарий ресурсов уже добавлена, она останется без изменений.
+<span data-ttu-id="d122f-134">Если вам нужно добавить или изменить список параметров для ресурса, используйте командлет **Update-xDscResource**.</span><span class="sxs-lookup"><span data-stu-id="d122f-134">If you need to add or modify the parameter list of the resource, you can call the **Update-xDscResource** cmdlet.</span></span> <span data-ttu-id="d122f-135">Этот командлет обновляет ресурс с учетом нового списка параметров.</span><span class="sxs-lookup"><span data-stu-id="d122f-135">The cmdlet updates the resource with a new parameter list.</span></span> <span data-ttu-id="d122f-136">Если логика в сценарий ресурсов уже добавлена, она останется без изменений.</span><span class="sxs-lookup"><span data-stu-id="d122f-136">If you have already added logic in your resource script, it is left intact.</span></span>
 
-Предположим, вам нужно включить в ресурс время последнего входа пользователя. Вместо того чтобы писать ресурс заново, можно выполнить командлет **New-xDscResourceProperty**, чтобы создать еще одно свойство, а затем командлет **Update-xDscResource**, чтобы добавить его в список свойств.
+<span data-ttu-id="d122f-137">Предположим, вам нужно включить в ресурс время последнего входа пользователя.</span><span class="sxs-lookup"><span data-stu-id="d122f-137">For example, suppose you want to include the last log in time for the user in our resource.</span></span> <span data-ttu-id="d122f-138">Вместо того чтобы писать ресурс заново, можно выполнить командлет **New-xDscResourceProperty**, чтобы создать еще одно свойство, а затем командлет **Update-xDscResource**, чтобы добавить его в список свойств.</span><span class="sxs-lookup"><span data-stu-id="d122f-138">Rather than writing the resource again completely, you can call the **New-xDscResourceProperty** to create the new property, and then call **Update-xDscResource** and add your new property to the properties list.</span></span>
 
 ```powershell
 $lastLogon = New-xDscResourceProperty –Name LastLogon –Type Hashtable –Attribute Write –Description “For mapping users to their last log on time”
 Update-xDscResource –Name ‘Demo_ADUser’ –Property $UserName, $Ensure, $DomainCredential, $Password, $lastLogon -Force
 ```
 
-<a id="testing-a-resource-schema" class="xliff"></a>
-## Тестирование схемы ресурсов
+## <a name="testing-a-resource-schema"></a><span data-ttu-id="d122f-139">Тестирование схемы ресурсов</span><span class="sxs-lookup"><span data-stu-id="d122f-139">Testing a resource schema</span></span>
 
-Конструктор ресурсов предоставляет еще один командлет, который можно использовать для проверки работоспособности MOF-схемы, написанной вами вручную. Вызовите командлет **Test-xDscSchema**, передав в качестве параметра путь к MOF-схеме ресурса. Командлет выдаст все имеющиеся в схеме ошибки.
+<span data-ttu-id="d122f-140">Конструктор ресурсов предоставляет еще один командлет, который можно использовать для проверки работоспособности MOF-схемы, написанной вами вручную.</span><span class="sxs-lookup"><span data-stu-id="d122f-140">The Resource Designer tool exposes one more cmdlet that can be used to test the validity of a MOF schema that you have written manually.</span></span> <span data-ttu-id="d122f-141">Вызовите командлет **Test-xDscSchema**, передав в качестве параметра путь к MOF-схеме ресурса.</span><span class="sxs-lookup"><span data-stu-id="d122f-141">Call the **Test-xDscSchema** cmdlet, passing the path of a MOF resource schema as a parameter.</span></span> <span data-ttu-id="d122f-142">Командлет выдаст все имеющиеся в схеме ошибки.</span><span class="sxs-lookup"><span data-stu-id="d122f-142">The cmdlet will output any errors in the schema.</span></span>
 
-<a id="see-also" class="xliff"></a>
-### См. также
+### <a name="see-also"></a><span data-ttu-id="d122f-143">См. также</span><span class="sxs-lookup"><span data-stu-id="d122f-143">See Also</span></span>
 
-<a id="concepts" class="xliff"></a>
-#### Концепции
-[Создание пользовательских ресурсов DSC Windows PowerShell](authoringResource.md)
+#### <a name="concepts"></a><span data-ttu-id="d122f-144">Концепции</span><span class="sxs-lookup"><span data-stu-id="d122f-144">Concepts</span></span>
+[<span data-ttu-id="d122f-145">Создание пользовательских ресурсов DSC Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d122f-145">Build Custom Windows PowerShell Desired State Configuration Resources</span></span>](authoringResource.md)
 
-<a id="other-resources" class="xliff"></a>
-#### Прочие ресурсы
-[Модуль xDscResourceDesigner](https://powershellgallery.com/packages/xDscResourceDesigner)
+#### <a name="other-resources"></a><span data-ttu-id="d122f-146">Прочие ресурсы</span><span class="sxs-lookup"><span data-stu-id="d122f-146">Other Resources</span></span>
+[<span data-ttu-id="d122f-147">Модуль xDscResourceDesigner</span><span class="sxs-lookup"><span data-stu-id="d122f-147">xDscResourceDesigner Module</span></span>](https://powershellgallery.com/packages/xDscResourceDesigner)

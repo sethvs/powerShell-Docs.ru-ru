@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Класс MSFT_DSCLocalConfigurationManager
+# <a name="msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="7bb54-103">Класс MSFT_DSCLocalConfigurationManager</span><span class="sxs-lookup"><span data-stu-id="7bb54-103">MSFT_DSCLocalConfigurationManager class</span></span>
 
-Локальный диспетчер конфигураций (LCM) управляет состоянием файлов конфигурации и использует агент конфигурации для применения настроек.
+<span data-ttu-id="7bb54-104">Локальный диспетчер конфигураций (LCM) управляет состоянием файлов конфигурации и использует агент конфигурации для применения настроек.</span><span class="sxs-lookup"><span data-stu-id="7bb54-104">The Local Configuration Manager (LCM) that controls the states of configuration files and uses Configuration Agent to apply the configurations.</span></span>
 
-Следующий пример синтаксиса — упрощенный MOF-код, который включает все наследуемые свойства.
+<span data-ttu-id="7bb54-105">Следующий пример синтаксиса — упрощенный MOF-код, который включает все наследуемые свойства.</span><span class="sxs-lookup"><span data-stu-id="7bb54-105">The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.</span></span>
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a><span data-ttu-id="7bb54-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7bb54-106">Syntax</span></span>
 ------
 
 ``` syntax
@@ -28,51 +26,48 @@ class MSFT_DSCLocalConfigurationManager
 };
 ```
 
-<a id="members" class="xliff"></a>
-## Члены группы
+## <a name="members"></a><span data-ttu-id="7bb54-107">Члены группы</span><span class="sxs-lookup"><span data-stu-id="7bb54-107">Members</span></span>
 -------
 
-Класс **MSFT_DSCLocalConfigurationManager** включает следующие члены:
+<span data-ttu-id="7bb54-108">Класс **MSFT_DSCLocalConfigurationManager** включает следующие члены:</span><span class="sxs-lookup"><span data-stu-id="7bb54-108">The **MSFT_DSCLocalConfigurationManager** class has the following members:</span></span>
 
--   [Методы][]
+-   <span data-ttu-id="7bb54-109">[Методы][]</span><span class="sxs-lookup"><span data-stu-id="7bb54-109">[Methods][]</span></span>
 
-<a id="methods" class="xliff"></a>
-### Методы
+### <a name="methods"></a><span data-ttu-id="7bb54-110">Методы</span><span class="sxs-lookup"><span data-stu-id="7bb54-110">Methods</span></span>
 
-Класс **MSFT_DSCLocalConfigurationManager** включает следующие методы:
+<span data-ttu-id="7bb54-111">Класс **MSFT_DSCLocalConfigurationManager** включает следующие методы:</span><span class="sxs-lookup"><span data-stu-id="7bb54-111">The **MSFT_DSCLocalConfigurationManager** class has these methods.</span></span>
 
-|Метод |Описание |
+|<span data-ttu-id="7bb54-112">Метод</span><span class="sxs-lookup"><span data-stu-id="7bb54-112">Method</span></span> |<span data-ttu-id="7bb54-113">Описание</span><span class="sxs-lookup"><span data-stu-id="7bb54-113">Description</span></span> |
 |:--- |:---|
-| [ApplyConfiguration](msft-dsclocalconfigurationmanager-applyconfiguration.md)| Использует агент конфигурации для применения конфигурации, которая находится в состоянии ожидания.| 
-| [DisableDebugConfiguration](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| Отключает отладку ресурсов DSC.| 
-| [EnableDebugConfiguration](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)| Включает отладку ресурсов DSC.| 
-| [GetConfiguration](msft-dsclocalconfigurationmanager-getconfiguration.md)| Отправляет документ конфигурации на управляемый узел и использует метод **Get** агента конфигурации для применения конфигурации.| 
-| [GetConfigurationResultOutput](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)| Получает выходные данные агента конфигурации, относящиеся к определенному заданию.| 
-| [GetConfigurationStatus](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)| Получает журнал состояния конфигурации.| 
-| [GetMetaConfiguration](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)| Получает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.| 
-| [PerformRequiredConfigurationChecks](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)| Запускает проверку согласованности.| 
-| [RemoveConfiguration](msft-dsclocalconfigurationmanager-removeconfiguration.md)| Удаляет файлы конфигурации.| 
-| [ResourceGet](msft-dsclocalconfigurationmanager-resourceget.md)| Напрямую вызывает метод **Get** ресурса DSC.| 
-| [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| Напрямую вызывает метод **Set** ресурса DSC.| 
-| [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| Напрямую вызывает метод **Test** ресурса DSC.| 
-| [RollBack](msft-dsclocalconfigurationmanager-rollback.md)| Выполняет откат к предыдущей конфигурации.| 
-| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| Отправляет документ конфигурации на управляемый узел и сохраняет его как ожидающее изменение.| 
-| [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| Отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.| 
-| [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| Отправляет документ конфигурации на управляемый узел и запускает агент конфигурации для применения конфигурации. Для получения выходных данных используется метод GetConfigurationResultOutput.| 
-| [SendMetaConfigurationApply](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| Задает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.| 
-| [StopConfiguration](msft-dsclocalconfigurationmanager-stopconfiguration.md)| Останавливает выполняемую конфигурацию.| 
-| [TestConfiguration](msft-dsclocalconfigurationmanager-testconfiguration.md)| Отправляет документ конфигурации на управляемый узел и проверяет соответствие текущей конфигурации документу.| 
+| [<span data-ttu-id="7bb54-114">ApplyConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-114">ApplyConfiguration</span></span>](msft-dsclocalconfigurationmanager-applyconfiguration.md)| <span data-ttu-id="7bb54-115">Использует агент конфигурации для применения конфигурации, которая находится в состоянии ожидания.</span><span class="sxs-lookup"><span data-stu-id="7bb54-115">Uses the Configuration Agent to apply the configuration that is pending.</span></span>| 
+| [<span data-ttu-id="7bb54-116">DisableDebugConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-116">DisableDebugConfiguration</span></span>](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| <span data-ttu-id="7bb54-117">Отключает отладку ресурсов DSC.</span><span class="sxs-lookup"><span data-stu-id="7bb54-117">Disables DSC resource debugging.</span></span>| 
+| [<span data-ttu-id="7bb54-118">EnableDebugConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-118">EnableDebugConfiguration</span></span>](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)| <span data-ttu-id="7bb54-119">Включает отладку ресурсов DSC.</span><span class="sxs-lookup"><span data-stu-id="7bb54-119">Enables DSC resource debugging.</span></span>| 
+| [<span data-ttu-id="7bb54-120">GetConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-120">GetConfiguration</span></span>](msft-dsclocalconfigurationmanager-getconfiguration.md)| <span data-ttu-id="7bb54-121">Отправляет документ конфигурации на управляемый узел и использует метод **Get** агента конфигурации для применения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-121">Sends the configuration document to the managed node and uses the **Get** method of the Configuration Agent to apply the configuration.</span></span>| 
+| [<span data-ttu-id="7bb54-122">GetConfigurationResultOutput</span><span class="sxs-lookup"><span data-stu-id="7bb54-122">GetConfigurationResultOutput</span></span>](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)| <span data-ttu-id="7bb54-123">Получает выходные данные агента конфигурации, относящиеся к определенному заданию.</span><span class="sxs-lookup"><span data-stu-id="7bb54-123">Gets the Configuration Agent output relating to a specific job.</span></span>| 
+| [<span data-ttu-id="7bb54-124">GetConfigurationStatus</span><span class="sxs-lookup"><span data-stu-id="7bb54-124">GetConfigurationStatus</span></span>](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)| <span data-ttu-id="7bb54-125">Получает журнал состояния конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-125">Get the configuration status history.</span></span>| 
+| [<span data-ttu-id="7bb54-126">GetMetaConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-126">GetMetaConfiguration</span></span>](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)| <span data-ttu-id="7bb54-127">Получает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-127">Gets the LCM settings that are used to control Configuration Agent.</span></span>| 
+| [<span data-ttu-id="7bb54-128">PerformRequiredConfigurationChecks</span><span class="sxs-lookup"><span data-stu-id="7bb54-128">PerformRequiredConfigurationChecks</span></span>](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)| <span data-ttu-id="7bb54-129">Запускает проверку согласованности.</span><span class="sxs-lookup"><span data-stu-id="7bb54-129">Starts the consistency check.</span></span>| 
+| [<span data-ttu-id="7bb54-130">RemoveConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-130">RemoveConfiguration</span></span>](msft-dsclocalconfigurationmanager-removeconfiguration.md)| <span data-ttu-id="7bb54-131">Удаляет файлы конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-131">Removes the configuration files.</span></span>| 
+| [<span data-ttu-id="7bb54-132">ResourceGet</span><span class="sxs-lookup"><span data-stu-id="7bb54-132">ResourceGet</span></span>](msft-dsclocalconfigurationmanager-resourceget.md)| <span data-ttu-id="7bb54-133">Напрямую вызывает метод **Get** ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="7bb54-133">Directly calls the **Get** method of a DSC resource.</span></span>| 
+| [<span data-ttu-id="7bb54-134">ResourceSet</span><span class="sxs-lookup"><span data-stu-id="7bb54-134">ResourceSet</span></span>](msft-dsclocalconfigurationmanager-resourceset.md)| <span data-ttu-id="7bb54-135">Напрямую вызывает метод **Set** ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="7bb54-135">Directly calls the **Set** method of a DSC resource.</span></span>| 
+| [<span data-ttu-id="7bb54-136">ResourceTest</span><span class="sxs-lookup"><span data-stu-id="7bb54-136">ResourceTest</span></span>](msft-dsclocalconfigurationmanager-resourcetest.md)| <span data-ttu-id="7bb54-137">Напрямую вызывает метод **Test** ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="7bb54-137">Directly calls the **Test** method of a DSC resource.</span></span>| 
+| [<span data-ttu-id="7bb54-138">RollBack</span><span class="sxs-lookup"><span data-stu-id="7bb54-138">RollBack</span></span>](msft-dsclocalconfigurationmanager-rollback.md)| <span data-ttu-id="7bb54-139">Выполняет откат к предыдущей конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-139">Rolls back to a previous configuration.</span></span>| 
+| [<span data-ttu-id="7bb54-140">SendConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-140">SendConfiguration</span></span>](msft-dsclocalconfigurationmanager-sendconfiguration.md)| <span data-ttu-id="7bb54-141">Отправляет документ конфигурации на управляемый узел и сохраняет его как ожидающее изменение.</span><span class="sxs-lookup"><span data-stu-id="7bb54-141">Sends the configuration document to the managed node and saves it as a pending change.</span></span>| 
+| [<span data-ttu-id="7bb54-142">SendConfigurationApply</span><span class="sxs-lookup"><span data-stu-id="7bb54-142">SendConfigurationApply</span></span>](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| <span data-ttu-id="7bb54-143">Отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-143">Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.</span></span>| 
+| [<span data-ttu-id="7bb54-144">SendConfigurationApplyAsync</span><span class="sxs-lookup"><span data-stu-id="7bb54-144">SendConfigurationApplyAsync</span></span>](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| <span data-ttu-id="7bb54-145">Отправляет документ конфигурации на управляемый узел и запускает агент конфигурации для применения конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-145">Send the configuration document to the managed node and start using the Configuration Agent to apply the configuration.</span></span> <span data-ttu-id="7bb54-146">Для получения выходных данных используется метод GetConfigurationResultOutput.</span><span class="sxs-lookup"><span data-stu-id="7bb54-146">Use GetConfigurationResultOutput to retrieve result output.</span></span>| 
+| [<span data-ttu-id="7bb54-147">SendMetaConfigurationApply</span><span class="sxs-lookup"><span data-stu-id="7bb54-147">SendMetaConfigurationApply</span></span>](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| <span data-ttu-id="7bb54-148">Задает параметры локального диспетчера конфигураций, которые используются для управления агентом конфигурации.</span><span class="sxs-lookup"><span data-stu-id="7bb54-148">Sets the LCM settings that are used to control the Configuration Agent.</span></span>| 
+| [<span data-ttu-id="7bb54-149">StopConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-149">StopConfiguration</span></span>](msft-dsclocalconfigurationmanager-stopconfiguration.md)| <span data-ttu-id="7bb54-150">Останавливает выполняемую конфигурацию.</span><span class="sxs-lookup"><span data-stu-id="7bb54-150">Stops the configuration that is in progress.</span></span>| 
+| [<span data-ttu-id="7bb54-151">TestConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-151">TestConfiguration</span></span>](msft-dsclocalconfigurationmanager-testconfiguration.md)| <span data-ttu-id="7bb54-152">Отправляет документ конфигурации на управляемый узел и проверяет соответствие текущей конфигурации документу.</span><span class="sxs-lookup"><span data-stu-id="7bb54-152">Sends the configuration document to the managed node and verifies the current configuration against the document.</span></span>| 
 
 
 
  
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a><span data-ttu-id="7bb54-153">Требования</span><span class="sxs-lookup"><span data-stu-id="7bb54-153">Requirements</span></span>
 ------------
->**MOF-файл:** DscCore.mof
+><span data-ttu-id="7bb54-154">**MOF-файл:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="7bb54-154">**MOF:** DscCore.mof</span></span>
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
+><span data-ttu-id="7bb54-155">**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="7bb54-155">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
 

@@ -9,9 +9,8 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="clipboard-cmdlets" class="xliff"></a>
-# Командлеты Clipboard
-Командлеты**Get-Clipboard** и **Set-Clipboard** упрощают передачу содержимого в сеанс Windows PowerShell и из него. Например, если скопировать три файла с помощью проводника Windows в буфер обмена (скажем, выбрав их и нажав клавишу `ctrl-c`), можно затем легко получить содержимое буфера обмена в виде списка файлов:
+# <a name="clipboard-cmdlets"></a><span data-ttu-id="2ebff-102">Командлеты Clipboard</span><span class="sxs-lookup"><span data-stu-id="2ebff-102">Clipboard cmdlets</span></span>
+<span data-ttu-id="2ebff-103">Командлеты**Get-Clipboard** и **Set-Clipboard** упрощают передачу содержимого в сеанс Windows PowerShell и из него.</span><span class="sxs-lookup"><span data-stu-id="2ebff-103">**Get-Clipboard** and **Set-Clipboard** make it easier for you to transfer content to and from a Windows PowerShell session.</span></span> <span data-ttu-id="2ebff-104">Например, если скопировать три файла с помощью проводника Windows в буфер обмена (скажем, выбрав их и нажав клавишу `ctrl-c`), можно затем легко получить содержимое буфера обмена в виде списка файлов:</span><span class="sxs-lookup"><span data-stu-id="2ebff-104">For example, if you use Windows Explorer to copy three files to the clipboard (by selecting them and pressing `ctrl-c`, for example), you can then easily access the contents of the clipboard as a list of files:</span></span>
 
 ```powershell 
 PS C:\\&gt; Get-Clipboard -Format FileDropList
@@ -30,5 +29,5 @@ Mode LastWriteTime Length Name
 ```
 
 
-Командлеты Clipboard поддерживают изображения, звуковые файлы, списки файлов и текст.
+<span data-ttu-id="2ebff-105">Командлеты Clipboard поддерживают изображения, звуковые файлы, списки файлов и текст.</span><span class="sxs-lookup"><span data-stu-id="2ebff-105">The Clipboard cmdlets support images, audio files, file lists, and text.</span></span>
 
