@@ -8,56 +8,56 @@
       "build_source_folder": "dsc",
       "build_output_subfolder": "dsc",
       "locale": "ru-ru",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "PowerShell_PowerShell-docs_gallery",
       "build_source_folder": "gallery",
       "build_output_subfolder": "gallery",
       "locale": "ru-ru",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
-      "build_entry_point": "op"
+      "build_entry_point": "op",
+      "version": 0
     },
     {
       "docset_name": "PowerShell_PowerShell-docs_jea",
       "build_source_folder": "jea",
       "build_output_subfolder": "jea",
       "locale": "ru-ru",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "PowerShell_PowerShell-docs_scripting",
       "build_source_folder": "scripting",
       "build_output_subfolder": "scripting",
       "locale": "ru-ru",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "PowerShell_PowerShell-docs_wmf",
       "build_source_folder": "wmf",
       "build_output_subfolder": "wmf",
       "locale": "ru-ru",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     }
   ],
   "notification_subscribers": [
@@ -67,6 +67,7 @@
     "master-oldev",
     "live-oldev"
   ],
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
