@@ -12,7 +12,6 @@
 ## [Установка и настройка](5.1/install-configure.md)
 ## [Известные проблемы](5.1/known-issues.md)
 ## [Совместимость](5.1/Compatibility.md)
-## [Совместимость продуктов](5.1/productincompat.md)
 
 # [WMF 5.0](5.0/releasenotes.md)
 ## [Сведения об установке](5.0/requirements.md)

@@ -1,11 +1,15 @@
-
-# [Обзор](overview.md)
-
-# Развертывание JEA
-## [Предварительные требования](prerequisites.md)
-## [Возможности ролей](role-capabilities.md)
-## [Конфигурации сеансов](session-configurations.md)
-## [Регистрация JEA](register-jea.md)
-## [Использование JEA](using-jea.md)
-## [Вопросы безопасности](security-considerations.md)
-## [Аудит и отчеты для JEA](audit-and-report.md)
+# [Just Enough Administration (JEA)](README.md)
+##  [Введение](introduction.md)
+##  [Предварительные требования](prerequisites.md)
+##  [Использование JEA](using-jea.md)
+##  [Новая демоверсия](remake-the-demo-endpoint.md)
+##  [Возможности ролей](role-capabilities.md)
+##  [Сквозной — Active Directory](end-to-end---active-directory.md)
+##  [Обслуживание и развертывание на нескольких компьютерах](multi-machine-deployment-and-maintenance.md)
+##  [Отчеты о JEA](reporting-on-jea.md)
+##  Приложения
+###  [Основные понятия, используемые в этом руководстве](key-concepts-used-throughout-this-guide.md)  
+###  [Создание контроллера домена](creating-a-domain-controller.md)  
+###  [О запрещенных списках](on-blacklisting.md)  
+###  [Рекомендации по ограничениям команд](considerations-when-limiting-commands.md)  
+###  [Распространенные проблемы возможностей ролей](common-role-capability-pitfalls.md)

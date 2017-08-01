@@ -1,92 +1,92 @@
-# <a name="contributing-to-powershell-documentation"></a>Документация по публикациям в PowerShell
+# <a name="contributing-to-powershell-documentation"></a><span data-ttu-id="8e286-101">Документация по публикациям в PowerShell</span><span class="sxs-lookup"><span data-stu-id="8e286-101">Contributing to PowerShell Documentation</span></span>
 
-Благодарим за интерес, проявленный к документации PowerShell! Сведения о том, как поучаствовать в работе над технической документацией, см. ниже.
+<span data-ttu-id="8e286-102">Благодарим за интерес, проявленный к документации PowerShell!</span><span class="sxs-lookup"><span data-stu-id="8e286-102">Thank you for your interest in PowerShell documentation!</span></span> <span data-ttu-id="8e286-103">Сведения о том, как поучаствовать в работе над технической документацией, см. ниже.</span><span class="sxs-lookup"><span data-stu-id="8e286-103">See below for details on how you can contribute to our technical documentation.</span></span>
 
->Общие сведения о начале работы с Git и GitHub см. в разделе [Справка по GitHub](https://help.github.com/). 
+><span data-ttu-id="8e286-104">Общие сведения о начале работы с Git и GitHub см. в разделе [Справка по GitHub](https://help.github.com/).</span><span class="sxs-lookup"><span data-stu-id="8e286-104">For general information about getting started with Git and GitHub, see [GitHub Help](https://help.github.com/).</span></span> 
 
-## <a name="sign-a-cla"></a>Подписание соглашения CLA
+## <a name="sign-a-cla"></a><span data-ttu-id="8e286-105">Подписание соглашения CLA</span><span class="sxs-lookup"><span data-stu-id="8e286-105">Sign a CLA</span></span>
 
-Перед тем как отправить публикацию в один из репозиториев PowerShell, необходимо [подписать соглашение Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). Если вы уже отправляли публикации в репозитории PowerShell раньше, поздравляем! Вы уже выполнили этот шаг.
+<span data-ttu-id="8e286-106">Перед тем как отправить публикацию в один из репозиториев PowerShell, необходимо [подписать соглашение Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="8e286-106">Before you can contribute to any PowerShell repositories, you must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/).</span></span> <span data-ttu-id="8e286-107">Если вы уже отправляли публикации в репозитории PowerShell раньше, поздравляем!</span><span class="sxs-lookup"><span data-stu-id="8e286-107">If you've already contributed to PowerShell repositories in the past, congratulations!</span></span> <span data-ttu-id="8e286-108">Вы уже выполнили этот шаг.</span><span class="sxs-lookup"><span data-stu-id="8e286-108">You've already completed this step.</span></span>
 
-## <a name="providing-feedback-on-powershell-documentation"></a>Отправка отзывов по документации PowerShell
+## <a name="providing-feedback-on-powershell-documentation"></a><span data-ttu-id="8e286-109">Отправка отзывов по документации PowerShell</span><span class="sxs-lookup"><span data-stu-id="8e286-109">Providing feedback on PowerShell documentation</span></span>
 
-Вы можете выделять ошибки, предлагать изменения или запрашивать новые темы, [создав запись о проблеме](https://help.github.com/articles/creating-an-issue/) на [странице проблем репозитория PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs/issues).
+<span data-ttu-id="8e286-110">Вы можете выделять ошибки, предлагать изменения или запрашивать новые темы, [создав запись о проблеме](https://help.github.com/articles/creating-an-issue/) на [странице проблем репозитория PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs/issues).</span><span class="sxs-lookup"><span data-stu-id="8e286-110">You can point out errors, suggest changes, or request new topics by [creating an issue](https://help.github.com/articles/creating-an-issue/) on the [PowerShell-Docs repository issues page](https://github.com/PowerShell/PowerShell-Docs/issues).</span></span>
 
-Участники группы документации PowerShell регулярно просматривают проблемы: сортируют их, назначают и решают.
+<span data-ttu-id="8e286-111">Участники группы документации PowerShell регулярно просматривают проблемы: сортируют их, назначают и решают.</span><span class="sxs-lookup"><span data-stu-id="8e286-111">Issues are reviewed regularly by members of the PowerShell documentation team, and are triaged, assigned, and addressed accordingly.</span></span>
 
-## <a name="writing-powershell-documentation"></a>Написание документации по PowerShell
+## <a name="writing-powershell-documentation"></a><span data-ttu-id="8e286-112">Написание документации по PowerShell</span><span class="sxs-lookup"><span data-stu-id="8e286-112">Writing PowerShell documentation</span></span>
 
-Один из самых простых способов отправки публикаций в PowerShell — помощь в записи и редактировании документации. Вся документация, размещенная в GitHub, написана с помощью [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
+<span data-ttu-id="8e286-113">Один из самых простых способов отправки публикаций в PowerShell — помощь в записи и редактировании документации.</span><span class="sxs-lookup"><span data-stu-id="8e286-113">One of the easiest ways to contribute to PowerShell is by helping to write and edit documentation.</span></span> <span data-ttu-id="8e286-114">Вся документация, размещенная в GitHub, написана с помощью [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).</span><span class="sxs-lookup"><span data-stu-id="8e286-114">All of our documentation hosted on GitHub is written using [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).</span></span>
 
-## <a name="making-minor-edits-to-existing-topics"></a>Внесение незначительных правок в существующие разделы
+## <a name="making-minor-edits-to-existing-topics"></a><span data-ttu-id="8e286-115">Внесение незначительных правок в существующие разделы</span><span class="sxs-lookup"><span data-stu-id="8e286-115">Making minor edits to existing topics</span></span>
 
-Для [редактирования существующего файла](https://help.github.com/articles/editing-files-in-another-user-s-repository/) просто перейдите к нему и нажмите кнопку "Изменить". GitHub автоматически создаст ваше собственное разветвление нашего репозитория, в котором можно вносить изменения. По завершении сохраните правки и отправьте [запрос на включение внесенных изменений](https://help.github.com/articles/creating-a-pull-request/) в *промежуточную* ветвь репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs). После создания запроса на включение внесенных изменений один из участников группы документации PowerShell просмотрит ваши изменения перед объединением их в *промежуточную* ветвь.
+<span data-ttu-id="8e286-116">Для [редактирования существующего файла](https://help.github.com/articles/editing-files-in-another-user-s-repository/) просто перейдите к нему и нажмите кнопку "Изменить".</span><span class="sxs-lookup"><span data-stu-id="8e286-116">To [edit an existing file](https://help.github.com/articles/editing-files-in-another-user-s-repository/), simply navigate to it and click the "Edit" button.</span></span> <span data-ttu-id="8e286-117">GitHub автоматически создаст ваше собственное разветвление нашего репозитория, в котором можно вносить изменения.</span><span class="sxs-lookup"><span data-stu-id="8e286-117">GitHub will automatically create your own fork of our repository where you can make your changes.</span></span> <span data-ttu-id="8e286-118">По завершении сохраните правки и отправьте [запрос на включение внесенных изменений](https://help.github.com/articles/creating-a-pull-request/) в *промежуточную* ветвь репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs).</span><span class="sxs-lookup"><span data-stu-id="8e286-118">Once you're finished, save your edits and submit a [pull request](https://help.github.com/articles/creating-a-pull-request/) to the *staging* branch of the [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs) repository.</span></span> <span data-ttu-id="8e286-119">После создания запроса на включение внесенных изменений один из участников группы документации PowerShell просмотрит ваши изменения перед объединением их в *промежуточную* ветвь.</span><span class="sxs-lookup"><span data-stu-id="8e286-119">After your pull request is created, someone on the PowerShell documentation team will review your changes before merging them into the *staging* branch.</span></span>
 
-## <a name="making-major-edits-to-existing-topics"></a>Внесение значительных правок в существующие разделы
+## <a name="making-major-edits-to-existing-topics"></a><span data-ttu-id="8e286-120">Внесение значительных правок в существующие разделы</span><span class="sxs-lookup"><span data-stu-id="8e286-120">Making major edits to existing topics</span></span>
 
-При внесении значительных изменений в существующую статью, добавлении или изменении образов, а также при отправке новой статьи необходимо будет вручную создать разветвление GitHub, а затем клонировать его на локальный компьютер. Разветвление — это реплика главного репозитория на основе GitHub, созданная в вашей учетной записи GitHub и предоставляющая вам рабочую копию, которую можно использовать отдельно. Запросы на включение внесенных изменений будут создаваться из вашего разветвления. Аналогичным образом клон — это локальная реплика репозитория, которая в этом случае будет клоном вашего разветвления. Клон позволяет автономно работать в репозиториях Git и использовать более мощное собственное программное обеспечение и средства.
+<span data-ttu-id="8e286-121">При внесении значительных изменений в существующую статью, добавлении или изменении образов, а также при отправке новой статьи необходимо будет вручную создать разветвление GitHub, а затем клонировать его на локальный компьютер.</span><span class="sxs-lookup"><span data-stu-id="8e286-121">If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to manually create your GitHub fork, then clone the fork down to your local computer.</span></span> <span data-ttu-id="8e286-122">Разветвление — это реплика главного репозитория на основе GitHub, созданная в вашей учетной записи GitHub и предоставляющая вам рабочую копию, которую можно использовать отдельно.</span><span class="sxs-lookup"><span data-stu-id="8e286-122">A fork is a GitHub-based replica of the main repository, under your GitHub account, which provides you with a working copy which you can use in isolation.</span></span> <span data-ttu-id="8e286-123">Запросы на включение внесенных изменений будут создаваться из вашего разветвления.</span><span class="sxs-lookup"><span data-stu-id="8e286-123">You will create pull requests from your fork.</span></span> <span data-ttu-id="8e286-124">Аналогичным образом клон — это локальная реплика репозитория, которая в этом случае будет клоном вашего разветвления.</span><span class="sxs-lookup"><span data-stu-id="8e286-124">Similarly, a clone is a local-based replica of the repository which, in this case, will be a clone of your fork.</span></span> <span data-ttu-id="8e286-125">Клон позволяет автономно работать в репозиториях Git и использовать более мощное собственное программное обеспечение и средства.</span><span class="sxs-lookup"><span data-stu-id="8e286-125">The clone allows you to work on Git repositories offline, and using more powerful native software/tools.</span></span>
 
-Далее представлен рабочий процесс для внесения значительных правок в существующую документацию.
+<span data-ttu-id="8e286-126">Далее представлен рабочий процесс для внесения значительных правок в существующую документацию.</span><span class="sxs-lookup"><span data-stu-id="8e286-126">Here is the workflow for making major edits to existing documentation:</span></span>
 
-1. [Создайте разветвление](https://help.github.com/articles/fork-a-repo/) репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs).
-2. [Создайте клон разветвления](https://help.github.com/articles/cloning-a-repository/) на локальном компьютере.
-3. Создайте локальную ветвь клонированного репозитория.
-4. Внесите изменения в файлы, которые хотите обновить в редакторе Markdown. 
-   Часто используемые редакторы Markdown см. ниже.
-5. [Передайте локальную ветвь](https://help.github.com/articles/pushing-to-a-remote/) в разветвление.
-6. [Создайте запрос на включение внесенных изменений](https://help.github.com/articles/creating-a-pull-request/) в *промежуточной* ветви репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs).
+1. <span data-ttu-id="8e286-127">[Создайте разветвление](https://help.github.com/articles/fork-a-repo/) репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs).</span><span class="sxs-lookup"><span data-stu-id="8e286-127">[Create a fork](https://help.github.com/articles/fork-a-repo/) of the [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs) repository.</span></span>
+2. <span data-ttu-id="8e286-128">[Создайте клон разветвления](https://help.github.com/articles/cloning-a-repository/) на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="8e286-128">[Create a clone of your fork](https://help.github.com/articles/cloning-a-repository/) on your local computer.</span></span>
+3. <span data-ttu-id="8e286-129">Создайте локальную ветвь клонированного репозитория.</span><span class="sxs-lookup"><span data-stu-id="8e286-129">Create a new local branch in your cloned repository.</span></span>
+4. <span data-ttu-id="8e286-130">Внесите изменения в файлы, которые хотите обновить в редакторе Markdown.</span><span class="sxs-lookup"><span data-stu-id="8e286-130">Make changes to the file(s) you want to update in a Markdown editor.</span></span> 
+   <span data-ttu-id="8e286-131">Часто используемые редакторы Markdown см. ниже.</span><span class="sxs-lookup"><span data-stu-id="8e286-131">See below for commonly used Markdown editors.</span></span>
+5. <span data-ttu-id="8e286-132">[Передайте локальную ветвь](https://help.github.com/articles/pushing-to-a-remote/) в разветвление.</span><span class="sxs-lookup"><span data-stu-id="8e286-132">[Push your local branch](https://help.github.com/articles/pushing-to-a-remote/) to your fork.</span></span>
+6. <span data-ttu-id="8e286-133">[Создайте запрос на включение внесенных изменений](https://help.github.com/articles/creating-a-pull-request/) в *промежуточной* ветви репозитория [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs).</span><span class="sxs-lookup"><span data-stu-id="8e286-133">[Create a pull request](https://help.github.com/articles/creating-a-pull-request/) to the *staging* branch of the [PowerShell-Docs](https://github.com/PowerShell/PowerShell-Docs) repository.</span></span>
 
-## <a name="creating-new-topics"></a>Создание тем
+## <a name="creating-new-topics"></a><span data-ttu-id="8e286-134">Создание тем</span><span class="sxs-lookup"><span data-stu-id="8e286-134">Creating new topics</span></span>
 
-Если вы хотите опубликовать новую документацию, сначала проверьте [проблемы с пометкой "в процессе"](https://github.com/PowerShell/PowerShell-Docs/labels/in%20progress), чтобы убедиться, что вы не повторяете существующие темы.
-Если над запланированной темой никто не работает, сделайте следующее.
+<span data-ttu-id="8e286-135">Если вы хотите опубликовать новую документацию, сначала проверьте [проблемы с пометкой "в процессе"](https://github.com/PowerShell/PowerShell-Docs/labels/in%20progress), чтобы убедиться, что вы не повторяете существующие темы.</span><span class="sxs-lookup"><span data-stu-id="8e286-135">If you want to contribute new documentation, first check for [issues tagged as "in progress"](https://github.com/PowerShell/PowerShell-Docs/labels/in%20progress) to make sure you're not duplicating efforts.</span></span>
+<span data-ttu-id="8e286-136">Если над запланированной темой никто не работает, сделайте следующее.</span><span class="sxs-lookup"><span data-stu-id="8e286-136">If no one seems to be working on what you have planned:</span></span>
 
-* Создайте новую проблему и добавьте пометку "в процессе" (если вы являетесь членом организации, использующей PowerShell) или добавьте пометку "в процессе" в виде комментария, чтобы сообщить другим пользователям, над чем вы работаете.
-* Следуйте рабочему процессу, описанному выше, при внесении значительных правок в существующие разделы.
-* Чтобы добавить новые темы в содержание, отредактируйте раздел `TOC.md` (расположен в папке верхнего уровня для каждого набора документов). 
-  Определите, в какой раздел содержания следует добавить вашу статью, и добавьте заголовок соответствующего уровня со ссылкой на вашу статью (`[My topic title](relative path to my topic)`).
+* <span data-ttu-id="8e286-137">Создайте новую проблему и добавьте пометку "в процессе" (если вы являетесь членом организации, использующей PowerShell) или добавьте пометку "в процессе" в виде комментария, чтобы сообщить другим пользователям, над чем вы работаете.</span><span class="sxs-lookup"><span data-stu-id="8e286-137">Open a new issue and label it as "in progress" (if you are a member of the PowerShell organization) or add "in progress" as a comment to tell others what you're working on</span></span>
+* <span data-ttu-id="8e286-138">Следуйте рабочему процессу, описанному выше, при внесении значительных правок в существующие разделы.</span><span class="sxs-lookup"><span data-stu-id="8e286-138">Follow the same workflow as described above for making major edits to existing topics.</span></span>
+* <span data-ttu-id="8e286-139">Чтобы добавить новые темы в содержание, отредактируйте раздел `TOC.md` (расположен в папке верхнего уровня для каждого набора документов).</span><span class="sxs-lookup"><span data-stu-id="8e286-139">Edit the `TOC.md` topic (located in the top-level folder for each documentation set) to add your new topics to the table of contents.</span></span> 
+  <span data-ttu-id="8e286-140">Определите, в какой раздел содержания следует добавить вашу статью, и добавьте заголовок соответствующего уровня со ссылкой на вашу статью (`[My topic title](relative path to my topic)`).</span><span class="sxs-lookup"><span data-stu-id="8e286-140">Determine where your new topic belongs in the table of contents, and add a heading of the appropriate level, with a link to your topic (`[My topic title](relative path to my topic)`).</span></span>
 
-## <a name="markdown-editors"></a>Редакторы Markdown
+## <a name="markdown-editors"></a><span data-ttu-id="8e286-141">Редакторы Markdown</span><span class="sxs-lookup"><span data-stu-id="8e286-141">Markdown editors</span></span>
 
-Среди прочих, вы можете воспользоваться следующими редакторами Markdown:
+<span data-ttu-id="8e286-142">Среди прочих, вы можете воспользоваться следующими редакторами Markdown:</span><span class="sxs-lookup"><span data-stu-id="8e286-142">Here are some Markdown editors you can try out:</span></span>
 
-* [Visual Studio Code](https://code.visualstudio.com)
-* [Markdown Pad](http://markdownpad.com/)
-* [Atom](https://atom.io/)
-* [Sublime Text](http://www.sublimetext.com/)
+* [<span data-ttu-id="8e286-143">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="8e286-143">Visual Studio Code</span></span>](https://code.visualstudio.com)
+* [<span data-ttu-id="8e286-144">Markdown Pad</span><span class="sxs-lookup"><span data-stu-id="8e286-144">Markdown Pad</span></span>](http://markdownpad.com/)
+* [<span data-ttu-id="8e286-145">Atom</span><span class="sxs-lookup"><span data-stu-id="8e286-145">Atom</span></span>](https://atom.io/)
+* [<span data-ttu-id="8e286-146">Sublime Text</span><span class="sxs-lookup"><span data-stu-id="8e286-146">Sublime Text</span></span>](http://www.sublimetext.com/)
 
 
-## <a name="github-flavored-markdown-gfm"></a>GitHub Flavored Markdown (GFM)
+## <a name="github-flavored-markdown-gfm"></a><span data-ttu-id="8e286-147">GitHub Flavored Markdown (GFM)</span><span class="sxs-lookup"><span data-stu-id="8e286-147">GitHub Flavored Markdown (GFM)</span></span>
 
-Во всех статьях в этом репозитории используется [GitHub Flavored Markdown (GFM)](https://help.github.com/articles/github-flavored-markdown/).
+<span data-ttu-id="8e286-148">Во всех статьях в этом репозитории используется [GitHub Flavored Markdown (GFM)](https://help.github.com/articles/github-flavored-markdown/).</span><span class="sxs-lookup"><span data-stu-id="8e286-148">All of the articles in this repository use [GitHub Flavored Markdown (GFM)](https://help.github.com/articles/github-flavored-markdown/).</span></span>
 
-Часть основного синтаксиса GFM:
+<span data-ttu-id="8e286-149">Часть основного синтаксиса GFM:</span><span class="sxs-lookup"><span data-stu-id="8e286-149">Some of the basic GFM syntax includes:</span></span>
 
-* **Разрывы и абзацы**: в Markdown нет элементов `<br />` и `<p />` HTML. Вместо этого абзац обозначается пустой строкой между двумя блоками текста.
+* <span data-ttu-id="8e286-150">**Разрывы и абзацы**: в Markdown нет элементов `<br />` и `<p />` HTML.</span><span class="sxs-lookup"><span data-stu-id="8e286-150">**Line breaks vs. paragraphs:** In Markdown there is no HTML `<br />` or `<p />` element.</span></span> <span data-ttu-id="8e286-151">Вместо этого абзац обозначается пустой строкой между двумя блоками текста.</span><span class="sxs-lookup"><span data-stu-id="8e286-151">Instead, a new paragraph is designated by an empty line between two blocks of text.</span></span>
 
-> **Примечание**. Добавляйте новую строку после каждого приложения, чтобы упростить вывод diff и журнала.
-Сейчас это используется не во всех PowerShell-Docs, но мы работаем над внедрением этой функции. Вы можете помочь нам. 
+> <span data-ttu-id="8e286-152">**Примечание**. Добавляйте новую строку после каждого приложения, чтобы упростить вывод diff и журнала.</span><span class="sxs-lookup"><span data-stu-id="8e286-152">**Note**: Please add a single newline after each sentence to simplify the command-line output of diffs and history.</span></span>
+<span data-ttu-id="8e286-153">Сейчас это используется не во всех PowerShell-Docs, но мы работаем над внедрением этой функции.</span><span class="sxs-lookup"><span data-stu-id="8e286-153">This is not currently adopted across all of PowerShell-Docs, but we will be working towards it over time.</span></span> <span data-ttu-id="8e286-154">Вы можете помочь нам.</span><span class="sxs-lookup"><span data-stu-id="8e286-154">Feel free to help out.</span></span> 
 
-* **Курсив**: элемент `<em>some text</em>` HTML записывается как `*some text*`.
-* **Полужирный**: элемент `<strong>some text</strong>` HTML записывается как `**some text**`.
-* **Заголовки**: заголовки HTML назначаются с символов `#` в начале строки. 
-  Число символов `#` соответствует иерархическому уровню заголовка (например, `#` = `<h1>` и `###` = ```<h3>```).
-* **Нумерованные списки:** чтобы создать нумерованный (упорядоченный) список, начните строку с `1. `.  
-  Если вам нужны несколько элементов в одном элементе списка, отформатируйте список следующим образом:
+* <span data-ttu-id="8e286-155">**Курсив**: элемент `<em>some text</em>` HTML записывается как `*some text*`.</span><span class="sxs-lookup"><span data-stu-id="8e286-155">**Italics:** The HTML `<em>some text</em>` element is written as `*some text*`</span></span>
+* <span data-ttu-id="8e286-156">**Полужирный**: элемент `<strong>some text</strong>` HTML записывается как `**some text**`.</span><span class="sxs-lookup"><span data-stu-id="8e286-156">**Bold:** The HTML `<strong>some text</strong>` element is written as `**some text**`</span></span>
+* <span data-ttu-id="8e286-157">**Заголовки**: заголовки HTML назначаются с символов `#` в начале строки.</span><span class="sxs-lookup"><span data-stu-id="8e286-157">**Headings:** HTML headings are designated using `#` characters at the start of the line.</span></span> 
+  <span data-ttu-id="8e286-158">Число символов `#` соответствует иерархическому уровню заголовка (например, `#` = `<h1>` и `###` = ```<h3>```).</span><span class="sxs-lookup"><span data-stu-id="8e286-158">The number of `#` characters corresponds to the hierarchical level of the heading (for example, `#` = `<h1>` and `###` = ```<h3>```).</span></span>
+* <span data-ttu-id="8e286-159">**Нумерованные списки:** чтобы создать нумерованный (упорядоченный) список, начните строку с `1. `.</span><span class="sxs-lookup"><span data-stu-id="8e286-159">**Numbered lists:** To make a numbered (ordered) list start the line with `1. `.</span></span>  
+  <span data-ttu-id="8e286-160">Если вам нужны несколько элементов в одном элементе списка, отформатируйте список следующим образом:</span><span class="sxs-lookup"><span data-stu-id="8e286-160">If you want multiple elements within a single list element, format your list as follows:</span></span>
 ```        
 1.  For the first element (like this one), insert a tab stop after the 1. 
 
     To include a second element (like this one), insert a line break after the first and align indentations.
 ```
-чтобы получить эти выходные данные:
+<span data-ttu-id="8e286-161">чтобы получить эти выходные данные:</span><span class="sxs-lookup"><span data-stu-id="8e286-161">to get this output:</span></span>
 
-1.  Для первого элемента (такого, как этот) вставьте позицию табуляции после 1. 
+1.  <span data-ttu-id="8e286-162">Для первого элемента (такого, как этот) вставьте позицию табуляции после 1.</span><span class="sxs-lookup"><span data-stu-id="8e286-162">For the first element (like this one), insert a tab stop after the 1.</span></span> 
 
-    Чтобы включить второй элемент (такой, как этот), вставьте разрыв строки после первого элемента и выровняйте отступы.
+    <span data-ttu-id="8e286-163">Чтобы включить второй элемент (такой, как этот), вставьте разрыв строки после первого элемента и выровняйте отступы.</span><span class="sxs-lookup"><span data-stu-id="8e286-163">To include a second element (like this one), insert a line break after the first and align indentations.</span></span>
 
-* **Маркированные списки**: маркированные (неупорядоченные) списки практически идентичны упорядоченным спискам, кроме того, что `1. ` заменяется на `* `, `- ` или `+ `. Списки с несколькими элементами работают так же, как упорядоченные списки.
-* **Ссылки**: синтаксис для гиперссылки — `[visible link text](link URL)`.
-* **Ссылка на другой раздел в одном наборе документов**: набор документов — это папка верхнего уровня в этом репозитории (например, "dsc", "scripting").
-    Синтаксис гиперссылки на раздел в том же наборе документов — `[topic title](relative path to topic)`. 
-    Дополнительные сведения см. в разделе [Относительные ссылки в файлах README](https://help.github.com/articles/relative-links-in-readmes/). 
-    Чтобы указать ссылку на раздел в другой папке верхнего уровня, используйте URL-адрес опубликованной страницы, как описано выше.
+* <span data-ttu-id="8e286-164">**Маркированные списки**: маркированные (неупорядоченные) списки практически идентичны упорядоченным спискам, кроме того, что `1. ` заменяется на `* `, `- ` или `+ `.</span><span class="sxs-lookup"><span data-stu-id="8e286-164">**Bulleted lists:** Bulleted (unordered) lists are almost identical to ordered lists except that the `1. ` is replaced with either `* `, `- `, or `+ `.</span></span> <span data-ttu-id="8e286-165">Списки с несколькими элементами работают так же, как упорядоченные списки.</span><span class="sxs-lookup"><span data-stu-id="8e286-165">Multiple element lists work the same way as with ordered lists.</span></span>
+* <span data-ttu-id="8e286-166">**Ссылки**: синтаксис для гиперссылки — `[visible link text](link URL)`.</span><span class="sxs-lookup"><span data-stu-id="8e286-166">**Links:** The syntax for a hyperlink is `[visible link text](link URL)`.</span></span>
+* <span data-ttu-id="8e286-167">**Ссылка на другой раздел в одном наборе документов**: набор документов — это папка верхнего уровня в этом репозитории (например, "dsc", "scripting").</span><span class="sxs-lookup"><span data-stu-id="8e286-167">**Link to another topic within the same docset:** A docset is a top-level folder in this repository (for example, "dsc", "scripting").</span></span>
+    <span data-ttu-id="8e286-168">Синтаксис гиперссылки на раздел в том же наборе документов — `[topic title](relative path to topic)`.</span><span class="sxs-lookup"><span data-stu-id="8e286-168">The syntax for a hyperlink to a topic within the same docset is `[topic title](relative path to topic)`.</span></span> 
+    <span data-ttu-id="8e286-169">Дополнительные сведения см. в разделе [Относительные ссылки в файлах README](https://help.github.com/articles/relative-links-in-readmes/).</span><span class="sxs-lookup"><span data-stu-id="8e286-169">For more information, see [Relative links in READMEs](https://help.github.com/articles/relative-links-in-readmes/).</span></span> 
+    <span data-ttu-id="8e286-170">Чтобы указать ссылку на раздел в другой папке верхнего уровня, используйте URL-адрес опубликованной страницы, как описано выше.</span><span class="sxs-lookup"><span data-stu-id="8e286-170">To link to a topic in a different top-level folder, use the URL of the published page, as described above.</span></span>
