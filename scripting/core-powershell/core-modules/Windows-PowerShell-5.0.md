@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: Windows PowerShell 5.0
-ms.technology: powershell
 ms.assetid: 2ae52a0d-2eb5-4c71-971f-fb3f612d281b
-ms.openlocfilehash: aac2b5507f6f203ad0f2ce0aef5c98b97c266869
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 80b12eab9c33945fa160bcb69644dcd1c4ef9890
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="windows-powershell-50"></a>Windows PowerShell 5.0
 В этом разделе перечислены модули командлетов и функций, включенные в Windows PowerShell. Модули Windows PowerShell в списке предоставляют основные функциональные возможности Windows PowerShell.

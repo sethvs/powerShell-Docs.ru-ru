@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: WinRMSecurity
-ms.technology: powershell
 redirect_url: https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity
-ms.openlocfilehash: 161eae06ef088685fc4f9b8667380b4a81f79212
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 70d17b2af3207af589fd9e323b8fc9ba3908b220
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="powershell-remoting-security-considerations"></a>Вопросы обеспечения безопасности удаленного взаимодействия PowerShell
 

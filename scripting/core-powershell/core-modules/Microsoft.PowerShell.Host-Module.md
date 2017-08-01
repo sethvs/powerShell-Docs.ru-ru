@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Модуль Microsoft.PowerShell.Host"
-ms.technology: powershell
 ms.assetid: 580a896f-b1dc-46f9-af1d-ab1a93c1fbf4
-ms.openlocfilehash: 81e0ca9773c9b4c6efb418cdb9ef4f0a8a4a0d2a
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 18229db227d0cbcc2172b5b70d616659f5fc05b6
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="microsoftpowershellhost-module"></a>Модуль Microsoft.PowerShell.Host
 В этом разделе содержатся разделы справки по модулю **Microsoft.PowerShell.Host**. Модуль **Microsoft.PowerShell.Host** содержит командлеты, управляющие компонентом программ, на котором размещается Windows PowerShell. Он устанавливается вместе с Windows PowerShell.

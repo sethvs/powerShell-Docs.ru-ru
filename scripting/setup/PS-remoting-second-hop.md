@@ -1,15 +1,12 @@
 ---
-title: "Выполнение второго прыжка при удаленном взаимодействии PowerShell"
-ms.date: 2016-05-11
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-description: 
-ms.topic: article
-author: eslesar
-manager: carmonmills
-ms.prod: powershell
-ms.openlocfilehash: da4cf4f1274f5b0108c1c48ecb44d478cb409165
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+title: "Выполнение второго прыжка при удаленном взаимодействии PowerShell"
+ms.openlocfilehash: 620d78987fea86ac38d2b376926d0a5cefe59721
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="making-the-second-hop-in-powershell-remoting"></a>Выполнение второго прыжка при удаленном взаимодействии PowerShell
 

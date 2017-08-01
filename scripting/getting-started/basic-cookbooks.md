@@ -1,16 +1,12 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "основные справочники"
-ms.technology: powershell
-ms.openlocfilehash: 6caf1917904b125b67fce080b503b321ad0fd47c
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: ce41482cd9d96a6dd98e0be3f649049d01f948c8
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 #  <a name="basic-cookbooks-referencecookbooksbasic-cookbooks-referencemd"></a>[Основные справочные материалы](cookbooks/basic-cookbooks-reference.md)
 

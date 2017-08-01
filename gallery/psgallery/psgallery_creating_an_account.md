@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="creating-a-powershell-gallery-account" class="xliff"></a>
-## Создание учетной записи коллекции PowerShell
+## <a name="creating-a-powershell-gallery-account"></a>Создание учетной записи коллекции PowerShell
 
 Перед публикацией чего-либо в коллекции PowerShell необходимо создать учетную запись коллекции PowerShell. Учетные записи коллекции PowerShell должны быть связаны с учетной записью с поддержкой электронной почты Azure Active Directory или учетной записью электронной почты Майкрософт (с доменом outlook.com, hotmail.com и т. д.).
 
@@ -26,8 +25,7 @@ ms.lasthandoff: 06/12/2017
 Примечание. Имя учетной записи нельзя изменить после ее создания.  
 Дополнительные сведения см. в статье [Управление владельцами элементов](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners).
 
-<a id="recommended-practices-for-powershell-gallery-accounts" class="xliff"></a>
-## Рекомендации для учетных записей коллекции PowerShell
+## <a name="recommended-practices-for-powershell-gallery-accounts"></a>Рекомендации для учетных записей коллекции PowerShell
 
 Важно, чтобы учетная запись электронной почты, используемая с вашей учетной записью PowerShell Gallery, постоянно отслеживалась.
 Связь с владельцами элементов коллекции PowerShell осуществляется через электронную почту с использованием адреса, связанного с вашей учетной записью коллекции PowerShell.

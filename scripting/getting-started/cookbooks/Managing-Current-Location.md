@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Управление текущим расположением"
-ms.technology: powershell
 ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
-ms.openlocfilehash: aa051d80e9f154212393c0fdb4258495635565b9
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 20b3828d12587e675ed51863e5d96c37839b62d6
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="managing-current-location"></a>Управление текущим расположением
 При навигации по системам папок в проводнике у вас обычно есть определенное рабочее расположение, т. е. текущая открытая папка. Элементами в текущей папке можно легко управлять, щелкая их. Когда в интерфейсе командной строки (например, Cmd.exe) открыта папка, в которой находится определенный файл, вы можете получить к нему доступ, указав короткое имя, а не вводить весь путь к файлу. Текущий каталог называется рабочим.
@@ -53,7 +49,10 @@ C:\WINDOWS
 
 Например, если вы находитесь в папке **C:\\Windows**, точка (**.**) представляет **C:\\Windows**, а две точки (**..**) представляют **C:**. Текущее расположение можно изменить на корень диска C: путем ввода следующей команды:
 
-<pre>PS> Set-Location -Path .. -PassThru Path ---- C:\</pre>
+<pre>PS> Set-Location -Path .. -PassThru
+Path
+----
+C:\</pre>
 
 Тот же метод работает для дисков Windows PowerShell, которые не являются дисками файловой системы, например **HKLM:**. В реестре в качестве расположения можно задать раздел HKLM\\Software путем ввода следующего кода:
 

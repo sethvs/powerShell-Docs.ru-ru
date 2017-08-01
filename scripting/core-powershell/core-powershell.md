@@ -1,16 +1,12 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "основы powershell"
-ms.technology: powershell
-ms.openlocfilehash: 42031324907ebc49d17faaa192e9631b355fa6b2
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 056e64e79252a411ba553dcf9e795147a994731a
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 #  <a name="common-powershell"></a>Распространенные модули PowerShell
 Этот раздел содержит все справочные материалы и подробные руководства по PowerShell.  

@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Введение в интегрированную среду сценариев Windows PowerShell"
-ms.technology: powershell
 ms.assetid: a0de70ca-909a-4807-94d1-6da86e5b52a0
-ms.openlocfilehash: 208ffd38e255c082499abdc2dd45fd2c893e7f5f
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 61d31fc2555d91bc7872d7b90cfb1f2a9832ff9c
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="introducing-the-windows-powershell-ise"></a>Введение в интегрированную среду сценариев Windows PowerShell
 Интегрированная среда сценариев Windows PowerShell (ISE) является ведущим приложением для Windows PowerShell. В интегрированной среде сценариев Windows PowerShell можно запускать команды, а также записывать, тестировать и выполнять отладку в одном графическом пользовательском интерфейсе на основе Windows с редактированием нескольких строк, заполнением нажатием клавиши TAB, раскраской синтаксических конструкций, выборочным выполнением, контекстной справкой и поддержкой письма справа налево.

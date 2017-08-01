@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Использование Windows PowerShell для администрирования"
-ms.technology: powershell
 ms.assetid: db6334ec-ace6-436d-ab88-77aefc817511
-ms.openlocfilehash: c0a15bc813e6fdb850fe2d957711f1ad005d853d
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: fa87745b9be04d14de37a308d870b73c5a98cf83
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="using-windows-powershell-for-administration"></a>Использование Windows PowerShell для администрирования
 Основная задача Windows PowerShell заключается в улучшении и упрощении администрирования системами, осуществляемого интерактивно или из сценария. В этой главе приведены решения для многих проблем, возникающих при администрировании систем Windows с помощью Windows PowerShell. Хотя мы не затрагивали сценарии или функции в руководстве пользователя Windows PowerShell, позднее эти решения можно использовать из сценариев или в виде функций. Мы рассмотрим примеры, включающие функции как часть решения для устранения проблем.

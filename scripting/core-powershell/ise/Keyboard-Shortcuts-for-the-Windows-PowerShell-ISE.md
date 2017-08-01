@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Сочетания клавиш для интегрированной среды сценариев Windows PowerShell"
-ms.technology: powershell
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
-ms.openlocfilehash: 7a6c848fe14cfed57e046ab6cf8c576f26b1bf3e
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 21c4b43b1ab94e2b533413362319ec42ac8a15aa
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a>Сочетания клавиш для интегрированной среды сценариев Windows PowerShell
 Используйте следующие сочетания клавиш для выполнения действий в интегрированной среде скриптов Windows PowerShell®. Интегрированная среда сценариев Windows PowerShell доступна в серверных и клиентских операционных системах Windows, но ее можно установить и в некоторых старых операционных системах Windows в составе [скачиваемого пакета Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881).

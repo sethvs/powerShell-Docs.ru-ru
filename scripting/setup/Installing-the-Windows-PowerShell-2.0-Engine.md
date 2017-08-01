@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Установка подсистемы Windows PowerShell 2.0"
-ms.technology: powershell
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
-ms.openlocfilehash: a59cc4ff26d6c5d5d05b4186cec1fb909751418e
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 37a300d2f0517a819f520c44f0eb92e168444890
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="installing-the-windows-powershell-20-engine"></a>Установка подсистемы Windows PowerShell 2.0
 В этом разделе описывается установка модуля Windows PowerShell 2.0.

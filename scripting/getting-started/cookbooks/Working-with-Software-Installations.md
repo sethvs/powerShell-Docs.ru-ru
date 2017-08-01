@@ -1,19 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Работа с программами установки программного обеспечения"
-ms.technology: powershell
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
-ms.openlocfilehash: 3ab302d585b69df69faa59c0561216899dd7ee9a
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.openlocfilehash: 2078376a8be19c9ff8ecc44183eb89f14bc388ed
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="working-with-software-installations"></a>Работа с программами установки программного обеспечения
 Доступ к приложениям, использующим установщик Windows, можно получить в классе **Win32_Product** WMI, но не все современные приложения используют установщик Windows. Так как установщик Windows предоставляет самый широкий ряд стандартных методов работы с устанавливаемыми приложениями, обратим внимание в первую очередь на эти приложения. Установщик Windows обычно не управляет приложениями, использующими другие процедуры установки. Конкретные техники работы с этими приложениями будут зависеть от программного обеспечения установщика и решений, принятых разработчиком приложения.

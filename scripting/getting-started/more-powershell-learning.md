@@ -1,16 +1,12 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "другие статьи о powershell"
-ms.technology: powershell
-ms.openlocfilehash: ab8413a2489cb96e7d9c9b524d371f55f505acc4
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 50b8fd15f050ed49935ffb4a8e5a7bff76ae15e8
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 #  <a name="more-powershell-learning"></a>Другие статьи о PowerShell
 

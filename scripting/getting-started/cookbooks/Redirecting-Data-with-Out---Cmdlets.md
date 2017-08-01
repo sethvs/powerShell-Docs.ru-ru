@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Перенаправление данных с помощью командлетов Out"
-ms.technology: powershell
 ms.assetid: 2a4acd33-041d-43a5-a3e9-9608a4c52b0c
-ms.openlocfilehash: afc0d9462c9b11cd53ae2443b5fd36653e87b767
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: e570ca1c2c665a4a5d23abb50d4102a012b160e9
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="redirecting-data-with-out--cmdlets"></a>Перенаправление данных с помощью командлетов Out-*
 Windows PowerShell предоставляет несколько командлетов, позволяющих напрямую управлять выходными данными. Эти командлеты обладают двумя важными характеристиками.
