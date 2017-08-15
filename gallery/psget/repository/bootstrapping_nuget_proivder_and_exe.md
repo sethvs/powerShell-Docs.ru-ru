@@ -1,17 +1,16 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: "Начальная загрузка поставщика NuGet и NuGet.exe"
-ms.openlocfilehash: e1a24c99910467b00b1c22d50125c81c63b077ed
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 0036972eb9a0c20469da1aadafe223e6ec80f16a
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="bootstrap-both-nuget-provider-and-nugetexe-or-bootstrap-only-nuget-provider" class="xliff"></a>
-# Начальная загрузка поставщика NuGet и NuGet.exe или начальная загрузка только поставщика NuGet
+# <a name="bootstrap-both-nuget-provider-and-nugetexe-or-bootstrap-only-nuget-provider"></a>Начальная загрузка поставщика NuGet и NuGet.exe или начальная загрузка только поставщика NuGet
 
 Файл NuGet.exe включен в последний поставщик NuGet.
 Для операций публикации модулей или скриптов PowerShellGet требуется двоичный исполняемый файл NuGet.exe.
@@ -22,10 +21,9 @@ PowerShellGet содержит логику обработки совместн�
 
 >**Примечание.** Начиная с версии 6, поставщик NuGet содержится в установке PowerShell. [http://github.com/powershell/powershell](http://github.com/powershell/powershell)
 
-<a id="resolving-error-when-the-nuget-provider-has-not-been-installed-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## Устранение ошибки, при которой поставщик NuGet не устанавливается на автономный компьютер
+## <a name="resolving-error-when-the-nuget-provider-has-not-been-installed-on-a-machine-that-is-internet-connected"></a>Устранение ошибки, при которой поставщик NuGet не устанавливается на автономный компьютер
 
-```PowerShell
+```powershell
 PS C:\> Find-Module -Repository PSGallery -Verbose -Name Contoso
 
 NuGet provider is required to continue
@@ -53,10 +51,9 @@ Version    Name                                Type       Repository           D
 -------    ----                                ----       ----------           -----------
 2.5        Contoso                             Module     PSGallery        Contoso module
 ```
-<a id="resolving-error-when-the-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## Устранение ошибки, при которой во время операции публикации на автономном компьютере доступен поставщик NuGet, но недоступен NuGet.exe
+## <a name="resolving-error-when-the-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected"></a>Устранение ошибки, при которой во время операции публикации на автономном компьютере доступен поставщик NuGet, но недоступен NuGet.exe
 
-```PowerShell
+```powershell
 PS C:\> Publish-Module -Name Contoso -Repository PSGallery -Verbose
 
 NuGet.exe is required to continue
@@ -78,10 +75,9 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'https://www.powershellgallery.com/api/v2/'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
 
-<a id="resolving-error-when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## Устранение ошибки, при которой во время операции публикации на автономном компьютере недоступны поставщик NuGet и NuGet.exe
+## <a name="resolving-error-when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected"></a>Устранение ошибки, при которой во время операции публикации на автономном компьютере недоступны поставщик NuGet и NuGet.exe
 
-```PowerShell
+```powershell
 PS C:\> Publish-Module -Name Contoso -Repository PSGallery -Verbose
 
 NuGet.exe and NuGet provider are required to continue
@@ -105,8 +101,7 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'https://www.powershellgallery.com/api/v2/'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
 
-<a id="manually-bootstrapping-the-nuget-provider-on-a-machine-that-is-not-connected-to-the-internet" class="xliff"></a>
-## Ручной режим начальной загрузки поставщика NuGet на автономный компьютер
+## <a name="manually-bootstrapping-the-nuget-provider-on-a-machine-that-is-not-connected-to-the-internet"></a>Ручной режим начальной загрузки поставщика NuGet на автономный компьютер
 
 В указанных выше случаях предполагается, что компьютер подключен к Интернету и может скачать файлы из общедоступного расположения.
 Если это невозможно, единственным вариантом является начальная загрузка на компьютере с помощью процессов, приведенных выше, и ручное копирование поставщика на изолированный узел с помощью автономного доверенного процесса.
@@ -125,8 +120,7 @@ NuGet<br>
 
 Скопируйте эти папки и файл с помощью доверенного процесса на автономные компьютеры.
 
-<a id="manually-bootstrapping-nugetexe-to-support-publish-operations-on-a-machine-that-is-not-connected-to-the-internet" class="xliff"></a>
-## Ручной режим начальной загрузки поставщика NuGet на автономном компьютере для поддержки операций публикации
+## <a name="manually-bootstrapping-nugetexe-to-support-publish-operations-on-a-machine-that-is-not-connected-to-the-internet"></a>Ручной режим начальной загрузки поставщика NuGet на автономном компьютере для поддержки операций публикации
 
 Если компьютер будет использоваться для публикации модулей или скриптов в частной коллекции с помощью командлетов *Publish-Module* или *Publish-Script*, помимо выполнения начальной загрузки поставщика NuGet вручную потребуется двоичный исполняемый файл NuGet.exe.
 Наиболее распространенный случай использования такого сценария — это когда частная коллекция доступна для поддержки изолированной среды.

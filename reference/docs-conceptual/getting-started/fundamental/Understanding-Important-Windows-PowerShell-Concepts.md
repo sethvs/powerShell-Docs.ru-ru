@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Основные сведения о важных концепциях Windows PowerShell"
 ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
 ms.openlocfilehash: 1ffcfefcc7ffc7c98ba4d1e3ccc9a59cd9b0baac
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="understanding-important-windows-powershell-concepts"></a>Основные сведения о важных концепциях Windows PowerShell
 Структура Windows PowerShell вобрала в себя концепции из многих различных сред. Некоторые из них знакомы пользователям с опытом работы в конкретных оболочках или средах программирования, но очень немногие знают их все. Обзор некоторых из этих концепций поможет лучше разобраться в работе оболочки.

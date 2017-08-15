@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Использование знакомых имен команд"
 ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
 ms.openlocfilehash: 5e72e721bdb9d48684092344a0169907e7e25d40
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="using-familiar-command-names"></a>Использование знакомых имен команд
 Благодаря механизму *присвоения псевдонима* Windows PowerShell позволяет пользователям ссылаться на команды с помощью альтернативных имен. За счет присвоения псевдонима пользователи, обладающие опытом работы с другими оболочками, могут повторно использовать уже известные им общие имена команд для выполнения схожих операций в Windows PowerShell. Хотя мы не намереваемся подробно рассматривать псевдонимы Windows PowerShell, их можно использовать с самого начала работы с Windows PowerShell.

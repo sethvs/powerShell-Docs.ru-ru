@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Общие сведения о конвейере Windows PowerShell"
 ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
 ms.openlocfilehash: 6d152e52d2fcfb9dd592eb9ac40500615f2186cb
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a>Общие сведения о конвейере Windows PowerShell
 Конвейер участвует в работе практически всех аспектов Windows PowerShell. Хотя вы видите текст на экране, Windows PowerShell не передает текст между командами. Вместо этого он передает объекты.

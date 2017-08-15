@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Прямое управление элементами"
 ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735
 ms.openlocfilehash: d9aa95dcb0da2e8203cbe32d64b95bf33d914166
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="manipulating-items-directly"></a>Прямое управление элементами
 Элементы, которые отображаются на дисках Windows PowerShell, например файлы и папки на дисках файловой системы и разделы реестра на дисках реестра Windows PowerShell, называются в Windows PowerShell *элементами*. Командлеты для работы с ними содержат существительное **Item** в именах.

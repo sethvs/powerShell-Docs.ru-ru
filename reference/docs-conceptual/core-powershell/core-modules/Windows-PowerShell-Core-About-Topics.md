@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Разделы справки по модулю Windows PowerShell Core"
 ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 ms.openlocfilehash: 6790850358a71b13e1057af8f99c6064c74f326b
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-powershell-core-about-topics"></a>Разделы справки по модулю Windows PowerShell Core
 Этот раздел содержит список справочных разделов, которые применяются ко всем модулям Windows PowerShell. Разделы по основным понятиям для других модулей см. в справке по конкретному модулю.

@@ -1,20 +1,19 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
-ms.openlocfilehash: e503f9a4462e94fce42ffcdcc0976d261c051f87
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 968e78beb8df77588a08a9ce8732e4abcadde4d0
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="declare-implemented-interface" class="xliff"></a>
-# Объявление реализованного интерфейса
+# <a name="declare-implemented-interface"></a>Объявление реализованного интерфейса
 
 Реализованные интерфейсы можно объявить после базовых типов или сразу после двоеточия (:), если базовый тип не указан. Все имена типов следует разделять запятыми. Это очень похоже на синтаксис C#.
 
-```PowerShell
+```powershell
 class MyComparable : system.IComparable
 {
     [int] CompareTo([object] $obj)

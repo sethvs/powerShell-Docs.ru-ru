@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Расширение по клавише TAB"
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
 ms.openlocfilehash: c158e544d79bf6010690160eea71630a1981e8a5
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="using-tab-expansion"></a>Расширение по клавише TAB
 Оболочки командной строки часто позволяют автоматически завершать длинные имена файлов или команд, что ускоряет ввод и позволяет использовать подсказки. Windows PowerShell позволяет завершать имена файлов и командлетов нажатием клавиши **TAB**.

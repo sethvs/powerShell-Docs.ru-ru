@@ -1,23 +1,21 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 0749f942d542f0e10292a49a6bb1fe47c7fd53df
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 6e0493a75e02efd81e833760f941f98566235efe
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="format-hex" class="xliff"></a>
-# Format-Hex
+# <a name="format-hex"></a>Format-Hex
 **Format-Hex** позволяет просматривать текст или двоичные данные в шестнадцатеричном формате. См. раздел [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex).
 
-<a id="example-1" class="xliff"></a>
-## Пример 1
+## <a name="example-1"></a>Пример 1
 Просмотрите содержимое строки в шестнадцатеричном формате.
 
-```PowerShell
+```powershell
 "This is a very long line to force the line folding in Format-Hex cmdlet" | Format-Hex
 ```
 

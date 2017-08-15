@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Получение объектов WMI (Get-WmiObject)"
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
 ms.openlocfilehash: e7b10648e91d1c0dc1424944e55177dc7407fe36
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-wmi-objects-get-wmiobject"></a>Получение объектов WMI (Get-WmiObject)
 

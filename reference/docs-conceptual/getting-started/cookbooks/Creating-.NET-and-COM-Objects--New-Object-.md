@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Создание объектов .NET и COM (New-Object)"
 ms.assetid: 2057b113-efeb-465e-8b44-da2f20dbf603
 ms.openlocfilehash: 534e1a9a759d67cfc62ce658a7abddf02f767212
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="creating-net-and-com-objects-new-object"></a>Создание объектов .NET и COM (New-Object)
 Существуют программные компоненты с интерфейсами платформы .NET Framework и COM, которые позволяют выполнять множество задач системного администрирования. Windows PowerShell позволяет использовать эти компоненты, поэтому доступные задачи не ограничиваются только применением командлетов. Множество командлетов в первом выпуске Windows PowerShell не работают с удаленными компьютерами. Мы покажем, как преодолеть это ограничение при управлении журналами событий с помощью класса **System.Diagnostics.EventLog** .NET Framework непосредственно из Windows PowerShell.

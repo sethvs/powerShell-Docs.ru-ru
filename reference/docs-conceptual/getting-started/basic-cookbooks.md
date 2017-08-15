@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "основные справочники"
 ms.openlocfilehash: ce41482cd9d96a6dd98e0be3f649049d01f948c8
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="basic-cookbooks-referencecookbooksbasic-cookbooks-referencemd"></a>[Основные справочные материалы](cookbooks/basic-cookbooks-reference.md)
 

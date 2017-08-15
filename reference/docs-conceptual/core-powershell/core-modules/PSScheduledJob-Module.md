@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Модуль PSScheduledJob"
 ms.assetid: 9ab43b8d-3f4d-48fe-a274-9116f1bc4b60
 ms.openlocfilehash: 54f5cde176843b75c5f5de728144d748895492ec
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="psscheduledjob-module"></a>Модуль PSScheduledJob
 В этом разделе содержатся разделы справки по модулю **PSScheduledJob**, управляющему запланированными заданиями в Windows PowerShell. Этот модуль устанавливается вместе с Windows PowerShell.

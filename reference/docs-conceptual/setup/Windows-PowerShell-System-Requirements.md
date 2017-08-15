@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Требования к системе для Windows PowerShell"
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
 ms.openlocfilehash: 550d8adab18941da3204e0aea8fc8a70f890c289
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-powershell-system-requirements"></a>Требования к системе для Windows PowerShell
 В этой статье описаны требования к системе для Windows PowerShell 3.0, Windows PowerShell 4.0 и Windows PowerShell 5.0, а также для специальных функций, таких как интегрированная среда сценариев (ISE) Windows PowerShell, команды CIM и рабочие процессы.

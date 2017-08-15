@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
 ms.openlocfilehash: 7dc92275c30ad783ad71b2a4825e9cc0d26d1691
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
 Вкладки в интегрированной среде скриптов Windows PowerShell® позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения. Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.

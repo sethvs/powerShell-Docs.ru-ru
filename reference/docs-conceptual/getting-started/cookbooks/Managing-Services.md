@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Управление службами"
 ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
 ms.openlocfilehash: 9fd6c8bcfecc99756188409629ddf94b880aab91
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="managing-services"></a>Управление службами
 Существует восемь основных командлетов Service, предназначенных для широкого спектра задач обслуживания. Мы рассмотрим только вывод и изменение состояния выполнения для служб, но список командлетов Service можно получить с помощью **Get-Help \&#42;-Service**, а сведения о каждом из них можно найти с помощью **Get-Help<имя_командлета>**, например **Get-Help New-Service**.

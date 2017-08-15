@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Выполнение удаленных команд"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: a8645a348ebc25533f60cd049ed5872e49565b96
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 755c3c4ac93219c1d0f75394d1c900e8b5fea4be
+ms.sourcegitcommit: ced46469e064736eeb1f5608abbc792ec69bdc92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="running-remote-commands"></a>Выполнение удаленных команд
 Вы можете запускать команды на одном или сотнях компьютеров одной командой Windows PowerShell. Windows PowerShell поддерживает удаленное вычисление с помощью разных технологий, включая WMI, RPC и WS-Management.
@@ -27,7 +27,7 @@ ms.lasthandoff: 06/08/2017
 
 -   [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
 
--   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
+ -   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
 
 -   [Get-Service](https://technet.microsoft.com/en-us/library/dd347591.aspx)
 
@@ -72,7 +72,7 @@ Exit-PSSession
 Например, чтобы выполнить команду [Get-UICulture](https://technet.microsoft.com/en-us/library/dd347742.aspx) на удаленных компьютерах Server01 и Server02, введите:
 
 ```
-Invoke-Command -ComputerName Server01, Server02 {Get-UICulture}
+Invoke-Command -ComputerName Server01, Server02 -ScriptBlock {Get-UICulture}
 ```
 
 Выходные данные будут возвращены на ваш компьютер.
@@ -83,7 +83,6 @@ LCID    Name     DisplayName               PSComputerName
 1033    en-US    English (United States)   server01.corp.fabrikam.com
 1033    en-US    English (United States)   server02.corp.fabrikam.com
 ```
-
 Дополнительные сведения о командлете Invoke-Command см. в статье [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462).
 
 ### <a name="run-a-script"></a>Запуск сценария
@@ -117,14 +116,14 @@ Invoke-Command -Session $s {$h = Get-HotFix}
 Теперь данные в переменной $h можно использовать в последующих командах, таких как следующая. Результаты отобразятся на локальном компьютере.
 
 ```
-Invoke-Command -Session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}}
+Invoke-Command -Session $s {$h | where {$_.InstalledBy -ne "NTAUTHORITY\SYSTEM"}}
 ```
 
 ### <a name="advanced-remoting"></a>Расширенная служба удаленного взаимодействия
 Это и есть служба удаленного взаимодействия Windows PowerShell. Используя командлеты, установленные с Windows PowerShell, можно установить и настроить удаленные сеансы с локальных и удаленных компьютеров, создать настраиваемые и ограниченные сеансы, разрешить пользователям импортировать команды из удаленного сеанса, которые могут неявно выполняться в удаленном сеансе, настроить безопасность удаленного сеанса и многое другое.
 
 Для упрощения настройки в PowerShell включен поставщик WSMan. Диск WSMAN:, созданный поставщиком, позволяет перемещаться по иерархии параметров конфигурации на локальном и удаленном компьютерах.
-Дополнительные сведения о поставщике WSMan см. в разделах [WSMan Provider](https://technet.microsoft.com/en-us/library/dd819476.aspx) и   [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/dd819481.aspx) или введите команду Get-Help wsman в консоли Windows PowerShell.
+Дополнительные сведения о поставщике WSMan см. в разделах [WSMan Provider](https://technet.microsoft.com/en-us/library/dd819476.aspx) и [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/dd819481.aspx) или введите команду Get-Help wsman в консоли Windows PowerShell.
 
 Дополнительная информация:
 - [Часто задаваемые вопросы об удаленном взаимодействии](https://technet.microsoft.com/en-us/library/dd315359.aspx)

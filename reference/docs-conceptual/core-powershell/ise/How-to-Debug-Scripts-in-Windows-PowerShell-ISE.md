@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Отладка сценариев в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: 6dc6d8f9-8978-46e9-a92f-169af37e2817
 ms.openlocfilehash: db8847e2cc9abeec729ed8d939fc170529a93846
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-debug-scripts-in-windows-powershell-ise"></a>Отладка сценариев в интегрированной среде сценариев Windows PowerShell
 В этой статье описано, как отлаживать скрипты на локальном компьютере визуальными инструментами отладки интегрированной среды скриптов Windows PowerShell® (ISE).

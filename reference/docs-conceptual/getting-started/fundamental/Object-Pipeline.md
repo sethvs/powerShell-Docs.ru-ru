@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Конвейер объектов"
 ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
 ms.openlocfilehash: 3fa41cc744cf3ab66fc5ef186ead8eb919429a76
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="object-pipeline"></a>Конвейер объектов
 Конвейеры представляют собой последовательность соединенных сегментов канала. Элементы, перемещающиеся по конвейеру, проходят через каждый сегмент. Для создания конвейера в Windows PowerShell команды соединяются друг с другом с помощью оператора канала "|". Результат каждой команды используется в качестве входных данных для следующей.

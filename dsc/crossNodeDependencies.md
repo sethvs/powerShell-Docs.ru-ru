@@ -1,17 +1,16 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Указание межузловых зависимостей"
-ms.openlocfilehash: dcdf9f8ef4b74d23bd083767db2cc4aafc0ee83b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 885c130fb050629aac4c072e18a147d77b9deb8f
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="specifying-cross-node-dependencies" class="xliff"></a>
-# Указание межузловых зависимостей
+# <a name="specifying-cross-node-dependencies"></a>Указание межузловых зависимостей
 
 > Область применения: Windows PowerShell 5.0
 
@@ -21,8 +20,7 @@ DSC предоставляет специальные ресурсы, **WaitForA
 * **WaitForAny** — успешное выполнение, если указанный ресурс находится в нужном состоянии как минимум на одном из целевых узлов, определенных в свойстве **NodeName**.
 * **WaitForSome** — указывает свойство **NodeCount** в дополнение к свойству **NodeName**. Ресурс выполняется успешно, если он находится в нужном состоянии на минимальном количестве узлов (определяется свойством **NodeCount**), заданных свойством **NodeName**. 
 
-<a id="using-waitforxxxx-resources" class="xliff"></a>
-## Использование ресурсов WaitForXXXX
+## <a name="using-waitforxxxx-resources"></a>Использование ресурсов WaitForXXXX
 
 Для использования ресурсов **WaitForXXXX** создается блок этого типа ресурса, указывающий ресурсы и узлы DSC для ожидания. Затем используется свойство **DependsOn** в любых других блоках ресурсов в конфигурации для ожидания успешного выполнения условий, указанных в узле **WaitForXXXX**.
 
@@ -34,7 +32,7 @@ Configuration JoinDomain
 {
     Import-DscResource -Module xComputerManagement, xActiveDirectory
 
-    Node myPC
+    Node myDC
     {
         WindowsFeature InstallAD
         {
@@ -78,8 +76,7 @@ Configuration JoinDomain
 
 >**Примечание.** По умолчанию ресурсы WaitForXXX выполняют одну попытку, а затем выдают ошибку. Хотя это необязательно, обычно требуется указать интервал и число повторных попыток.
 
-<a id="see-also" class="xliff"></a>
-## См. также
+## <a name="see-also"></a>См. также
 * [Конфигурации DSC](configurations.md)
 * [Ресурсы DSC](resources.md)
 * [Настройка локального диспетчера конфигураций](metaConfig.md)

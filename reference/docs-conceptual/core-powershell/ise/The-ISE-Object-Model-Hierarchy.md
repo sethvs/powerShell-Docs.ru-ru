@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Иерархия объектной модели интегрированной среды сценариев"
 ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
 ms.openlocfilehash: 0d0370ed9f64464038e643ae2cd241891fa74f33
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-ise-object-model-hierarchy"></a>Иерархия объектной модели интегрированной среды сценариев
   В этом разделе демонстрируется иерархия объектов, которые входят в состав интегрированной среды сценариев Windows PowerShell (ISE). Интегрированная среда сценариев Windows PowerShell входит в состав Windows PowerShell 3.0 и Windows PowerShell 4.0. Щелкните объект, чтобы перейти к справочной документации для класса, определяющего объект.

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Объектная модель сценариев интегрированной среды сценариев Windows PowerShell"
 ms.assetid: 69b047d0-da79-413e-b948-8e45d05d1f85
 ms.openlocfilehash: 86a1cbf004fa95003855fa2e57f39f13ca1d9375
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-windows-powershell-ise-scripting-object-model"></a>Объектная модель сценариев интегрированной среды сценариев Windows PowerShell
   Интегрированная среда скриптов (ISE) Windows PowerShell® предоставляет свои возможности через базовую объектную модель скриптов, которая позволяет создавать скрипты Windows PowerShell, управляющие различными визуальными и функциональными аспектами интегрированной среды скриптов Windows PowerShell. Объекты сценариев, их свойства и методы определяются специально для этой цели.

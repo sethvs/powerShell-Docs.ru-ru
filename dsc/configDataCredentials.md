@@ -1,21 +1,19 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Параметры учетных данных в данных конфигурации"
-ms.openlocfilehash: 7fadce447c418b229a534e92d12bc2131365a37a
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: ec4eeb8e519158b2bf929b949e381cdba54f8928
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="credentials-options-in-configuration-data" class="xliff"></a>
-# Параметры учетных данных в данных конфигурации
+# <a name="credentials-options-in-configuration-data"></a>Параметры учетных данных в данных конфигурации
 >Область применения: Windows PowerShell 5.0
 
-<a id="plain-text-passwords-and-domain-users" class="xliff"></a>
-## Пароли в виде простого текста и пользователи домена
+## <a name="plain-text-passwords-and-domain-users"></a>Пароли в виде простого текста и пользователи домена
 
 Конфигурации DSC, содержащие незашифрованные учетные данные, приводят к сообщениям об ошибке в связи с указанием паролей в виде простого текста.
 Кроме того, DSC выдает предупреждение при использовании учетных данных домена.
@@ -125,8 +123,7 @@ unencryptedPasswordDemo -ConfigurationData $ConfigurationData
 Start-DscConfiguration ./unencryptedPasswordDemo -verbose -wait -force
 ```
 
-<a id="handling-credentials-in-dsc" class="xliff"></a>
-## Обработка учетных данных в DSC
+## <a name="handling-credentials-in-dsc"></a>Обработка учетных данных в DSC
 
 По умолчанию ресурсы DSC запускаются от имени `Local System`.
 При этом некоторые ресурсы требуют учетных данных, например, если ресурсу `Package` необходимо установить программное обеспечение с помощью учетной записи определенного пользователя.
@@ -139,7 +136,7 @@ Start-DscConfiguration ./unencryptedPasswordDemo -verbose -wait -force
 
 Чтобы найти доступные свойства учетных данных ресурса, используйте `Get-DscResource -Name ResourceName -Syntax` или Intellisense в интегрированной среде сценариев (`CTRL+SPACE`).
 
-```PowerShell
+```powershell
 PS C:\> Get-DscResource -Name Group -Syntax
 Group [String] #ResourceName
 {
@@ -162,8 +159,7 @@ Group [String] #ResourceName
 
 См. дополнительные сведения о свойстве `PsDscRunAsCredential` и [запуске DSC с учетными данными пользователя](runAsUser.md).
 
-<a id="example-the-group-resource-credential-property" class="xliff"></a>
-## Пример: свойство учетных данных для ресурса Group
+## <a name="example-the-group-resource-credential-property"></a>Пример: свойство учетных данных для ресурса Group
 
 DSC выполняется в качестве `Local System`, поэтому уже имеет разрешения на изменение локальных пользователей и групп.
 Если в локальную учетную группу добавляется новый пользователь, учетные данные не требуются.
@@ -173,12 +169,11 @@ DSC выполняется в качестве `Local System`, поэтому у
 Свойство `Credential` ресурса `Group` — это учетная запись домена, которая используется для запросов к Active Directory.
 В большинстве случаев это может быть универсальная учетная запись пользователя, поскольку пользователи по умолчанию могут *читать* большинство объектов в Active Directory.
 
-<a id="example-configuration" class="xliff"></a>
-## Пример конфигурации
+## <a name="example-configuration"></a>Пример конфигурации
 
 В следующем примере кода DSC используется для добавления пользователя домена в локальную группу:
 
-```PowerShell
+```powershell
 Configuration DomainCredentialExample
 {
     param
@@ -229,8 +224,7 @@ for node 'localhost'.
 1.  Ошибка с указанием на то, что использовать пароли в виде простого текста не рекомендуется.
 2.  Предупреждение с рекомендацией не использовать доменные учетные данные.
 
-<a id="psdscallowplaintextpassword" class="xliff"></a>
-## PsDscAllowPlainTextPassword
+## <a name="psdscallowplaintextpassword"></a>PsDscAllowPlainTextPassword
 
 В первом сообщении об ошибке находится URL-адрес документации.
 Он содержит инструкции по шифрованию паролей с использованием структуры [ConfigurationData](https://msdn.microsoft.com/en-us/powershell/dsc/configdata) и сертификата.
@@ -238,7 +232,7 @@ for node 'localhost'.
 
 Чтобы принудительно использовать пароль в виде простого текста, необходимо добавить в раздел данных конфигурации ресурса ключ `PsDscAllowPlainTextPassword` следующим образом:
 
-```PowerShell
+```powershell
 Configuration DomainCredentialExample
 {
     param
@@ -275,8 +269,7 @@ DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 
 **Корпорация Майкрософт не рекомендует использовать пароли в виде простого текста из-за серьезной угрозы безопасности.**
 
-<a id="domain-credentials" class="xliff"></a>
-## Доменные учетные данные
+## <a name="domain-credentials"></a>Доменные учетные данные
 
 Выполнив сценарий конфигурации из примера еще раз (с шифрованием или без), вы снова получите предупреждение о том, что использовать доменную учетную запись в качестве учетных данных не рекомендуется.
 Пользуясь для этой цели локальной учетной записью, вы защитите от риска доменные учетные данные, которые можно использовать на других серверах.
@@ -286,13 +279,12 @@ DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 Если свойство `Username` учетных данных содержит \' или @, DSC будет рассматривать их как доменную учетную запись.
 Исключение составляют значения localhost, 127.0.0.1 и ::1 в доменной части имени пользователя.
 
-<a id="psdscallowdomainuser" class="xliff"></a>
-## PSDscAllowDomainUser
+## <a name="psdscallowdomainuser"></a>PSDscAllowDomainUser
 
 В приведенном выше примере ресурса `Group` DSC для запроса к домену Active Directory *требуется* доменная учетная запись.
 В этом случае добавьте свойство `PSDscAllowDomainUser` в блок `ConfigurationData` следующим образом:
 
-```PowerShell
+```powershell
 $cd = @{
     AllNodes = @(
         @{

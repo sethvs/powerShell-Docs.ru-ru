@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Сведения о Windows PowerShell"
 ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
 ms.openlocfilehash: 5e6d1bb4d8915ba3c83ba0020b959e444b5211cd
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="about-windows-powershell"></a>Сведения о Windows PowerShell
 Windows PowerShell помогает улучшить среду командной строки и сценариев за счет устранения застарелых проблем и добавления новых функций.
