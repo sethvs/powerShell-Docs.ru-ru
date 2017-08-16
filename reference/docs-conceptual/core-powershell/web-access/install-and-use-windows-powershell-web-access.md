@@ -1,15 +1,14 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Установка и использование Windows PowerShell Web Access"
 ms.openlocfilehash: a860f7c22829da46f0458ea729fa0afd1fe4fb6f
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
-<a id="install-and-use-windows-powershell-web-access" class="xliff"></a>
-#  Установка и использование Windows PowerShell Web Access
+#  <a name="install-and-use-windows-powershell-web-access"></a>Установка и использование Windows PowerShell Web Access
 
 Обновлено: 5 ноября 2013 г.
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/08/2017
 
 Следующая схема демонстрирует работу Windows PowerShell Web Access.
 
-<span><img src="https://i-technet.sec.s-msft.com/dynimg/IC564303.jpeg" title="Windows PowerShell Web Access diagram" alt="Windows PowerShell Web Access diagram" id="ee15fa8f-ce13-49e5-933d-514f6d60a2b1" /></span>
+<span><img src="https://i-technet.sec.s-msft.com/dynimg/IC564303.jpeg" title="Схема Windows PowerShell Web Access" alt="Windows PowerShell Web Access diagram" id="ee15fa8f-ce13-49e5-933d-514f6d60a2b1" /></span>
 
 Содержание раздела:
 
@@ -51,8 +50,8 @@ ms.lasthandoff: 06/08/2017
 
 <a href="" id="BKMK_reqs"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования для запуска Windows PowerShell Web Access</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования для запуска Windows PowerShell Web Access</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -62,8 +61,8 @@ Windows PowerShell Web Access позволяет удаленным пользо
 
 <a href="" id="BKMK_browser"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддержка браузеров и клиентских устройств</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддержка браузеров и клиентских устройств</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -71,7 +70,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддерживаемые браузеры для настольных компьютеров</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддерживаемые браузеры для настольных компьютеров</span></a>
 
 ------------------------------------------------------------------------
 
@@ -87,7 +86,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Минимально протестированные мобильные устройства или браузеры</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Минимально протестированные мобильные устройства или браузеры</span></a>
 
 ------------------------------------------------------------------------
 
@@ -101,7 +100,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования к браузерам</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования к браузерам</span></a>
 
 ------------------------------------------------------------------------
 
@@ -115,8 +114,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_recm"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Рекомендуемая схема (быстрого) развертывания</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Рекомендуемое (быстрое) развертывание</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -131,12 +130,11 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_step1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-<a id="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets" class="xliff"></a>
-#### Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
+#### <a name="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Установка Windows PowerShell Web Access с помощью командлетов Windows PowerShell
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -195,7 +193,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_step2"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
 
 ------------------------------------------------------------------------
 
@@ -209,7 +207,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 </colgroup>
 <thead>
 <tr class="header">
-<th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание о безопасности </span></th>
+<th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание по безопасности </span></th>
 </tr>
 </thead>
 <tbody>
@@ -223,8 +221,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 -   [Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS](#BKMK_gencert)
 
-<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication" class="xliff"></a>
-#### Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication"></a>Настройка шлюза Windows PowerShell Web Access с тестовым сертификатом с помощью Install-PswaWebApplication
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -242,7 +239,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
     </colgroup>
     <thead>
     <tr class="header">
-    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание о безопасности </span></th>
+    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание по безопасности </span></th>
     </tr>
     </thead>
     <tbody>
@@ -284,8 +281,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
     </tbody>
     </table>
 
-<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager" class="xliff"></a>
-#### Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager"></a>Настройка шлюза Windows PowerShell Web Access с подлинным сертификатом с использованием командлета Install-PswaWebApplication и диспетчера IIS
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell.
 
@@ -344,7 +340,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_step3"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -352,8 +348,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -381,8 +376,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_custom"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Пользовательское развертывание</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Пользовательское развертывание</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -391,12 +386,11 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_custom1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 1. Установка Windows PowerShell Web Access</span></a>
 
 ------------------------------------------------------------------------
 
-<a id="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard" class="xliff"></a>
-#### Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
+#### <a name="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard"></a>Установка Windows PowerShell Web Access с помощью мастера добавления ролей и компонентов
 
 1.  Если диспетчер серверов уже открыт, переходите к следующему шагу. Если диспетчер серверов еще не открыт, откройте его одним из следующих способов.
 
@@ -436,7 +430,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 2. Настройка шлюза</span></a>
 
 ------------------------------------------------------------------------
 
@@ -448,8 +442,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 -   
 
-<a id="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website" class="xliff"></a>
-#### Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
+#### <a name="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website"></a>Использование диспетчера служб IIS для настройки шлюза в существующем веб-сайте
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -511,8 +504,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
         c:\windows\system32\icacls.exe $authorizationFile
 
-<a id="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate" class="xliff"></a>
-#### Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
+#### <a name="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate"></a>Использование диспетчера служб IIS для настройки шлюза в качестве корневого веб-сайта с тестовым сертификатом
 
 1.  Откройте консоль "Диспетчер служб IIS", выполнив одно из следующих действий.
 
@@ -582,7 +574,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Шаг 3. Настройка ограничивающего правила авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -590,8 +582,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 Дополнительные сведения о безопасности и правилах авторизации Windows PowerShell Web Access см. в разделе [Правила авторизации и средства безопасности Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx).
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -619,15 +610,14 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_configcert"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Настройка подлинного сертификата</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Настройка подлинного сертификата</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
 Для безопасной производственной среды следует всегда использовать действительный сертификат SSL, подписанный центром сертификации (ЦС). В этом разделе описано, как получить и установить действительный SSL-сертификат от центра сертификации.
 
-<a id="to-configure-an-ssl-certificate-in-iis-manager" class="xliff"></a>
-### Настройка SSL-сертификата в диспетчере служб IIS
+### <a name="to-configure-an-ssl-certificate-in-iis-manager"></a>Настройка SSL-сертификата в диспетчере служб IIS
 
 1.  В области дерева диспетчера служб IIS выберите сервер, на котором установлен компонент Windows PowerShell Web Access.
 
@@ -649,15 +639,15 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_using"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Использование веб-консоли Windows PowerShell</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_5" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Использование веб-консоли Windows PowerShell</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_5" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
 После установки Windows PowerShell Web Access и завершения настройки шлюза, описанной в этой статье, веб-консоль Windows PowerShell готова к использованию. Дополнительные сведения о начале работы с веб-консолью см. в статье [Использование веб-консоли Windows PowerShell](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx).
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_6" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_6" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 

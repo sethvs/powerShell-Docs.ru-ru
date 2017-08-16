@@ -1,15 +1,14 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Правила авторизации и средства безопасности Windows PowerShell Web Access"
 ms.openlocfilehash: 706830f618173879185f5b84570fdc7782434d59
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
-<a id="authorization-rules-and-security-features-of-windows-powershell-web-access" class="xliff"></a>
-# Правила авторизации и средства безопасности Windows PowerShell Web Access
+# <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Правила авторизации и средства безопасности Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -36,7 +35,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 </colgroup>
 <thead>
 <tr class="header">
-<th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание о безопасности </span></th>
+<th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание по безопасности </span></th>
 </tr>
 </thead>
 <tbody>
@@ -112,7 +111,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 <a href="" id="BKMK_sec"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Безопасность</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Безопасность</span></a>
 
 ------------------------------------------------------------------------
 
@@ -168,7 +167,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 <a href="" id="BKMK_configrules"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Настройка правил авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Настройка правил авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -194,8 +193,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 </tbody>
 </table>
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### Добавление ограничивающего правила авторизации
+#### <a name="to-add-a-restrictive-authorization-rule"></a>Добавление ограничивающего правила авторизации
 
 1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами.
 
@@ -219,8 +217,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 4.  Убедитесь, что правило создано, выполнив командлет **Get-PswaAuthorizationRule** или **Test-PswaAuthorizationRule -UserName &lt;домен\\пользователь | компьютер\\пользователь&gt; -ComputerName** &lt;имя_компьютера&gt;. Например, **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**.
 
-<a id="to-remove-an-authorization-rule" class="xliff"></a>
-#### Удаление правила авторизации
+#### <a name="to-remove-an-authorization-rule"></a>Удаление правила авторизации
 
 1.  Если сеанс Windows PowerShell еще не открыт, см. шаг 1 процедуры [Добавление неограничивающего правила авторизации](#BKMK_arar) в этом разделе.
 
@@ -251,7 +248,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 <a href="" id="BKMK_others"></a>
 ####
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Другие примеры сценария правил авторизации</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Другие примеры сценариев правил авторизации</span></a>
 
 ------------------------------------------------------------------------
 
@@ -271,7 +268,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
     </colgroup>
     <thead>
     <tr class="header">
-    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание о безопасности </span></th>
+    <th><span><img src="https://i-technet.sec.s-msft.com/dynimg/IC17938.jpeg" title="System_CAPS_security" alt="System_CAPS_security" id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-security" /></span><span class="alertTitle"> Примечание по безопасности </span></th>
     </tr>
     </thead>
     <tbody>
@@ -313,7 +310,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Использование одного набора правил авторизации для нескольких сайтов</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Использование одного набора правил авторизации для нескольких сайтов</span></a>
 
 ------------------------------------------------------------------------
 
@@ -323,8 +320,8 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 <a href="" id="BKMK_sesmgmt"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Управление сеансом</span></a>
-<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Управление сеансами</span></a>
+<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -334,7 +331,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Установка параметров по умолчанию на странице входа</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Установка параметров по умолчанию на странице входа</span></a>
 
 ------------------------------------------------------------------------
 
@@ -355,7 +352,7 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Время ожидания и незапланированные отключения</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Время ожидания и незапланированные отключения</span></a>
 
 ------------------------------------------------------------------------
 
@@ -365,8 +362,8 @@ Windows PowerShell® Web Access в Windows Server® 2012 R2 и Windows Server�
 
 Если сервер шлюза работает под управлением Windows Server 2012 R2, Windows PowerShell Web Access предоставляет пользователям возможность повторного подключения к сохраненным сеансам позднее, но, когда сеанс был отключен из-за сетевых ошибок, незапланированного завершения работы или другого сбоя, пользователи не смогут увидеть сохраненные сеансы и повторно к ним подключиться, пока не истечет время ожидания, заданное администратором шлюза.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
-<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
+<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 

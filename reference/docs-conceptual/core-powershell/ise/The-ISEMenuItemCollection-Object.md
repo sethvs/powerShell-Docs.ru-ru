@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Объект ISEMenuItemCollection"
 ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
 ms.openlocfilehash: 7ce9132021d4d5e755503e0adb355beb388a625a
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-isemenuitemcollection-object"></a>Объект ISEMenuItemCollection
   Объект **ISEMenuItemCollection**  — это коллекция объектов **ISEMenuItem**. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEMenuItemCollection. Примером является объект **$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus**, используемый для настройки меню **Надстройка** (Add-On) в интегрированной среде скриптов Windows PowerShell® (ISE).
@@ -19,17 +19,13 @@ ms.lasthandoff: 06/08/2017
 
  Добавляет пункт меню в коллекцию.
 
- **DisplayName**
- — отображаемое имя добавляемого меню.
+ **DisplayName** — отображаемое имя добавляемого меню.
 
- **Action**
- — объект **System.Management.Automation.ScriptBlock**, указывающий действие, связанное с этим пунктом меню.
+ **Action** — объект **System.Management.Automation.ScriptBlock**, указывающий действие, связанное с этим пунктом меню.
 
- **Shortcut**
- — сочетание клавиш для действия.
+ **Shortcut** — сочетание клавиш для действия.
 
- **Returns**
- — объект ISEMenuItem, который был только что добавлен.
+ **Returns** — объект ISEMenuItem, который только что был добавлен.
 
 ```
 # Create an Add-ons menu with an fast access key and a shortcut.

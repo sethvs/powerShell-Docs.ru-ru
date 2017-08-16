@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Объект PowerShellTab"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 ms.openlocfilehash: d4e9374202d352a30b3eb46bcf1e4e40dea49822
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-powershelltab-object"></a>Объект PowerShellTab
   Объект **PowerShellTab** представляет среду выполнения Windows PowerShell.
@@ -40,8 +40,7 @@ $psise.PowerShellTabs[1].Invoke({dir})
 
  **Script** — System.Management.Automation.ScriptBlock или строка. Блок сценария для запуска.
 
- **\[useNewScope\]** — необязательный логический параметр; значение по умолчанию — **$true**
-. Если задано значение **$true**, создается новая область для выполнения команды. Параметр не изменяет среду выполнения вкладки PowerShell, которая указана командой.
+ **\[useNewScope\]** — необязательный логический параметр; значение по умолчанию — **$true**. Если задано значение **$true**, создается новая область для выполнения команды. Параметр не изменяет среду выполнения вкладки PowerShell, которая указана командой.
 
  **\[millisecondsTimeout\]** — необязательный, целое число. Значение по умолчанию — **500**.
 Если команда не завершается в течение указанного времени, то создается исключение **TimeoutException** с сообщением "Время ожидания операции истекло".

@@ -1,15 +1,14 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Использование веб-консоли Windows PowerShell"
 ms.openlocfilehash: 48ed1646c00f909c4e950f197f51a30205060ef0
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
-<a id="use-the-web-based-windows-powershell-console" class="xliff"></a>
-#  Использование веб-консоли Windows PowerShell
+#  <a name="use-the-web-based-windows-powershell-console"></a>Использование веб-консоли Windows PowerShell
 
 Обновлено: 24 июня 2013 г.
 
@@ -36,7 +35,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддерживаемые браузеры для настольных компьютеров</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Поддерживаемые браузеры для настольных компьютеров</span></a>
 
 ------------------------------------------------------------------------
 
@@ -52,7 +51,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Минимально протестированные мобильные устройства или браузеры</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Минимально протестированные мобильные устройства или браузеры</span></a>
 
 ------------------------------------------------------------------------
 
@@ -66,7 +65,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования к браузерам</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Требования к браузерам</span></a>
 
 ------------------------------------------------------------------------
 
@@ -80,15 +79,14 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_sign"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Вход в Windows PowerShell Web Access</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Вход в систему Windows PowerShell Web Access</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
 Администратор Windows PowerShell Web Access должен предоставить вам URL-адрес веб-сайта шлюза Windows PowerShell Web Access для вашей организации. По умолчанию используется следующий адрес веб-сайта: https://&lt;имя_сервера&gt;/pswa. Прежде чем выполнить вход в Windows PowerShell Web Access, убедитесь, что у вас есть имя или IP-адрес удаленного компьютера, который предполагается администрировать. Вы должны быть полномочным пользователем удаленного компьютера, а компьютер должен быть настроен для удаленного администрирования. Дополнительные сведения о настройке компьютера для удаленного администрирования см. в разделе [Включение и использование удаленных команд в Windows PowerShell](https://technet.microsoft.com/magazine/ff700227.aspx). Настроить компьютер для удаленного администрирования проще всего, выполнив на нем командлет **Enable-PSRemoting -force** в сеансе Windows PowerShell с повышенными привилегиями пользователя (**Запуск от имени администратора**).
 
-<a id="to-sign-in-to-windows-powershell-web-access" class="xliff"></a>
-### Вход в систему Windows PowerShell Web Access
+### <a name="to-sign-in-to-windows-powershell-web-access"></a>Вход в систему Windows PowerShell Web Access
 
 1.  Откройте веб-сайт Windows PowerShell Web Access в браузере или на вкладке.
 
@@ -126,8 +124,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_timeout"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Выход и превышение времени ожидания</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Выход из системы и превышение времени ожидания</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -157,8 +155,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 <a href="" id="BKMK_web"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Отличительные особенности веб-консоли Windows PowerShell</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Отличительные особенности веб-консоли Windows PowerShell</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 
@@ -166,7 +164,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Принципиальные функциональные отличия от PowerShell.exe</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Принципиальные функциональные отличия от PowerShell.exe</span></a>
 
 ------------------------------------------------------------------------
 
@@ -278,7 +276,7 @@ Windows PowerShell Web Access поддерживает перечисленны�
 <a href="" id="BKMK_limits"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Ограничения веб-консоли</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Ограничения веб-консоли</span></a>
 
 ------------------------------------------------------------------------
 
@@ -331,8 +329,8 @@ Windows PowerShell Web Access поддерживает перечисленны�
 
         Дополнительные примеры по настройке внешнего вида консоли доступны в [блоге группы Windows PowerShell](http://blogs.msdn.com/b/powershell/).
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свернуть"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a>
 
 ------------------------------------------------------------------------
 

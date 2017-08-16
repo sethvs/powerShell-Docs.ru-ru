@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: "powershell,командлет"
 title: "Объект ISEFile"
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
 ms.openlocfilehash: 0e1c09c4a92868448d76cc7b4954d250773ce2f2
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-isefile-object"></a>Объект ISEFile
   Объект **ISEFile** представляет файл в интегрированной среде скриптов (ISE) Windows PowerShell®. Он является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEFile. В этом разделе перечислены его члены (методы и свойства). Объект **$PsISE.CurrentFile** и все файлы в коллекции "Файлы" на вкладке PowerShell являются экземплярами класса Microsoft.PowerShell.Host.ISE.ISEFile.
@@ -19,8 +19,7 @@ ms.lasthandoff: 06/08/2017
 
  Сохраняет файл на диске.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
-. Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
+ **\[saveEncoding\]** — необязательный параметр кодировки символов [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx), используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
  -   **System.IO.IOException**: не удалось сохранить файл.
@@ -45,8 +44,7 @@ $myfile.Encoding
 
  **filename** — строка. Имя, используемое для сохранения файла.
 
- **\[saveEncoding\]** — необязательный [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
-. Необязательный параметр кодировки символов, используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
+ **\[saveEncoding\]** — необязательный параметр кодировки символов [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx), используемый для сохраненного файла. Значение по умолчанию — **UTF8**.
 
  **Исключения**
  -   **System.ArgumentNullException**: параметр **filename** имеет значение NULL.
