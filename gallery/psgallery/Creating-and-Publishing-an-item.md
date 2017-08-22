@@ -4,14 +4,13 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery"
 title: "Создание и публикация элемента"
-ms.openlocfilehash: e71381d1a3efda73832fab6189bda26cee411d9e
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b6bcd3e923b77ad7d19a1d92aeb78222bff7ea7e
+ms.sourcegitcommit: e08f036021e9f115dbb52c697941706cc4ee51dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 08/15/2017
 ---
-<a id="creating-and-publishing-an-item" class="xliff"></a>
-# Создание и публикация элемента 
+# <a name="creating-and-publishing-an-item"></a>Создание и публикация элемента 
 Коллекция PowerShell — это место для публикации и совместного использования стабильных модулей PowerShell, скриптов и ресурсов DSC с большим сообществом пользователей PowerShell.    
 
 В этой статье рассматриваются механизмы и важные действия по подготовке скрипта или модуля с последующей публикацией в коллекции PowerShell.
@@ -27,8 +26,7 @@ ms.lasthandoff: 06/12/2017
  
 Коллекция PowerShell принимает модули PowerShell и скрипты PowerShell. Под скриптами подразумеваются скрипты PowerShell, которые являются отдельными файлами и не являются частью большего модуля. 
 
-<a id="powershell-gallery-account-and-api-key" class="xliff"></a>
-## Учетная запись коллекции PowerShell и ключ API
+## <a name="powershell-gallery-account-and-api-key"></a>Учетная запись коллекции PowerShell и ключ API
 Дополнительные сведения о настройке учетной записи коллекции PowerShell см. в статье [Creating a PowerShell Gallery Account](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/psgallery_creating_an_account) (Создание учетной записи коллекции PowerShell). 
 
 После создания учетной записи можно получить ключ API, необходимый для публикации элемента.
@@ -36,8 +34,7 @@ ms.lasthandoff: 06/12/2017
 
 Примечание. Надежно храните ключ API, как имя входа и пароль. С этим ключом вы или другой пользователь может обновить любой элемент, которым вы владеете в коллекции PowerShell. Корпорация Майкрософт рекомендует регулярно обновлять ключ. Это можно сделать с помощью сброса ключа на странице "Моя учетная запись".
 
-<a id="required-metadata-for-items-published-to-the-powershell-gallery" class="xliff"></a>
-## Необходимые метаданные для элементов, опубликованных в коллекции PowerShell
+## <a name="required-metadata-for-items-published-to-the-powershell-gallery"></a>Необходимые метаданные для элементов, опубликованных в коллекции PowerShell
 
 Коллекция PowerShell предоставляет пользователям коллекции сведения, полученные из полей метаданных, которые включены в скрипт или манифест модуля.
 При создании или изменении элементов для публикации в коллекции PowerShell применяются некоторые требования к сведениям, предоставляемым в манифесте элемента. Мы настоятельно рекомендуем ознакомиться с разделом метаданных элемента в [требованиях для публикации](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/psgallery-PublishingGuidelines), чтобы узнать, как предоставить необходимые сведения пользователям с помощью своих элементов. 
@@ -62,8 +59,7 @@ ms.lasthandoff: 06/12/2017
 * Автором должна быть хорошо известная группа (например, команда Azure SDK) или корпорация Майкрософт.
 
 
-<a id="pre-validate-your-item" class="xliff"></a>
-## Предварительная проверка элемента
+## <a name="pre-validate-your-item"></a>Предварительная проверка элемента
 
 Существует несколько средств, необходимых для выполнения кода перед публикацией элемента в коллекции PowerShell:
 
@@ -80,8 +76,7 @@ ms.lasthandoff: 06/12/2017
 Аналогичным образом командлет [Test-ScriptFileInfo](https://msdn.microsoft.com/en-us/powershell/gallery/psget/script/psget_test-scriptfileinfo) проверяет метаданные в скрипте. Его нужно запускать для каждого скрипта (опубликованного отдельно от модуля) перед публикацией в коллекции PowerShell. 
 
 
-<a id="publishing-items" class="xliff"></a>
-## Публикация элементов
+## <a name="publishing-items"></a>Публикация элементов
 
 Чтобы опубликовать элементы в коллекции PowerShell, необходимо использовать командлет [Publish-Script](https://msdn.microsoft.com/en-us/powershell/gallery/psget/script/psget_publish-script) или [Publish-Module](https://msdn.microsoft.com/en-us/powershell/gallery/psget/module/psget_publish-module).
 Для обеих команд требуется: 
