@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/**.md"
+          "**/**.md",
+	  "**/**.yml"
         ],
         "exclude": [
           "**/obj/**"
@@ -11,6 +12,9 @@
       }
     ],
     "globalMetadata": {
+      "breadcrumb_path":"bread/toc.yml",
+      "layout": "conceptual",
+      "ms.locale": "ru-ru",
       "ROBOTS": "INDEX, FOLLOW",
 	    "ms.prod": "powershell",
             "ms.technology": "dsc",
@@ -18,7 +22,7 @@
             "ms.devlang": "powershell",
             "ms.tgt_pltfr": "windows",
             "ms.author": "eslesar",
-      "bilingual_type": "hover over"
+            "bilingual_type": "hover over"
     },
     "resource": [
       {
