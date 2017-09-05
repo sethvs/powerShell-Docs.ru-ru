@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
-ms.openlocfilehash: 7dc92275c30ad783ad71b2a4825e9cc0d26d1691
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: b8648b3c23e5a7edaa195f2aa4bfad2757e39e75
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
 Вкладки в интегрированной среде скриптов Windows PowerShell® позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения. Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.
@@ -15,7 +15,7 @@ ms.lasthandoff: 08/03/2017
 > [!NOTE]
 > Переменные, функции и псевдонимы, созданные на одной вкладке, на другую не переносятся. Это разные сеансы Windows PowerShell.
 
-Выполните следующие действия, чтобы открыть или закрыть вкладку в Windows PowerShell. Чтобы переименовать вкладку, задайте свойство [DisplayName](The-PowerShellTab-Object.md#Displayname) для объекта сценария на вкладке Windows PowerShell.
+Выполните следующие действия, чтобы открыть или закрыть вкладку в Windows PowerShell. Чтобы переименовать вкладку, задайте свойство [DisplayName]() для объекта сценария на вкладке Windows PowerShell.
 
 ## <a name="to-create-and-use-a-new-powershell-tab"></a>Создание и использование вкладки PowerShell
 В меню **Файл** щелкните элемент **Создать вкладку PowerShell**. Новая вкладка PowerShell всегда открывается в виде активного окна. Вкладки PowerShell нумеруются последовательно в порядке их открытия. Каждая вкладка связана с собственным окном консоли Windows PowerShell. Одновременно можно открыть до 32 вкладок PowerShell со своим сеансом (в интегрированной среде сценариев Windows PowerShell 2.0 это ограничение равно 8).

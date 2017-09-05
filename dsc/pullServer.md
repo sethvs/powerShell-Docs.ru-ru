@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка опрашивающего веб-сервера DSC"
-ms.openlocfilehash: 865b4a871a75dab18071904983f6b14a10ff7e96
-ms.sourcegitcommit: 4ccf1a64e7a8335797daef6152244a9d4b9a89b9
+ms.openlocfilehash: 03d4d148c87854b146091aa0e8d815b8c35def72
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="setting-up-a-dsc-web-pull-server"></a>Настройка опрашивающего веб-сервера DSC
 
@@ -48,8 +48,7 @@ ms.lasthandoff: 08/17/2017
                 [ValidateNotNullOrEmpty()]
                 [string] $RegistrationKey 
          ) 
-
-
+         
          Import-DSCResource -ModuleName xPSDesiredStateConfiguration
          Import-DSCResource –ModuleName PSDesiredStateConfiguration
 

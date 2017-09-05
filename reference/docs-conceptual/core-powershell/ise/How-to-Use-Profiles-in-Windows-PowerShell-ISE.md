@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Использование профилей в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
-ms.openlocfilehash: 97fe9d241fa8a33e0c9b798a7408f06e3381530d
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 6b16291b7025928a307380cbae75fcdbdb51a73d
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-use-profiles-in-windows-powershell-ise"></a>Использование профилей в интегрированной среде сценариев Windows PowerShell
 В этой статье объясняется, как использовать профили в интегрированной среде скриптов Windows PowerShell®. Перед выполнением задач из этого раздела рекомендуется ознакомиться со статьей [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630)) либо ввести `Get-Help about_Profiles` в области консоли и нажать клавишу **ВВОД**.
@@ -70,7 +70,7 @@ if (!(Test-Path -Path $PROFILE.AllUsersAllHosts))
 
 2.  Добавьте несколько элементов в профиль. Ниже приведено несколько примеров, как можно приступить к работе:
 
-    -   Чтобы изменить цвет фона по умолчанию для области консоли на синий, введите в файле профиля следующее: `$psISE.Options.OutputPaneBackground = 'blue'` . Дополнительные сведения о переменной $psISE см. в статье [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell](#windows-powershell-ise-object-model-reference).
+    -   Чтобы изменить цвет фона по умолчанию для области консоли на синий, введите в файле профиля следующее: `$psISE.Options.OutputPaneBackground = 'blue'` . Дополнительные сведения о переменной $psISE см. в статье [Справочник по объектной модели интегрированной среды сценариев Windows PowerShell]().
 
     -   Чтобы изменить размер шрифта на 20, введите в файле профиля следующее: `$psISE.Options.FontSize =20`
 

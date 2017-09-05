@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEEditor"
 ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
-ms.openlocfilehash: c4effde470a7a76a21f983b172f0af651dfc5d11
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: e2ddb0de1089c832f130e1f5c7c8dcb199aca2fa
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="the-iseeditor-object"></a>Объект ISEEditor
   Объект **ISEEditor** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEEditor. Область консоли — это объект **ISEEditor**. Каждый объект [ISEFile](The-ISEFile-Object.md) имеет связанный объект **ISEEditor**. В следующих разделах перечислены методы и свойства объекта **ISEEditor**.
@@ -63,7 +63,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ### <a name="gotomatch"></a>GoToMatch\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
- Перемещает курсор в соответствующий знак, если свойству **CanGoToMatch** объекта редактора присвоено значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е. \(,\[,{) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. \),\],}).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий. См. раздел [CanGoToMatch](#cangotomatch).
+ Перемещает курсор в соответствующий знак, если свойству **CanGoToMatch** объекта редактора присвоено значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е. \(,\[,{) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. \),\],}).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий. См. раздел [CanGoToMatch]().
 
 ```powershell
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
@@ -76,7 +76,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **text** — строка. Вставляемый текст.
 
- См. [пример сценария](#example) далее в этом разделе.
+ См. [пример сценария]() далее в этом разделе.
 
 ### <a name="select-startline-startcolumn-endline-endcolumn-"></a>Select\( startLine, startColumn, endLine, endColumn \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -91,7 +91,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **endColumn** — целое число. Столбец в строке, в которой заканчивается выделение.
 
- См. [пример сценария](#example) далее в этом разделе.
+ См. [пример сценария]() далее в этом разделе.
 
 ### <a name="selectcaretline"></a>SelectCaretLine\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -186,14 +186,14 @@ $psISE.CurrentFile.Editor.LineCount
 
  Свойство только для чтения, которое получает выделенный текст из редактора.
 
- См. [пример сценария](#example) далее в этом разделе.
+ См. [пример сценария]() далее в этом разделе.
 
 ###  <a name="Text"></a> Text
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство для чтения и записи, которое получает или задает текст в редакторе.
 
- См. [пример сценария](#example) далее в этом разделе.
+ См. [пример сценария]() далее в этом разделе.
 
 ##  <a name="example"></a> Пример скрипта
 
