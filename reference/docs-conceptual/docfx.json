@@ -1,35 +1,39 @@
 {
-    "build": {
-        "content": [
-            {
-                "files": [
-                    "**/**.md",
-		    "**/**.yml"
-                ],
-                "exclude": ["**/obj/**"]
-            }
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
         ],
-        "globalMetadata": {
-            "ROBOTS": "INDEX, FOLLOW",
-            "ms.prod": "powershell",
-            "ms.technology": "powershell",
-            "ms.topic": "conceptual",
-            "manager": "carmonm",
-            "ms.devlang": "powershell",
-            "ms.tgt_pltfr": "windows, macos, linux",
-            "author": "juanpablojofre",
-            "ms.author": "jpjofre",
-	    "bilingual_type": "hover over"
-        },
-        "resource": [
-            {
-                "files": [
-                    "**/images/**"
-                ],
-                "exclude": ["**/obj/**"]
-            }
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "ROBOTS": "INDEX, FOLLOW",
+      "ms.prod": "powershell",
+      "ms.technology": "powershell",
+      "ms.topic": "conceptual",
+      "manager": "carmonm",
+      "ms.devlang": "powershell",
+      "ms.tgt_pltfr": "windows, macos, linux",
+      "author": "juanpablojofre",
+      "ms.author": "jpjofre",
+      "bilingual_type": "hover over"
+    },
+    "resource": [
+      {
+        "files": [
+          "**/images/**"
         ],
-        "template": "op.html",
-        "dest": "scripting"
-    }
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
+    "template": "op.html",
+    "dest": "scripting"
+  }
 }

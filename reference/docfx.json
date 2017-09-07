@@ -239,7 +239,8 @@
       "manager": "carmonm",
       "ms.tgt_pltfr": "windows, macos, linux",
       "author": "juanpablojofre",
-      "ms.author": "jpjofre"
+      "ms.author": "jpjofre",
+      "bilingual_type": "hover over"
     },
     "fileMetadata": {},
     "template": [],
