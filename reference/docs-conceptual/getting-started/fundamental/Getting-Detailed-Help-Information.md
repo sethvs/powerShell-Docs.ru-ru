@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Получение подробной справки"
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
-ms.openlocfilehash: 3260b5ec0a91749d3b7b126412137aa9d603ef0e
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: c786ce089073abccdf186dc1d9e8ee383f83655d
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="getting-detailed-help-information"></a>Получение подробной справки
 В Windows PowerShell входят подробные разделы справки, объясняющие концепции Windows PowerShell и язык Windows PowerShell. Разделы справки существуют для каждого командлета и поставщика, а также для многих функций и сценариев.
@@ -75,7 +75,7 @@ get-help get-childitem -parameter *
 get-help get-childitem -examples
 ```
 
-Дополнительные сведения о написании разделов справки для командлетов см. в статье "How to Write Cmdlet Help" (Как писать справку для командлетов) в библиотеке MSDN.
+Дополнительные сведения о написании разделов справки для командлетов см. в статье, посвященной [написанию справки для командлетов](https://go.microsoft.com/fwlink/?LinkID=123415).
 
 ## <a name="getting-conceptual-help"></a>Получение справки по концепциям
 Командлет Get-Help также можно использовать для вывода разделов справки, посвященных концепциям Windows PowerShell, в том числе разделов о языке Windows PowerShell. Посвященные концепциям разделы справки начинаются с префикса about_, например about_line_editing. (Название концепции нужно вводить на английском языке, даже если используется локализованная версия Windows PowerShell.)
@@ -165,7 +165,7 @@ get-help add-computer
 Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 ```
 
-Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf), и "How to Write Cmdlet Help" (Как писать справку для командлетов) ([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415)) — в библиотеке MSDN.
+Сведения об организации интернет-поддержки собственных разделов справки см. в статьях [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf) и [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415) (Написание справки для командлетов).
 
 ## <a name="see-also"></a>См. также
 - [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)

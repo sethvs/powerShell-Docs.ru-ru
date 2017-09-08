@@ -1,20 +1,20 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект PowerShellTab"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
-ms.openlocfilehash: d4e9374202d352a30b3eb46bcf1e4e40dea49822
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 482984272b2f1be027cf2be49bdfa2c6e2c52070
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="the-powershelltab-object"></a>Объект PowerShellTab
   Объект **PowerShellTab** представляет среду выполнения Windows PowerShell.
 
 ## <a name="methods"></a>Методы
 
-###  <a name="invoke"></a> Invoke\( Script \)
+### <a name="invoke-script-"></a>Invoke\( Script \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Выполняет заданный сценарий на вкладке PowerShell.
@@ -52,7 +52,7 @@ $psISE.PowerShellTabs.SetSelectedPowerShellTab($psISE.PowerShellTabs[0])
 
 # Invoke a simple command on the other tab, in its own scope
 $psISE.PowerShellTabs[1].InvokeSynchronous('$x=1',$false)
-# You can switch to the other tab and type “$x” to see that the value is saved there.
+# You can switch to the other tab and type â€œ$xâ€ to see that the value is saved there.
 
 # This example sets a value in the other tab (in a different scope) 
 # and returns it through the pipeline to this tab to store in $a
@@ -67,7 +67,7 @@ measure-command {$psISE.PowerShellTabs[1].InvokeSynchronous("sleep 10",$false,50
 
 ## <a name="properties"></a>Свойства
 
-###  <a name="AddOnsMenu"></a> AddOnsMenu
+### <a name="addonsmenu"></a>AddOnsMenu
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает меню надстроек для вкладки PowerShell.
@@ -85,10 +85,10 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
 $psISE.CurrentPowerShellTab.AddOnsMenu
 ```
 
-###  <a name="CanExecute"></a> CanInvoke
+### <a name="caninvoke"></a>CanInvoke
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Логическое свойство только для чтения, которое возвращает значение **$true**, если сценарий может быть вызван с помощью метода [Invoke( Script )](#invoke).
+ Логическое свойство только для чтения, которое возвращает значение **$true**, если сценарий может быть вызван с помощью метода [Invoke( Script )]().
 
 ```
 # CanInvoke will be false if the PowerShell
@@ -104,7 +104,7 @@ $secondTab.CanInvoke
 
 ```
 
-###  <a name="Commandpane"></a> Consolepane
+### <a name="consolepane"></a>Consolepane
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.  В Windows PowerShell ISE 2.0 это свойство называется **CommandPane**.
 
  Свойство только для чтения, которое получает объект [editor](../ise/The-ISEEditor-Object.md) области консоли.
@@ -115,7 +115,7 @@ $psISE.CurrentPowerShellTab.ConsolePane
 
 ```
 
-###  <a name="Displayname"></a> DisplayName
+### <a name="displayname"></a>DisplayName
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает или задает текст, выводимый на вкладке PowerShell. По умолчанию вкладкам назначаются имена "PowerShell #", где # — номер вкладки.
@@ -126,7 +126,7 @@ $newTab = $psise.PowerShellTabs.Add()
 $newTab.DisplayName="Brand New Tab"
 ```
 
-###  <a name="ExpandedScript"></a> ExpandedScript
+### <a name="expandedscript"></a>ExpandedScript
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Логическое свойство для чтения и записи, которое определяет, развернута или скрыта область сценариев.
@@ -137,7 +137,7 @@ $PSise.CurrentPowerShellTab.ExpandedScript=!$PSise.CurrentPowerShellTab.Expanded
 
 ```
 
-###  <a name="Files"></a> Files
+### <a name="files"></a>Файлы
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает [коллекцию файлов сценария](../ise/The-ISEFileCollection-Object.md), открытых на вкладке PowerShell.
@@ -149,7 +149,7 @@ $newFile.Editor.Text = "a`r`nb"
 $newFile.Editor.LineCount
 ```
 
-###  <a name="Output"></a> Output
+### <a name="output"></a>Выходные данные
   Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  В более поздних версиях интегрированной среды сценариев Windows PowerShell для тех же целей можно использовать объект **ConsolePane**.
 
  Свойство только для чтения, которое получает область вывода текущего [редактора](../ise/The-ISEEditor-Object.md).
@@ -159,7 +159,7 @@ $newFile.Editor.LineCount
 $psise.CurrentPowerShellTab.output.clear()
 ```
 
-###  <a name="Prompt"></a> Prompt
+### <a name="prompt"></a>Prompt
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает текущий текст запроса. Примечание. Функция **Prompt** может быть переопределена профилем пользователя. Если результат отличается от простой строки, это свойство не возвращает никаких данных.
@@ -169,7 +169,7 @@ $psise.CurrentPowerShellTab.output.clear()
 $psISE.CurrentPowerShellTab.Prompt
 ```
 
-###  <a name="ShowCommands"></a> ShowCommands
+### <a name="showcommands"></a>ShowCommands
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Свойство для чтения и записи, которое указывает, отображается ли панель команд.
@@ -181,7 +181,7 @@ $a = $psISE.CurrentPowerShellTab.ShowCommands
 if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 ```
 
-###  <a name="StatusText"></a> StatusText
+### <a name="statustext"></a>StatusText
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает текст состояния вкладки **PowerShellTab**.
@@ -191,7 +191,7 @@ if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 $psISE.CurrentPowerShellTab.StatusText
 ```
 
-###  <a name="HorizontalAddOnToolsPaneOpened"></a> HorizontalAddOnToolsPaneOpened
+### <a name="horizontaladdontoolspaneopened"></a>HorizontalAddOnToolsPaneOpened
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Свойство только для чтения, которое указывает, открыта ли горизонтальная область инструментов надстроек.
@@ -201,7 +201,7 @@ $psISE.CurrentPowerShellTab.StatusText
 $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
 ```
 
-###  <a name="VerticalAddOnToolsPaneOpened"></a> **VerticalAddOnToolsPaneOpened**
+### <a name="verticaladdontoolspaneopened"></a>VerticalAddOnToolsPaneOpened
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Свойство только для чтения, которое указывает, открыта ли вертикальная область инструментов надстроек.
