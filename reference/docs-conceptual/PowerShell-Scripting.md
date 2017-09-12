@@ -1,60 +1,56 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
-ms.date: 2016-12-12
 title: "Создание сценариев PowerShell"
-ms.technology: powershell
-ms.openlocfilehash: 2dde8bdf8dda74648ea8ea7891dd3c7b96393e8a
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 33e5ff3c84b6b34a3072a32165187a8bb811605c
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="powershell"></a>PowerShell
+# <a name="powershell"></a><span data-ttu-id="2a3f8-103">PowerShell</span><span class="sxs-lookup"><span data-stu-id="2a3f8-103">PowerShell</span></span>
 
-Windows PowerShell — это оболочка командной строки на основе платформы .NET с языком сценариев. Она позволяет системным администраторам и опытным пользователям быстро автоматизировать администрирование различных операционных систем (Linux, OSX, Unix и Windows) и процессов, связанных с приложениями, работающими в этих операционных системах.
+<span data-ttu-id="2a3f8-104">Windows PowerShell — это оболочка командной строки на основе задач, созданная на базе .NET Framework, с языком сценариев. Она позволяет системным администраторам и опытным пользователям быстро автоматизировать администрирование различных операционных систем (Linux, macOS, Unix и Windows) и процессов, связанных с работающими в этих операционных системах приложениями.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-104">Built on the .NET Framework, Windows PowerShell is a task-based command-line shell and scripting language; it is designed specifically for system administrators and power-users, to rapidly automate the administration of multiple operating systems (Linux, macOS, Unix, and Windows) and the processes related to the applications that run on those operating systems.</span></span>
 
-###  <a name="powershell-is-now-open-source"></a>Теперь PowerShell использует открытый исходный код
+### <a name="powershell-is-now-open-source"></a><span data-ttu-id="2a3f8-105">Теперь PowerShell использует открытый исходный код</span><span class="sxs-lookup"><span data-stu-id="2a3f8-105">PowerShell is now open source</span></span>
 
-Базовый исходный код PowerShell теперь доступен в GitHub, где участники сообщества могут делать свои дополнения (см. раздел [PowerShell](https://github.com/powershell/powershell)).
+<span data-ttu-id="2a3f8-106">Базовый исходный код PowerShell теперь доступен в GitHub, где участники сообщества могут делать свои дополнения (см. раздел [PowerShell](https://github.com/powershell/powershell)).</span><span class="sxs-lookup"><span data-stu-id="2a3f8-106">PowerShell base source code is now available in GitHub and open to community contributions, see [PowerShell](https://github.com/powershell/powershell).</span></span>
 
-Вы можете начать с нужных вам элементов в разделе [Получить PowerShell](https://github.com/PowerShell/PowerShell#get-powershell).
-Или, возможно, с краткого обзора в разделе [Приступая к работе](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell)
+<span data-ttu-id="2a3f8-107">Вы можете начать с нужных вам элементов в разделе [Получить PowerShell](https://github.com/PowerShell/PowerShell#get-powershell).</span><span class="sxs-lookup"><span data-stu-id="2a3f8-107">You can start with the bits you need at [get PowerShell](https://github.com/PowerShell/PowerShell#get-powershell).</span></span>
+<span data-ttu-id="2a3f8-108">Или, возможно, с краткого обзора в разделе [Приступая к работе](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-108">Or, perhaps, with a quick tour at [Getting Started](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell)</span></span>
 
->  **Примечание**.  
->  Все ссылки на PowerShell в GitHub приведут вас в GitHub.
+> <span data-ttu-id="2a3f8-109">**Примечание**.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-109">**Note:**</span></span>  
+> <span data-ttu-id="2a3f8-110">Все ссылки на PowerShell в GitHub приведут вас в GitHub.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-110">All links about PowerShell in GitHub will take you to GitHub.</span></span>
 
-#  <a name="documentation"></a>Документация
+# <a name="documentation"></a><span data-ttu-id="2a3f8-111">Документация</span><span class="sxs-lookup"><span data-stu-id="2a3f8-111">Documentation</span></span>
 
-Коллекция документации упорядочена по четырем основным разделам.
+<span data-ttu-id="2a3f8-112">Коллекция документации упорядочена по четырем основным разделам.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-112">The documentation collection is organized around 4 main sections:</span></span>
 
-##  <a name="whats-new-with-powershellwhats-newwhat-s-new-with-powershellmd"></a>[Новые возможности PowerShell](whats-new/What-s-New-With-PowerShell.md)
-В этом разделе находятся все объявления о продукте (по версиям и выпускам).
+## <a name="whats-new-with-powershellwhats-newwhat-s-new-with-powershellmd"></a>[<span data-ttu-id="2a3f8-113">Новые возможности PowerShell</span><span class="sxs-lookup"><span data-stu-id="2a3f8-113">What's new with PowerShell</span></span>](whats-new/What-s-New-With-PowerShell.md)
+<span data-ttu-id="2a3f8-114">В этом разделе находятся все объявления о продукте (по версиям и выпускам).</span><span class="sxs-lookup"><span data-stu-id="2a3f8-114">In this section you'll find all announcements about the product (version by version and release by release).</span></span>
 
-##  <a name="powershell-setupsetupsetup-referencemd"></a>[Установка PowerShell](setup/setup-reference.md)
-В этом разделе находятся необходимые сведения для установки любых версий PowerShell во всех поддерживаемых средах.  
+## <a name="powershell-setupsetupsetup-referencemd"></a>[<span data-ttu-id="2a3f8-115">Установка PowerShell</span><span class="sxs-lookup"><span data-stu-id="2a3f8-115">PowerShell Setup</span></span>](setup/setup-reference.md)
+<span data-ttu-id="2a3f8-116">В этом разделе находятся необходимые сведения для установки любых версий PowerShell во всех поддерживаемых средах.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-116">In this section you'll find all you need to know to install all versions of PowerShell, in all supported environments.</span></span>  
 
-Вы также узнаете, как настроить безопасность, доступ, удаленный доступ и управление, рабочие процессы и веб-доступ.
+<span data-ttu-id="2a3f8-117">Вы также узнаете, как настроить безопасность, доступ, удаленный доступ и управление, рабочие процессы и веб-доступ.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-117">You will also find how to configure for: security, accessibility, remote access and management, workflows, and web access.</span></span>
 
-##  <a name="getting-started-with-powershellgetting-startedgetting-started-with-windows-powershellmd"></a>[Начало работы с PowerShell](getting-started/Getting-Started-with-Windows-PowerShell.md)
-Этот раздел предназначен для новых пользователей PowerShell: в нем содержится вся информация, необходимая для начала использования продукта.  
-Содержание раздела
--   В статье [Подготовка к использованию Windows PowerShell](getting-started/Getting-Ready-to-Use-Windows-PowerShell.md) объясняются необходимые шаги установки PowerShell для выполнения и опробования всех фрагментов кода и команд, представленных в разделе "Начало работы с PowerShell".
--  В руководстве [Фундаментальные концепции](getting-started/fundamental-concepts.md) объясняется, что такое PowerShell, а также показаны основные концепции, необходимые для начала использования среды.
--  Ряд разделов "[общие сведения о &lt;концепция&gt;](getting-started/understanding-concepts-reference.md)", в которых охватываются основы PowerShell.
--  Ряд разделов "[основной справочник для &lt;использование&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)", который предоставляет инструкции по выполнению стандартных задач с файлами, файловой системой, реестром, процессами, службами и на аналогичные повседневные темы.
--  Отсматриваемое руководство по другим ресурсам для [обучения работе с PowerShell](getting-started/more-powershell-learning.md).
+## <a name="getting-started-with-powershellgetting-startedgetting-started-with-windows-powershellmd"></a>[<span data-ttu-id="2a3f8-118">Начало работы с PowerShell</span><span class="sxs-lookup"><span data-stu-id="2a3f8-118">Getting started with PowerShell</span></span>](getting-started/Getting-Started-with-Windows-PowerShell.md)
+<span data-ttu-id="2a3f8-119">Этот раздел предназначен для новых пользователей PowerShell: в нем содержится вся информация, необходимая для начала использования продукта.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-119">This section is for users new to PowerShell to get all the information needed to start using the product.</span></span>  
+<span data-ttu-id="2a3f8-120">Содержание раздела</span><span class="sxs-lookup"><span data-stu-id="2a3f8-120">In this section:</span></span>
+- <span data-ttu-id="2a3f8-121">В статье [Подготовка к использованию Windows PowerShell](getting-started/Getting-Ready-to-Use-Windows-PowerShell.md) объясняются необходимые шаги установки PowerShell для выполнения и опробования всех фрагментов кода и команд, представленных в разделе "Начало работы с PowerShell".</span><span class="sxs-lookup"><span data-stu-id="2a3f8-121">The [Getting Ready to Use Windows PowerShell](getting-started/Getting-Ready-to-Use-Windows-PowerShell.md) that explains the necessary steps needed to setup PowerShell to execute and try all code and command snippets presented in the 'Getting Started with PowerShell' section.</span></span>
+- <span data-ttu-id="2a3f8-122">В руководстве [Фундаментальные концепции](getting-started/fundamental-concepts.md) объясняется, что такое PowerShell, а также показаны основные концепции, необходимые для начала использования среды.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-122">The [fundamental concepts](getting-started/fundamental-concepts.md) guide that explains what is PowerShell and the basic concepts needed to start using it.</span></span>
+- <span data-ttu-id="2a3f8-123">Ряд разделов "[общие сведения о &lt;концепция&gt;](getting-started/understanding-concepts-reference.md)", в которых охватываются основы PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-123">A series of '[understanding &lt;concept&gt;](getting-started/understanding-concepts-reference.md)' topics that cover the basics of PowerShell.</span></span>
+- <span data-ttu-id="2a3f8-124">Ряд разделов [базового учебника по &lt;использованию&gt;](getting-started/cookbooks/basic-cookbooks-reference.md), который включает инструкции по выполнению стандартных задач с файлами, файловой системой, реестром, процессами, службами и другими повседневно используемыми объектами.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-124">A series of '[basic cookbook for &lt;usage&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)' topics that provide recipes to execute standard tasks around files, file system, registry, processes, services, and similar day-to-day subjects.</span></span>
+- <span data-ttu-id="2a3f8-125">Отсматриваемое руководство по другим ресурсам для [обучения работе с PowerShell](getting-started/more-powershell-learning.md).</span><span class="sxs-lookup"><span data-stu-id="2a3f8-125">A curated guide to other sources for [learning PowerShell](getting-started/more-powershell-learning.md).</span></span>
 
-##  <a name="common-powershellcore-powershellcore-powershellmd"></a>[Распространенные модули PowerShell](core-powershell/core-powershell.md)
-Этот раздел содержит все справочные материалы по PowerShell.  
-Содержание раздела:
--  [Основополагающие модули PowerShell](core-powershell/core-modules.md)
--  [Интегрированная среда сценариев PowerShell \((ISE)\)](core-powershell/ise-guide.md)
--  [Окно консоли PowerShell](core-powershell/console-guide.md)
--  [Удаленное управление PowerShell](core-powershell/Running-Remote-Commands.md)
--  [Рабочие процессы PowerShell](core-powershell/workflows-guide.md)
--  [PowerShell Web Access](core-powershell/web-access.md)
--  [Глоссарий PowerShell](Windows-PowerShell-Glossary.md)
+## <a name="common-powershellcore-powershellcore-powershellmd"></a>[<span data-ttu-id="2a3f8-126">Распространенные модули PowerShell</span><span class="sxs-lookup"><span data-stu-id="2a3f8-126">Common PowerShell</span></span>](core-powershell/core-powershell.md)
+<span data-ttu-id="2a3f8-127">Этот раздел содержит все справочные материалы по PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2a3f8-127">This section contains all reference material PowerShell.</span></span>  
+<span data-ttu-id="2a3f8-128">Содержание раздела:</span><span class="sxs-lookup"><span data-stu-id="2a3f8-128">Find in this section:</span></span>
+- <span data-ttu-id="2a3f8-129">[Основополагающие модули PowerShell](core-powershell/core-modules.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-129">The [PowerShell Common Modules](core-powershell/core-modules.md)</span></span>
+- <span data-ttu-id="2a3f8-130">[Интегрированная среда сценариев PowerShell \((ISE)\)](core-powershell/ise-guide.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-130">The [PowerShell Integrated Scripting Environment \(ISE\)](core-powershell/ise-guide.md)</span></span>
+- <span data-ttu-id="2a3f8-131">[Окно консоли PowerShell](core-powershell/console-guide.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-131">The [PowerShell Console Window](core-powershell/console-guide.md)</span></span>
+- <span data-ttu-id="2a3f8-132">[Удаленное управление PowerShell](core-powershell/Running-Remote-Commands.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-132">The [PowerShell Remote Management](core-powershell/Running-Remote-Commands.md)</span></span>
+- <span data-ttu-id="2a3f8-133">[Рабочие процессы PowerShell](core-powershell/workflows-guide.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-133">The [PowerShell Workflows](core-powershell/workflows-guide.md)</span></span>
+- <span data-ttu-id="2a3f8-134">[PowerShell Web Access](core-powershell/web-access.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-134">The [PowerShell Web Access](core-powershell/web-access.md)</span></span>
+- <span data-ttu-id="2a3f8-135">[Глоссарий PowerShell](Windows-PowerShell-Glossary.md)</span><span class="sxs-lookup"><span data-stu-id="2a3f8-135">The [PowerShell Glossary](Windows-PowerShell-Glossary.md)</span></span>
 
