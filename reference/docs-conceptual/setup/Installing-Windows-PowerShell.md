@@ -2,11 +2,11 @@
 ms.date: 2017-08-09
 keywords: "powershell, cmdlet, командлет, download, скачать, install, установить, setup, установка, windows 10, windows 8.1, windows 8.0, windows 7"
 title: "Установка Windows PowerShell"
-ms.openlocfilehash: 7a1a4bff461e3012a06a82faf4015a05b8560895
-ms.sourcegitcommit: a6ee6e64d369ecf82c730411bed9750278fdb5c1
+ms.openlocfilehash: 7ccbee66d01dd8e0e6e6ab09c6c8a399bee59ce8
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="installing-windows-powershell"></a>Установка Windows PowerShell
 
@@ -14,8 +14,8 @@ PowerShell установлен по умолчанию в каждой ОС Win
 
 Пользователям Linux, macOS и Windows, которые хотят установить **PowerShell 6** (бета-версия) на компьютерах, нужно выполнить следующие действия.
 
-1.  Получить PowerShell для конкретной ОС и версии с [GitHub](https://github.com/powershell/powershell#get-powershell).
-1.  Следовать инструкциям по установке.
+1. Получить PowerShell для конкретной ОС и версии с [GitHub](https://github.com/powershell/powershell#get-powershell).
+1. Следовать инструкциям по установке.
   - [Linux](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
   - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012)
   - [Windows](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi)

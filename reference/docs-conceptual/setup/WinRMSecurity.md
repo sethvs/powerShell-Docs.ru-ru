@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: WinRMSecurity
-ms.openlocfilehash: a6adf61517708661e31a7387df5141f3c4f2c020
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 65cf12466c9dc8fc8b77d79b0d63a6ae61e64d60
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="powershell-remoting-security-considerations"></a>Вопросы обеспечения безопасности удаленного взаимодействия PowerShell
 
@@ -18,7 +18,7 @@ ms.lasthandoff: 08/03/2017
 
 Удаленное взаимодействие PowerShell отличается от выполнения командлета с параметром **ComputerName** для запуска на удаленном компьютере, когда в качестве базового протокола используется удаленный вызов процедур (RPC).
 
-##  <a name="powershell-remoting-default-settings"></a>Параметры удаленного взаимодействия PowerShell по умолчанию
+## <a name="powershell-remoting-default-settings"></a>Параметры удаленного взаимодействия PowerShell по умолчанию
 
 Удаленное взаимодействие PowerShell (и WinRM) прослушивают следующие порты:
 

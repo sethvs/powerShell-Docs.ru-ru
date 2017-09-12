@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Запуск Windows PowerShell"
 ms.assetid: 59b649a2-c90c-4cf4-bf95-a740c59148e7
-ms.openlocfilehash: ec7ecc3214d727d55b41282fc5a5cb2e77cb84ba
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: a8dcf04078228624023387cea3ab8e81ee6eb0a4
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="starting-windows-powershell"></a>Запуск Windows PowerShell
 PowerShell — это библиотека DLL обработчика скриптов, которая внедрена в несколько узлов.  Самый распространенный запускаемый узел — интерактивная командная строка (PowerShell.exe) и интерактивная среда скриптов (PowerShell_ISE.exe).  
@@ -18,11 +18,11 @@ PowerShell — это библиотека DLL обработчика скри�
 
 Статьи:
 
--   [Запуск Windows PowerShell в более ранних версиях Windows](Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
+- [Запуск Windows PowerShell в более ранних версиях Windows](Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
 
--   [Запуск 32-разрядной версии Windows PowerShell](Starting-the-32-Bit-Version-of-Windows-PowerShell.md)
+- [Запуск 32-разрядной версии Windows PowerShell](Starting-the-32-Bit-Version-of-Windows-PowerShell.md)
 
--   [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md)
+- [Запуск подсистемы Windows PowerShell 2.0](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
 ## <a name="see-also"></a>См. также
 - [Требования Windows PowerShell к системе](Windows-PowerShell-System-Requirements.md)

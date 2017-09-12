@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Управление дисками Windows PowerShell"
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
-ms.openlocfilehash: 92fa70785bcaeac2bd75a5ada91f3adff4fa10eb
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: e2908246bb584291f04b67dc8635caec93d3b72e
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="managing-windows-powershell-drives"></a>Управление дисками Windows PowerShell
 *Диск Windows PowerShell* — это расположение хранилища данных, доступ к которому можно получить так же, как к диску файловой системы в Windows PowerShell. Поставщики Windows PowerShell создают несколько дисков, например диски файловой системы (включая C: и D:), диски реестра (HKCU: и HKLM:) и диск сертификата (Cert:), а вы можете создать собственные диски Windows PowerShell. Эти диски очень полезны, но они доступны только в Windows PowerShell. К ним невозможно получить доступ с помощью других средств Windows, например проводника или Cmd.exe.
@@ -86,11 +86,11 @@ ring>] [-OutBuffer <Int32>] [-WhatIf] [-Confirm]
 
 Чтобы создать новый диск Windows PowerShell, необходимо указать три параметра:
 
--   имя диска (можно использовать любое допустимое имя Windows PowerShell);
+- имя диска (можно использовать любое допустимое имя Windows PowerShell);
 
--   PSProvider (используйте FileSystem для расположений файловой системы и Registry для расположений реестра);
+- PSProvider (используйте FileSystem для расположений файловой системы и Registry для расположений реестра);
 
--   корень, т. е. путь к корню нового диска.
+- корень, т. е. путь к корню нового диска.
 
 Например, можно создать диск с именем "Office", который сопоставляется с папкой, содержащей приложения Microsoft Office на компьютере, такой как **C:\\Program Files\\Microsoft Office\\OFFICE11**. Чтобы создать диск, введите следующую команду:
 

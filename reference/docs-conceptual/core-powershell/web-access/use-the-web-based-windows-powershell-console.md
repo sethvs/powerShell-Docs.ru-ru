@@ -2,13 +2,13 @@
 ms.date: 2017-08-23
 keywords: "powershell,командлет"
 title: "Использование веб-консоли Windows PowerShell"
-ms.openlocfilehash: a2dc43af5ba76916b8ea12a7944a4cccdced658d
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 31ab17f1a1ea1353abc6f770285a2dca70da446d
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="use-the-web-based-windows-powershell-console"></a>Использование веб-консоли Windows PowerShell
+# <a name="use-the-web-based-windows-powershell-console"></a>Использование веб-консоли Windows PowerShell
 
 Обновлено: 24 июня 2013 г.
 

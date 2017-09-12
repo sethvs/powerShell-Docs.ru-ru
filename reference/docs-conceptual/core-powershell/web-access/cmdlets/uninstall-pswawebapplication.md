@@ -8,21 +8,21 @@ keywords: "powershell,командлет"
 ms.date: 2016-12-12
 title: "удаление pswawebapplication"
 ms.technology: powershell
-ms.openlocfilehash: 64d546427e44d7bd284da8f682a7218afbadd0ad
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 5fe608b3bfbb90f842f16c1f5a8c51879589cf6d
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="uninstall-pswawebapplication"></a>Uninstall-PswaWebApplication
+# <a name="uninstall-pswawebapplication"></a>Uninstall-PswaWebApplication
 
-##  <a name="synopsis"></a>КРАТКИЙ ОБЗОР
+## <a name="synopsis"></a>КРАТКИЙ ОБЗОР
 
 Удаляет веб-приложение Windows PowerShell® Web Access.
 
 ## <a name="syntax"></a>СИНТАКСИС
 
-###  <a name="default"></a>Значение по умолчанию
+### <a name="default"></a>Значение по умолчанию
 ```
 Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCertificate] [-WebSiteName <String> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
 ```
@@ -140,10 +140,10 @@ Uninstall-PswaWebApplication -DeleteTestCertificate
 Uninstall-PswaWebApplication -WebApplicationName TestApplication -WebsiteName MySite -DeleteTestCertificate
 ```
 
-##  <a name="related-topics"></a>Связанные темы
+## <a name="related-topics"></a>Связанные темы
 
--  [Add-PswaAuthorizationRule](add-pswaauthorizationrule.md)
--  [Get-PswaAuthorizationRule](get-pswaauthorizationrule.md)
--  [Install-PswaWebApplication](install-pswawebapplication.md)
--  [Remove-PswaAuthorizationRule](remove-pswaauthorizationrule.md)
--  [Test-PswaAuthorizationRule](test-pswaauthorizationrule.md)
+- [Add-PswaAuthorizationRule](add-pswaauthorizationrule.md)
+- [Get-PswaAuthorizationRule](get-pswaauthorizationrule.md)
+- [Install-PswaWebApplication](install-pswawebapplication.md)
+- [Remove-PswaAuthorizationRule](remove-pswaauthorizationrule.md)
+- [Test-PswaAuthorizationRule](test-pswaauthorizationrule.md)

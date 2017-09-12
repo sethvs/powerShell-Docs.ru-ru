@@ -8,13 +8,13 @@ keywords: "powershell,командлет"
 ms.date: 2016-12-12
 title: "командлеты web access"
 ms.technology: powershell
-ms.openlocfilehash: ac8717c2aa97d0482b4d88f1b57d621d7ff47535
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: daebe2fe2cbccaf8d3f41d265d23dc45d3bb99b6
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="windows-powershell-web-access-cmdlets"></a>Командлеты Windows PowerShell Web Access
+# <a name="windows-powershell-web-access-cmdlets"></a>Командлеты Windows PowerShell Web Access
 
 В этом справочнике приводится описание и синтаксис всех командлетов, относящихся к Windows PowerShell® Web Access. Командлеты перечисляются в алфавитном порядке по команде в начале имени командлета.
 
@@ -54,13 +54,13 @@ ms.lasthandoff: 08/31/2017
 
 Для получения дополнительных сведений запустите любой и следующих командлетов:
 
--  `Get-Help `*&lt;командлет&gt;*` -Detailed`
--  `Get-Help `*&lt;командлет&gt;*` -Examples`
--  `Get-Help `*&lt;командлет&gt;*` -Full`
+- `Get-Help `*&lt;командлет&gt;*` -Detailed`
+- `Get-Help `*&lt;командлет&gt;*` -Examples`
+- `Get-Help `*&lt;командлет&gt;*` -Full`
 
 ### <a name="more-information"></a>Дополнительные сведения
 
 Дополнительные сведения о PowerShell Web Access см. в следующей статье:
 
--   [Установка и использование Windows PowerShell Web Access](../install-and-use-windows-powershell-web-access.md)
+- [Установка и использование Windows PowerShell Web Access](../install-and-use-windows-powershell-web-access.md)
 

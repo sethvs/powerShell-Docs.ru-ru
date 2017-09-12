@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEOptions"
 ms.assetid: 75e2a76f-f3d1-490b-ad5d-e3829946aabb
-ms.openlocfilehash: a43628a216b0757e1bf7738439975ed1b081b9ec
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 5e04adeebacfb9214bf39d9ec9c5f0e01f5729ee
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-iseoptions-object"></a>Объект ISEOptions
   Объект **ISEOptions** представляет различные параметры для интегрированной среды сценариев Windows PowerShell. Он является экземпляром класса **Microsoft.PowerShell.Host.ISE.ISEOptions**.
@@ -16,7 +16,7 @@ ms.lasthandoff: 08/31/2017
 
 ## <a name="methods"></a>Методы
 
-###  <a name="restoredefaultconsoletokencolors"></a>RestoreDefaultConsoleTokenColors \(\)
+### <a name="restoredefaultconsoletokencolors"></a>RestoreDefaultConsoleTokenColors \(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
  Восстанавливает значения по умолчанию для цветов маркеров в области консоли.
@@ -27,7 +27,7 @@ $psISE.Options.ConsoleTokenColors["Command"] = "red"
 $psISE.Options.RestoreDefaultConsoleTokenColors()
 ```
 
-###  <a name="restoredefaults"></a>RestoreDefaults \(\)
+### <a name="restoredefaults"></a>RestoreDefaults \(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
  Восстанавливает значения по умолчанию для всех параметров в области консоли. Кроме того, сбрасывает поведение различных предупреждений, включающих стандартный флажок, который отключает повторный вывод сообщения.
@@ -52,7 +52,7 @@ $psISE.Options.RestoreDefaultTokenColors()
 ### <a name="restoredefaultxmltokencolors"></a>RestoreDefaultXmlTokenColors \(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Восстанавливает значения по умолчанию для цветов маркеров XML-элементов, отображаемых в интегрированной среде сценариев Windows PowerShell. См. также [XmlTokenColors]().
+ Восстанавливает значения по умолчанию для цветов маркеров XML-элементов, отображаемых в интегрированной среде сценариев Windows PowerShell. См. также [XmlTokenColors](#xmltokencolors).
 
 ```
 # Changes the color of the comments in XML data to red and then restores it to its default value.
@@ -73,7 +73,7 @@ $psISE.Options.AutoSaveMinuteInterval = 3
 ```
 
 ### <a name="commandpanebackgroundcolor"></a>CommandPaneBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor]().
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#consolepanebackgroundcolor).
 
  Задает цвет фона для области команд. Это экземпляр класса **System.Windows.Media.Color**.
 
@@ -127,7 +127,7 @@ $psISE.Options.ConsolePaneTextBackgroundColor = "pink"
 ### <a name="consoletokencolors"></a>ConsoleTokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Задает цвета маркеров IntelliSense в области консоли интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области консоли. Сведения об изменении цвета маркеров IntelliSense в области сценариев см. в разделе [TokenColors]. Сведения о восстановлении значений по умолчанию для цветов см. в разделе [RestoreDefaultConsoleTokenColors()](). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
+ Задает цвета маркеров IntelliSense в области консоли интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области консоли. Сведения об изменении цвета маркеров IntelliSense в области сценариев см. в разделе [TokenColors](#tokencolors). Сведения о восстановлении значений по умолчанию для цветов см. в разделе [RestoreDefaultConsoleTokenColors](#restoredefaultconsoletokencolors). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
 
 ```
 # Sets the color of commands to green.
@@ -266,7 +266,7 @@ $psISE.Options.MruCount = 5
 ```
 
 ### <a name="outputpanebackgroundcolor"></a>OutputPaneBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor]().
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneBackgroundColor](#consolepanebackgroundcolor).
 
  Свойство для чтения и записи, которое получает или задает цвет фона самой области вывода. Это экземпляр класса **System.Windows.Media.Color**.
 
@@ -277,7 +277,7 @@ $psISE.Options.OutputPaneForegroundColor = "gold"
 ```
 
 ### <a name="outputpanetextforegroundcolor"></a>OutputPaneTextForegroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneForegroundColor]().
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneForegroundColor](#consolepaneforegroundcolor).
 
  Свойство для чтения и записи, которое изменяет цвет переднего плана текста в области вывода в интегрированной среде сценариев Windows PowerShell 2.0.
 
@@ -288,7 +288,7 @@ $psISE.Options.OutputPaneTextForegroundColor  = "blue"
 ```
 
 ### <a name="outputpanetextbackgroundcolor"></a>OutputPaneTextBackgroundColor
-  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneTextBackgroundColor]().
+  Этот компонент присутствует в интегрированной среде сценариев Windows PowerShell 2.0, но был удален или переименован в более поздних версиях интегрированной среды сценариев.  Сведения для более поздних версий см. в разделе [ConsolePaneTextBackgroundColor](#consolepanetextbackgroundcolor).
 
  Свойство для чтения и записи, которое изменяет цвет фона текста в области вывода.
 
@@ -305,7 +305,7 @@ $psISE.Options.OutputPaneTextBackgroundColor = "pink"
 ```
 
 # Sets the color of the script pane background to yellow.
-$psISE.Options.ScriptPaneBackgroundColor = â€yellowâ€
+$psISE.Options.ScriptPaneBackgroundColor = 'yellow'
 
 ```
 
@@ -313,7 +313,7 @@ $psISE.Options.ScriptPaneBackgroundColor = â€yellowâ€
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
  Свойство для чтения и записи, которое получает или задает цвет переднего плана для файлов, не являющихся сценариями, в области сценариев.
-Чтобы задать цвет переднего плана для файлов сценариев, используйте свойство The-ISEOptions-Object.md[TokenColors]().
+Чтобы задать цвет переднего плана для файлов сценариев, используйте [TokenColors](#tokencolors).
 
 ```
 # Sets the foreground to color of non-script files in the script pane to green.
@@ -423,7 +423,7 @@ $psISE.Options.ShowWarningForDuplicateFiles = $true
 ### <a name="tokencolors"></a>TokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий.
 
- Задает цвета маркеров IntelliSense в области сценариев интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области сценариев. Сведения об изменении цветов маркеров IntelliSense в области консоли см. в разделе [ConsoleTokenColors]. Сведения о восстановлении значений по умолчанию см. в разделе [RestoreDefaultTokenColors()](). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
+ Задает цвета маркеров IntelliSense в области сценариев интегрированной среды сценариев Windows PowerShell. Это свойство является объектом словаря, который содержит пары "имя — значение" для типов и цветов маркеров для области сценариев. Сведения об изменении цветов маркеров IntelliSense в области консоли см. в разделе [ConsoleTokenColors](#consoletokencolors). Сведения о восстановлении значений по умолчанию для цветов см. в разделе [RestoreDefaultTokenColors](#restoredefaulttokencolors). Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.
 
 ```
 # Sets the color of commands to green.
@@ -485,7 +485,7 @@ $psISE.Options.VerboseBackgroundColor ='#0000FF'
 
 ```
 # Changes the foreground color for verbose text to yellow.
-$psISE.Options.VerboseForegroundColor =â€yellowâ€
+$psISE.Options.VerboseForegroundColor ='yellow'
 ```
 
 ### <a name="warningbackgroundcolor"></a>WarningBackgroundColor
@@ -505,13 +505,13 @@ $psISE.Options.WarningBackgroundColor ='#0000FF'
 
 ```
 # Changes the foreground color for warning text to yellow.
-$psISE.Options.WarningForegroundColor =â€yellowâ€
+$psISE.Options.WarningForegroundColor ='yellow'
 ```
 
 ### <a name="xmltokencolors"></a>XmlTokenColors
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Указывает объект словаря, который содержит пары "имя — значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors()]().
+ Указывает объект словаря, который содержит пары "имя — значение" для типов и цветов маркеров для XML-содержимого, которое отображается в интегрированной среде сценариев Windows PowerShell. Можно задать цвета для следующих маркеров: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable. См. также [RestoreDefaultXmlTokenColors](#restoredefaultxmltokencolors).
 
 ```
 # Sets the color of XML element names to green.

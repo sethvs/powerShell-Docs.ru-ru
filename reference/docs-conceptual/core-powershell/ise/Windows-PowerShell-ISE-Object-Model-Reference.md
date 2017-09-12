@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Справочник по объектной модели интегрированной среды сценариев Windows PowerShell"
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
-ms.openlocfilehash: e5d4ae03158d9b5b0efd98db1272bc13872181ac
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 624ddca3895ba3e24bf52a27babdb07e8714baae
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="windows-powershell-ise-object-model-reference"></a>Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
   
@@ -36,5 +36,3 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="see-also"></a>См. также
 - [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-
-  

@@ -2,12 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEEditor"
-ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
-ms.openlocfilehash: e2ddb0de1089c832f130e1f5c7c8dcb199aca2fa
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 149eda44fea5b02324442970324e3010015e7ae5
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-iseeditor-object"></a>Объект ISEEditor
   Объект **ISEEditor** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEEditor. Область консоли — это объект **ISEEditor**. Каждый объект [ISEFile](The-ISEFile-Object.md) имеет связанный объект **ISEEditor**. В следующих разделах перечислены методы и свойства объекта **ISEEditor**.
@@ -63,7 +62,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ### <a name="gotomatch"></a>GoToMatch\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
- Перемещает курсор в соответствующий знак, если свойству **CanGoToMatch** объекта редактора присвоено значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е. \(,\[,{) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. \),\],}).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий. См. раздел [CanGoToMatch]().
+ Перемещает курсор в соответствующий знак, если свойству **CanGoToMatch** объекта редактора присвоено значение **$true**, которое присваивается, когда курсор находится непосредственно перед открывающей круглой, квадратной или фигурной скобкой (т. е. \(,\[,{) или сразу после закрывающей круглой, квадратной или фигурной скобки (т. е. \),\],}).  Курсор помещается перед открывающим символом или после закрывающего символа. Если свойство **CanGoToMatch** имеет значение **$false**, этот метод не выполняет никаких действий.
 
 ```powershell
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
@@ -76,7 +75,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **text** — строка. Вставляемый текст.
 
- См. [пример сценария]() далее в этом разделе.
+ См. [пример сценария](#-scripting-example) далее в этом разделе.
 
 ### <a name="select-startline-startcolumn-endline-endcolumn-"></a>Select\( startLine, startColumn, endLine, endColumn \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -91,7 +90,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **endColumn** — целое число. Столбец в строке, в которой заканчивается выделение.
 
- См. [пример сценария]() далее в этом разделе.
+ См. [пример сценария](#-scripting-example) далее в этом разделе.
 
 ### <a name="selectcaretline"></a>SelectCaretLine\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -131,7 +130,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 
 ## <a name="properties"></a>Свойства
 
-###  <a name="CanGoToMatch"></a> CanGoToMatch
+### <a name="cangotomatch"></a>CanGoToMatch
   Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях. 
 
  Логическое свойство, доступное только для чтения, которое указывает, находится ли курсор рядом с круглой, квадратной или фигурной скобкой (\(\), \[\] или {}). Если курсор находится непосредственно перед открывающим символом или сразу после парного закрывающего символа, то это свойство имеет значение **$true**. В противном случае оно имеет значение **$false**.
@@ -141,7 +140,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 $psISE.CurrentFile.Editor.CanGoToMatch
 ```
 
-###  <a name="CaretColumn"></a> CaretColumn
+### <a name="caretcolumn"></a>CaretColumn
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает номер столбца, соответствующего позиции курсора.
@@ -151,7 +150,7 @@ $psISE.CurrentFile.Editor.CanGoToMatch
 $psISE.CurrentFile.Editor.CaretColumn
 ```
 
-###  <a name="CaretLine"></a> CaretLine
+### <a name="caretline"></a>CaretLine
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает номер строки, содержащей курсор.
@@ -161,7 +160,7 @@ $psISE.CurrentFile.Editor.CaretColumn
 $psISE.CurrentFile.Editor.CaretLine
 ```
 
-###  <a name="CaretLineText"></a> CaretLineText
+### <a name="caretlinetext"></a>CaretLineText
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает полную строку текста, содержащую курсор.
@@ -171,7 +170,7 @@ $psISE.CurrentFile.Editor.CaretLine
 $psISE.CurrentFile.Editor.CaretLineText
 ```
 
-###  <a name="LineCount"></a> LineCount
+### <a name="linecount"></a>LineCount
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает число строк из редактора.
@@ -181,21 +180,21 @@ $psISE.CurrentFile.Editor.CaretLineText
 $psISE.CurrentFile.Editor.LineCount
 ```
 
-###  <a name="SelectedText"></a> SelectedText
+### <a name="selectedtext"></a>SelectedText
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство только для чтения, которое получает выделенный текст из редактора.
 
- См. [пример сценария]() далее в этом разделе.
+ См. [пример сценария](#-scripting-example) далее в этом разделе.
 
-###  <a name="Text"></a> Text
+### <a name="text"></a>Текст
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство для чтения и записи, которое получает или задает текст в редакторе.
 
- См. [пример сценария]() далее в этом разделе.
+ См. [пример сценария](#-scripting-example) далее в этом разделе.
 
-##  <a name="example"></a> Пример скрипта
+## <a name="scripting-example"></a>Пример сценария
 
 ```powershell
 # This illustrates how you can use the length of a line to

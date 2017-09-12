@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект PowerShellTab"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
-ms.openlocfilehash: 482984272b2f1be027cf2be49bdfa2c6e2c52070
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 15d9a7474e4c2cf2a9ff8edb88802106489cdba1
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-powershelltab-object"></a>Объект PowerShellTab
   Объект **PowerShellTab** представляет среду выполнения Windows PowerShell.
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/31/2017
  Выполняет заданный сценарий на вкладке PowerShell.
 
 > [!NOTE]
->  Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Он не возвращает объекты или значения. Если код изменяет какую-либо переменную, эти изменения сохраняются на вкладке, для которой была вызвана команда.
+> Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Он не возвращает объекты или значения. Если код изменяет какую-либо переменную, эти изменения сохраняются на вкладке, для которой была вызвана команда.
 
  **Script** — System.Management.Automation.ScriptBlock или строка. Блок сценария для запуска.
 
@@ -36,7 +36,7 @@ $psise.PowerShellTabs[1].Invoke({dir})
  Выполняет заданный сценарий на вкладке PowerShell.
 
 > [!NOTE]
->  Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Выполняется блок сценария, и любое значение, возвращаемое при выполнении сценария, возвращается в среду выполнения, из которой вызывается команда. Если время выполнения команды превышает значение времени ожидания, заданное параметром **millesecondsTimeout**, команда завершается ошибкой с исключением "Время ожидания операции истекло".
+> Этот метод работает только для других вкладок PowerShell, но не для вкладки PowerShell, с которой он выполняется. Выполняется блок сценария, и любое значение, возвращаемое при выполнении сценария, возвращается в среду выполнения, из которой вызывается команда. Если время выполнения команды превышает значение времени ожидания, заданное параметром **millesecondsTimeout**, команда завершается ошибкой с исключением "Время ожидания операции истекло".
 
  **Script** — System.Management.Automation.ScriptBlock или строка. Блок сценария для запуска.
 
@@ -52,7 +52,7 @@ $psISE.PowerShellTabs.SetSelectedPowerShellTab($psISE.PowerShellTabs[0])
 
 # Invoke a simple command on the other tab, in its own scope
 $psISE.PowerShellTabs[1].InvokeSynchronous('$x=1',$false)
-# You can switch to the other tab and type â€œ$xâ€ to see that the value is saved there.
+# You can switch to the other tab and type 'œ$x' to see that the value is saved there.
 
 # This example sets a value in the other tab (in a different scope) 
 # and returns it through the pipeline to this tab to store in $a
@@ -88,7 +88,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu
 ### <a name="caninvoke"></a>CanInvoke
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
- Логическое свойство только для чтения, которое возвращает значение **$true**, если сценарий может быть вызван с помощью метода [Invoke( Script )]().
+ Логическое свойство только для чтения, которое возвращает значение **$true**, если сценарий может быть вызван с помощью метода [Invoke( Script )](#invoke-script-).
 
 ```
 # CanInvoke will be false if the PowerShell

@@ -2,13 +2,13 @@
 ms.date: 2017-08-23
 keywords: "powershell,командлет"
 title: "Удаление Windows PowerShell Web Access"
-ms.openlocfilehash: 6b75eadb7264d7478fb3c9bc2b2ff355772ef4c2
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 7c71a245be244c1883598cdcddbf35e43c0fc7b0
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
+# <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
 
 Обновлено: 24 июня 2013 г.
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/31/2017
 
 ### <a name="step-2-uninstall-windows-powershell-web-access-using-cmdlets"></a>Шаг 2. Удаление Windows PowerShell Web Access с помощью командлетов
 
-1.  Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами. Если сеанс уже открыт, переходите к следующему шагу.
+1. Выполните одно из следующих действий, чтобы открыть сеанс Windows PowerShell с повышенными правами. Если сеанс уже открыт, переходите к следующему шагу.
 
     -   На рабочем столе Windows щелкните правой кнопкой мыши **Windows PowerShell** на панели задач и выберите команду **Запустить от имени администратора**.
 

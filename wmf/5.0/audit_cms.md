@@ -3,16 +3,15 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 9556f0d9a12807cbfe38aaade6798088f051596d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 60055b6755a31397c49686ea9ee1a69ada3516de
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/08/2017
 ---
-<a id="cryptographic-message-syntax-cms-cmdlets" class="xliff"></a>
-# Командлеты Cryptographic Message Syntax (CMS)
+# <a name="cryptographic-message-syntax-cms-cmdlets"></a>Командлеты Cryptographic Message Syntax (CMS)
 
-Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](http://tools.ietf.org/html/rfc5652).
+Командлеты Cryptographic Message Syntax поддерживают шифрование и расшифровку содержимого с помощью стандартного формата IETF для криптографической защиты сообщений, задокументированного в [RFC5652](https://tools.ietf.org/html/rfc5652).
 
 ```powershell
 Get-CmsMessage [-Content] <string>
@@ -29,7 +28,7 @@ Unprotect-CmsMessage [-LiteralPath] <string> [[-To] <CmsMessageRecipient[]>] [-I
 
 Стандарт шифрования CMS реализует шифрование с открытым ключом, при котором ключи, используемые для шифрования содержимого (*открытый ключ*) и для его расшифровки (*закрытый ключ*), существуют отдельно.
 
-Открытый ключ можно свободно распространять, так как он не относится к конфиденциальным сведениям. Если какое-либо содержимое зашифровано с помощью данного открытого ключа, расшифровать его позволяет только имеющийся у вас закрытый ключ. Дополнительные сведения о шифровании с открытым ключом см. на странице по адресу: <http://en.wikipedia.org/wiki/Public-key_cryptography>.
+Открытый ключ можно свободно распространять, так как он не относится к конфиденциальным сведениям. Если какое-либо содержимое зашифровано с помощью данного открытого ключа, расшифровать его позволяет только имеющийся у вас закрытый ключ. Дополнительные сведения см. на странице о [шифровании с открытым ключом](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
 Для распознавания в PowerShell сертификатам шифрования требуется уникальный идентификатор использования ключа (EKU), который определяет их в качестве сертификатов шифрования данных (например, идентификаторы для "Подписывание кода", "Зашифрованная почта").
 
