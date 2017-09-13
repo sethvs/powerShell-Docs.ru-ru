@@ -77,6 +77,6 @@ if (!(Test-Path -Path $PROFILE.AllUsersAllHosts))
 3.  <span data-ttu-id="5e815-141">Чтобы сохранить файл профиля, в меню **Файл** щелкните **Сохранить**.</span><span class="sxs-lookup"><span data-stu-id="5e815-141">To save your profile file, on the **File** menu, click **Save**.</span></span> <span data-ttu-id="5e815-142">Внесенные изменения применяются при следующем открытии интегрированной среды сценариев Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="5e815-142">Next time you open the Windows PowerShell ISE, your customizations are applied.</span></span>
 
 ## <a name="see-also"></a><span data-ttu-id="5e815-143">См. также</span><span class="sxs-lookup"><span data-stu-id="5e815-143">See Also</span></span>
-- [<span data-ttu-id="5e815-144">about_Profiles [v4]</span><span class="sxs-lookup"><span data-stu-id="5e815-144">about_Profiles [v4]</span></span>](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))
+- <span data-ttu-id="5e815-144">[about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))</span><span class="sxs-lookup"><span data-stu-id="5e815-144">[about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))</span></span>
 - [<span data-ttu-id="5e815-145">Использование интегрированной среды сценариев Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="5e815-145">Using the Windows PowerShell ISE</span></span>](Using-the-Windows-PowerShell-ISE.md)
 
