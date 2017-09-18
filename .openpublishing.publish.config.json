@@ -1,7 +1,5 @@
 {
   "build_entry_point": "docs",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "PowerShell_PowerShell-docs_dsc",
@@ -86,7 +84,10 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": [
+    "CnE_Content_Brno@moravia.com",
+    "CnE_UE_Bugfixing_ENG@moravia.com"
+  ],
   "branches_to_filter": [
     "live-oldev",
     "live"
@@ -113,7 +114,10 @@
       }
     }
   ],
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "path_to_root": "_dependentPackages/azurecli.plugins",
