@@ -3,26 +3,26 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Специальные возможности в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: fce9e2e2f177174a7359351738a0e02201448fc6
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 505ec3aca84b5ad0b9d58a1ec84d80e3aa86db7a
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Специальные возможности в интегрированной среде сценариев Windows PowerShell
 В этом разделе описываются специальные возможности интегрированной среды сценариев Windows PowerShell (ISE), которые могут помочь вам в работе.
 
-* [Изменение размера и расположения областей консоли и сценариев]()
-* [Сочетания клавиш для редактирования текста]()
-* [Сочетания клавиш для выполнения сценариев]()
-* [Сочетания клавиш для настройки представления]()
-* [Сочетания клавиш для отладки сценариев]()
-* [Сочетания клавиш для вкладок Windows PowerShell]()
-* [Сочетания клавиш для запуска и выхода]()
+* [Изменение размера и расположения областей консоли и сценариев](#how-to-change-the-size-and-location-of-the-console-and-script-panes)
+* [Сочетания клавиш для редактирования текста](#keyboard-shortcuts-for-editing-text)
+* [Сочетания клавиш для выполнения сценариев](#keyboard-shortcuts-for-running-scripts)
+* [Сочетания клавиш для настройки представления](#keyboard-shortcuts-for-customizing-the-view)
+* [Сочетания клавиш для отладки сценариев](#keyboard-shortcuts-for-debugging-scripts)
+* [Сочетания клавиш для вкладок Windows PowerShell](#keyboard-shortcuts-for-windows-powershell-tabs)
+* [Сочетания клавиш для запуска и выхода](#keyboard-shortcuts-for-starting-and-exiting)
 
 Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В следующих разделах представлена информация о компонентах, продуктах и службах, повышающих доступность интегрированной среды сценариев Windows PowerShell для пользователей с ограниченными возможностями.
 
-Интегрированная среда сценариев Windows PowerShell поддерживает режим высокой контрастности. Для пользователей с ослабленным зрением сведения о точках останова доступны через командлеты для управления точками останова, например [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) и [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). Дополнительные сведения см. в разделе "Управление точками останова" статьи [Отладка сценариев в интегрированной среде сценариев Windows PowerShell](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md). Помимо специальных возможностей и служебных программ в составе Microsoft Windows, следующие функции обеспечивают легкий доступ к интегрированной среде сценариев Windows PowerShell для пользователей с физическими ограничениями:
+Интегрированная среда сценариев Windows PowerShell поддерживает режим высокой контрастности. Для пользователей с ослабленным зрением сведения о точках останова доступны через командлеты для управления точками останова, например [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) и [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). Дополнительные сведения см. в разделе "Управление точками останова" в статье [Отладка сценариев в интегрированной среде сценариев Windows PowerShell](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md). Помимо специальных возможностей и служебных программ в составе Microsoft Windows, следующие функции обеспечивают легкий доступ к интегрированной среде сценариев Windows PowerShell для пользователей с физическими ограничениями:
 
 - Сочетания клавиш
 
@@ -113,7 +113,8 @@ ms.lasthandoff: 09/08/2017
 |**Удалить все точки останова**|CTRL+SHIFT+F9|Область сценариев при отладке сценария|
 |**Остановить отладчик**|SHIFT+F5|Область сценариев при отладке сценария|
 
-> [!NOTE]
+> ![ПРИМЕЧАНИЕ](../core-powershell/web-access/images/Note.jpeg)**Note**
+>
 > При отладке сценариев в интегрированной среде сценариев Windows PowerShell также можно использовать сочетания клавиш, предназначенные для консоли Windows PowerShell. Для этого необходимо ввести ярлык в области консоли и нажать клавишу ВВОД.
 
 |Действие|Сочетание клавиш|Область использования|

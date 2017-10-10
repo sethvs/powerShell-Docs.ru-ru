@@ -3,15 +3,14 @@ ms.date: 2017-06-12
 author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
-title: "Создание ресурса DSC на языке C`"
-ms.openlocfilehash: 502a4f42f685642d0966a8ee1ee745902005d61c
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: "Создание ресурса DSC в C#"
+ms.openlocfilehash: c1dc97d4e05499d03450d6172d9674b06a674393
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
-<a id="authoring-a-dsc-resource-in-c" class="xliff"></a>
-# Создание ресурса DSC в C`#`
+# <a name="authoring-a-dsc-resource-in-c"></a>Создание ресурса DSC в C#
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -19,12 +18,10 @@ ms.lasthandoff: 06/12/2017
 
 Процесс создания схемы MOF и структуры папок, импорт и применения настраиваемого ресурса DSC (кроме реализации ресурса на языке C# в форме командлетов) соответствует описанию в статье [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md).
 
-<a id="writing-a-cmdlet-based-resource" class="xliff"></a>
-## Создание ресурса на основе командлетов
+## <a name="writing-a-cmdlet-based-resource"></a>Создание ресурса на основе командлетов
 В этом примере мы реализуем простой ресурс, управляющий текстовым файлом и его содержимым.
 
-<a id="writing-the-mof-schema" class="xliff"></a>
-### Создание схемы MOF
+### <a name="writing-the-mof-schema"></a>Создание схемы MOF
 
 Ниже дано определение ресурса MOF.
 
@@ -38,10 +35,8 @@ class MSFT_XDemoFile : OMI_BaseResource
 };
 ```
 
-<a id="setting-up-the-visual-studio-project" class="xliff"></a>
-### Настройка проекта Visual Studio
-<a id="setting-up-a-cmdlet-project" class="xliff"></a>
-#### Настройка проекта командлета
+### <a name="setting-up-the-visual-studio-project"></a>Настройка проекта Visual Studio
+#### <a name="setting-up-a-cmdlet-project"></a>Настройка проекта командлета
 
 1. Откройте Visual Studio.
 1. Создайте проект C# и укажите имя.
@@ -50,8 +45,7 @@ class MSFT_XDemoFile : OMI_BaseResource
 1. Добавьте в проект ссылку на сборку System.Automation.Management.dll.
 1. Измените имя сборки в соответствии с именем ресурса. В данном случае сборка должна называться **MSFT_XDemoFile**.
 
-<a id="writing-the-cmdlet-code" class="xliff"></a>
-### Написание кода командлета
+### <a name="writing-the-cmdlet-code"></a>Написание кода командлета
 
 Следующий код на языке C# реализует командлеты **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**.
 
@@ -269,8 +263,7 @@ namespace cSharpDSCResourceExample
 }
 ```
 
-<a id="deploying-the-resource" class="xliff"></a>
-### Развертывание ресурса
+### <a name="deploying-the-resource"></a>Развертывание ресурса
 
 Скомпилированный DLL-файл необходимо сохранить в структуре файлов аналогично ресурсу на основе сценария. Ниже показана структура папок для этого ресурса.
 
@@ -285,12 +278,9 @@ $env: psmodulepath (folder)
                 |- MSFT_XDemoFile.schema.mof (file, required)
 ```
 
-<a id="see-also" class="xliff"></a>
-### См. также
-<a id="concepts" class="xliff"></a>
-#### Концепции
+### <a name="see-also"></a>См. также
+#### <a name="concepts"></a>Концепции
 [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md)
-<a id="other-resources" class="xliff"></a>
-#### Прочие ресурсы
+#### <a name="other-resources"></a>Прочие ресурсы
 [Запись командлета Windows PowerShell](https://msdn.microsoft.com/en-us/library/dd878294.aspx)
 

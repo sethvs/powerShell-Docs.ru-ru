@@ -4,24 +4,21 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery,psget"
 title: "Коллекция PowerShell"
-ms.openlocfilehash: 3e324f15b251822163c3ea9b6655767419a5ac4e
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 83a1f4e20b985a502637aee9d50ecc1d3f9a4616
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
-<a id="the-powershell-gallery" class="xliff"></a>
-# Коллекция PowerShell
+# <a name="the-powershell-gallery"></a>Коллекция PowerShell
 
 Коллекция PowerShell — это центральный репозиторий для хранения содержимого PowerShell. Именно в коллекции можно найти новые команды PowerShell или ресурсы настройки требуемого состояния (DSC).
 
-<a id="powershellget-overview" class="xliff"></a>
-## Обзор PowerShellGet
+## <a name="powershellget-overview"></a>Обзор PowerShellGet
 
 Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты с веб-сайта https://www.PowerShellGallery.com и других частных репозиториев.
 
-<a id="getting-started-with-the-gallery" class="xliff"></a>
-## Начало работы с коллекцией
+## <a name="getting-started-with-the-gallery"></a>Начало работы с коллекцией
 
 Для установки элементов из коллекции требуется последняя версия модуля PowerShellGet, доступная в Windows 10, в Windows Management Framework (WMF) 5.0 или в установщике на основе MSI (для PowerShell 3 и 4).
 
@@ -31,16 +28,15 @@ ms.lasthandoff: 06/12/2017
 
 Последняя версия модуля [PowerShellGet](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) позволяет:
 
--   Выполнять поиск по элементам в коллекции командлетами [**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) и [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409).
--   Сохранять элементы в систему из коллекции командлетами [**Save-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) и [**Save-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409).
--   Устанавливать элементы из коллекции командлетами [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) и [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409).
--   Отправлять элементы в коллекцию командлетами [**Publish-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) и [**Publish-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409).
--   Добавлять собственный репозиторий командлетом [**Register-PSRepository**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409).
+-   Выполнять поиск по элементам в коллекции с помощью командлетов [Find-Module](https://go.microsoft.com/fwlink/?LinkId=821658) и [Find-Script](https://go.microsoft.com/fwlink/?LinkId=822322).
+-   Сохранять элементы в систему из коллекции с помощью командлетов [Save-Module](https://go.microsoft.com/fwlink/?LinkId=821669) и [Save-Script](https://go.microsoft.com/fwlink/?LinkId=822334).
+-   Устанавливать элементы из коллекции с помощью командлетов [Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663) и [Install-Script](https://go.microsoft.com/fwlink/?LinkId=822327).
+-   Отправлять элементы в коллекцию с помощью командлетов [Publish-Module](https://go.microsoft.com/fwlink/?LinkId=821666) и [Publish-Script](https://go.microsoft.com/fwlink/?LinkId=822331).
+-   Добавлять собственный репозиторий с помощью командлета [Register-PSRepository](https://go.microsoft.com/fwlink/?LinkId=821668).
 
 Дополнительные сведения об использовании команд PowerShellGet при работе с коллекцией см. в статье [Начало работы](psgallery/psgallery_gettingstarted.md). Вы также можете запустить командлет *Update-Help -Module PowerShellGet*, чтобы установить локальную справку по этим командам.
 
-<a id="supported-operating-systems" class="xliff"></a>
-## Поддерживаемые операционные системы
+## <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
 
 Для модуля **PowerShellGet** требуется **PowerShell 3.0 или более поздней версии**.
 
@@ -50,15 +46,14 @@ ms.lasthandoff: 06/12/2017
 - Windows 8.1 Профессиональная
 - Windows 8.1 Корпоративная
 - Windows 7 с пакетом обновления 1 (SP1)
-- Windows Server 2016 TP5
+- Windows Server 2016
 - Windows Server 2012 R2
 - Windows Server 2008 R2 с пакетом обновления 1 (SP1)
 
 Для **PowerShellGet** также требуется .NET Framework 4.5 или более поздней версии. Установить .NET Framework 4.5 или более поздней версии можно [отсюда](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx).
 
 
-<a id="got-a-question-have-feedback" class="xliff"></a>
-## Возник вопрос? Хотите поделиться мнением?
+## <a name="got-a-question-have-feedback"></a>Возник вопрос? Хотите поделиться мнением?
 
 Дополнительные сведения о коллекции PowerShell и PowerShellGet см. на странице [Начало работы](psgallery/psgallery_gettingstarted.md). Оставить отзыв или сообщить о проблеме можно на сайте [UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell).
 
