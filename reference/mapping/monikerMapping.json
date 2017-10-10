@@ -64,7 +64,7 @@
         }
     },
     "powershell-5.1": {
-        "conceptualToc": "docs-conceptual/TOC.md",
+        "conceptualToc": "docs-conceptual/TOC.yml",
         "packageRoot": "5.1",
         "conceptualTocUrl": "/powershell/scripting/powershell-5.1/toc.json",
         "referenceTocUrl": "/powershell/module/psdocs/toc.json",
