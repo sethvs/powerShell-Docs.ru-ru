@@ -19,6 +19,8 @@
 ### [Обращение к владельцам элементов](psgallery/psgallery_contacting_item_owners.md)
 ### [Обращение к администраторам](psgallery/psgallery_contacting_administrators.md)
 ### [Отправка отзывов через социальные сети или комментарии](psgallery/psgallery-SocialMediaFeedback.md)
+### [Запрос на принятие условий лицензии на странице сведений об элементах](psgallery/psgallery_requires_license_acceptance.md)
+### [Запрос на принятие условий лицензии при развертывании в службе автоматизации Azure](psgallery/psgallery_deploy_to_azure_automation_requireLicenseAcceptance.md)
 
 # [PowerShellGet](psget/overview.md)
 ## [Получение модуля PowerShellGet](psget/get_psget_module.md)
@@ -35,7 +37,8 @@
 ### [Получение установленных модулей](psget/module/psget_get-installedmodule.md)
 ### [Обновление манифеста модулей](psget/module/psget_update-modulemanifest.md)
 ### [Опубликовать](psget/module/psget_publish-module.md)
-### [Модули с PSEdition](psget/module/modulewithpseditionsupport.md)
+### [Модули с PSEditions](psget/module/modulewithpseditionsupport.md)
+### [Модули, для использования которых требуется принять условия лицензии](psget/module/RequireLicenseAcceptance.md)
 ### [Устранение неполадок](psget/psget_cmdlets_troubleshooting.md)
 
 ## Скрипт
@@ -50,6 +53,7 @@
 ### [Обновление метаданных файла сценария](psget/script/psget_update-scriptfileinfo.md)
 ### [Опубликовать](psget/script/psget_publish-script.md)
 ### [Сценарии с PSEditions](psget/script/scriptwithpseditionsupport.md)
+### [Запрос на принятие условий лицензии для сценариев](psget/script/script_RequireLicenseAcceptance.md)
 
 ## Управление репозиторием
 ### [Начальная загрузка поставщика NuGet и NuGet.exe](psget/repository/bootstrapping_nuget_proivder_and_exe.md)
