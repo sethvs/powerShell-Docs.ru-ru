@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery,psget"
 title: "Коллекция PowerShell"
-ms.openlocfilehash: 83a1f4e20b985a502637aee9d50ecc1d3f9a4616
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 9fe341e4b297764321f3b3f07caca8ef4b8b40e0
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="the-powershell-gallery"></a>Коллекция PowerShell
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="powershellget-overview"></a>Обзор PowerShellGet
 
-Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты с веб-сайта https://www.PowerShellGallery.com и других частных репозиториев.
+Модуль PowerShellGet содержит командлеты для обнаружения, установки, обновления и публикации артефактов PowerShell, таких как модули, ресурсы DSC, возможности ролей и скрипты из [коллекции PowerShell](https://www.PowerShellGallery.com) и других частных репозиториев.
 
 ## <a name="getting-started-with-the-gallery"></a>Начало работы с коллекцией
 
