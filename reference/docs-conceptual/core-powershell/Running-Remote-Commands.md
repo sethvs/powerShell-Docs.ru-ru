@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Выполнение удаленных команд"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: c3bf002e7a3daa5afc8219dd846145808eef3c9b
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 5cf9690b8fe4549a99186f172cb6f0de156a4dea
+ms.sourcegitcommit: c5251755c4442487f99ff74fadf7e37bbf039089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="running-remote-commands"></a>Выполнение удаленных команд
 Вы можете запускать команды на одном или сотнях компьютеров одной командой Windows PowerShell. Windows PowerShell поддерживает удаленное вычисление с помощью разных технологий, включая WMI, RPC и WS-Management.
@@ -16,26 +16,16 @@ ms.lasthandoff: 09/08/2017
 Многие командлеты Windows PowerShell имеют параметр ComputerName, который позволяет собирать данные и изменять параметры одного или нескольких удаленных компьютеров. Они используют различные способы связи, многие из которых работают во всех операционных системах Windows, которые Windows PowerShell поддерживает без необходимости какой-либо настройки.
 
 В эти командлеты входят следующие:
-
-- [Restart-Computer](https://technet.microsoft.com/en-us/library/dd315301.aspx)
-
-- [Test-Connection](https://technet.microsoft.com/en-us/library/dd315259.aspx)
-
-- [Clear-EventLog](https://technet.microsoft.com/en-us/library/dd347552.aspx)
-
-- [Get-EventLog](https://technet.microsoft.com/en-us/library/dd315250.aspx)
-
-- [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
-
- -   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
-
-- [Get-Service](https://technet.microsoft.com/en-us/library/dd347591.aspx)
-
-- [Set-Service](https://technet.microsoft.com/en-us/library/dd315324.aspx)
-
-- [Get-WinEvent](https://technet.microsoft.com/en-us/library/dd315358.aspx)
-
-- [Get-WmiObject](https://technet.microsoft.com/en-us/library/dd315295.aspx)
+* [Restart-Computer](https://go.microsoft.com/fwlink/?LinkId=821625)
+* [Test-Connection](https://go.microsoft.com/fwlink/?LinkId=821646)
+* [Clear-EventLog](https://go.microsoft.com/fwlink/?LinkId=821568)
+* [Get-EventLog](https://go.microsoft.com/fwlink/?LinkId=821585)
+* [Get-HotFix](https://go.microsoft.com/fwlink/?LinkId=821586)
+  - [Get-Process](https://go.microsoft.com/fwlink/?linkid=821590)
+* [Get-Service](https://go.microsoft.com/fwlink/?LinkId=821593)
+* [Set-Service](https://go.microsoft.com/fwlink/?LinkId=821633)
+* [Get-WinEvent](https://go.microsoft.com/fwlink/?linkid=821529)
+* [Get-WmiObject](https://go.microsoft.com/fwlink/?LinkId=821595)
 
 Обычно командлеты, которые поддерживают удаленное взаимодействие без специальной настройки, имеют параметр ComputerName, но не имеют параметра Session. Чтобы найти эти командлеты в сеансе, введите:
 
@@ -51,7 +41,8 @@ Get-Command | where { $_.parameters.keys -contains "ComputerName" -and $_.parame
 После настройки службы удаленного взаимодействия Windows PowerShell вам станут доступны многие стратегии удаленного взаимодействия. В остальной части этого документа перечислены только некоторые из них. Дополнительные сведения см. в разделах [about_Remote](https://technet.microsoft.com/en-us/library/dd347744.aspx) и [about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd347744.aspx).
 
 ### <a name="start-an-interactive-session"></a>Запуск интерактивного сеанса
-Чтобы запустить интерактивный сеанс с одним удаленным компьютером, используйте командлет [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx). Например, чтобы запустить интерактивный сеанс с удаленным компьютером Server01, введите:
+Чтобы запустить интерактивный сеанс с одним удаленным компьютером, используйте командлет [Enter-PSSession](https://go.microsoft.com/fwlink/?LinkId=821477).
+Например, чтобы запустить интерактивный сеанс с удаленным компьютером Server01, введите:
 
 ```
 Enter-PSSession Server01
@@ -65,11 +56,11 @@ Enter-PSSession Server01
 Exit-PSSession
 ```
 
-Дополнительные сведения о командлетах Enter-PSSession и Exit-PSSession см. в статьях [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) и [Exit-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx).
+Дополнительные сведения о командлетах Enter-PSSession и Exit-PSSession см. в статьях [Enter-PSSession](https://go.microsoft.com/fwlink/?LinkId=821477) и [Exit-PSSession](https://go.microsoft.com/fwlink/?LinkID=821478).
 
 ### <a name="run-a-remote-command"></a>Выполнение удаленной команды
-Чтобы выполнить любую команду на одном или нескольких удаленных компьютеров, используйте командлет [Invoke-Command](https://technet.microsoft.com/en-us/library/dd347578.aspx).
-Например, чтобы выполнить команду [Get-UICulture](https://technet.microsoft.com/en-us/library/dd347742.aspx) на удаленных компьютерах Server01 и Server02, введите:
+Чтобы выполнить любую команду на одном или нескольких удаленных компьютеров, используйте командлет [Invoke-Command](https://go.microsoft.com/fwlink/?LinkId=821493).
+Например, чтобы выполнить команду [Get-UICulture](https://go.microsoft.com/fwlink/?LinkId=821806) на удаленных компьютерах Server01 и Server02, введите:
 
 ```
 Invoke-Command -ComputerName Server01, Server02 -ScriptBlock {Get-UICulture}
@@ -83,7 +74,7 @@ LCID    Name     DisplayName               PSComputerName
 1033    en-US    English (United States)   server01.corp.fabrikam.com
 1033    en-US    English (United States)   server02.corp.fabrikam.com
 ```
-Дополнительные сведения о командлете Invoke-Command см. в статье [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462).
+Дополнительные сведения о командлете Invoke-Command см. в статье [Invoke-Command](https://go.microsoft.com/fwlink/?LinkId=821493).
 
 ### <a name="run-a-script"></a>Запуск сценария
 Чтобы запустить сценарий на одном или нескольких удаленных компьютерах, используйте параметр FilePath командлета Invoke-Command. Сценарий должен быть включен или доступен для локального компьютера. Результаты будут возвращены на локальный компьютер.
@@ -94,7 +85,7 @@ LCID    Name     DisplayName               PSComputerName
 Invoke-Command -ComputerName Server01, Server02 -FilePath c:\Scripts\DiskCollect.ps1
 ```
 
-Дополнительные сведения о командлете Invoke-Command см. в статье [Invoke-Command](https://technet.microsoft.com/en-us/library/dd347578.aspx).
+Дополнительные сведения о командлете Invoke-Command см. в статье [Invoke-Command](https://go.microsoft.com/fwlink/?LinkId=821493).
 
 ### <a name="establish-a-persistent-connection"></a>Установка постоянного подключения
 Чтобы выполнить ряд связанных команд с общими данными, создайте сеанс на удаленном компьютере, а затем используйте командлет Invoke-Command для выполнения команд в созданном сеансе. Чтобы создать удаленный сеанс, используйте командлет New-PSSession.
@@ -127,8 +118,8 @@ Invoke-Command -Session $s {$h | where {$_.InstalledBy -ne "NTAUTHORITY\SYSTEM"}
 
 Дополнительная информация:
 - [Часто задаваемые вопросы об удаленном взаимодействии](https://technet.microsoft.com/en-us/library/dd315359.aspx)
-- [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/dd819496.aspx)
-- [Import-PSSession](https://technet.microsoft.com/en-us/library/dd347575.aspx) 
+- [Register-PSSessionConfiguration](https://go.microsoft.com/fwlink/?LinkId=821508)
+- [Import-PSSession](https://go.microsoft.com/fwlink/?LinkId=821821)
 
 Справку по ошибкам службы удаленного взаимодействия см. в статье [about_Remote_Troubleshooting](https://technet.microsoft.com/en-us/library/dd347642.aspx).
 
@@ -139,9 +130,8 @@ Invoke-Command -Session $s {$h | where {$_.InstalledBy -ne "NTAUTHORITY\SYSTEM"}
 - [about_Remote_Troubleshooting](https://technet.microsoft.com/en-us/library/2f890148-8578-49ed-85ea-79a489dd6317)
 - [about_PSSessions](https://technet.microsoft.com/en-us/library/7a9b4e0e-fa1b-47b0-92f6-6e2995d70acb)
 - [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
-- [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
-- [Import-PSSession](https://technet.microsoft.com/en-us/library/048c115e-a6fb-4e0d-8cea-c5ca24630c9d)
-- [New-PSSession](https://technet.microsoft.com/en-us/library/59452f12-a11d-4558-99ea-e6ca6ad5ffd3)
-- [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/af68867a-d201-4b19-a1de-594015ed8a25)
+- [Invoke-Command](https://go.microsoft.com/fwlink/?LinkId=821493)
+- [Import-PSSession](https://go.microsoft.com/fwlink/?LinkId=821821)
+- [New-PSSession](https://go.microsoft.com/fwlink/?LinkId=821498)
+- [Register-PSSessionConfiguration](https://go.microsoft.com/fwlink/?LinkId=821508)
 - [Поставщик WSMan](https://technet.microsoft.com/en-us/library/66fe1241-e08f-49ca-832f-a84c33ca8735)
-
