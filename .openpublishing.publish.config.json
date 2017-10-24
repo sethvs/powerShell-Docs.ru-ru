@@ -111,6 +111,8 @@
       }
     }
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/PowerShell/powerShell-Docs.ru-ru", 
+ "git_repository_branch_open_to_public_contributors": "live", 
   "need_generate_pdf_url_template": false,
   "dependent_packages": [
     {
