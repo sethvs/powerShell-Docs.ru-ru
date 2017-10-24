@@ -89,8 +89,7 @@
   "notification_subscribers": [],
   "branches_to_filter": [
     "live-oldev",
-    "live",
-    "live"
+        "live"
   ],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
