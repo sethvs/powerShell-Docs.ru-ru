@@ -1,18 +1,14 @@
 ---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
 title: "Усовершенствования DSC в WMF 5.1"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 4c5dfaaf368097c18a2788a9df15632ce116dbbb
-ms.sourcegitcommit: ee407927101c3b166cc200a39a6ea786a1c21f95
+ms.openlocfilehash: ce897dab2344455453e9bf2d0b5a897f9abb4392
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>Усовершенствования в настройке требуемого состояния (DSC) в WMF 5.1
 
@@ -53,13 +49,13 @@ ms.lasthandoff: 05/08/2017
 
 См. моментальные снимки ниже.
 
-• Параметры локальной конфигурации, определяющие частичную конфигурацию, которую разрешено получать узлу.
+•   Параметры локальной конфигурации, определяющие частичную конфигурацию, которую разрешено получать узлу.
 
 ![Пример метаконфигурации](../images/MetaConfigPartialOne.png)
 
-• Пример определения частичной конфигурации 
+•   Пример определения частичной конфигурации 
 
-```PowerShell
+```powershell
 Configuration PartialOne
 {
     Node('localhost')
@@ -74,11 +70,11 @@ Configuration PartialOne
 PartialOne
 ```
 
-• Имя конфигурации (ConfigurationName), внедренное в созданный MOF-файл.
+•   Имя конфигурации (ConfigurationName), включенное в созданный MOF-файл.
 
 ![Пример созданного MOF-файла](../images/PartialGeneratedMof.png)
 
-• Имя файла в репозитории конфигураций 
+•   Имя файла в репозитории конфигураций 
 
 ![Имя файла в репозитории конфигураций](../images/PartialInConfigRepository.png)
 
@@ -86,7 +82,7 @@ PartialOne
 
 Это делало невозможным запрос к одной из частичных конфигураций из службы автоматизации Azure.
 
-```PowerShell
+```powershell
 Configuration PartialOne
 {
     Node('localhost')
@@ -105,7 +101,7 @@ PartialOne
 
 В следующей метаконфигурации узел находится как под локальным управлением, так и под управлением службы автоматизации Azure.
 
-```PowerShell
+```powershell
   [DscLocalConfigurationManager()]
    Configuration RegistrationMetaConfig
    {
@@ -209,7 +205,7 @@ InstallWindowsFeature -ConfigurationData $configData
 ####<a name="pull"></a>По запросу
 Локальный диспетчер конфигураций узла выполняет проверку подписи модулей и конфигураций в соответствии со своими текущими параметрами. По умолчанию проверка подписи отключена. Проверку подписи можно включить, добавив блок "SignatureValidation" в определение метаконфигурации узла, как показано ниже.
 
-```PowerShell
+```powershell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -263,7 +259,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 
 * Включите проверку подписи на узле.
 
-```PowerShell
+```powershell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -282,7 +278,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 ``` 
 * Создайте пример файла конфигурации.
 
-```PowerShell
+```powershell
 # Sample configuration
 Configuration Test
 {
@@ -298,7 +294,7 @@ Test
 
 * Попробуйте принудительно отправить не подписанный файл конфигурации на узел. 
 
-```PowerShell
+```powershell
 Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 ``` 
 ![Ошибка "MOF-файл не подписан"](../images/PushUnsignedMof.png)

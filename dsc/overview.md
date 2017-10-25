@@ -1,17 +1,14 @@
 ---
-title: "Общие сведения о службе настройки требуемого состояния Windows PowerShell"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: efd15e1cee366ee887d302c7e681f18a93c68080
-ms.sourcegitcommit: ee407927101c3b166cc200a39a6ea786a1c21f95
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Общие сведения о службе настройки требуемого состояния Windows PowerShell"
+ms.openlocfilehash: 154a3c78a9bf2a029577ca6862f333b6bfe69878
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="windows-powershell-desired-state-configuration-overview"></a>Общие сведения о службе настройки требуемого состояния Windows PowerShell 
 

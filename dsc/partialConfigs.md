@@ -1,15 +1,14 @@
 ---
-title: "Частичные конфигурации службы настройки требуемого состояния PowerShell"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: fba9b3ed183d82cf532e2431de4a9e2c30243197
-ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Частичные конфигурации службы настройки требуемого состояния PowerShell"
+ms.openlocfilehash: 2c5f29ee2940f4b7955219e97275ffa2695f9dee
+ms.sourcegitcommit: aa6890031dad3f2981b24c58893d134bdf4e8655
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>Частичные конфигурации службы настройки требуемого состояния PowerShell
 
@@ -91,7 +90,7 @@ Mode                LastWriteTime         Length Name
 ```powershell
 PS C:\PartialConfigTest> Publish-DscConfiguration .\ServiceAccountConfig -ComputerName 'TestVM'
 PS C:\PartialConfigTest> Publish-DscConfiguration .\SharePointConfig -ComputerName 'TestVM'
-PS C:\PartialConfigTest> Start-Configuration -UseExisting -ComputerName 'TestVM'
+PS C:\PartialConfigTest> Start-DscConfiguration -UseExisting -ComputerName 'TestVM'
 
 Id     Name            PSJobTypeName   State         HasMoreData     Location             Command                  
 --     ----            -------------   -----         -----------     --------             -------                  

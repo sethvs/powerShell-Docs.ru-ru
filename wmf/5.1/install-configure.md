@@ -1,16 +1,15 @@
 ---
-title: "Установка и настройка WMF 5.1"
-ms.date: 2017-01-18
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: "wmf,powershell,установка"
 contributor: keithb
-manager: carmonm
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 55a2e03385b90c7631d1b0373bf85602aa7d769b
-ms.sourcegitcommit: 267688f61dcc76fd685c1c34a6c7bfd9be582046
-translationtype: HT
+title: "Установка и настройка WMF 5.1"
+ms.openlocfilehash: ea9b2fb184f2dd9a8e7a09c3a36278087f795172
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="install-and-configure-wmf-51"></a>Установка и настройка WMF 5.1 #
 
@@ -19,10 +18,10 @@ translationtype: HT
 
 Скачайте пакет WMF 5.1 для той операционной системы и архитектуры, в которой будет производиться установка.
 
-| Операционная система         | Необходимые компоненты       | Ссылки на пакеты             |
+| Операционная система       | Необходимые компоненты       | Ссылки на пакеты             |
 |------------------------|---------------------|---------------------------|
 | Windows Server 2012 R2 | | [Win8.1AndW2K12R2-KB3191564-x64.msu](https://go.microsoft.com/fwlink/?linkid=839516)|
-| Windows Server 2012     | | [W2K12-KB3191565-x64.msu](https://go.microsoft.com/fwlink/?linkid=839513)|
+| Windows Server 2012    | | [W2K12-KB3191565-x64.msu](https://go.microsoft.com/fwlink/?linkid=839513)|
 | Windows Server 2008 R2 | [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642) | [Win7AndW2K8R2-KB3191566-x64.ZIP](https://go.microsoft.com/fwlink/?linkid=839523) | 
 | Windows 8.1            |  | **x64:** [Win8.1AndW2K12R2-KB3191564-x64.msu](https://go.microsoft.com/fwlink/?linkid=839516) </br> **x86:** [Win8.1-KB3191564-x86.msu](https://go.microsoft.com/fwlink/?linkid=839521) |
 | Windows 7 с пакетом обновления 1 (SP1)          | [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642) | **x64:** [Win7AndW2K8R2-KB3191566-x64.ZIP](https://go.microsoft.com/fwlink/?linkid=839523) </br> **x86:** [Win7-KB3191566-x86.ZIP](https://go.microsoft.com/fwlink/?linkid=839522)
@@ -54,7 +53,7 @@ Install-WMF5.1.ps1 принимает следующие параметры дл
 Для установки WMF 5.1 на компьютере с ОС Windows Server 2008 R2 с пакетом обновления 1 (SP1) или Windows 7 с пакетом обновления 1 (SP1) необходимо следующее.
 - Должен быть установлен последний пакет обновления.
 - Платформа WMF 3.0 **не должна** быть установлена. Установка WMF 5.1 поверх WMF 3.0 приведет к потере PSModulePath, что может вызвать сбой других приложений. Перед установкой WMF 5.1 нужно удалить WMF 3.0 или сохранить PSModulePath и восстановить его вручную после установки WMF 5.1. 
-- Для WMF 5.1 требуется платформа [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642). Вы можете установить Microsoft .NET Framework 4.5.2, следуя инструкциям по месту скачивания.
+- Для WMF 5.1 требуется как минимум платформа [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642). Вы можете установить Microsoft .NET Framework 4.5.2, следуя указаниям по месту скачивания.
 
 **Зависимость WinRM** 
 

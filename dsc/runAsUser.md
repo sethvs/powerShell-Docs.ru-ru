@@ -1,21 +1,21 @@
 ---
-title: "Запуск DSC с учетными данными пользователя"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 5436b047052f522e930e60925aef1de2f5e81fcb
-ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Запуск DSC с учетными данными пользователя"
+ms.openlocfilehash: f15b2e4bfb888e2f3646a33cc0191e33a7ebb8ab
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="running-dsc-with-user-credentials"></a>Запуск DSC с учетными данными пользователя 
 
 > Область применения: Windows PowerShell 5.0, Windows PowerShell 5.1
 
-Ресурс DSC можно запускать с определенным набором учетных данных. Для этого используется автоматическое свойство **PsDscRunAsCredential** в конфигурации. По умолчанию DSC запускает каждый ресурс в качестве системной учетной записи. Иногда бывает необходим запуск с учетной записью обычного пользователя, например, при установке MSI-пакетов в контексте определенного пользователя, при установке разделов реестра пользователя, доступе к конкретному локальному каталогу пользователя или сетевой папке.
+Ресурс DSC можно запускать с определенным набором учетных данных. Для этого используется автоматическое свойство **PsDscRunAsCredential** в конфигурации. По умолчанию DSC запускает каждый ресурс в качестве системной учетной записи.
+Иногда бывает необходим запуск с учетной записью обычного пользователя, например, при установке MSI-пакетов в контексте определенного пользователя, при установке разделов реестра пользователя, доступе к конкретному локальному каталогу пользователя или сетевой папке.
 
 У каждого ресурса есть свойство **PsDscRunAsCredential**, которому можно назначить учетные данные любого пользователя (объект [PSCredential](https://msdn.microsoft.com/en-us/library/ms572524(v=VS.85).aspx)).
 Учетные данные можно жестко задать в качестве значения свойства конфигурации или установить в качестве значения [Get-Credential](https://technet.microsoft.com/en-us/library/hh849815.aspx). В этом случае пользователю будет предложено ввести учетные данные при компиляции конфигурации (дополнительные сведения о компиляции конфигураций см. в разделе [Конфигурации](configurations.md)).
@@ -28,7 +28,7 @@ translationtype: HT
 В следующем примере **Get-Credential** используется для запроса учетных данных пользователя. Ресурс [Registry](registryResource.md) используется для изменения раздела реестра, указывающего цвет фона для окна командной строки Windows.
 
 ```powershell
-Configuration ChangeCmdBackGroundColor    
+Configuration ChangeCmdBackGroundColor
 {
     Import-DscResource -ModuleName PSDesiredStateConfiguration
 
@@ -45,7 +45,7 @@ Configuration ChangeCmdBackGroundColor
             Hex                  = $true
             PsDscRunAsCredential = Get-Credential
         }
-    }                   
+    }
 }
 
 $configData = @{

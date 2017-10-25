@@ -1,15 +1,14 @@
 ---
-title: "Разделение данных конфигурации и данных среды"
-ms.date: 2016-03-31
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: carmonm
-ms.prod: powershell
-ms.openlocfilehash: b20aa1f15253ba948c3aa7cf46686c8d206a3a6f
-ms.sourcegitcommit: 65250232157bb1c742d7d385933b8abc24a570fb
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Разделение данных конфигурации и данных среды"
+ms.openlocfilehash: df3cfea08419c37716b408fdbd6b43e78be2331c
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="separating-configuration-and-environment-data"></a>Разделение данных конфигурации и данных среды
 
@@ -314,3 +313,4 @@ configuration WebsiteConfig
 - [Использование данных конфигурации](configData.md)
 - [Параметры учетных данных в данных конфигурации](configDataCredentials.md)
 - [Конфигурации DSC](configurations.md)
+
