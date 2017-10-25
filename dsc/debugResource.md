@@ -1,15 +1,14 @@
 ---
-title: "Отладка ресурсов DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: bca71e26585b091b839e8560dcf9d400651c476b
-ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
-translationtype: HT
+ms.topic: conceptual
+keywords: "dsc,powershell,конфигурация,установка"
+title: "Отладка ресурсов DSC"
+ms.openlocfilehash: 944eca3d9f21d7e06d128caf19e4aebacc5c0b26
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="debugging-dsc-resources"></a>Отладка ресурсов DSC
 
