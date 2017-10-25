@@ -50,7 +50,7 @@
       "build_source_folder": "reference",
       "build_output_subfolder": "reference",
       "locale": "ru-ru",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
