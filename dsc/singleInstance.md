@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="writing-a-single-instance-dsc-resource-best-practice" class="xliff"></a>
-# Запись ресурса DSC с одним экземпляром (рекомендуется)
+# <a name="writing-a-single-instance-dsc-resource-best-practice"></a>Запись ресурса DSC с одним экземпляром (рекомендуется)
 
 >**Примечание.** Эта статья содержит рекомендации по определению ресурса DSC, допускающего всего один экземпляр в конфигурации. Сейчас встроенная функция DSC для этого отсутствует. Возможно, она появится в будущем.
 

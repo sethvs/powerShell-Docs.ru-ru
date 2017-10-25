@@ -10,29 +10,24 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="uninstall-script" class="xliff"></a>
-# Uninstall-Script
+# <a name="uninstall-script"></a>Uninstall-Script
 
 Удаляет файл сценария, который был установлен с помощью PowerShellGet.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Uninstall-Script удаляет указанные файлы сценариев, которые были установлены в сетевом репозитории.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Uninstall-Script -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Uninstall-Script](http://go.microsoft.com/fwlink/?LinkId=619789)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 Get-InstalledScript | Uninstall-Script -WhatIf

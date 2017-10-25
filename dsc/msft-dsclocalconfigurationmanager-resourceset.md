@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="resourceset-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
+# <a name="resourceset-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
 
 Напрямую вызывает метод **Set** ресурса DSC.
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -28,8 +26,7 @@ uint32 ResourceSet(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *ResourceType* \[in\]  
@@ -44,27 +41,23 @@ uint32 ResourceSet(
 *RebootRequired* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-<a id="see-also" class="xliff"></a>
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

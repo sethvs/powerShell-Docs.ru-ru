@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-for-linux-nxfile-resource" class="xliff"></a>
-# Ресурс nxFile в DSC для Linux
+# <a name="dsc-for-linux-nxfile-resource"></a>Ресурс nxFile в DSC для Linux
 
 Ресурс **nxFile** в настройке требуемого состояния PowerShell предоставляет механизм управления файлами и каталогами на узле Linux.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxFile <string> #ResourceName
@@ -38,8 +36,7 @@ nxFile <string> #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -56,8 +53,7 @@ nxFile <string> #ResourceName
 | Режим| Указывает нужные разрешения для ресурса в восьмеричной или символьной нотации (например, 777 или rwxrwxrwx). Если используется символьная нотация, не указывайте первый символ, обозначающий каталог или файл.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-<a id="additional-information" class="xliff"></a>
-## Дополнительные сведения
+## <a name="additional-information"></a>Дополнительные сведения
 
 
 Linux и Windows используют разные символы разрыва строки в текстовых файлах по умолчанию, что может привести к непредвиденным результатам при настройке некоторых файлов на компьютере Linux с помощью __nxFile__. Избежать проблем из-за непредвиденных символов разрыва строки при работе с содержанием файла Linux можно разными способами:
@@ -135,8 +131,7 @@ nxFile resolvConf
 }
 ```
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере проверяется существование каталога `/opt/mydir` и файла с указанным содержимым в этом каталоге.
 

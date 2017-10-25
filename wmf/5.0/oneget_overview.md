@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="software-discovery-install-and-inventory-with-packagemanagement" class="xliff"></a>
-# Обнаружение, установка и инвентаризация программного обеспечения с помощью PackageManagement
+# <a name="software-discovery-install-and-inventory-with-packagemanagement"></a>Обнаружение, установка и инвентаризация программного обеспечения с помощью PackageManagement
 
 PackageManagement (который также называется OneGet) — это новый способ обнаружения и установки пакетов программного обеспечения из Интернета. Это диспетчер или концентратор существующих диспетчеров пакетов (также называемых поставщиками пакетов), который унифицирует управление пакетами Windows с помощью единого интерфейса Windows PowerShell. PackageManagement дает следующие возможности:
 

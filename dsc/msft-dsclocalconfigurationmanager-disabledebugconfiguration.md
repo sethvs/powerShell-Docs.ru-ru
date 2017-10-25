@@ -10,46 +10,39 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод DisableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отключает отладку ресурсов DSC.
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
 uint32 DisableDebugConfiguration();
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 Этот метод не имеет параметров.
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-<a id="see-also" class="xliff"></a>
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

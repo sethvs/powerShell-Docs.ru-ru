@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter" class="xliff"></a>
-# Командлет Set-DscLocalConfigurationManager поддерживает параметр -force
+# <a name="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter"></a>Командлет Set-DscLocalConfigurationManager поддерживает параметр -force
 
 Для командлета Set-DscLocalConfigurationManager добавлена поддержка нового параметра. Это позволит пользователю детерминировано выполнить сброс метаконфигурации на компьютере, когда в фоновом режиме выполняются другие операции, такие как проверка согласованности, так как это приведет к их остановке.
 

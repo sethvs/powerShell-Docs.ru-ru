@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-guid" class="xliff"></a>
-# New-Guid
+# <a name="new-guid"></a>New-Guid
 Часто в сценарии (или при создании ресурсов DSC) требуется уникальный идентификатор. Здесь можно использовать GUID, для создания которых достаточно вызвать класс Guid платформы .NET Framework, однако наличие командлета делает этот процесс более очевидным и удобным для конечных пользователей, которые еще не знакомы с данным классом .NET Framework:
 
 PS C:\\&gt; New-Guid

@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-package-resource" class="xliff"></a>
-# Ресурс Package в DSC
+# <a name="dsc-package-resource"></a>Ресурс Package в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **Package** в DSC Windows PowerShell предоставляет механизм установки или удаления пакетов, таких как пакеты установщика Windows и setup.exe, на целевом узле.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Package [string] #ResourceName
@@ -35,8 +33,7 @@ Package [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имя пакета, для которого требуется обеспечить определенное состояние.| 
@@ -49,8 +46,7 @@ Package [string] #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 | ReturnCode| Указывает ожидаемый код возврата. Если фактический код возврата не соответствует указанному здесь значению, настройка вернет ошибку.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В этом примере выполняется установщик MSI, который находится по указанному пути и имеет указанный идентификатор.
 

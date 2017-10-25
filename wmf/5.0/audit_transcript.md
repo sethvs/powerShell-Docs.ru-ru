@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="enhanced-transcription-options" class="xliff"></a>
-# Расширенные параметры транскрибирования
+# <a name="enhanced-transcription-options"></a>Расширенные параметры транскрибирования
 
 Транскрибирование Windows PowerShell было улучшено и теперь распространяется на все приложения размещения (например, интегрированную среду сценариев Windows), а не только узел консоли (powershell.exe).
 

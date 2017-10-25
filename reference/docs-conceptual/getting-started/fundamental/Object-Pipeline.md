@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Конвейер объектов"
 ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a

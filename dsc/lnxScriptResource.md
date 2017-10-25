@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-for-linux-nxscript-resource" class="xliff"></a>
-# Ресурс nxScript в DSC для Linux
+# <a name="dsc-for-linux-nxscript-resource"></a>Ресурс nxScript в DSC для Linux
 
 Ресурс **nxScript** в DSC PowerShell предоставляет механизм управления сценариями Linux на узле Linux.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxScript <string> #ResourceName
@@ -31,8 +29,7 @@ nxScript <string> #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -43,8 +40,7 @@ nxScript <string> #ResourceName
 | Группа| Указывает, от имени какой группы выполняется сценарий.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере показано применение ресурса **nxScript** для дополнительного управления конфигурацией.
 

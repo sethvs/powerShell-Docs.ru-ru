@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-command" class="xliff"></a>
-# Find-Command
+# <a name="find-command"></a>Find-Command
 
 Ищет команды PowerShell в модулях.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-Command ищет команды PowerShell, такие как командлеты, псевдонимы, функции и рабочие процессы. Find-Command ищет их в модулях из зарегистрированных репозиториев.
 Для каждой команды, им обнаруженной, он возвращает объект PSGetCommandInfo. Вы можете передать объект PSGetCommandInfo в командлет Install-Module для установки модуля, содержащего конкретную команду.
 
@@ -29,19 +27,16 @@ ms.lasthandoff: 06/12/2017
 - Find-Command позволяет фильтровать язык поиска для определенного репозитория при помощи параметра -Filter.
 - Find-Command может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Command -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-Command](http://go.microsoft.com/fwlink/?LinkId=733636)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 
 # Find a specific command

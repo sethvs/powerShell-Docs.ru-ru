@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="audit-powershell-usage-using-transcription-and-logging" class="xliff"></a>
-# Аудит использования PowerShell с помощью записи и ведения журнала
+# <a name="audit-powershell-usage-using-transcription-and-logging"></a>Аудит использования PowerShell с помощью записи и ведения журнала
 
 - [Расширенные параметры транскрибирования](audit_transcript.md)
 - [Трассировка сценариев и ведения журналов для них](audit_script.md)

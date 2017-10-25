@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getting-started-with-powershell-desired-state-configuration" class="xliff"></a>
-# Начало работы с настройкой требуемого состояния PowerShell #
+# <a name="getting-started-with-powershell-desired-state-configuration"></a>Начало работы с настройкой требуемого состояния PowerShell #
 
 В этом руководстве описывается, как приступить к созданию документов настройки требуемого состояния PowerShell и применять их к компьютерам. Предполагается, что пользователь уже знаком с командлетами, модулями и компонентами PowerShell. 
 
 
-<a id="create-a-configuration" class="xliff"></a>
-## Создание конфигурации ##
+## <a name="create-a-configuration"></a>Создание конфигурации ##
 
 [**Конфигурации**](https://msdn.microsoft.com/en-us/powershell/dsc/configurations) — это документы, которые описывают среду. Среды состоят из "**узлов**", которые обычно представляют собой компьютеры или виртуальные машины. 
 
@@ -40,8 +38,7 @@ configuration MyFirstConfiguration
 
 }
 ```
-<a id="parts-of-a-configuration" class="xliff"></a>
-## Элементы конфигурации ##
+## <a name="parts-of-a-configuration"></a>Элементы конфигурации ##
 **Configuration** — это ключевое слово, добавленное в PowerShell 4.0. Оно означает особый вид компонентов PowerShell, используемых настройкой требуемого состояния. В этом примере компоненту присвоено имя myFirstConfiguration. 
 
 Следующая строка представляет собой оператор импорта, который аналогичен импорту модуля. Его мы обсудим позже.

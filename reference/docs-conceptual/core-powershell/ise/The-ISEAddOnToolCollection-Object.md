@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEAddOnToolCollection"
 ms.assetid: 634eab89-0845-4016-974b-361b09bb8f7b

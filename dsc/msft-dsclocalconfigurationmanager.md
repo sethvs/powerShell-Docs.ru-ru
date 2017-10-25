@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Класс MSFT_DSCLocalConfigurationManager
+# <a name="msftdsclocalconfigurationmanager-class"></a>Класс MSFT_DSCLocalConfigurationManager
 
 Локальный диспетчер конфигураций (LCM) управляет состоянием файлов конфигурации и использует агент конфигурации для применения настроек.
 
 Следующий пример синтаксиса — упрощенный MOF-код, который включает все наследуемые свойства.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 ------
 
 ``` syntax
@@ -28,16 +26,14 @@ class MSFT_DSCLocalConfigurationManager
 };
 ```
 
-<a id="members" class="xliff"></a>
-## Члены группы
+## <a name="members"></a>Члены группы
 -------
 
 Класс **MSFT_DSCLocalConfigurationManager** включает следующие члены:
 
 -   [Методы][]
 
-<a id="methods" class="xliff"></a>
-### Методы
+### <a name="methods"></a>Методы
 
 Класс **MSFT_DSCLocalConfigurationManager** включает следующие методы:
 
@@ -67,8 +63,7 @@ class MSFT_DSCLocalConfigurationManager
 
  
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 

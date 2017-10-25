@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="removeconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="removeconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Удаляет файлы конфигурации.
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -26,8 +24,7 @@ uint32 RemoveConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *Stage* \[in\]  
@@ -42,27 +39,23 @@ uint32 RemoveConfiguration(
 *Force* \[in\]  
 Значение **true** для принудительного удаления конфигурации.
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-<a id="see-also" class="xliff"></a>
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

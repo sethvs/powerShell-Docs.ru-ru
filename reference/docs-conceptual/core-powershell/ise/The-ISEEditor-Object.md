@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEEditor"
-ms.openlocfilehash: 149eda44fea5b02324442970324e3010015e7ae5
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: c593eeebf0b9a94769841efd2aa78f84a3829ca5
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="the-iseeditor-object"></a>Объект ISEEditor
   Объект **ISEEditor** является экземпляром класса Microsoft.PowerShell.Host.ISE.ISEEditor. Область консоли — это объект **ISEEditor**. Каждый объект [ISEFile](The-ISEFile-Object.md) имеет связанный объект **ISEEditor**. В следующих разделах перечислены методы и свойства объекта **ISEEditor**.
@@ -75,7 +75,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **text** — строка. Вставляемый текст.
 
- См. [пример сценария](#-scripting-example) далее в этом разделе.
+ См. [пример сценария](#scripting-example) далее в этом разделе.
 
 ### <a name="select-startline-startcolumn-endline-endcolumn-"></a>Select\( startLine, startColumn, endLine, endColumn \)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -90,7 +90,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **endColumn** — целое число. Столбец в строке, в которой заканчивается выделение.
 
- См. [пример сценария](#-scripting-example) далее в этом разделе.
+ См. [пример сценария](#scripting-example) далее в этом разделе.
 
 ### <a name="selectcaretline"></a>SelectCaretLine\(\)
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
@@ -185,14 +185,14 @@ $psISE.CurrentFile.Editor.LineCount
 
  Свойство только для чтения, которое получает выделенный текст из редактора.
 
- См. [пример сценария](#-scripting-example) далее в этом разделе.
+ См. [пример сценария](#scripting-example) далее в этом разделе.
 
 ### <a name="text"></a>Текст
   Поддерживается в интегрированной среде сценариев Windows PowerShell 2.0 и более поздних версий. 
 
  Свойство для чтения и записи, которое получает или задает текст в редакторе.
 
- См. [пример сценария](#-scripting-example) далее в этом разделе.
+ См. [пример сценария](#scripting-example) далее в этом разделе.
 
 ## <a name="scripting-example"></a>Пример сценария
 

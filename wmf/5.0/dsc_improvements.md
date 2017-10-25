@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="improvements-in-desired-state-configuration-dsc" class="xliff"></a>
-# Усовершенствования в настройке требуемого состояния (DSC)
+# <a name="improvements-in-desired-state-configuration-dsc"></a>Усовершенствования в настройке требуемого состояния (DSC)
 
-<a id="dsc-feedback-survey" class="xliff"></a>
-## Опрос для сбора отзывов о DSC   
+## <a name="dsc-feedback-survey"></a>Опрос для сбора отзывов о DSC   
 
 Если у вас уже есть определенный опыт по использованию новых возможностей и функций для настройки требуемого состояния PowerShell, представленных в этом выпуске, помогите нам продолжить совершенствование продукта, пройдя небольшой [опрос по WMF 5.0 RTM](https://www.surveymonkey.com/r/SGLQM5W). Этот опрос позволит вам поделиться отзывами о новых функциях и возможностях. 
 

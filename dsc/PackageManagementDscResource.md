@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-packagemanagement-resource" class="xliff"></a>
-# Ресурс PackageManagement DSC
+# <a name="dsc-packagemanagement-resource"></a>Ресурс PackageManagement DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **PackageManagement** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм установки пакетов управления пакетами на целевом узле или их удаления. Для этого ресурса требуется модуль **PackageManagement**: http://PowerShellGallery.com.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 PackageManagement [string] #ResourceName
@@ -35,8 +33,7 @@ PackageManagement [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имя устанавливаемого или удаляемого пакета.| 
@@ -49,16 +46,14 @@ PackageManagement [string] #ResourceName
 | ProviderName| Указывает имя поставщика пакетов, на который распространяется область поиска пакетов. Чтобы получить имена поставщика, запустите командлет Get-PackageProvider.| 
 | AdditionalParameters| Специальные параметры поставщика, которые передаются как хэш-таблица. Например, для поставщика NuGet можно передать дополнительные параметры, такие как DestinationPath.| 
 
-<a id="additional-parameters" class="xliff"></a>
-## Дополнительные параметры
+## <a name="additional-parameters"></a>Дополнительные параметры
 В следующей таблице перечислены параметры свойства AdditionalParameters.
 |  Параметр  | Описание   | 
 |---|---|
 | DestinationPath| Используется поставщиками, такими как встроенный поставщик NuGet. Указывает расположение файла, в котором вы хотите установить пакет.|
 | InstallationPolicy| Используется поставщиками, такими как встроенный поставщик NuGet. Определяет, доверяете ли вы источнику пакета. Одно из двух значений: "Untrusted", "Trusted".|
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В этом примере устанавливается пакет NuGet **JQuery** и модуль PowerShell **GistProvider** с помощью ресурса DSC **PackageManagement**. В этом примере сначала обеспечивается доступность нужных источников пакета, а затем определяется ожидаемое состояние пакетов **JQuery** и **GistProvider** (для NuGet и PowerShell).
 

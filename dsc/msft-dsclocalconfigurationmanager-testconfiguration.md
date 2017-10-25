@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="testconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
+# <a name="testconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод TestConfiguration класса MSFT_DSCLocalConfigurationManager
 
 Отправляет документ конфигурации на управляемый узел и проверяет соответствие текущей конфигурации документу.
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -28,8 +26,7 @@ uint32 TestConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *configurationData* \[in\]  
@@ -44,27 +41,23 @@ uint32 TestConfiguration(
 *ResourcesNotInDesiredState* \[out\]  
 Выходные данные содержат встроенный экземпляр класса **MSFT_ResourceNotInDesiredState**, указывающий ресурсы, которые не находятся в нужном состоянии.
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-<a id="see-also" class="xliff"></a>
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

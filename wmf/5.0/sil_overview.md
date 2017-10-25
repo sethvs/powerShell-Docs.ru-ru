@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="software-inventory-logging-sil" class="xliff"></a>
-# Инвентаризация программного обеспечения (SIL)
+# <a name="software-inventory-logging-sil"></a>Инвентаризация программного обеспечения (SIL)
 
 **ВАЖНО!** *При установке WMF 5.0 на сервере Windows Server 2012 R2, где уже выполняется SIL, необходимо один раз запустить командлет Start-SilLogging после установки WMF, так как процесс установки ошибочно остановит функцию инвентаризации программного обеспечения.*
 

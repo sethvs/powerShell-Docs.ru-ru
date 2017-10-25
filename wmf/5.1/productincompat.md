@@ -9,25 +9,21 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="product-compatibility-status" class="xliff"></a>
-# Состояние совместимости продуктов
+# <a name="product-compatibility-status"></a>Состояние совместимости продуктов
 
-<a id="compatible" class="xliff"></a>
-## Совместимые:
+## <a name="compatible"></a>Совместимые:
 > Windows Management Framework 5.1 **можно запускать** в системах, в которых выполняются следующие серверные приложения:
 
 - Microsoft SharePoint Server 2013
 - System Center 2012 Configuration Manager
 
-<a id="not-tested" class="xliff"></a>
-## Не тестировались:
+## <a name="not-tested"></a>Не тестировались:
 > Работа Windows Management Framework 5.1 **не тестировалась** в системах, в которых выполняются следующие серверные приложения:
 
 - Microsoft SharePoint Server 2010
 - System Center 2012 Virtual Machine Manager
 
-<a id="incompatible" class="xliff"></a>
-## Несовместимые:
+## <a name="incompatible"></a>Несовместимые:
 > Windows Management Framework 5.1 **не следует запускать** в системах, в которых выполняются следующие серверные приложения:
 
 - Microsoft Exchange Server 2013

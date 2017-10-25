@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="class-based-dsc-resources" class="xliff"></a>
-# Ресурсы DSC, основанные на классах
+# <a name="class-based-dsc-resources"></a>Ресурсы DSC, основанные на классах
 
-<a id="defining-dsc-resources-with-classes" class="xliff"></a>
-## Определение ресурсов DSC с помощью классов
+## <a name="defining-dsc-resources-with-classes"></a>Определение ресурсов DSC с помощью классов
 
 Основываясь на полученных отзывах, мы упростили создание и использование ресурсов DSC на основе классов. Ресурс DSC на основе класса и поставщик ресурсов DSC командлета имеют следующие отличия.
 

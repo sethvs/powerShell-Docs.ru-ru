@@ -10,40 +10,33 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-scriptfileinfo" class="xliff"></a>
-# New-ScriptFileInfo
+# <a name="new-scriptfileinfo"></a>New-ScriptFileInfo
 
 Создание файла сценария с метаданными.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет New-ScriptFileInfo создает файл сценария PowerShell, включая метаданные о сценарии.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name New-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [New-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619792)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
-<a id="passthru-parameter" class="xliff"></a>
-### Параметр PassThru
+### <a name="passthru-parameter"></a>Параметр PassThru
 
 ```powershell
 New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
-<a id="new-scriptfileinfo-cmdlet" class="xliff"></a>
-### Командлет New-ScriptFileInfo
+### <a name="new-scriptfileinfo-cmdlet"></a>Командлет New-ScriptFileInfo
 Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. 
 
 ```powershell

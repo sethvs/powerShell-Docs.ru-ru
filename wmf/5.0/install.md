@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="installation-instructions" class="xliff"></a>
-# Инструкции по установке
+# <a name="installation-instructions"></a>Инструкции по установке
 
 Скачайте подходящий пакет для своей операционной системы и архитектуры:
 

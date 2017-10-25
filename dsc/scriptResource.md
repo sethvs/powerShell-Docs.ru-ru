@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-script-resource" class="xliff"></a>
-# Ресурс Script в DSC
+# <a name="dsc-script-resource"></a>Ресурс Script в DSC
 
  
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -27,8 +26,7 @@ ms.lasthandoff: 06/12/2017
 Если необходимо использовать переменные из сценария конфигурации в блоках сценария `GetScript`, `TestScript` или `SetScript`, используйте область `$using:` (см. пример ниже).
 
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Script [string] #ResourceName
@@ -41,8 +39,7 @@ Script [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -52,8 +49,7 @@ Script [string] #ResourceName
 | Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.| 
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.
 
-<a id="example-1" class="xliff"></a>
-## Пример 1
+## <a name="example-1"></a>Пример 1
 ```powershell
 $version = Get-Content 'version.txt'
 
@@ -75,8 +71,7 @@ Configuration ScriptTest
 }
 ```
 
-<a id="example-2" class="xliff"></a>
-## Пример 2.
+## <a name="example-2"></a>Пример 2.
 ```powershell
 $version = Get-Content 'version.txt'
 

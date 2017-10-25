@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
+# <a name="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
 
 Получает выходные данные агента конфигурации, относящиеся к определенному заданию.
 
-<a id="syntax" class="xliff"></a>
-Синтаксис
+<a name="syntax"></a>Синтаксис
 ------
 
 ```mof
@@ -27,8 +25,7 @@ uint32 GetConfigurationResultOutput(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-Параметры
+<a name="parameters"></a>Параметры
 ----------
 
 *jobId* \[in\]  
@@ -40,27 +37,23 @@ uint32 GetConfigurationResultOutput(
 *output* \[out\]  
 Выходные данные для указанного задания.
 
-<a id="return-value" class="xliff"></a>
-## Возвращаемое значение
+## <a name="return-value"></a>Возвращаемое значение
 ------------
 
 Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-<a id="remarks" class="xliff"></a>
-## Замечания
+## <a name="remarks"></a>Замечания
 
 Это статический метод.
 
-<a id="requirements" class="xliff"></a>
-## Требования
+## <a name="requirements"></a>Требования
 ------------
 >**MOF-файл:** DscCore.mof
 
 >**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-<a id="see-also" class="xliff"></a>
-## См. также:
+## <a name="see-also"></a>См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-environment-resource" class="xliff"></a>
-# Ресурс Environment в DSC
+# <a name="dsc-environment-resource"></a>Ресурс Environment в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс __Environment__ в DSC Windows PowerShell предоставляет механизм управления системными переменными среды.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 ``` mof
 Environment [string] #ResourceName
 {
@@ -30,8 +28,7 @@ Environment [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -41,8 +38,7 @@ Environment [string] #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 | Значение| Значение, которое нужно присвоить переменной среды.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере проверяется, существует ли переменная __TestEnvironmentVariable__ и имеет ли она значение __TestValue__. Если переменная не существует, она создается.
 

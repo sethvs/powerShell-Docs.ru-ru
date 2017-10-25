@@ -10,16 +10,14 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-service-resource" class="xliff"></a>
-# Ресурс Service в DSC
+# <a name="dsc-service-resource"></a>Ресурс Service в DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 
 Ресурс **Service** в DSC Windows PowerShell предоставляет механизм управления службами на целевом узле.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 Service [string] #ResourceName
@@ -37,8 +35,7 @@ Service [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -53,8 +50,7 @@ Service [string] #ResourceName
 | Ensure | Указывает, имеется ли целевая служба в системе. Если целевая служба не должна существовать, укажите для этого свойства значение **Absent**. Если целевая служба должна существовать, укажите значение **Present** (используется по умолчанию).|
 | путь | Указывает путь к двоичному файлу для новой службы.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 ```powershell
 configuration ServiceTest

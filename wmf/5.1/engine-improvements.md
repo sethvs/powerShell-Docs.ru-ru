@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershell-engine-improvements" class="xliff"></a>
-#Усовершенствования подсистемы PowerShell
+#<a name="powershell-engine-improvements"></a>Усовершенствования подсистемы PowerShell
 
 В WMF 5.1 были реализованы перечисленные ниже улучшения основной подсистемы PowerShell.
 
 
-<a id="performance" class="xliff"></a>
-## Производительность ##
+## <a name="performance"></a>Производительность ##
 
 Производительность улучшена в некоторых важных аспектах:
 

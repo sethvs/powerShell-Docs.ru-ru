@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-rolecapability" class="xliff"></a>
-# Find-RoleCapability
+# <a name="find-rolecapability"></a>Find-RoleCapability
 
 Находит возможности ролей в модулях.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-RoleCapability находит возможности ролей PowerShell в модулях. Find-RoleCapability ищет модули в зарегистрированных репозиториях. Для каждой возможности роли, найденной командлетом, он возвращает объект PSGetRoleCapabilityInfo. Вы можете передать объект PSGetRoleCapabilityInfo в командлет Install-Module для установки модуля, содержащего эту возможность роли.
 Возможности ролей PowerShell определяют, какие команды, приложения и т. п. будут доступны пользователю в конечной точке Just Enough Administration (JEA). Возможности ролей определяются файлами с расширением PSRC.
 
@@ -29,19 +27,16 @@ ms.lasthandoff: 06/12/2017
 - Find-RoleCapability позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-RoleCapability может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-RoleCapability -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-RoleCapability](http://go.microsoft.com/fwlink/?LinkId=718029)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 
 # Find a specific role capability

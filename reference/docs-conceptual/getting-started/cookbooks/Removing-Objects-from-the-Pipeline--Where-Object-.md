@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Удаление объектов из конвейера (Where-Object)"
 ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284

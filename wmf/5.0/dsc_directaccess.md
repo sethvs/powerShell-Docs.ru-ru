@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="direct-access-to-dsc-resource-methods" class="xliff"></a>
-# Прямой доступ к методам ресурсов DSC
+# <a name="direct-access-to-dsc-resource-methods"></a>Прямой доступ к методам ресурсов DSC
 
 
 Добавлен командлет [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx) для прямого доступа к ресурсам DSC и их методам (Get, Set или Test). Он может использоваться третьими сторонами, желающими воспользоваться преимуществами ресурсов DSC.

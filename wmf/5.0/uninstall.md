@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="uninstallation-instructions" class="xliff"></a>
-# Инструкции по удалению
+# <a name="uninstallation-instructions"></a>Инструкции по удалению
 
-<a id="using-command-prompt" class="xliff"></a>
-## Использование командной строки
+## <a name="using-command-prompt"></a>Использование командной строки
 1.  Откройте окно **Командная строка**.
 2.  Запустите [Windows Update Standalone Launcher](https://support.microsoft.com/en-us/kb/934307) (Автономное средство запуска Центра обновления Windows), как показано ниже:
 
@@ -30,8 +28,7 @@ wusa /uninstall /kb:3134759
 wusa /uninstall /kb:3134760
 ```
 
-<a id="using-control-panel" class="xliff"></a>
-## Использование панели управления
+## <a name="using-control-panel"></a>Использование панели управления
 1.  Откройте **Панель управления**.
 2.  Откройте **Программы** и выберите **Удаление программы**.
 3.  Щелкните **Просмотр установленных обновлений**.

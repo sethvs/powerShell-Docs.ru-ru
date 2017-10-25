@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="built-in-desired-state-configuration-resources-for-linux" class="xliff"></a>
-# Встроенные ресурсы настройки требуемого состояния для Linux
+# <a name="built-in-desired-state-configuration-resources-for-linux"></a>Встроенные ресурсы настройки требуемого состояния для Linux
 
 Ресурсы — это строительные блоки, которые можно использовать для написания сценария настройки требуемого состояния (DSC) PowerShell. DSC для Linux поставляется с набором встроенных возможностей для настройки ресурсов, таких как файлы и папки, пакеты, переменные среды, службы и процессы.
 
-<a id="built-in-resources" class="xliff"></a>
-## Встроенные ресурсы 
+## <a name="built-in-resources"></a>Встроенные ресурсы 
 
 Список ресурсов и ссылки на статьи, в которых они рассматриваются подробно.
 

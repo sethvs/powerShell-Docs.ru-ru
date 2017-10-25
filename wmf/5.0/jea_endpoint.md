@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="creating-and-connecting-to-a-jea-endpoint" class="xliff"></a>
-# Создание конечной точки JEA и подключение к ней
+# <a name="creating-and-connecting-to-a-jea-endpoint"></a>Создание конечной точки JEA и подключение к ней
 Чтобы создать конечную точку JEA, необходимо создать и зарегистрировать специально настроенный файл конфигурации сеанса PowerShell. Для этого можно воспользоваться командлетом **New-PSSessionConfigurationFile**.
 
 ```powershell
@@ -142,8 +141,7 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc" 
 ```
 
-<a id="connect-to-a-jea-endpoint" class="xliff"></a>
-## Подключение к конечной точке JEA
+## <a name="connect-to-a-jea-endpoint"></a>Подключение к конечной точке JEA
 Подключение к конечной точке JEA осуществляется аналогично подключению к любой конечной точке PowerShell.  Необходимо просто назначить конечной точке JEA имя в качестве параметра ConfigurationName для **New-PSSession**, **Invoke-Command** или **Enter-PSSession**.
 
 ```powershell

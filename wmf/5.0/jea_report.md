@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="reporting-on-jea" class="xliff"></a>
-# Отчеты о JEA
+# <a name="reporting-on-jea"></a>Отчеты о JEA
 Чтобы отправить отчета о состоянии конфигурации JEA, можно использовать следующее.
 1.  **Get-PSSessionConfiguration** для получения списка всех зарегистрированных конечных точек на заданном компьютере.
 2.  **Get-PSSessionCapability** для получения отчета о возможности любого пользователя на заданной конечной точке.

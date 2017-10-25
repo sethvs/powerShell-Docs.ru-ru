@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="install-script" class="xliff"></a>
-# Install-Script
+# <a name="install-script"></a>Install-Script
 
 Устанавливает файлы скриптов PowerShell из сетевых репозиториев на локальный компьютер.
 
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Install-Script получает полезные данные скрипта из репозитория, подтверждает, что полезные данные — это допустимый скрипт PowerShell, и копирует файл скрипта в указанную папку.
 
@@ -40,8 +38,7 @@ ms.lasthandoff: 06/12/2017
 
 Подстановочные знаки не поддерживаются в параметре -Name командлетов Install-Module, Save-Module, Uninstall-Module, Install-Script, Save-Script и Uninstall-Script.
 
-<a id="scope" class="xliff"></a>
-### Область
+### <a name="scope"></a>Область
 Задает область установки модуля. Допустимые значения: AllUsers и CurrentUser.
 
 Область установки по умолчанию — AllUsers.
@@ -56,8 +53,7 @@ ms.lasthandoff: 06/12/2017
 Область AllUsers означает, что скрипт будет установлен в папку %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts, чтобы он был доступен для всех пользователей. Область CurrentUser означает, что скрипт будет установлен в папку $home\Documents\WindowsPowerShell\Scripts, чтобы он был доступен только текущему пользователю.
 
 
-<a id="nopathupdate" class="xliff"></a>
-## NoPathUpdate
+## <a name="nopathupdate"></a>NoPathUpdate
 
 - Параметр NoPathUpdate командлета Install-Script позволяет обойти запрос на добавление папки для установки скрипта в переменную среды PATH.
 - При использование команды WITH с параметром -NoPathUpdate запрос не отображается, а переменная среды PATH не обновляется (параметр -Force игнорируется).
@@ -66,8 +62,7 @@ ms.lasthandoff: 06/12/2017
 - Все это применимо только при первом использовании командлета Install-Script в рамках конкретной области.
 
 
-<a id="notes" class="xliff"></a>
-## Заметки
+## <a name="notes"></a>Заметки
 
 Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.
 
@@ -84,20 +79,17 @@ Install-Script возвращает ошибку, если в веб-колле�
 Чтобы предотвратить выполнение модулей, содержащих вредоносный код, установленные модули не импортируются автоматически при установке. В целях безопасности рекомендуется проверить код модуля перед первым выполнением командлетов или функции из него.
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Install-Script -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Install-Script](http://go.microsoft.com/fwlink/?LinkId=619784)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 
@@ -479,8 +471,7 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 ```
 
-<a id="install-script-cmdlet-in-pipeline-operations" class="xliff"></a>
-## Командлет Install-Script в операциях конвейера
+## <a name="install-script-cmdlet-in-pipeline-operations"></a>Командлет Install-Script в операциях конвейера
 
 ```powershell
 
@@ -507,13 +498,11 @@ Get-InstalledModule
 
 ```
 
-<a id="side-by-side-version-support-on-powershell-50-or-newer" class="xliff"></a>
-## Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
+## <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
 
 PowerShellGet поддерживает параллельную установку (SxS) разных версий модуля при использовании командлетов Install-Script, Update-Script и Publish-Script в Windows PowerShell 5.0 или более поздней версии.
 
-<a id="install-script-examples" class="xliff"></a>
-### Примеры Install-Script
+### <a name="install-script-examples"></a>Примеры Install-Script
 
 ```powershell
 # Install a version of the module
@@ -545,8 +534,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="install-module-with-its-dependencies" class="xliff"></a>
-## Установка модуля с зависимостями
+## <a name="install-module-with-its-dependencies"></a>Установка модуля с зависимостями
 
 ```powershell
 
@@ -640,8 +628,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="error-scenarios" class="xliff"></a>
-## Примеры, возвращающие ошибку
+## <a name="error-scenarios"></a>Примеры, возвращающие ошибку
 
 ```powershell
 
@@ -659,8 +646,7 @@ Install-Script ContosoClient,ContosoServer -MinimumVersion 2.0
 
 ```
 
-<a id="installing-a-script-with-dependent-scripts-and-modules" class="xliff"></a>
-## Установка скрипта с зависимыми скриптами и модулями
+## <a name="installing-a-script-with-dependent-scripts-and-modules"></a>Установка скрипта с зависимыми скриптами и модулями
 
 ```powershell
 # Installing a script with dependent scripts and modules
@@ -733,8 +719,7 @@ Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
 
-<a id="install-script-and-get-installedscript-cmdlets" class="xliff"></a>
-## Командлеты Install-Script и Get-InstalledScript
+## <a name="install-script-and-get-installedscript-cmdlets"></a>Командлеты Install-Script и Get-InstalledScript
 Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области. По умолчанию сценарии устанавливаются в область AllUsers. Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.
 
 Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH. Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script. Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.

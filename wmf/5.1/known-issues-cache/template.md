@@ -12,12 +12,10 @@ ms.lasthandoff: 06/12/2017
 ---
 >Примечание. Предоставьте предложенное описательное название и краткое описание.
 
-<a id="example-erroneous-executionpolicy-errors" class="xliff"></a>
-## Пример. Ложные ошибки ExecutionPolicy ##
+## <a name="example-erroneous-executionpolicy-errors"></a>Пример. Ложные ошибки ExecutionPolicy ##
 В Windows 7 использование модулей PowerShell и ресурсов DSC может привести к возникновению ошибок, связанных с ExecutionPolicy.
 
-<a id="resolution" class="xliff"></a>
-### Разрешение
+### <a name="resolution"></a>Разрешение
 
 Чтобы устранить проблему, задайте для **ExecutionPolicy** значение **RemoteSigned**, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
 

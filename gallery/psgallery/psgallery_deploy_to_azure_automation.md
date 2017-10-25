@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="deploy-to-azure-automation" class="xliff"></a>
-Развертывание в службу автоматизации Azure
+<a name="deploy-to-azure-automation"></a>Развертывание в службу автоматизации Azure
 ===========================
 
 Кнопкой "Развернуть в службе автоматизации Azure" на странице подробностей об элементе можно развернуть элемент из коллекции PowerShell в службу автоматизации Azure.

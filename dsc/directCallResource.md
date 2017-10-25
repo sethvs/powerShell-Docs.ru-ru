@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="calling-dsc-resource-methods-directly" class="xliff"></a>
-# Прямой вызов методов ресурсов DSC
+# <a name="calling-dsc-resource-methods-directly"></a>Прямой вызов методов ресурсов DSC
 
 >Область применения: Windows PowerShell 5.0
 
@@ -23,8 +22,7 @@ ms.lasthandoff: 06/12/2017
 
 Ниже приведены примеры прямого вызова методов ресурсов:
 
-<a id="ensure-a-file-is-present" class="xliff"></a>
-## Проверка наличия файла
+## <a name="ensure-a-file-is-present"></a>Проверка наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Set -Property @{
@@ -33,8 +31,7 @@ $result = Invoke-DscResource -Name File -Method Set -Property @{
 $result | fl
 ```
 
-<a id="test-that-a-file-is-present" class="xliff"></a>
-## Тестирование наличия файла
+## <a name="test-that-a-file-is-present"></a>Тестирование наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Test -Property @{
@@ -43,8 +40,7 @@ $result = Invoke-DscResource -Name File -Method Test -Property @{
 $result | fl
 ```
 
-<a id="get-the-contents-of-file" class="xliff"></a>
-## Получение содержимого файла
+## <a name="get-the-contents-of-file"></a>Получение содержимого файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Get -Property @{
@@ -55,8 +51,7 @@ $result.ItemValue | fl
 
 >**Примечание**. Прямой вызов методов составного ресурса не поддерживается. Вместо этого вызывайте методы базовых ресурсов, входящих в составной ресурс.
 
-<a id="see-also" class="xliff"></a>
-## См. также
+## <a name="see-also"></a>См. также
 - [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md) 
 - [Написание пользовательских ресурсов DSC с использованием классов PowerShell](authoringResourceClass.md)
 - [Отладка ресурсов DSC](debugResource.md)

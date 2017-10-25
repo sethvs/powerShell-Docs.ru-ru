@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="additional-value-for-refreshmode-property" class="xliff"></a>
-# Дополнительное значение для свойства RefreshMode
+# <a name="additional-value-for-refreshmode-property"></a>Дополнительное значение для свойства RefreshMode
 
 В этом выпуске появилось новое значение `RefreshMode` — **Disabled**. Когда включен этот режим, LCM не осуществляет управление документами. Дополнительные сведения см. в разделе [Настройка локального диспетчера конфигураций](https://msdn.microsoft.com/powershell/dsc/metaconfig).
 

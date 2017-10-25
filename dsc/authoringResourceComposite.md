@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="composite-resources-using-a-dsc-configuration-as-a-resource" class="xliff"></a>
-# Составные ресурсы: использование DSC как ресурса
+# <a name="composite-resources-using-a-dsc-configuration-as-a-resource"></a>Составные ресурсы: использование DSC как ресурса
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 На практике конфигурации часто становятся длинными и сложными — вызывают множество разных ресурсов и задают большое количество свойств. Для решения этой проблемы можно использовать настройку требуемого состояния (DSC) Windows PowerShell как ресурс для других конфигураций. Мы называем это составным ресурсом. Составной ресурс — это конфигурация DSC с возможностью настройки параметров. Параметры конфигурации выступают как свойства ресурса. Конфигурация сохраняется как файл с расширением **.schema.psm1** и применяется вместо MOF-схемы и ресурса сценария в типовом ресурсе DSC (дополнительные сведения о ресурсах DSC см. в статье [Ресурсы настройки требуемого состояния Windows PowerShell](resources.md).
 
-<a id="creating-the-composite-resource" class="xliff"></a>
-## Создание составного ресурса
+## <a name="creating-the-composite-resource"></a>Создание составного ресурса
 
 В нашем примере создается конфигурация, которая вызывает ряд существующих ресурсов для настройки виртуальных машин. Вместо указания значений для настройки в блоках конфигурации она принимает ряд параметров, которые будут использоваться в блоках конфигурации.
 
@@ -134,8 +132,7 @@ Configuration xVirtualMachine
 }
 ```
 
-<a id="saving-the-configuration-as-a-composite-resource" class="xliff"></a>
-### Сохранение конфигурации как составного ресурса
+### <a name="saving-the-configuration-as-a-composite-resource"></a>Сохранение конфигурации как составного ресурса
 
 Чтобы использовать параметризованную конфигурацию как ресурс DSC, сохраните ее в структуре папок, как и любой другой ресурс на базе MOF, и присвойте имя с расширением **. schema.psm1**. В этом примере мы назовем файл **xVirtualMachine.schema.psm1**. Кроме того, необходимо создать манифест с именем **xVirtualMachine.psd1**, содержащий указанную ниже строку. Он дополняет **MyDscResources.psd1** — манифест модуля для всех ресурсов в папке **MyDscResources**.
 
@@ -157,8 +154,7 @@ $env: psmodulepath
 
 Теперь ресурс можно обнаружить с помощью командлета Get-DscResource, а его свойство — с помощью того же командлета или комбинации клавиш **Ctrl + Space**, активирующей автозаполнение в интегрированной среде сценариев Windows PowerShell.
 
-<a id="using-the-composite-resource" class="xliff"></a>
-## Применение составного ресурса
+## <a name="using-the-composite-resource"></a>Применение составного ресурса
 
 Теперь создадим конфигурацию, которая вызывает составной ресурс. Эта конфигурация вызывает составной ресурс xVirtualMachine для создания виртуальной машины, а затем ресурс **xComputer**, чтобы ее переименовать.
 
@@ -193,8 +189,7 @@ configuration RenameVM
 }
 ```
 
-<a id="supporting-psdscrunascredential" class="xliff"></a>
-## Поддержка PsDscRunAsCredential
+## <a name="supporting-psdscrunascredential"></a>Поддержка PsDscRunAsCredential
 
 >**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.
 
@@ -211,10 +206,8 @@ if (PsDscContext.RunAsUser) {
 }
 ```
 
-<a id="see-also" class="xliff"></a>
-## См. также
-<a id="concepts" class="xliff"></a>
-### Концепции
+## <a name="see-also"></a>См. также
+### <a name="concepts"></a>Концепции
 * [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md)
 * [Начало работы с настройкой требуемого состояния Windows PowerShell](overview.md)
 

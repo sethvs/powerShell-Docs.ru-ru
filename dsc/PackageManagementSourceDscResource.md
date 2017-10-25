@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-packagemanagementsource-resource" class="xliff"></a>
-# Ресурс PackageManagementSource DSC
+# <a name="dsc-packagemanagementsource-resource"></a>Ресурс PackageManagementSource DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Ресурс **PackageManagementSource** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм регистрации или ее отмены для источников управления пакетами на целевом узле. **Источники управления пакетами, зарегистрированные этим способом, регистрируются в контексте системы, доступной для учетной записи системы или подсистемы DSC.** Для этого ресурса требуется модуль **PackageManagement**: http://PowerShellGallery.com.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 PSModule [string] #ResourceName
@@ -32,8 +30,7 @@ PSModule [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
 | Название| Указывает имя источника пакета, который будет зарегистрирован в системе или регистрация которого будет отменена.| 
@@ -43,8 +40,7 @@ PSModule [string] #ResourceName
 | SourceUri| Указывает URI источника пакета.| 
 | SourceCredential| Предоставляет доступ к пакету в удаленном источнике.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В этом примере регистрируется источник пакета http://nuget.org с помощью ресурса DSC **PackageManagementSource**.
 

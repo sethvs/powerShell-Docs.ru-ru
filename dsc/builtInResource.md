@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="built-in-windows-powershell-desired-state-configuration-resources" class="xliff"></a>
-# Встроенные ресурсы настройки требуемого состояния Windows PowerShell
+# <a name="built-in-windows-powershell-desired-state-configuration-resources"></a>Встроенные ресурсы настройки требуемого состояния Windows PowerShell
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-windowspackagecab-resource" class="xliff"></a>
-# Ресурс DSC WindowsPackageCab
+# <a name="dsc-windowspackagecab-resource"></a>Ресурс DSC WindowsPackageCab
 
 > Область применения: Windows PowerShell 5.1 и более поздних версий.
 
@@ -20,8 +19,7 @@ ms.lasthandoff: 06/12/2017
 На целевом узле должен быть установлен модуль DISM PowerShell. Дополнительные сведения см. в статье [Use DISM in Windows PowerShell](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-dism-in-windows-powershell-s14) (Использование DISM в Windows PowerShell) 
 
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 {
@@ -33,8 +31,7 @@ ms.lasthandoff: 06/12/2017
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -44,8 +41,7 @@ ms.lasthandoff: 06/12/2017
 | LogPath| Указывает полный путь к папке, где нужно сохранить файл журнала для установки или удаления пакета.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 Ниже приведен пример конфигурации, которая принимает входные параметры и гарантирует, что CAB-файл, указанный в параметре `$Name`, установлен.
 

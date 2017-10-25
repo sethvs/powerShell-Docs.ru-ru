@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershell-module-discovery-install-and-inventory-with-powershellget" class="xliff"></a>
-# Обнаружение, установка и инвентаризация модуля PowerShell с помощью PowerShellGet
+# <a name="powershell-module-discovery-install-and-inventory-with-powershellget"></a>Обнаружение, установка и инвентаризация модуля PowerShell с помощью PowerShellGet
  
 PowerShellGet входит в состав этого выпуска WMF:
 -   Find-Module позволяет фильтровать метаданные модуля с помощью параметра -Tag.
@@ -19,8 +18,7 @@ PowerShellGet входит в состав этого выпуска WMF:
 -   Find-DscResource позволяет обнаруживать отдельные ресурсы DSC в репозитории.
 -   Поддержка установки из общих папок и публикации в них с помощью NuGet
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 \# Find all modules with tags Azure or DSC
 Find-Module -Tag Azure, DSC
@@ -55,8 +53,7 @@ Find-Module -Filter Cookbook -Repository PSGallery
 Find-Module -Filter RBAC -Repository PSGallery
 ```
 
-<a id="new-features-in-powershellget" class="xliff"></a>
-## Новые функции в PowerShellGet
+## <a name="new-features-in-powershellget"></a>Новые функции в PowerShellGet
 -   Поддержка параллельных версий в Windows PowerShell 5.0 или более поздней версии
 -   Поддержка установки зависимостей модулей
 -   Три новых командлета

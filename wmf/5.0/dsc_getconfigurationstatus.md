@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="details-about-configuration-status" class="xliff"></a>
-# Сведения о состоянии конфигурации
+# <a name="details-about-configuration-status"></a>Сведения о состоянии конфигурации
 
 Командлет [Get-DscConfigurationStatus](https://technet.microsoft.com/library/mt517868.aspx) получает сведения о состоянии конфигурации с целевого узла. Дополнительные сведения см. в разделе [Устранение неполадок DSC](https://msdn.microsoft.com/powershell/dsc/troubleshooting).
 

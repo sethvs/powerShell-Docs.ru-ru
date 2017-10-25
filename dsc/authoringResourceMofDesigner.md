@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/29/2017
 ---
-<a id="using-the-resource-designer-tool" class="xliff"></a>
-# Использование конструктора ресурсов
+# <a name="using-the-resource-designer-tool"></a>Использование конструктора ресурсов
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -21,8 +20,7 @@ ms.lasthandoff: 06/29/2017
 
 >**Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0. Вы можете скачать модуль **PowerShellGet**для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186).
 
-<a id="creating-resource-properties" class="xliff"></a>
-## Создание свойств ресурсов
+## <a name="creating-resource-properties"></a>Создание свойств ресурсов
 В первую очередь необходимо решить, какие свойства будут представлены в ресурсе. В этом примере мы определим пользователя Active Directory со следующими свойствами.
  
 Имя параметра Описание
@@ -40,8 +38,7 @@ $DomainCredential = New-xDscResourceProperty –Name DomainCredential-Type PSCre
 $Password = New-xDscResourceProperty –Name Password -Type PSCredential -Attribute Write
 ```
 
-<a id="create-the-resource" class="xliff"></a>
-## Создание ресурсов
+## <a name="create-the-resource"></a>Создание ресурсов
 
 Теперь, когда свойства ресурса созданы, можно вызвать командлет **New-xDscResource** для создания ресурса. Командлет **New-xDscResource** выводит список свойств в виде параметров. Кроме того, он принимает путь для создания модуля, имя нового ресурса и имя модуля, в котором он будет храниться. Ресурс создает следующая команда PowerShell.
 
@@ -164,8 +161,7 @@ function Test-TargetResource
 Export-ModuleMember -Function *-TargetResource
 ```
 
-<a id="updating-the-resource" class="xliff"></a>
-## Обновление ресурса
+## <a name="updating-the-resource"></a>Обновление ресурса
 
 Если вам нужно добавить или изменить список параметров для ресурса, используйте командлет **Update-xDscResource**. Этот командлет обновляет ресурс с учетом нового списка параметров. Если логика в сценарий ресурсов уже добавлена, она останется без изменений.
 
@@ -176,18 +172,14 @@ $lastLogon = New-xDscResourceProperty –Name LastLogon –Type Hashtable –Att
 Update-xDscResource –Name ‘Demo_ADUser’ –Property $UserName, $Ensure, $DomainCredential, $Password, $lastLogon -Force
 ```
 
-<a id="testing-a-resource-schema" class="xliff"></a>
-## Тестирование схемы ресурсов
+## <a name="testing-a-resource-schema"></a>Тестирование схемы ресурсов
 
 Конструктор ресурсов предоставляет еще один командлет, который можно использовать для проверки работоспособности MOF-схемы, написанной вами вручную. Вызовите командлет **Test-xDscSchema**, передав в качестве параметра путь к MOF-схеме ресурса. Командлет выдаст все имеющиеся в схеме ошибки.
 
-<a id="see-also" class="xliff"></a>
-### См. также
+### <a name="see-also"></a>См. также
 
-<a id="concepts" class="xliff"></a>
-#### Концепции
+#### <a name="concepts"></a>Концепции
 [Создание пользовательских ресурсов DSC Windows PowerShell](authoringResource.md)
 
-<a id="other-resources" class="xliff"></a>
-#### Прочие ресурсы
+#### <a name="other-resources"></a>Прочие ресурсы
 [Модуль xDscResourceDesigner](https://powershellgallery.com/packages/xDscResourceDesigner)

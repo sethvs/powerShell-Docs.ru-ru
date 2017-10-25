@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-resources" class="xliff"></a>
-# Ресурсы DSC
+# <a name="dsc-resources"></a>Ресурсы DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 

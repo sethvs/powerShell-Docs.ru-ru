@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2017
 ---
-<a id="dsc-windowsoptionalfeatureset-resource" class="xliff"></a>
-# Ресурс DSC WindowsOptionalFeatureSet
+# <a name="dsc-windowsoptionalfeatureset-resource"></a>Ресурс DSC WindowsOptionalFeatureSet
 
 > Область применения: Windows PowerShell 5.0
 
@@ -19,8 +18,7 @@ ms.lasthandoff: 06/26/2017
 
 Используйте этот ресурс, если нужно настроить одинаковое состояние для нескольких дополнительных компонентов Windows.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 WindowsOptionalFeature [string] #ResourceName
@@ -37,8 +35,7 @@ WindowsOptionalFeature [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 

@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="authoring-improvements-using-powershell-ise" class="xliff"></a>
-# Усовершенствования создания с помощью интегрированной среды сценариев PowerShell
+# <a name="authoring-improvements-using-powershell-ise"></a>Усовершенствования создания с помощью интегрированной среды сценариев PowerShell
 
 Создание конфигураций DSC в интегрированной среде сценариев PowerShell стало гораздо проще благодаря следующим усовершенствованиям:
 

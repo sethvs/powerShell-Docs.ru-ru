@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="install-module" class="xliff"></a>
-# Install-Module
+# <a name="install-module"></a>Install-Module
 
 Устанавливает модули PowerShell из веб-репозиториев на локальный компьютер.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Install-Module скачивает один модуль (или несколько) из веб-коллекции, проверяет и устанавливает их на локальном компьютере в указанной области.
 
@@ -32,8 +30,7 @@ ms.lasthandoff: 06/12/2017
 - Параметр -Force позволяет переустановить модуль.
 - Параметр RequiredVersion позволяет установить указанную версию параллельно с существующими версиями в PowerShell 5.0 и более поздних версиях.
 
-<a id="scope" class="xliff"></a>
-### Scope
+### <a name="scope"></a>Scope
 Задает область установки модуля. Допустимые значения: AllUsers и CurrentUser.
 
 Область установки по умолчанию — AllUsers.
@@ -42,8 +39,7 @@ ms.lasthandoff: 06/12/2017
 
 Область CurrentUser устанавливает модули только в папку $home\Documents\WindowsPowerShell\Modules, чтобы они были доступны только текущему пользователю.
 
-<a id="notes" class="xliff"></a>
-## Заметки
+## <a name="notes"></a>Заметки
 
 Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.
 
@@ -60,19 +56,16 @@ Install-Module возвращает ошибку, если в веб-колле�
 Чтобы предотвратить выполнение модулей, содержащих вредоносный код, установленные модули не импортируются автоматически при установке. В целях безопасности рекомендуется проверить код модуля перед первым выполнением командлетов или функции из него.
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Install-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Install-Module](http://go.microsoft.com/fwlink/?LinkID=398573)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 
@@ -113,8 +106,7 @@ Install-Module ContosoClient -Force
 Install-Module -Name 
 ```
 
-<a id="install-module-cmdlet-in-pipeline-operations" class="xliff"></a>
-## Командлет Install-Module в операциях конвейера
+## <a name="install-module-cmdlet-in-pipeline-operations"></a>Командлет Install-Module в операциях конвейера
 
 ```powershell
 
@@ -141,13 +133,11 @@ Get-InstalledModule
 
 ```
 
-<a id="side-by-side-version-support-on-powershell-50-or-newer" class="xliff"></a>
-## Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
+## <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>Поддержка параллельных версий в PowerShell 5.0 или более поздней версии
 
 PowerShellGet поддерживает параллельную установку (SxS) разных версий модуля при использовании командлетов Install-Module, Update-Module и Publish-Module в Windows PowerShell 5.0 или более поздней версии.
 
-<a id="install-module-examples" class="xliff"></a>
-### Примеры использования Install-Module
+### <a name="install-module-examples"></a>Примеры использования Install-Module
 
 ```powershell
 # Install a version of the module
@@ -179,8 +169,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="install-module-with-its-dependencies" class="xliff"></a>
-## Установка модуля с зависимостями
+## <a name="install-module-with-its-dependencies"></a>Установка модуля с зависимостями
 
 ```powershell
 
@@ -274,8 +263,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="error-scenarios" class="xliff"></a>
-## Примеры, возвращающие ошибку
+## <a name="error-scenarios"></a>Примеры, возвращающие ошибку
 
 ```powershell
 

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-waitforall-resource" class="xliff"></a>
-# Ресурс DSC WaitForAll
+# <a name="dsc-waitforall-resource"></a>Ресурс DSC WaitForAll
 
 > Область применения: Windows PowerShell 5.0 и более поздних версий.
 
@@ -20,8 +19,7 @@ ms.lasthandoff: 06/12/2017
 Этот ресурс выполняется успешно, если ресурс, указанный свойством **ResourceName**, находится в требуемом состоянии на всех целевых узлах, определенных в свойстве **NodeName**.
 
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 WaitForAll [string] #ResourceName
@@ -35,8 +33,7 @@ WaitForAll [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство  |  Описание   | 
 |---|---| 
@@ -48,8 +45,7 @@ WaitForAll [string] #ResourceName
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.|
 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 Пример использования этого ресурса см. в статье [Указание межузловых зависимостей](crossNodeDependencies.md).
 

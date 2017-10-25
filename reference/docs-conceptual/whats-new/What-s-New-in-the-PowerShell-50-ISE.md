@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Новые возможности интегрированной среды сценариев PowerShell версии 5.0"
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: 1e315351d0e5dde146881b0e6527c38e59777a1e
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 89dcc905ce200d06029e148c9675269e6f518fa3
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Новые возможности в интегрированной среде сценариев Windows PowerShell
 В этой статье описаны новые и обновленные функции, представленные в разных версиях интегрированной среды сценариев Windows PowerShell.
@@ -22,16 +22,16 @@ ms.lasthandoff: 09/08/2017
 
 |Компонент или функция|Интегрированная среда сценариев Windows PowerShell 4.0|Интегрированная среда сценариев Windows PowerShell 3.0|Интегрированная среда сценариев Windows PowerShell 2.0|
 |--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-|**[IntelliSense]()**|X|X||
-|**[Фрагменты кода]()**|X|X||
-|**[Дополнительные средства]()**|X|X||
-|**[Перезапуск диспетчера и автосохранение]()**|X|X||
-|**[Область консоли]()**|X|X||
-|**[Список недавно использовавшихся элементов]()**|X|X||
-|**[Параметры командной строки]()**|X|X||
-|**[Новые возможности редактора]()**|X|X||
-|**[Новое окно справки]()**|X|X||
-|**[Командлет Show-Command]()**|X|X||
+|**[IntelliSense](#intellisense)**|X|X||
+|**[Фрагменты кода](#snippets)**|X|X||
+|**[Дополнительные средства](#add-on-tools)**|X|X||
+|**[Перезапуск диспетчера и автосохранение](#restart-manager-and-auto-save)**|X|X||
+|**[Список недавно использовавшихся элементов](#most-recently-used-list)**|X|X||
+|**[Область консоли](#console-pane)**|X|X||
+|**[Параметры командной строки](#command-line-switches)**|X|X||
+|**[Новые возможности редактора](#new-editor-features)**|X|X||
+|**[Новое окно справки](#new-help-viewer-window)**|X|X||
+|**[Командлет Show-Command](#show-command-cmdlet)**|X|X||
 
 ### <a name="intellisense"></a>IntelliSense
 **Добавлен в интегрированной среде сценариев 3.0**

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-function-to-query-node-information-from-pull-server" class="xliff"></a>
-# Функция DSC для запроса сведений об узле с опрашивающего сервера.
+# <a name="dsc-function-to-query-node-information-from-pull-server"></a>Функция DSC для запроса сведений об узле с опрашивающего сервера.
 
 ```powershell
 function QueryNodeInformation

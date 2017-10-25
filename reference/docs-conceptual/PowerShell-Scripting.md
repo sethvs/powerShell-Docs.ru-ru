@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Создание сценариев PowerShell"
-ms.openlocfilehash: 33e5ff3c84b6b34a3072a32165187a8bb811605c
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 8d2386dc49c59a106ecdddf0feabe3344834a86d
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="powershell"></a>PowerShell
 
@@ -46,7 +46,6 @@ Windows PowerShell — это оболочка командной строки
 ## <a name="common-powershellcore-powershellcore-powershellmd"></a>[Распространенные модули PowerShell](core-powershell/core-powershell.md)
 Этот раздел содержит все справочные материалы по PowerShell.  
 Содержание раздела:
-- [Основополагающие модули PowerShell](core-powershell/core-modules.md)
 - [Интегрированная среда сценариев PowerShell \((ISE)\)](core-powershell/ise-guide.md)
 - [Окно консоли PowerShell](core-powershell/console-guide.md)
 - [Удаленное управление PowerShell](core-powershell/Running-Remote-Commands.md)

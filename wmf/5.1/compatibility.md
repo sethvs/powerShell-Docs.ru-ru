@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="wmf-51-operating-system-compatibility" class="xliff"></a>
-# Совместимость WMF 5.1 с операционными системами #
+# <a name="wmf-51-operating-system-compatibility"></a>Совместимость WMF 5.1 с операционными системами #
 
 > Примечание. Эта информация является предварительной и может быть изменена.
 

@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-for-linux-nxsshauthorizedkeys-resource" class="xliff"></a>
-# Ресурс nxSshAuthorizedKeys в DSC для Linux
+# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a>Ресурс nxSshAuthorizedKeys в DSC для Linux
 
 Ресурс **NxAuthorizedKeys** в DSC PowerShell обеспечивает механизм управления авторизованными SSH-ключами для указанного пользователя.
 
-<a id="syntax" class="xliff"></a>
-## Синтаксис
+## <a name="syntax"></a>Синтаксис
 
 ```
 nxAuthorizedKeys <string> #ResourceName
@@ -30,8 +28,7 @@ nxAuthorizedKeys <string> #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 |  Свойство |  Описание | 
 |---|---|
@@ -41,8 +38,7 @@ nxAuthorizedKeys <string> #ResourceName
 | Клавиши| Указывает содержимое ключа Требуется, если свойство **Ensure** имеет значение Present.| 
 | DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
 
-<a id="example" class="xliff"></a>
-## Пример
+## <a name="example"></a>Пример
 
 В следующем примере определяется общедоступный авторизованный SSH-ключ для пользователя monuser.
 

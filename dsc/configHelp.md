@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="writing-help-for-dsc-configurations" class="xliff"></a>
-# Запись поддержки конфигураций DSC
+# <a name="writing-help-for-dsc-configurations"></a>Запись поддержки конфигураций DSC
 
 >Область применения: Windows PowerShell 5.0
 
@@ -61,8 +60,7 @@ configuration HelpSample1
 }
 ```
 
-<a id="viewing-configuration-help" class="xliff"></a>
-## Просмотр справки по конфигурации
+## <a name="viewing-configuration-help"></a>Просмотр справки по конфигурации
 
 Для просмотра справки по конфигурации используйте командлет **Get-Help** с именем функции или введите имя функции и `-?`. Ниже приведены выходные данные предыдущей функции при передаче в **Get-Help**.
 
@@ -93,7 +91,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-<a id="see-also" class="xliff"></a>
-## См. также
+## <a name="see-also"></a>См. также
 * [Конфигурации DSC](configurations.md)
 

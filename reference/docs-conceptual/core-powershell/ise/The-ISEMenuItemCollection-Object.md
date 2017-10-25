@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект ISEMenuItemCollection"
 ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512

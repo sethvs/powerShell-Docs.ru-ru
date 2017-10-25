@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Работа с принтерами"
 ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5

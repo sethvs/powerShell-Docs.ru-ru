@@ -10,12 +10,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module" class="xliff"></a>
-## Архитектура интерфейса PackageManagement и его связь с модулем PowerShellGet.
+## <a name="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module"></a>Архитектура интерфейса PackageManagement и его связь с модулем PowerShellGet.
 
-<a id="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider" class="xliff"></a>
-## Как использовать командлеты PackageManagement для обнаружения, установки, обновления и инвентаризации сценариев и модулей с помощью поставщика PowerShellGet.
+## <a name="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider"></a>Как использовать командлеты PackageManagement для обнаружения, установки, обновления и инвентаризации сценариев и модулей с помощью поставщика PowerShellGet.
 
-<a id="pakagemanagement-commands" class="xliff"></a>
-## Команды PakageManagement
+## <a name="pakagemanagement-commands"></a>Команды PakageManagement
 

@@ -11,15 +11,12 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="improvements-to-package-management-in-wmf-51" class="xliff"></a>
-# Усовершенствования в управлении пакетами в WMF 5.1#
+# <a name="improvements-to-package-management-in-wmf-51"></a>Усовершенствования в управлении пакетами в WMF 5.1#
 
-<a id="improvements-in-packagemanagement" class="xliff"></a>
-## Усовершенствования в управлении пакетами ##
+## <a name="improvements-in-packagemanagement"></a>Усовершенствования в управлении пакетами ##
 Ниже перечислены исправления, внесенные в WMF 5.1. 
 
-<a id="version-alias" class="xliff"></a>
-### Псевдоним версии
+### <a name="version-alias"></a>Псевдоним версии
 
 **Ситуация**. Если в системе установлены версии 1.0 и 2.0 пакета P1 и вы хотите удалить версию 1.0, вы выполняете команду `Uninstall-Package -Name P1 -Version 1.0`. При этом вы ожидаете, что после выполнения командлета будет удалена версия 1.0. Но в результате удаляется версия 2.0.  
     
@@ -27,8 +24,7 @@ ms.lasthandoff: 06/12/2017
     
 **Решение**. Полностью удалить псевдоним `-Version` в PackageManagement (так называемом OneGet) и PowerShellGet. 
 
-<a id="multiple-prompts-for-bootstrapping-the-nuget-provider" class="xliff"></a>
-### Несколько запросов на начальную загрузку поставщика NuGet
+### <a name="multiple-prompts-for-bootstrapping-the-nuget-provider"></a>Несколько запросов на начальную загрузку поставщика NuGet
 
 **Ситуация**. При первом выполнении командлета `Find-Module`, `Install-Module` или других командлетов PackageManagement на компьютере модуль PackageManagement пытается выполнить начальную загрузку поставщика NuGet. Связано это с тем, что поставщик PowershellGet также использует поставщик NuGet для скачивания модулей PowerShell. Затем модуль PackageManagement запрашивает у пользователя разрешение на установку поставщика NuGet. После того как пользователь разрешает начальную загрузку, устанавливается последняя версия поставщика NuGet. 
     
@@ -39,8 +35,7 @@ ms.lasthandoff: 06/12/2017
 Также имеется обходной путь: вы можете вручную удалить старую версию поставщика NuGet (NuGet-Anycpu.exe), если она существует, из папок $env:ProgramFiles\PackageManagement\ProviderAssemblies и $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies
 
 
-<a id="support-for-packagemanagement-on-computers-with-intranet-access-only" class="xliff"></a>
-### Поддержка PackageManagement на компьютерах с доступом только к интрасети
+### <a name="support-for-packagemanagement-on-computers-with-intranet-access-only"></a>Поддержка PackageManagement на компьютерах с доступом только к интрасети
 
 **Ситуация**. В средах предприятий у пользователей может быть доступ только к интрасети, но не к Интернету. Модуль PackageManagement не поддерживал такую ситуацию в WMF 5.0.
 
@@ -55,21 +50,18 @@ ms.lasthandoff: 06/12/2017
 3. Скопируйте двоичные файлы в папку или сетевую папку, к которой есть доступ у компьютера в интрасети, и установите поставщик NuGet, выполнив команду `Install-PackageProvider -Name NuGet -Source <Path to folder>`.
 
 
-<a id="event-logging-improvements" class="xliff"></a>
-### Усовершенствования, касающиеся ведения журнала событий
+### <a name="event-logging-improvements"></a>Усовершенствования, касающиеся ведения журнала событий
 
 При установке пакетов состояние компьютера меняется. В WMF 5.1 модуль PackageManagement записывает события в журнал событий Windows для действий `Install-Package`, `Uninstall-Package` и `Save-Package`. Журнал событий совпадает с журналом событий для PowerShell, т. е. `Microsoft-Windows-PowerShell, Operational`.
 
-<a id="support-for-basic-authentication" class="xliff"></a>
-### Поддержка обычной проверки подлинности
+### <a name="support-for-basic-authentication"></a>Поддержка обычной проверки подлинности
 
 В WMF 5.1 модуль PackageManagement поддерживает поиск и установку пакетов из репозитория, требующего обычной проверки подлинности. Можно указать учетные данные в командлетах `Find-Package` и `Install-Package`. Например:
 
 ``` PowerShell
 Find-Package -Source <SourceWithCredential> -Credential (Get-Credential)
 ```
-<a id="support-for-using-packagemanagement-behind-a-proxy" class="xliff"></a>
-### Поддержка использования PackageManagement через прокси-сервер
+### <a name="support-for-using-packagemanagement-behind-a-proxy"></a>Поддержка использования PackageManagement через прокси-сервер
 
 В WMF 5.1 модуль PackageManagement принимает новые параметры прокси-сервера, `-ProxyCredential` и `-Proxy`. В этих параметрах можно указать URL-адрес и учетные данные прокси-сервера для командлетов PackageManagement. По умолчанию используются системные настройки прокси-сервера. Например:
 

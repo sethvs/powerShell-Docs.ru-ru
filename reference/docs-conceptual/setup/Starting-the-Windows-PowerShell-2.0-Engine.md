@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Запуск подсистемы Windows PowerShell 2.0"
 ms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28
-ms.openlocfilehash: 2e5c13cafdfd9fbe479fcad8ac81725cbd7ac3d9
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 88d4374891e38501f6bbcd0793c86692eaed2f22
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="starting-the-windows-powershell-20-engine"></a>Запуск подсистемы Windows PowerShell 2.0
 В этой статье объясняется, как запустить модуль Windows PowerShell 2.0 в Windows 8.1, Windows Server 2012 R2, Windows 8 и Windows Server 2012 с установленной подсистемой Windows PowerShell 2.0 и в других системах, в которых установлены Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0.
@@ -66,5 +66,5 @@ PowerShell.exe -Version 2
 Start-Job {Get-Process} -PSVersion 2.0
 ```
 
-Подробнее о фоновых заданиях см. в статье [about_Jobs [v4]](https://technet.microsoft.com/en-us/library/7362512a-8a4e-4575-b2ea-a740e5c4f002).
+Подробнее о фоновых заданиях см. в статье [about_Jobs [v4]](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_jobs?view=powershell-4.0).
 

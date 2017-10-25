@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-temporaryfile" class="xliff"></a>
-# New-TemporaryFile
+# <a name="new-temporaryfile"></a>New-TemporaryFile
 Иногда в сценариях необходимо создать временный файл. Для этого удобно использовать командлет **New-TemporaryFile**:
 
 PS C:\\&gt; $tempFile = New-TemporaryFile

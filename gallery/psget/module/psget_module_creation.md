@@ -10,10 +10,8 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="when-to-include-a-project-site-license-url-custom-icon" class="xliff"></a>
-## Когда следует включать сайт проекта, URL-адрес лицензии или настроенный значок?
+## <a name="when-to-include-a-project-site-license-url-custom-icon"></a>Когда следует включать сайт проекта, URL-адрес лицензии или настроенный значок?
 
 
-<a id="what-is-minimum-powershell-version" class="xliff"></a>
-## Что такое минимальная версия PowerShell?
+## <a name="what-is-minimum-powershell-version"></a>Что такое минимальная версия PowerShell?
 

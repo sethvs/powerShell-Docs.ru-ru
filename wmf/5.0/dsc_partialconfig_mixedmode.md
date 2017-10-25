@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="support-for-mixed-refreshmode" class="xliff"></a>
-# Поддержка смешанного режима RefreshMode
+# <a name="support-for-mixed-refreshmode"></a>Поддержка смешанного режима RefreshMode
 
 При использовании неполных конфигураций теперь можно определить каждую отдельную конфигурацию с помощью `RefreshMode`. Дополнительные сведения см. в разделе [Частичные конфигурации](https://msdn.microsoft.com/powershell/dsc/partialconfigs).
 

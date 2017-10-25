@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-configurations" class="xliff"></a>
-# Конфигурации DSC
+# <a name="dsc-configurations"></a>Конфигурации DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -37,8 +36,7 @@ MyDscConfiguration
 
 Сохраните сценарий как PS1-файл.
 
-<a id="configuration-syntax" class="xliff"></a>
-## Синтаксис конфигурации
+## <a name="configuration-syntax"></a>Синтаксис конфигурации
 
 Сценарий конфигурации состоит из следующих элементов:
 
@@ -71,8 +69,7 @@ MyDscConfiguration
 
 В этом примере вы указываете имя узла, передавая его как параметр **ComputerName** при компиляции конфигурации. По умолчанию используется имя localhost.
 
-<a id="compiling-the-configuration" class="xliff"></a>
-## Компиляция конфигурации
+## <a name="compiling-the-configuration"></a>Компиляция конфигурации
 
 Прежде чем активировать конфигурацию, необходимо скомпилировать ее в MOF-документ. Для этого нужно вызвать конфигурацию так же, как функцию PowerShell.  
 Последняя строка примера, содержащего только имя конфигурации, вызывает конфигурацию.
@@ -119,8 +116,7 @@ Mode                LastWriteTime         Length Name
 -a----       10/23/2015   4:32 PM           2842 MyTestNode.mof
 ```      
 
-<a id="using-dependson" class="xliff"></a>
-## Использование ключевого слова DependsOn
+## <a name="using-dependson"></a>Использование ключевого слова DependsOn
 
 Одно из полезных ключевых слов DSC — это **DependsOn**. Как правило (хоть и не всегда), DSC применяет ресурсы в порядке их появления в конфигурации. Ключевое слово **DependsOn** определяет, какие ресурсы зависят от других ресурсов, а LCM следит за тем, чтобы они применялись в правильном порядке независимо от того, в каком порядке определены экземпляры ресурсов. Например, в конфигурации может быть указано, что экземпляр ресурса **User** зависит от наличия ресурса **Group**:
 
@@ -144,8 +140,7 @@ Configuration DependsOnExample {
 DependsOnExample
 ```
 
-<a id="using-new-resources-in-your-configuration" class="xliff"></a>
-## Использование новых ресурсов в конфигурации
+## <a name="using-new-resources-in-your-configuration"></a>Использование новых ресурсов в конфигурации
 
 Выполняя предыдущие примеры, вы могли заметить предупреждение о том, что используемый ресурс не импортирован.
 Сейчас DSC поставляется с модулем PSDesiredStateConfiguration, в который входят 12 ресурсов. Другие ресурсы во внешних модулях необходимо добавлять в `$env:PSModulePath` в том порядке, в котором LCM должен будет их распознать. Определить, какие ресурсы установлены в системе и доступны для использования LCM, позволяет новый командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx). После добавления в `$env:PSModulePath` и правильного распознавания командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) эти модули нужно будет загрузить в конфигурацию. 
@@ -154,8 +149,7 @@ DependsOnExample
 - Параметр **ModuleName** — рекомендуемый способ применения **Import-DscResource**. Он принимает имя модуля, содержащего ресурсы для импорта (а также массив строк с именами модулей). 
 - Параметр **Name** — имя импортируемого ресурса. Это не то понятное имя, которое возвращается командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), а имя класса, используемое при определении схемы ресурса (возвращается как параметр **ResourceType** командлетом [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)). 
 
-<a id="see-also" class="xliff"></a>
-## См. также
+## <a name="see-also"></a>См. также
 * [Общие сведения о службе настройки требуемого состояния Windows PowerShell](overview.md)
 * [Ресурсы DSC](resources.md)
 * [Настройка локального диспетчера конфигураций](metaConfig.md)

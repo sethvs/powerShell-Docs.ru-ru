@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="extract-and-parse-structured-objects-out-of-string" class="xliff"></a>
-# Извлечение и анализ структурированных объектов вне строки
+# <a name="extract-and-parse-structured-objects-out-of-string"></a>Извлечение и анализ структурированных объектов вне строки
 Здесь также расширена функциональность командлета ConvertFrom-String:
 
 -   Удалено свойство текста экстента по умолчанию. Теперь его можно включить с помощью параметра -IncludeExtent.
@@ -20,8 +19,7 @@ ms.lasthandoff: 06/12/2017
 -   Новый параметр -UpdateTemplate для сохранения результатов алгоритма обучения в комментарий внутри файла шаблона. Это делает затраты на процесс обучения (являющийся самым медленным этапом) единовременными. Выполнение Convert-String с шаблоном, содержащим закодированный обучающий алгоритм, теперь осуществляется практически мгновенно.
 
 
-<a id="extract-and-parse-structured-objects-out-of-string-content" class="xliff"></a>
-Извлечение и анализ структурированных объектов вне строки
+<a name="extract-and-parse-structured-objects-out-of-string-content"></a>Извлечение и анализ структурированных объектов вне строки
 ----------------------------------------------------------
 
 При сотрудничестве с [Microsoft Research](http://research.microsoft.com/) был добавлен новый командлет **ConvertFrom-String**.

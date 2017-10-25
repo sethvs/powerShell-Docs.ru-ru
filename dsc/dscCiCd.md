@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="building-a-continuous-integration-and-continuous-deplyoment-pipeline-with-dsc" class="xliff"></a>
-# Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC
+# <a name="building-a-continuous-integration-and-continuous-deplyoment-pipeline-with-dsc"></a>Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC
 
 В этом примере показано, как создать конвейер непрерывной интеграции и непрерывного развертывания с помощью PowerShell, DSC, Pester и Visual Studio Team Foundation Server.
 
@@ -19,8 +18,7 @@ ms.lasthandoff: 06/12/2017
 
 Автоматический конвейер непрерывной интеграции и развертывания помогает быстро и надежно обновлять программное обеспечение, следя за тем, чтоб весь код проверялся и чтобы текущая сборка была доступна в любое время.
 
-<a id="prerequisites" class="xliff"></a>
-## Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Чтобы использовать этот пример, следует ознакомиться со следующим:
 
@@ -29,13 +27,11 @@ ms.lasthandoff: 06/12/2017
 - Платформа тестирования [Pester](https://github.com/pester/Pester).
 - [Team Foundation Server](https://www.visualstudio.com/tfs/).
 
-<a id="what-you-will-need" class="xliff"></a>
-## Что вам понадобится
+## <a name="what-you-will-need"></a>Что вам понадобится
 
 Чтобы собрать и запустить этот пример, необходима среда из нескольких компьютеров или виртуальных машин.
 
-<a id="client" class="xliff"></a>
-### клиент
+### <a name="client"></a>клиент
 
 Это компьютер, на котором вы будете выполнять всю работу по настройке и запуску примера.
 
@@ -44,14 +40,12 @@ ms.lasthandoff: 06/12/2017
 - Локальный репозиторий Git, клонированный из https://github.com/PowerShell/Demo_CI.
 - Текстовый редактор, такой как [Visual Studio Code](https://code.visualstudio.com/).
 
-<a id="tfssrv1" class="xliff"></a>
-### TFSSrv1
+### <a name="tfssrv1"></a>TFSSrv1
 
 Компьютер, на котором размещен сервер TFS и где определяется сборка и выпуск.
 На этом компьютере должен быть установлен [Team Foundation Server 2017](https://www.visualstudio.com/tfs/).
 
-<a id="buildagent" class="xliff"></a>
-### BuildAgent
+### <a name="buildagent"></a>BuildAgent
 
 Компьютер, на котором запущен агент сборки Windows, создающий проект.
 На этом компьютере должен быть установлен и запущен агент сборки Windows.
@@ -59,20 +53,17 @@ ms.lasthandoff: 06/12/2017
 
 Кроме того, необходимо установить модули DSC `xDnsServer` и `xNetworking` на этом компьютере.
 
-<a id="testagent1" class="xliff"></a>
-### TestAgent1
+### <a name="testagent1"></a>TestAgent1
 
 В этом примере это компьютер, настроенный как DNS-сервер с помощью конфигурации DSC.
 На компьютере должен быть запущен [Windows Server 2016](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).
 
-<a id="testagent2" class="xliff"></a>
-### TestAgent2
+### <a name="testagent2"></a>TestAgent2
 
 Это компьютер, на котором размещается веб-сайт, настраиваемый в этом примере.
 На компьютере должен быть запущен [Windows Server 2016](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016). 
 
-<a id="add-the-code-to-tfs" class="xliff"></a>
-## Добавление кода в TFS
+## <a name="add-the-code-to-tfs"></a>Добавление кода в TFS
 
 Начнем с создания репозитория Git в TFS и импорта кода из локального репозитория на клиентском компьютере.
 Если вы еще не клонировали репозиторий Demo_CI на клиентский компьютер, сделайте это сейчас, выполнив следующую команду Git:
@@ -98,14 +89,12 @@ ms.lasthandoff: 06/12/2017
 >**Примечание.** В этом примере используется код ветви `ci-cd-example` из репозитория Git.
 >Задайте эту ветвь как ветвь по умолчанию в проекте TFS и для создаваемых триггеров непрерывной интеграции и развертывания.
 
-<a id="understanding-the-code" class="xliff"></a>
-## Общие сведения о коде
+## <a name="understanding-the-code"></a>Общие сведения о коде
 
 Прежде чем создать сборку и конвейеры развертывания, давайте взглянем на часть кода, чтобы понять, что происходит.
 На клиентском компьютере откройте любой удобный текстовый редактор и перейдите в корневую папку своего репозитория Git Demo_CI.
 
-<a id="the-dsc-configuration" class="xliff"></a>
-### Конфигурация DSC
+### <a name="the-dsc-configuration"></a>Конфигурация DSC
 
 Откройте файл `DNSServer.ps1` (из корня локального репозитория Demo_CI, `./InfraDNS/Configs/DNSServer.ps1`).
 
@@ -173,8 +162,7 @@ Node $AllNodes.Where{$_.Role -eq 'DNSServer'}.NodeName
 Обратите внимание, что два блока `xDnsRecord` упаковываются в циклы `foreach`, которые проходят через массивы данных конфигурации.
 При этом данные конфигурации создаются скриптом `DevEnv.ps1`, который мы рассмотрим далее.
 
-<a id="configuration-data" class="xliff"></a>
-### Данные конфигурации
+### <a name="configuration-data"></a>Данные конфигурации
 
 Файл `DevEnv.ps1` (из корня локального репозитория Demo_CI, `./InfraDNS/DevEnv.ps1`) указывает данные конфигурации среды в хэш-таблице, а затем передает эту хэш-таблицу вызову к функции `New-DscConfigurationDataDocument`, которая определяется в `DscPipelineTools.psm` (`./Assets/DscPipelineTools/DscPipelineTools.psm1`).
 
@@ -209,8 +197,7 @@ Return New-DscConfigurationDataDocument -RawEnvData $DevEnvironment -OutputPath 
 
 В нашем случае используется только параметр `RawEnvData`.
 
-<a id="the-psake-build-script" class="xliff"></a>
-### Скрипт сборки psake
+### <a name="the-psake-build-script"></a>Скрипт сборки psake
 
 Скрипт сборки [psake](https://github.com/psake/psake), определенный в `Build.ps1` (из корня репозитория Demo_CI, `./InfraDNS/Build.ps1`), указывает задачи, которые являются частью сборки.
 Он также определяет, от каких задач зависят другие задачи. При вызове скрипт psake проверяет выполнение указанной задачи (или задачи с именем `Default`, если она не указана) и всех ее зависимостей (рекурсивно, т. е. выполняются зависимости зависимостей и т. д.).
@@ -249,97 +236,80 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 Скрипт сборки определяет следующие задачи:
 
-<a id="generateenvironmentfiles" class="xliff"></a>
-#### GenerateEnvironmentFiles
+#### <a name="generateenvironmentfiles"></a>GenerateEnvironmentFiles
 
 Выполняет файл `DevEnv.ps1`, создает конфигурационный файл данных.
 
-<a id="installmodules" class="xliff"></a>
-#### InstallModules
+#### <a name="installmodules"></a>InstallModules
 
 Устанавливает модули, необходимые в конфигурации `DNSServer.ps1`.
 
-<a id="scriptanalysis" class="xliff"></a>
-#### ScriptAnalysis
+#### <a name="scriptanalysis"></a>ScriptAnalysis
 
 Вызывает [PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer).
 
-<a id="unittests" class="xliff"></a>
-#### UnitTests
+#### <a name="unittests"></a>UnitTests
 
 Выполняет модульные тесты [Pester](https://github.com/pester/Pester/wiki).
 
-<a id="compileconfigs" class="xliff"></a>
-#### CompileConfigs
+#### <a name="compileconfigs"></a>CompileConfigs
 
 Компилирует конфигурацию (`DNSServer.ps1`) в файл типа MOF, используя данные конфигурации, созданные задачей `GenerateEnvironmentFiles`.
 
-<a id="clean" class="xliff"></a>
-#### Clean
+#### <a name="clean"></a>Clean
 
 Создает папки, используемые в примере, и удаляет все результаты тестирования, файлы данных конфигурации и модули из предыдущих выполнений.
 
-<a id="the-psake-deploy-script" class="xliff"></a>
-### Развертывание скрипта psake
+### <a name="the-psake-deploy-script"></a>Развертывание скрипта psake
 
 Скрипт развертывания [psake](https://github.com/psake/psake), определяемый в `Deploy.ps1` (находится в корне репозитория Demo_CI, `./InfraDNS/Deploy.ps1`), указывает задачи, которые развертывают и запускают конфигурацию.
 
 `Deploy.ps1` определяет следующие задачи:
 
-<a id="deploymodules" class="xliff"></a>
-#### DeployModules
+#### <a name="deploymodules"></a>DeployModules
 
 Запускает сеанс PowerShell на `TestAgent1` и устанавливает модули, содержащие ресурсы DSC, которые необходимы для конфигурации.
 
-<a id="deployconfigs" class="xliff"></a>
-#### DeployConfigs
+#### <a name="deployconfigs"></a>DeployConfigs
 
 Вызывает командлет [Start-DscConfiguration](/reference/5.1/PSDesiredStateConfiguration/Start-DscConfiguration.md) для выполнения конфигурации на `TestAgent1`.
 
-<a id="integrationtests" class="xliff"></a>
-#### IntegrationTests
+#### <a name="integrationtests"></a>IntegrationTests
 
 Выполняет интеграционные тесты [Pester](https://github.com/pester/Pester/wiki).
 
-<a id="acceptancetests" class="xliff"></a>
-#### AcceptanceTests
+#### <a name="acceptancetests"></a>AcceptanceTests
 
 Выполняет приемочные тесты [Pester](https://github.com/pester/Pester/wiki).
 
-<a id="clean" class="xliff"></a>
-#### Clean
+#### <a name="clean"></a>Clean
 
 Удаляет все модули, установленные при предыдущих выполнениях, и проверяет существование папки с результатами теста.
 
-<a id="test-scripts" class="xliff"></a>
-### Скрипты тестирования
+### <a name="test-scripts"></a>Скрипты тестирования
 
 Приемочные, интеграционные и модульные тесты определяются в скриптах в папке `Tests` (из корня репозитория Demo_CI, `./InfraDNS/Tests`), каждый в файлах с именем `DNSServer.tests.ps1` в соответствующих папках.
 
 Скрипты тестирования используют синтаксис [Pester](https://github.com/pester/Pester/wiki) и [PoshSpec](https://github.com/Ticketmaster/poshspec/wiki/Introduction).
 
-<a id="unit-tests" class="xliff"></a>
-#### Модульные тесты
+#### <a name="unit-tests"></a>Модульные тесты
 
 Модульные тесты проверяют конфигурации DSC самостоятельно, чтобы убедиться, что конфигурации будут делать то, что ожидается при их запуске.
 Скрипт модульных тестов использует [Pester](https://github.com/pester/Pester/wiki).
 
-<a id="integration-tests" class="xliff"></a>
-#### Интеграционные тесты
+#### <a name="integration-tests"></a>Интеграционные тесты
 
 Интеграционные тесты проверяют конфигурацию системы, чтобы убедиться, что при интеграции с другими компонентами система настроена должным образом. Эти тесты выполняются на целевом узле после его настройки с помощью DSC.
 Скрипт интеграционного теста использует сочетание синтаксиса [Pester](https://github.com/pester/Pester/wiki) и [PoshSpec](https://github.com/Ticketmaster/poshspec/wiki/Introduction).
 
-<a id="acceptance-tests" class="xliff"></a>
-#### Приемочные тесты
+#### <a name="acceptance-tests"></a>Приемочные тесты
 
 Приемочные тесты проверяют систему, чтобы убедиться, что она правильно работает.
 Например, они проверяют, правильную ли информацию возвращает веб-страница при запросе.
 Эти тесты выполняются удаленно с целевого узла, чтобы протестировать реальные сценарии.
 Скрипт интеграционного теста использует сочетание синтаксиса [Pester](https://github.com/pester/Pester/wiki) и [PoshSpec](https://github.com/Ticketmaster/poshspec/wiki/Introduction).
 
-<a id="define-the-build" class="xliff"></a>
-## Определение сборки
+## <a name="define-the-build"></a>Определение сборки
 
 Теперь, когда мы передали свой код в TFS и просмотрели, что он делает, определим нашу сборку.
 
@@ -355,8 +325,7 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 После добавления этих шагов сборки измените свойства каждого шага следующим образом.
 
-<a id="powershell-script" class="xliff"></a>
-### Сценарий PowerShell
+### <a name="powershell-script"></a>Сценарий PowerShell
 
 1. Задайте для свойства **Тип** значение `File Path`.
 1. Задайте для свойства **Путь к скрипту** значение `initiate.ps1`.
@@ -364,8 +333,7 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 Этот шаг сборки запускает файл `initiate.ps1`, вызывающий скрипт сборки psake.
 
-<a id="publish-test-results" class="xliff"></a>
-### Публикация результатов тестирования
+### <a name="publish-test-results"></a>Публикация результатов тестирования
 
 1. Задайте для свойства **Формат результатов теста** значение `NUnit`.
 1. Задайте для свойства **Файлы результатов тестов** значение `InfraDNS/Tests/Results/*.xml`.
@@ -374,8 +342,7 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 На этом этапе сборки запускаются модульные тесты в скрипте Pester, рассмотренном ранее, и результаты сохраняются в папке `InfraDNS/Tests/Results/*.xml`.
 
-<a id="copy-files" class="xliff"></a>
-### Копирование файлов
+### <a name="copy-files"></a>Копирование файлов
 
 1. Добавьте следующие строки в раздел **Содержание**:
 
@@ -390,16 +357,14 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 На этом шаге копируются сборка и скрипты тестирования в промежуточный каталог, чтобы их можно было опубликовать как артефакты сборки на следующем шаге.
 
-<a id="publish-artifact" class="xliff"></a>
-### Публикация артефакта
+### <a name="publish-artifact"></a>Публикация артефакта
 
 1. Задайте для параметра **Путь к публикации** значение `$(Build.ArtifactStagingDirectory)\`.
 1. Задайте для параметра **Имя артефакта** значение `Deploy`.
 1. Задайте для параметра **Тип артефакта** значение `Server`.
 1. Выберите `Enabled` в **параметрах управления**.
 
-<a id="enable-continuous-integration" class="xliff"></a>
-## Включение непрерывной интеграции
+## <a name="enable-continuous-integration"></a>Включение непрерывной интеграции
 
 Теперь мы создадим триггер, который активирует новую сборку проекта каждый раз, когда в ветке `ci-cd-example` репозитория Git отмечено изменение.
 
@@ -411,8 +376,7 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 Теперь любые изменения в репозитории Git TFS запускают автоматическую сборку.
 
-<a id="create-the-release-definition" class="xliff"></a>
-## Создание определения выпуска
+## <a name="create-the-release-definition"></a>Создание определения выпуска
 
 Создадим определение выпуска, чтобы проект развертывался в среду разработки с записью каждого кода после изменения.
 
@@ -428,38 +392,33 @@ Invoke-PSake $PSScriptRoot\InfraDNS\$fileName.ps1
 
 Измените шаги следующим образом.
 
-<a id="powershell-script" class="xliff"></a>
-### Сценарий PowerShell
+### <a name="powershell-script"></a>Сценарий PowerShell
 
 1. Задайте для **пути к скрипту** значение `$(Build.DefinitionName)\Deploy\initiate.ps1"`.
 1. Задайте для **аргументов** значение `-fileName Deploy`.
 
-<a id="first-publish-test-results" class="xliff"></a>
-### Первая публикация результатов тестирования
+### <a name="first-publish-test-results"></a>Первая публикация результатов тестирования
 
 1. Выберите `NUnit` для поля **Формат результатов теста**.
 1. Задайте в качестве **файлов результатов тестов** значение `$(Build.DefinitionName)\Deploy\InfraDNS\Tests\Results\Integration*.xml`.
 1. Задайте в качестве **название тестового запуска** значение `Integration`.
 1. В разделе **Параметры управления** установите параметр **Всегда запускать**.
 
-<a id="second-publish-test-results" class="xliff"></a>
-### Вторая публикация результатов тестирования
+### <a name="second-publish-test-results"></a>Вторая публикация результатов тестирования
 
 1. Выберите `NUnit` для поля **Формат результатов теста**.
 1. Задайте в качестве **файлов результатов тестов** значение `$(Build.DefinitionName)\Deploy\InfraDNS\Tests\Results\Acceptance*.xml`.
 1. Задайте в качестве **название тестового запуска** значение `Acceptance`.
 1. В разделе **Параметры управления** установите параметр **Всегда запускать**.
 
-<a id="verify-your-results" class="xliff"></a>
-## Проверка результатов
+## <a name="verify-your-results"></a>Проверка результатов
 
 Теперь всякий раз, когда вы вносите изменения в ветку `ci-cd-example` ​​в TFS, запускается новая сборка.
 Если создание сборки успешно, запускается новое развертывание.
 
 Результаты развертывания можно проверить, открыв браузер на клиентском компьютере и перейдя на сайт `www.contoso.com`.
 
-<a id="next-steps" class="xliff"></a>
-## Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом примере настраивается DNS-сервер `TestAgent1`, чтобы URL-адрес `www.contoso.com` разрешался в `TestAgent2`, но на самом деле веб-сайт не развертывается.
 Структура для этого предоставляется в репозитории в папке `WebApp`.

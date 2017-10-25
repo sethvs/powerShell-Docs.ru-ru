@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="help-support-for-dsc-configurations" class="xliff"></a>
-# Поддержка справки для конфигураций DSC
+# <a name="help-support-for-dsc-configurations"></a>Поддержка справки для конфигураций DSC
 
 Теперь вы можете использовать справку на основе комментариев внутри конфигураций DSC и получить справку во время использования этой конфигурации при вызове функции настройки с помощью `-?`:  
 

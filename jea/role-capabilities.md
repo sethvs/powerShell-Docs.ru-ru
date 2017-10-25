@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="jea-role-capabilities" class="xliff"></a>
-# Возможности ролей JEA
+# <a name="jea-role-capabilities"></a>Возможности ролей JEA
 
 > Область применения: Windows PowerShell 5.0
 
@@ -20,8 +19,7 @@ ms.lasthandoff: 06/12/2017
 
 В этом разделе описывается создание файла возможностей ролей PowerShell для пользователей JEA.
 
-<a id="determine-which-commands-to-allow" class="xliff"></a>
-## Определение разрешаемых команд
+## <a name="determine-which-commands-to-allow"></a>Определение разрешаемых команд
 
 Прежде всего, при создании файла возможности роли нужно определить, к чему именно потребуется доступ пользователям, которым назначена эта роль.
 Этот процесс сбора требований может занять некоторое время, однако он крайне важен.
@@ -41,16 +39,14 @@ ms.lasthandoff: 06/12/2017
 Ниже приведено несколько примеров команд, которые в состоянии без ограничений быть использованы злоумышленниками.
 Обратите внимание, что этот список не является исчерпывающим и служит лишь отправной точкой для дальнейших действий.
 
-<a id="examples-of-potentially-dangerous-commands" class="xliff"></a>
-### Примеры потенциально опасных команд
+### <a name="examples-of-potentially-dangerous-commands"></a>Примеры потенциально опасных команд
 
 Риск | Пример | Связанные команды
 -----|---------|-----------------
 Предоставление прав администратора подключающемуся пользователю для обхода JEA | `Add-LocalGroupMember -Member 'CONTOSO\jdoe' -Group 'Administrators'` | `Add-ADGroupMember`, `Add-LocalGroupMember`, `net.exe`, `dsadd.exe`
 Выполнение произвольного кода, например вредоносных программ, эксплойтов или пользовательских сценариев для обхода защиты | `Start-Process -FilePath '\\san\share\malware.exe'` | `Start-Process`, `New-Service`, `Invoke-Item`, `Invoke-WmiMethod`, `Invoke-CimMethod`, `Invoke-Expression`, `Invoke-Command`, `New-ScheduledTask`, `Register-ScheduledJob`
 
-<a id="create-a-role-capability-file" class="xliff"></a>
-## Создание файла возможностей ролей
+## <a name="create-a-role-capability-file"></a>Создание файла возможностей ролей
 
 Вы можете создать новый файл возможности роли с помощью командлета [New-PSRoleCapabilityFile](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/New-PSRoleCapabilityFile).
 
@@ -61,8 +57,7 @@ New-PSRoleCapabilityFile -Path .\MyFirstJEARole.psrc
 Полученный файл можно открыть в текстовом редакторе и изменить, чтобы разрешить нужные команды для роли.
 Справочная документация PowerShell содержит несколько примеров того, как можно настроить такой файл.
 
-<a id="allowing-powershell-cmdlets-and-functions" class="xliff"></a>
-### Разрешение функций и командлетов PowerShell
+### <a name="allowing-powershell-cmdlets-and-functions"></a>Разрешение функций и командлетов PowerShell
 
 Чтобы разрешить пользователям запускать функции или командлеты PowerShell, добавьте имя функции или командлета в поле VisibleFunctions или VisbibleCmdlets.
 Если вы не уверены, является ли команда командлетом или функцией, выполните `Get-Command <name>` и проверьте свойство CommandType в выходных данных.
@@ -118,8 +113,7 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
 
 Дополнительные сведения о ValidatePattern см. в [этой записи блога *Hey, Scripting Guy!*](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) и справочных материалах о [регулярных выражениях PowerShell](https://technet.microsoft.com/en-us/library/hh847880.aspx).
 
-<a id="allowing-external-commands-and-powershell-scripts" class="xliff"></a>
-### Разрешение внешних команд и сценариев PowerShell
+### <a name="allowing-external-commands-and-powershell-scripts"></a>Разрешение внешних команд и сценариев PowerShell
 
 Чтобы разрешить пользователям запускать исполняемые файлы и сценарии PowerShell (PS1) в сеансе JEA, нужно добавить полный путь к каждой программы в поле "VisibleExternalCommands".
 
@@ -138,8 +132,7 @@ VisibleExternalCommands = 'C:\Windows\System32\whoami.exe', 'C:\Program Files\Co
 
 Делая внешние команды доступными для пользователей в сеансе JEA, всегда указывайте полный путь к исполняемому файлу, чтобы вместо него не запускалась другая (и потенциально вредоносная) программа с таким же именем, размещенная в другом месте.
 
-<a id="allowing-access-to-powershell-providers" class="xliff"></a>
-### Разрешение доступа к поставщикам PowerShell
+### <a name="allowing-access-to-powershell-providers"></a>Разрешение доступа к поставщикам PowerShell
 
 По умолчанию в сеансах JEA нет доступных поставщиков PowerShell.
 
@@ -156,8 +149,7 @@ VisibleProviders = 'Registry'
 К функциям, командлетам и внешним программам, доступным в сеансе JEA, не применяются те же ограничения, что и для JEA, то есть они могут по умолчанию получить доступ к любому поставщику.
 В случаях, когда требуется скопировать файлы из конечной точки JEA или на нее, рассмотрите возможность использования [диска пользователя](session-configurations.md#user-drive).
 
-<a id="creating-custom-functions" class="xliff"></a>
-### Создание настраиваемых функций
+### <a name="creating-custom-functions"></a>Создание настраиваемых функций
 
 В файле возможностей роли можно создать настраиваемые функции, чтобы упростить выполнение сложных задач для конечных пользователей.
 Настраиваемые функции также удобны, когда требуется расширенная логика проверки для значений параметров командлета.
@@ -195,8 +187,7 @@ FunctionDefinitions = @{
 При наличии множества настраиваемых функций может быть проще поместить их в [модуль сценария PowerShell](https://msdn.microsoft.com/en-us/library/dd878340(v=vs.85).aspx).
 Затем можно сделать эти функции видимыми в сеансе JEA с помощью поля "VisibleFunctions", как и в случае со встроенными и сторонними модулями.
 
-<a id="place-role-capabilities-in-a-module" class="xliff"></a>
-## Помещение возможностей ролей в модуль
+## <a name="place-role-capabilities-in-a-module"></a>Помещение возможностей ролей в модуль
 
 Чтобы среда PowerShell обнаружила файл возможности ролей, его следует поместить в папку "RoleCapabilities" в модуле PowerShell.
 Этот модуль может храниться в любой папке, включенной в переменную среды `$env:PSModulePath`, однако не следует помещать его в папку System32 (которая зарезервирована для встроенных модулей) либо в папку, где не являющиеся доверенными подключающиеся пользователи могут изменить его.
@@ -219,8 +210,7 @@ Copy-Item -Path .\MyFirstJEARole.psrc -Destination $rcFolder
 
 В разделе [Основные сведения о модуле PowerShell](https://msdn.microsoft.com/en-us/library/dd878324.aspx) приведены дополнительные сведения о модулях PowerShell, манифестах модуля и переменной среды PSModulePath.
 
-<a id="updating-role-capabilities" class="xliff"></a>
-## Изменение возможностей ролей
+## <a name="updating-role-capabilities"></a>Изменение возможностей ролей
 
 
 Файл возможностей ролей можно изменить в любое время, просто сохранив изменения в нем.
@@ -233,8 +223,7 @@ Copy-Item -Path .\MyFirstJEARole.psrc -Destination $rcFolder
 
 Администраторам, желающим заблокировать доступ к возможностям ролей, следует убедиться, что учетная запись Local System имеет доступ на чтение к файлам возможностей ролей и содержащим их модулям.
 
-<a id="how-role-capabilities-are-merged" class="xliff"></a>
-## Способ слияния возможностей ролей
+## <a name="how-role-capabilities-are-merged"></a>Способ слияния возможностей ролей
 
 При входе в сеанс JEA пользователям может предоставляться доступ к нескольким возможностям ролей в зависимости от сопоставлений ролей в [файле конфигурации сеанса](session-configurations.md).
 В этом случае JEA пытается предоставить такому пользователю *наиболее широкий* набор команд, разрешенных для любой из этих ролей.
@@ -288,8 +277,7 @@ $mergedAandB = @{
 Например, если одна роль разрешает командлет `Remove-Item`, а другая разрешает поставщик `FileSystem`, существует риск того, что пользователь JEA удалит произвольные файлы на компьютере.
 Дополнительные сведения об определении действующих разрешений пользователей см. в [разделе об аудите JEA](audit-and-report.md).
 
-<a id="next-steps" class="xliff"></a>
-## Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание файла конфигурации сеанса](session-configurations.md)
 

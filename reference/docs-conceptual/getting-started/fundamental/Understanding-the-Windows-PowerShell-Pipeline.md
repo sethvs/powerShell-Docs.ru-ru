@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Общие сведения о конвейере Windows PowerShell"
 ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb

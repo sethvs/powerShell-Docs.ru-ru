@@ -9,7 +9,6 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-and-updated-cmdlets-based-on-community-feedback" class="xliff"></a>
-# Новые и обновленные командлеты, основанные на отзывах сообщества 
+# <a name="new-and-updated-cmdlets-based-on-community-feedback"></a>Новые и обновленные командлеты, основанные на отзывах сообщества 
 Основываясь на отзывах членов сообщества, полученных через [Connect](https://connect.microsoft.com/powershell), мы добавили несколько новых командлетов Utility, а также изменили существующие командлеты. Мы продолжаем принимать отзывы и стараемся обработать максимальное число запросов.
 

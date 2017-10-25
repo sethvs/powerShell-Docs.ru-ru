@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-script" class="xliff"></a>
-# Find-Script
+# <a name="find-script"></a>Find-Script
 
 Находит в коллекции в Интернете файлы сценариев PowerShell, соответствующие указанному условию.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Find-Script обнаруживает в зарегистрированных репозиториях файлы сценариев, которые отвечают заданным условиям.
 Для каждого найденного сценария Find-Script возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Script для установки этих сценариев.
@@ -34,20 +32,17 @@ ms.lasthandoff: 06/12/2017
 
 **ПРИМЕЧАНИЕ.** Зарегистрированный PSRepository должен иметь допустимый параметр ScriptSourceLocation. Для установки значения ScriptSourceLocation можно использовать командлет Set-PSRepository.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Find-Script -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-Script](http://go.microsoft.com/fwlink/?LinkId=619785)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 # Find a script from the registered repository with ScriptSourceLocation

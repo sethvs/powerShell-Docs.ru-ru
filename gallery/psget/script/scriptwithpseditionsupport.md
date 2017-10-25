@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="script-with-compatible-powershell-editions" class="xliff"></a>
-# Сценарии с совместимыми выпусками PowerShell
+# <a name="script-with-compatible-powershell-editions"></a>Сценарии с совместимыми выпусками PowerShell
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
 
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
@@ -63,10 +62,7 @@ Find-Script -Tag PSEditon_Core
 
 ```
 
-<a id="more-details" class="xliff"></a>
-## Дополнительные подробности
-<a id="modules-with-pseditionsmodulemodulewithpseditionsupportmd" class="xliff"></a>
-### [Модули с PSEditions](../module/modulewithpseditionsupport.md)
-<a id="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd" class="xliff"></a>
-### [Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
+## <a name="more-details"></a>Дополнительные подробности
+### <a name="modules-with-pseditionsmodulemodulewithpseditionsupportmd"></a>[Модули с PSEditions](../module/modulewithpseditionsupport.md)
+### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
 

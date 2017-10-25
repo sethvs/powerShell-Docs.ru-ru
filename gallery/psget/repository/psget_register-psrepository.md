@@ -4,46 +4,40 @@ contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: Register-PSRepository
-ms.openlocfilehash: 598bfa52fe3508359bbeb4489cc054bc9314b572
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: badac5dc1157bbfa79058630c5c2f260d2151bd8
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
-<a id="register-psrepository" class="xliff"></a>
-# Register-PSRepository
+# <a name="register-psrepository"></a>Register-PSRepository
 
 Возвращает информацию о зарегистрированных репозиториях, которая есть на компьютере.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Register-PSRepository регистрирует веб-репозиторий с модулями PowerShell. После регистрации репозитория вы можете ссылаться на него из командлетов Find-Module, Install-Module и Publish-Module. Зарегистрированный репозиторий становится репозиторием по умолчанию в командлетах Find-Module и Install-Module. 
 
 Информация о зарегистрированных репозиториях привязана к конкретному пользователю. Они не регистрируются в контексте всей системы.
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Register-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517129)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
-<a id="register-a-powershell-repository" class="xliff"></a>
-### Регистрация репозитория PowerShell
+### <a name="register-a-powershell-repository"></a>Регистрация репозитория PowerShell
 Вы можете настроить PowerShellGet на работу с внутренними репозиториями. После регистрации репозитория командлеты Find-Module и Install-Module можно настроить на работу с ним.
 
 ```powershell
 # Register a default repository
-Register-PSRepository –Name DemoRepo –SourceLocation "https://www.myget.org/F/powershellgetdemo/api/v2" –InstallationPolicy –Trusted
+Register-PSRepository –Name DemoRepo –SourceLocation "https://www.myget.org/F/powershellgetdemo/api/v2" –InstallationPolicy Trusted
 
 # Get all of the registered repositories
 Name                      InstallationPolicy   SourceLocation
@@ -68,8 +62,7 @@ Unregister-PSRepository DemoRepo
 ```
 
 
-<a id="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support" class="xliff"></a>
-### Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
+### <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a>Командлеты Register-PSRepository и Set-PSRepository с поддержкой совместного использования сценариев
 
 Используйте командлет Register-PSRepository для добавления **ScriptSourceLocation** и **ScriptPublishLocation** в PSRepository.
 

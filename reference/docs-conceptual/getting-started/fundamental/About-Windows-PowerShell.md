@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Сведения о Windows PowerShell"
 ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143

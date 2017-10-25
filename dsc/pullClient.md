@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="setting-up-a-dsc-pull-client" class="xliff"></a>
-# Настройка опрашивающего клиента DSC
+# <a name="setting-up-a-dsc-pull-client"></a>Настройка опрашивающего клиента DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 

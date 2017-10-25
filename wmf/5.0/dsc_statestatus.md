@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="unified-and-consistent-state-and-status-representation" class="xliff"></a>
-# Единое и согласованное представление состояний
+# <a name="unified-and-consistent-state-and-status-representation"></a>Единое и согласованное представление состояний
 
 В этот выпуск внесен ряд усовершенствований для служб автоматизации, отвечающих за состояние LCM и DSC. Сюда входят единые и согласованные представления состояния, управляемое свойство datetime объектов состояния, возвращаемых командлетом Get-DscConfigurationStatus, и свойство расширенных сведений о состоянии LCM, возвращаемое командлетом Get-DscLocalConfigurationManager.
 
@@ -49,8 +48,7 @@ $ResourcesInDesiredState = (Get-DscConfigurationStatus).ResourcesInDesiredState
 
 $ResourcesNotInDesiredState = (Get-DscConfigurationStatus).ResourcesNotInDesiredState
 ```
-<a id="enhancement-in-get-dscconfigurationstatus-cmdlet" class="xliff"></a>
-## Улучшения в командлете Get-DscConfigurationStatus
+## <a name="enhancement-in-get-dscconfigurationstatus-cmdlet"></a>Улучшения в командлете Get-DscConfigurationStatus
 
 В этом выпуске в командлет Get-DscConfigurationStatus было внесено несколько улучшений. Ранее свойство StartDate объектов, возвращаемое командлетом StartDate, имело тип String. Теперь оно имеет тип Datetime, что упрощает сложный выбор и фильтрацию благодаря встроенным свойствам объекта Datetime.
 ```powershell
@@ -92,8 +90,7 @@ Success 11/13/2015 11:20:44 AM Initial True
 Success 11/13/2015 11:20:44 AM LocalConfigurationManager False
 ```
 
-<a id="enhancement-in-get-dsclocalconfigurationmanager-cmdlet" class="xliff"></a>
-## Улучшения в командлете Get-DscLocalConfigurationManager
+## <a name="enhancement-in-get-dsclocalconfigurationmanager-cmdlet"></a>Улучшения в командлете Get-DscLocalConfigurationManager
 В объект, возвращаемый из командлета Get-DscLocalConfigurationManager, добавлено новое поле LCMStateDetail. Оно заполняется в том случае, когда LCMState имеет значение Busy. Извлечь его можно с помощью следующего командлета:
 ```powershell
 (Get-DscLocalConfigurationManager).LCMStateDetail

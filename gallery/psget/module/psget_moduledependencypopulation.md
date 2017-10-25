@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="logic-for-preparing-the-module-dependencies-during-publish-operation" class="xliff"></a>
-# Логика для подготовки зависимостей модуля во время операции публикации
+# <a name="logic-for-preparing-the-module-dependencies-during-publish-operation"></a>Логика для подготовки зависимостей модуля во время операции публикации
 1.  Модули, перечисленные в списке RequiredModules, считаются зависимостями.
 2.  Модули, перечисленные в списке NestedModules, база модуля которых не находится под указанной базой модуля, считаются зависимостями.
 

@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="modules-with-compatible-powershell-editions" class="xliff"></a>
-# Модули с совместимыми выпусками PowerShell
+# <a name="modules-with-compatible-powershell-editions"></a>Модули с совместимыми выпусками PowerShell
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
 
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
 - **Выпуск Core Edition:** построен на основе .NET Core и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в выпусках Windows с ограниченными возможностями, таких как Nano Server и Windows IoT.
 
-<a id="the-running-edition-of-powershell-is-shown-in-the-psedition-property-of-psversiontable" class="xliff"></a>
-## Запущенный выпуск PowerShell отображается в свойстве PSEdition параметра $PSVersionTable.
+## <a name="the-running-edition-of-powershell-is-shown-in-the-psedition-property-of-psversiontable"></a>Запущенный выпуск PowerShell отображается в свойстве PSEdition параметра $PSVersionTable.
 ```powershell
 $PSVersionTable
 
@@ -34,8 +32,7 @@ PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
 ```
 
-<a id="module-authors-can-declare-their-modules-to-be-compatible-with-one-or-more-powershell-editions-using-the-compatiblepseditions-module-manifest-key-this-key-is-only-supported-on-powershell-51-or-later" class="xliff"></a>
-## Авторы модулей могут объявить свои модули совместимыми с одним выпуском PowerShell (или несколькими) с помощью ключа манифеста модуля CompatiblePSEditions. Этот ключ поддерживается только в PowerShell 5.1 или более поздней версии.
+## <a name="module-authors-can-declare-their-modules-to-be-compatible-with-one-or-more-powershell-editions-using-the-compatiblepseditions-module-manifest-key-this-key-is-only-supported-on-powershell-51-or-later"></a>Авторы модулей могут объявить свои модули совместимыми с одним выпуском PowerShell (или несколькими) с помощью ключа манифеста модуля CompatiblePSEditions. Этот ключ поддерживается только в PowerShell 5.1 или более поздней версии.
 *ПРИМЕЧАНИЕ.* После указания манифеста модуля с помощью ключа CompatiblePSEditions манифест невозможно импортировать в более ранние выпуски PowerShell.
 
 ```powershell
@@ -71,18 +68,15 @@ Core
 
 ```
 
-<a id="module-authors-can-publish-a-single-module-targeting-to-either-or-both-powershell-editions-desktop-and-core" class="xliff"></a>
-## Авторы модулей могут опубликовать один модуль, предназначенный для одного или обоих выпусков PowerShell (Desktop и Core). 
+## <a name="module-authors-can-publish-a-single-module-targeting-to-either-or-both-powershell-editions-desktop-and-core"></a>Авторы модулей могут опубликовать один модуль, предназначенный для одного или обоих выпусков PowerShell (Desktop и Core). 
 
 Один модуль может работать в выпусках Desktop и Core; в таком модуле автор должен указать нужную логику в RootModule или в манифесте модуля с помощью переменной $PSEdition.
 Модули могут иметь два набора скомпилированных библиотек DLL, предназначенных для CoreCLR и FullCLR.
 Ниже представлены несколько вариантов упаковки модуля с логикой для загрузки надлежащих библиотек DLL.
 
-<a id="option-1-packaging-a-module-for-targeting-multiple-versions-and-multiple-editions-of-powershell" class="xliff"></a>
-### Вариант 1. Упаковка модуля для нескольких версий и нескольких выпусков PowerShell
+### <a name="option-1-packaging-a-module-for-targeting-multiple-versions-and-multiple-editions-of-powershell"></a>Вариант 1. Упаковка модуля для нескольких версий и нескольких выпусков PowerShell
 
-<a id="module-folder-contents" class="xliff"></a>
-#### Содержимое папки модуля
+#### <a name="module-folder-contents"></a>Содержимое папки модуля
 - Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules.dll 
 - Microsoft.Windows.PowerShell.ScriptAnalyzer.dll 
 - PSScriptAnalyzer.psd1
@@ -101,8 +95,7 @@ Core
 - Settings\ScriptingStyle.psd1
 - Settings\ScriptSecurity.psd1
 
-<a id="contents-of-psscriptanalyzerpsd1-file" class="xliff"></a>
-#### Содержимое файла PSScriptAnalyzer.psd1
+#### <a name="contents-of-psscriptanalyzerpsd1-file"></a>Содержимое файла PSScriptAnalyzer.psd1
 
 ```powershell
 @{
@@ -120,8 +113,7 @@ ModuleVersion = '1.6.1'
 }
 ```
 
-<a id="contents-of-psscriptanalyzerpsm1-file" class="xliff"></a>
-#### Содержимое файла PSScriptAnalyzer.psm1
+#### <a name="contents-of-psscriptanalyzerpsm1-file"></a>Содержимое файла PSScriptAnalyzer.psm1
 Представленная ниже логика загружает необходимые сборки в зависимости от текущего выпуска или версии.
 
 ```powershell
@@ -158,8 +150,7 @@ $PSModule.OnRemove = {
 
 ```
 
-<a id="option-2-use-psedition-variable-in-the-psd1-file-to-load-the-proper-dlls-and-nestedrequired-modules" class="xliff"></a>
-### Вариант 2. Использование переменной $PSEdition в PSD1-файле для загрузки надлежащих библиотек DLL и вложенных или необходимых модулей
+### <a name="option-2-use-psedition-variable-in-the-psd1-file-to-load-the-proper-dlls-and-nestedrequired-modules"></a>Вариант 2. Использование переменной $PSEdition в PSD1-файле для загрузки надлежащих библиотек DLL и вложенных или необходимых модулей
 
 В PS 5.1 или более поздней версии в файле манифеста модуля разрешается использовать глобальную переменную $PSEdition.
 С помощью этой переменной автор модуля может указать условные значения в файле манифеста модуля. Переменная $PSEdition может указываться в ограниченном языковом режиме или в разделе Data. 
@@ -167,8 +158,7 @@ $PSModule.OnRemove = {
 *ПРИМЕЧАНИЕ.* Манифест модуля невозможно импортировать в более ранние версии PowerShell после указания манифеста с помощью ключа CompatiblePSEditions или после использования в манифесте переменной $PSEdition.
 
 
-<a id="sample-module-manifest-file-with-compatiblepseditions-key" class="xliff"></a>
-#### Пример файла манифеста модуля с ключом CompatiblePSEditions
+#### <a name="sample-module-manifest-file-with-compatiblepseditions-key"></a>Пример файла манифеста модуля с ключом CompatiblePSEditions
 
 ```powershell
 @{ 
@@ -203,8 +193,7 @@ else # Desktop
 }
 ```
 
-<a id="module-contents" class="xliff"></a>
-#### Содержимое модуля
+#### <a name="module-contents"></a>Содержимое модуля
 
 ```powershell
 
@@ -235,8 +224,7 @@ Mode                LastWriteTime         Length Name
 -a----         7/5/2016   1:35 PM              0 MyCoreClrRM.dl                                                                      
 ```
 
-<a id="powershell-gallery-users-can-find-the-list-of-modules-supported-on-a-specific-powershell-edition-using-tags-pseditiondesktop-and-pseditoncore" class="xliff"></a>
-## Пользователи коллекции PowerShell могут найти список модулей, поддерживаемых в определенной версии PowerShell, с помощью тегов PSEdition_Desktop и PSEditon_Core.
+## <a name="powershell-gallery-users-can-find-the-list-of-modules-supported-on-a-specific-powershell-edition-using-tags-pseditiondesktop-and-pseditoncore"></a>Пользователи коллекции PowerShell могут найти список модулей, поддерживаемых в определенной версии PowerShell, с помощью тегов PSEdition_Desktop и PSEditon_Core.
 Считается, что модули без тегов PSEdition_Desktop и PSEditon_Core прекрасно работают в выпусках PowerShell Desktop.
 
 ```powershell
@@ -250,12 +238,8 @@ Find-Module -Tag PSEditon_Core
 ```
 
 
-<a id="more-details" class="xliff"></a>
-## Дополнительные подробности
-<a id="scripts-with-pseditionsscriptscriptwithpseditionsupportmd" class="xliff"></a>
-### [Сценарии с PSEditions](../script/scriptwithpseditionsupport.md)
-<a id="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd" class="xliff"></a>
-### [Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
-<a id="update-module-manifest-psgetupdate-modulemanifestmd" class="xliff"></a>
-### [Обновление манифеста модуля] (./psget_update-modulemanifest.md)
+## <a name="more-details"></a>Дополнительные подробности
+### <a name="scripts-with-pseditionsscriptscriptwithpseditionsupportmd"></a>[Сценарии с PSEditions](../script/scriptwithpseditionsupport.md)
+### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
+### <a name="update-module-manifest-psgetupdate-modulemanifestmd"></a>[Обновление манифеста модуля] (./psget_update-modulemanifest.md)
 

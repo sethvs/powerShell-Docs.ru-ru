@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="installation-of-module-dependencies" class="xliff"></a>
-# Установка зависимостей модулей
+# <a name="installation-of-module-dependencies"></a>Установка зависимостей модулей
 
 Теперь в командлетах Install-Module, Update-Module и Publish-Module, выполняемых в Windows PowerShell 5.0 или более поздней версии, имеется поддержка параллельных (SxS) версий модуля.
 Кроме того, мы добавили в командлет Publish-Module параметр -RequiredVersion для указания публикуемой версии. Параметр Path теперь поддерживает базовый путь к модулю с папкой версии.

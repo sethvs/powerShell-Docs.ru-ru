@@ -10,16 +10,14 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="registering-jea-configurations" class="xliff"></a>
-# Регистрация конфигураций JEA
+# <a name="registering-jea-configurations"></a>Регистрация конфигураций JEA
 
 > Область применения: Windows PowerShell 5.0
 
 Последний шаг перед использованием JEA после создания [возможностей роли](role-capabilities.md) и [файла конфигурации сеанса](session-configurations.md) заключается в регистрации конечной точки JEA.
 Этот процесс применяет параметры конфигурации сеанса в системе и делает конечную точку доступной пользователям и модулям автоматизации.
 
-<a id="single-machine-configuration" class="xliff"></a>
-## Конфигурация для отдельного компьютера
+## <a name="single-machine-configuration"></a>Конфигурация для отдельного компьютера
 
 Для небольших сред можно развернуть JEA, зарегистрировав файл конфигурации сеанса с помощью командлета [Register-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration).
 
@@ -58,8 +56,7 @@ Register-PSSessionConfiguration -Path .\MyJEAConfig.pssc -Name 'JEAMaintenance' 
 Если регистрация прошла успешно, можно приступать к [использованию JEA](using-jea.md).
 Файл конфигурации сеанса можно удалить в любое время, так как после регистрации он не используется.
 
-<a id="multi-machine-configuration-with-dsc" class="xliff"></a>
-## Конфигурация для нескольких компьютеров с помощью DSC
+## <a name="multi-machine-configuration-with-dsc"></a>Конфигурация для нескольких компьютеров с помощью DSC
 
 Если JEA развертывается на нескольких компьютерах, самая простая модель развертывания заключается в использовании ресурса [настройки требуемого состояния](https://msdn.microsoft.com/en-us/powershell/dsc/overview) JEA, позволяющего быстро и согласованно развернуть JEA на каждом компьютере.
 
@@ -119,8 +116,7 @@ Configuration JEAMaintenance
 Ресурс DSC также позволяет заменить конечную точку удаленного взаимодействия по умолчанию Microsoft.PowerShell.
 В этом случае ресурс автоматически регистрирует резервную конечную точку без ограничений с именем "Microsoft.PowerShell.Restricted", имеющую ACL WinRM по умолчанию (который предоставляет членам групп "Локальные администраторы" и "Пользователи удаленного управления" доступ к ней).
 
-<a id="unregistering-jea-configurations" class="xliff"></a>
-## Отмена регистрации конфигураций JEA
+## <a name="unregistering-jea-configurations"></a>Отмена регистрации конфигураций JEA
 
 Чтобы удалить конечную точку JEA из системы, используйте командлет [Unregister-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Unregister-PSSessionConfiguration).
 Отмена регистрации конечной точки JEA не позволит новым пользователям создавать новые сеансы JEA в системе.
@@ -136,8 +132,7 @@ Unregister-PSSessionConfiguration -Name 'ContosoMaintenance' -Force
 > Это приведет к прерыванию большинства выполняемых операций удаленного управления, включая другие сеансы PowerShell, вызовы WMI и некоторые средства управления.
 > Отменяйте регистрацию конечных точек PowerShell только во время запланированных периодов обслуживания.
 
-<a id="next-steps" class="xliff"></a>
-## Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Тестирование конечной точки JEA](using-jea.md)
 

@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "другие статьи о powershell"
-ms.openlocfilehash: c1bc3c25c34aa4501eae15fb2b4f629a77e90006
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 32d7006010a4808a77d9800ec77c4352213d12b9
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="more-powershell-learning"></a>Другие статьи о PowerShell
 
@@ -18,8 +18,8 @@ ms.lasthandoff: 09/08/2017
 
 - [Блог команды разработчиков Windows PowerShell](http://blogs.msdn.com/b/powershell/). Лучший ресурс, позволяющий учиться непосредственно у рабочей группы по Windows PowerShell.
 - [Windows PowerShell Customer Connection](http://Connect.Microsoft.com/PowerShell). Отправляйте предложения, отзывы или информацию об ошибках рабочей группе по Windows PowerShell. Вы можете сообщить об ошибке в коде, документации или локализации (в переводе).
-- В блоге [Hey, Scripting Guy! ](http://www.scriptingguys.com/blog) каждые 7 дней публикуется новый контент, и он заслуженно и на постоянной основе входит в пятерку лучших блогов Майкрософт. Статьи основаны на сценариях и написаны приятным и живым языком.
-- [Страница изучения PowerShell](http://www.scriptingguys.com/learnpowershell) — дом Windows PowerShell в Центре скриптов TechNet. На этой странице размещен ряд видео для начинающих от Эда Уилсона (Ed Wilson), специалиста по сценариям Майкрософт. Здесь также находятся тесты по Windows PowerShell, ссылки на контент от сообщества и многое другое.
+- В блоге [Hey, Scripting Guy! ](https://blogs.technet.microsoft.com/heyscriptingguy/) каждые 7 дней публикуется новый контент, и он заслуженно и на постоянной основе входит в пятерку лучших блогов Майкрософт. Статьи основаны на сценариях и написаны приятным и живым языком.
+- [Страница изучения PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/) — дом Windows PowerShell в Центре скриптов TechNet. На этой странице размещен ряд видео для начинающих от Эда Уилсона (Ed Wilson), специалиста по сценариям Майкрософт. Здесь также находятся тесты по Windows PowerShell, ссылки на контент от сообщества и многое другое.
 - Возникли вопросы по использованию Windows PowerShell? Объединяйтесь с сотнями других людей с похожими интересами на [официальном форуме Scripting Guys](http://social.technet.microsoft.com/forums/itcg/threads/).
 - [Центр скриптов Майкрософт](https://technet.microsoft.com/scriptcenter). Портал, на котором можно найти многие полезные ресурсы для Windows PowerShell, включая [репозиторий Центра скриптов](http://gallery.technet.microsoft.com/scriptcenter/). Один из лучших способов обучиться сценариям — увидеть примеры в действии. Есть тысячи скриптов Windows PowerShell, которые вы можете оценить и адаптировать под свои нужны (и поиск по ним).
 - Примите участие в работе сообщества пользователей Windows PowerShell. На [странице сообщества Центра скриптов](https://technet.microsoft.com/scriptcenter/hh182567.aspx) можно узнать, где географически находятся десятки групп пользователей Windows PowerShell; скорее всего, и рядом с вами кто-то есть. Оставайтесь в курсе деятельности сообщества Microsoft Scripting Guy.

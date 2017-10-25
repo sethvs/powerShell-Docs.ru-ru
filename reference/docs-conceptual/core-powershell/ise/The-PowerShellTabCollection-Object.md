@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Объект PowerShellTabCollection"
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58

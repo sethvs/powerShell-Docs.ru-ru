@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Получение сведений о командах"
 ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d

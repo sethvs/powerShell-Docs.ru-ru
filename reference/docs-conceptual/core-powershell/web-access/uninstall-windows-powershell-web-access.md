@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: "powershell,командлет"
 title: "Удаление Windows PowerShell Web Access"
-ms.openlocfilehash: 7c71a245be244c1883598cdcddbf35e43c0fc7b0
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: b6e6a2374e6b4b2be8742019c5f1e4d5b5d1abe3
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
 
@@ -20,10 +20,8 @@ ms.lasthandoff: 09/08/2017
 
 Прежде чем начать, известите пользователей веб-консоли, что вы удаляете веб-сайт.
 
-
-Перед удалением Windows PowerShell Web Access с сервера шлюза выполните командлет `Uninstall-PswaWebApplication`, чтобы удалить веб-сайт и веб-приложения Windows PowerShell Web Access, или используйте процедуру диспетчера служб IIS [Удаление веб-сайта и веб-приложений Windows PowerShell Web Access]().
-
-Удаление Windows PowerShell Web Access не приводит к удалению IIS или любых других компонентов, которые были установлены автоматически, поскольку они требуются для выполнения Windows PowerShell Web Access. В процессе удаления остаются установленными компоненты, от которых зависит Windows PowerShell Web Access. Вы можете удалить эти компоненты при необходимости.
+Удаление Windows PowerShell Web Access не приводит к удалению IIS или любых других компонентов, которые были установлены автоматически, поскольку они требуются для выполнения Windows PowerShell Web Access.
+В процессе удаления остаются установленными компоненты, от которых зависит Windows PowerShell Web Access. Вы можете удалить эти компоненты при необходимости.
 
 ## <a name="recommended-quick-uninstallation"></a>Рекомендуемое (быстрое) удаление
 

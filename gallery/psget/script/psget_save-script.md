@@ -10,40 +10,33 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="save-script" class="xliff"></a>
-# Save-Script
+# <a name="save-script"></a>Save-Script
 
 Командлет Save-Script позволяет просмотреть файл сценария, сохранив его в указанном расположении.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Save-Script сохраняет указанный скрипт.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Save-Script -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Save-Script](http://go.microsoft.com/fwlink/?LinkId=619786)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
-<a id="example-1-save-a-script-from-a-repository" class="xliff"></a>
-### Пример 1. Сохранение скрипта из репозитория
+### <a name="example-1-save-a-script-from-a-repository"></a>Пример 1. Сохранение скрипта из репозитория
 Эта команда сохраняет последнюю версию скрипта Fabrikam-ClientScript из репозитория GalleryINT в локальную папку C:\ScriptSharingDemo.
 
 ```powershell
 Save-Script -Name Fabrikam-ClientScript -Repository GalleryINT -Path C:\ScriptSharingDemo
 ```
 
-<a id="example-2-save-a-version-of-a-script-by-piping-from-the-find-script-cmdlet" class="xliff"></a>
-### Пример 2. Сохранение версии скрипта по конвейеру из командлета Find-Script
+### <a name="example-2-save-a-version-of-a-script-by-piping-from-the-find-script-cmdlet"></a>Пример 2. Сохранение версии скрипта по конвейеру из командлета Find-Script
 
 Первая команда находит версию 1.5 скрипта Fabrikam-ClientScript в репозитории GalleryINT и сохраняет ее в папку C:\ScriptSharingDemo.
 

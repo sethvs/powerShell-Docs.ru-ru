@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "справочник по основным понятиям"
 ms.openlocfilehash: c8cc3e1fbfb96bd3dfcc2f1c7f974e53e6246ade

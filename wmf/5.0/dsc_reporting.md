@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="report-configuration-status-to-central-location" class="xliff"></a>
-# Отправка отчета о состоянии конфигурации в центральное расположение
+# <a name="report-configuration-status-to-central-location"></a>Отправка отчета о состоянии конфигурации в центральное расположение
 
 Подробные сведения о состоянии конфигурации DSC можно отправить на сервер, где выполняется служба DSC. 
 

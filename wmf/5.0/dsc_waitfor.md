@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="specifying-cross-node-dependencies" class="xliff"></a>
-# Указание межузловых зависимостей
+# <a name="specifying-cross-node-dependencies"></a>Указание межузловых зависимостей
 
 Встроенные ресурсы WaitFor\* (`WaitForAll`, `WaitForAny` и `WaitForSome`) позволяют указать зависимости между компьютерами во время выполнения конфигурации без внешней оркестрации. 
 

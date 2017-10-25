@@ -10,11 +10,9 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="resource-authoring-checklist" class="xliff"></a>
-# Контрольный список для создания ресурсов
+# <a name="resource-authoring-checklist"></a>Контрольный список для создания ресурсов
 Это список рекомендаций, которых нужно придерживаться при создании нового ресурса DSC.
-<a id="resource-module-contains-psd1-file-and-schemamof-for-every-resource" class="xliff"></a>
-## Модуль ресурсов содержит PSD1-файл и SCHEMA.MOF-файл для каждого ресурса 
+## <a name="resource-module-contains-psd1-file-and-schemamof-for-every-resource"></a>Модуль ресурсов содержит PSD1-файл и SCHEMA.MOF-файл для каждого ресурса 
 Убедитесь, что ресурс имеет правильную структуру и содержит все необходимые файлы. Каждый модуль ресурсов должен содержать PSD1-файл, а каждый несоставной ресурс должен иметь SCHEMA.MOF-файл. Ресурсы, которые не содержат схему, не выводятся **Get-DscResource**, и пользователи не смогут использовать IntelliSense при написании кода для этих модулей в интегрированной среде сценариев. Структура каталогов для ресурса xRemoteFile, который является частью [модуля ресурсов xPSDesiredStateConfiguration](https://github.com/PowerShell/xPSDesiredStateConfiguration), выглядит следующим образом.
 
 
@@ -33,8 +31,7 @@ xPSDesiredStateConfiguration
     xPSDesiredStateConfiguration.psd1
 ```
 
-<a id="resource-and-schema-are-correct" class="xliff"></a>
-## Ресурс и схема верны
+## <a name="resource-and-schema-are-correct"></a>Ресурс и схема верны
 Проверьте файл схемы ресурса (*.schema.mof). Для разработки и проверки схемы можно использовать [Конструктор ресурсов DSC](https://www.powershellgallery.com/packages/xDSCResourceDesigner/). Убедитесь в следующем.
 - Типы свойств являются правильными (например, не используйте String для свойств, принимающих числовые значения, в таких случаях следует использовать UInt32 или другие числовые типы).
 - Атрибуты свойств указаны правильно: ([key], [required], [write], [read]).
@@ -66,8 +63,7 @@ Test-xDscResource ..\DSCResources\MSFT_xRemoteFile
 Test-xDscSchema ..\DSCResources\MSFT_xRemoteFile\MSFT_xRemoteFile.schema.mof
 ```
 
-<a id="resource-loads-without-errors" class="xliff"></a>
-## Ресурс загружается без ошибок ##
+## <a name="resource-loads-without-errors"></a>Ресурс загружается без ошибок ##
 Проверьте, загружен ли модуль ресурсов.
 Это можно сделать вручную, выполнив команду `Import-Module <resource_module> -force ` и убедившись в отсутствии ошибок, или создав средства автоматизированного тестирования. В последнем случае вы можете применить для тестового случая приведенную ниже структуру:
 ```powershell
@@ -77,8 +73,7 @@ If ($error.count –ne 0) {
     Throw “Module was not imported correctly. Errors returned: $error”
 }
 ```
-<a id="resource-is-idempotent-in-the-positive-case" class="xliff"></a>
-## В положительном случае ресурс является идемпотентным. 
+## <a name="resource-is-idempotent-in-the-positive-case"></a>В положительном случае ресурс является идемпотентным. 
 Одной из фундаментальных характеристик ресурсов DSC является идемпотентность. Это означает, что при каждом применении конфигурации DSC, содержащей этот ресурс, результаты будут одинаковыми. Например, если мы создадим конфигурацию со следующим файлом ресурсов.
 ```powershell
 File file {
@@ -90,8 +85,7 @@ File file {
 Для подтверждения идемпотентности ресурса можно несколько раз вызвать командлет **Set-TargetResource** при тестировании ресурса напрямую или командлет **Start-DscConfiguration** при комплексном тестировании. Результат должен быть идентичным после каждого запуска. 
 
 
-<a id="test-user-modification-scenario" class="xliff"></a>
-## Проверка сценария с изменением пользователя ##
+## <a name="test-user-modification-scenario"></a>Проверка сценария с изменением пользователя ##
 Изменив состояние компьютера и повторно запустив DSC, можно убедиться, что командлеты **Set-TargetResource** и **Test-TargetResource** работают правильно. Выполните следующие действия.
 1.  Используйте ресурс, состояние которого отличается от нужного.
 2.  Запустите конфигурацию с этим ресурсом.
@@ -107,30 +101,24 @@ File file {
 
 Get-TargetResource должен возвращать сведения о текущем состоянии ресурса. Обязательно проверьте результат, вызвав командлет Get-DscConfiguration после применения конфигурации и убедившись, что выходные данные правильно отражают текущее состояние компьютера. Очень важно тестировать его отдельно, поскольку все проблемы в этой области не проявляются при вызове Start-DscConfiguration.
 
-<a id="call-getsettest-targetresource-functions-directly" class="xliff"></a>
-## Вызов функций **Get/Set/Test-TargetResource** напрямую ##
+## <a name="call-getsettest-targetresource-functions-directly"></a>Вызов функций **Get/Set/Test-TargetResource** напрямую ##
 
 Убедитесь, что функции **Get/Set/Test-TargetResource**, реализованные в ресурсе, протестированы (вызваны напрямую и проверены на предмет правильной работы).
 
-<a id="verify-end-to-end-using-start-dscconfiguration" class="xliff"></a>
-## Комплексная проверка с помощью командлета **Start-DscConfiguration** ##
+## <a name="verify-end-to-end-using-start-dscconfiguration"></a>Комплексная проверка с помощью командлета **Start-DscConfiguration** ##
 
 Тестирование функций **Get/Set и тест-TargetResource** посредством вызова их напрямую имеет важное значение, однако не позволяет выявить все проблемы. Значительная часть тестирования должна быть направлена на использование **Start-DscConfiguration** или опрашивающего сервера. На самом деле, именно так пользователи и будут использовать ресурс, поэтому не стоит недооценивать важность таких тестов. Возможные типы проблем.
 - Учетные данные или сеанса могут работать по-разному, так как агент DSC выполняется как служба.  Обязательно выполните комплексное тестирование всех этих функций.
 - Ошибки, выдаваемые командлетом **Start-DscConfiguration**, могут отличаться от ошибок, отображаемых при вызове функции **Set-TargetResource** напрямую.
 
-<a id="test-compatability-on-all-dsc-supported-platforms" class="xliff"></a>
-## Проверка совместимости на всех платформах, поддерживаемых DSC ##
+## <a name="test-compatability-on-all-dsc-supported-platforms"></a>Проверка совместимости на всех платформах, поддерживаемых DSC ##
 Ресурс должен работать на всех платформах, поддерживаемых DSC (Windows Server 2008 R2 и более поздней версии). Для получения последней версии DSC установите последнюю версию WMF (Windows Management Framework) в своей операционной системе. Если ресурс по своей природе не поддерживает некоторые из этих платформ, должно быть возвращено сообщение об ошибке. Кроме того, убедитесь, что ресурс проверяет, присутствуют ли вызываемые командлеты на конкретном компьютере. В Windows Server 2012 было добавлено большое количество новых командлетов, которые недоступны в Windows Server 2008 R2 даже при установленном WMF. 
 
-<a id="verify-on-windows-client-if-applicable" class="xliff"></a>
-## Проверка на клиенте Windows (если применимо) ##
+## <a name="verify-on-windows-client-if-applicable"></a>Проверка на клиенте Windows (если применимо) ##
 При тестировании довольно часто допускается упущение, заключающееся в проверке ресурса только в серверных версиях Windows. Многие ресурсы также предназначены для работы в клиентских SKU. Если это характерно для вашего случая, не забудьте проверить ресурс и на этих платформах также. 
-<a id="get-dscresource-lists-the-resource" class="xliff"></a>
-## Get-DSCResource указывает ресурс ##
+## <a name="get-dscresource-lists-the-resource"></a>Get-DSCResource указывает ресурс ##
 При вызове командлета Get-DscResource после развертывания модуля ваш ресурс должен отображаться вместе с другими в списке результатов. Если ресурс отсутствует в списке, убедитесь, что для этого ресурса существует SCHEMA.MOF-файл. 
-<a id="resource-module-contains-examples" class="xliff"></a>
-## Модуль ресурсов содержит примеры ##
+## <a name="resource-module-contains-examples"></a>Модуль ресурсов содержит примеры ##
 Создавайте качественные примеры, которые помогут другим пользователям понять, как работать с модулем ресурсов. Это особенно важно, потому что многие пользователи рассматривают пример кода в качестве документации. 
 - Во-первых, необходимо определить примеры, которые будут включены в модуль; они по меньшей мере должны охватывать наиболее важные варианты использования ресурса:
 - Если модуль содержит несколько ресурсов, которые должны работать вместе в рамках комплексного сценария, в качестве первого оптимально подойдет простой комплексный пример.
@@ -188,8 +176,7 @@ Sample_xRemoteFile_DownloadFile -destinationPath "$env:SystemDrive\fileName.jpg"
 - Для каждого примера укажите краткое описание его назначение и параметров. 
 - Убедитесь, что примеры охватывают большинство важных сценариев для ресурса, а если все нужное присутствует, убедитесь, что они выполняют и переводят компьютер в нужное состояние.  
 
-<a id="error-messages-are-easy-to-understand-and-help-users-solve-problems" class="xliff"></a>
-## Сообщения об ошибках просты для понимания и помогают пользователям устранять проблемы ##
+## <a name="error-messages-are-easy-to-understand-and-help-users-solve-problems"></a>Сообщения об ошибках просты для понимания и помогают пользователям устранять проблемы ##
 Грамотный подход к сообщениям об ошибках должен отвечать следующим условиям.
 - Наличие: самым большим недостатком сообщений об ошибках является их частое отсутствие, поэтому убедитесь, что они существуют. 
 - Простота для восприятия: естественный язык без малопонятных кодов.
@@ -197,8 +184,7 @@ Sample_xRemoteFile_DownloadFile -destinationPath "$env:SystemDrive\fileName.jpg"
 - Конструктивность: приведите советы по устранению.
 - Вежливость: не обвиняйте пользователя и не заставляйте его чувствовать себя некомфортно. Обязательно проверяйте ошибки в комплексных сценариях (с помощью **Start-DscConfiguration**), так как они могут отличаться от тех ошибок, которые возвращаются при выполнении функций ресурсов напрямую. 
 
-<a id="log-messages-are-easy-to-understand-and-informative-including-verbose-debug-and-etw-logs" class="xliff"></a>
-## Сообщения журнала просты для понимания и информативны (включая журналы –verbose, –debug и трассировки событий Windows) ##
+## <a name="log-messages-are-easy-to-understand-and-informative-including-verbose-debug-and-etw-logs"></a>Сообщения журнала просты для понимания и информативны (включая журналы –verbose, –debug и трассировки событий Windows) ##
 Убедитесь, что выводимые ресурсом журналы просты для понимания и представляют ценность для пользователя. Ресурсы должны выводить все сведения, которые могут оказаться полезными для пользователя, однако ведение максимального числа всевозможных журналов не всегда является лучшим решением. Следует избегать избыточности и вывода данных, которые не представляют никакой ценности. Не заставляйте людей просматривать сотни записей в журналах для поиска необходимых сведений. Конечно же, полное отсутствие журналов также не является допустимым. 
 
 При тестировании следует проанализировать журналы подробных сведений и отладки (запустив **Start-DscConfiguration** с параметрами –verbose и –debug), а также журналы трассировки событий Windows. Чтобы просмотреть журналы трассировки событий Windows для DSC, перейдите в средство просмотра событий и откройте следующую папку: "Приложения и службы" — "Microsoft" — "Windows" — "Desired State Configuration".  По умолчанию будет доступен операционный канал; также включите каналы аналитики и отладки (это необходимо сделать перед запуском конфигурации). Чтобы включить каналы аналитики и отладки, можно выполнить следующий сценарий:
@@ -215,8 +201,7 @@ if($statusEnabled -eq $log.IsEnabled)
 }     
 Invoke-Expression $commandToExecute 
 ```
-<a id="resource-implementation-does-not-contain-hardcoded-paths" class="xliff"></a>
-## Реализация ресурса не содержит жестко заданные пути ##
+## <a name="resource-implementation-does-not-contain-hardcoded-paths"></a>Реализация ресурса не содержит жестко заданные пути ##
 Убедитесь, в реализации ресурса нет ни одного жестко заданного пути, особенно в том случае, если они предполагают язык (en-us) или имеются системные переменные, которые могут использоваться.
 Если ресурсу требуется доступ к определенным путям, используйте переменные среды вместо жесткого задания пути, так как на других компьютерах он может отличаться.
 
@@ -232,11 +217,9 @@ $programFilesPath = "C:\Program Files (x86)"
 $tempPath = Join-Path $env:temp "MyResource"
 $programFilesPath = ${env:ProgramFiles(x86)} 
 ```
-<a id="resource-implementation-does-not-contain-user-information" class="xliff"></a>
-## Реализация ресурса не содержит сведения о пользователе ##
+## <a name="resource-implementation-does-not-contain-user-information"></a>Реализация ресурса не содержит сведения о пользователе ##
 Убедитесь, что в коде отсутствуют адреса электронной почты, сведения об учетной записи или имена людей.
-<a id="resource-was-tested-with-validinvalid-credentials" class="xliff"></a>
-## Ресурс был протестирован с допустимыми и недопустимыми учетными данными ##
+## <a name="resource-was-tested-with-validinvalid-credentials"></a>Ресурс был протестирован с допустимыми и недопустимыми учетными данными ##
 Если ресурс принимает учетные данные в качестве параметра:
 - Проверьте работу ресурса при отсутствии доступа у учетной записи Local System (или учетной записи компьютера для удаленных ресурсов).
 - Убедитесь, что ресурс работает с учетными данными, указанными для Get, Set и Test 
@@ -245,22 +228,18 @@ $programFilesPath = ${env:ProgramFiles(x86)}
   - Общие ресурсы DFS.
   - Общие ресурсы SAMBA (если требуется поддержка Linux).
 
-<a id="resource-does-not-require-interactive-input" class="xliff"></a>
-## Ресурс не требует интерактивного ввода ##
+## <a name="resource-does-not-require-interactive-input"></a>Ресурс не требует интерактивного ввода ##
 Функции **Get/Set/Test-TargetResource** должны выполняться автоматически и не ожидать ввода данных пользователем на любом этапе выполнения (например, не следует использовать **Get-Credential** внутри этих функций). Если необходимо предоставить вводимые пользователем данные, их следует передать в конфигурацию в качестве параметра на этапе компиляции. 
-<a id="resource-functionality-was-thoroughly-tested" class="xliff"></a>
-## Функциональность ресурса была тщательно протестирована ##
+## <a name="resource-functionality-was-thoroughly-tested"></a>Функциональность ресурса была тщательно протестирована ##
 Этот контрольный список содержит элементы, которые важны для тестирования и/или часто пропускаются. Будет проведено несколько тестов, главным образом функциональных, которые предназначены для тестируемого вами ресурса и здесь не упомянуты. Не забывайте об отрицательных тестовых случаях. 
-<a id="best-practice-resource-module-contains-tests-folder-with-resourcedesignertestsps1-script" class="xliff"></a>
-## Рекомендация: модуль ресурсов содержит папку Tests со сценарием ResourceDesignerTests.ps1 ##
+## <a name="best-practice-resource-module-contains-tests-folder-with-resourcedesignertestsps1-script"></a>Рекомендация: модуль ресурсов содержит папку Tests со сценарием ResourceDesignerTests.ps1 ##
 Рекомендуется создать папку Tests внутри модуля ресурсов, создать файл ResourceDesignerTests.ps1 и с помощью **Test-xDscResource** и **Test-xDscSchema** добавить тесты для всех ресурсов в заданном модуле. Так можно быстро проверить все ресурсы из заданных модулей, а также проверить их работоспособность перед публикацией.
 Для xRemoteFile файл ResourceTests.ps1 может иметь просто вид:
 ```powershell
 Test-xDscResource ..\DSCResources\MSFT_xRemoteFile
 Test-xDscSchema ..\DSCResources\MSFT_xRemoteFile\MSFT_xRemoteFile.schema.mof 
 ```
-<a id="best-practice-resource-folder-contains-resource-designer-script-for-generating-schema" class="xliff"></a>
-##Рекомендация: папка Resource содержит сценарий конструктора ресурсов для создания схемы.
+##<a name="best-practice-resource-folder-contains-resource-designer-script-for-generating-schema"></a>Рекомендация: папка Resource содержит сценарий конструктора ресурсов для создания схемы.
 Каждый ресурс должен содержать сценарий конструктора ресурсов, создающий MOF-схему для данного ресурса. Этот файл следует поместить в каталог <ResourceName>\ResourceDesignerScripts and be named Generate<ResourceName>Schema.ps1. Для ресурса xRemoteFile этот файл будет называться GenerateXRemoteFileSchema.ps1 и содержать следующее.
 ```powershell 
 $DestinationPath = New-xDscResourceProperty -Name DestinationPath -Type String -Attribute Key -Description 'Path under which downloaded or copied file should be accessible after operation.'
@@ -273,8 +252,7 @@ $CertificateThumbprint = New-xDscResourceProperty -Name CertificateThumbprint -T
 
 New-xDscResource -Name MSFT_xRemoteFile -Property @($DestinationPath, $Uri, $Headers, $UserAgent, $Ensure, $Credential, $CertificateThumbprint) -ModuleName xPSDesiredStateConfiguration2 -FriendlyName xRemoteFile 
 ```
-<a id="best-practice-resource-supports--whatif" class="xliff"></a>
-## Рекомендация: ресурс поддерживает -whatif ##
+## <a name="best-practice-resource-supports--whatif"></a>Рекомендация: ресурс поддерживает -whatif ##
 Если ресурс выполняет "небезопасные" операции, рекомендуется реализовать функциональность -whatif. После этого убедитесь в том, что выходные данные whatif правильно описывают операции, которые могут быть выполнены при запуске команды без параметра whatif.
 Кроме того, убедитесь, что при наличии параметра -whatif операции не выполняются (не изменяется состояние узла). Например, предположим, что мы тестируем ресурс File. Ниже приведена простая конфигурации, которая создает файл test.txt с содержимым test:
 ```powershell

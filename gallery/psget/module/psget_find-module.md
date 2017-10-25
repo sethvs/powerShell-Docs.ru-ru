@@ -10,12 +10,10 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-module" class="xliff"></a>
-# Find-Module
+# <a name="find-module"></a>Find-Module
 Находит в коллекции модули, соответствующие указанному условию.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 Командлет Find-Module обнаруживает в зарегистрированных репозиториях модули, которые отвечают заданным условиям.
 Для каждого найденного модуля Find-Module возвращает объект PSRepositoryItemInfo, который при необходимости может быть передан в командлет Install-Module для установки этих модулей.
 
@@ -29,19 +27,16 @@ ms.lasthandoff: 06/12/2017
 - Find-Module позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
 - Find-Module может фильтровать модули из всех или некоторых из зарегистрированных репозиториев.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Find-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Find-Module](http://go.microsoft.com/fwlink/?LinkID=398574)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 ```powershell
 # Find a specific module
 Find-Module Azure

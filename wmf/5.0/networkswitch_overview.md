@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="network-switch-management-with-powershell" class="xliff"></a>
-# Управление сетевыми коммутаторами с помощью PowerShell
+# <a name="network-switch-management-with-powershell"></a>Управление сетевыми коммутаторами с помощью PowerShell
 
 Теперь командлет **Get-NetworkSwitchEthernetPort** возвращает вместе с экземплярами следующие дополнительные сведения.
 
@@ -19,8 +18,7 @@ ms.lasthandoff: 06/12/2017
 - AccessVLAN — идентификатор виртуальной локальной сети, связанной с этим портом в режиме доступа
 - TrunkedVLANList — список идентификаторов виртуальных локальных сетей, связанных с этим портом в режиме магистрали
 
-<a id="fundamental-network-switch-management-with-windows-powershell" class="xliff"></a>
-## Основы управления сетевыми коммутаторами с помощью Windows PowerShell
+## <a name="fundamental-network-switch-management-with-windows-powershell"></a>Основы управления сетевыми коммутаторами с помощью Windows PowerShell
 
 Командлеты сетевых коммутаторов, представленные в WMF 5.0, позволяют применять конфигурацию коммутатора, виртуальной локальной сети и портов базового сетевого коммутатора уровня 2 к сетевым коммутаторам, прошедшим сертификацию для Windows Server 2012 R2. Корпорация Майкрософт по-прежнему придерживается концепции уровня [абстракции центра обработки данных](http://technet.microsoft.com/en-us/cloud/dal.aspx) (DAL) и стремится продемонстрировать ту пользу, которую она может принести нашим клиентам и партнерам. Эти командлеты позволяют осуществлять следующее.
 

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="setting-up-a-pull-client-using-configuration-id-in-powershell-40" class="xliff"></a>
-# Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
+# <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -46,12 +45,10 @@ SimpleMetaConfigurationForPull -Output "."
 Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ```
 
-<a id="configuration-id" class="xliff"></a>
-## Идентификатор конфигурации
+## <a name="configuration-id"></a>Идентификатор конфигурации
 Сценарий заносит в свойство **ConfigurationID** LCM значение GUID, которое было создано специально для этой цели (создать GUID можно, используя командлет **New-Guid**). Идентификатор **ConfigurationID** — это то, что LCM использует для поиска соответствующей конфигурации на опрашивающем сервере. MOF-файл конфигурации на опрашивающем сервере должен иметь имя `ConfigurationID.mof`, где *ConfigurationID* является значением свойства **ConfigurationID** LCM целевого узла.
 
-<a id="pulling-from-an-smb-server" class="xliff"></a>
-## Опрос с SMB-сервера
+## <a name="pulling-from-an-smb-server"></a>Опрос с SMB-сервера
 
 Если опрашивающий сервер настроен как файловый ресурс SMB, а не веб-служба, укажите **DscFileDownloadManager** вместо **WebDownLoadManager**.
 **DscFileDownloadManager** принимает свойство **SourcePath** вместо **ServerUrl**. Следующий сценарий настраивает LCM для опроса конфигураций из общего ресурса SMB "SmbDscShare" на сервере "CONTOSO-SERVER".
@@ -74,8 +71,7 @@ Configuration SimpleMetaConfigurationForPull
 SimpleMetaConfigurationForPull -Output "."
 ```
 
-<a id="see-also" class="xliff"></a>
-## См. также
+## <a name="see-also"></a>См. также
 
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
 - [Настройка опрашивающего SMB-сервера DSC](pullServerSMB.md)

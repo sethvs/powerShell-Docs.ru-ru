@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Прямое управление элементами"
 ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735

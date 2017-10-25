@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="unlisting-items" class="xliff"></a>
-# Исключение элементов
+# <a name="unlisting-items"></a>Исключение элементов
 
 **Почему в программе нет команды, позволяющей удалить элемент из коллекции PowerShell?**
 

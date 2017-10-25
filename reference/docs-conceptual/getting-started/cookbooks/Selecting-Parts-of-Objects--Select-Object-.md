@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Выбор частей объектов (Select-Object)"
 ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92

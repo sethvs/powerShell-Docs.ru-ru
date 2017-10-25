@@ -9,7 +9,6 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="feedback" class="xliff"></a>
-# Отзывы
+# <a name="feedback"></a>Отзывы
 Чтобы сообщить о возникших проблемах или оставить отзыв, воспользуйтесь [сайтом UserVoice PowerShell](http://windowsserver.uservoice.com/forums/301869-powershell).
 

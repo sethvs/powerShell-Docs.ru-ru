@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "основные справочные материалы"
-ms.openlocfilehash: a745048eb47a983fa90616ccbd58184080706096
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: d6f0bf97c9491f1a4c9ba13aae837c17860aa6c7
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="basic-cookbooks-reference"></a>Основные справочные материалы
 
@@ -26,7 +26,6 @@ ms.lasthandoff: 09/08/2017
 - [Списки с множественным выбором](Multiple-selection-List-Boxes.md)
 - [Другие полезные объекты для написания скриптов](Other-Useful-Scripting-Objects.md)
 - [Выполнение задач по работе с сетями](Performing-Networking-Tasks.md)
-- [Модуль PowerShellGet](PowerShellGet-Module.md)
 - [Перенаправление данных с помощью командлетов Out](Redirecting-Data-with-Out---Cmdlets.md)
 - [Удаление объектов из конвейера (Where-Object)](Removing-Objects-from-the-Pipeline--Where-Object-.md)
 - [Повторение задачи для нескольких объектов (ForEach-Object)](Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md)

@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="frequencies-for-refreshmode-and-configurationmode-dont-need-to-be-multiples-of-each-other" class="xliff"></a>
-# Частоты для RefreshMode и ConfigurationMode не должны быть кратными друг другу
+# <a name="frequencies-for-refreshmode-and-configurationmode-dont-need-to-be-multiples-of-each-other"></a>Частоты для RefreshMode и ConfigurationMode не должны быть кратными друг другу
 
 В предыдущей версии DSC локальный диспетчер конфигураций рассматривал `RefreshFrequencyMins` и `ConfigurationModeFrequencyMins` как кратные друг другу. В WMF 5.0 RTM эти свойства обрабатываются независимо друг от друга. 
 

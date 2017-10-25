@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Сочетания клавиш для интегрированной среды сценариев Windows PowerShell"
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b

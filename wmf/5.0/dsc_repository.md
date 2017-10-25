@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="separation-of-configuration-resource-and-report-repositories" class="xliff"></a>
-# Разделение репозиториев конфигураций, ресурсов и отчетов
+# <a name="separation-of-configuration-resource-and-report-repositories"></a>Разделение репозиториев конфигураций, ресурсов и отчетов
 
 В этом выпуске вы получаете гибкую возможность извлечения данных и отправки отчетов на один или несколько опрашивающих серверов DSC. Каждую конечную точку можно задать отдельно, чтобы можно было извлекать конфигурации из одного расположения, ресурсы — из второго, а отчет — из третьего. 
 

@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="update-scriptfileinfo" class="xliff"></a>
-# Update-ScriptFileInfo
+# <a name="update-scriptfileinfo"></a>Update-ScriptFileInfo
 
 Командлет Update-ScriptFileInfo позволяет обновить метаданные существующего файла сценария.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Update-ScriptFileInfo обновляет информацию для сценария.
 - Командлет Update-ScriptFileInfo обновляет метаданные файла сценария только в том случае, если он был создан с помощью командлета New-ScriptFileInfo или с допустимым комментарием PSScriptInfo.
@@ -24,19 +22,16 @@ ms.lasthandoff: 06/12/2017
 - Если указан параметр -Force, попробуйте добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 - Если после добавления метаданных сценария в существующий файл командлет Test-ScriptFileInfo завершается с ошибками анализа и возникает ошибка наподобие "не удалось добавить метаданные к существующему файлу", то можно использовать командлет New-ScriptFileInfo, чтобы добавить метаданные в существующий файл сценария, который не был создан с помощью командлета New-ScriptFileInfo.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 
 ```powershell
 Get-Command -Name Update-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619793)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 # Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -50,8 +45,7 @@ Version Name Author Description
 ```
 
 
-<a id="adding-the-script-metadata-to-the-existing-script-file" class="xliff"></a>
-### Добавление метаданных сценария в существующий файл сценария
+### <a name="adding-the-script-metadata-to-the-existing-script-file"></a>Добавление метаданных сценария в существующий файл сценария
 
 ```powershell
 PS C:\WINDOWS\system32> New-ScriptFileInfo -Description "Script file description." -PassThru

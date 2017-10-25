@@ -10,32 +10,26 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="update-modulemanifest" class="xliff"></a>
-# Update-ModuleManifest
+# <a name="update-modulemanifest"></a>Update-ModuleManifest
 Обновляет файл манифеста модуля.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Update-ModuleManifest обновляет файл манифеста модуля (PSD1).
 
-<a id="notes" class="xliff"></a>
-### Заметки
+### <a name="notes"></a>Заметки
     - DscResourcesToExport поддерживается только в последней версии PowerShell, 5.0. При использовании предыдущей версии PowerShell обновить поле нельзя.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Update-ModuleManifest -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Update-ModuleManifest](http://go.microsoft.com/fwlink/?LinkId=619311)
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 Этот новый командлет используется для обновления файла манифеста с помощью входных значений свойств. Он принимает все те же параметры, что и New-ModuleManifest.
 

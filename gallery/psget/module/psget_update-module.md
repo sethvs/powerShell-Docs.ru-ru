@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/12/2017
 ---
-<a id="update-module" class="xliff"></a>
-# Update-Module
+# <a name="update-module"></a>Update-Module
 
 Скачивает последние версии указанных модулей из веб-коллекции и устанавливает их на локальном компьютере.
 
-<a id="description" class="xliff"></a>
-## Описание
+## <a name="description"></a>Описание
 
 Командлет Update-Module устанавливает более новую версию модуля Windows PowerShell, который был установлен из веб-коллекции командлетом Install-Module на локальный компьютер.
 
@@ -24,8 +22,7 @@ ms.lasthandoff: 06/12/2017
 
 При запуске Update-Module без параметра Name будут обновлены все модули, которые можно обновить на локальном компьютере.
 
-<a id="notes" class="xliff"></a>
-### Заметки
+### <a name="notes"></a>Заметки
 
 - Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.
 - Если модуль, указанный в параметре Name, не был установлен командлетом Install-Module, возникнет ошибка. Командлет Update-Module можно выполнять только для модулей, установленных из веб-коллекции при помощи Install-Module.
@@ -33,20 +30,17 @@ ms.lasthandoff: 06/12/2017
 - В PowerShell 5.0 и более поздних версиях при обновлении командлетом Update-Module модуля он добавляет последнюю (или указанную) версию модуля. Так старая и более новая версии размещаются параллельно в одном и том же каталоге. Теперь было бы полезно показать пример выходных данных этих команд.
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Синтаксис командлета
+## <a name="cmdlet-syntax"></a>Синтаксис командлета
 ```powershell
 Get-Command -Name Update-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Ссылка на раздел справки по командлету в Интернете
+## <a name="cmdlet-online-help-reference"></a>Ссылка на раздел справки по командлету в Интернете
 
 [Update-Module](http://go.microsoft.com/fwlink/?LinkID=398576)
 
 
-<a id="example-commands" class="xliff"></a>
-## Примеры команд
+## <a name="example-commands"></a>Примеры команд
 
 ```powershell
 PS C:\\windows\\system32> Update-Module -Name ContosoServer -RequiredVersion 1.5
@@ -90,8 +84,7 @@ Version Name Repository Description
 ```
 
 
-<a id="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies" class="xliff"></a>
-###  Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.
+###  <a name="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies"></a>Обновите модуль TestDepWithNestedRequiredModules1 с зависимостями.
 ```powershell
 Find-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -AllVersions
 
