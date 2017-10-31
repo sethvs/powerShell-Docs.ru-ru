@@ -10,7 +10,8 @@ ms.prod: powershell
 ms.technology: WMF
 ms.openlocfilehash: 749dd8b19592cb5f40a5aed32d28edeb5cb2dfc9
 ms.sourcegitcommit: bb2c52577a519c0599a0b3c961f749fe0df70a45
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: ru-RU
 ---
 # <a name="windows-management-framework"></a>Windows Management Framework
 
