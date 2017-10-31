@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Начало работы с настройкой требуемого состояния (DSC) для Linux"
-ms.openlocfilehash: f88167cd039077574c3a84aa07ba78186adfa181
-ms.sourcegitcommit: 9a5da3f739b1eebb81ede58bd4fc8037bad87224
+ms.openlocfilehash: fd4820d27de5958a325032ca3fc202a521c131b4
+ms.sourcegitcommit: 28e71b0ae868014523631fec3f5417de751944f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 10/25/2017
 ---
 # <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Начало работы с настройкой требуемого состояния (DSC) для Linux
 
@@ -18,11 +18,11 @@ ms.lasthandoff: 10/16/2017
 
 DSC для Linux поддерживает следующие версии операционной системы Linux:
 - CentOS 5, 6 и 7 (x86 и x64)
-- Debian GNU/Linux 6 и 7 (x86 и x64)
+- Debian GNU/Linux 6, 7 и 8 (x86 и x64)
 - Oracle Linux 5, 6 и 7 (x86 и x64)
 - Red Hat Enterprise Linux Server 5, 6 и 7 (x86 и x64)
 - SUSE Linux Enterprise Server 10, 11 и 12 (x86 и x64)
-- Ubuntu Server 12.04 LTS и 14.04 LTS (x86 и x64)
+- Ubuntu Server 12.04 LTS, 14.04 LTS и 16.04 LTS (x86 и x64)
 
 Ниже указано, какие зависимости пакетов необходимы DSC для Linux.
 
