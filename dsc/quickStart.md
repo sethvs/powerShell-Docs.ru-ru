@@ -3,7 +3,7 @@ ms.date: 2017-06-12
 author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
-title: "Краткое руководство по настройке требуемого состояния"
+title: "Краткое руководство по Desired State Configuration"
 ms.openlocfilehash: 295a78f3fd85464239d51d7be0defa04d2344689
 ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
@@ -12,12 +12,12 @@ ms.lasthandoff: 10/13/2017
 ---
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-# <a name="desired-state-configuration-quick-start"></a>Краткое руководство по настройке требуемого состояния
+# <a name="desired-state-configuration-quick-start"></a>Краткое руководство по Desired State Configuration
 
-В этом упражнении демонстрируется создание и применение конфигурации, используемой при настройке требуемого состояния (DSC).
+В этом упражнении демонстрируется создание и применение конфигурации Desired State Configuration (DSC).
 В нашем примере на сервере будет включен компонент `Web-Server` (IIS), а содержимое простого веб-сайта "Hello World" будет расположено на этом сервере в каталоге `intepub\wwwroot`.
 
-См. дополнительные сведения об особенностях [настройки требуемого состояния для руководителей](decisionMaker.md).
+См. дополнительные сведения об особенностях работы с DSC в [обзоре платформы Desired State Configuration для руководителей](decisionMaker.md).
 
 ## <a name="requirements"></a>Требования
 
