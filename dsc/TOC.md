@@ -1,8 +1,8 @@
 # [Обзор](overview.md)
 
-## [Общие сведения о настройке требуемого состояния для руководителей](decisionMaker.md)
+## [Обзор платформы Desired State Configuration для руководителей](decisionMaker.md)
 
-## [Общие сведения о настройке требуемого состояния для инженеров](DscForEngineers.md)
+## [Обзор платформы Desired State Configuration для инженеров](DscForEngineers.md)
 
 ## [Краткое руководство по DSC](quickStart.md)
 
