@@ -1,8 +1,8 @@
 # [Обзор](overview.md)
 
-## [Обзор платформы Desired State Configuration для руководителей](decisionMaker.md)
+## [Обзор платформы DSC для руководителей](decisionMaker.md)
 
-## [Обзор платформы Desired State Configuration для инженеров](DscForEngineers.md)
+## [Обзор платформы DSC для инженеров](DscForEngineers.md)
 
 ## [Краткое руководство по DSC](quickStart.md)
 
