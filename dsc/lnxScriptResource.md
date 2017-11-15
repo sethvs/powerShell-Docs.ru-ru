@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс nxScript в DSC для Linux"
-ms.openlocfilehash: 381d8d214654641a34eeebcb54a81a25d61ee644
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 5fc448d15f9bec77be64b5f9ee801f6616cf7208
+ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="dsc-for-linux-nxscript-resource"></a>Ресурс nxScript в DSC для Linux
 
@@ -23,7 +23,7 @@ nxScript <string> #ResourceName
     SetScript = <string>
     TestScript = <string>
     [ User = <string> ]
-    { Group = <string> ]
+    [ Group = <string> ]
     [ DependsOn = <string[]> ]
 
 }
