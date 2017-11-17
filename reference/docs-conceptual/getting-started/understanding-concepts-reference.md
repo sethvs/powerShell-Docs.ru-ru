@@ -1,29 +1,22 @@
+.md--- ms.date:  2017-06-05 keywords:  powershell,cmdlet title:  understanding concepts reference
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "справочник по основным понятиям"
-ms.openlocfilehash: c8cc3e1fbfb96bd3dfcc2f1c7f974e53e6246ade
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
----
+
 # <a name="understanding-concepts"></a>Основные понятия
 
 *  Объекты в PowerShell  
-*  Конвейер
+*  [Конвейер](./fundamental/understanding-the-windows-powershell-pipeline.md)
 *  Синтаксический анализ команд
 *  Вычисление выражений
 *  Заключение в кавычки и использование escape-последовательностей
 *  Операторы
-*  Переменные и назначение
+*  [Переменные и назначение](./fundamental/using-variables-to-store-objects.md)
 *  Выполнение команды или командлета
 *  Выполнение приложений в машинном коде и передача параметров
-*  Явное и неявное форматирование вывода
+*  [Явное и неявное форматирование вывода](./cookbooks/using-format-commands-to-change-output-view.md)
 *  Разработка файла форматирования
 *  Элементы языка сценариев
 *  Интеграция с операционной системой и службами
 *  Поставщики
 *  Драйверы
-*  Обновление справки 
+*  [Обновление справки](/powershell/module/Microsoft.PowerShell.Core/Update-Help)
 
