@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс WindowsFeature в DSC"
-ms.openlocfilehash: a3433577a122f6c7e31360e094a089f6ceef77c2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b4f50cb9ee172600b1811175e9cf67f6a7ed2d55
+ms.sourcegitcommit: cd5a1f054cbf9eb95c5242a995f9741e031ddb24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="dsc-windowsfeature-resource"></a>Ресурс WindowsFeature в DSC
 
@@ -35,7 +35,7 @@ WindowsFeature [string] #ResourceName
 
 |  Свойство  |  Описание   | 
 |---|---| 
-| Название| Указывает имя роли или компонента, которые необходимо добавить или удалить. Это свойство аналогично свойству __Name__ командлета [Get-WindowsFeature](https://technet.microsoft.com/en-us/library/jj205469.aspx) и не является отображаемым именем роли или компонента.| 
+| Название| Указывает имя роли или компонента, которые необходимо добавить или удалить. Это свойство аналогично свойству __Name__ командлета [Get-WindowsFeature](/powershell/module/servermanager/Get-WindowsFeature) и не является отображаемым именем роли или компонента.| 
 | Учетные данные| Указывает учетные данные для добавления или удаления роли или компонента.| 
 | Ensure| Указывает, добавляется или удаляется роль или компонент. Чтобы добавить роль или компонент, установите это свойство равным Present, чтобы удалить — равным Absent.| 
 | IncludeAllSubFeature| Присвойте этому свойству значение __$true__ для синхронизации состояния всех необходимых дополнительных компонентов с состоянием компонента, указанного в свойстве __Name__.| 
