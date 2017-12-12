@@ -4,46 +4,46 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка виртуальных машин при начальной загрузке с помощью DSC"
-ms.openlocfilehash: a3592c50fa7f2232538fbec07129fac86c1d00b5
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: c793e36eb9caa194104f9dda2aa1d335b21b676c
+ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 12/05/2017
 ---
-><span data-ttu-id="e324a-103">Область применения: Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="e324a-103">Applies To: Windows PowerShell 5.0</span></span>
+><span data-ttu-id="a947d-103">Область применения: Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="a947d-103">Applies To: Windows PowerShell 5.0</span></span>
 
-><span data-ttu-id="e324a-104">**Примечание.** Раздел реестра **DSCAutomationHostEnabled**, описанный в этом разделе, недоступен в PowerShell 4.0.</span><span class="sxs-lookup"><span data-stu-id="e324a-104">**Note:** The **DSCAutomationHostEnabled** registry key described in this topic is not available in PowerShell 4.0.</span></span>
-<span data-ttu-id="e324a-105">Сведения о настройке новых виртуальных машин при начальной загрузке в PowerShell 4.0 см. в разделе [Требуется автоматически настроить машины с помощью DSC при начальной загрузке?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/).</span><span class="sxs-lookup"><span data-stu-id="e324a-105">For information on how to configure new virtual machines at initial boot-up in PowerShell 4.0, see [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)</span></span>
+><span data-ttu-id="a947d-104">**Примечание.** Раздел реестра **DSCAutomationHostEnabled**, описанный в этом разделе, недоступен в PowerShell 4.0.</span><span class="sxs-lookup"><span data-stu-id="a947d-104">**Note:** The **DSCAutomationHostEnabled** registry key described in this topic is not available in PowerShell 4.0.</span></span>
+<span data-ttu-id="a947d-105">Сведения о настройке новых виртуальных машин при начальной загрузке в PowerShell 4.0 см. в разделе [Требуется автоматически настроить машины с помощью DSC при начальной загрузке?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/).</span><span class="sxs-lookup"><span data-stu-id="a947d-105">For information on how to configure new virtual machines at initial boot-up in PowerShell 4.0, see [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)</span></span>
 
-# <a name="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc"></a><span data-ttu-id="e324a-106">Настройка виртуальных машин при начальной загрузке с помощью DSC</span><span class="sxs-lookup"><span data-stu-id="e324a-106">Configure a virtual machines at initial boot-up by using DSC</span></span>
+# <a name="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc"></a><span data-ttu-id="a947d-106">Настройка виртуальных машин при начальной загрузке с помощью DSC</span><span class="sxs-lookup"><span data-stu-id="a947d-106">Configure a virtual machines at initial boot-up by using DSC</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="e324a-107">Требования</span><span class="sxs-lookup"><span data-stu-id="e324a-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="a947d-107">Требования</span><span class="sxs-lookup"><span data-stu-id="a947d-107">Requirements</span></span>
 
-<span data-ttu-id="e324a-108">Для выполнения этих примеров требуется следующее.</span><span class="sxs-lookup"><span data-stu-id="e324a-108">To run these examples, you will need:</span></span>
+<span data-ttu-id="a947d-108">Для выполнения этих примеров требуется следующее.</span><span class="sxs-lookup"><span data-stu-id="a947d-108">To run these examples, you will need:</span></span>
 
-- <span data-ttu-id="e324a-109">Загрузочный VHD.</span><span class="sxs-lookup"><span data-stu-id="e324a-109">A bootable VHD to work with.</span></span> <span data-ttu-id="e324a-110">ISO-файл с пробной версией Windows Server 2016 можно скачать в центре   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).</span><span class="sxs-lookup"><span data-stu-id="e324a-110">You can download an ISO with an evaluation copy of Windows Server 2016 at   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).</span></span> <span data-ttu-id="e324a-111">Инструкции по созданию VHD из ISO-образа см. в разделе [Создание загрузочных виртуальных жестких дисков](https://technet.microsoft.com/en-us/library/gg318049.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-111">You can find instructions on how to create a VHD from an ISO image at [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx).</span></span>
-- <span data-ttu-id="e324a-112">Компьютер с включенным Hyper-V.</span><span class="sxs-lookup"><span data-stu-id="e324a-112">A host computer that has Hyper-V enabled.</span></span> <span data-ttu-id="e324a-113">Дополнительные сведения см. в статье [Обзор Hyper-V](https://technet.microsoft.com/library/hh831531.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-113">For information, see [Hyper-V overview](https://technet.microsoft.com/library/hh831531.aspx).</span></span>
+- <span data-ttu-id="a947d-109">Загрузочный VHD.</span><span class="sxs-lookup"><span data-stu-id="a947d-109">A bootable VHD to work with.</span></span> <span data-ttu-id="a947d-110">ISO-файл с пробной версией Windows Server 2016 можно скачать в центре [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).</span><span class="sxs-lookup"><span data-stu-id="a947d-110">You can download an ISO with an evaluation copy of Windows Server 2016 at [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).</span></span> <span data-ttu-id="a947d-111">Инструкции по созданию VHD из ISO-образа см. в разделе [Создание загрузочных виртуальных жестких дисков](https://technet.microsoft.com/en-us/library/gg318049.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-111">You can find instructions on how to create a VHD from an ISO image at [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx).</span></span>
+- <span data-ttu-id="a947d-112">Компьютер с включенным Hyper-V.</span><span class="sxs-lookup"><span data-stu-id="a947d-112">A host computer that has Hyper-V enabled.</span></span> <span data-ttu-id="a947d-113">Дополнительные сведения см. в статье [Обзор Hyper-V](https://technet.microsoft.com/library/hh831531.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-113">For information, see [Hyper-V overview](https://technet.microsoft.com/library/hh831531.aspx).</span></span>
 
-<span data-ttu-id="e324a-114">С помощью DSC можно автоматизировать установку и настройку программного обеспечения для компьютера при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="e324a-114">By using DSC, you can automate software installation and configuration for a computer at initial boot-up.</span></span>
-<span data-ttu-id="e324a-115">Для этого необходимо добавить документ MOF конфигурации или метаконфигурацию на загрузочный носитель (например, VHD), чтобы они выполнялись при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="e324a-115">You do this by either injecting a configuration MOF document or a metaconfiguration into bootable media (such as a VHD) so that they are run during the initial boot-up process.</span></span>
-<span data-ttu-id="e324a-116">Такое поведение контролируется [разделом реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md) в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies**.</span><span class="sxs-lookup"><span data-stu-id="e324a-116">This behavior is specified by the [DSCAutomationHostEnabled registry key](DSCAutomationHostEnabled.md) registry key under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies**.</span></span>
-<span data-ttu-id="e324a-117">По умолчанию значение этого раздела — 2, что позволяет DSC запускаться во время загрузки.</span><span class="sxs-lookup"><span data-stu-id="e324a-117">By default, the value of this key is 2, which allows DSC to run at boot time.</span></span>
+<span data-ttu-id="a947d-114">С помощью DSC можно автоматизировать установку и настройку программного обеспечения для компьютера при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="a947d-114">By using DSC, you can automate software installation and configuration for a computer at initial boot-up.</span></span>
+<span data-ttu-id="a947d-115">Для этого необходимо добавить документ MOF конфигурации или метаконфигурацию на загрузочный носитель (например, VHD), чтобы они выполнялись при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="a947d-115">You do this by either injecting a configuration MOF document or a metaconfiguration into bootable media (such as a VHD) so that they are run during the initial boot-up process.</span></span>
+<span data-ttu-id="a947d-116">Такое поведение контролируется [разделом реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md) в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies**.</span><span class="sxs-lookup"><span data-stu-id="a947d-116">This behavior is specified by the [DSCAutomationHostEnabled registry key](DSCAutomationHostEnabled.md) registry key under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies**.</span></span>
+<span data-ttu-id="a947d-117">По умолчанию значение этого раздела — 2, что позволяет DSC запускаться во время загрузки.</span><span class="sxs-lookup"><span data-stu-id="a947d-117">By default, the value of this key is 2, which allows DSC to run at boot time.</span></span>
 
-<span data-ttu-id="e324a-118">Если запускать DSC во время загрузки не следует, задайте для [раздела реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md) значение 0.</span><span class="sxs-lookup"><span data-stu-id="e324a-118">If you do not want DSC to run at boot time, set the value of the [DSCAutomationHostEnabled registry key](DSCAutomationHostEnabled.md) registry key to 0.</span></span>
+<span data-ttu-id="a947d-118">Если запускать DSC во время загрузки не следует, задайте для [раздела реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md) значение 0.</span><span class="sxs-lookup"><span data-stu-id="a947d-118">If you do not want DSC to run at boot time, set the value of the [DSCAutomationHostEnabled registry key](DSCAutomationHostEnabled.md) registry key to 0.</span></span>
 
-- <span data-ttu-id="e324a-119">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-119">Inject a configuration MOF document into a VHD</span></span>
-- <span data-ttu-id="e324a-120">Добавление метаконфигурации DSC в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-120">Inject a DSC metaconfiguration into a VHD</span></span>
-- <span data-ttu-id="e324a-121">Отключение DSC при загрузке</span><span class="sxs-lookup"><span data-stu-id="e324a-121">Disable DSC at boot time</span></span>
+- <span data-ttu-id="a947d-119">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-119">Inject a configuration MOF document into a VHD</span></span>
+- <span data-ttu-id="a947d-120">Добавление метаконфигурации DSC в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-120">Inject a DSC metaconfiguration into a VHD</span></span>
+- <span data-ttu-id="a947d-121">Отключение DSC при загрузке</span><span class="sxs-lookup"><span data-stu-id="a947d-121">Disable DSC at boot time</span></span>
 
-><span data-ttu-id="e324a-122">**Примечание.** На компьютер можно одновременно добавить `Pending.mof` и `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="e324a-122">**Note:** You can inject both `Pending.mof` and `MetaConfig.mof` into a computer at the same time.</span></span>
-<span data-ttu-id="e324a-123">Если присутствуют оба файла, более высокий приоритет имеют параметры, указанные в `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="e324a-123">If both files are present, the settings specified in `MetaConfig.mof` take precedence.</span></span>
+><span data-ttu-id="a947d-122">**Примечание.** На компьютер можно одновременно добавить `Pending.mof` и `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="a947d-122">**Note:** You can inject both `Pending.mof` and `MetaConfig.mof` into a computer at the same time.</span></span>
+<span data-ttu-id="a947d-123">Если присутствуют оба файла, более высокий приоритет имеют параметры, указанные в `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="a947d-123">If both files are present, the settings specified in `MetaConfig.mof` take precedence.</span></span>
 
-## <a name="inject-a-configuration-mof-document-into-a-vhd"></a><span data-ttu-id="e324a-124">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-124">Inject a configuration MOF document into a VHD</span></span>
+## <a name="inject-a-configuration-mof-document-into-a-vhd"></a><span data-ttu-id="a947d-124">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-124">Inject a configuration MOF document into a VHD</span></span>
 
-<span data-ttu-id="e324a-125">Для применения конфигурации при начальной загрузке добавьте скомпилированный документ MOF конфигурации в VHD в качестве его файла `Pending.mof`.</span><span class="sxs-lookup"><span data-stu-id="e324a-125">To enact a configuration at initial boot-up, you can inject a compiled configuration MOF document into the VHD as its `Pending.mof` file.</span></span>
-<span data-ttu-id="e324a-126">Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет конфигурацию, определенную в `Pending.mof`, при первой загрузке компьютера.</span><span class="sxs-lookup"><span data-stu-id="e324a-126">If the **DSCAutomationHostEnabled** registry key is set to 2 (the default value), DSC will apply the configuration defined by `Pending.mof` when the computer boots up for the first time.</span></span>
+<span data-ttu-id="a947d-125">Для применения конфигурации при начальной загрузке добавьте скомпилированный документ MOF конфигурации в VHD в качестве его файла `Pending.mof`.</span><span class="sxs-lookup"><span data-stu-id="a947d-125">To enact a configuration at initial boot-up, you can inject a compiled configuration MOF document into the VHD as its `Pending.mof` file.</span></span>
+<span data-ttu-id="a947d-126">Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет конфигурацию, определенную в `Pending.mof`, при первой загрузке компьютера.</span><span class="sxs-lookup"><span data-stu-id="a947d-126">If the **DSCAutomationHostEnabled** registry key is set to 2 (the default value), DSC will apply the configuration defined by `Pending.mof` when the computer boots up for the first time.</span></span>
 
-<span data-ttu-id="e324a-127">В этом примере используется следующая конфигурация, которая устанавливает службы IIS на новом компьютере.</span><span class="sxs-lookup"><span data-stu-id="e324a-127">For this example, we will use the following configuration, which will install IIS on the new computer:</span></span>
+<span data-ttu-id="a947d-127">В этом примере используется следующая конфигурация, которая устанавливает службы IIS на новом компьютере.</span><span class="sxs-lookup"><span data-stu-id="a947d-127">For this example, we will use the following configuration, which will install IIS on the new computer:</span></span>
 
 ```powershell
 Configuration SampleIISInstall
@@ -61,47 +61,47 @@ Configuration SampleIISInstall
 }
 ```
 
-### <a name="to-inject-the-configuration-mof-document-on-the-vhd"></a><span data-ttu-id="e324a-128">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-128">To inject the configuration MOF document on the VHD</span></span>
+### <a name="to-inject-the-configuration-mof-document-on-the-vhd"></a><span data-ttu-id="a947d-128">Добавление документа MOF конфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-128">To inject the configuration MOF document on the VHD</span></span>
 
-1. <span data-ttu-id="e324a-129">Подключите VHD, в который нужно добавить конфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-129">Mount the VHD into which you want to inject the configuration by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-130">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-130">For example:</span></span>
+1. <span data-ttu-id="a947d-129">Подключите VHD, в который нужно добавить конфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-129">Mount the VHD into which you want to inject the configuration by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-130">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-130">For example:</span></span>
 
     ```powershell
     Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
-2. <span data-ttu-id="e324a-131">На компьютере с PowerShell 5.0 или более поздней версией сохраните указанную выше конфигурацию (**SampleIISInstall**) как файл сценария PowerShell (.ps1).</span><span class="sxs-lookup"><span data-stu-id="e324a-131">On a computer running PowerShell 5.0 or later, save the above configuration (**SampleIISInstall**) as a PowerShell script (.ps1) file.</span></span>
+2. <span data-ttu-id="a947d-131">На компьютере с PowerShell 5.0 или более поздней версией сохраните указанную выше конфигурацию (**SampleIISInstall**) как файл сценария PowerShell (.ps1).</span><span class="sxs-lookup"><span data-stu-id="a947d-131">On a computer running PowerShell 5.0 or later, save the above configuration (**SampleIISInstall**) as a PowerShell script (.ps1) file.</span></span>
 
-3. <span data-ttu-id="e324a-132">В консоли PowerShell перейдите в папку, где был сохранен PS1-файл.</span><span class="sxs-lookup"><span data-stu-id="e324a-132">In a PowerShell console, navigate to the folder where you saved the .ps1 file.</span></span>
+3. <span data-ttu-id="a947d-132">В консоли PowerShell перейдите в папку, где был сохранен PS1-файл.</span><span class="sxs-lookup"><span data-stu-id="a947d-132">In a PowerShell console, navigate to the folder where you saved the .ps1 file.</span></span>
 
-4. <span data-ttu-id="e324a-133">Выполните следующие команды PowerShell для компиляции документа MOF (дополнительные сведения о компиляции конфигураций DSC см. в разделе [Конфигурации DSC](configurations.md)).</span><span class="sxs-lookup"><span data-stu-id="e324a-133">Run the following PowerShell commands to compile the MOF document (for information about compiling DSC configurations, see [DSC Configurations](configurations.md):</span></span>
+4. <span data-ttu-id="a947d-133">Выполните следующие команды PowerShell для компиляции документа MOF (дополнительные сведения о компиляции конфигураций DSC см. в разделе [Конфигурации DSC](configurations.md)).</span><span class="sxs-lookup"><span data-stu-id="a947d-133">Run the following PowerShell commands to compile the MOF document (for information about compiling DSC configurations, see [DSC Configurations](configurations.md):</span></span>
 
     ```powershell
     . .\SampleIISInstall.ps1
     SampleIISInstall
     ```
 
-5. <span data-ttu-id="e324a-134">Будет создан файл `localhost.mof` в новой папке с именем `SampleIISInstall`.</span><span class="sxs-lookup"><span data-stu-id="e324a-134">This will create a `localhost.mof` file in a new folder named `SampleIISInstall`.</span></span>
-<span data-ttu-id="e324a-135">Переименуйте и переместите этот файл в нужное место на VHD как `Pending.mof` при помощи командлета [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-135">Rename and move that file into the proper location on the VHD as `Pending.mof` by using the [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-136">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-136">For example:</span></span>
+5. <span data-ttu-id="a947d-134">Будет создан файл `localhost.mof` в новой папке с именем `SampleIISInstall`.</span><span class="sxs-lookup"><span data-stu-id="a947d-134">This will create a `localhost.mof` file in a new folder named `SampleIISInstall`.</span></span>
+<span data-ttu-id="a947d-135">Переименуйте и переместите этот файл в нужное место на VHD как `Pending.mof` при помощи командлета [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-135">Rename and move that file into the proper location on the VHD as `Pending.mof` by using the [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-136">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-136">For example:</span></span>
 
     ```powershell
-        Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\Sytem32\Configuration\Pending.mof
+        Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\System32\Configuration\Pending.mof
     ```
-6. <span data-ttu-id="e324a-137">Отключите VHD, вызвав командлет [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-137">Dismount the VHD by calling the [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-138">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-138">For example:</span></span>
+6. <span data-ttu-id="a947d-137">Отключите VHD, вызвав командлет [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-137">Dismount the VHD by calling the [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-138">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-138">For example:</span></span>
 
     ```powershell
     Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-7. <span data-ttu-id="e324a-139">Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC.</span><span class="sxs-lookup"><span data-stu-id="e324a-139">Create a VM by using the VHD where you installed the DSC MOF document.</span></span> <span data-ttu-id="e324a-140">После первоначальной загрузки и установки операционной системы будут установлены службы IIS.</span><span class="sxs-lookup"><span data-stu-id="e324a-140">After intial boot-up and operating system installation, IIS will be installed.</span></span>
-<span data-ttu-id="e324a-141">Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-141">You can verify this by calling the [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet.</span></span>
+7. <span data-ttu-id="a947d-139">Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC.</span><span class="sxs-lookup"><span data-stu-id="a947d-139">Create a VM by using the VHD where you installed the DSC MOF document.</span></span> <span data-ttu-id="a947d-140">После первоначальной загрузки и установки операционной системы будут установлены службы IIS.</span><span class="sxs-lookup"><span data-stu-id="a947d-140">After intial boot-up and operating system installation, IIS will be installed.</span></span>
+<span data-ttu-id="a947d-141">Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-141">You can verify this by calling the [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet.</span></span>
 
-## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a><span data-ttu-id="e324a-142">Добавление метаконфигурации DSC в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-142">Inject a DSC metaconfiguration into a VHD</span></span>
+## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a><span data-ttu-id="a947d-142">Добавление метаконфигурации DSC в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-142">Inject a DSC metaconfiguration into a VHD</span></span>
 
-<span data-ttu-id="e324a-143">Также можно настроить на компьютере извлечение конфигурации при начальной загрузке, добавив метаконфигурацию (см. раздел [Настройка локального диспетчера конфигурации [LCM]](metaConfig.md)) в VHD в качестве его файла `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="e324a-143">You can also configure a computer to pull a configuration at intial boot-up by injecting a metaconfiguration (see [Configuring the Local Configuration Manager (LCM)](metaConfig.md)) into the VHD as its `MetaConfig.mof` file.</span></span>
-<span data-ttu-id="e324a-144">Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет к локальному диспетчеру конфигурации метаконфигурацию, определенную в `MetaConfig.mof` при первой загрузке компьютера.</span><span class="sxs-lookup"><span data-stu-id="e324a-144">If the **DSCAutomationHostEnabled** registry key is set to 2 (the default value),  DSC will apply the metaconfiguration defined by `MetaConfig.mof` to the LCM when the computer boots up for the first time.</span></span>
-<span data-ttu-id="e324a-145">Если в метаконфигурации указано, что локальный диспетчер конфигурации должен извлекать конфигурации с опрашивающего сервера, компьютер попытается извлечь конфигурации с этого сервера при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="e324a-145">If the metaconfiguration specifies that the LCM should pull configurations from a pull server, the computer will attempt to pull a configuration from that pull server at inital boot-up.</span></span>
-<span data-ttu-id="e324a-146">Сведения о настройке опрашивающего сервера DSC см. в разделе [Настройка опрашивающего веб-сервера DSC](pullServer.md).</span><span class="sxs-lookup"><span data-stu-id="e324a-146">For information about setting up a DSC pull server, see [Setting up a DSC web pull server](pullServer.md).</span></span>
+<span data-ttu-id="a947d-143">Также можно настроить на компьютере извлечение конфигурации при начальной загрузке, добавив метаконфигурацию (см. раздел [Настройка локального диспетчера конфигурации [LCM]](metaConfig.md)) в VHD в качестве его файла `MetaConfig.mof`.</span><span class="sxs-lookup"><span data-stu-id="a947d-143">You can also configure a computer to pull a configuration at intial boot-up by injecting a metaconfiguration (see [Configuring the Local Configuration Manager (LCM)](metaConfig.md)) into the VHD as its `MetaConfig.mof` file.</span></span>
+<span data-ttu-id="a947d-144">Если раздел реестра **DSCAutomationHostEnabled** имеет значение 2 (значение по умолчанию), DSC применяет к локальному диспетчеру конфигурации метаконфигурацию, определенную в `MetaConfig.mof` при первой загрузке компьютера.</span><span class="sxs-lookup"><span data-stu-id="a947d-144">If the **DSCAutomationHostEnabled** registry key is set to 2 (the default value),  DSC will apply the metaconfiguration defined by `MetaConfig.mof` to the LCM when the computer boots up for the first time.</span></span>
+<span data-ttu-id="a947d-145">Если в метаконфигурации указано, что локальный диспетчер конфигурации должен извлекать конфигурации с опрашивающего сервера, компьютер попытается извлечь конфигурации с этого сервера при начальной загрузке.</span><span class="sxs-lookup"><span data-stu-id="a947d-145">If the metaconfiguration specifies that the LCM should pull configurations from a pull server, the computer will attempt to pull a configuration from that pull server at inital boot-up.</span></span>
+<span data-ttu-id="a947d-146">Сведения о настройке опрашивающего сервера DSC см. в разделе [Настройка опрашивающего веб-сервера DSC](pullServer.md).</span><span class="sxs-lookup"><span data-stu-id="a947d-146">For information about setting up a DSC pull server, see [Setting up a DSC web pull server](pullServer.md).</span></span>
 
-<span data-ttu-id="e324a-147">В этом примере используется конфигурация, описанная в предыдущем разделе (**SampleIISInstall**), и следующая метаконфигурация.</span><span class="sxs-lookup"><span data-stu-id="e324a-147">For this example, we will use both the configuration described in the previous section (**SampleIISInstall**), and the following metaconfiguration:</span></span>
+<span data-ttu-id="a947d-147">В этом примере используется конфигурация, описанная в предыдущем разделе (**SampleIISInstall**), и следующая метаконфигурация.</span><span class="sxs-lookup"><span data-stu-id="a947d-147">For this example, we will use both the configuration described in the previous section (**SampleIISInstall**), and the following metaconfiguration:</span></span>
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -125,83 +125,83 @@ configuration PullClientBootstrap
 }
 ```
 
-### <a name="to-inject-the-metaconfiguration-mof-document-on-the-vhd"></a><span data-ttu-id="e324a-148">Добавление документа MOF метаконфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="e324a-148">To inject the metaconfiguration MOF document on the VHD</span></span>
+### <a name="to-inject-the-metaconfiguration-mof-document-on-the-vhd"></a><span data-ttu-id="a947d-148">Добавление документа MOF метаконфигурации в VHD</span><span class="sxs-lookup"><span data-stu-id="a947d-148">To inject the metaconfiguration MOF document on the VHD</span></span>
 
-1. <span data-ttu-id="e324a-149">Подключите VHD, в который нужно добавить метаконфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-149">Mount the VHD into which you want to inject the metaconfiguration by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-150">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-150">For example:</span></span>
+1. <span data-ttu-id="a947d-149">Подключите VHD, в который нужно добавить метаконфигурацию, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-149">Mount the VHD into which you want to inject the metaconfiguration by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-150">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-150">For example:</span></span>
 
     ```powershell
     Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-2. <span data-ttu-id="e324a-151">[Настройте опрашивающий веб-сервер DSC](pullServer.md) и сохраните конфигурацию **SampleIISInistall** в соответствующую папку.</span><span class="sxs-lookup"><span data-stu-id="e324a-151">[Set up a DSC web pull server](pullServer.md), and save the **SampleIISInistall** configuration to the appropriate folder.</span></span>
+2. <span data-ttu-id="a947d-151">[Настройте опрашивающий веб-сервер DSC](pullServer.md) и сохраните конфигурацию **SampleIISInistall** в соответствующую папку.</span><span class="sxs-lookup"><span data-stu-id="a947d-151">[Set up a DSC web pull server](pullServer.md), and save the **SampleIISInistall** configuration to the appropriate folder.</span></span>
 
-3. <span data-ttu-id="e324a-152">На компьютере с PowerShell 5.0 или более поздней версией сохраните указанную выше метаконфигурацию (**PullClientBootstrap**) как файл сценария PowerShell (.ps1).</span><span class="sxs-lookup"><span data-stu-id="e324a-152">On a computer running PowerShell 5.0 or later, save the above metaconfiguration (**PullClientBootstrap**) as a PowerShell script (.ps1) file.</span></span>
+3. <span data-ttu-id="a947d-152">На компьютере с PowerShell 5.0 или более поздней версией сохраните указанную выше метаконфигурацию (**PullClientBootstrap**) как файл сценария PowerShell (.ps1).</span><span class="sxs-lookup"><span data-stu-id="a947d-152">On a computer running PowerShell 5.0 or later, save the above metaconfiguration (**PullClientBootstrap**) as a PowerShell script (.ps1) file.</span></span>
 
-4. <span data-ttu-id="e324a-153">В консоли PowerShell перейдите в папку, где был сохранен PS1-файл.</span><span class="sxs-lookup"><span data-stu-id="e324a-153">In a PowerShell console, navigate to the folder where you saved the .ps1 file.</span></span>
+4. <span data-ttu-id="a947d-153">В консоли PowerShell перейдите в папку, где был сохранен PS1-файл.</span><span class="sxs-lookup"><span data-stu-id="a947d-153">In a PowerShell console, navigate to the folder where you saved the .ps1 file.</span></span>
 
-5. <span data-ttu-id="e324a-154">Выполните следующие команды PowerShell для компиляции документа MOF метаконфигурации (дополнительные сведения о компиляции конфигураций DSC см. в разделе [Конфигурации DSC](configurations.md)).</span><span class="sxs-lookup"><span data-stu-id="e324a-154">Run the following PowerShell commands to compile the  metaconfiguration MOF document (for information about compiling DSC configurations, see [DSC Configurations](configurations.md):</span></span>
+5. <span data-ttu-id="a947d-154">Выполните следующие команды PowerShell для компиляции документа MOF метаконфигурации (дополнительные сведения о компиляции конфигураций DSC см. в разделе [Конфигурации DSC](configurations.md)).</span><span class="sxs-lookup"><span data-stu-id="a947d-154">Run the following PowerShell commands to compile the  metaconfiguration MOF document (for information about compiling DSC configurations, see [DSC Configurations](configurations.md):</span></span>
 
     ```powershell
     . .\PullClientBootstrap.ps1
     PullClientBootstrap
     ```
 
-6. <span data-ttu-id="e324a-155">Будет создан файл `localhost.meta.mof` в новой папке с именем `PullClientBootstrap`.</span><span class="sxs-lookup"><span data-stu-id="e324a-155">This will create a `localhost.meta.mof` file in a new folder named `PullClientBootstrap`.</span></span>
-<span data-ttu-id="e324a-156">Переименуйте и переместите этот файл в нужное место на VHD как `MetaConfig.mof` при помощи командлета [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-156">Rename and move that file into the proper location on the VHD as `MetaConfig.mof` by using the [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet.</span></span>
+6. <span data-ttu-id="a947d-155">Будет создан файл `localhost.meta.mof` в новой папке с именем `PullClientBootstrap`.</span><span class="sxs-lookup"><span data-stu-id="a947d-155">This will create a `localhost.meta.mof` file in a new folder named `PullClientBootstrap`.</span></span>
+<span data-ttu-id="a947d-156">Переименуйте и переместите этот файл в нужное место на VHD как `MetaConfig.mof` при помощи командлета [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-156">Rename and move that file into the proper location on the VHD as `MetaConfig.mof` by using the [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet.</span></span>
 
     ```powershell
     Move-Item -Path C:\DSCTest\PullClientBootstrap\localhost.meta.mof -Destination E:\Windows\Sytem32\Configuration\MetaConfig.mof
     ```
 
-7. <span data-ttu-id="e324a-157">Отключите VHD, вызвав командлет [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-157">Dismount the VHD by calling the [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-158">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-158">For example:</span></span>
+7. <span data-ttu-id="a947d-157">Отключите VHD, вызвав командлет [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-157">Dismount the VHD by calling the [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-158">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-158">For example:</span></span>
 
     ```powershell
     Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-8. <span data-ttu-id="e324a-159">Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC.</span><span class="sxs-lookup"><span data-stu-id="e324a-159">Create a VM by using the VHD where you installed the DSC MOF document.</span></span>
-<span data-ttu-id="e324a-160">После первоначальной загрузки и установки операционной системы DSC извлечет конфигурацию из опрашивающего сервера и будут установлены службы IIS.</span><span class="sxs-lookup"><span data-stu-id="e324a-160">After intial boot-up and operating system installation, DSC will pull the configuration from the pull server, and IIS will be installed.</span></span>
-<span data-ttu-id="e324a-161">Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-161">You can verify this by calling the [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet.</span></span>
+8. <span data-ttu-id="a947d-159">Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC.</span><span class="sxs-lookup"><span data-stu-id="a947d-159">Create a VM by using the VHD where you installed the DSC MOF document.</span></span>
+<span data-ttu-id="a947d-160">После первоначальной загрузки и установки операционной системы DSC извлечет конфигурацию из опрашивающего сервера и будут установлены службы IIS.</span><span class="sxs-lookup"><span data-stu-id="a947d-160">After intial boot-up and operating system installation, DSC will pull the configuration from the pull server, and IIS will be installed.</span></span>
+<span data-ttu-id="a947d-161">Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-161">You can verify this by calling the [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet.</span></span>
 
-## <a name="disable-dsc-at-boot-time"></a><span data-ttu-id="e324a-162">Отключение DSC при загрузке</span><span class="sxs-lookup"><span data-stu-id="e324a-162">Disable DSC at boot time</span></span>
+## <a name="disable-dsc-at-boot-time"></a><span data-ttu-id="a947d-162">Отключение DSC при загрузке</span><span class="sxs-lookup"><span data-stu-id="a947d-162">Disable DSC at boot time</span></span>
 
-<span data-ttu-id="e324a-163">По умолчанию раздел **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** имеет значение 2, что позволяет запускать конфигурацию DSC, если компьютер находится в состоянии ожидания или в текущем состоянии.</span><span class="sxs-lookup"><span data-stu-id="e324a-163">By default, the value of the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** key is set to 2, which allows a DSC configuration to run if the computer is in pending or current state.</span></span> <span data-ttu-id="e324a-164">Если запускать конфигурацию при начальной загрузке не следует, необходимо задать для этого раздела значение 0.</span><span class="sxs-lookup"><span data-stu-id="e324a-164">If you do not want a configuration to run at initial boot-up, you need so set the value of this key to 0:</span></span>
+<span data-ttu-id="a947d-163">По умолчанию раздел **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** имеет значение 2, что позволяет запускать конфигурацию DSC, если компьютер находится в состоянии ожидания или в текущем состоянии.</span><span class="sxs-lookup"><span data-stu-id="a947d-163">By default, the value of the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** key is set to 2, which allows a DSC configuration to run if the computer is in pending or current state.</span></span> <span data-ttu-id="a947d-164">Если запускать конфигурацию при начальной загрузке не следует, необходимо задать для этого раздела значение 0.</span><span class="sxs-lookup"><span data-stu-id="a947d-164">If you do not want a configuration to run at initial boot-up, you need so set the value of this key to 0:</span></span>
 
-1. <span data-ttu-id="e324a-165">Подключите VHD, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="e324a-165">Mount the VHD by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="e324a-166">Например:</span><span class="sxs-lookup"><span data-stu-id="e324a-166">For example:</span></span>
+1. <span data-ttu-id="a947d-165">Подключите VHD, вызвав командлет [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx).</span><span class="sxs-lookup"><span data-stu-id="a947d-165">Mount the VHD by calling the [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet.</span></span> <span data-ttu-id="a947d-166">Например:</span><span class="sxs-lookup"><span data-stu-id="a947d-166">For example:</span></span>
 
     ```powershell
     Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-2. <span data-ttu-id="e324a-167">Загрузите подраздел реестра **HKLM\Software** с VHD, вызвав `reg load`.</span><span class="sxs-lookup"><span data-stu-id="e324a-167">Load the registry **HKLM\Software** subkey from the VHD by calling `reg load`.</span></span>
+2. <span data-ttu-id="a947d-167">Загрузите подраздел реестра **HKLM\Software** с VHD, вызвав `reg load`.</span><span class="sxs-lookup"><span data-stu-id="a947d-167">Load the registry **HKLM\Software** subkey from the VHD by calling `reg load`.</span></span>
 
     ```
     reg load HKLM\Vhd E:\Windows\System32\Config\Software`
     ```
 
-3. <span data-ttu-id="e324a-168">Перейдите в раздел **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** с помощью поставщика реестра PowerShell.</span><span class="sxs-lookup"><span data-stu-id="e324a-168">Navigate to the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** by using the PowerShell Registry provider.</span></span>
+3. <span data-ttu-id="a947d-168">Перейдите в раздел **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** с помощью поставщика реестра PowerShell.</span><span class="sxs-lookup"><span data-stu-id="a947d-168">Navigate to the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** by using the PowerShell Registry provider.</span></span>
 
     ```powershell
     Set-Location HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies`
     ```
 
-4. <span data-ttu-id="e324a-169">Измените значение `DSCAutomationHostEnabled` на 0.</span><span class="sxs-lookup"><span data-stu-id="e324a-169">Change the value of `DSCAutomationHostEnabled` to 0.</span></span>
+4. <span data-ttu-id="a947d-169">Измените значение `DSCAutomationHostEnabled` на 0.</span><span class="sxs-lookup"><span data-stu-id="a947d-169">Change the value of `DSCAutomationHostEnabled` to 0.</span></span>
 
     ```powershell
     Set-ItemProperty -Path . -Name DSCAutomationHostEnabled -Value 0
     ```
 
-5. <span data-ttu-id="e324a-170">Выгрузите реестр, выполнив следующие команды.</span><span class="sxs-lookup"><span data-stu-id="e324a-170">Unload the registry by running the following commands:</span></span>
+5. <span data-ttu-id="a947d-170">Выгрузите реестр, выполнив следующие команды.</span><span class="sxs-lookup"><span data-stu-id="a947d-170">Unload the registry by running the following commands:</span></span>
 
     ```powershell
     [gc]::Collect()
     reg unload HKLM\Vhd
     ```
 
-## <a name="see-also"></a><span data-ttu-id="e324a-171">См. также</span><span class="sxs-lookup"><span data-stu-id="e324a-171">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a947d-171">См. также</span><span class="sxs-lookup"><span data-stu-id="a947d-171">See Also</span></span>
 
-- [<span data-ttu-id="e324a-172">Конфигурации DSC</span><span class="sxs-lookup"><span data-stu-id="e324a-172">DSC Configurations</span></span>](configurations.md)
-- [<span data-ttu-id="e324a-173">Раздел реестра DSCAutomationHostEnabled</span><span class="sxs-lookup"><span data-stu-id="e324a-173">DSCAutomationHostEnabled registry key</span></span>](DSCAutomationHostEnabled.md)
-- [<span data-ttu-id="e324a-174">Настройка локального диспетчера конфигураций (LCM)</span><span class="sxs-lookup"><span data-stu-id="e324a-174">Configuring the Local Configuration Manager (LCM)</span></span>](metaConfig.md)
-- [<span data-ttu-id="e324a-175">Настройка опрашивающего веб-сервера DSC</span><span class="sxs-lookup"><span data-stu-id="e324a-175">Setting up a DSC web pull server</span></span>](pullServer.md)
+- [<span data-ttu-id="a947d-172">Конфигурации DSC</span><span class="sxs-lookup"><span data-stu-id="a947d-172">DSC Configurations</span></span>](configurations.md)
+- [<span data-ttu-id="a947d-173">Раздел реестра DSCAutomationHostEnabled</span><span class="sxs-lookup"><span data-stu-id="a947d-173">DSCAutomationHostEnabled registry key</span></span>](DSCAutomationHostEnabled.md)
+- [<span data-ttu-id="a947d-174">Настройка локального диспетчера конфигураций (LCM)</span><span class="sxs-lookup"><span data-stu-id="a947d-174">Configuring the Local Configuration Manager (LCM)</span></span>](metaConfig.md)
+- [<span data-ttu-id="a947d-175">Настройка опрашивающего веб-сервера DSC</span><span class="sxs-lookup"><span data-stu-id="a947d-175">Setting up a DSC web pull server</span></span>](pullServer.md)
 
