@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка виртуальных машин при начальной загрузке с помощью DSC"
-ms.openlocfilehash: a3592c50fa7f2232538fbec07129fac86c1d00b5
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: c793e36eb9caa194104f9dda2aa1d335b21b676c
+ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 12/05/2017
 ---
 >Область применения: Windows PowerShell 5.0
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 06/12/2017
 
 Для выполнения этих примеров требуется следующее.
 
-- Загрузочный VHD. ISO-файл с пробной версией Windows Server 2016 можно скачать в центре   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016). Инструкции по созданию VHD из ISO-образа см. в разделе [Создание загрузочных виртуальных жестких дисков](https://technet.microsoft.com/en-us/library/gg318049.aspx).
+- Загрузочный VHD. ISO-файл с пробной версией Windows Server 2016 можно скачать в центре [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016). Инструкции по созданию VHD из ISO-образа см. в разделе [Создание загрузочных виртуальных жестких дисков](https://technet.microsoft.com/en-us/library/gg318049.aspx).
 - Компьютер с включенным Hyper-V. Дополнительные сведения см. в статье [Обзор Hyper-V](https://technet.microsoft.com/library/hh831531.aspx).
 
 С помощью DSC можно автоматизировать установку и настройку программного обеспечения для компьютера при начальной загрузке.
@@ -83,7 +83,7 @@ Configuration SampleIISInstall
 Переименуйте и переместите этот файл в нужное место на VHD как `Pending.mof` при помощи командлета [Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx). Например:
 
     ```powershell
-        Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\Sytem32\Configuration\Pending.mof
+        Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\System32\Configuration\Pending.mof
     ```
 6. Отключите VHD, вызвав командлет [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx). Например:
 
