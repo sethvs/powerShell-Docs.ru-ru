@@ -39,6 +39,7 @@
 ### [Опубликовать](psget/module/psget_publish-module.md)
 ### [Модули с PSEditions](psget/module/modulewithpseditionsupport.md)
 ### [Модули, для использования которых требуется принять условия лицензии](psget/module/RequireLicenseAcceptance.md)
+### [Предварительные версии](psget/module/PreReleaseModule.md)
 ### [Устранение неполадок](psget/psget_cmdlets_troubleshooting.md)
 
 ## Скрипт
@@ -53,8 +54,8 @@
 ### [Обновление метаданных файла сценария](psget/script/psget_update-scriptfileinfo.md)
 ### [Опубликовать](psget/script/psget_publish-script.md)
 ### [Сценарии с PSEditions](psget/script/scriptwithpseditionsupport.md)
-### [Запрос на принятие условий лицензии для сценариев](psget/script/script_RequireLicenseAcceptance.md)
-
+### [Запрос на принятие условий лицензии для скриптов](psget/script/script_RequireLicenseAcceptance.md)
+### [Предварительные версии](psget/script/PreReleaseScript.md)
 ## Управление репозиторием
 ### [Начальная загрузка поставщика NuGet и NuGet.exe](psget/repository/bootstrapping_nuget_proivder_and_exe.md)
 ### [Регистрация репозитория](psget/repository/psget_register-psrepository.md)
