@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс Script в DSC"
-ms.openlocfilehash: 81718de0b0c8463189e33e565dc9ff39692dbe8b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 3824cbf48d980069b923d91e1fa24739e5d4e617
+ms.sourcegitcommit: 378c7ed4e8c8c1c5fe71417b9ba672a4c990630b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="dsc-script-resource"></a>Ресурс Script в DSC
 
@@ -51,8 +51,6 @@ Script [string] #ResourceName
 
 ## <a name="example-1"></a>Пример 1
 ```powershell
-$version = Get-Content 'version.txt'
-
 Configuration ScriptTest
 {
     Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
@@ -83,13 +81,13 @@ Configuration ScriptTest
     {
         GetScript = { 
             $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
-            return @{ 'Version' = "$currentVersion" }
+            return @{ 'Result' = "$currentVersion" }
         }          
         TestScript = { 
             $state = $GetScript
-            if( $state['Version'] -eq $using:version )
+            if( $state['Result'] -eq $using:version )
             {
-                Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
+                Write-Verbose -Message ('{0} -eq {1}' -f $state['Result'],$using:version)
                 return $true
             }
             Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
