@@ -4,11 +4,11 @@ author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
 title: "Совместимость WMF 5.1 с операционными системами"
-ms.openlocfilehash: b8724538a03ab67529682b9efb29e3ab947339b5
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 04217c5abb0f04a5dc6b15cd956a632f7b84c9bb
+ms.sourcegitcommit: 5dbf78ba0db482efa79e31a0e4963f8cbeb3df54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="wmf-51-operating-system-compatibility"></a>Совместимость WMF 5.1 с операционными системами #
 
@@ -33,4 +33,6 @@ ms.lasthandoff: 06/12/2017
 По поводу оговорки "Входит в комплект поставки*": функции WMF 5.0 были включены в исходную версию Windows 10 RTM.
 Функции WMF 5.1 были включены в Windows Server 2016 и юбилейное обновление Windows 10. Компонент WMF 5.1 неприменим для этих версий операционной системы, так как обновления предоставляются через Центр обновления Windows.
 
+
+Обратите внимание, что WMF не входит в состав Windows. WMF — это пакет обновления, который предоставляет набор компонентов Windows для предыдущих версий Windows. Это важно учитывать при обращении за помощью по любому из этих компонентов, так как их версия не будет соответствовать поставляемой в комплекте исходной операционной системы.
 

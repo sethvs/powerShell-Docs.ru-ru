@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Конфигурации DSC"
-ms.openlocfilehash: c0cf0e7aa1d18898c50a0662e4fc76ab02932f08
-ms.sourcegitcommit: 7bb75bfb8d12aaa6b6071dcb2ca639d4ecceef26
+ms.openlocfilehash: 2c2f8183ef586ff9371e4af7ea83db3e04fa68a4
+ms.sourcegitcommit: 378c7ed4e8c8c1c5fe71417b9ba672a4c990630b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="dsc-configurations"></a>Конфигурации DSC
 
@@ -63,7 +63,7 @@ Configuration MyDscConfiguration {
         }
     }
 }
-MyDscConfiguration
+MyDscConfiguration -ComputerName <MyComputer>
 
 ```
 
