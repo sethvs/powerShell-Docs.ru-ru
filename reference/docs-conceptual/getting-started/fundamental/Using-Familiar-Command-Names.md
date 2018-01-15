@@ -20,7 +20,7 @@ ms.lasthandoff: 08/03/2017
 
 |||||
 |-|-|-|-|
-|cat|dir|подключить|rm|
+|cat|dir|mount|rm|
 |cd|echo|move|rmdir|
 |chdir|erase|popd|sleep|
 |clear|h|ps|sort|
