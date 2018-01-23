@@ -13,7 +13,7 @@ PowerShell Core также предлагает набор API, предоста
 
 Эти API, используемые совместно с .NET Core и .NET Framework, определены как часть [.NET Standard][].
 
-Дополнительные сведения о том, как это влияет на совместимость модулей/сценариев между PowerShell Core и Windows PowerShell, см. в разделе [Обратная совместимость с Windows PowerShell][#backwards-compatibility-with-windows-powershell].
+Дополнительные сведения о том, как это влияет на совместимость модулей/сценариев между PowerShell Core и Windows PowerShell, см. в разделе [Обратная совместимость с Windows PowerShell](#backwards-compatibility-with-windows-powershell).
 
 ## <a name="support-for-macos-and-linux"></a>Поддержка macOS и Linux
 
