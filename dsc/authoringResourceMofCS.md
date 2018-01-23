@@ -1,29 +1,28 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Создание ресурса DSC в C#"
-ms.openlocfilehash: c1dc97d4e05499d03450d6172d9674b06a674393
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 2fc6b8c127bca29e8f66fc7bd8d2828fdfe39f3c
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="authoring-a-dsc-resource-in-c"></a><span data-ttu-id="0644a-103">Создание ресурса DSC в C#</span><span class="sxs-lookup"><span data-stu-id="0644a-103">Authoring a DSC resource in C#</span></span>
+# <a name="authoring-a-dsc-resource-in-c"></a><span data-ttu-id="c25d0-103">Создание ресурса DSC в C#</span><span class="sxs-lookup"><span data-stu-id="c25d0-103">Authoring a DSC resource in C#</span></span>
 
-> <span data-ttu-id="0644a-104">Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="0644a-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
+> <span data-ttu-id="c25d0-104">Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="c25d0-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-<span data-ttu-id="0644a-105">Как правило, настраиваемый ресурс настройки требуемого состояния (DSC) Windows PowerShell реализуется в сценарии PowerShell.</span><span class="sxs-lookup"><span data-stu-id="0644a-105">Typically, a Windows PowerShell Desired State Configuration (DSC) custom resource is implemented in a PowerShell script.</span></span> <span data-ttu-id="0644a-106">Кроме того, для реализации настраиваемого ресурса DSC можно писать командлеты на языке C#.</span><span class="sxs-lookup"><span data-stu-id="0644a-106">However, you can also implement the functionality of a DSC custom resource by writing cmdlets in C#.</span></span> <span data-ttu-id="0644a-107">Вводные сведения о написании командлетов на языке C# см. в статье [Написание командлетов Windows PowerShell](https://technet.microsoft.com/en-us/library/dd878294.aspx).</span><span class="sxs-lookup"><span data-stu-id="0644a-107">For an introduction on writing cmdlets in C#, see [Writing a Windows PowerShell Cmdlet](https://technet.microsoft.com/en-us/library/dd878294.aspx).</span></span>
+<span data-ttu-id="c25d0-105">Как правило, настраиваемый ресурс настройки требуемого состояния (DSC) Windows PowerShell реализуется в сценарии PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c25d0-105">Typically, a Windows PowerShell Desired State Configuration (DSC) custom resource is implemented in a PowerShell script.</span></span> <span data-ttu-id="c25d0-106">Кроме того, для реализации настраиваемого ресурса DSC можно писать командлеты на языке C#.</span><span class="sxs-lookup"><span data-stu-id="c25d0-106">However, you can also implement the functionality of a DSC custom resource by writing cmdlets in C#.</span></span> <span data-ttu-id="c25d0-107">Вводные сведения о написании командлетов на языке C# см. в статье [Написание командлетов Windows PowerShell](https://technet.microsoft.com/en-us/library/dd878294.aspx).</span><span class="sxs-lookup"><span data-stu-id="c25d0-107">For an introduction on writing cmdlets in C#, see [Writing a Windows PowerShell Cmdlet](https://technet.microsoft.com/en-us/library/dd878294.aspx).</span></span>
 
-<span data-ttu-id="0644a-108">Процесс создания схемы MOF и структуры папок, импорт и применения настраиваемого ресурса DSC (кроме реализации ресурса на языке C# в форме командлетов) соответствует описанию в статье [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md).</span><span class="sxs-lookup"><span data-stu-id="0644a-108">Aside from implementing the resource in C# as cmdlets, the process of creating the MOF schema, creating the folder structure, importing and using your custom DSC resource are the same as described in [Writing a custom DSC resource with MOF](authoringResourceMOF.md).</span></span>
+<span data-ttu-id="c25d0-108">Процесс создания схемы MOF и структуры папок, импорт и применения настраиваемого ресурса DSC (кроме реализации ресурса на языке C# в форме командлетов) соответствует описанию в статье [Написание пользовательских ресурсов DSC с использованием MOF](authoringResourceMOF.md).</span><span class="sxs-lookup"><span data-stu-id="c25d0-108">Aside from implementing the resource in C# as cmdlets, the process of creating the MOF schema, creating the folder structure, importing and using your custom DSC resource are the same as described in [Writing a custom DSC resource with MOF](authoringResourceMOF.md).</span></span>
 
-## <a name="writing-a-cmdlet-based-resource"></a><span data-ttu-id="0644a-109">Создание ресурса на основе командлетов</span><span class="sxs-lookup"><span data-stu-id="0644a-109">Writing a cmdlet-based resource</span></span>
-<span data-ttu-id="0644a-110">В этом примере мы реализуем простой ресурс, управляющий текстовым файлом и его содержимым.</span><span class="sxs-lookup"><span data-stu-id="0644a-110">For this example, we will implement a simple resource that manages a text file and its contents.</span></span>
+## <a name="writing-a-cmdlet-based-resource"></a><span data-ttu-id="c25d0-109">Создание ресурса на основе командлетов</span><span class="sxs-lookup"><span data-stu-id="c25d0-109">Writing a cmdlet-based resource</span></span>
+<span data-ttu-id="c25d0-110">В этом примере мы реализуем простой ресурс, управляющий текстовым файлом и его содержимым.</span><span class="sxs-lookup"><span data-stu-id="c25d0-110">For this example, we will implement a simple resource that manages a text file and its contents.</span></span>
 
-### <a name="writing-the-mof-schema"></a><span data-ttu-id="0644a-111">Создание схемы MOF</span><span class="sxs-lookup"><span data-stu-id="0644a-111">Writing the MOF schema</span></span>
+### <a name="writing-the-mof-schema"></a><span data-ttu-id="c25d0-111">Создание схемы MOF</span><span class="sxs-lookup"><span data-stu-id="c25d0-111">Writing the MOF schema</span></span>
 
-<span data-ttu-id="0644a-112">Ниже дано определение ресурса MOF.</span><span class="sxs-lookup"><span data-stu-id="0644a-112">The following is the MOF resource definition.</span></span>
+<span data-ttu-id="c25d0-112">Ниже дано определение ресурса MOF.</span><span class="sxs-lookup"><span data-stu-id="c25d0-112">The following is the MOF resource definition.</span></span>
 
 ```
 [ClassVersion("1.0.0"), FriendlyName("xDemoFile")]
@@ -35,19 +34,19 @@ class MSFT_XDemoFile : OMI_BaseResource
 };
 ```
 
-### <a name="setting-up-the-visual-studio-project"></a><span data-ttu-id="0644a-113">Настройка проекта Visual Studio</span><span class="sxs-lookup"><span data-stu-id="0644a-113">Setting up the Visual Studio project</span></span>
-#### <a name="setting-up-a-cmdlet-project"></a><span data-ttu-id="0644a-114">Настройка проекта командлета</span><span class="sxs-lookup"><span data-stu-id="0644a-114">Setting up a cmdlet project</span></span>
+### <a name="setting-up-the-visual-studio-project"></a><span data-ttu-id="c25d0-113">Настройка проекта Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c25d0-113">Setting up the Visual Studio project</span></span>
+#### <a name="setting-up-a-cmdlet-project"></a><span data-ttu-id="c25d0-114">Настройка проекта командлета</span><span class="sxs-lookup"><span data-stu-id="c25d0-114">Setting up a cmdlet project</span></span>
 
-1. <span data-ttu-id="0644a-115">Откройте Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="0644a-115">Open Visual Studio.</span></span>
-1. <span data-ttu-id="0644a-116">Создайте проект C# и укажите имя.</span><span class="sxs-lookup"><span data-stu-id="0644a-116">Create a C# project and provide the name.</span></span>
-1. <span data-ttu-id="0644a-117">Выберите в списке доступных шаблонов проектов **библиотеку классов**.</span><span class="sxs-lookup"><span data-stu-id="0644a-117">Select **Class Library** from the available project templates.</span></span>
-1. <span data-ttu-id="0644a-118">Нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="0644a-118">Click **Ok**.</span></span>
-1. <span data-ttu-id="0644a-119">Добавьте в проект ссылку на сборку System.Automation.Management.dll.</span><span class="sxs-lookup"><span data-stu-id="0644a-119">Add an assembly reference to System.Automation.Management.dll to your project.</span></span>
-1. <span data-ttu-id="0644a-120">Измените имя сборки в соответствии с именем ресурса.</span><span class="sxs-lookup"><span data-stu-id="0644a-120">Change the assembly name to match the resource name.</span></span> <span data-ttu-id="0644a-121">В данном случае сборка должна называться **MSFT_XDemoFile**.</span><span class="sxs-lookup"><span data-stu-id="0644a-121">In this case, the assembly should be named **MSFT_XDemoFile**.</span></span>
+1. <span data-ttu-id="c25d0-115">Откройте Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="c25d0-115">Open Visual Studio.</span></span>
+1. <span data-ttu-id="c25d0-116">Создайте проект C# и укажите имя.</span><span class="sxs-lookup"><span data-stu-id="c25d0-116">Create a C# project and provide the name.</span></span>
+1. <span data-ttu-id="c25d0-117">Выберите в списке доступных шаблонов проектов **библиотеку классов**.</span><span class="sxs-lookup"><span data-stu-id="c25d0-117">Select **Class Library** from the available project templates.</span></span>
+1. <span data-ttu-id="c25d0-118">Нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="c25d0-118">Click **Ok**.</span></span>
+1. <span data-ttu-id="c25d0-119">Добавьте в проект ссылку на сборку System.Automation.Management.dll.</span><span class="sxs-lookup"><span data-stu-id="c25d0-119">Add an assembly reference to System.Automation.Management.dll to your project.</span></span>
+1. <span data-ttu-id="c25d0-120">Измените имя сборки в соответствии с именем ресурса.</span><span class="sxs-lookup"><span data-stu-id="c25d0-120">Change the assembly name to match the resource name.</span></span> <span data-ttu-id="c25d0-121">В данном случае сборка должна называться **MSFT_XDemoFile**.</span><span class="sxs-lookup"><span data-stu-id="c25d0-121">In this case, the assembly should be named **MSFT_XDemoFile**.</span></span>
 
-### <a name="writing-the-cmdlet-code"></a><span data-ttu-id="0644a-122">Написание кода командлета</span><span class="sxs-lookup"><span data-stu-id="0644a-122">Writing the cmdlet code</span></span>
+### <a name="writing-the-cmdlet-code"></a><span data-ttu-id="c25d0-122">Написание кода командлета</span><span class="sxs-lookup"><span data-stu-id="c25d0-122">Writing the cmdlet code</span></span>
 
-<span data-ttu-id="0644a-123">Следующий код на языке C# реализует командлеты **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**.</span><span class="sxs-lookup"><span data-stu-id="0644a-123">The following C# code implements the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** cmdlets.</span></span>
+<span data-ttu-id="c25d0-123">Следующий код на языке C# реализует командлеты **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource**.</span><span class="sxs-lookup"><span data-stu-id="c25d0-123">The following C# code implements the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** cmdlets.</span></span>
 
 ```C#
 
@@ -263,9 +262,9 @@ namespace cSharpDSCResourceExample
 }
 ```
 
-### <a name="deploying-the-resource"></a><span data-ttu-id="0644a-124">Развертывание ресурса</span><span class="sxs-lookup"><span data-stu-id="0644a-124">Deploying the resource</span></span>
+### <a name="deploying-the-resource"></a><span data-ttu-id="c25d0-124">Развертывание ресурса</span><span class="sxs-lookup"><span data-stu-id="c25d0-124">Deploying the resource</span></span>
 
-<span data-ttu-id="0644a-125">Скомпилированный DLL-файл необходимо сохранить в структуре файлов аналогично ресурсу на основе сценария.</span><span class="sxs-lookup"><span data-stu-id="0644a-125">The compiled dll file should be saved in a file structure similar to a script-based resource.</span></span> <span data-ttu-id="0644a-126">Ниже показана структура папок для этого ресурса.</span><span class="sxs-lookup"><span data-stu-id="0644a-126">The following is the folder structure for this resource.</span></span>
+<span data-ttu-id="c25d0-125">Скомпилированный DLL-файл необходимо сохранить в структуре файлов аналогично ресурсу на основе сценария.</span><span class="sxs-lookup"><span data-stu-id="c25d0-125">The compiled dll file should be saved in a file structure similar to a script-based resource.</span></span> <span data-ttu-id="c25d0-126">Ниже показана структура папок для этого ресурса.</span><span class="sxs-lookup"><span data-stu-id="c25d0-126">The following is the folder structure for this resource.</span></span>
 
 ```
 $env: psmodulepath (folder)
@@ -278,9 +277,9 @@ $env: psmodulepath (folder)
                 |- MSFT_XDemoFile.schema.mof (file, required)
 ```
 
-### <a name="see-also"></a><span data-ttu-id="0644a-127">См. также</span><span class="sxs-lookup"><span data-stu-id="0644a-127">See Also</span></span>
-#### <a name="concepts"></a><span data-ttu-id="0644a-128">Концепции</span><span class="sxs-lookup"><span data-stu-id="0644a-128">Concepts</span></span>
-[<span data-ttu-id="0644a-129">Написание пользовательских ресурсов DSC с использованием MOF</span><span class="sxs-lookup"><span data-stu-id="0644a-129">Writing a custom DSC resource with MOF</span></span>](authoringResourceMOF.md)
-#### <a name="other-resources"></a><span data-ttu-id="0644a-130">Прочие ресурсы</span><span class="sxs-lookup"><span data-stu-id="0644a-130">Other Resources</span></span>
-[<span data-ttu-id="0644a-131">Запись командлета Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="0644a-131">Writing a Windows PowerShell Cmdlet</span></span>](https://msdn.microsoft.com/en-us/library/dd878294.aspx)
+### <a name="see-also"></a><span data-ttu-id="c25d0-127">См. также</span><span class="sxs-lookup"><span data-stu-id="c25d0-127">See Also</span></span>
+#### <a name="concepts"></a><span data-ttu-id="c25d0-128">Концепции</span><span class="sxs-lookup"><span data-stu-id="c25d0-128">Concepts</span></span>
+[<span data-ttu-id="c25d0-129">Написание пользовательских ресурсов DSC с использованием MOF</span><span class="sxs-lookup"><span data-stu-id="c25d0-129">Writing a custom DSC resource with MOF</span></span>](authoringResourceMOF.md)
+#### <a name="other-resources"></a><span data-ttu-id="c25d0-130">Прочие ресурсы</span><span class="sxs-lookup"><span data-stu-id="c25d0-130">Other Resources</span></span>
+[<span data-ttu-id="c25d0-131">Запись командлета Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="c25d0-131">Writing a Windows PowerShell Cmdlet</span></span>](https://msdn.microsoft.com/en-us/library/dd878294.aspx)
 

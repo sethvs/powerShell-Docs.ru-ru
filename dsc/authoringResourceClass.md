@@ -1,32 +1,31 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Написание пользовательских ресурсов DSC с использованием классов PowerShell"
-ms.openlocfilehash: 6e482f45c7d09898d46de20f43dcf16ecf3da7da
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b24351a49ca11dac4687efdce39d400bfd00f399
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a><span data-ttu-id="5a040-103">Написание пользовательских ресурсов DSC с использованием классов PowerShell</span><span class="sxs-lookup"><span data-stu-id="5a040-103">Writing a custom DSC resource with PowerShell classes</span></span>
+# <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a><span data-ttu-id="4252a-103">Написание пользовательских ресурсов DSC с использованием классов PowerShell</span><span class="sxs-lookup"><span data-stu-id="4252a-103">Writing a custom DSC resource with PowerShell classes</span></span>
 
-> <span data-ttu-id="5a040-104">Область применения: Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="5a040-104">Applies To: Windows Windows PowerShell 5.0</span></span>
+> <span data-ttu-id="4252a-104">Область применения: Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="4252a-104">Applies To: Windows Windows PowerShell 5.0</span></span>
 
-<span data-ttu-id="5a040-105">С добавлением классов PowerShell в Windows PowerShell 5.0 появилась возможность определить ресурс DSC, создав отдельный класс.</span><span class="sxs-lookup"><span data-stu-id="5a040-105">With the introduction of PowerShell classes in Windows PowerShell 5.0, you can now define a DSC resource by creating a class.</span></span> <span data-ttu-id="5a040-106">Класс определяет схему и реализацию ресурса, а значит, отдельный MOF-файл создавать не нужно.</span><span class="sxs-lookup"><span data-stu-id="5a040-106">The class defines both the schema and the implementation of the resource, so there is no need to create a separate MOF file.</span></span> <span data-ttu-id="5a040-107">Кроме того, для ресурса на основе класса используется более простая структура папок, поскольку не требуется папка **DSCResources**.</span><span class="sxs-lookup"><span data-stu-id="5a040-107">The folder structure for a class-based resource is also simpler, because a **DSCResources** folder is not necessary.</span></span>
+<span data-ttu-id="4252a-105">С добавлением классов PowerShell в Windows PowerShell 5.0 появилась возможность определить ресурс DSC, создав отдельный класс.</span><span class="sxs-lookup"><span data-stu-id="4252a-105">With the introduction of PowerShell classes in Windows PowerShell 5.0, you can now define a DSC resource by creating a class.</span></span> <span data-ttu-id="4252a-106">Класс определяет схему и реализацию ресурса, а значит, отдельный MOF-файл создавать не нужно.</span><span class="sxs-lookup"><span data-stu-id="4252a-106">The class defines both the schema and the implementation of the resource, so there is no need to create a separate MOF file.</span></span> <span data-ttu-id="4252a-107">Кроме того, для ресурса на основе класса используется более простая структура папок, поскольку не требуется папка **DSCResources**.</span><span class="sxs-lookup"><span data-stu-id="4252a-107">The folder structure for a class-based resource is also simpler, because a **DSCResources** folder is not necessary.</span></span>
 
-<span data-ttu-id="5a040-108">В ресурсе DSC на основе класса схема определяется как свойства класса, которые можно изменить с помощью атрибутов, указав тип свойства.</span><span class="sxs-lookup"><span data-stu-id="5a040-108">In a class-based DSC resource, the schema is defined as properties of the class which can be modified with attributes to specify the property type..</span></span> <span data-ttu-id="5a040-109">Ресурс реализуется с помощью методов **Get()**, **Set()** и **Test()**, эквивалентных функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.</span><span class="sxs-lookup"><span data-stu-id="5a040-109">The resource is implemented by **Get()**, **Set()**, and **Test()** methods (equivalent to the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** functions in a script resource.</span></span>
+<span data-ttu-id="4252a-108">В ресурсе DSC на основе класса схема определяется как свойства класса, которые можно изменить с помощью атрибутов, указав тип свойства.</span><span class="sxs-lookup"><span data-stu-id="4252a-108">In a class-based DSC resource, the schema is defined as properties of the class which can be modified with attributes to specify the property type..</span></span> <span data-ttu-id="4252a-109">Ресурс реализуется с помощью методов **Get()**, **Set()** и **Test()**, эквивалентных функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.</span><span class="sxs-lookup"><span data-stu-id="4252a-109">The resource is implemented by **Get()**, **Set()**, and **Test()** methods (equivalent to the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** functions in a script resource.</span></span>
 
-<span data-ttu-id="5a040-110">В этом разделе мы создадим простой ресурс с именем **FileResource**, управляющий файлом по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="5a040-110">In this topic, we will create a simple resource named **FileResource** that manages a file in a specified path.</span></span>
+<span data-ttu-id="4252a-110">В этом разделе мы создадим простой ресурс с именем **FileResource**, управляющий файлом по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="4252a-110">In this topic, we will create a simple resource named **FileResource** that manages a file in a specified path.</span></span>
 
-<span data-ttu-id="5a040-111">Дополнительные сведения о ресурсах DSC см. в статье [Создание настраиваемых ресурсов для настройки требуемого состояния Windows PowerShell](authoringResource.md).</span><span class="sxs-lookup"><span data-stu-id="5a040-111">For more information about DSC resources, see [Build Custom Windows PowerShell Desired State Configuration Resources](authoringResource.md)</span></span>
+<span data-ttu-id="4252a-111">Дополнительные сведения о ресурсах DSC см. в статье [Создание настраиваемых ресурсов для настройки требуемого состояния Windows PowerShell](authoringResource.md).</span><span class="sxs-lookup"><span data-stu-id="4252a-111">For more information about DSC resources, see [Build Custom Windows PowerShell Desired State Configuration Resources](authoringResource.md)</span></span>
 
-><span data-ttu-id="5a040-112">**Примечание**: универсальные коллекции не поддерживаются в ресурсах на основе классов.</span><span class="sxs-lookup"><span data-stu-id="5a040-112">**Note:** Generic collections are not supported in class-based resources.</span></span>
+><span data-ttu-id="4252a-112">**Примечание**: универсальные коллекции не поддерживаются в ресурсах на основе классов.</span><span class="sxs-lookup"><span data-stu-id="4252a-112">**Note:** Generic collections are not supported in class-based resources.</span></span>
 
-## <a name="folder-structure-for-a-class-resource"></a><span data-ttu-id="5a040-113">Структура папок для ресурса класса</span><span class="sxs-lookup"><span data-stu-id="5a040-113">Folder structure for a class resource</span></span>
+## <a name="folder-structure-for-a-class-resource"></a><span data-ttu-id="4252a-113">Структура папок для ресурса класса</span><span class="sxs-lookup"><span data-stu-id="4252a-113">Folder structure for a class resource</span></span>
 
-<span data-ttu-id="5a040-114">Для реализации настраиваемого ресурса DSC с помощью класса PowerShell создайте указанную ниже структуру папок.</span><span class="sxs-lookup"><span data-stu-id="5a040-114">To implement a DSC custom resource with a PowerShell class, create the following folder structure.</span></span> <span data-ttu-id="5a040-115">Класс определяется в файле **MyDscResource.psm1**, а манифест модуля — в файле **MyDscResource.psd1**.</span><span class="sxs-lookup"><span data-stu-id="5a040-115">The class is defined in **MyDscResource.psm1** and the module manifest is defined in **MyDscResource.psd1**.</span></span>
+<span data-ttu-id="4252a-114">Для реализации настраиваемого ресурса DSC с помощью класса PowerShell создайте указанную ниже структуру папок.</span><span class="sxs-lookup"><span data-stu-id="4252a-114">To implement a DSC custom resource with a PowerShell class, create the following folder structure.</span></span> <span data-ttu-id="4252a-115">Класс определяется в файле **MyDscResource.psm1**, а манифест модуля — в файле **MyDscResource.psd1**.</span><span class="sxs-lookup"><span data-stu-id="4252a-115">The class is defined in **MyDscResource.psm1** and the module manifest is defined in **MyDscResource.psd1**.</span></span>
 
 ```
 $env:ProgramFiles\WindowsPowerShell\Modules (folder)
@@ -35,9 +34,9 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
            MyDscResource.psd1 
 ```
 
-## <a name="create-the-class"></a><span data-ttu-id="5a040-116">Создание класса</span><span class="sxs-lookup"><span data-stu-id="5a040-116">Create the class</span></span>
+## <a name="create-the-class"></a><span data-ttu-id="4252a-116">Создание класса</span><span class="sxs-lookup"><span data-stu-id="4252a-116">Create the class</span></span>
 
-<span data-ttu-id="5a040-117">Для создания класса PowerShell необходимо ключевое слово class.</span><span class="sxs-lookup"><span data-stu-id="5a040-117">You use the class keyword to create a PowerShell class.</span></span> <span data-ttu-id="5a040-118">Чтобы указать, что класс является ресурсом DSC, используйте атрибут **DscResource()**.</span><span class="sxs-lookup"><span data-stu-id="5a040-118">To specify that a class is a DSC resource, use the **DscResource()** attribute.</span></span> <span data-ttu-id="5a040-119">Имя класса — это имя ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="5a040-119">The name of the class is the name of the DSC resource.</span></span>
+<span data-ttu-id="4252a-117">Для создания класса PowerShell необходимо ключевое слово class.</span><span class="sxs-lookup"><span data-stu-id="4252a-117">You use the class keyword to create a PowerShell class.</span></span> <span data-ttu-id="4252a-118">Чтобы указать, что класс является ресурсом DSC, используйте атрибут **DscResource()**.</span><span class="sxs-lookup"><span data-stu-id="4252a-118">To specify that a class is a DSC resource, use the **DscResource()** attribute.</span></span> <span data-ttu-id="4252a-119">Имя класса — это имя ресурса DSC.</span><span class="sxs-lookup"><span data-stu-id="4252a-119">The name of the class is the name of the DSC resource.</span></span>
 
 ```powershell
 [DscResource()]
@@ -45,9 +44,9 @@ class FileResource {
 }
 ```
 
-### <a name="declare-properties"></a><span data-ttu-id="5a040-120">Объявление свойств</span><span class="sxs-lookup"><span data-stu-id="5a040-120">Declare properties</span></span>
+### <a name="declare-properties"></a><span data-ttu-id="4252a-120">Объявление свойств</span><span class="sxs-lookup"><span data-stu-id="4252a-120">Declare properties</span></span>
 
-<span data-ttu-id="5a040-121">Схема ресурсов DSC определяется как свойства класса.</span><span class="sxs-lookup"><span data-stu-id="5a040-121">The DSC resource schema is defined as properties of the class.</span></span> <span data-ttu-id="5a040-122">Необходимо объявить три свойства описанным ниже образом.</span><span class="sxs-lookup"><span data-stu-id="5a040-122">We declare three properties as follows.</span></span>
+<span data-ttu-id="4252a-121">Схема ресурсов DSC определяется как свойства класса.</span><span class="sxs-lookup"><span data-stu-id="4252a-121">The DSC resource schema is defined as properties of the class.</span></span> <span data-ttu-id="4252a-122">Необходимо объявить три свойства описанным ниже образом.</span><span class="sxs-lookup"><span data-stu-id="4252a-122">We declare three properties as follows.</span></span>
 
 ```powershell
 [DscProperty(Key)]
@@ -63,14 +62,14 @@ class FileResource {
 [Nullable[datetime]] $CreationTime
 ```
 
-<span data-ttu-id="5a040-123">Обратите внимание, что для изменения свойств используются атрибуты.</span><span class="sxs-lookup"><span data-stu-id="5a040-123">Notice that the properties are modified by attributes.</span></span> <span data-ttu-id="5a040-124">Значения атрибутов выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="5a040-124">The meaning of the attributes is as follows:</span></span>
+<span data-ttu-id="4252a-123">Обратите внимание, что для изменения свойств используются атрибуты.</span><span class="sxs-lookup"><span data-stu-id="4252a-123">Notice that the properties are modified by attributes.</span></span> <span data-ttu-id="4252a-124">Значения атрибутов выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="4252a-124">The meaning of the attributes is as follows:</span></span>
 
-- <span data-ttu-id="5a040-125">**DscProperty(Key)** — обязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="5a040-125">**DscProperty(Key)**: The property is required.</span></span> <span data-ttu-id="5a040-126">Это свойство является ключом.</span><span class="sxs-lookup"><span data-stu-id="5a040-126">The property is a key.</span></span> <span data-ttu-id="5a040-127">Значения всех свойств, помеченных как ключи, необходимо объединять для уникальной идентификации экземпляра ресурсов в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5a040-127">The values of all properties marked as keys must combine to uniquely identify a resource instance within a configuration.</span></span>
-- <span data-ttu-id="5a040-128">**DscProperty(Mandatory)** — обязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="5a040-128">**DscProperty(Mandatory)**: The property is required.</span></span>
-- <span data-ttu-id="5a040-129">**DscProperty(NotConfigurable)** — свойство, доступное только для чтения.</span><span class="sxs-lookup"><span data-stu-id="5a040-129">**DscProperty(NotConfigurable)**: The property is read-only.</span></span> <span data-ttu-id="5a040-130">Свойства с таким атрибутом задаются не конфигурацией, а методом **Get()** (если они есть).</span><span class="sxs-lookup"><span data-stu-id="5a040-130">Properties marked with this attribute cannot be set by a configuration, but are populated by the **Get()** method when present.</span></span>
-- <span data-ttu-id="5a040-131">**DscProperty()** — свойство доступно для настройки, но не является обязательным.</span><span class="sxs-lookup"><span data-stu-id="5a040-131">**DscProperty()**: The property is configurable, but it is not required.</span></span>
+- <span data-ttu-id="4252a-125">**DscProperty(Key)** — обязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="4252a-125">**DscProperty(Key)**: The property is required.</span></span> <span data-ttu-id="4252a-126">Это свойство является ключом.</span><span class="sxs-lookup"><span data-stu-id="4252a-126">The property is a key.</span></span> <span data-ttu-id="4252a-127">Значения всех свойств, помеченных как ключи, необходимо объединять для уникальной идентификации экземпляра ресурсов в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="4252a-127">The values of all properties marked as keys must combine to uniquely identify a resource instance within a configuration.</span></span>
+- <span data-ttu-id="4252a-128">**DscProperty(Mandatory)** — обязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="4252a-128">**DscProperty(Mandatory)**: The property is required.</span></span>
+- <span data-ttu-id="4252a-129">**DscProperty(NotConfigurable)** — свойство, доступное только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4252a-129">**DscProperty(NotConfigurable)**: The property is read-only.</span></span> <span data-ttu-id="4252a-130">Свойства с таким атрибутом задаются не конфигурацией, а методом **Get()** (если они есть).</span><span class="sxs-lookup"><span data-stu-id="4252a-130">Properties marked with this attribute cannot be set by a configuration, but are populated by the **Get()** method when present.</span></span>
+- <span data-ttu-id="4252a-131">**DscProperty()** — свойство доступно для настройки, но не является обязательным.</span><span class="sxs-lookup"><span data-stu-id="4252a-131">**DscProperty()**: The property is configurable, but it is not required.</span></span>
 
-<span data-ttu-id="5a040-132">Свойства **$Path** и **$SourcePath** представляют собой строки.</span><span class="sxs-lookup"><span data-stu-id="5a040-132">The **$Path** and **$SourcePath** properties are both strings.</span></span> <span data-ttu-id="5a040-133">**$CreationTime** — это свойство [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx).</span><span class="sxs-lookup"><span data-stu-id="5a040-133">The **$CreationTime** is a [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx) property.</span></span> <span data-ttu-id="5a040-134">Свойство **$Ensure** является перечислением и определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="5a040-134">The **$Ensure** property is an enumeration type, defined as follows.</span></span>
+<span data-ttu-id="4252a-132">Свойства **$Path** и **$SourcePath** представляют собой строки.</span><span class="sxs-lookup"><span data-stu-id="4252a-132">The **$Path** and **$SourcePath** properties are both strings.</span></span> <span data-ttu-id="4252a-133">**$CreationTime** — это свойство [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx).</span><span class="sxs-lookup"><span data-stu-id="4252a-133">The **$CreationTime** is a [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx) property.</span></span> <span data-ttu-id="4252a-134">Свойство **$Ensure** является перечислением и определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="4252a-134">The **$Ensure** property is an enumeration type, defined as follows.</span></span>
 
 ```powershell
 enum Ensure 
@@ -80,11 +79,11 @@ enum Ensure
 }
 ```
 
-### <a name="implementing-the-methods"></a><span data-ttu-id="5a040-135">Реализация методов</span><span class="sxs-lookup"><span data-stu-id="5a040-135">Implementing the methods</span></span>
+### <a name="implementing-the-methods"></a><span data-ttu-id="4252a-135">Реализация методов</span><span class="sxs-lookup"><span data-stu-id="4252a-135">Implementing the methods</span></span>
 
-<span data-ttu-id="5a040-136">Методы **Get()**, **Set()** и **Test()** эквивалентны функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.</span><span class="sxs-lookup"><span data-stu-id="5a040-136">The **Get()**, **Set()**, and **Test()** methods are analogous to the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** functions in a script resource.</span></span>
+<span data-ttu-id="4252a-136">Методы **Get()**, **Set()** и **Test()** эквивалентны функциям **Get-TargetResource**, **Set-TargetResource** и **Test-TargetResource** в ресурсе сценария.</span><span class="sxs-lookup"><span data-stu-id="4252a-136">The **Get()**, **Set()**, and **Test()** methods are analogous to the **Get-TargetResource**, **Set-TargetResource**, and **Test-TargetResource** functions in a script resource.</span></span>
 
-<span data-ttu-id="5a040-137">Кроме того, этот код включает CopyFile() — вспомогательную функцию, которая копирует файл из папки **$SourcePath** в папку **$Path**.</span><span class="sxs-lookup"><span data-stu-id="5a040-137">This code also includes the CopyFile() function, a helper function that copies the file from **$SourcePath** to **$Path**.</span></span> 
+<span data-ttu-id="4252a-137">Кроме того, этот код включает CopyFile() — вспомогательную функцию, которая копирует файл из папки **$SourcePath** в папку **$Path**.</span><span class="sxs-lookup"><span data-stu-id="4252a-137">This code also includes the CopyFile() function, a helper function that copies the file from **$SourcePath** to **$Path**.</span></span> 
 
 ```powershell
 
@@ -217,8 +216,8 @@ enum Ensure
     }
 ```
 
-### <a name="the-complete-file"></a><span data-ttu-id="5a040-138">Полный файл</span><span class="sxs-lookup"><span data-stu-id="5a040-138">The complete file</span></span>
-<span data-ttu-id="5a040-139">Полный файл класса:</span><span class="sxs-lookup"><span data-stu-id="5a040-139">The complete class file follows.</span></span>
+### <a name="the-complete-file"></a><span data-ttu-id="4252a-138">Полный файл</span><span class="sxs-lookup"><span data-stu-id="4252a-138">The complete file</span></span>
+<span data-ttu-id="4252a-139">Полный файл класса:</span><span class="sxs-lookup"><span data-stu-id="4252a-139">The complete class file follows.</span></span>
 
 ```powershell
 enum Ensure
@@ -416,9 +415,9 @@ class FileResource
 ```
 
 
-## <a name="create-a-manifest"></a><span data-ttu-id="5a040-140">Создание манифеста</span><span class="sxs-lookup"><span data-stu-id="5a040-140">Create a manifest</span></span>
+## <a name="create-a-manifest"></a><span data-ttu-id="4252a-140">Создание манифеста</span><span class="sxs-lookup"><span data-stu-id="4252a-140">Create a manifest</span></span>
 
-<span data-ttu-id="5a040-141">Чтобы сделать ресурс на основе класса доступным для модуля DSC, необходимо добавить в файл манифеста оператор **DscResourcesToExport**, который указывает модулю, что нужно экспортировать этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="5a040-141">To make a class-based resource available to the DSC engine, you must include a **DscResourcesToExport** statement in the manifest file that instructs the module to export the resource.</span></span> <span data-ttu-id="5a040-142">Наш манифест выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="5a040-142">Our manifest looks like this:</span></span>
+<span data-ttu-id="4252a-141">Чтобы сделать ресурс на основе класса доступным для модуля DSC, необходимо добавить в файл манифеста оператор **DscResourcesToExport**, который указывает модулю, что нужно экспортировать этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="4252a-141">To make a class-based resource available to the DSC engine, you must include a **DscResourcesToExport** statement in the manifest file that instructs the module to export the resource.</span></span> <span data-ttu-id="4252a-142">Наш манифест выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="4252a-142">Our manifest looks like this:</span></span>
 
 ```powershell
 @{
@@ -454,9 +453,9 @@ PowerShellVersion = '5.0'
 } 
 ```
 
-## <a name="test-the-resource"></a><span data-ttu-id="5a040-143">Тестирование ресурса</span><span class="sxs-lookup"><span data-stu-id="5a040-143">Test the resource</span></span>
+## <a name="test-the-resource"></a><span data-ttu-id="4252a-143">Тестирование ресурса</span><span class="sxs-lookup"><span data-stu-id="4252a-143">Test the resource</span></span>
 
-<span data-ttu-id="5a040-144">Сохранив файлы класса и манифеста в структуру папок, как описано выше, вы можете создать конфигурацию, использующую новый ресурс.</span><span class="sxs-lookup"><span data-stu-id="5a040-144">After saving the class and manifest files in the folder structure as described earlier, you can create a configuration that uses the new resource.</span></span> <span data-ttu-id="5a040-145">Инструкции по запуску конфигурации DSC см. в статье [Активирование конфигураций](enactingConfigurations.md).</span><span class="sxs-lookup"><span data-stu-id="5a040-145">For information about how to run a DSC configuration, see [Enacting configurations](enactingConfigurations.md).</span></span> <span data-ttu-id="5a040-146">Следующая конфигурация будет проверять, существует ли файл `c:\test\test.txt`, и, если его нет, копировать файл из `c:\test.txt` (необходимо создать файл `c:\test.txt` перед запуском конфигурации).</span><span class="sxs-lookup"><span data-stu-id="5a040-146">The following configuration will check to see whether the file at `c:\test\test.txt` exists, and, if not, copies the file from `c:\test.txt` (you should create `c:\test.txt` before you run the configuration).</span></span>
+<span data-ttu-id="4252a-144">Сохранив файлы класса и манифеста в структуру папок, как описано выше, вы можете создать конфигурацию, использующую новый ресурс.</span><span class="sxs-lookup"><span data-stu-id="4252a-144">After saving the class and manifest files in the folder structure as described earlier, you can create a configuration that uses the new resource.</span></span> <span data-ttu-id="4252a-145">Инструкции по запуску конфигурации DSC см. в статье [Активирование конфигураций](enactingConfigurations.md).</span><span class="sxs-lookup"><span data-stu-id="4252a-145">For information about how to run a DSC configuration, see [Enacting configurations](enactingConfigurations.md).</span></span> <span data-ttu-id="4252a-146">Следующая конфигурация будет проверять, существует ли файл `c:\test\test.txt`, и, если его нет, копировать файл из `c:\test.txt` (необходимо создать файл `c:\test.txt` перед запуском конфигурации).</span><span class="sxs-lookup"><span data-stu-id="4252a-146">The following configuration will check to see whether the file at `c:\test\test.txt` exists, and, if not, copies the file from `c:\test.txt` (you should create `c:\test.txt` before you run the configuration).</span></span>
 
 ```powershell
 Configuration Test
@@ -473,24 +472,24 @@ Test
 Start-DscConfiguration -Wait -Force Test
 ```
 
-## <a name="supporting-psdscrunascredential"></a><span data-ttu-id="5a040-147">Поддержка PsDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="5a040-147">Supporting PsDscRunAsCredential</span></span>
+## <a name="supporting-psdscrunascredential"></a><span data-ttu-id="4252a-147">Поддержка PsDscRunAsCredential</span><span class="sxs-lookup"><span data-stu-id="4252a-147">Supporting PsDscRunAsCredential</span></span>
 
-><span data-ttu-id="5a040-148">**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="5a040-148">**Note:** **PsDscRunAsCredential** is supported in PowerShell 5.0 and later.</span></span>
+><span data-ttu-id="4252a-148">**Примечание.** **PsDscRunAsCredential** поддерживается в PowerShell 5.0 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="4252a-148">**Note:** **PsDscRunAsCredential** is supported in PowerShell 5.0 and later.</span></span>
 
-<span data-ttu-id="5a040-149">Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.</span><span class="sxs-lookup"><span data-stu-id="5a040-149">The **PsDscRunAsCredential** property can be used in [DSC configurations](configurations.md) resource block to specify that the resource should be run under a specified set of credentials.</span></span>
-<span data-ttu-id="5a040-150">Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).</span><span class="sxs-lookup"><span data-stu-id="5a040-150">For more information, see [Running DSC with user credentials](runAsUser.md).</span></span>
+<span data-ttu-id="4252a-149">Свойство **PsDscRunAsCredential** может использоваться в блоке ресурса [конфигураций DSC](configurations.md), чтобы указать, что ресурс должен выполняться с указанным набором учетных данных.</span><span class="sxs-lookup"><span data-stu-id="4252a-149">The **PsDscRunAsCredential** property can be used in [DSC configurations](configurations.md) resource block to specify that the resource should be run under a specified set of credentials.</span></span>
+<span data-ttu-id="4252a-150">Дополнительные сведения см. в разделе [Запуск DSC с учетными данными пользователя](runAsUser.md).</span><span class="sxs-lookup"><span data-stu-id="4252a-150">For more information, see [Running DSC with user credentials](runAsUser.md).</span></span>
 
-### <a name="require-or-disallow-psdscrunascredential-for-your-resource"></a><span data-ttu-id="5a040-151">Требование параметра PsDscRunAsCredential для ресурса или его запрещение</span><span class="sxs-lookup"><span data-stu-id="5a040-151">Require or disallow PsDscRunAsCredential for your resource</span></span>
+### <a name="require-or-disallow-psdscrunascredential-for-your-resource"></a><span data-ttu-id="4252a-151">Требование параметра PsDscRunAsCredential для ресурса или его запрещение</span><span class="sxs-lookup"><span data-stu-id="4252a-151">Require or disallow PsDscRunAsCredential for your resource</span></span>
 
-<span data-ttu-id="5a040-152">Атрибут **DscResource()** принимает необязательный параметр **RunAsCredential**.</span><span class="sxs-lookup"><span data-stu-id="5a040-152">The **DscResource()** attribute takes an optional parameter **RunAsCredential**.</span></span>
-<span data-ttu-id="5a040-153">Этот параметр принимает одно из трех значений:</span><span class="sxs-lookup"><span data-stu-id="5a040-153">This parameter takes one of three values:</span></span>
+<span data-ttu-id="4252a-152">Атрибут **DscResource()** принимает необязательный параметр **RunAsCredential**.</span><span class="sxs-lookup"><span data-stu-id="4252a-152">The **DscResource()** attribute takes an optional parameter **RunAsCredential**.</span></span>
+<span data-ttu-id="4252a-153">Этот параметр принимает одно из трех значений:</span><span class="sxs-lookup"><span data-stu-id="4252a-153">This parameter takes one of three values:</span></span>
 
-- <span data-ttu-id="5a040-154">`Optional` **PsDscRunAsCredential** необязателен для конфигураций, которые вызывают этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="5a040-154">`Optional` **PsDscRunAsCredential** is optional for configurations that call this resource.</span></span> <span data-ttu-id="5a040-155">Это значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5a040-155">This is the default value.</span></span>
-- <span data-ttu-id="5a040-156">`Mandatory` **PsDscRunAsCredential** должен использоваться для какой-либо конфигурации, которая вызывает этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="5a040-156">`Mandatory` **PsDscRunAsCredential** must be used for any configuration that calls this resource.</span></span>
-- <span data-ttu-id="5a040-157">Конфигурации `NotSupported`, которые вызывают этот ресурс, не могут использовать **PsDscRunAsCredential**.</span><span class="sxs-lookup"><span data-stu-id="5a040-157">`NotSupported` Configurations that call this resource cannot use **PsDscRunAsCredential**.</span></span>
-- <span data-ttu-id="5a040-158">`Default` аналогичен `Optional`.</span><span class="sxs-lookup"><span data-stu-id="5a040-158">`Default` Same as `Optional`.</span></span>
+- <span data-ttu-id="4252a-154">`Optional` **PsDscRunAsCredential** необязателен для конфигураций, которые вызывают этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="4252a-154">`Optional` **PsDscRunAsCredential** is optional for configurations that call this resource.</span></span> <span data-ttu-id="4252a-155">Это значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="4252a-155">This is the default value.</span></span>
+- <span data-ttu-id="4252a-156">`Mandatory` **PsDscRunAsCredential** должен использоваться для какой-либо конфигурации, которая вызывает этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="4252a-156">`Mandatory` **PsDscRunAsCredential** must be used for any configuration that calls this resource.</span></span>
+- <span data-ttu-id="4252a-157">Конфигурации `NotSupported`, которые вызывают этот ресурс, не могут использовать **PsDscRunAsCredential**.</span><span class="sxs-lookup"><span data-stu-id="4252a-157">`NotSupported` Configurations that call this resource cannot use **PsDscRunAsCredential**.</span></span>
+- <span data-ttu-id="4252a-158">`Default` аналогичен `Optional`.</span><span class="sxs-lookup"><span data-stu-id="4252a-158">`Default` Same as `Optional`.</span></span>
 
-<span data-ttu-id="5a040-159">Например, используйте следующий атрибут, чтобы указать, что настраиваемый ресурс не поддерживает использование **PsDscRunAsCredential**:</span><span class="sxs-lookup"><span data-stu-id="5a040-159">For example, use the following attribute to specify that your custom resource does not support using **PsDscRunAsCredential**:</span></span>
+<span data-ttu-id="4252a-159">Например, используйте следующий атрибут, чтобы указать, что настраиваемый ресурс не поддерживает использование **PsDscRunAsCredential**:</span><span class="sxs-lookup"><span data-stu-id="4252a-159">For example, use the following attribute to specify that your custom resource does not support using **PsDscRunAsCredential**:</span></span>
 
 ```powershell
 [DscResource(RunAsCredential=NotSupported)]
@@ -498,11 +497,11 @@ class FileResource {
 }
 ```
 
-### <a name="access-the-user-context"></a><span data-ttu-id="5a040-160">Доступ к контексту пользователя</span><span class="sxs-lookup"><span data-stu-id="5a040-160">Access the user context</span></span>
+### <a name="access-the-user-context"></a><span data-ttu-id="4252a-160">Доступ к контексту пользователя</span><span class="sxs-lookup"><span data-stu-id="4252a-160">Access the user context</span></span>
 
-<span data-ttu-id="5a040-161">Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$global:PsDscContext`.</span><span class="sxs-lookup"><span data-stu-id="5a040-161">To access the user context from within a custom resource, you can use the automatic variable `$global:PsDscContext`.</span></span>
+<span data-ttu-id="4252a-161">Чтобы получить доступ к пользовательскому контексту из настраиваемого ресурса, можно использовать автоматическую переменную `$global:PsDscContext`.</span><span class="sxs-lookup"><span data-stu-id="4252a-161">To access the user context from within a custom resource, you can use the automatic variable `$global:PsDscContext`.</span></span>
 
-<span data-ttu-id="5a040-162">Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:</span><span class="sxs-lookup"><span data-stu-id="5a040-162">For example the following code would write the user context under which the resource is running to the verbose output stream:</span></span>
+<span data-ttu-id="4252a-162">Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:</span><span class="sxs-lookup"><span data-stu-id="4252a-162">For example the following code would write the user context under which the resource is running to the verbose output stream:</span></span>
 
 ```powershell
 if (PsDscContext.RunAsUser) {
@@ -510,7 +509,7 @@ if (PsDscContext.RunAsUser) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5a040-163">См. также</span><span class="sxs-lookup"><span data-stu-id="5a040-163">See Also</span></span>
-### <a name="concepts"></a><span data-ttu-id="5a040-164">Концепции</span><span class="sxs-lookup"><span data-stu-id="5a040-164">Concepts</span></span>
-[<span data-ttu-id="5a040-165">Создание пользовательских ресурсов DSC Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="5a040-165">Build Custom Windows PowerShell Desired State Configuration Resources</span></span>](authoringResource.md)
+## <a name="see-also"></a><span data-ttu-id="4252a-163">См. также</span><span class="sxs-lookup"><span data-stu-id="4252a-163">See Also</span></span>
+### <a name="concepts"></a><span data-ttu-id="4252a-164">Концепции</span><span class="sxs-lookup"><span data-stu-id="4252a-164">Concepts</span></span>
+[<span data-ttu-id="4252a-165">Создание пользовательских ресурсов DSC Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="4252a-165">Build Custom Windows PowerShell Desired State Configuration Resources</span></span>](authoringResource.md)
 

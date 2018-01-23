@@ -1,20 +1,19 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс nxSshAuthorizedKeys в DSC для Linux"
-ms.openlocfilehash: 3c145eeb86d971dc00e1c7cea60fb50c83d7b9a2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: f48ecec39ffe24cee99ca08ad9d050b36c5e04bf
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a><span data-ttu-id="616c0-103">Ресурс nxSshAuthorizedKeys в DSC для Linux</span><span class="sxs-lookup"><span data-stu-id="616c0-103">DSC for Linux nxSshAuthorizedKeys Resource</span></span>
+# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a><span data-ttu-id="6bce6-103">Ресурс nxSshAuthorizedKeys в DSC для Linux</span><span class="sxs-lookup"><span data-stu-id="6bce6-103">DSC for Linux nxSshAuthorizedKeys Resource</span></span>
 
-<span data-ttu-id="616c0-104">Ресурс **NxAuthorizedKeys** в DSC PowerShell обеспечивает механизм управления авторизованными SSH-ключами для указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="616c0-104">The **nxAuthorizedKeys** resource in PowerShell Desired State Configuration (DSC) provides a mechanism to manage authorized ssh keys for a specified user.</span></span>
+<span data-ttu-id="6bce6-104">Ресурс **NxAuthorizedKeys** в DSC PowerShell обеспечивает механизм управления авторизованными SSH-ключами для указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="6bce6-104">The **nxAuthorizedKeys** resource in PowerShell Desired State Configuration (DSC) provides a mechanism to manage authorized ssh keys for a specified user.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="616c0-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="616c0-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6bce6-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6bce6-105">Syntax</span></span>
 
 ```
 nxAuthorizedKeys <string> #ResourceName
@@ -28,19 +27,19 @@ nxAuthorizedKeys <string> #ResourceName
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="616c0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="616c0-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6bce6-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6bce6-106">Properties</span></span>
 
-|  <span data-ttu-id="616c0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="616c0-107">Property</span></span> |  <span data-ttu-id="616c0-108">Описание</span><span class="sxs-lookup"><span data-stu-id="616c0-108">Description</span></span> | 
+|  <span data-ttu-id="6bce6-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6bce6-107">Property</span></span> |  <span data-ttu-id="6bce6-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6bce6-108">Description</span></span> | 
 |---|---|
-| <span data-ttu-id="616c0-109">KeyComment</span><span class="sxs-lookup"><span data-stu-id="616c0-109">KeyComment</span></span>| <span data-ttu-id="616c0-110">Уникальный комментарий к ключу.</span><span class="sxs-lookup"><span data-stu-id="616c0-110">A unique comment for the key.</span></span> <span data-ttu-id="616c0-111">Используется для уникальной идентификации ключей.</span><span class="sxs-lookup"><span data-stu-id="616c0-111">This is used to uniquely identify keys.</span></span>| 
-| <span data-ttu-id="616c0-112">Ensure</span><span class="sxs-lookup"><span data-stu-id="616c0-112">Ensure</span></span>| <span data-ttu-id="616c0-113">Указывает, определен ли ключ.</span><span class="sxs-lookup"><span data-stu-id="616c0-113">Specifies whether the key is defined.</span></span> <span data-ttu-id="616c0-114">Если это свойство имеет значение Absent, обеспечивается отсутствие ключа в файле авторизованных ключей пользователя.</span><span class="sxs-lookup"><span data-stu-id="616c0-114">Set this property to "Absent" to ensure the key does not exist in the user’s authorized keys file.</span></span> <span data-ttu-id="616c0-115">Если это свойство имеет значение Present, обеспечивается наличие определения ключа в файле авторизованных ключей пользователя.</span><span class="sxs-lookup"><span data-stu-id="616c0-115">Set it to "Present" to ensure the key is defined in the user’s authorized key file.</span></span>| 
-| <span data-ttu-id="616c0-116">Имя пользователя</span><span class="sxs-lookup"><span data-stu-id="616c0-116">Username</span></span>| <span data-ttu-id="616c0-117">Указывает, для какого пользователя осуществляется управление авторизованными SSH-ключами.</span><span class="sxs-lookup"><span data-stu-id="616c0-117">The username to manage ssh authorized keys for.</span></span> <span data-ttu-id="616c0-118">Если свойство не определено, пользователь по умолчанию — root.</span><span class="sxs-lookup"><span data-stu-id="616c0-118">If not defined, the default user is "root".</span></span>| 
-| <span data-ttu-id="616c0-119">Клавиши</span><span class="sxs-lookup"><span data-stu-id="616c0-119">Key</span></span>| <span data-ttu-id="616c0-120">Указывает содержимое ключа</span><span class="sxs-lookup"><span data-stu-id="616c0-120">The contents of the key.</span></span> <span data-ttu-id="616c0-121">Требуется, если свойство **Ensure** имеет значение Present.</span><span class="sxs-lookup"><span data-stu-id="616c0-121">This is required if **Ensure** is set to "Present".</span></span>| 
-| <span data-ttu-id="616c0-122">DependsOn</span><span class="sxs-lookup"><span data-stu-id="616c0-122">DependsOn</span></span> | <span data-ttu-id="616c0-123">Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса.</span><span class="sxs-lookup"><span data-stu-id="616c0-123">Indicates that the configuration of another resource must run before this resource is configured.</span></span> <span data-ttu-id="616c0-124">Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.</span><span class="sxs-lookup"><span data-stu-id="616c0-124">For example, if the **ID** of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`.</span></span>| 
+| <span data-ttu-id="6bce6-109">KeyComment</span><span class="sxs-lookup"><span data-stu-id="6bce6-109">KeyComment</span></span>| <span data-ttu-id="6bce6-110">Уникальный комментарий к ключу.</span><span class="sxs-lookup"><span data-stu-id="6bce6-110">A unique comment for the key.</span></span> <span data-ttu-id="6bce6-111">Используется для уникальной идентификации ключей.</span><span class="sxs-lookup"><span data-stu-id="6bce6-111">This is used to uniquely identify keys.</span></span>| 
+| <span data-ttu-id="6bce6-112">Ensure</span><span class="sxs-lookup"><span data-stu-id="6bce6-112">Ensure</span></span>| <span data-ttu-id="6bce6-113">Указывает, определен ли ключ.</span><span class="sxs-lookup"><span data-stu-id="6bce6-113">Specifies whether the key is defined.</span></span> <span data-ttu-id="6bce6-114">Если это свойство имеет значение Absent, обеспечивается отсутствие ключа в файле авторизованных ключей пользователя.</span><span class="sxs-lookup"><span data-stu-id="6bce6-114">Set this property to "Absent" to ensure the key does not exist in the user’s authorized keys file.</span></span> <span data-ttu-id="6bce6-115">Если это свойство имеет значение Present, обеспечивается наличие определения ключа в файле авторизованных ключей пользователя.</span><span class="sxs-lookup"><span data-stu-id="6bce6-115">Set it to "Present" to ensure the key is defined in the user’s authorized key file.</span></span>| 
+| <span data-ttu-id="6bce6-116">Имя пользователя</span><span class="sxs-lookup"><span data-stu-id="6bce6-116">Username</span></span>| <span data-ttu-id="6bce6-117">Указывает, для какого пользователя осуществляется управление авторизованными SSH-ключами.</span><span class="sxs-lookup"><span data-stu-id="6bce6-117">The username to manage ssh authorized keys for.</span></span> <span data-ttu-id="6bce6-118">Если свойство не определено, пользователь по умолчанию — root.</span><span class="sxs-lookup"><span data-stu-id="6bce6-118">If not defined, the default user is "root".</span></span>| 
+| <span data-ttu-id="6bce6-119">Клавиши</span><span class="sxs-lookup"><span data-stu-id="6bce6-119">Key</span></span>| <span data-ttu-id="6bce6-120">Указывает содержимое ключа</span><span class="sxs-lookup"><span data-stu-id="6bce6-120">The contents of the key.</span></span> <span data-ttu-id="6bce6-121">Требуется, если свойство **Ensure** имеет значение Present.</span><span class="sxs-lookup"><span data-stu-id="6bce6-121">This is required if **Ensure** is set to "Present".</span></span>| 
+| <span data-ttu-id="6bce6-122">DependsOn</span><span class="sxs-lookup"><span data-stu-id="6bce6-122">DependsOn</span></span> | <span data-ttu-id="6bce6-123">Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса.</span><span class="sxs-lookup"><span data-stu-id="6bce6-123">Indicates that the configuration of another resource must run before this resource is configured.</span></span> <span data-ttu-id="6bce6-124">Например, если **идентификатор** первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.</span><span class="sxs-lookup"><span data-stu-id="6bce6-124">For example, if the **ID** of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`.</span></span>| 
 
-## <a name="example"></a><span data-ttu-id="616c0-125">Пример</span><span class="sxs-lookup"><span data-stu-id="616c0-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6bce6-125">Пример</span><span class="sxs-lookup"><span data-stu-id="6bce6-125">Example</span></span>
 
-<span data-ttu-id="616c0-126">В следующем примере определяется общедоступный авторизованный SSH-ключ для пользователя monuser.</span><span class="sxs-lookup"><span data-stu-id="616c0-126">The following example defines a public ssh authorized key for the user "monuser".</span></span>
+<span data-ttu-id="6bce6-126">В следующем примере определяется общедоступный авторизованный SSH-ключ для пользователя monuser.</span><span class="sxs-lookup"><span data-stu-id="6bce6-126">The following example defines a public ssh authorized key for the user "monuser".</span></span>
 
 ```
 Import-DSCResource -Module nx 
