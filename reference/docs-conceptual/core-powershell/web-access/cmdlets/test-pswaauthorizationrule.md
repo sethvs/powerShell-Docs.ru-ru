@@ -1,18 +1,16 @@
 ---
 description: 
-manager: carmonm
 ms.topic: article
-author: jpjofre
 ms.prod: powershell
 keywords: "powershell,командлет"
 ms.date: 2016-12-12
 title: "проверка pswaauthorizationrule"
 ms.technology: powershell
-ms.openlocfilehash: 900547301c815ba6fe3a9507f975503fec864e4e
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: fb2937397616160c70b056e412e42fb8ff4c2f27
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="test-pswaauthorizationrule"></a>Test-PswaAuthorizationRule
 

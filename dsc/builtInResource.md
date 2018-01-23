@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Встроенные ресурсы настройки требуемого состояния Windows PowerShell"
-ms.openlocfilehash: 181cafde60d44a1cd663472279dab01f38833522
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: fcc77ac07144864e65413b3c14c61bc8a3422351
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="built-in-windows-powershell-desired-state-configuration-resources"></a>Встроенные ресурсы настройки требуемого состояния Windows PowerShell
 

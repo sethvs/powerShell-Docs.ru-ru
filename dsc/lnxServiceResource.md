@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс nxService в DSC для Linux"
-ms.openlocfilehash: be9f1f090eacc38bcdb77e53020d559bab72c156
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 4273ad59f15eedd08b07888ebb6ee51d039b72b3
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="dsc-for-linux-nxservice-resource"></a>Ресурс nxService в DSC для Linux
 
@@ -31,7 +30,7 @@ nxService <string> #ResourceName
 ## <a name="properties"></a>Свойства
 |  Свойство |  Описание | 
 |---|---|
-| Название| Указывает имя службы или управляющей программы, которую нужно настроить.| 
+| Name| Указывает имя службы или управляющей программы, которую нужно настроить.| 
 | Контроллер| Указывает тип контроллера для использования при настройке службы.| 
 | Включен| Указывает, запускается ли служба во время загрузки.| 
 | State| Указывает, запущена ли служба. Установите для этого свойства значение Stopped, чтобы служба не выполнялась. Установите для этого свойства значение Running, чтобы служба выполнялась.| 

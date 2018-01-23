@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-10-12
-author: eslesar;mgreenegit
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)"
-ms.openlocfilehash: d46862f9ea0f8e3206c596af7232160fc4a97939
-ms.sourcegitcommit: 9a5da3f739b1eebb81ede58bd4fc8037bad87224
+ms.openlocfilehash: 6ff8fa75f8ed33dc8da5285373ec1f3858cfa917
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Локальный диспетчер конфигураций для настройки требуемого состояния Windows PowerShell 4.0 (LCM)
 

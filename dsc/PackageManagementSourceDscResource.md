@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс PackageManagementSource DSC"
-ms.openlocfilehash: 80d157aff5bf7685a797baaf6a26215f02473096
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 1c904c70369a75802484c3c0520df63602760361
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="dsc-packagemanagementsource-resource"></a>Ресурс PackageManagementSource DSC
 
@@ -33,7 +32,7 @@ PSModule [string] #ResourceName
 ## <a name="properties"></a>Свойства
 |  Свойство  |  Описание   | 
 |---|---| 
-| Название| Указывает имя источника пакета, который будет зарегистрирован в системе или регистрация которого будет отменена.| 
+| Name| Указывает имя источника пакета, который будет зарегистрирован в системе или регистрация которого будет отменена.| 
 | Ensure| Определяет, будет ли зарегистрирован источник пакета или его регистрация будет отменена.| 
 | InstallationPolicy| Определяет, доверяете ли вы источнику пакета. Одно из двух значений: "Untrusted", "Trusted".| 
 | ProviderName| Указывает имя поставщика OneGet, с помощью которого вы можете взаимодействовать с источником пакета.| 

@@ -1,23 +1,22 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
-title: "Обзор платформы Desired State Configuration в Windows PowerShell"
-ms.openlocfilehash: 154a3c78a9bf2a029577ca6862f333b6bfe69878
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: "Общие сведения о службе настройки требуемого состояния Windows PowerShell"
+ms.openlocfilehash: 1d6ba0b2fdb514e703ddad11adf4cdace5c001a9
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="windows-powershell-desired-state-configuration-overview"></a>Обзор платформы Desired State Configuration в Windows PowerShell 
+# <a name="windows-powershell-desired-state-configuration-overview"></a>Общие сведения о службе настройки требуемого состояния Windows PowerShell 
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 DSC — это платформа управления в PowerShell, которая позволяет управлять ИТ-инфраструктурой и инфраструктурой разработки с помощью конфигурации в виде кода.
 
-- Ознакомьтесь с преимуществами использования DSC для компаний в [обзоре платформы Desired State Configuration для руководителей](decisionMaker.md).
-- Ознакомьтесь с преимуществами использования DSC для разработки в [обзоре платформы Desired State Configuration для инженеров](DscForEngineers.md).
+- Обзор преимуществ использования DSC для компаний см. в статье [Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей](decisionMaker.md).
+- Обзор преимуществ использования DSC для инженеров см. в статье [Общие сведения о настройке требуемого состояния для инженеров](DscForEngineers.md).
 - Чтобы начать использовать DSC, см. [Краткое руководство по DSC](quickStart.md).
 
 ## <a name="key-concepts"></a>Основные понятия

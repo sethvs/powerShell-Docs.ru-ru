@@ -1,19 +1,17 @@
 ---
 description: 
-manager: carmonm
 ms.topic: article
-author: jpjofre
 ms.prod: powershell
 keywords: "powershell,командлет"
 ms.date: 2016-12-12
 title: "добавление pswaauthorizationrule"
 ms.technology: powershell
 schema: 2.0.0
-ms.openlocfilehash: 18422f71b2a5f9af07af94e4324d3c7774f1d5ea
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 196797215a678e6f674592dc6b289816aced3c01
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="add-pswaauthorizationrule"></a>Add-PswaAuthorizationRule
 

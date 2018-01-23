@@ -1,18 +1,16 @@
 ---
 description: 
-manager: carmonm
 ms.topic: article
-author: jpjofre
 ms.prod: powershell
 keywords: "powershell,командлет"
 ms.date: 2016-12-12
 title: "удаление pswawebapplication"
 ms.technology: powershell
-ms.openlocfilehash: 5fe608b3bfbb90f842f16c1f5a8c51879589cf6d
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: cc54c94426d754ff2d3bf658e3e92083f02cd6c7
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="uninstall-pswawebapplication"></a>Uninstall-PswaWebApplication
 

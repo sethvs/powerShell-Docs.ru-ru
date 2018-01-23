@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс DSC WindowsOptionalFeatureSet"
-ms.openlocfilehash: 3bf6a993d0ec9ce71c1e9222ddaa3bb429accb15
-ms.sourcegitcommit: 79e8f03afb8d0b0bb0a167e56464929b27f51990
+ms.openlocfilehash: 6912e5cf92f23058342bc566bd66dc4be3357a30
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="dsc-windowsoptionalfeatureset-resource"></a>Ресурс DSC WindowsOptionalFeatureSet
 
@@ -39,7 +38,7 @@ WindowsOptionalFeature [string] #ResourceName
 
 |  Свойство  |  Описание   | 
 |---|---| 
-| Название| Указывает имена компонентов, которые необходимо включить или отключить.| 
+| Name| Указывает имена компонентов, которые необходимо включить или отключить.| 
 | Ensure| Указывает, включены ли компоненты. Чтобы включить компоненты, установите для этого свойства значение "Включить", чтобы отключить — значение "Отключить".|
 | Источник| Не реализовано.|
 | NoWindowsUpdateCheck| Указывает, обращается ли система DISM к Центру обновления Windows при поиске исходных файлов для включения компонентов. Если задано значение $true, система DISM не обращается к Центру обновления Windows.|

@@ -1,21 +1,20 @@
 ---
 ms.date: 2017-10-13
-author: eslesar;mgreenegit
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
-title: "Обзор платформы Desired State Configuration для руководителей"
-ms.openlocfilehash: 66822d9a60f98aab3d4f27d14b27ebc6ec90b2c9
-ms.sourcegitcommit: 9a5da3f739b1eebb81ede58bd4fc8037bad87224
+title: "Общие сведения о настройке требуемого состояния Windows PowerShell для руководителей"
+ms.openlocfilehash: ae545ead0718def44d5a17708d254b872691e1d3
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="desired-state-configuration-overview-for-engineers"></a>Обзор платформы Desired State Configuration для инженеров
 
 В этом документе, предназначенном для групп разработки и эксплуатации, описаны преимущества использования платформы Desired State Configuration (DSC) в PowerShell.
 C более высокой точкой зрения о преимуществах DSC вы можете ознакомиться в [обзоре платформы Desired State Configuration для руководителей](decisionMaker.md).
 
-## <a name="benefits-of-desired-state-configuration"></a>Преимущества Desired State Configuration
+## <a name="benefits-of-desired-state-configuration"></a>Преимущества настройки требуемого состояния
 
 Настройка требуемого состояния обеспечивает следующие преимущества:
 
@@ -36,7 +35,7 @@ DSC — это платформа, которая обеспечивает де�
 Рассматривая конфигурации DSC как часть кода приложения, DSC обеспечивает непрерывное развертывание.
 Конфигурации DSC должны обновляться в составе приложения. Это является гарантией того, что сведения, необходимые для развертывания приложения, всегда актуальны и готовы к использованию.
 
-## <a name="i-have-powershell-why-do-i-need-desired-state-configuration"></a>"Я использую PowerShell. Зачем мне платформа Desired State Configuration?"
+## <a name="i-have-powershell-why-do-i-need-desired-state-configuration"></a>"Я использую PowerShell. Зачем мне настройка требуемого состояния?"
 
 Конфигурации DSC отделяют намерение ("что мне нужно") от его реализации ("каким образом это сделать").
 Это означает, что логика выполнения содержится внутри ресурсов.
@@ -99,15 +98,15 @@ Configuration Sample_Share
       # implement the logic of "how" to execute a task
       xSmbShare MySMBShare
       {
-          Ensure      = "Present" 
+          Ensure      = "Present"
           Name        = "MyShare"
-          Path        = "C:\Demo\Temp"  
+          Path        = "C:\Demo\Temp"
           ReadAccess  = "Alice"
           FullAccess  = "Bob"
           Description = "This is an updated description for this share"
       }
    }
-} 
+}
 #Run the function to compile the configuration
 Sample_Share
 #Pass the configuration to the nodes we defined and configure them

@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0"
-ms.openlocfilehash: 19328018d276cddd0877869b0ec69c14c51e4b85
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 2449a4ddfea5c0ee7096ad7478e80166eb095bbe
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>Настройка опрашивающего клиента с помощью идентификатора конфигурации в PowerShell 4.0
 

@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-10-11
-author: eslesar;mgreenegit
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка локального диспетчера конфигураций"
-ms.openlocfilehash: 6ca527aae263637bbca5a064e0d770fe9384d679
-ms.sourcegitcommit: ea01285a3aa7818d67d4761fbd8793b9b66bd5f7
+ms.openlocfilehash: 947bc17347204f6f15a24f83b449582afe65a4ee
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configuring-the-local-configuration-manager"></a>Настройка локального диспетчера конфигураций
 
@@ -46,7 +45,7 @@ configuration LCMConfig
             RefreshMode = 'Push'
         }
     }
-} 
+}
 ```
 
 Процесс применения параметров к LCM аналогичен применению конфигурации DSC.
@@ -130,7 +129,7 @@ configuration LCMConfig
 Блок **ConfigurationRepositoryWeb** определяет следующие свойства:
 
 |Свойство|Type|Описание|
-|---|---|---| 
+|---|---|---|
 |AllowUnsecureConnection|bool|Укажите значение **$TRUE**, чтобы разрешить подключение между узлом и сервером без проверки подлинности. Укажите значение **$FALSE**, чтобы требовать проверку подлинности.|
 |CertificateID|строка|Отпечаток сертификата, который используется для проверки подлинности на сервере.|
 |ConfigurationNames|String[]|Массив имен конфигураций для опроса целевым узлом. Используется, только если узел зарегистрирован в опрашивающей службе с использованием свойства **RegistrationKey**. Дополнительные сведения см. в статье [Настройка опрашивающего клиента с использованием имен конфигураций](pullClientConfigNames.md).|
@@ -191,7 +190,7 @@ configuration LCMConfig
 Блок **PartialConfiguration** определяет следующие свойства:
 
 |Свойство|Type|Описание|
-|---|---|---| 
+|---|---|---|
 |ConfigurationSource|string[]|Массив имен для серверов конфигураций, определенных ранее в блоках **ConfigurationRepositoryWeb** и **ConfigurationRepositoryShare**, из которых извлекается частичная конфигурация.|
 |DependsOn|string{}|Список имен других конфигураций, которые должны быть завершены до применения этой частичной конфигурации.|
 |Описание|строка|Текст, используемый для описания частичной конфигурации.|
@@ -201,11 +200,11 @@ configuration LCMConfig
 
 __Примечание.__ DSC в службе автоматизации Azure поддерживает частичные конфигурации. Но из каждой учетной записи службы автоматизации можно получить только одну конфигурацию на один узел.
 
-## <a name="see-also"></a>См. также 
+## <a name="see-also"></a>См. также
 
 ### <a name="concepts"></a>Концепции
 [Обзор Desired State Configuration](overview.md)
- 
+
 [Начало работы с DSC в службе автоматизации Azure](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-getting-started)
 
 ### <a name="other-resources"></a>Прочие ресурсы
