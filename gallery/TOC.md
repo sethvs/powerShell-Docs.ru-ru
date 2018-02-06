@@ -11,6 +11,7 @@
 ### [Создание учетной записи PowerShellGallery](psgallery/psgallery_creating_an_account.md)
 ### [Создание и публикация элемента](psgallery/Creating-and-Publishing-an-item.md)
 ### [Руководства и рекомендации для публикации](psgallery/psgallery-PublishingGuidelines.md)
+### [Манифест элемента и пользовательский интерфейс коллекции](psgallery/psgallery_ItemManifestAffectingUI.md)
 ### [Исключение элементов](psgallery/psgallery_unlist_items.md)
 ### [Удаление элементов](psgallery/Deleting-Items.md)
 ### [Управление владельцами элементов](psgallery/Managing-Item-Owners.md)
