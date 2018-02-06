@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Составные ресурсы — использование конфигурации DSC как ресурса"
-ms.openlocfilehash: 4a9574081d3579ffa910bf2ee595ba2550f40a15
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 1d5fb89eb9845820de8543f388ddb6aaeaaa3e44
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="composite-resources-using-a-dsc-configuration-as-a-resource"></a>Составные ресурсы: использование DSC как ресурса
 
@@ -200,7 +200,7 @@ configuration RenameVM
 Например, следующий код пропишет пользовательский контекст, по которому выполняется ресурс, в подробный выходной поток:
 
 ```powershell
-if (PsDscContext.RunAsUser) {
+if ($PsDscContext.RunAsUser) {
     Write-Verbose "User: $PsDscContext.RunAsUser";
 }
 ```
