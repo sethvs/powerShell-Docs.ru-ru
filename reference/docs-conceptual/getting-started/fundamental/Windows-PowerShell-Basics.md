@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Основы Windows PowerShell"
 ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
-ms.openlocfilehash: 7b5cdfce876aa7d5559fe772379829011b275a02
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: bd17786d2d8690b89a2d107e0da98ee45f5b2ff7
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="windows-powershell-basics"></a>Основы Windows PowerShell
 В графических пользовательских интерфейсах используются общие концепции, знакомые большинству пользователей. Пользователи полагаются на эти привычные интерфейсы для выполнения задач. Операционные системы предлагают пользователю графическое представление элементов, которые можно просматривать, при этом раскрывающиеся меню обычно используются для доступа к конкретной функциональности, а контекстные меню — к контекстной функциональности.
@@ -18,13 +18,10 @@ ms.lasthandoff: 09/08/2017
 
 Windows PowerShell ориентирована на использование имеющихся у пользователей знаний об интерфейсах CLI. В этой главе мы рассмотрим некоторые основные средства и концепции, помогающие быстро освоить Windows PowerShell. в том числе:
 
-- Использование Get-Command
+- Использование [Get-Command](/powershell/module/Microsoft.PowerShell.Core/get-command)
 
-- Использование команд Cmd.exe и UNIX
+- Использование команд [Cmd.exe](/windows-server/administration/windows-commands/cmd) и [UNIX](/windows/wsl/reference)
 
-- Использование внешних команд
+- [Использование Tab-Completion](../../core-powershell/console/using-tab-expansion.md)
 
-- Использование Tab-Completion
-
-- Использование Get-Help
-
+- [Использование Get-Help](./getting-detailed-help-information.md)
