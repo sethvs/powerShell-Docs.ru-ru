@@ -1,8 +1,66 @@
-- name: Основные понятия
+- name: Обзор
   href: PowerShell-Scripting.md
   items:
-    - name: Основы PowerShell
-      href: core-powershell/core-powershell.md
+    - name: Установка
+      href: ''
+      items:
+        - name: PowerShell Core
+          href: ''
+          items:
+            - name: Установка PowerShell Core в Windows
+              href: setup/Installing-PowerShell-Core-on-Windows.md
+            - name: Установка PowerShell Core в macOS и Linux
+              href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
+        - name: Windows PowerShell
+          href: ''
+          items:
+            - name: Установка Windows PowerShell
+              href: setup/installing-windows-powershell.md
+            - name: "Установка подсистемы Windows PowerShell\_2.0"
+              href: setup/installing-the-windows-powershell-2.0-engine.md
+            - name: Требования к системе для Windows PowerShell
+              href: setup/windows-powershell-system-requirements.md
+    - name: Приступая к работе
+      href: getting-started/getting-started-with-windows-powershell.md
+      items:
+        - name: Запуск Windows PowerShell
+          href: setup/starting-windows-powershell.md
+        - name: "Запуск подсистемы Windows PowerShell\_2.0"
+          href: setup/starting-the-windows-powershell-2.0-engine.md
+    - name: Концепции
+      href: ''
+      items:
+        - name: Основные сведения о важных концепциях Windows PowerShell
+          href: getting-started/fundamental/understanding-important-windows-powershell-concepts.md
+        - name: Получение подробной справки
+          href: getting-started/fundamental/getting-detailed-help-information.md
+        - name: Получение сведений о командах
+          href: getting-started/fundamental/getting-information-about-commands.md
+        - name: Изучение имен Windows PowerShell
+          href: getting-started/fundamental/learning-windows-powershell-names.md
+        - name: Использование знакомых имен команд
+          href: getting-started/fundamental/using-familiar-command-names.md
+        - name: Конвейер объектов
+          href: getting-started/fundamental/object-pipeline.md
+        - name: Работа со сценариями в Windows PowerShell
+          href: getting-started/fundamental/scripting-with-windows-powershell.md
+        - name: Общие сведения о конвейере Windows PowerShell
+          href: getting-started/fundamental/understanding-the-windows-powershell-pipeline.md
+        - name: Использование переменных для хранения объектов
+          href: getting-started/fundamental/using-variables-to-store-objects.md
+        - name: Выполнение удаленных команд
+          href: core-powershell/running-remote-commands.md
+          items:
+            - name: Удаленное взаимодействие с PowerShell через SSH
+              href: core-powershell/SSH-Remoting-in-PowerShell-Core.md
+            - name: Удаленное взаимодействие с WS-Management (WSMan) в PowerShell Core
+              href: core-powershell/WSMan-Remoting-in-PowerShell-Core.md
+            - name: WinRMSecurity
+              href: setup/winrmsecurity.md
+            - name: Второй переход при удаленном взаимодействии PowerShell
+              href: setup/ps-remoting-second-hop.md
+    - name: Компоненты
+      href: ''
       items:
         - name: Консоль
           href: ''
@@ -14,73 +72,68 @@
         - name: ISE
           href: core-powershell/ise/introducing-the-windows-powershell-ise.md
           items:
-            - name: Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
-              href: core-powershell/ise/how-to-create-a-powershell-tab-in-windows-powershell-ise.md
-            - name: Отладка сценариев в интегрированной среде сценариев Windows PowerShell
-              href: core-powershell/ise/how-to-debug-scripts-in-windows-powershell-ise.md
-            - name: Использование профилей в интегрированной среде сценариев Windows PowerShell
-              href: core-powershell/ise/how-to-use-profiles-in-windows-powershell-ise.md
-            - name: Использование заполнения нажатием клавиши TAB в областях сценариев и консоли
-              href: core-powershell/ise/how-to-use-tab-completion-in-the-script-pane-and-console-pane.md
-            - name: Использование области консоли в интегрированной среде сценариев Windows PowerShell
-              href: core-powershell/ise/how-to-use-the-console-pane-in-the-windows-powershell-ise.md
-            - name: Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell
-              href: core-powershell/ise/how-to-write-and-run-scripts-in-the-windows-powershell-ise.md
-            - name: Введение в интегрированную среду сценариев Windows PowerShell
-              href: core-powershell/ise/introducing-the-windows-powershell-ise.md
-            - name: Модуль интегрированной среды сценариев
-              href: core-powershell/ise/ise-module.md
-            - name: Сочетания клавиш для интегрированной среды сценариев Windows PowerShell
-              href: core-powershell/ise/keyboard-shortcuts-for-the-windows-powershell-ise.md
-            - name: Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
-              href: core-powershell/ise/purpose-of-the-windows-powershell-ise-scripting-object-model.md
-            - name: Объект ISEAddOnToolCollection
-              href: core-powershell/ise/the-iseaddontoolcollection-object.md
-            - name: Объект ISEAddOnTool
-              href: core-powershell/ise/the-iseaddontool-object.md
-            - name: Объект ISEEditor
-              href: core-powershell/ise/the-iseeditor-object.md
-            - name: Объект ISEFileCollection
-              href: core-powershell/ise/the-isefilecollection-object.md
-            - name: Объект ISEFile
-              href: core-powershell/ise/the-isefile-object.md
-            - name: Объект ISEMenuItemCollection
-              href: core-powershell/ise/the-isemenuitemcollection-object.md
-            - name: Объект ISEMenuItem
-              href: core-powershell/ise/the-isemenuitem-object.md
-            - name: Иерархия объектной модели интегрированной среды сценариев
-              href: core-powershell/ise/the-ise-object-model-hierarchy.md
-            - name: Объект ISEOptions
-              href: core-powershell/ise/the-iseoptions-object.md
-            - name: Объект ISESnippetCollection
-              href: core-powershell/ise/the-isesnippetcollection-object.md
-            - name: Объект ISESnippet
-              href: core-powershell/ise/the-isesnippetobject.md
-            - name: Объект ObjectModelRoot
-              href: core-powershell/ise/the-objectmodelroot-object.md
-            - name: Объект PowerShellTabCollection
-              href: core-powershell/ise/the-powershelltabcollection-object.md
-            - name: Объект PowerShellTab
-              href: core-powershell/ise/the-powershelltab-object.md
-            - name: Объектная модель сценариев интегрированной среды сценариев Windows PowerShell
-              href: core-powershell/ise/the-windows-powershell-ise-scripting-object-model.md
+            - name: Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
+              href: getting-started/fundamental/windows-powershell-integrated-scripting-environment--ise-.md
             - name: Использование интегрированной среды сценариев Windows PowerShell
-              href: core-powershell/ise/using-the-windows-powershell-ise.md
-            - name: Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
-              href: core-powershell/ise/windows-powershell-ise-object-model-reference.md
+              href: ''
+              items:
+                - name: Обзор интегрированной среды сценариев Windows PowerShell
+                  href: getting-started/fundamental/exploring-the-windows-powershell-ise.md
+                - name: Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
+                  href: core-powershell/ise/how-to-create-a-powershell-tab-in-windows-powershell-ise.md
+                - name: Отладка сценариев в интегрированной среде сценариев Windows PowerShell
+                  href: core-powershell/ise/how-to-debug-scripts-in-windows-powershell-ise.md
+                - name: Использование профилей в интегрированной среде сценариев Windows PowerShell
+                  href: core-powershell/ise/how-to-use-profiles-in-windows-powershell-ise.md
+                - name: Использование заполнения нажатием клавиши TAB в областях сценариев и консоли
+                  href: core-powershell/ise/how-to-use-tab-completion-in-the-script-pane-and-console-pane.md
+                - name: Использование области консоли в интегрированной среде сценариев Windows PowerShell
+                  href: core-powershell/ise/how-to-use-the-console-pane-in-the-windows-powershell-ise.md
+                - name: Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell
+                  href: core-powershell/ise/how-to-write-and-run-scripts-in-the-windows-powershell-ise.md
+                - name: Сочетания клавиш для интегрированной среды сценариев Windows PowerShell
+                  href: core-powershell/ise/keyboard-shortcuts-for-the-windows-powershell-ise.md
+                - name: Специальные возможности в интегрированной среде сценариев Windows PowerShell
+                  href: setup/accessibility-in-windows-powershell-ise.md
+            - name: Объектная модель сценариев интегрированной среды сценариев Windows PowerShell
+              href: ''
+              items:
+                - name: Назначение объектной модели сценариев интегрированной среды сценариев Windows PowerShell
+                  href: core-powershell/ise/purpose-of-the-windows-powershell-ise-scripting-object-model.md
+                - name: Иерархия объектной модели интегрированной среды сценариев
+                  href: core-powershell/ise/the-ise-object-model-hierarchy.md
+                - name: Объект ObjectModelRoot
+                  href: core-powershell/ise/the-objectmodelroot-object.md
+                - name: Объект ISEAddOnToolCollection
+                  href: core-powershell/ise/the-iseaddontoolcollection-object.md
+                - name: Объект ISEAddOnTool
+                  href: core-powershell/ise/the-iseaddontool-object.md
+                - name: Объект ISEEditor
+                  href: core-powershell/ise/the-iseeditor-object.md
+                - name: Объект ISEFileCollection
+                  href: core-powershell/ise/the-isefilecollection-object.md
+                - name: Объект ISEFile
+                  href: core-powershell/ise/the-isefile-object.md
+                - name: Объект ISEMenuItemCollection
+                  href: core-powershell/ise/the-isemenuitemcollection-object.md
+                - name: Объект ISEMenuItem
+                  href: core-powershell/ise/the-isemenuitem-object.md
+                - name: Объект ISEOptions
+                  href: core-powershell/ise/the-iseoptions-object.md
+                - name: Объект ISESnippetCollection
+                  href: core-powershell/ise/the-isesnippetcollection-object.md
+                - name: Объект ISESnippet
+                  href: core-powershell/ise/the-isesnippetobject.md
+                - name: Объект PowerShellTabCollection
+                  href: core-powershell/ise/the-powershelltabcollection-object.md
+                - name: Объект PowerShellTab
+                  href: core-powershell/ise/the-powershelltab-object.md
         - name: Visual Studio Code
           items:
             - name: Использование Visual Studio Code
               href: core-powershell/vscode/using-vscode.md
-        - name: Выполнение удаленных команд
-          href: core-powershell/running-remote-commands.md
-          items:
-            - name: Удаленное взаимодействие с PowerShell через SSH
-              href: core-powershell/SSH-Remoting-in-PowerShell-Core.md
-            - name: Удаленное взаимодействие с WS-Management (WSMan) в PowerShell Core
-              href: core-powershell/WSMan-Remoting-in-PowerShell-Core.md
         - name: Веб-доступ
-          href: core-powershell/web-access.md
+          href: ''
           items:
             - name: Правила авторизации и компоненты безопасности Windows PowerShell Web Access
               href: core-powershell/web-access/authorization-rules-and-security-features-of-windows-powershell-web-access.md
@@ -94,150 +147,6 @@
               href: core-powershell/web-access/use-the-web-based-windows-powershell-console.md
         - name: Руководство по рабочим процессам
           href: core-powershell/workflows-guide.md
-    - name: Начало работы
-      href: ''
-      items:
-        - name: Основные справочники
-          href: getting-started/basic-cookbooks.md
-          items:
-            - name: Приложение 1. Псевдонимы совместимости
-              href: getting-started/cookbooks/appendix-1---compatibility-aliases.md
-            - name: Приложение 2. Создание настраиваемого ярлыка PowerShell
-              href: getting-started/cookbooks/appendix-2---creating-a-custom-powershell-shortcut.md
-            - name: Основные справочные материалы
-              href: getting-started/cookbooks/basic-cookbooks-reference.md
-            - name: Изменение состояния компьютера
-              href: getting-started/cookbooks/changing-computer-state.md
-            - name: Сбор информации о компьютерах
-              href: getting-started/cookbooks/collecting-information-about-computers.md
-            - name: Создание объектов .NET и COM с помощью New-Object
-              href: getting-started/cookbooks/creating-.net-and-com-objects--new-object-.md
-            - name: Создание настраиваемого поля ввода
-              href: getting-started/cookbooks/creating-a-custom-input-box.md
-            - name: Создание графического элемента управления "Выбор даты"
-              href: getting-started/cookbooks/creating-a-graphical-date-picker.md
-            - name: Получение объектов WMI "Get-WmiObject"
-              href: getting-started/cookbooks/getting-wmi-objects--get-wmiobject-.md
-            - name: Управление текущим расположением
-              href: getting-started/cookbooks/managing-current-location.md
-            - name: Управление процессами с помощью командлетов Process
-              href: getting-started/cookbooks/managing-processes-with-process-cmdlets.md
-            - name: Управление службами
-              href: getting-started/cookbooks/managing-services.md
-            - name: Управление дисками Windows PowerShell
-              href: getting-started/cookbooks/managing-windows-powershell-drives.md
-            - name: Прямое управление элементами
-              href: getting-started/cookbooks/manipulating-items-directly.md
-            - name: Списки с множественным выбором
-              href: getting-started/cookbooks/multiple-selection-list-boxes.md
-            - name: Другие полезные объекты для сценариев
-              href: getting-started/cookbooks/other-useful-scripting-objects.md
-            - name: Выполнение задач по работе с сетями
-              href: getting-started/cookbooks/performing-networking-tasks.md
-            - name: Перенаправление данных с помощью командлетов Out
-              href: getting-started/cookbooks/redirecting-data-with-out---cmdlets.md
-            - name: Удаление объектов из конвейера "Where-Object"
-              href: getting-started/cookbooks/removing-objects-from-the-pipeline--where-object-.md
-            - name: Повторение задачи для нескольких объектов "ForEach-Object"
-              href: getting-started/cookbooks/repeating-a-task-for-multiple-objects--foreach-object-.md
-            - name: Выбор элементов из списка
-              href: getting-started/cookbooks/selecting-items-from-a-list-box.md
-            - name: Выбор частей объектов "Select-Object"
-              href: getting-started/cookbooks/selecting-parts-of-objects--select-object-.md
-            - name: Сортировка объектов
-              href: getting-started/cookbooks/sorting-objects.md
-            - name: Использование команд Format для изменения представления вывода
-              href: getting-started/cookbooks/using-format-commands-to-change-output-view.md
-            - name: Использование статических классов и методов
-              href: getting-started/cookbooks/using-static-classes-and-methods.md
-            - name: Просмотр структуры объектов "Get-Member"
-              href: getting-started/cookbooks/viewing-object-structure--get-member-.md
-            - name: Работа с файлами и папками
-              href: getting-started/cookbooks/working-with-files-and-folders.md
-            - name: 'Работа с файлами, папками и разделами реестра'
-              href: getting-started/cookbooks/working-with-files-folders-and-registry-keys.md
-            - name: Работа с объектами
-              href: getting-started/cookbooks/working-with-objects.md
-            - name: Работа с принтерами
-              href: getting-started/cookbooks/working-with-printers.md
-            - name: Работа с записями реестра
-              href: getting-started/cookbooks/working-with-registry-entries.md
-            - name: Работа с разделами реестра
-              href: getting-started/cookbooks/working-with-registry-keys.md
-            - name: Работа с программами установки программного обеспечения
-              href: getting-started/cookbooks/working-with-software-installations.md
-        - name: Основы
-          href: ''
-          items:
-            - name: Сведения о Windows PowerShell
-              href: getting-started/fundamental/about-windows-powershell.md
-            - name: Обзор интегрированной среды сценариев Windows PowerShell
-              href: getting-started/fundamental/exploring-the-windows-powershell-ise.md
-            - name: Получение подробной справки
-              href: getting-started/fundamental/getting-detailed-help-information.md
-            - name: Получение сведений о командах
-              href: getting-started/fundamental/getting-information-about-commands.md
-            - name: Изучение имен Windows PowerShell
-              href: getting-started/fundamental/learning-windows-powershell-names.md
-            - name: Конвейер объектов
-              href: getting-started/fundamental/object-pipeline.md
-            - name: Работа со сценариями в Windows PowerShell
-              href: getting-started/fundamental/scripting-with-windows-powershell.md
-            - name: Основные сведения о важных концепциях Windows PowerShell
-              href: getting-started/fundamental/understanding-important-windows-powershell-concepts.md
-            - name: Общие сведения о конвейере Windows PowerShell
-              href: getting-started/fundamental/understanding-the-windows-powershell-pipeline.md
-            - name: Использование знакомых имен команд
-              href: getting-started/fundamental/using-familiar-command-names.md
-            - name: Использование переменных для хранения объектов
-              href: getting-started/fundamental/using-variables-to-store-objects.md
-            - name: Использование Windows PowerShell
-              href: getting-started/fundamental/using-windows-powershell.md
-            - name: Использование Windows PowerShell для администрирования
-              href: getting-started/fundamental/using-windows-powershell-for-administration.md
-            - name: Основы Windows PowerShell
-              href: getting-started/fundamental/windows-powershell-basics.md
-            - name: Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
-              href: getting-started/fundamental/windows-powershell-integrated-scripting-environment--ise-.md
-        - name: Основные понятия
-          href: getting-started/fundamental-concepts.md
-        - name: Подготовка к использованию Windows PowerShell
-          href: getting-started/getting-ready-to-use-windows-powershell.md
-        - name: Начало работы с Windows PowerShell
-          href: getting-started/getting-started-with-windows-powershell.md
-        - name: Другие статьи о PowerShell
-          href: getting-started/more-powershell-learning.md
-    - name: Установка
-      href: ''
-      items:
-        - name: Установка PowerShell Core в Windows
-          href: setup/Installing-PowerShell-Core-on-Windows.md
-        - name: Установка PowerShell Core в macOS и Linux
-          href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
-        - name: Специальные возможности в интегрированной среде сценариев Windows PowerShell
-          href: setup/accessibility-in-windows-powershell-ise.md
-        - name: "Установка подсистемы Windows PowerShell\_2.0"
-          href: setup/installing-the-windows-powershell-2.0-engine.md
-        - name: Установка пакета SDK для Windows PowerShell
-          href: setup/installing-the-windows-powershell-sdk.md
-        - name: Установка Windows PowerShell
-          href: setup/installing-windows-powershell.md
-        - name: Второй переход при удаленном взаимодействии PowerShell
-          href: setup/ps-remoting-second-hop.md
-        - name: Справочник по установке
-          href: setup/setup-reference.md
-        - name: Запуск 32-разрядной версии Windows PowerShell
-          href: setup/starting-the-32-bit-version-of-windows-powershell.md
-        - name: "Запуск подсистемы Windows PowerShell\_2.0"
-          href: setup/starting-the-windows-powershell-2.0-engine.md
-        - name: Запуск Windows PowerShell
-          href: setup/starting-windows-powershell.md
-        - name: Запуск Windows PowerShell в более ранних версиях Windows
-          href: setup/starting-windows-powershell-on-earlier-versions-of-windows.md
-        - name: Требования к системе для Windows PowerShell
-          href: setup/windows-powershell-system-requirements.md
-        - name: WinRMSecurity
-          href: setup/winrmsecurity.md
     - name: Новые возможности
       href: ''
       items:
@@ -251,5 +160,77 @@
           href: whats-new/what-s-new-in-powershell-core-60.md
     - name: Жизненный цикл поддержки PowerShell Core
       href: PowerShell-Core-Support.md
-    - name: Словарь терминов
-      href: windows-powershell-glossary.md
+    - name: Дополнительные сведения
+      href: ''
+      items:
+        - name: Другие статьи о PowerShell
+          href: getting-started/more-powershell-learning.md
+        - name: Словарь терминов
+          href: windows-powershell-glossary.md
+- name: Примеры скриптов
+  href: getting-started/fundamental/using-windows-powershell-for-administration.md
+  items:
+    - name: Изменение состояния компьютера
+      href: getting-started/cookbooks/changing-computer-state.md
+    - name: Сбор информации о компьютерах
+      href: getting-started/cookbooks/collecting-information-about-computers.md
+    - name: Создание объектов .NET и COM (New-Object)
+      href: getting-started/cookbooks/creating-.net-and-com-objects--new-object-.md
+    - name: Создание настраиваемого поля ввода
+      href: getting-started/cookbooks/creating-a-custom-input-box.md
+    - name: Создание графического элемента управления "Выбор даты"
+      href: getting-started/cookbooks/creating-a-graphical-date-picker.md
+    - name: Получение объектов WMI (Get-WmiObject)
+      href: getting-started/cookbooks/getting-wmi-objects--get-wmiobject-.md
+    - name: Управление текущим расположением
+      href: getting-started/cookbooks/managing-current-location.md
+    - name: Управление процессами с помощью командлетов Process
+      href: getting-started/cookbooks/managing-processes-with-process-cmdlets.md
+    - name: Управление службами
+      href: getting-started/cookbooks/managing-services.md
+    - name: Управление дисками Windows PowerShell
+      href: getting-started/cookbooks/managing-windows-powershell-drives.md
+    - name: Прямое управление элементами
+      href: getting-started/cookbooks/manipulating-items-directly.md
+    - name: Списки с множественным выбором
+      href: getting-started/cookbooks/multiple-selection-list-boxes.md
+    - name: Другие полезные объекты для сценариев
+      href: getting-started/cookbooks/other-useful-scripting-objects.md
+    - name: Выполнение задач по работе с сетями
+      href: getting-started/cookbooks/performing-networking-tasks.md
+    - name: Перенаправление данных с помощью командлетов Out
+      href: getting-started/cookbooks/redirecting-data-with-out---cmdlets.md
+    - name: Удаление объектов из конвейера (Where-Object)
+      href: getting-started/cookbooks/removing-objects-from-the-pipeline--where-object-.md
+    - name: Повторение задачи для нескольких объектов (ForEach-Object)
+      href: getting-started/cookbooks/repeating-a-task-for-multiple-objects--foreach-object-.md
+    - name: Выбор элементов из списка
+      href: getting-started/cookbooks/selecting-items-from-a-list-box.md
+    - name: Выбор частей объекта (Select-Object)
+      href: getting-started/cookbooks/selecting-parts-of-objects--select-object-.md
+    - name: Сортировка объектов
+      href: getting-started/cookbooks/sorting-objects.md
+    - name: Использование команд Format для изменения представления вывода
+      href: getting-started/cookbooks/using-format-commands-to-change-output-view.md
+    - name: Использование статических классов и методов
+      href: getting-started/cookbooks/using-static-classes-and-methods.md
+    - name: Просмотр структуры объектов (Get-Member)
+      href: getting-started/cookbooks/viewing-object-structure--get-member-.md
+    - name: Работа с файлами и папками
+      href: getting-started/cookbooks/working-with-files-and-folders.md
+    - name: 'Работа с файлами, папками и разделами реестра'
+      href: getting-started/cookbooks/working-with-files-folders-and-registry-keys.md
+    - name: Работа с объектами
+      href: getting-started/cookbooks/working-with-objects.md
+    - name: Работа с принтерами
+      href: getting-started/cookbooks/working-with-printers.md
+    - name: Работа с записями реестра
+      href: getting-started/cookbooks/working-with-registry-entries.md
+    - name: Работа с разделами реестра
+      href: getting-started/cookbooks/working-with-registry-keys.md
+    - name: Работа с программами установки программного обеспечения
+      href: getting-started/cookbooks/working-with-software-installations.md
+    - name: Приложение 1. Псевдонимы совместимости
+      href: getting-started/cookbooks/appendix-1---compatibility-aliases.md
+    - name: Приложение 2. Создание настраиваемого ярлыка PowerShell
+      href: getting-started/cookbooks/appendix-2---creating-a-custom-powershell-shortcut.md
