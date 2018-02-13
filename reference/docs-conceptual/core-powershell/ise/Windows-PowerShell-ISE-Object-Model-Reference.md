@@ -4,10 +4,10 @@ keywords: "powershell,командлет"
 title: "Справочник по объектной модели интегрированной среды сценариев Windows PowerShell"
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
 ms.openlocfilehash: 624ddca3895ba3e24bf52a27babdb07e8714baae
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 02/08/2018
 ---
 # <a name="windows-powershell-ise-object-model-reference"></a>Справочник по объектной модели интегрированной среды сценариев Windows PowerShell
   
