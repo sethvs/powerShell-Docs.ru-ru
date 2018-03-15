@@ -4,10 +4,10 @@ author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
 ms.openlocfilehash: 3413672e73705252225300a853c10a514500baa2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
-ms.translationtype: HT
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="extract-and-parse-structured-objects-out-of-string"></a>Извлечение и анализ структурированных объектов вне строки
 Здесь также расширена функциональность командлета ConvertFrom-String:
@@ -89,5 +89,5 @@ P1    P2
 > ----------                     ----               ----     -----
 > Ana Trujillo...                Ana Trujillo       Redmond  WA Antonio Moreno...              Antonio Moreno     Renton   WA Thomas Hardy...                Thomas Hardy       Seattle  WA Christina Berglund...          Christina Berglund Redmond  WA Hanna Moos...                  Hanna Moos         Puyallup WA
 
-В целях дополнительной обработки извлеченного текста свойство **ExtentText** может фиксировать необработанный текст, из которого извлекалась запись. Чтобы дать отзыв об этой функции или предоставить содержимое, для которого у вас не получается составить примеры, отправьте письмо на адрес <psdmfb@microsoft.com>.
+В целях дополнительной обработки извлеченного текста свойство **ExtentText** может фиксировать необработанный текст, из которого извлекалась запись. Для предоставления отзывов о данной функции или предоставить содержимое, для которого вы получается правильно составить примеры, отправьте письмо на адрес <psdmfb@microsoft.com>.
 
