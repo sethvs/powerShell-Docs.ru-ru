@@ -1,0 +1,128 @@
+- name: Обзор
+  href: readme.md
+  items:
+    - name: Коллекции
+      items:
+        - name: Начало работы
+          href: psgallery/psgallery_gettingstarted.md
+        - name: Состояние работоспособности
+          href: psgallery/psgallery_status.md
+        - name: Вопросы и ответы о коллекции
+          href: psgallery/psgallery_faqs.md
+        - name: Вкладка "Элементы коллекции"
+          href: psgallery/psgallery_items_tab.md
+        - name: Синтаксис поиска по коллекции
+          href: psgallery/psgallery_search_syntax.md
+        - name: Элементы с совместимыми выпусками PSEditions
+          href: psgallery/psgallery_pseditions.md
+        - name: Представление FileList
+          href: psgallery/psgallery_filelist_feature.md
+        - name: Развертывание в службу автоматизации Azure
+          href: psgallery/psgallery_deploy_to_azure_automation.md
+        - name: Создание учетной записи PowerShellGallery
+          href: psgallery/psgallery_creating_an_account.md
+        - name: Создание и публикация элементов
+          href: psgallery/Creating-and-Publishing-an-item.md
+        - name: Руководства и рекомендации для публикации
+          href: psgallery/psgallery-PublishingGuidelines.md
+        - name: Манифест элементов и пользовательский интерфейс коллекции
+          href: psgallery/psgallery_ItemManifestAffectingUI.md
+        - name: Исключение элементов
+          href: psgallery/psgallery_unlist_items.md
+        - name: Удаление элементов
+          href: psgallery/Deleting-Items.md
+        - name: Управление владельцами элементов
+          href: psgallery/Managing-Item-Owners.md
+        - name: Сообщение о нарушении
+          href: psgallery/psgallery_report_abuse.md
+        - name: Разрешение спорных вопросов
+          href: psgallery/psgallery_dispute_resolution.md
+        - name: Обращение к владельцам элементов
+          href: psgallery/psgallery_contacting_item_owners.md
+        - name: Обращение к администраторам
+          href: psgallery/psgallery_contacting_administrators.md
+        - name: Отправка отзывов через социальные сети или комментарии
+          href: psgallery/psgallery-SocialMediaFeedback.md
+        - name: Запрос на принятие условий лицензии в сведениях об элементах
+          href: psgallery/psgallery_requires_license_acceptance.md
+        - name: Запрос на принятие условий лицензии при развертывании в службе автоматизации Azure
+          href: psgallery/psgallery_deploy_to_azure_automation_requireLicenseAcceptance.md
+- name: PowerShellGet
+  href: psget/overview.md
+  items:
+    - name: Получение модуля PowerShellGet
+      href: psget/get_psget_module.md
+    - name: Модуль
+      items:
+        - name: Поиск модулей
+          href: psget/module/psget_find-module.md
+        - name: Поиск ресурсов DSC
+          href: psget/module/psget_find-dscresource.md
+        - name: Поиск возможностей ролей
+          href: psget/module/psget_find-rolecapability.md
+        - name: Поиск команд
+          href: psget/module/psget_find-command.md
+        - name: Сохранить
+          href: psget/module/psget_save-module.md
+        - name: Установка
+          href: psget/module/psget_install-module.md
+        - name: Обновление
+          href: psget/module/psget_update-module.md
+        - name: Удалить
+          href: psget/module/psget_uninstall-module.md
+        - name: Получение установленных модулей
+          href: psget/module/psget_get-installedmodule.md
+        - name: Обновление манифеста модулей
+          href: psget/module/psget_update-modulemanifest.md
+        - name: Публикация
+          href: psget/module/psget_publish-module.md
+        - name: Модули с PSEditions
+          href: psget/module/modulewithpseditionsupport.md
+        - name: 'Модули, для использования которых требуется принять условия лицензии'
+          href: psget/module/RequireLicenseAcceptance.md
+        - name: Предварительные версии
+          href: psget/module/PreReleaseModule.md
+        - name: Диагностика
+          href: psget/psget_cmdlets_troubleshooting.md
+    - name: Скрипт
+      items:
+        - name: Поиск
+          href: psget/script/psget_find-script.md
+        - name: Сохранить
+          href: psget/script/psget_save-script.md
+        - name: Установка
+          href: psget/script/psget_install-script.md
+        - name: Обновление
+          href: psget/script/psget_update-script.md
+        - name: Удалить
+          href: psget/script/psget_uninstall-script.md
+        - name: Получение установленных скриптов
+          href: psget/script/psget_get-installedscript.md
+        - name: Создание файла скрипта с метаданными
+          href: psget/script/psget_new-scriptfileinfo.md
+        - name: Проверка метаданных файла скрипта
+          href: psget/script/psget_test-scriptfileinfo.md
+        - name: Обновление метаданных файла скрипта
+          href: psget/script/psget_update-scriptfileinfo.md
+        - name: Публикация
+          href: psget/script/psget_publish-script.md
+        - name: Скрипты с PSEditions
+          href: psget/script/scriptwithpseditionsupport.md
+        - name: Запрос на принятие условий лицензии для сценариев
+          href: psget/script/script_RequireLicenseAcceptance.md
+        - name: Предварительные версии
+          href: psget/script/PreReleaseScript.md
+    - name: Управление репозиторием
+      items:
+        - name: Начальная загрузка поставщика NuGet и NuGet.exe
+          href: psget/repository/bootstrapping_nuget_proivder_and_exe.md
+        - name: Регистрация репозитория
+          href: psget/repository/psget_register-psrepository.md
+        - name: Вывод зарегистрированного репозитория
+          href: psget/repository/psget_get-psrepository.md
+        - name: Изменение зарегистрированного репозитория
+          href: psget/repository/psget_set-psrepository.md
+        - name: Отмена регистрации репозитория
+          href: psget/repository/psget_unregister-psrepository.md
+    - name: Командлеты PackageManagement
+      href: psget/oneget/PackageManagement_cmdlets.md
