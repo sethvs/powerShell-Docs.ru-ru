@@ -1,0 +1,18 @@
+- name: Обзор
+  href: overview.md
+- name: Развертывание JEA
+  items:
+    - name: Необходимые компоненты
+      href: prerequisites.md
+    - name: Возможности ролей
+      href: role-capabilities.md
+    - name: Конфигурации сеансов
+      href: session-configurations.md
+    - name: Регистрация JEA
+      href: register-jea.md
+    - name: Использование JEA
+      href: using-jea.md
+    - name: Вопросы обеспечения безопасности
+      href: security-considerations.md
+    - name: Аудит и отчеты для JEA
+      href: audit-and-report.md

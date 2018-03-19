@@ -1,0 +1,209 @@
+- name: Обзор Windows Management Framework (WMF)
+  href: README.md
+- name: "WMF\_5.1"
+  href: 5.1/release-notes.md
+  items:
+    - name: Новые сценарии и возможности
+      href: 5.1/scenarios-features.md
+      items:
+        - name: Усовершенствования в настройке требуемого состояния (DSC)
+          href: 5.1/DSC-improvements.md
+        - name: Усовершенствования консоли PowerShell
+          href: 5.1/console-improvements.md
+        - name: Усовершенствования подсистемы PowerShell
+          href: 5.1/engine-improvements.md
+        - name: Улучшения в управлении пакетами
+          href: 5.1/package-management-improvements.md
+        - name: Улучшения в JEA
+          href: 5.1/jea-improvements.md
+        - name: Командлеты для работы с каталогами
+          href: 5.1/catalog-cmdlets.md
+        - name: "Ошибки, исправленные в WMF\_5.1"
+          href: 5.1/bugfixes.md
+    - name: Установка и настройка
+      href: 5.1/install-configure.md
+    - name: Известные проблемы
+      href: 5.1/known-issues.md
+    - name: Совместимость
+      href: 5.1/Compatibility.md
+    - name: Совместимость продуктов
+      href: 5.1/productincompat.md
+- name: "WMF\_5.0"
+  href: 5.0/releasenotes.md
+  items:
+    - name: Сведения об установке
+      href: 5.0/requirements.md
+    - name: Известные проблемы и ограничения
+      href: 5.0/limitation_overview.md
+      items:
+        - name: Известные проблемы с настройкой требуемого состояния (DSC)
+          href: 5.0/limitation_dsc.md
+    - name: Состояние совместимости продуктов
+      href: 5.0/productincompat.md
+    - name: 'Сценарии, поддерживаемые WMF 5.0'
+      href: ''
+      items:
+        - name: Just Enough Administration (JEA)
+          href: 5.0/jea_overview.md
+          items:
+            - name: Создание конечной точки JEA и подключение к ней
+              href: 5.0/jea_endpoint.md
+            - name: Отчеты о JEA
+              href: 5.0/jea_report.md
+        - name: Создание настраиваемых типов с помощью классов PowerShell
+          href: 5.0/class_overview.md
+          items:
+            - name: Определение настраиваемых типов
+              href: 5.0/class_newtype.md
+            - name: Объявление базового класса
+              href: 5.0/class_base.md
+            - name: Объявление реализованного интерфейса
+              href: 5.0/class_interface.md
+            - name: Вызов конструктора базовых классов
+              href: 5.0/class_baseconstructor.md
+            - name: Вызов метода базового класса
+              href: 5.0/class_basemethod.md
+        - name: Усовершенствования отладки сценариев PowerShell
+          href: 5.0/debug_overview.md
+        - name: Усовершенствования в настройке требуемого состояния (DSC)
+          href: 5.0/dsc_improvements.md
+          items:
+            - name: Конфигурации
+              href: ''
+              items:
+                - name: Указание межузловых зависимостей
+                  href: 5.0/dsc_waitfor.md
+                - name: Зашифрованные MOF
+                  href: 5.0/dsc_encryptedmof.md
+                - name: Поддержка справки для конфигурации DSC
+                  href: 5.0/dsc_confighelp.md
+                - name: Усовершенствования создания с помощью интегрированной среды сценариев PowerShell
+                  href: 5.0/dsc_authoring.md
+                - name: Поддержка идентичных повторяющихся ресурсов в конфигурации
+                  href: 5.0/dsc_identicalduplicate.md
+                - name: Ключевое слово Import-DscResource поддерживает параметр -ModuleVersion.
+                  href: 5.0/dsc_importdscresource.md
+                - name: Поддержка ключевого слова Configuration в WOW64
+                  href: 5.0/dsc_wow64.md
+            - name: Ресурсы
+              href: ''
+              items:
+                - name: 'Ресурсы DSC, основанные на классах'
+                  href: 5.0/dsc_classbasedresource.md
+                - name: Отладка сценариев для ресурсов DSC
+                  href: 5.0/dsc_resourcedebugging.md
+                - name: Поддержка автоматического запуска от имени для ресурсов DSC
+                  href: 5.0/dsc_runas.md
+                - name: Поддержка параллельного управления версиями для ресурсов DSC
+                  href: 5.0/dsc_sxsresource.md
+                - name: 'Новые ресурсы, входящие в комплект поставки'
+                  href: 5.0/dsc_newresources.md
+            - name: Локальный диспетчер конфигураций
+              href: ''
+              items:
+                - name: Настройка узла с помощью нескольких фрагментов конфигурации
+                  href: 5.0/dsc_partialconfig.md
+                  items:
+                    - name: Поддержка смешанного режима RefreshMode
+                      href: 5.0/dsc_partialconfig_mixedmode.md
+                - name: Настройка подсистемы DSC с помощью нового атрибута
+                  href: 5.0/dsc_metaconfiguration.md
+                - name: Подробная информация о состоянии LCM
+                  href: 5.0/dsc_lcmstate.md
+                - name: Периодичности для RefreshMode и ConfigurationMode не должны быть кратными друг другу.
+                  href: 5.0/dsc_freqnomultiple.md
+                - name: Дополнительное значение для свойства RefreshMode
+                  href: 5.0/dsc_refreshmode.md
+            - name: Командлеты
+              href: ''
+              items:
+                - name: Сведения о состоянии конфигурации
+                  href: 5.0/dsc_getconfigurationstatus.md
+                - name: Командлет Test-DscConfiguration поддерживает эталонные конфигурации.
+                  href: 5.0/dsc_testconfiguration.md
+                - name: Прямой доступ к методам ресурсов DSC
+                  href: 5.0/dsc_directaccess.md
+                - name: Доставка документа конфигурации без применения
+                  href: 5.0/dsc_publishconfig.md
+                - name: Удаление документов DSC
+                  href: 5.0/dsc_removeconfigdoc.md
+                - name: Единое и согласованное представление состояний
+                  href: 5.0/dsc_statestatus.md
+                - name: Командлет Set-DscLocalConfigurationManager поддерживает параметр -Force.
+                  href: 5.0/dsc_setdsclcm.md
+            - name: Режим Pull
+              href: ''
+              items:
+                - name: Извлечение по запросу для конфигураций DSC
+                  href: 5.0/dsc_updateconfig.md
+                - name: Разделение идентификаторов узла и конфигурации
+                  href: 5.0/dsc_nodeid.md
+                - name: 'Разделение репозиториев конфигураций, ресурсов и отчетов'
+                  href: 5.0/dsc_repository.md
+                - name: Отправка отчета о состоянии конфигурации в центральное расположение
+                  href: 5.0/dsc_reporting.md
+        - name: Аудит использования PowerShell с помощью записи и ведения журнала
+          href: 5.0/audit_overview.md
+          items:
+            - name: Расширенные параметры транскрибирования
+              href: 5.0/audit_transcript.md
+            - name: Трассировка сценариев и ведения журналов для них
+              href: 5.0/audit_script.md
+            - name: Командлеты Cryptographic Message Syntax (CMS)
+              href: 5.0/audit_cms.md
+        - name: 'Обнаружение, установка и инвентаризация программного обеспечения с помощью PackageManagement'
+          href: 5.0/oneget_overview.md
+          items:
+            - name: Командлеты PackageManagement
+              href: 5.0/oneget_cmdlets.md
+        - name: 'Обнаружение, установка и инвентаризация модуля PowerShell с помощью PowerShellGet'
+          href: 5.0/psget_module_overview.md
+          items:
+            - name: Регистрация репозитория PowerShell
+              href: 5.0/psget_psrepository.md
+            - name: "Поддержка параллельных версий в PowerShell\_5.0 или более поздних версиях"
+              href: 5.0/psget_modulesxsinstall.md
+            - name: Установка зависимостей модулей
+              href: 5.0/psget_moduledependency.md
+            - name: Командлеты PowerShellGet для управления модулями
+              href: 5.0/psget_modulecmdlets.md
+        - name: Установка компонента обнаружения сценариев PowerShell и управление им с помощью PowerShellGet
+          href: 5.0/psget_script_overview.md
+          items:
+            - name: Командлеты PowerShellGet для управления сценариями
+              href: 5.0/psget_scriptcmdlets.md
+        - name: 'Новые и обновленные командлеты, основанные на отзывах сообщества'
+          href: 5.0/feedback_cmdlets.md
+          items:
+            - name: Использование символьных ссылок с помощью командлетов Item
+              href: 5.0/feedback_symbolic.md
+            - name: Командлеты Archive
+              href: 5.0/feedback_archive.md
+            - name: Командлеты Clipboard
+              href: 5.0/feedback_clipboard.md
+            - name: Convert-String
+              href: 5.0/feedback_convertstring.md
+            - name: Извлечение и анализ структурированных объектов вне строки
+              href: 5.0/feedback_convertfromString.md
+            - name: Format-Hex
+              href: 5.0/feedback_formathex.md
+            - name: Параметр NoNewLine
+              href: 5.0/feedback_nonewline.md
+            - name: New-TemporaryFile
+              href: 5.0/feedback_tempfile.md
+            - name: New-Guid
+              href: 5.0/feedback_newguid.md
+            - name: Get-ChildItem получает параметр -Depth
+              href: 5.0/feedback_getchilditem.md
+            - name: Изменения объекта FileInfo
+              href: 5.0/feedback_fileinfo.md
+            - name: "Поддержка модулей для объявления диапазонов версий (1.\_* и т.\_д.)"
+              href: 5.0/feedback_moduleversionranges.md
+        - name: Поток информации
+          href: 5.0/informationstream_overview.md
+        - name: Создание командлетов PowerShell на основе конечной точки OData
+          href: 5.0/odata_overview.md
+        - name: Управление сетевыми коммутаторами с помощью PowerShell
+          href: 5.0/networkswitch_overview.md
+        - name: Инвентаризация программного обеспечения (SIL)
+          href: 5.0/sil_overview.md
