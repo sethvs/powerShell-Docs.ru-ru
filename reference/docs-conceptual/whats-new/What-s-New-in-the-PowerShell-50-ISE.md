@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Новые возможности интегрированной среды сценариев PowerShell версии 5.0"
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: 89dcc905ce200d06029e148c9675269e6f518fa3
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 9fd25a4759602bebf2b5df2c17d0c816a15e5e2b
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Новые возможности в интегрированной среде сценариев Windows PowerShell
 В этой статье описаны новые и обновленные функции, представленные в разных версиях интегрированной среды сценариев Windows PowerShell.
@@ -15,7 +15,7 @@ ms.lasthandoff: 09/29/2017
 ## <a name="feature-description"></a>Описание компонента
 Интегрированная среда сценариев Windows PowerShell — это ведущее приложение, позволяющее писать, выполнять и тестировать сценарии и модули в удобной среде с графическим интерфейсом. Такие важные возможности, как цветовая разметка синтаксиса, автозаполнение по нажатию клавиши TAB, визуальная отладка, совместимость с Юникодом и контекстная справка делают работу со сценариями более удобной.
 
-Общие сведения об интегрированной среде сценариев Windows PowerShell см. в статье [Общие сведения об интегрированной среде сценариев Windows PowerShell](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671).
+Общие сведения об интегрированной среде сценариев Windows PowerShell см. в статье [Общие сведения об интегрированной среде сценариев Windows PowerShell](https://technet.microsoft.com/library/3c1892c2-bf84-4cb6-af26-1f453be9e671).
 
 ## <a name="new-and-changed-functionality-in-windows-powershell-ise"></a>Новые и измененные функции в интегрированной среде сценариев Windows PowerShell
 Следующая таблица содержит новые и измененные функции для этого выпуска интегрированной среды сценариев Windows PowerShell в Windows PowerShell.
@@ -222,7 +222,7 @@ IntelliSense — это средство для автоматического 
 ## <a name="see-also"></a>См. также:
 Дополнительные сведения об интегрированной среде сценариев в Windows PowerShell см. по следующим ссылкам.
 
-- [Использование интегрированной среды скриптов Windows PowerShell](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+- [Обзор интегрированной среды сценариев Windows PowerShell](../getting-started/fundamental/exploring-the-windows-powershell-ise.md)
 - [Интегрированная среда сценариев на вики-сайте TechNet](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
 - [Центр сценариев](http://technet.microsoft.com/scriptcenter/default)
 

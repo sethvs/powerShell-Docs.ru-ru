@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_вопросы_ответы"
-ms.openlocfilehash: 80aaaa5e50e1bd85b93df721a4859e3020d1f315
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b856c44f3733d4a7c236d901edb391091d9d546e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Вопросы и ответы
 
@@ -18,7 +18,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="what-is-a-powershell-script"></a>Что такое сценарий PowerShell?
 
-Сценарий PowerShell представляет собой ряд команд, сохраненных в PS1-файле для многократного и совместного использования. Рабочие процессы PowerShell тоже являются сценариями PowerShell, которые прописывают набор задач и управляют последовательностью выполнения этих задач. Дополнительные сведения см. в руководстве по [началу работы с рабочими процессами PowerShell](https://technet.microsoft.com/en-us/library/jj134242.aspx).
+Сценарий PowerShell представляет собой ряд команд, сохраненных в PS1-файле для многократного и совместного использования. Рабочие процессы PowerShell тоже являются сценариями PowerShell, которые прописывают набор задач и управляют последовательностью выполнения этих задач. Дополнительные сведения см. в руководстве по [началу работы с рабочими процессами PowerShell](https://technet.microsoft.com/library/jj134242.aspx).
 
 ## <a name="how-are-powershell-scripts-different-from-powershell-modules"></a>В чем различия сценариев PowerShell и модулей PowerShell?
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="why-cant-i-sign-in-with-my-personal-account-but-i-could-sign-in-yesterday"></a>Почему не получается войти с моей личной учетной записью, но можно было войти вчера?
 
-Учтите, что ваша учетная запись коллекции не поддерживает изменения основного псевдонима электронной почты. Дополнительные сведения см. в разделе [Псевдонимы электронной почты Майкрософт](https://windows.microsoft.com/en-us/windows/outlook/add-alias-account).
+Учтите, что ваша учетная запись коллекции не поддерживает изменения основного псевдонима электронной почты. Дополнительные сведения см. в разделе [Псевдонимы электронной почты Майкрософт](https://windows.microsoft.com/windows/outlook/add-alias-account).
 
 ## <a name="why-dont-i-see-all-the-gallery-items-when-i-select-all-the-category-checkboxes-on-the-items-tab"></a>Почему после установки всех флажков категорий на вкладке "Элементы" я вижу не все элементы коллекции?
 
@@ -156,7 +156,7 @@ PowerShellGet можно использовать с любым допустим
 - Windows Server 2012 R2
 - Windows Server 2008 R2 с пакетом обновления 1 (SP1)
 
-Для **PowerShellGet** также требуется .NET Framework 4.5 или более поздней версии. Установить .NET Framework 4.5 или более поздней версии можно [отсюда](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx).
+Для **PowerShellGet** также требуется .NET Framework 4.5 или более поздней версии. Установить .NET Framework 4.5 или более поздней версии можно [отсюда](https://msdn.microsoft.com/library/5a4x27ek.aspx).
 
 ## <a name="is-it-possible-to-reserve-names-for-items-that-will-be-published-in-future"></a>Можно ли зарезервировать имена для элементов, которые будут опубликованы в будущем?
 

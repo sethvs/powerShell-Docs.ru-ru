@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell"
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: dd3055df8c84195f0145b1a058f1d17c9c382f33
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 77d8ae81cb03f03b3b5d044e6503bbb23cb5b771
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Написание и запуск сценариев в интегрированной среде сценариев Windows PowerShell
 Эта статья содержит инструкции по созданию, редактированию, выполнению и сохранению сценариев в области сценариев.
@@ -16,7 +16,7 @@ ms.lasthandoff: 09/08/2017
 В области скриптов можно открывать и редактировать файлы Windows PowerShell. Сейчас нас интересуют следующие типы файлов Windows PowerShell: файлы скриптов (PS1), файлы данных скриптов (PSD1) и файлы модулей скриптов (PSM1). Эти типы файлов имеют цветовую подсветку синтаксиса в редакторе области сценариев. Другие стандартные файлы, которые можно открыть в области сценариев, — это файлы конфигурации (PS1XML), XML-файлы и текстовые файлы.
 
 > [!NOTE]
-> Политика выполнения Windows PowerShell определяет, можно ли выполнять сценарии, загружать профили Windows PowerShell и файлы конфигурации. Политика выполнения по умолчанию, Restricted, запрещает выполнение сценариев и блокирует загрузку профилей. Чтобы изменить эту политику выполнения и разрешить загрузку и использование профилей, изучите статьи [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) и [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).
+> Политика выполнения Windows PowerShell определяет, можно ли выполнять сценарии, загружать профили Windows PowerShell и файлы конфигурации. Политика выполнения по умолчанию, Restricted, запрещает выполнение сценариев и блокирует загрузку профилей. Чтобы изменить эту политику выполнения и разрешить загрузку и использование профилей, изучите статьи [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) и [about_Signing [v4]](https://technet.microsoft.com/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).
 
 ### <a name="to-create-a-new-script-file"></a>Создание файла сценария
 Нажмите кнопку **Создать** на панели инструментов или откройте меню **Файл** и выберите пункт **Создать**. Созданный файл появится в новой вкладке, расположенной под текущей вкладкой PowerShell. Помните, что вкладки PowerShell отображаются, только если их несколько. По умолчанию создается файл сценария (PS1), но его можно сохранить с новым именем и расширением. На одной вкладке PowerShell может быть создано несколько файлов сценариев.
@@ -139,5 +139,4 @@ $psise.CurrentFile.encoding
 Интегрированная среда сценариев Windows PowerShell не изменяет кодировку сценариев, созданных в других редакторах, даже при использовании команд "Сохранить" или "Сохранить как" в интегрированной среде сценариев Windows PowerShell.
 
 ## <a name="see-also"></a>См. также
-- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
-
+- [Обзор интегрированной среды скриптов Windows PowerShell](../../getting-started/fundamental/exploring-the-windows-powershell-ise.md)

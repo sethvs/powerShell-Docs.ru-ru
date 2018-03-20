@@ -4,11 +4,11 @@ contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: "поддержкамодулямивыпусковps"
-ms.openlocfilehash: 8122756b78e18fe55daef5c46dc299b87ddcaf1a
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 8a762ddf307f47ecec8d2a63098e75cde97c391f
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="modules-with-compatible-powershell-editions"></a>Модули с совместимыми выпусками PowerShell
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
@@ -16,7 +16,7 @@ ms.lasthandoff: 06/12/2017
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
 - **Выпуск Core Edition:** построен на основе .NET Core и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в выпусках Windows с ограниченными возможностями, таких как Nano Server и Windows IoT.
 
-## <a name="the-running-edition-of-powershell-is-shown-in-the-psedition-property-of-psversiontable"></a>Запущенный выпуск PowerShell отображается в свойстве PSEdition параметра $PSVersionTable.
+## <a name="the-running-edition-of-powershell-is-shown-in-the-psedition-property-of-psversiontable"></a>Запущенный выпуск PowerShell указан в свойстве PSEdition объекта $PSVersionTable.
 ```powershell
 $PSVersionTable
 
@@ -224,8 +224,8 @@ Mode                LastWriteTime         Length Name
 -a----         7/5/2016   1:35 PM              0 MyCoreClrRM.dl                                                                      
 ```
 
-## <a name="powershell-gallery-users-can-find-the-list-of-modules-supported-on-a-specific-powershell-edition-using-tags-pseditiondesktop-and-pseditoncore"></a>Пользователи коллекции PowerShell могут найти список модулей, поддерживаемых в определенной версии PowerShell, с помощью тегов PSEdition_Desktop и PSEditon_Core.
-Считается, что модули без тегов PSEdition_Desktop и PSEditon_Core прекрасно работают в выпусках PowerShell Desktop.
+## <a name="powershell-gallery-users-can-find-the-list-of-modules-supported-on-a-specific-powershell-edition-using-tags-pseditiondesktop-and-pseditioncore"></a>Пользователи коллекции PowerShell могут найти список модулей, поддерживаемых в определенной версии PowerShell, с помощью тегов PSEdition_Desktop и PSEdition_Core.
+Считается, что модули без тегов PSEdition_Desktop и PSEdition_Core работают в выпусках PowerShell Desktop.
 
 ```powershell
 

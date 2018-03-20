@@ -4,17 +4,17 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery"
 title: "Создание учетной записи коллекции PowerShell"
-ms.openlocfilehash: e21575320f220c1ba7ecd9bd464a814b3ebf49d9
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 5af38884d819cb9c600a061109233614bd33666f
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 ## <a name="creating-a-powershell-gallery-account"></a>Создание учетной записи коллекции PowerShell
 
 Перед публикацией чего-либо в коллекции PowerShell необходимо создать учетную запись коллекции PowerShell. Учетные записи коллекции PowerShell должны быть связаны с учетной записью с поддержкой электронной почты Azure Active Directory или учетной записью электронной почты Майкрософт (с доменом outlook.com, hotmail.com и т. д.).
 
-Чтобы создать учетную запись коллекции PowerShell, перейдите к https://PowerShellGallery.com и щелкните "Зарегистрировать" (см. на рисунке ниже). 
+Чтобы создать учетную запись коллекции PowerShell, перейдите на веб-сайт по адресу https://PowerShellGallery.com и выберите пункт "Зарегистрировать" (см. на рисунке ниже). 
 
 ![Регистрация новой учетной записи](./images/CreatingAccount-Register.png)
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 06/12/2017
 После входа вам будет предложено создать имя пользователя для коллекции PowerShell. Ознакомьтесь с предоставленными условиями использования и политикой конфиденциальности, введите имя пользователя и щелкните "Зарегистрировать".
 
 Примечание. Имя учетной записи нельзя изменить после ее создания.  
-Дополнительные сведения см. в статье [Управление владельцами элементов](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners).
+Дополнительные сведения см. в статье [Управление владельцами элементов](https://msdn.microsoft.com/powershell/gallery/psgallery/managing-item-owners).
 
 ## <a name="recommended-practices-for-powershell-gallery-accounts"></a>Рекомендации для учетных записей коллекции PowerShell
 
@@ -35,5 +35,5 @@ ms.lasthandoff: 06/12/2017
 Во многих случаях эта учетная запись не отслеживается регулярно. В этом случае мы рекомендуем использовать пересылку Outlook для отправки электронной почты на другую учетную запись, как правило, из организации, которая будет отслеживаться владельцем элемента.
 
 При наличии нескольких владельцев, связанных с элементом, все сообщения, которые поступают из коллекции PowerShell, будут отправляться всем владельцам.
-Дополнительные сведения о добавлении владельцев элементу см. в статье [Управление владельцами элементов](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners). 
+Дополнительные сведения о добавлении владельцев элементу см. в статье [Управление владельцами элементов](https://msdn.microsoft.com/powershell/gallery/psgallery/managing-item-owners). 
 

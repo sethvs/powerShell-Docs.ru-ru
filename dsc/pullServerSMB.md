@@ -3,17 +3,17 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Настройка опрашивающего SMB-сервера DSC"
-ms.openlocfilehash: 427dc8d858bd12e420fbde03b33a66f33cd654dc
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: ff3faeb1952e6116cf97b1aaf8f125d8931dd35e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-dsc-smb-pull-server"></a>Настройка опрашивающего SMB-сервера DSC
 
 >Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Опрашивающий [SMB-сервер](https://technet.microsoft.com/en-us/library/hh831795.aspx) DSC — это, компьютер, размещающий файловый ресурс SMB, который делает конфигурации DSC или ресурсы DSC доступными для целевых узлов, когда эти узлы запрашивают их.
+Опрашивающий [SMB-сервер](https://technet.microsoft.com/library/hh831795.aspx) DSC — это, компьютер, размещающий файловый ресурс SMB, который делает конфигурации DSC или ресурсы DSC доступными для целевых узлов, когда эти узлы запрашивают их.
 
 Для использования опрашивающего SMB-сервера DSC необходимо выполнить следующее:
 - Настроить файловый SMB-ресурс на сервере, с PowerShell 4.0 или более поздней версии.
@@ -25,7 +25,7 @@ ms.lasthandoff: 01/17/2018
 
 ### <a name="install-the-xsmbshare-resource"></a>Установка ресурса xSmbShare
 
-Для установки модуля **xSmbShare** используйте командлет [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx).
+Для установки модуля **xSmbShare** используйте командлет [Install-Module](https://technet.microsoft.com/library/dn807162.aspx).
 >**Примечание**. **Install-Module** включен в модуль **PowerShellGet**, содержащийся в PowerShell 5.0. Вы можете скачать модуль **PowerShellGet**для PowerShell 3.0 и 4.0 в разделе [Предварительная версия модулей PackageManagement PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=49186). **xSmbShare** содержит ресурс DSC **xSmbShare**, с помощью которого можно создать файловый ресурс SMB.
 
 ### <a name="create-the-directory-and-file-share"></a>Создание файлового ресурса и каталога

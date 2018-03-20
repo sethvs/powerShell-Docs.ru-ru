@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс DSC WaitForAll"
-ms.openlocfilehash: 2054d2af7cd7dd839c62e77c1d4b6eee5cff34ab
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 2b6d9e11acd429eecb30926316d1033331524edc
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dsc-waitforall-resource"></a>Ресурс DSC WaitForAll
 
@@ -36,7 +36,7 @@ WaitForAll [string] #ResourceName
 
 |  Свойство  |  Описание   | 
 |---|---| 
-| ResourceName| Имя ресурса, с которым настраивается отношение зависимости.| 
+| ResourceName| Имя ресурса, с которым настраивается отношение зависимости. Если этот ресурс принадлежит другой конфигурации, имя следует указать в формате "[__тип ресурса__]__имя ресурса__::[__имя конфигурации__]::[__имя конфигурации__]".| 
 | NodeName| Целевые узлы ресурса, с которым настраивается отношение зависимости.| 
 | RetryIntervalSec| Количество секунд перед повторной попыткой. Минимальное значение — 1.| 
 | RetryCount| Максимальное число повторных попыток.| 

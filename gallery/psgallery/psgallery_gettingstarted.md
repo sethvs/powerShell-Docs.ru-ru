@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_начало_работы"
-ms.openlocfilehash: d13c23cd6f9cce433cd3fe1ad5f2d00e3ef0527c
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 2117712b0081db4a21f8480b458a499ed84dc512
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="get-started-with-the-powershell-gallery"></a>Приступая к работе с коллекцией PowerShell
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/29/2017
 2.  `Import-PackageProvider NuGet -MinimumVersion '2.8.5.201' -Force`
 3.  Удалите старую версию NuGet из папки, указанной выше.
 
-Дополнительные сведения см. на веб-сайте <http://oneget.org/>.
+Дополнительные сведения см. в разделе <http://oneget.org/>.
 
   
 Примечание. Из-за изменений в форматах упаковки мы рекомендуем установить последнюю версию PowerShellGet и PackageManagement для установки недавно обновленных компонентов. PowerShellGet включен в Windows 10. Подробности см. [здесь](http://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409).
@@ -103,7 +103,7 @@ CurrentUser` скрипт будет установлен в каталог `$en
 
 Чтобы развернуть элемент из коллекции PowerShell в службе автоматизации Azure, нажмите кнопку **Развернуть в службе автоматизации Azure** на странице подробностей об элементе. После этого вы будете перенаправлены на портал управления Azure, на который нужно войти с использованием учетных данных учетной записи Azure. Обратите внимание, что развертывание элементов с зависимостями приводит к развертыванию всех зависимостей в службе автоматизации Azure. Кнопку "Развернуть в службе автоматизации Azure" можно отключить, добавив тег **AzureAutomationNotSupported** в метаданные элемента.
 
-Подробности о службе автоматизации Azure см. на [сайте службы автоматизации Azure](http://azure.microsoft.com/en-us/services/automation/).
+Подробности о службе автоматизации Azure см. на [сайте службы автоматизации Azure](http://azure.microsoft.com/services/automation/).
 
 ## <a name="updating-items-from-the-powershell-gallery"></a>Обновление элементов из коллекции PowerShell
 

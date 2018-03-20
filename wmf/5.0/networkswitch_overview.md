@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 80852bf750700d549de24e150ffd89ac55b7bf88
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 4868cf657f678ee43a6c92d5ee286e9ddb490964
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="network-switch-management-with-powershell"></a>Управление сетевыми коммутаторами с помощью PowerShell
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="fundamental-network-switch-management-with-windows-powershell"></a>Основы управления сетевыми коммутаторами с помощью Windows PowerShell
 
-Командлеты сетевых коммутаторов, представленные в WMF 5.0, позволяют применять конфигурацию коммутатора, виртуальной локальной сети и портов базового сетевого коммутатора уровня 2 к сетевым коммутаторам, прошедшим сертификацию для Windows Server 2012 R2. Корпорация Майкрософт по-прежнему придерживается концепции уровня [абстракции центра обработки данных](http://technet.microsoft.com/en-us/cloud/dal.aspx) (DAL) и стремится продемонстрировать ту пользу, которую она может принести нашим клиентам и партнерам. Эти командлеты позволяют осуществлять следующее.
+Командлеты сетевых коммутаторов, представленные в WMF 5.0, позволяют применять конфигурацию коммутатора, виртуальной локальной сети и портов базового сетевого коммутатора уровня 2 к сетевым коммутаторам, прошедшим сертификацию для Windows Server 2012 R2. Корпорация Майкрософт по-прежнему придерживается концепции уровня [абстракции центра обработки данных](http://technet.microsoft.com/cloud/dal.aspx) (DAL) и стремится продемонстрировать ту пользу, которую она может принести нашим клиентам и партнерам. Эти командлеты позволяют осуществлять следующее.
 
 - Глобальная конфигурация коммутаторов, например следующее.
     - Задание имени узла
@@ -69,5 +69,5 @@ PS> Get-Command *-NetworkSwitch*
 | Function    | Set-NetworkSwitchVlanProperty             | NetworkSwitch |
 ```
 
-Дополнительные сведения можно найти в записи блога Джеффри Сновера (Jeffrey Snover), посвященной выпуску WMF 5.0 Preview: <http://blogs.technet.com/b/windowsserver/archive/2014/04/03/windows-management-framework-v5-preview.aspx>
+Дополнительные сведения см. в записи блога Джеффри Сновера (Jeffrey Snover), посвященной выпуску WMF 5.0 Preview: <http://blogs.technet.com/b/windowsserver/archive/2014/04/03/windows-management-framework-v5-preview.aspx>
 

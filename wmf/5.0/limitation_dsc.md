@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
-ms.openlocfilehash: f39328b240a36deb40d484c4aedb889cee91dc8d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: ad1d19eeb70a19cd3d1493b9a09b115af755feb4
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="desired-state-configuration-dsc-known-issues-and-limitations"></a>Известные проблемы и ограничения настройки требуемого состояния (DSC)
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 06/12/2017
 
 В выпусках WMF 4.0 и WMF 5.0 Preview DSC не позволял использовать в конфигурациях пароли длиннее 121 символов. DSC требовал использования коротких паролей даже в тех случаях, когда были нужны длинные и надежные пароли. Это критическое изменение позволяет использовать в конфигурации DSC пароли произвольной длины.
 
-**Разрешение.** Повторно создайте сертификат с использованием шифрования ключа или данных и расширенного ключа шифрования документов (1.3.6.1.4.1.311.80.1). Дополнительные сведения см. в статье TechNet <https://technet.microsoft.com/en-us/library/dn807171.aspx>.
+**Разрешение.** Повторно создайте сертификат с использованием шифрования ключа или данных и расширенного ключа шифрования документов (1.3.6.1.4.1.311.80.1). Дополнительные сведения см. в статье TechNet <https://technet.microsoft.com/library/dn807171.aspx>.
 
 
 <a name="dsc-cmdlets-may-fail-after-installing-wmf-50-rtm"></a>После установки WMF 5.0 RTM может произойти сбой командлетов DSC

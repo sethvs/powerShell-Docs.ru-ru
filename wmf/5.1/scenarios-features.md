@@ -4,18 +4,18 @@ author: JKeithB
 ms.topic: reference
 keywords: "wmf,powershell,установка"
 title: "Новые сценарии и возможности в WMF 5.1"
-ms.openlocfilehash: 430781c5c9a59fc544db4f94098313ae1e9cf610
-ms.sourcegitcommit: a6ee6e64d369ecf82c730411bed9750278fdb5c1
+ms.openlocfilehash: da3dfb2243c00e3faf637d3dbcb70016cfabb011
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="new-scenarios-and-features-in-wmf-51"></a>Новые сценарии и возможности в WMF 5.1 #
 
 > Примечание. Эта информация является предварительной и может быть изменена.
 
 ## <a name="powershell-editions"></a>Выпуски PowerShell ##
-Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
+Начиная с версии 5.1, среда PowerShell доступна в разных выпусках, обладающих различными наборами функций и совместимостью с платформами.
 
 - **Выпуск Desktop Edition:** построен на основе .NET Framework и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в полноценных выпусках Windows, таких как Server Core и Windows Desktop.
 - **Выпуск Core Edition:** построен на основе .NET Core и обеспечивает совместимость со скриптами и модулями, которые предназначены для версий PowerShell, выполняющихся в выпусках Windows с ограниченными возможностями, таких как Nano Server и Windows IoT.
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/18/2017
 
 ## <a name="catalog-cmdlets"></a>Командлеты для работы с каталогами  
 
-Мы добавили два новых командлета для создания и проверки файлов каталога Windows в модуль [Microsoft.Powershell.Security](https://technet.microsoft.com/en-us/library/hh847877.aspx).  
+Мы добавили два новых командлета для создания и проверки файлов каталога Windows в модуль [Microsoft.Powershell.Security](https://technet.microsoft.com/library/hh847877.aspx).  
 
 ###<a name="new-filecatalog"></a>New-FileCatalog 
 --------------------------------
@@ -62,7 +62,7 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 
 ![](../images/TestFileCatalog.jpg)
 
-Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти данные можно получить с помощью параметра *-Detailed*. Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
+Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти данные можно получить с помощью параметра *-Detailed*. Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
 
 
 ## <a name="module-analysis-cache"></a>Кэш анализа модуля ##
@@ -107,7 +107,7 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 
 ##<a name="improvements-to-pester"></a>Усовершенствования Pester
-В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий были отправлены изменения https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которые улучшают работу Pester с Nano Server. 
+В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий было добавлено изменение https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которое улучшает работу Pester с Nano Server. 
 
-Изменения, произошедшие в версиях с 3.3.5 по 3.4.0, можно найти в файле ChangeLog.md по следующей ссылке: https://github.com/pester/Pester/blob/master/CHANGELOG.md.
+Чтобы просмотреть изменения в версиях с 3.3.5 по 3.4.0, откройте файл ChangeLog.md: https://github.com/pester/Pester/blob/master/CHANGELOG.md
 
