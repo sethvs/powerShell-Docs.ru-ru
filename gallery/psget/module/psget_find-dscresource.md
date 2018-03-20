@@ -4,11 +4,11 @@ contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: Find-DscResource
-ms.openlocfilehash: 37ba7925d6f73c453126f25e0818b3f8839d3b3b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 6c5713f122d48e9c9d5e0aa45dc14047afc56102
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="find-dscresource"></a>Find-DscResource
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="description"></a>Описание
 
-Командлет Find-DscResource ищет ресурсы [настройки требуемого состояния (DSC)](https://msdn.microsoft.com/en-us/PowerShell/dsc/overview), имеющиеся в модулях, соответствующих заданному условию, из зарегистрированных репозиториев.
+Командлет Find-DscResource ищет ресурсы [настройки требуемого состояния (DSC)](https://msdn.microsoft.com/PowerShell/dsc/overview), имеющиеся в модулях, соответствующих заданному условию, из зарегистрированных репозиториев.
 Для каждого модуля, найденного командлетом Find-DscResource, он возвращает объект PSGetDscResourceInfo, который можно передать в командлет Install-Module, чтобы установить возвращенные этим командлетом модули, содержащие ресурсы.
 
 DSC — это новая платформа управления в Windows PowerShell, позволяющая развертывать данные конфигураций для служб программного обеспечения, а также управлять этими данными и средой, в которой выполняются такие службы.

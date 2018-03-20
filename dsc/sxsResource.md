@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Использование ресурсов с несколькими версиями"
-ms.openlocfilehash: 8bd8b1dab9418c6d8cf64cd682c527a7f039cdb4
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 5ca4eadfe23a4675e1b81b86d4274d7f113228fe
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-resources-with-multiple-versions"></a>Использование ресурсов с несколькими версиями
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="installing-multiple-resource-versions-side-by-side"></a>Параллельная установка нескольких версий ресурса
 
-Параметры **MinimumVersion**, **MaximumVersion** и **RequiredVersion** командлета [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) можно использовать, чтобы указать версию модуля для установки. Вызов командлета **Install-Module** без указания версии устанавливает последнюю версию.
+Параметры **MinimumVersion**, **MaximumVersion** и **RequiredVersion** командлета [Install-Module](https://technet.microsoft.com/library/dn807162.aspx) можно использовать, чтобы указать версию модуля для установки. Вызов командлета **Install-Module** без указания версии устанавливает последнюю версию.
 
 Например, существует несколько версий модуля **xFailOverCluster**, каждая из которых содержит ресурс **xCluster**. Результат вызова командлета **Install-Module** без указания номера версии будет следующим.
 

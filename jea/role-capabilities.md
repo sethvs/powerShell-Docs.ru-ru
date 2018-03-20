@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: "jea,powershell,безопасность"
 title: "Возможности ролей JEA"
-ms.openlocfilehash: 10f5f390daccbb012be6ee7272041e777810ee12
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 083cab3b44348168fe20e8355f5076b28be78702
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="jea-role-capabilities"></a>Возможности ролей JEA
 
@@ -86,7 +86,7 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
 ```
 
 > [!NOTE]
-> [Общие параметры PowerShell](https://technet.microsoft.com/en-us/library/hh847884.aspx) всегда разрешены, даже если ограничить доступные параметры.
+> [Общие параметры PowerShell](https://technet.microsoft.com/library/hh847884.aspx) всегда разрешены, даже если ограничить доступные параметры.
 > Их не следует явно указывать в поле "Parameters".
 
 В следующей таблице описаны различные способы настройки видимого командлета или видимой функции.
@@ -111,7 +111,7 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
 
 В противном случае ValidatePattern переопределит ValidateSet.
 
-Дополнительные сведения о ValidatePattern см. в [этой записи блога *Hey, Scripting Guy!*](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) и справочных материалах о [регулярных выражениях PowerShell](https://technet.microsoft.com/en-us/library/hh847880.aspx).
+Дополнительные сведения о ValidatePattern см. в [этой записи блога *Hey, Scripting Guy!*](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) и справочных материалах о [регулярных выражениях PowerShell](https://technet.microsoft.com/library/hh847880.aspx).
 
 ### <a name="allowing-external-commands-and-powershell-scripts"></a>Разрешение внешних команд и сценариев PowerShell
 
@@ -128,7 +128,7 @@ VisibleExternalCommands = 'C:\Windows\System32\whoami.exe', 'C:\Program Files\Co
 Например, рассмотрим роль администратора файлового сервера, который хочет проверить, какие сетевые папки размещаются на локальном компьютере.
 Один из способов проверки заключается в использовании `net share`.
 Однако разрешение использования net.exe очень опасно, так как администратор может легко воспользоваться этой командой для получения прав администратора с помощью `net group Administrators unprivilegedjeauser /add`.
-Лучше разрешить командлет [Get-SmbShare](https://technet.microsoft.com/en-us/library/jj635704.aspx), которой дает тот же результат, но имеет гораздо более ограниченную область действия.
+Лучше разрешить командлет [Get-SmbShare](https://technet.microsoft.com/library/jj635704.aspx), которой дает тот же результат, но имеет гораздо более ограниченную область действия.
 
 Делая внешние команды доступными для пользователей в сеансе JEA, всегда указывайте полный путь к исполняемому файлу, чтобы вместо него не запускалась другая (и потенциально вредоносная) программа с таким же именем, размещенная в другом месте.
 

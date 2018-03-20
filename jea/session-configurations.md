@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: "jea,powershell,безопасность"
 title: "Конфигурации сеансов JEA"
-ms.openlocfilehash: 0a8931ae15caf04a3639ab46f130e5f5b0498d8c
-ms.sourcegitcommit: 0733db9a05e89e6a23f6b52b9edd784fcbe8beec
+ms.openlocfilehash: c475a90a59d91b074f954cfb656b00142444c052
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="jea-session-configurations"></a>Конфигурации сеансов JEA
 
@@ -38,7 +38,7 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\MyJEA
 
 Файл конфигурации сеанса можно открыть в любом текстовом редакторе.
 Поле `-SessionType RestrictedRemoteServer` указывает, что конфигурация сеанса будет использоваться JEA для безопасного управления.
-Настроенные таким образом сеансы работают в [режиме NoLanguage](https://technet.microsoft.com/en-us/library/dn433292.aspx) и содержат только восемь следующих команд (и псевдонимов) по умолчанию:
+Настроенные таким образом сеансы работают в [режиме NoLanguage](https://technet.microsoft.com/library/dn433292.aspx) и содержат только восемь следующих команд (и псевдонимов) по умолчанию:
 
 - Clear-Host (cls, clear)
 - Exit-PSSession (exsn, exit)
@@ -128,7 +128,7 @@ TranscriptDirectory = 'C:\ProgramData\JEAConfiguration\Transcripts'
 ### <a name="user-drive"></a>Диск пользователя
 
 Если подключающимся пользователям потребуется скопировать файлы с конечной точки JEA или на нее для выполнения команды, можно включить диск пользователя в файле конфигурации сеанса.
-Диск пользователя — это [PSDrive](https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/managing-windows-powershell-drives), сопоставленный с уникальной папкой каждого подключающегося пользователя.
+Диск пользователя — это [PSDrive](https://msdn.microsoft.com/powershell/scripting/getting-started/cookbooks/managing-windows-powershell-drives), сопоставленный с уникальной папкой каждого подключающегося пользователя.
 Эта папка служит для копирования файлов из системы и в нее без назначения пользователям прав доступа ко всей файловой системе или предоставления поставщика FileSystem.
 Содержимое диска пользователя сохраняется между сеансами на случай, если сетевое подключение будет прервано.
 

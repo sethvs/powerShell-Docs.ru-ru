@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Выполнение удаленных команд"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: 43f07abd642e7de235647fa151537c46ebe86cae
-ms.sourcegitcommit: 6aed37d7f0c9652ae09bb8c11928da7e4783ed7f
+ms.openlocfilehash: 24648e8f35fbc28c9ba9f9b7176ac23e72ffbe78
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="running-remote-commands"></a>Выполнение удаленных команд
 
@@ -48,9 +48,9 @@ Get-Command | where { $_.parameters.keys -contains "ComputerName" -and $_.parame
 ## <a name="windows-powershell-remoting"></a>Служба удаленного взаимодействия Windows PowerShell
 Служба удаленного взаимодействия Windows PowerShell, использующая протокол WS-Management, позволяет запустить любую команду Windows PowerShell на одном или нескольких удаленных компьютерах. С ее помощью можно устанавливать постоянные подключения, запускать интерактивные сеансы 1:1 и сценарии на нескольких компьютерах.
 
-Чтобы использовать службу удаленного взаимодействия Windows PowerShell, удаленный компьютер должен быть настроен для удаленного управления. Дополнительные сведения, в том числе инструкции, см. в разделе [about_Remote_Requirements](https://technet.microsoft.com/en-us/library/dd315349.aspx).
+Чтобы использовать службу удаленного взаимодействия Windows PowerShell, удаленный компьютер должен быть настроен для удаленного управления. Дополнительные сведения, в том числе инструкции, см. в разделе [about_Remote_Requirements](https://technet.microsoft.com/library/dd315349.aspx).
 
-После настройки службы удаленного взаимодействия Windows PowerShell вам станут доступны многие стратегии удаленного взаимодействия. В остальной части этого документа перечислены только некоторые из них. Дополнительные сведения см. в разделах [about_Remote](https://technet.microsoft.com/en-us/library/dd347744.aspx) и [about_Remote_FAQ](https://technet.microsoft.com/en-us/library/dd347744.aspx).
+После настройки службы удаленного взаимодействия Windows PowerShell вам станут доступны многие стратегии удаленного взаимодействия. В остальной части этого документа перечислены только некоторые из них. Дополнительные сведения см. в разделах [about_Remote](https://technet.microsoft.com/library/dd347744.aspx) и [about_Remote_FAQ](https://technet.microsoft.com/library/dd347744.aspx).
 
 ### <a name="start-an-interactive-session"></a>Запуск интерактивного сеанса
 Чтобы запустить интерактивный сеанс с одним удаленным компьютером, используйте командлет [Enter-PSSession](https://go.microsoft.com/fwlink/?LinkId=821477).

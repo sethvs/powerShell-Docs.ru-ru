@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: "коллекции,powershell,командлет,psgallery"
 title: "psgallery_развертывание_в_службу_автоматизации_azure"
-ms.openlocfilehash: 91f48fb43d7fb099e34ce5d3b3b632e3cb119d64
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 223acbcc2f6cd4f15e1ee55d3f2f68df851cd902
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 <a name="deploy-to-azure-automation"></a>Развертывание в службу автоматизации Azure
 ===========================
@@ -26,5 +26,5 @@ ms.lasthandoff: 06/12/2017
 
 Кнопку "Развернуть в службу автоматизации Azure" можно отключить, добавив тег AzureAutomationNotSupported в метаданные элемента.
 
-Подробности о службе автоматизации Azure см. на [сайте службы автоматизации Azure](http://azure.microsoft.com/en-us/services/automation/).
+Подробности о службе автоматизации Azure см. на [сайте службы автоматизации Azure](http://azure.microsoft.com/services/automation/).
 

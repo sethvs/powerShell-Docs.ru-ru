@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Метод ResourceTest класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: 3c88f74c5f623502e8cbe0d7aa7390fca75569a9
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 799b1cd91dfacf25c0e5e734ca96d20a776103f0
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resourcetest-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceTest класса MSFT_DSCLocalConfigurationManager
 
@@ -35,7 +35,7 @@ uint32 ResourceTest(
 Имя модуля, содержащего вызываемый ресурс.
 
 *resourceProperty* \[in\]  
-Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
+Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
 
 *InDesiredState* \[out\]  
 В выходных данных это свойство имеет значение **true**, если целевой узел находится в нужном состоянии.

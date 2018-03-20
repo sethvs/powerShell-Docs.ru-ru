@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Ресурс nxFile в DSC для Linux"
-ms.openlocfilehash: e4916414e4de29ab15d9c82c492671ebc16d5412
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 7ee8a37ee63a70b1c8c69dc79dfbc77c1f583234
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dsc-for-linux-nxfile-resource"></a>Ресурс nxFile в DSC для Linux
 
@@ -76,7 +76,7 @@ nxFile resolvConf
 ```
 
 
-Шаг 2. Прочтите содержимое файла в сценарии PowerShell с помощью командлета [Get-Content](https://technet.microsoft.com/en-us/library/hh849787.aspx), настроив с помощью свойства __$OFS__ использование символа разрыва строки Linux.
+Шаг 2. Прочтите содержимое файла в сценарии PowerShell с помощью командлета [Get-Content](https://technet.microsoft.com/library/hh849787.aspx), настроив с помощью свойства __$OFS__ использование символа разрыва строки Linux.
 
 
 ```

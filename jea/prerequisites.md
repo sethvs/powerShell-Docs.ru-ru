@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: "jea,powershell,безопасность"
 title: "Предварительные условия JEA"
-ms.openlocfilehash: 75d5db2ba446df1d461050d187dc1495a22fef18
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: e6ee16e34eb9f1f0b2f3601c1aa9e90ab4f785f1
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites"></a>Необходимые компоненты
 
@@ -72,7 +72,7 @@ Major  Minor  Build  Revision
 ## <a name="enable-powershell-remoting"></a>Включение удаленного взаимодействия PowerShell
 
 Удаленное взаимодействие PowerShell предоставляет собой основу, на которой построена функция JEA.
-Поэтому перед использованием JEA необходимо включить удаленное взаимодействие PowerShell и [должным образом защитить](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity) его в своей системе.
+Поэтому перед использованием JEA необходимо включить удаленное взаимодействие PowerShell и [должным образом защитить](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity) его в своей системе.
 
 В Windows Server 2012, 2012 R2 и 2016 удаленное взаимодействие PowerShell включено по умолчанию.
 Удаленное взаимодействие PowerShell можно включить, выполнив приведенную ниже команду в окне PowerShell с повышенными привилегиями.
@@ -109,6 +109,6 @@ Enable-PSRemoting
 
 ## <a name="see-also"></a>См. также:
 
-- [Дополнительные сведения о безопасности удаленного взаимодействия PowerShell и WinRM](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity)
+- [Дополнительные сведения о безопасности удаленного взаимодействия PowerShell и WinRM](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity)
 - [Запись блога *PowerShell ♥ the Blue Team* по безопасности](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
 

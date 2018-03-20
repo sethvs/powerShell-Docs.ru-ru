@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Параметры учетных данных в данных конфигурации"
-ms.openlocfilehash: 15cdb29127d9774c58e1d6518bbba56273e7defd
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 6ddf82c2b63309255ec3187d650677a6c3c2afb0
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="credentials-options-in-configuration-data"></a>Параметры учетных данных в данных конфигурации
 >Область применения: Windows PowerShell 5.0
@@ -156,7 +156,7 @@ Group [String] #ResourceName
 }
 ```
 
-В этом примере используется ресурс [Group](https://msdn.microsoft.com/en-us/powershell/dsc/groupresource) из встроенного модуля ресурсов DSC `PSDesiredStateConfiguration`.
+В этом примере используется ресурс [Group](https://msdn.microsoft.com/powershell/dsc/groupresource) из встроенного модуля ресурсов DSC `PSDesiredStateConfiguration`.
 Он может создавать локальные группы, а также добавлять и удалять члены.
 Этот ресурс принимает как свойство `Credential`, так и автоматическое свойство `PsDscRunAsCredential`,
 но использует только свойство `Credential`.
@@ -231,7 +231,7 @@ for node 'localhost'.
 ## <a name="psdscallowplaintextpassword"></a>PsDscAllowPlainTextPassword
 
 В первом сообщении об ошибке находится URL-адрес документации.
-Он содержит инструкции по шифрованию паролей с использованием структуры [ConfigurationData](https://msdn.microsoft.com/en-us/powershell/dsc/configdata) и сертификата.
+Он содержит инструкции по шифрованию паролей с использованием структуры [ConfigurationData](https://msdn.microsoft.com/powershell/dsc/configdata) и сертификата.
 Дополнительные сведения о сертификатах в DSC см. в [этой записи](http://aka.ms/certs4dsc).
 
 Чтобы принудительно использовать пароль в виде простого текста, необходимо добавить в раздел данных конфигурации ресурса ключ `PsDscAllowPlainTextPassword` следующим образом:

@@ -3,17 +3,17 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Запись поддержки конфигураций DSC"
-ms.openlocfilehash: c868fa0565baff833423db090a5d62824ab4cad8
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: c5d499ec887829c864c0f63f64af2d0a7738220b
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="writing-help-for-dsc-configurations"></a>Запись поддержки конфигураций DSC
 
 >Область применения: Windows PowerShell 5.0
 
-Вы можете использовать справку на основе комментариев в конфигурациях DSC. Пользователи могут получить доступ к справке, вызвав функцию конфигурации с `-?` или с помощью командлета [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx). Дополнительные сведения о справке на основе комментариев PowerShell см. в разделе [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
+Вы можете использовать справку на основе комментариев в конфигурациях DSC. Пользователи могут получить доступ к справке, вызвав функцию конфигурации с `-?` или с помощью командлета [Get-Help](https://technet.microsoft.com/library/hh849696.aspx). Дополнительные сведения о справке на основе комментариев PowerShell см. в разделе [about_Comment_Based_Help](https://technet.microsoft.com/library/hh847834.aspx).
 
 В следующем примере показан сценарий, который содержит конфигурацию и справку на основе комментариев для этой конфигурации:
 

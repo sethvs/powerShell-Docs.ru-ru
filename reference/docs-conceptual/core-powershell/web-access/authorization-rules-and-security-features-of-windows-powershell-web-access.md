@@ -2,11 +2,11 @@
 ms.date: 2017-06-27
 keywords: "powershell,командлет"
 title: "Правила авторизации и средства безопасности Windows PowerShell Web Access"
-ms.openlocfilehash: 6b50fdc0f2854d8af6147432fed1a155d26f57e7
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 19e4aa1bb55178ec2634af0771afe2db5db3423c
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Правила авторизации и средства безопасности Windows PowerShell Web Access
 
@@ -32,7 +32,7 @@ Windows PowerShell Web Access в Windows Server 2012 R2 и Windows Server 201
 Чтобы создать объект PSCredential, содержащий учетные данные, которые требуется передать на удаленный компьютер, выполните командлет [Get-Credential](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.security/Get-Credential).
 
 Правила проверки подлинности Windows PowerShell Web Access — это правила белого списка.
-Каждое правило является определением разрешенных подключений между пользователями, целевыми компьютерами и конкретными [конфигурациями сеансов](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configurations) Windows PowerShell (которые также называют конечными точками или _пространствами выполнения_) на указанных конечных компьютерах.
+Каждое правило является определением разрешенных подключений между пользователями, целевыми компьютерами и конкретными [конфигурациями сеансов](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configurations) Windows PowerShell (которые также называют конечными точками или _пространствами выполнения_) на указанных конечных компьютерах.
 Понятие **пространств выполнения** рассматривается в статье, посвященной [началу использования пространств выполнения PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/26/beginning-use-of-powershell-runspaces-part-1/).
 
 > **Примечание по безопасности**
@@ -103,7 +103,7 @@ Windows PowerShell Web Access в Windows Server 2012 R2 и Windows Server 201
 Конечным уровнем безопасности Windows PowerShell Web Access является собственная конфигурация безопасности целевого компьютера.
 Пользователи должны иметь достаточные права доступа, настроенные на целевом компьютере, а также в правилах авторизации Windows PowerShell Web Access, чтобы выполнять веб-консоль Windows PowerShell, которая взаимодействует с целевым компьютером через Windows PowerShell Web Access.
 
-Этот уровень обеспечивает такие же механизмы безопасности, как и при проверке попыток подключения, когда пользователь пытается создать удаленный сеанс Windows PowerShell с целевым компьютером из Windows PowerShell, выполняя командлет [Enter-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Enter-PSSession) или [New-PSSession](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/new-pssession).
+Этот уровень обеспечивает такие же механизмы безопасности, как и при проверке попыток подключения, когда пользователь пытается создать удаленный сеанс Windows PowerShell с целевым компьютером из Windows PowerShell, выполняя командлет [Enter-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Enter-PSSession) или [New-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/new-pssession).
 
 По умолчанию Windows PowerShell Web Access использует основное имя пользователя и пароль для проверки подлинности и на шлюзе, и на целевом компьютере.
 На веб-странице входа в разделе **Дополнительные параметры подключения** пользователям предлагается возможность указать другие учетные данные для целевого компьютера, если они требуются.

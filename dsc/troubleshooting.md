@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Устранение неполадок в DSC"
-ms.openlocfilehash: 4141e1f3304460dcaf310ce603fdc5d9550a5069
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: cdb11a80daecec0e0d01071752612663ac69ac6d
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="troubleshooting-dsc"></a>Устранение неполадок в DSC
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="using-get-dscconfigurationstatus"></a>Использование Get-DscConfigurationStatus
 
-Командлет [Get-DscConfigurationStatus](https://technet.microsoft.com/en-us/library/mt517868.aspx) получает сведения о состоянии конфигурации с целевого узла. Возвращается расширенный объект, который содержит высокоуровневые сведения о том, было ли выполнение конфигурации успешным. Можно детализировать объект для получения сведений о запуске конфигурации, например следующие.
+Командлет [Get-DscConfigurationStatus](https://technet.microsoft.com/library/mt517868.aspx) получает сведения о состоянии конфигурации с целевого узла. Возвращается расширенный объект, который содержит высокоуровневые сведения о том, было ли выполнение конфигурации успешным. Можно детализировать объект для получения сведений о запуске конфигурации, например следующие.
 
 * Все ресурсы, для которых возник сбой
 * Любые ресурсы, запросившие перезагрузку
@@ -621,5 +621,5 @@ onlyProperty                            PSComputerName
 * [Создание пользовательских ресурсов DSC Windows PowerShell](authoringResource.md)
 
 ### <a name="other-resources"></a>Прочие ресурсы
-* [Конфигурация требуемого состояния Windows PowerShell (DSC)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
+* [Конфигурация требуемого состояния Windows PowerShell (DSC)](https://technet.microsoft.com/library/dn521624(v=wps.630).aspx)
 

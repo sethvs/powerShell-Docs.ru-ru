@@ -4,11 +4,11 @@ contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: "командлеты_PackageManagement"
-ms.openlocfilehash: aca4f461ff0e51aa812f8219c74bd7d85d1e7b2d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 92dcebfc79bdb123e3ab3c56fc1af1f793bcb1e3
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="packagemanagement-cmdlets"></a>Командлеты PackageManagement
 Это основная составляющая PackageManagement, отвечающая за поддержку обнаружения, установки и инвентаризации программного обеспечения. Попробуйте использовать для выполнения этих операций следующие командлеты:
@@ -32,7 +32,7 @@ PS C:\> Install-Module PackageManagement –Force
 ```
 В этом случае потребуется повторно войти в сеанс PowerShell, чтобы переключиться на новую версию PackageManagement.
 
-## <a name="find-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890709aspx"></a>[Командлет Find-Package](https://technet.microsoft.com/en-us/library/dn890709.aspx)
+## <a name="find-package-cmdlethttpstechnetmicrosoftcomlibrarydn890709aspx"></a>[Командлет Find-Package](https://technet.microsoft.com/library/dn890709.aspx)
 Этот командлет обеспечивает обнаружения пакетов программного обеспечения в доступных источниках с помощью загруженных поставщиков пакетов.
 ```powershell
 # Find all available Windows PowerShell module packages from galleries registered
@@ -52,7 +52,7 @@ Find-Package -Name jquery –Provider NuGet -Source http://www.nuget.org/api/v2/
 Find-Package -Name jquery –Provider NuGet –RequiredVersion 2.1.4 -Source nuget.org
 ```
 
-## <a name="find-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676544aspx"></a>[Командлет Find-PackageProvider](https://technet.microsoft.com/en-us/library/mt676544.aspx)
+## <a name="find-packageprovider-cmdlethttpstechnetmicrosoftcomlibrarymt676544aspx"></a>[Командлет Find-PackageProvider](https://technet.microsoft.com/library/mt676544.aspx)
 Командлет Find-PackageProvider находит подходящие поставщики PackageManagement, которые доступны в зарегистрированных источниках пакетов PowerShellGet. Эти поставщики пакетов можно установить с помощью командлета Install-PackageProvider. По умолчанию сюда относятся модули, доступные в коллекции PowerShell с тегами PackageManagement и Provider. 
 
 Кроме того, Find-PackageProvider находит совпадающие поставщики PackageManagement, доступные в хранилище BLOB-объектов Azure PackageManagement, где для их поиска и установки используется поставщик начального загрузчика PackageManagement.
@@ -73,7 +73,7 @@ Install-PackageProvider -Source C:\sharedfolder\Providers\ -Name nuget -force
     
 ```
 
-## <a name="get-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890704aspx"></a>[Командлет Get-Package](https://technet.microsoft.com/en-us/library/dn890704.aspx)
+## <a name="get-package-cmdlethttpstechnetmicrosoftcomlibrarydn890704aspx"></a>[Командлет Get-Package](https://technet.microsoft.com/library/dn890704.aspx)
 Этот командлет возвращает список всех пакетов программного обеспечения, установленных с помощью PackageManagement.
 ```powershell
 # Get all the packages installed by Programs provider

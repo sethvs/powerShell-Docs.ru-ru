@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: "dsc,powershell,конфигурация,установка"
 title: "Написание пользовательских ресурсов DSC с использованием классов PowerShell"
-ms.openlocfilehash: b24351a49ca11dac4687efdce39d400bfd00f399
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 53757f965c51fee699409b5a8ecda802dda9801f
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>Написание пользовательских ресурсов DSC с использованием классов PowerShell
 
@@ -69,7 +69,7 @@ class FileResource {
 - **DscProperty(NotConfigurable)** — свойство, доступное только для чтения. Свойства с таким атрибутом задаются не конфигурацией, а методом **Get()** (если они есть).
 - **DscProperty()** — свойство доступно для настройки, но не является обязательным.
 
-Свойства **$Path** и **$SourcePath** представляют собой строки. **$CreationTime** — это свойство [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx). Свойство **$Ensure** является перечислением и определяется следующим образом:
+Свойства **$Path** и **$SourcePath** представляют собой строки. **$CreationTime** — это свойство [DateTime](https://technet.microsoft.com/library/system.datetime.aspx). Свойство **$Ensure** является перечислением и определяется следующим образом:
 
 ```powershell
 enum Ensure 

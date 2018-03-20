@@ -4,19 +4,19 @@ contributor: manikb
 ms.topic: reference
 keywords: "коллекция,powershell,командлет,psget"
 title: "Получение модуля PowerShellGet"
-ms.openlocfilehash: a5a323b17709e519ec57623a9dd7499e591bbed5
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 7224cf5d71b98d51ca22c47a00ca382d34864bfb
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 <a name="get-powershellget-module"></a>Получение модуля PowerShellGet
 ========================
 
 ### <a name="powershellget-is-an-in-box-module-in-the-following-releases"></a>Модуль PowerShellGet входит в комплект поставки в следующих выпусках:
-- [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) или более поздняя версия;
-- [Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/get-started/windows-server-2016) или более поздняя версия;
-- [Windows Management Framework (WMF) 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) или более поздняя версия;
+- [Windows 10](https://www.microsoft.com/windows/get-windows-10) или более поздняя версия;
+- [Windows Server 2016](https://technet.microsoft.com/windows-server-docs/get-started/windows-server-2016) или более поздняя версия;
+- [Windows Management Framework (WMF) 5.0](https://www.microsoft.com/download/details.aspx?id=50395) или более поздняя версия;
 - [PowerShell 6](https://github.com/PowerShell/PowerShell/releases).
 
 ### <a name="get-powershellget-module-for-powershell-versions-30-and-40"></a>Получение модуля PowerShellGet для PowerShell версии 3.0 и 4.0

@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: "jea,powershell,безопасность"
 title: "Регистрация конфигураций JEA"
-ms.openlocfilehash: 0684a1c7acffbccbedab9dba4689611a24c8ae25
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: d6b007fed97be6470bfe4cf4d42f72cb4edc3a45
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="registering-jea-configurations"></a>Регистрация конфигураций JEA
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="single-machine-configuration"></a>Конфигурация для отдельного компьютера
 
-Для небольших сред можно развернуть JEA, зарегистрировав файл конфигурации сеанса с помощью командлета [Register-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration).
+Для небольших сред можно развернуть JEA, зарегистрировав файл конфигурации сеанса с помощью командлета [Register-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration).
 
 Прежде чем приступать к этой процедуре, убедитесь, что выполняются следующие необходимые условия:
 - Создана одна или несколько ролей, которые помещены в папку "RoleCapabilities" для допустимого модуля PowerShell.
@@ -28,7 +28,7 @@ ms.lasthandoff: 06/12/2017
 
 Кроме того, потребуется выбрать имя для конечной точки JEA.
 Это имя будет запрашиваться при подключении пользователей к системе с помощью JEA.
-Для просмотра имен существующих конечных точек в системе можно использовать командлет [Get-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration).
+Для просмотра имен существующих конечных точек в системе можно использовать командлет [Get-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration).
 Конечные точки, начинающиеся со слова "microsoft", обычно поставляются с Windows.
 Конечная точка "microsoft.powershell" используется по умолчанию при подключении к удаленной конечной точке PowerShell.
 

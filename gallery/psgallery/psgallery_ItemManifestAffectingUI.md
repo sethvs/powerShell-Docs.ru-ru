@@ -2,8 +2,8 @@
 
 В этой статье издателям предоставляется сводная информация о том, как изменить манифест для публикаций в коллекции PowerShell таким образом, чтобы он относился к функциям командлетов PowerShellGet и пользовательского интерфейса коллекции PowerShell. Это содержимое упорядочено по области отображения изменений (от центральной части до области навигации слева). Теги подробно рассматриваются в соответствующем разделе. В нем описаны важные и часто используемые теги. Также предусмотрено два раздела с примерами манифестов: 
 
-* Сведения о модулях см. в разделе об [обновлении манифеста модуля](https://docs.microsoft.com/en-us/powershell/gallery/psget/module/psget_update-modulemanifest).
-* Сведения о скриптах см. в разделе о [создании файла скрипта с метаданными](https://docs.microsoft.com/en-us/powershell/gallery/psget/script/psget_new-scriptfileinfo).
+* Сведения о модулях см. в разделе об [обновлении манифеста модуля](https://docs.microsoft.com/powershell/gallery/psget/module/psget_update-modulemanifest).
+* Сведения о скриптах см. в разделе о [создании файла скрипта с метаданными](https://docs.microsoft.com/powershell/gallery/psget/script/psget_new-scriptfileinfo).
 
 ## <a name="powershell-gallery-feature-elements-controlled-by-the-manifest"></a>Управляемые манифестом элементы компонентов в коллекции PowerShell
 

@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: "powershell,командлет"
 title: "Отладка сценариев в интегрированной среде сценариев Windows PowerShell"
-ms.openlocfilehash: 0ec520dfcba5e4562258256570f140e618e77cdb
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: d37fb6cdcd5782cf8eff89c2b124b7c81fdaca71
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-debug-scripts-in-windows-powershell-ise"></a>Отладка сценариев в интегрированной среде сценариев Windows PowerShell
 
@@ -42,7 +42,7 @@ Set-PSBreakpoint -Script sample.ps1 -Variable Server
 В меню **Отладка** выберите пункт **Вывести список точек останова**. Следующий сценарий — пример перечисления всех точек останова из области консоли с помощью командлета [Get-PSBreakpoint](https://technet.microsoft.com/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6):
 
 ``` PowerShell
-# This command lists all breakpoints in the current session. 
+# This command lists all breakpoints in the current session.
 Get-PSBreakpoint
 ```
 
@@ -82,7 +82,7 @@ Disable-PSBreakpoint -Id 0
 Отключение точки не приводит к ее удалению; она просто остается неактивной, пока не будет включена.  Чтобы отключить все точки останова в текущем сеансе, выберите команду **Отключить все точки останова** в меню **Отладка**. Следующий сценарий — пример отключения всех точек останова из области консоли с помощью командлета [Disable-PSBreakpoint](https://technet.microsoft.com/library/d4974e9b-0aaa-4e20-b87f-f599a413e4e8):
 
 ``` PowerShell
-# This command disables all breakpoints in the current session. 
+# This command disables all breakpoints in the current session.
 # You can abbreviate this command as: "gbp | dbp".
 Get-PSBreakpoint | Disable-PSBreakpoint
 ```
@@ -99,13 +99,13 @@ Enable-PSBreakpoint -Id 0, 1, 5
 Чтобы включить все точки останова, определенные в текущем сеансе, выберите команду **Включить все точки останова** в меню **Отладка**. Следующий сценарий — пример включения всех точек останова из области консоли с помощью командлета [Enable-PSBreakpoint](https://technet.microsoft.com/library/739e1091-3b3f-405f-a428-bec7543e5df0):
 
 ``` PowerShell
-# This command enables all breakpoints in the current session. 
+# This command enables all breakpoints in the current session.
 # You can abbreviate the command by using their aliases: "gbp | ebp".
 Get-PSBreakpoint | Enable-PSBreakpoint
 ```
 
 ## <a name="how-to-manage-a-debugging-session"></a>Управление сеансом отладки
-Перед запуском отладки нужно задать одну или несколько точек останова. Точки останова нельзя задавать, если отлаживаемый сценарий не сохранен. Инструкции по заданию точек останова см. в статье [Управление точками останова](#how-to-manage-breakpoints) или [Set-PSBreakpoint](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/set-psbreakpoint). После начала отладки сценарий нельзя редактировать до ее окончания. Сценарий, содержащий одну или несколько точек останова, автоматически сохраняется перед запуском.
+Перед запуском отладки нужно задать одну или несколько точек останова. Точки останова нельзя задавать, если отлаживаемый сценарий не сохранен. Инструкции по заданию точек останова см. в статье [Управление точками останова](#how-to-manage-breakpoints) или [Set-PSBreakpoint](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint). После начала отладки сценарий нельзя редактировать до ее окончания. Сценарий, содержащий одну или несколько точек останова, автоматически сохраняется перед запуском.
 
 ### <a name="to-start-debugging"></a>Начало отладки
 Нажмите клавишу **F5**, щелкните значок **Выполнить сценарий** на панели инструментов или выберите **Выполнить/продолжить** в меню **Отладка**. Сценарий выполняется до первой точки останова. В ней он приостанавливается и выделяет соответствующую строку.
@@ -174,5 +174,4 @@ C:\ps-test\MyScript.ps1
 ```
 
 ## <a name="see-also"></a>См. также
-- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
-
+- [Обзор интегрированной среды скриптов Windows PowerShell](../../getting-started/fundamental/exploring-the-windows-powershell-ise.md)
