@@ -62,7 +62,7 @@ PowerShell Core выпускается по [лицензии MIT][].
 Например, использование модуля `ActiveDirectory`, который поставляется в составе Windows Server, является неподдерживаемым сценарием.
 
 Однако в некоторых случаях модули, которые не поддерживают PowerShell Core явным образом, могут быть совместимы.
-Установив модуль [`WindowsPSModulePath`][], можно добавить `PSModulePath` Windows PowerShell в `PSModulePath` PowerShell Core.
+Установив модуль [`WindowsPSModulePath`][] можно добавить `PSModulePath` Windows PowerShell в `PSModulePath` PowerShell Core.
 
 Сначала установите модуль `WindowsPSModulePath` из коллекции PowerShell:
 
