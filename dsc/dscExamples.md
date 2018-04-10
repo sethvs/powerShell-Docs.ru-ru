@@ -1,18 +1,17 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Примеры DSC"
-ms.openlocfilehash: c96422f7097e046fed1a51954d1e6305a830f988
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Примеры DSC
+ms.openlocfilehash: 03e7dc4683c987a8435371ea539d32caa44f7a8e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="dsc-examples"></a><span data-ttu-id="eafb3-103">Примеры DSC</span><span class="sxs-lookup"><span data-stu-id="eafb3-103">DSC examples</span></span>
+# <a name="dsc-examples"></a><span data-ttu-id="36fa2-103">Примеры DSC</span><span class="sxs-lookup"><span data-stu-id="36fa2-103">DSC examples</span></span>
 
-<span data-ttu-id="eafb3-104">В этом разделе содержатся примеры DSC:</span><span class="sxs-lookup"><span data-stu-id="eafb3-104">This section contains DSC examples:</span></span>
+<span data-ttu-id="36fa2-104">В этом разделе содержатся примеры DSC:</span><span class="sxs-lookup"><span data-stu-id="36fa2-104">This section contains DSC examples:</span></span>
 
-- <span data-ttu-id="eafb3-105">[Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC](dscCiCd.md);</span><span class="sxs-lookup"><span data-stu-id="eafb3-105">[Building a CI-CD pipeline with DSC, Pester, and Visual Studio Team Services](dscCiCd.md)</span></span>
-- [<span data-ttu-id="eafb3-106">Разделение данных конфигурации и данных среды</span><span class="sxs-lookup"><span data-stu-id="eafb3-106">Separating configuration and environment data</span></span>](separatingEnvData.md)
-
+- <span data-ttu-id="36fa2-105">[Создание конвейера непрерывной интеграции и непрерывного развертывания с помощью DSC](dscCiCd.md);</span><span class="sxs-lookup"><span data-stu-id="36fa2-105">[Building a CI-CD pipeline with DSC, Pester, and Visual Studio Team Services](dscCiCd.md)</span></span>
+- [<span data-ttu-id="36fa2-106">Разделение данных конфигурации и данных среды</span><span class="sxs-lookup"><span data-stu-id="36fa2-106">Separating configuration and environment data</span></span>](separatingEnvData.md)

@@ -1,33 +1,33 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Save-Module
-ms.openlocfilehash: acea38b0eebc58dafda0ab58b91dc6a70ffffd3b
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: c9078afb03dc074ee3831c2c395c0f1e6c4ffa38
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="save-module"></a><span data-ttu-id="bc875-103">Save-Module</span><span class="sxs-lookup"><span data-stu-id="bc875-103">Save-Module</span></span>
+# <a name="save-module"></a><span data-ttu-id="898a5-103">Save-Module</span><span class="sxs-lookup"><span data-stu-id="898a5-103">Save-Module</span></span>
 
-<span data-ttu-id="bc875-104">Сохраняет модуль локально без его установки.</span><span class="sxs-lookup"><span data-stu-id="bc875-104">Saves a module locally without installing it.</span></span>
+<span data-ttu-id="898a5-104">Сохраняет модуль локально без его установки.</span><span class="sxs-lookup"><span data-stu-id="898a5-104">Saves a module locally without installing it.</span></span>
 
-## <a name="description"></a><span data-ttu-id="bc875-105">Описание</span><span class="sxs-lookup"><span data-stu-id="bc875-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="898a5-105">Описание</span><span class="sxs-lookup"><span data-stu-id="898a5-105">Description</span></span>
 
-<span data-ttu-id="bc875-106">Командлет Save-Module сохраняет модуль локально из указанного репозитория для проверки.</span><span class="sxs-lookup"><span data-stu-id="bc875-106">The Save-Module cmdlet saves a module locally from the specified repository for inspection.</span></span> <span data-ttu-id="bc875-107">Модуль не устанавливается.</span><span class="sxs-lookup"><span data-stu-id="bc875-107">The module is not installed.</span></span>
+<span data-ttu-id="898a5-106">Командлет Save-Module сохраняет модуль локально из указанного репозитория для проверки.</span><span class="sxs-lookup"><span data-stu-id="898a5-106">The Save-Module cmdlet saves a module locally from the specified repository for inspection.</span></span> <span data-ttu-id="898a5-107">Модуль не устанавливается.</span><span class="sxs-lookup"><span data-stu-id="898a5-107">The module is not installed.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="bc875-108">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="bc875-108">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="898a5-108">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="898a5-108">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Save-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="bc875-109">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="bc875-109">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="898a5-109">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="898a5-109">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="bc875-110">Save-Module</span><span class="sxs-lookup"><span data-stu-id="bc875-110">Save-Module</span></span>](http://go.microsoft.com/fwlink/?LinkId=531351)
+[<span data-ttu-id="898a5-110">Save-Module</span><span class="sxs-lookup"><span data-stu-id="898a5-110">Save-Module</span></span>](http://go.microsoft.com/fwlink/?LinkId=531351)
 
-## <a name="example-commands"></a><span data-ttu-id="bc875-111">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="bc875-111">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="898a5-111">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="898a5-111">Example commands</span></span>
 
 ```powershell
 Save-Module -Repository MSPSGallery -Name ModuleWithDependencies2 -Path C:\MySavedModuleLocation
@@ -64,4 +64,3 @@ Install-Module -Name ContosoServer -Path C:\MySavedModuleLocation -AllowPrerelea
 
 
 ```
-

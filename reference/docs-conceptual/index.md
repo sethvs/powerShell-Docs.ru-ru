@@ -1,8 +1,8 @@
 ---
 redirect_url: PowerShell-Scripting
-ms.openlocfilehash: a3b6ce3aacf443065224f63e812840397408d4d5
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 54e0b92a7d6926eb491dc9f640c20dd76fdaa8c5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---

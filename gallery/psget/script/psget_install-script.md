@@ -1,85 +1,85 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Install-Script
-ms.openlocfilehash: 9ce4125329ea2a38f27f9305b169c7fcf3e9df42
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 3d5b3a3076a11fbf452eb1b968decf217d9bace0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="install-script"></a><span data-ttu-id="0bf64-103">Install-Script</span><span class="sxs-lookup"><span data-stu-id="0bf64-103">Install-Script</span></span>
+# <a name="install-script"></a><span data-ttu-id="6a698-103">Install-Script</span><span class="sxs-lookup"><span data-stu-id="6a698-103">Install-Script</span></span>
 
-<span data-ttu-id="0bf64-104">Устанавливает файлы скриптов PowerShell из сетевых репозиториев на локальный компьютер.</span><span class="sxs-lookup"><span data-stu-id="0bf64-104">Installs the PowerShell script files from online repositories to the local computer.</span></span>
+<span data-ttu-id="6a698-104">Устанавливает файлы скриптов PowerShell из сетевых репозиториев на локальный компьютер.</span><span class="sxs-lookup"><span data-stu-id="6a698-104">Installs the PowerShell script files from online repositories to the local computer.</span></span>
 
-## <a name="description"></a><span data-ttu-id="0bf64-105">Описание</span><span class="sxs-lookup"><span data-stu-id="0bf64-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="6a698-105">Описание</span><span class="sxs-lookup"><span data-stu-id="6a698-105">Description</span></span>
 
-<span data-ttu-id="0bf64-106">Командлет Install-Script находит и скачивает сценарии из интернет-коллекции, проверяет их и устанавливает на локальном компьютере в зависимости от указанной области.</span><span class="sxs-lookup"><span data-stu-id="0bf64-106">The Install-Script cmdlet finds and downloads one or more scripts from an online gallery, validates and installs them on the local computer to the specified installation scope.</span></span>
+<span data-ttu-id="6a698-106">Командлет Install-Script находит и скачивает сценарии из интернет-коллекции, проверяет их и устанавливает на локальном компьютере в зависимости от указанной области.</span><span class="sxs-lookup"><span data-stu-id="6a698-106">The Install-Script cmdlet finds and downloads one or more scripts from an online gallery, validates and installs them on the local computer to the specified installation scope.</span></span>
 
-<span data-ttu-id="0bf64-107">Если область не указана или параметру Scope присвоено значение AllUsers, сценарий устанавливается в папку %<системный_диск>%:\Program Files\WindowsPowerShell\scripts.</span><span class="sxs-lookup"><span data-stu-id="0bf64-107">When no scope is defined, or when the value of the Scope parameter is AllUsers, the script is installed to %systemdrive%:\Program Files\WindowsPowerShell\scripts.</span></span> <span data-ttu-id="0bf64-108">Если параметру Scope присвоено значение CurrentUser, то сценарий устанавливается в папку $home\Documents\WindowsPowerShell\scripts.</span><span class="sxs-lookup"><span data-stu-id="0bf64-108">When the value of Scope is CurrentUser, the script is installed to $home\Documents\WindowsPowerShell\scripts.</span></span>
+<span data-ttu-id="6a698-107">Если область не указана или параметру Scope присвоено значение AllUsers, сценарий устанавливается в папку %<системный_диск>%:\Program Files\WindowsPowerShell\scripts.</span><span class="sxs-lookup"><span data-stu-id="6a698-107">When no scope is defined, or when the value of the Scope parameter is AllUsers, the script is installed to %systemdrive%:\Program Files\WindowsPowerShell\scripts.</span></span> <span data-ttu-id="6a698-108">Если параметру Scope присвоено значение CurrentUser, то сценарий устанавливается в папку $home\Documents\WindowsPowerShell\scripts.</span><span class="sxs-lookup"><span data-stu-id="6a698-108">When the value of Scope is CurrentUser, the script is installed to $home\Documents\WindowsPowerShell\scripts.</span></span>
 
-<span data-ttu-id="0bf64-109">Вы можете отфильтровать результаты, задав минимальную или точную версию сценария.</span><span class="sxs-lookup"><span data-stu-id="0bf64-109">You can filter your results based on minimum and exact versions of specified scripts.</span></span>
+<span data-ttu-id="6a698-109">Вы можете отфильтровать результаты, задав минимальную или точную версию сценария.</span><span class="sxs-lookup"><span data-stu-id="6a698-109">You can filter your results based on minimum and exact versions of specified scripts.</span></span>
 
-<span data-ttu-id="0bf64-110">Некоторые важные примечания.</span><span class="sxs-lookup"><span data-stu-id="0bf64-110">Some important notes:</span></span>
-- <span data-ttu-id="0bf64-111">Каждый сценарий устанавливается как один файл.</span><span class="sxs-lookup"><span data-stu-id="0bf64-111">Scripts are installed single files.</span></span> <span data-ttu-id="0bf64-112">Поэтому вы можете установить только одну версию сценария; недопустимо использовать несколько версий сценария на одной системе одновременно.</span><span class="sxs-lookup"><span data-stu-id="0bf64-112">As a result, only one copy of a script is installed, and multiple versions of scripts cannot be installed side-by-side on a system.</span></span> 
-- <span data-ttu-id="0bf64-113">Сценарии позволяют задавать зависимости от внешних модулей, и эти модули будут установлены при запуске Install-Script.</span><span class="sxs-lookup"><span data-stu-id="0bf64-113">Scripts may define dependencies on external modules, which will  be installed when Install-Script is run.</span></span>
-- <span data-ttu-id="0bf64-114">**Запрос при отсутствии доверия:** пользователь должен разрешить установку сценариев из ненадежного репозитория.</span><span class="sxs-lookup"><span data-stu-id="0bf64-114">**Untrusted prompt:** User acceptance is required for installing the scripts from an untrusted repository.</span></span>
-- <span data-ttu-id="0bf64-115">Параметр RequiredVersion позволяет установить указанную версию параллельно с существующими версиями в PowerShell 5.0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="0bf64-115">RequiredVersion installs the specified version in SxS with existing versions on PowerShell version 5.0 or newer.</span></span>
+<span data-ttu-id="6a698-110">Некоторые важные примечания.</span><span class="sxs-lookup"><span data-stu-id="6a698-110">Some important notes:</span></span>
+- <span data-ttu-id="6a698-111">Каждый сценарий устанавливается как один файл.</span><span class="sxs-lookup"><span data-stu-id="6a698-111">Scripts are installed single files.</span></span> <span data-ttu-id="6a698-112">Поэтому вы можете установить только одну версию сценария; недопустимо использовать несколько версий сценария на одной системе одновременно.</span><span class="sxs-lookup"><span data-stu-id="6a698-112">As a result, only one copy of a script is installed, and multiple versions of scripts cannot be installed side-by-side on a system.</span></span>
+- <span data-ttu-id="6a698-113">Сценарии позволяют задавать зависимости от внешних модулей, и эти модули будут установлены при запуске Install-Script.</span><span class="sxs-lookup"><span data-stu-id="6a698-113">Scripts may define dependencies on external modules, which will  be installed when Install-Script is run.</span></span>
+- <span data-ttu-id="6a698-114">**Запрос при отсутствии доверия:** пользователь должен разрешить установку сценариев из ненадежного репозитория.</span><span class="sxs-lookup"><span data-stu-id="6a698-114">**Untrusted prompt:** User acceptance is required for installing the scripts from an untrusted repository.</span></span>
+- <span data-ttu-id="6a698-115">Параметр RequiredVersion позволяет установить указанную версию параллельно с существующими версиями в PowerShell 5.0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="6a698-115">RequiredVersion installs the specified version in SxS with existing versions on PowerShell version 5.0 or newer.</span></span>
 
-<span data-ttu-id="0bf64-116">Параметр -Name командлетов Install-Script, Save-Script и Uninstall-Script не поддерживает подстановочные знаки.</span><span class="sxs-lookup"><span data-stu-id="0bf64-116">Wildcards are not supported in -Name on Install-Script, Save-Script, and Uninstall-Script cmdlets.</span></span>
+<span data-ttu-id="6a698-116">Параметр -Name командлетов Install-Script, Save-Script и Uninstall-Script не поддерживает подстановочные знаки.</span><span class="sxs-lookup"><span data-stu-id="6a698-116">Wildcards are not supported in -Name on Install-Script, Save-Script, and Uninstall-Script cmdlets.</span></span>
 
-### <a name="scope"></a><span data-ttu-id="0bf64-117">Scope</span><span class="sxs-lookup"><span data-stu-id="0bf64-117">Scope</span></span>
-<span data-ttu-id="0bf64-118">Задает область установки скрипта.</span><span class="sxs-lookup"><span data-stu-id="0bf64-118">Specifies the installation scope of the script.</span></span> <span data-ttu-id="0bf64-119">Допустимые значения: AllUsers и CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="0bf64-119">The acceptable values for this parameter are: AllUsers and CurrentUser.</span></span>
+### <a name="scope"></a><span data-ttu-id="6a698-117">Scope</span><span class="sxs-lookup"><span data-stu-id="6a698-117">Scope</span></span>
+<span data-ttu-id="6a698-118">Задает область установки скрипта.</span><span class="sxs-lookup"><span data-stu-id="6a698-118">Specifies the installation scope of the script.</span></span> <span data-ttu-id="6a698-119">Допустимые значения: AllUsers и CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="6a698-119">The acceptable values for this parameter are: AllUsers and CurrentUser.</span></span>
 
-<span data-ttu-id="0bf64-120">Область установки по умолчанию — AllUsers.</span><span class="sxs-lookup"><span data-stu-id="0bf64-120">The default installation scope is AllUsers.</span></span>
+<span data-ttu-id="6a698-120">Область установки по умолчанию — AllUsers.</span><span class="sxs-lookup"><span data-stu-id="6a698-120">The default installation scope is AllUsers.</span></span>
 
-<span data-ttu-id="0bf64-121">Область AllUsers позволяет устанавливать сценарии в папку, доступную всем пользователям компьютера, то есть в "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span><span class="sxs-lookup"><span data-stu-id="0bf64-121">The AllUsers scope lets scripts be installed in a location that is accessible to all users of the computer, that is, "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span></span>
+<span data-ttu-id="6a698-121">Область AllUsers позволяет устанавливать сценарии в папку, доступную всем пользователям компьютера, то есть в "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span><span class="sxs-lookup"><span data-stu-id="6a698-121">The AllUsers scope lets scripts be installed in a location that is accessible to all users of the computer, that is, "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span></span>
 
-<span data-ttu-id="0bf64-122">Область CurrentUser служит для установки сценариев в папку "$home\Documents\WindowsPowerShell\scripts", где они доступны только текущему пользователю.</span><span class="sxs-lookup"><span data-stu-id="0bf64-122">The CurrentUser scope lets scripts be installed only to "$home\Documents\WindowsPowerShell\scripts", so that the script is available only to the current user.</span></span>
-
-
-<span data-ttu-id="0bf64-123">Задает область установки скрипта.</span><span class="sxs-lookup"><span data-stu-id="0bf64-123">Specifies the installation scope of the script.</span></span> <span data-ttu-id="0bf64-124">Допустимые значения: AllUsers и CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="0bf64-124">Valid values are: AllUsers and CurrentUser.</span></span> <span data-ttu-id="0bf64-125">Значение по умолчанию — CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="0bf64-125">The default is CurrentUser.</span></span>
-
-<span data-ttu-id="0bf64-126">Область AllUsers означает, что скрипт будет установлен в папку %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts, чтобы он был доступен для всех пользователей.</span><span class="sxs-lookup"><span data-stu-id="0bf64-126">The AllUsers scope specifies to install a script to %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts so that the script is available to all users.</span></span> <span data-ttu-id="0bf64-127">Область CurrentUser означает, что скрипт будет установлен в папку $home\Documents\WindowsPowerShell\Scripts, чтобы он был доступен только текущему пользователю.</span><span class="sxs-lookup"><span data-stu-id="0bf64-127">The CurrentUser scope specifies to install the script in $home\Documents\WindowsPowerShell\Scripts so that the script is available only to the current user.</span></span>
+<span data-ttu-id="6a698-122">Область CurrentUser служит для установки сценариев в папку "$home\Documents\WindowsPowerShell\scripts", где они доступны только текущему пользователю.</span><span class="sxs-lookup"><span data-stu-id="6a698-122">The CurrentUser scope lets scripts be installed only to "$home\Documents\WindowsPowerShell\scripts", so that the script is available only to the current user.</span></span>
 
 
-## <a name="nopathupdate"></a><span data-ttu-id="0bf64-128">NoPathUpdate</span><span class="sxs-lookup"><span data-stu-id="0bf64-128">NoPathUpdate</span></span>
+<span data-ttu-id="6a698-123">Задает область установки скрипта.</span><span class="sxs-lookup"><span data-stu-id="6a698-123">Specifies the installation scope of the script.</span></span> <span data-ttu-id="6a698-124">Допустимые значения: AllUsers и CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="6a698-124">Valid values are: AllUsers and CurrentUser.</span></span> <span data-ttu-id="6a698-125">Значение по умолчанию — CurrentUser.</span><span class="sxs-lookup"><span data-stu-id="6a698-125">The default is CurrentUser.</span></span>
 
-- <span data-ttu-id="0bf64-129">Параметр NoPathUpdate командлета Install-Script позволяет обойти запрос на добавление папки для установки скрипта в переменную среды PATH.</span><span class="sxs-lookup"><span data-stu-id="0bf64-129">NoPathUpdate switch parameter on Install-Script cmdlet bypasses the prompt for adding the script install location to the PATH environment variable.</span></span>
-- <span data-ttu-id="0bf64-130">При использование команды WITH с параметром -NoPathUpdate запрос не отображается, а переменная среды PATH не обновляется (параметр -Force игнорируется).</span><span class="sxs-lookup"><span data-stu-id="0bf64-130">Any use of the command WITH –NoPathUpdate specified will result in no prompt and the PATH NOT being updated (force is ignorable here).</span></span>
-- <span data-ttu-id="0bf64-131">При использовании параметра -Force без –NoPathUpdate запрос не отображается, а переменная PATH обновляется.</span><span class="sxs-lookup"><span data-stu-id="0bf64-131">-Force without –NoPathUpdate will result in no prompt and the PATH will be updated.</span></span>
-- <span data-ttu-id="0bf64-132">Если параметры -Force и -NoPathUpdate не заданы, пользователь увидит запрос.</span><span class="sxs-lookup"><span data-stu-id="0bf64-132">If neither –Force or –NoPathUpdate are specified, the user will see the prompt.</span></span>
-- <span data-ttu-id="0bf64-133">Все это применимо только при первом использовании командлета Install-Script в рамках конкретной области.</span><span class="sxs-lookup"><span data-stu-id="0bf64-133">All of this only applies the first time Install-Script is used in a given scope.</span></span>
+<span data-ttu-id="6a698-126">Область AllUsers означает, что скрипт будет установлен в папку %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts, чтобы он был доступен для всех пользователей.</span><span class="sxs-lookup"><span data-stu-id="6a698-126">The AllUsers scope specifies to install a script to %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts so that the script is available to all users.</span></span> <span data-ttu-id="6a698-127">Область CurrentUser означает, что скрипт будет установлен в папку $home\Documents\WindowsPowerShell\Scripts, чтобы он был доступен только текущему пользователю.</span><span class="sxs-lookup"><span data-stu-id="6a698-127">The CurrentUser scope specifies to install the script in $home\Documents\WindowsPowerShell\Scripts so that the script is available only to the current user.</span></span>
 
 
-## <a name="notes"></a><span data-ttu-id="0bf64-134">Заметки</span><span class="sxs-lookup"><span data-stu-id="0bf64-134">Notes</span></span>
+## <a name="nopathupdate"></a><span data-ttu-id="6a698-128">NoPathUpdate</span><span class="sxs-lookup"><span data-stu-id="6a698-128">NoPathUpdate</span></span>
 
-<span data-ttu-id="0bf64-135">Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.</span><span class="sxs-lookup"><span data-stu-id="0bf64-135">This cmdlet runs on Windows PowerShell 3.0 or later releases of Windows PowerShell, on Windows 7 or Windows 2008 R2 and later releases of Windows.</span></span>
-
-<span data-ttu-id="0bf64-136">Если версия сценария на компьютере соответствует значению, указанному в параметре Name, и вы не добавили параметр MinimumVersion или RequiredVersion, командлет Install-Script автоматически продолжит работу и не установит этот сценарий.</span><span class="sxs-lookup"><span data-stu-id="0bf64-136">If a version of the script on the computer matches the value specified for the Name parameter, and you have not added the MinimumVersion or RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span> <span data-ttu-id="0bf64-137">Если параметры MinimumVersion или RequiredVersion заданы и существующий сценарий не соответствует значениям параметра, возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="0bf64-137">If the MinimumVersion or RequiredVersion parameters are specified, and the existing script does not match the values in that parameter, then an error occurs.</span></span> <span data-ttu-id="0bf64-138">Говоря точнее, ошибка возникнет, если версия текущего установленного сценария меньше значения параметра MinimumVersion или не равна значению параметра RequiredVersion.</span><span class="sxs-lookup"><span data-stu-id="0bf64-138">To be more specific: if the version of the currently-installed script is either lower than the value of the MinimumVersion parameter, or not equal to the value of the RequiredVersion parameter, an error occurs.</span></span> <span data-ttu-id="0bf64-139">Если версия установленного сценария больше значения параметра MinimumVersion или равна значению параметра RequiredVersion, командлет Install-Script автоматически продолжит работу и не установит этот сценарий.</span><span class="sxs-lookup"><span data-stu-id="0bf64-139">If the version of the installed script is greater than the value of the MinimumVersion parameter, or equal to the value of the RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span>
-
-<span data-ttu-id="0bf64-140">Install-Script возвращает ошибку, если в интернет-коллекции нет сценариев, соответствующих заданному имени.</span><span class="sxs-lookup"><span data-stu-id="0bf64-140">Install-Script returns an error if no script exists in the online gallery that matches the specified name.</span></span>
-
-<span data-ttu-id="0bf64-141">Чтобы установить множество сценариев, укажите массив их имен, разделенных запятыми.</span><span class="sxs-lookup"><span data-stu-id="0bf64-141">To install multiple scripts, specify an array of the script names, separated by commas.</span></span> <span data-ttu-id="0bf64-142">Если вы указываете множество имен сценариев, вы не можете добавлять параметры MinimumVersion и RequiredVersion.</span><span class="sxs-lookup"><span data-stu-id="0bf64-142">You cannot add MinimumVersion or RequiredVersion if you specify multiple script names.</span></span>
-
-<span data-ttu-id="0bf64-143">По умолчанию сценарии устанавливаются в папку Program Files.</span><span class="sxs-lookup"><span data-stu-id="0bf64-143">By default, scripts are installed to the Program Files folder.</span></span> <span data-ttu-id="0bf64-144">Другим способом установки множества сценариев одной командой является передача в командлет Install-Script множества объектов PSGetItemInfo.</span><span class="sxs-lookup"><span data-stu-id="0bf64-144">You can pipe multiple PSGetItemInfo objects to Install-Script; this is another way of specifying multiple scripts to install in a single command.</span></span>
-
-<span data-ttu-id="0bf64-145">Чтобы предотвратить выполнение сценариев, содержащих вредоносный код, установленные сценарии не импортируются автоматически при установке.</span><span class="sxs-lookup"><span data-stu-id="0bf64-145">To help prevent running scripts that contain malicious code, installed scripts are not automatically imported by installation.</span></span> <span data-ttu-id="0bf64-146">В целях безопасности рекомендуется проверить код сценария, прежде чем в первый раз выполнять в нем функции или командлеты.</span><span class="sxs-lookup"><span data-stu-id="0bf64-146">As a security best practice, evaluate script code before running any cmdlets or functions in a script for the first time.</span></span>
+- <span data-ttu-id="6a698-129">Параметр NoPathUpdate командлета Install-Script позволяет обойти запрос на добавление папки для установки скрипта в переменную среды PATH.</span><span class="sxs-lookup"><span data-stu-id="6a698-129">NoPathUpdate switch parameter on Install-Script cmdlet bypasses the prompt for adding the script install location to the PATH environment variable.</span></span>
+- <span data-ttu-id="6a698-130">При использование команды WITH с параметром -NoPathUpdate запрос не отображается, а переменная среды PATH не обновляется (параметр -Force игнорируется).</span><span class="sxs-lookup"><span data-stu-id="6a698-130">Any use of the command WITH –NoPathUpdate specified will result in no prompt and the PATH NOT being updated (force is ignorable here).</span></span>
+- <span data-ttu-id="6a698-131">При использовании параметра -Force без –NoPathUpdate запрос не отображается, а переменная PATH обновляется.</span><span class="sxs-lookup"><span data-stu-id="6a698-131">-Force without –NoPathUpdate will result in no prompt and the PATH will be updated.</span></span>
+- <span data-ttu-id="6a698-132">Если параметры -Force и -NoPathUpdate не заданы, пользователь увидит запрос.</span><span class="sxs-lookup"><span data-stu-id="6a698-132">If neither –Force or –NoPathUpdate are specified, the user will see the prompt.</span></span>
+- <span data-ttu-id="6a698-133">Все это применимо только при первом использовании командлета Install-Script в рамках конкретной области.</span><span class="sxs-lookup"><span data-stu-id="6a698-133">All of this only applies the first time Install-Script is used in a given scope.</span></span>
 
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="0bf64-147">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="0bf64-147">Cmdlet syntax</span></span>
+## <a name="notes"></a><span data-ttu-id="6a698-134">Заметки</span><span class="sxs-lookup"><span data-stu-id="6a698-134">Notes</span></span>
+
+<span data-ttu-id="6a698-135">Этот командлет работает в Windows PowerShell 3.0 и последующих версиях в Windows 7, Windows Server 2008 R2 и более поздних версиях Windows.</span><span class="sxs-lookup"><span data-stu-id="6a698-135">This cmdlet runs on Windows PowerShell 3.0 or later releases of Windows PowerShell, on Windows 7 or Windows 2008 R2 and later releases of Windows.</span></span>
+
+<span data-ttu-id="6a698-136">Если версия сценария на компьютере соответствует значению, указанному в параметре Name, и вы не добавили параметр MinimumVersion или RequiredVersion, командлет Install-Script автоматически продолжит работу и не установит этот сценарий.</span><span class="sxs-lookup"><span data-stu-id="6a698-136">If a version of the script on the computer matches the value specified for the Name parameter, and you have not added the MinimumVersion or RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span> <span data-ttu-id="6a698-137">Если параметры MinimumVersion или RequiredVersion заданы и существующий сценарий не соответствует значениям параметра, возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="6a698-137">If the MinimumVersion or RequiredVersion parameters are specified, and the existing script does not match the values in that parameter, then an error occurs.</span></span> <span data-ttu-id="6a698-138">Говоря точнее, ошибка возникнет, если версия текущего установленного сценария меньше значения параметра MinimumVersion или не равна значению параметра RequiredVersion.</span><span class="sxs-lookup"><span data-stu-id="6a698-138">To be more specific: if the version of the currently-installed script is either lower than the value of the MinimumVersion parameter, or not equal to the value of the RequiredVersion parameter, an error occurs.</span></span> <span data-ttu-id="6a698-139">Если версия установленного сценария больше значения параметра MinimumVersion или равна значению параметра RequiredVersion, командлет Install-Script автоматически продолжит работу и не установит этот сценарий.</span><span class="sxs-lookup"><span data-stu-id="6a698-139">If the version of the installed script is greater than the value of the MinimumVersion parameter, or equal to the value of the RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span>
+
+<span data-ttu-id="6a698-140">Install-Script возвращает ошибку, если в интернет-коллекции нет сценариев, соответствующих заданному имени.</span><span class="sxs-lookup"><span data-stu-id="6a698-140">Install-Script returns an error if no script exists in the online gallery that matches the specified name.</span></span>
+
+<span data-ttu-id="6a698-141">Чтобы установить множество сценариев, укажите массив их имен, разделенных запятыми.</span><span class="sxs-lookup"><span data-stu-id="6a698-141">To install multiple scripts, specify an array of the script names, separated by commas.</span></span> <span data-ttu-id="6a698-142">Если вы указываете множество имен сценариев, вы не можете добавлять параметры MinimumVersion и RequiredVersion.</span><span class="sxs-lookup"><span data-stu-id="6a698-142">You cannot add MinimumVersion or RequiredVersion if you specify multiple script names.</span></span>
+
+<span data-ttu-id="6a698-143">По умолчанию сценарии устанавливаются в папку Program Files.</span><span class="sxs-lookup"><span data-stu-id="6a698-143">By default, scripts are installed to the Program Files folder.</span></span> <span data-ttu-id="6a698-144">Другим способом установки множества сценариев одной командой является передача в командлет Install-Script множества объектов PSGetItemInfo.</span><span class="sxs-lookup"><span data-stu-id="6a698-144">You can pipe multiple PSGetItemInfo objects to Install-Script; this is another way of specifying multiple scripts to install in a single command.</span></span>
+
+<span data-ttu-id="6a698-145">Чтобы предотвратить выполнение сценариев, содержащих вредоносный код, установленные сценарии не импортируются автоматически при установке.</span><span class="sxs-lookup"><span data-stu-id="6a698-145">To help prevent running scripts that contain malicious code, installed scripts are not automatically imported by installation.</span></span> <span data-ttu-id="6a698-146">В целях безопасности рекомендуется проверить код сценария, прежде чем в первый раз выполнять в нем функции или командлеты.</span><span class="sxs-lookup"><span data-stu-id="6a698-146">As a security best practice, evaluate script code before running any cmdlets or functions in a script for the first time.</span></span>
+
+
+## <a name="cmdlet-syntax"></a><span data-ttu-id="6a698-147">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="6a698-147">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Install-Script -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="0bf64-148">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="0bf64-148">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="6a698-148">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="6a698-148">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="0bf64-149">Install-Script</span><span class="sxs-lookup"><span data-stu-id="0bf64-149">Install-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619784)
+[<span data-ttu-id="6a698-149">Install-Script</span><span class="sxs-lookup"><span data-stu-id="6a698-149">Install-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619784)
 
-## <a name="example-commands"></a><span data-ttu-id="0bf64-150">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="0bf64-150">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="6a698-150">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="6a698-150">Example commands</span></span>
 
 ```powershell
 
@@ -239,7 +239,7 @@ Get-Command -Name "Required-Script2"
 
 Get-InstalledScript -Name "Required-Script2"
 
-Get-InstalledScript -Name "Required-Script2" | Format-List * 
+Get-InstalledScript -Name "Required-Script2" | Format-List *
 
 
 # Install a script with AllUsers scope
@@ -250,7 +250,7 @@ Get-InstalledScript -Name "Required-Script2" | Format-List *
 
 Install-Script -Repository "Local1" -Name "Required-Script3" -Scope "AllUsers"
 Get-InstalledScript -Name "Required-Script3"
-Get-InstalledScript -Name "Required-Script3" | Format-List * 
+Get-InstalledScript -Name "Required-Script3" | Format-List *
 
 
 # Install a script with its dependent scripts and modules
@@ -260,7 +260,7 @@ Get-InstalledScript -Name "Required-Script3" | Format-List *
 # The third command uses the Get-InstalledScript script cmdlet to get installed scripts and display the results.
 # The fourth command uses the Get-InstalledModule cmdlet to get installed modules and display the results.
 # The fifth command uses the Find-Script cmdlet to find scripts where the name begins with Required-Script and display the results.
-# The sixth command installs the scripts where the name begins with Required-Script in the Local1 repository. 
+# The sixth command installs the scripts where the name begins with Required-Script in the Local1 repository.
 # The final command gets installed scripts and displays the results.
 
 Find-Script -Repository "Local1" -Name "Script-WithDependencies2" -IncludeDependencies
@@ -273,7 +273,7 @@ Get-InstalledScript
 
 ```
 
-<span data-ttu-id="0bf64-151">Для его получения можно также использовать Get-Command -Name <InstalledScriptFileName>.</span><span class="sxs-lookup"><span data-stu-id="0bf64-151">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="0bf64-152">При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.</span><span class="sxs-lookup"><span data-stu-id="0bf64-152">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
+<span data-ttu-id="6a698-151">Для его получения можно также использовать Get-Command -Name <InstalledScriptFileName>.</span><span class="sxs-lookup"><span data-stu-id="6a698-151">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="6a698-152">При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.</span><span class="sxs-lookup"><span data-stu-id="6a698-152">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -326,7 +326,7 @@ Install-Script ContosoClient -Force
 # Install a script with dependencies
 Install-Script -Name ContosoClient
 
-# Install a script 
+# Install a script
 
 # Install a script from the registered repository with ScriptSourceLocation
 Install-Script Connect-AzureVM
@@ -344,7 +344,7 @@ Install-Script -Name *Azure*
 # Find all versions of a script
 Install-Script -Name Connect-O365 -AllVersions
 
-# Find a script with -MinimumVersion. 
+# Find a script with -MinimumVersion.
 # With MinimumVersion we can find a script whose version is greate than or equal to the specified MinimumVersion value.
 Install-Script Connect-O365 -MinimumVersion 1.4
 
@@ -381,8 +381,8 @@ At line:1 char:1
      + CategoryInfo          : InvalidOperation: (:) [Write-Error], WriteErrorException
      + FullyQualifiedErrorId : CommandAlreadyAvailableWitScriptName,Install-Script
 
- 
- 
+
+
  PS C:\WINDOWS\system32> install-script get-childitem,contosos -Repository localrepo
 install-script : A command with name 'get-childitem' is already available on this system. This script 'get-childitem' may override the existing command. If you still want to install this script 'get-childitem', use -Force parameter.
 At line:1 char:1
@@ -400,8 +400,8 @@ At C:\Program Files\WindowsPowerShell\Modules\powershellget\1.0.0.1\PSModule.psm
 
  PS C:\WINDOWS\system32>
 
- 
- 
+
+
  PS C:\WINDOWS\system32> find-script get-childitem -Repository localrepo | install-script
 install-script : A command with name 'get-childitem' is already available on this system. This script 'get-childitem' may override the existing command. If you still want to install this script 'get-childitem', use -Force parameter.
 At line:1 char:51
@@ -410,7 +410,7 @@ At line:1 char:51
      + CategoryInfo          : InvalidOperation: (:) [Write-Error], WriteErrorException
      + FullyQualifiedErrorId : CommandAlreadyAvailableWitScriptName,Install-Script
 
- 
+
  PS C:\WINDOWS\system32>
 
  PS C:\WINDOWS\system32> Install-Package -Name Get-ChildItem -source LocalRepo  -ProviderName powershellget -Type Script
@@ -437,13 +437,13 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 
 - To prompt only once per scope, user acceptance for PATH variable change will be added to the user specific settings file under %localappdata%\Microsoft\windows\PowerShell\PowerShellGet
-%localappdata%\Microsoft\windows\PowerShell\PowerShellGet\PowerShellGetSettings.XML. 
+%localappdata%\Microsoft\windows\PowerShell\PowerShellGet\PowerShellGetSettings.XML.
 This settings file will be used to not prompt again.
 
-After prompting for CurrentUser scope: 
+After prompting for CurrentUser scope:
     true or false for CurrentUserScope_AllowPATHChangeForScripts key based on user input.
 
-After prompting for AllUsers scope: 
+After prompting for AllUsers scope:
     true or false for AllUsersScope_AllowPATHChangeForScripts key based on user input.
 
 - If user accepts the prompt
@@ -455,7 +455,7 @@ After prompting for AllUsers scope:
 
 
 
-Example:             
+Example:
 PS C:\windows\system32> Install-Script -Name $scriptName -Repository $repositoryName -Scope $Scope -Verbose
 
 Acceptance required for adding the script installation locations to the PATH environment variable
@@ -465,7 +465,7 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 ```
 
-## <a name="install-script-cmdlet-in-pipeline-operations"></a><span data-ttu-id="0bf64-153">Командлет Install-Script в операциях конвейера</span><span class="sxs-lookup"><span data-stu-id="0bf64-153">Install-Script cmdlet in pipeline operations</span></span>
+## <a name="install-script-cmdlet-in-pipeline-operations"></a><span data-ttu-id="6a698-153">Командлет Install-Script в операциях конвейера</span><span class="sxs-lookup"><span data-stu-id="6a698-153">Install-Script cmdlet in pipeline operations</span></span>
 
 ```powershell
 
@@ -489,7 +489,7 @@ Get-Installedscript
 
 
 
-## <a name="error-scenarios"></a><span data-ttu-id="0bf64-154">Примеры, возвращающие ошибку</span><span class="sxs-lookup"><span data-stu-id="0bf64-154">Error scenarios</span></span>
+## <a name="error-scenarios"></a><span data-ttu-id="6a698-154">Примеры, возвращающие ошибку</span><span class="sxs-lookup"><span data-stu-id="6a698-154">Error scenarios</span></span>
 
 ```powershell
 
@@ -507,10 +507,10 @@ Install-Script ContosoClient,ContosoServer -MinimumVersion 2.0
 
 ```
 
-## <a name="install-script-and-get-installedscript-cmdlets"></a><span data-ttu-id="0bf64-155">Командлеты Install-Script и Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="0bf64-155">Install-Script and Get-InstalledScript cmdlets</span></span>
-<span data-ttu-id="0bf64-156">Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области.</span><span class="sxs-lookup"><span data-stu-id="0bf64-156">Install-Script cmdlet lets you to install a specific script file along with its dependencies to the specified scope.</span></span> <span data-ttu-id="0bf64-157">По умолчанию сценарии устанавливаются в область AllUsers.</span><span class="sxs-lookup"><span data-stu-id="0bf64-157">By default, scripts are installed to the AllUsers scope.</span></span> <span data-ttu-id="0bf64-158">Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="0bf64-158">Get-InstalledScript cmdlet lets you to get the list of script files which were installed using Install-Script cmdlet.</span></span>
+## <a name="install-script-and-get-installedscript-cmdlets"></a><span data-ttu-id="6a698-155">Командлеты Install-Script и Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="6a698-155">Install-Script and Get-InstalledScript cmdlets</span></span>
+<span data-ttu-id="6a698-156">Командлет Install-Script позволяет установить определенный файл сценария вместе с его зависимости в указанной области.</span><span class="sxs-lookup"><span data-stu-id="6a698-156">Install-Script cmdlet lets you to install a specific script file along with its dependencies to the specified scope.</span></span> <span data-ttu-id="6a698-157">По умолчанию сценарии устанавливаются в область AllUsers.</span><span class="sxs-lookup"><span data-stu-id="6a698-157">By default, scripts are installed to the AllUsers scope.</span></span> <span data-ttu-id="6a698-158">Командлет Get-InstalledScript позволяет получить список файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="6a698-158">Get-InstalledScript cmdlet lets you to get the list of script files which were installed using Install-Script cmdlet.</span></span>
 
-<span data-ttu-id="0bf64-159">Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH.</span><span class="sxs-lookup"><span data-stu-id="0bf64-159">Use note: To allow management and locating of scripts once they are installed, Install-script will create a default folder for storing scripts at $home\Documents\WindowsPowerShell\Scripts, and add that folder to your PATH environment.</span></span> <span data-ttu-id="0bf64-160">Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script.</span><span class="sxs-lookup"><span data-stu-id="0bf64-160">If modifying the path is a concern, use Save-Script instead of Install-Script.</span></span> <span data-ttu-id="0bf64-161">Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.</span><span class="sxs-lookup"><span data-stu-id="0bf64-161">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</span></span>
+<span data-ttu-id="6a698-159">Примечание. Чтобы разрешить поиск сценариев и управление ими после установки, сценарий командлет Install-Script создает папку по умолчанию для хранения сценариев в каталоге $home\Documents\WindowsPowerShell\Scripts и добавляет ее в свою переменную среды PATH.</span><span class="sxs-lookup"><span data-stu-id="6a698-159">Use note: To allow management and locating of scripts once they are installed, Install-script will create a default folder for storing scripts at $home\Documents\WindowsPowerShell\Scripts, and add that folder to your PATH environment.</span></span> <span data-ttu-id="6a698-160">Если изменение пути сопряжено с трудностями, используйте вместо Install-Script командлет Save-Script.</span><span class="sxs-lookup"><span data-stu-id="6a698-160">If modifying the path is a concern, use Save-Script instead of Install-Script.</span></span> <span data-ttu-id="6a698-161">Get-InstalledScripts и Uninstall-Script работают только со сценариями, размещенными в системе с помощью Install-Script.</span><span class="sxs-lookup"><span data-stu-id="6a698-161">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</span></span>
 ```powershell
 # Install locations for scripts:
 # Default scope is AllUsers.
@@ -566,7 +566,7 @@ InstalledLocation : C:\\Users\\manikb\\Documents\\WindowsPowerShell\\Scripts
 Installed script file is immediately available for usage.
 ```
 
-<span data-ttu-id="0bf64-162">Для его получения можно также использовать Get-Command -Name <InstalledScriptFileName>.</span><span class="sxs-lookup"><span data-stu-id="0bf64-162">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="0bf64-163">При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.</span><span class="sxs-lookup"><span data-stu-id="0bf64-163">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
+<span data-ttu-id="6a698-162">Для его получения можно также использовать Get-Command -Name <InstalledScriptFileName>.</span><span class="sxs-lookup"><span data-stu-id="6a698-162">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="6a698-163">При первом использовании указанной области в переменную среды PATH добавляются два расположения установки.</span><span class="sxs-lookup"><span data-stu-id="6a698-163">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -687,4 +687,3 @@ Param()
 Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
-

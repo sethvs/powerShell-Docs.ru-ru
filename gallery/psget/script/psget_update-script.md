@@ -1,33 +1,33 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Update-Script
-ms.openlocfilehash: 8067a502e4ecfa61c5a4347d4e9f74c7437f6502
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 23e558a063689d263f68d34ec3b154be1c77ae89
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="update-script"></a><span data-ttu-id="105e6-103">Update-Script</span><span class="sxs-lookup"><span data-stu-id="105e6-103">Update-Script</span></span>
+# <a name="update-script"></a><span data-ttu-id="1e0a0-103">Update-Script</span><span class="sxs-lookup"><span data-stu-id="1e0a0-103">Update-Script</span></span>
 
-<span data-ttu-id="105e6-104">Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="105e6-104">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
+<span data-ttu-id="1e0a0-104">Командлет Update-Script позволяет выполнить обновление на месте для файлов сценариев, которые были установлены с помощью командлета Install-Script.</span><span class="sxs-lookup"><span data-stu-id="1e0a0-104">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
 
-## <a name="description"></a><span data-ttu-id="105e6-105">Описание</span><span class="sxs-lookup"><span data-stu-id="105e6-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="1e0a0-105">Описание</span><span class="sxs-lookup"><span data-stu-id="1e0a0-105">Description</span></span>
 
-<span data-ttu-id="105e6-106">Командлет Update-Script обновляет указанный скрипт из репозитория, из которого он был ранее установлен.</span><span class="sxs-lookup"><span data-stu-id="105e6-106">The Update-Script cmdlet updates the specified script from the repository from which it was previously installed.</span></span>
+<span data-ttu-id="1e0a0-106">Командлет Update-Script обновляет указанный скрипт из репозитория, из которого он был ранее установлен.</span><span class="sxs-lookup"><span data-stu-id="1e0a0-106">The Update-Script cmdlet updates the specified script from the repository from which it was previously installed.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="105e6-107">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="105e6-107">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="1e0a0-107">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="1e0a0-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Update-Script -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="105e6-108">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="105e6-108">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="1e0a0-108">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="1e0a0-108">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="105e6-109">Update-Script</span><span class="sxs-lookup"><span data-stu-id="105e6-109">Update-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619787)
+[<span data-ttu-id="1e0a0-109">Update-Script</span><span class="sxs-lookup"><span data-stu-id="1e0a0-109">Update-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619787)
 
-## <a name="example-commands"></a><span data-ttu-id="105e6-110">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="105e6-110">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="1e0a0-110">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="1e0a0-110">Example commands</span></span>
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
 Get-InstalledScript -Name Fabrikam-Script
@@ -74,4 +74,3 @@ Version Name Type Repository Description
 2.5 Required-Script2 Script GalleryINT Description for the Required-Script2 script
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
-

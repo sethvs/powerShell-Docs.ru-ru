@@ -1,25 +1,25 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: ab49a0ae10f9ad32966944a1dcf8125619bde141
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: c9ccd91a791c74682325cb8ee704ac32b9edf284
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="new-built-in-dsc-resources"></a><span data-ttu-id="32f98-102">Новые встроенные ресурсы DSC</span><span class="sxs-lookup"><span data-stu-id="32f98-102">New built-in DSC resources</span></span>
+# <a name="new-built-in-dsc-resources"></a><span data-ttu-id="3fc26-102">Новые встроенные ресурсы DSC</span><span class="sxs-lookup"><span data-stu-id="3fc26-102">New built-in DSC resources</span></span>
 
-<span data-ttu-id="32f98-103">WMF 5.0 RTM имеет 4 новых ресурса DSC:</span><span class="sxs-lookup"><span data-stu-id="32f98-103">WMF 5.0 RTM has 4 new DSC resources:</span></span> 
-* <span data-ttu-id="32f98-104">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-104">WindowsFeatureSet</span></span>
-* <span data-ttu-id="32f98-105">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-105">WindowsOptionalFeatureSet</span></span>
-* <span data-ttu-id="32f98-106">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="32f98-106">ServiceSet</span></span>
-* <span data-ttu-id="32f98-107">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="32f98-107">ProcessSet</span></span> 
+<span data-ttu-id="3fc26-103">WMF 5.0 RTM имеет 4 новых ресурса DSC:</span><span class="sxs-lookup"><span data-stu-id="3fc26-103">WMF 5.0 RTM has 4 new DSC resources:</span></span>
+* <span data-ttu-id="3fc26-104">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-104">WindowsFeatureSet</span></span>
+* <span data-ttu-id="3fc26-105">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-105">WindowsOptionalFeatureSet</span></span>
+* <span data-ttu-id="3fc26-106">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-106">ServiceSet</span></span>
+* <span data-ttu-id="3fc26-107">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-107">ProcessSet</span></span>
 
-<span data-ttu-id="32f98-108">Они предоставляют простой способ настроить несколько экземпляров с помощью одного вызова ресурса.</span><span class="sxs-lookup"><span data-stu-id="32f98-108">These resources provide an easy way to configure multiple instances using a single resource call.</span></span>
+<span data-ttu-id="3fc26-108">Они предоставляют простой способ настроить несколько экземпляров с помощью одного вызова ресурса.</span><span class="sxs-lookup"><span data-stu-id="3fc26-108">These resources provide an easy way to configure multiple instances using a single resource call.</span></span>
 
-## <a name="windowsfeatureset"></a><span data-ttu-id="32f98-109">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-109">WindowsFeatureSet</span></span>
+## <a name="windowsfeatureset"></a><span data-ttu-id="3fc26-109">WindowsFeatureSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-109">WindowsFeatureSet</span></span>
 
 ```powershell
 # Get the syntax of WindowsFeatureSet resource
@@ -37,7 +37,7 @@ WindowsFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="windowsoptionalfeatureset"></a><span data-ttu-id="32f98-110">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="32f98-110">WindowsOptionalFeatureSet</span></span> 
+## <a name="windowsoptionalfeatureset"></a><span data-ttu-id="3fc26-110">WindowsOptionalFeatureSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-110">WindowsOptionalFeatureSet</span></span>
 
 ```powershell
 # Get the syntax of WindowsOptionalFeatureSet resource
@@ -56,7 +56,7 @@ WindowsOptionalFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="serviceset"></a><span data-ttu-id="32f98-111">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="32f98-111">ServiceSet</span></span> 
+## <a name="serviceset"></a><span data-ttu-id="3fc26-111">ServiceSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-111">ServiceSet</span></span>
 
 ```powershell
 # Get the syntax of ServiceSet resource
@@ -74,7 +74,7 @@ ServiceSet [String] #ResourceName
 }
 ```
 
-## <a name="processset"></a><span data-ttu-id="32f98-112">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="32f98-112">ProcessSet</span></span> 
+## <a name="processset"></a><span data-ttu-id="3fc26-112">ProcessSet</span><span class="sxs-lookup"><span data-stu-id="3fc26-112">ProcessSet</span></span>
 
 ```powershell
 # Get the syntax of ProcessSet resource
@@ -92,4 +92,3 @@ ProcessSet [String] #ResourceName
     [WorkingDirectory = [String]]
 }
 ```
-

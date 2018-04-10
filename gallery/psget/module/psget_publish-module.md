@@ -1,41 +1,41 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Publish-Module
-ms.openlocfilehash: 53fca3d6756ebf698023152ce5b58b45eb0ef757
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 8b73be2814678ce143cc5b53e2b8103b3297eb6a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="publish-module"></a><span data-ttu-id="91275-103">Publish-Module</span><span class="sxs-lookup"><span data-stu-id="91275-103">Publish-Module</span></span>
+# <a name="publish-module"></a><span data-ttu-id="b7c92-103">Publish-Module</span><span class="sxs-lookup"><span data-stu-id="b7c92-103">Publish-Module</span></span>
 
-<span data-ttu-id="91275-104">Публикует указанный модуль с локального компьютера в коллекцию в Интернете.</span><span class="sxs-lookup"><span data-stu-id="91275-104">Publishes a specified module from the local computer to an online gallery.</span></span>
+<span data-ttu-id="b7c92-104">Публикует указанный модуль с локального компьютера в коллекцию в Интернете.</span><span class="sxs-lookup"><span data-stu-id="b7c92-104">Publishes a specified module from the local computer to an online gallery.</span></span>
 
-## <a name="description"></a><span data-ttu-id="91275-105">Описание</span><span class="sxs-lookup"><span data-stu-id="91275-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="b7c92-105">Описание</span><span class="sxs-lookup"><span data-stu-id="b7c92-105">Description</span></span>
 
-<span data-ttu-id="91275-106">Командлет **Publish-Module** публикует модуль в коллекцию на основе NuGet в Интернете с помощью ключа API, который хранится как часть профиля пользователя в коллекции.</span><span class="sxs-lookup"><span data-stu-id="91275-106">The **Publish-Module** cmdlet publishes a module to an online NuGet-based gallery by using an API key, stored as part of a user's profile in the gallery.</span></span> <span data-ttu-id="91275-107">Модуль для публикации можно указывать с помощью имени модуля или пути к папке, содержащей модуль.</span><span class="sxs-lookup"><span data-stu-id="91275-107">You can specify the module to publish either by the module's name, or by the path to the folder containing the module.</span></span>
+<span data-ttu-id="b7c92-106">Командлет **Publish-Module** публикует модуль в коллекцию на основе NuGet в Интернете с помощью ключа API, который хранится как часть профиля пользователя в коллекции.</span><span class="sxs-lookup"><span data-stu-id="b7c92-106">The **Publish-Module** cmdlet publishes a module to an online NuGet-based gallery by using an API key, stored as part of a user's profile in the gallery.</span></span> <span data-ttu-id="b7c92-107">Модуль для публикации можно указывать с помощью имени модуля или пути к папке, содержащей модуль.</span><span class="sxs-lookup"><span data-stu-id="b7c92-107">You can specify the module to publish either by the module's name, or by the path to the folder containing the module.</span></span>
 
-<span data-ttu-id="91275-108">Если модуль указывается по имени, командлет **Publish-Module** публикует первый модуль, найденный с помощью `Get-Module -ListAvailable <Name>`.</span><span class="sxs-lookup"><span data-stu-id="91275-108">When you specify a module by name, **Publish-Module** publishes the first module that would be found by running `Get-Module -ListAvailable <Name>`.</span></span> <span data-ttu-id="91275-109">Если указывается минимальная версия модуля для публикации, **Publish-Module** публикует первый модуль с версией, которая не ниже указанной минимальной версии.</span><span class="sxs-lookup"><span data-stu-id="91275-109">If you specify a minimum version of a module to publish, **Publish-Module** publishes the first module with a version that is greater than or equal to the minimum version that you have specified.</span></span>
+<span data-ttu-id="b7c92-108">Если модуль указывается по имени, командлет **Publish-Module** публикует первый модуль, найденный с помощью `Get-Module -ListAvailable <Name>`.</span><span class="sxs-lookup"><span data-stu-id="b7c92-108">When you specify a module by name, **Publish-Module** publishes the first module that would be found by running `Get-Module -ListAvailable <Name>`.</span></span> <span data-ttu-id="b7c92-109">Если указывается минимальная версия модуля для публикации, **Publish-Module** публикует первый модуль с версией, которая не ниже указанной минимальной версии.</span><span class="sxs-lookup"><span data-stu-id="b7c92-109">If you specify a minimum version of a module to publish, **Publish-Module** publishes the first module with a version that is greater than or equal to the minimum version that you have specified.</span></span>
 
-<span data-ttu-id="91275-110">Для публикации модуля требуются метаданные, которые отображаются на странице коллекции для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="91275-110">Publishing a module requires metadata that is displayed on the gallery page for the module.</span></span> <span data-ttu-id="91275-111">Обязательные метаданные включают имя модуля, версию, описание и автора.</span><span class="sxs-lookup"><span data-stu-id="91275-111">Required metadata includes the module name, version, description, and author.</span></span> <span data-ttu-id="91275-112">Хотя большинство метаданных берется из манифеста модуля, некоторые метаданные должны указываться в параметрах командлета **Publish-Module**, таких как, например, *ReleaseNote, IconUri, ProjectUri* и *LicenseUri*, так как эти параметры соответствуют полям в коллекции на основе NuGet.</span><span class="sxs-lookup"><span data-stu-id="91275-112">Although most metadata is taken from the module manifest, some metadata must be specified in **Publish-Module** parameters, such as *Tag, ReleaseNote, IconUri, ProjectUri,* and *LicenseUri*, because these parameters match fields in a NuGet-based gallery.</span></span>
+<span data-ttu-id="b7c92-110">Для публикации модуля требуются метаданные, которые отображаются на странице коллекции для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="b7c92-110">Publishing a module requires metadata that is displayed on the gallery page for the module.</span></span> <span data-ttu-id="b7c92-111">Обязательные метаданные включают имя модуля, версию, описание и автора.</span><span class="sxs-lookup"><span data-stu-id="b7c92-111">Required metadata includes the module name, version, description, and author.</span></span> <span data-ttu-id="b7c92-112">Хотя большинство метаданных берется из манифеста модуля, некоторые метаданные должны указываться в параметрах командлета **Publish-Module**, таких как, например, *ReleaseNote, IconUri, ProjectUri* и *LicenseUri*, так как эти параметры соответствуют полям в коллекции на основе NuGet.</span><span class="sxs-lookup"><span data-stu-id="b7c92-112">Although most metadata is taken from the module manifest, some metadata must be specified in **Publish-Module** parameters, such as *Tag, ReleaseNote, IconUri, ProjectUri,* and *LicenseUri*, because these parameters match fields in a NuGet-based gallery.</span></span>
 
-<span data-ttu-id="91275-113">В параметре RequiredVersion можно указать точную версию модуля для публикации.</span><span class="sxs-lookup"><span data-stu-id="91275-113">The RequiredVersion parameter allows you to specify the exact version of a module to be published.</span></span>
-<span data-ttu-id="91275-114">Параметр Path также поддерживает базовый путь к модулю с папкой версии.</span><span class="sxs-lookup"><span data-stu-id="91275-114">The Path parameter also supports the module base path with the version folder.</span></span>
-<span data-ttu-id="91275-115">Параметр Force командлета Publish-Module обеспечивает начальную загрузку NuGet.exe без запроса подтверждения.</span><span class="sxs-lookup"><span data-stu-id="91275-115">The Force switch parameter on Publish-Module cmdlet bootstraps the NuGet.exe without prompting.</span></span>
+<span data-ttu-id="b7c92-113">В параметре RequiredVersion можно указать точную версию модуля для публикации.</span><span class="sxs-lookup"><span data-stu-id="b7c92-113">The RequiredVersion parameter allows you to specify the exact version of a module to be published.</span></span>
+<span data-ttu-id="b7c92-114">Параметр Path также поддерживает базовый путь к модулю с папкой версии.</span><span class="sxs-lookup"><span data-stu-id="b7c92-114">The Path parameter also supports the module base path with the version folder.</span></span>
+<span data-ttu-id="b7c92-115">Параметр Force командлета Publish-Module обеспечивает начальную загрузку NuGet.exe без запроса подтверждения.</span><span class="sxs-lookup"><span data-stu-id="b7c92-115">The Force switch parameter on Publish-Module cmdlet bootstraps the NuGet.exe without prompting.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="91275-116">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="91275-116">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="b7c92-116">Синтаксис командлета</span><span class="sxs-lookup"><span data-stu-id="b7c92-116">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Publish-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="91275-117">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="91275-117">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="b7c92-117">Ссылка на раздел справки по командлету в Интернете</span><span class="sxs-lookup"><span data-stu-id="b7c92-117">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="91275-118">Publish-Module</span><span class="sxs-lookup"><span data-stu-id="91275-118">Publish-Module</span></span>](http://go.microsoft.com/fwlink/?LinkID=398575)
+[<span data-ttu-id="b7c92-118">Publish-Module</span><span class="sxs-lookup"><span data-stu-id="b7c92-118">Publish-Module</span></span>](http://go.microsoft.com/fwlink/?LinkID=398575)
 
-## <a name="example-commands"></a><span data-ttu-id="91275-119">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="91275-119">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="b7c92-119">Примеры команд</span><span class="sxs-lookup"><span data-stu-id="b7c92-119">Example commands</span></span>
 
 ```powershell
 ContosoServer module with different versions to be published.
@@ -67,13 +67,13 @@ _------ ---- ---------- -----------
 2.0 ContosoServer LocalRepo ContosoServer module
 ```
 
-## <a name="publishing-a-module-with-dependencies"></a><span data-ttu-id="91275-120">Публикация модуля с зависимостями</span><span class="sxs-lookup"><span data-stu-id="91275-120">Publishing a module with dependencies</span></span>
+## <a name="publishing-a-module-with-dependencies"></a><span data-ttu-id="b7c92-120">Публикация модуля с зависимостями</span><span class="sxs-lookup"><span data-stu-id="b7c92-120">Publishing a module with dependencies</span></span>
 
-### <a name="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest"></a><span data-ttu-id="91275-121">Создайте модуль с зависимостями и диапазоном версий, указанным в свойстве RequiredModules манифеста этого модуля.</span><span class="sxs-lookup"><span data-stu-id="91275-121">Create a module with dependencies and version range specified in RequiredModules property of its module manifest.</span></span>
+### <a name="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest"></a><span data-ttu-id="b7c92-121">Создайте модуль с зависимостями и диапазоном версий, указанным в свойстве RequiredModules манифеста этого модуля.</span><span class="sxs-lookup"><span data-stu-id="b7c92-121">Create a module with dependencies and version range specified in RequiredModules property of its module manifest.</span></span>
 
-<span data-ttu-id="91275-122">**Примечание**.</span><span class="sxs-lookup"><span data-stu-id="91275-122">**Note:**</span></span>
-  - <span data-ttu-id="91275-123">\* поддерживается только в MaximumVersion и также должен быть в конце строки версии.</span><span class="sxs-lookup"><span data-stu-id="91275-123">\* is supported only in MaximumVersion and also it should be at the end of version string.</span></span> 
-  - <span data-ttu-id="91275-124">\* заменяется на 999999999 в объекте версии.</span><span class="sxs-lookup"><span data-stu-id="91275-124">\* is replaced with 999999999 in the version object.</span></span>
+<span data-ttu-id="b7c92-122">**Примечание**.</span><span class="sxs-lookup"><span data-stu-id="b7c92-122">**Note:**</span></span>
+  - <span data-ttu-id="b7c92-123">\* поддерживается только в MaximumVersion и также должен быть в конце строки версии.</span><span class="sxs-lookup"><span data-stu-id="b7c92-123">\* is supported only in MaximumVersion and also it should be at the end of version string.</span></span>
+  - <span data-ttu-id="b7c92-124">\* заменяется на 999999999 в объекте версии.</span><span class="sxs-lookup"><span data-stu-id="b7c92-124">\* is replaced with 999999999 in the version object.</span></span>
 
 ```powershell
 PS C:\windows\system32> $requiredModules = @( @{ModuleName = 'RequiredModule1'; ModuleVersion = '0.1'; MaximumVersion = '1.9'; }, @{ModuleName = 'RequiredModule2'; MaximumVersion = '1.*'; })
@@ -83,13 +83,13 @@ PS C:\windows\system32> cd C:\MyModules\ModuleWithDependencies
 PS C:\MyModules\ModuleWithDependencies> New-ModuleManifest -Path .\ModuleWithDependencies.psd1 -ModuleVersion 1.0 -RequiredModules $requiredModules -Description 'ModuleWithDependencies demo module'
 ```
 
-### <a name="publish-modulewithdependencies-module-with-dependencies-to-the-repository"></a><span data-ttu-id="91275-125">Опубликуйте модуль ModuleWithDependencies с зависимостями в репозитории.</span><span class="sxs-lookup"><span data-stu-id="91275-125">Publish ModuleWithDependencies module with dependencies to the repository.</span></span>
+### <a name="publish-modulewithdependencies-module-with-dependencies-to-the-repository"></a><span data-ttu-id="b7c92-125">Опубликуйте модуль ModuleWithDependencies с зависимостями в репозитории.</span><span class="sxs-lookup"><span data-stu-id="b7c92-125">Publish ModuleWithDependencies module with dependencies to the repository.</span></span>
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Publish-Module -Path C:\MyModules\ModuleWithDependencies -Repository LocalRepo
 ```
 
-### <a name="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies"></a><span data-ttu-id="91275-126">Найдите модуль ModuleWithDependencies вместе с зависимостями, указав -IncludeDependencies.</span><span class="sxs-lookup"><span data-stu-id="91275-126">Find ModuleWithDependencies module with its dependencies by specifying -IncludeDependencies</span></span>
+### <a name="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies"></a><span data-ttu-id="b7c92-126">Найдите модуль ModuleWithDependencies вместе с зависимостями, указав -IncludeDependencies.</span><span class="sxs-lookup"><span data-stu-id="b7c92-126">Find ModuleWithDependencies module with its dependencies by specifying -IncludeDependencies</span></span>
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Find-Module -Name ModuleWithDependencies -Repository LocalRepo -IncludeDependencies
@@ -101,8 +101,8 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="install-the-modulewithdependencies-module-with-dependencies"></a><span data-ttu-id="91275-127">Установите модуль ModuleWithDependencies с зависимостями.</span><span class="sxs-lookup"><span data-stu-id="91275-127">Install the ModuleWithDependencies module with dependencies.</span></span>
-<span data-ttu-id="91275-128">Обратите внимание, что диапазоны версий учитываются во время установки зависимостей.</span><span class="sxs-lookup"><span data-stu-id="91275-128">Note that version ranges are honored during the dependency installation.</span></span>
+### <a name="install-the-modulewithdependencies-module-with-dependencies"></a><span data-ttu-id="b7c92-127">Установите модуль ModuleWithDependencies с зависимостями.</span><span class="sxs-lookup"><span data-stu-id="b7c92-127">Install the ModuleWithDependencies module with dependencies.</span></span>
+<span data-ttu-id="b7c92-128">Обратите внимание, что диапазоны версий учитываются во время установки зависимостей.</span><span class="sxs-lookup"><span data-stu-id="b7c92-128">Note that version ranges are honored during the dependency installation.</span></span>
 
 ```powershell
 PS C:\windows\system32> Get-InstalledModule
@@ -118,7 +118,7 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="contents-of-modulewithdependencies2-module-manifest-file"></a><span data-ttu-id="91275-129">Содержимое файла манифеста для модуля ModuleWithDependencies2</span><span class="sxs-lookup"><span data-stu-id="91275-129">Contents of ModuleWithDependencies2 module manifest file</span></span>
+### <a name="contents-of-modulewithdependencies2-module-manifest-file"></a><span data-ttu-id="b7c92-129">Содержимое файла манифеста для модуля ModuleWithDependencies2</span><span class="sxs-lookup"><span data-stu-id="b7c92-129">Contents of ModuleWithDependencies2 module manifest file</span></span>
 
 ```powershell
 @{
@@ -173,11 +173,10 @@ PrivateData = @{
 ```
 
 
-### <a name="external-dependencies"></a><span data-ttu-id="91275-130">Внешние зависимости</span><span class="sxs-lookup"><span data-stu-id="91275-130">External dependencies</span></span>
-<span data-ttu-id="91275-131">Некоторые зависимости модуля могут управляться извне; в этом случае они должны добавляться в запись ExternalModuleDependencies раздела PSData манифеста модуля.</span><span class="sxs-lookup"><span data-stu-id="91275-131">Some module dependencies can be managed externally, in that case they should be added to the ExternalModuleDependencies entry in the PSData section of the module manifest.</span></span>
+### <a name="external-dependencies"></a><span data-ttu-id="b7c92-130">Внешние зависимости</span><span class="sxs-lookup"><span data-stu-id="b7c92-130">External dependencies</span></span>
+<span data-ttu-id="b7c92-131">Некоторые зависимости модуля могут управляться извне; в этом случае они должны добавляться в запись ExternalModuleDependencies раздела PSData манифеста модуля.</span><span class="sxs-lookup"><span data-stu-id="b7c92-131">Some module dependencies can be managed externally, in that case they should be added to the ExternalModuleDependencies entry in the PSData section of the module manifest.</span></span>
 
-<span data-ttu-id="91275-132">Если SnippetPx не доступен в репозитории, возникнет следующая ошибка.</span><span class="sxs-lookup"><span data-stu-id="91275-132">If 'SnippetPx' is not available on the repository, below error will be thrown.</span></span>
+<span data-ttu-id="b7c92-132">Если SnippetPx не доступен в репозитории, возникнет следующая ошибка.</span><span class="sxs-lookup"><span data-stu-id="b7c92-132">If 'SnippetPx' is not available on the repository, below error will be thrown.</span></span>
 ```powershell
 Publish-PSArtifactUtility : PowerShellGet cannot resolve the module dependency 'SnippetPx' of the module 'TypePx' on the repository 'LocalRepo'. Verify that the dependent module 'SnippetPx' is available in the repository 'LocalRepo'. If this dependent 'SnippetPx' is managed externally, add it to the ExternalModuleDependencies entry in the PSData section of the module manifest.
 ```
-
