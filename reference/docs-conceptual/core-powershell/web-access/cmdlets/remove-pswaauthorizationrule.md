@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
-keywords: "powershell,командлет"
-ms.date: 2016-12-12
-title: "удаление pswaauthorizationrule"
+keywords: powershell,командлет
+ms.date: 12/12/2016
+title: удаление pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: 4d039e7e00f87bc7aebb89217251edbbb5c3f5be
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 28dbfe84827d6ccb99dce1ebb520cae66dc8c50e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="remove-pswaauthorizationrule"></a>Remove-PswaAuthorizationRule
 
@@ -40,7 +40,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 Запуск командлета без запроса на подтверждение. По умолчанию командлет запрашивает подтверждение, прежде чем продолжить работу.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -53,7 +53,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 Указывает идентификаторы (ID) одного или нескольких удаляемых правил.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |
@@ -66,7 +66,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 Указывает правила, которые необходимо удалить.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |
@@ -79,7 +79,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 Запрос на подтверждение перед выполнением командлета.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |
@@ -91,7 +91,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 Показывает, что произойдет при запуске командлета. Командлет не запущен.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |

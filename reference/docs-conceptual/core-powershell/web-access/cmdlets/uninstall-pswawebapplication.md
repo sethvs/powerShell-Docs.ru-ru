@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
-keywords: "powershell,командлет"
-ms.date: 2016-12-12
-title: "удаление pswawebapplication"
+keywords: powershell,командлет
+ms.date: 12/12/2016
+title: удаление pswawebapplication
 ms.technology: powershell
-ms.openlocfilehash: cc54c94426d754ff2d3bf658e3e92083f02cd6c7
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 139c8358a24e54dec630f8c78737728330ba4aa2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="uninstall-pswawebapplication"></a>Uninstall-PswaWebApplication
 
@@ -36,7 +36,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 Указывает, что тестовые сертификаты, созданные командлетом **Install\_PswaWebApplication** (с параметром **UseTestCertificate**), удаляются.
 Удаляется только тестовый сертификат с тем же именем, что и созданный командлетом **Install-PswaWebApplication**.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -49,7 +49,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 Указывает имя удаляемого веб-приложения.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -62,7 +62,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 Задает имя веб-сайта, на котором установлено веб-приложение.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -75,7 +75,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 Запрос на подтверждение перед выполнением командлета.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |
@@ -88,7 +88,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 Показывает, что произойдет при запуске командлета.
 Командлет не запущен.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |

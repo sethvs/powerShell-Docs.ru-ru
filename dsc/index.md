@@ -1,8 +1,8 @@
 ---
 redirect_url: overview
-ms.openlocfilehash: 55d16424af372f9bde6ed849c32cc3e75ddd8835
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: e50488b6264c6b9a29553e225ae15bd88859aebf
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---

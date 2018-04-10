@@ -1,33 +1,33 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
+keywords: wmf,powershell,установка
 contributor: jianyunt, quoctruong
-title: "Усовершенствования в управлении пакетами в WMF 5.1"
-ms.openlocfilehash: b55a1742530b7cd48d60d79b7d4866ebee80a3b6
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: Усовершенствования в управлении пакетами в WMF 5.1
+ms.openlocfilehash: d8b66cc101a6d963b484bba26a1bcd7f71437536
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="improvements-to-package-management-in-wmf-51"></a>Усовершенствования в управлении пакетами в WMF 5.1#
 
 ## <a name="improvements-in-packagemanagement"></a>Усовершенствования в управлении пакетами ##
-Ниже перечислены исправления, внесенные в WMF 5.1. 
+Ниже перечислены исправления, внесенные в WMF 5.1.
 
 ### <a name="version-alias"></a>Псевдоним версии
 
-**Ситуация**. Если в системе установлены версии 1.0 и 2.0 пакета P1 и вы хотите удалить версию 1.0, вы выполняете команду `Uninstall-Package -Name P1 -Version 1.0`. При этом вы ожидаете, что после выполнения командлета будет удалена версия 1.0. Но в результате удаляется версия 2.0.  
-    
+**Ситуация**. Если в системе установлены версии 1.0 и 2.0 пакета P1 и вы хотите удалить версию 1.0, вы выполняете команду `Uninstall-Package -Name P1 -Version 1.0`. При этом вы ожидаете, что после выполнения командлета будет удалена версия 1.0. Но в результате удаляется версия 2.0.
+
 Это происходит потому, что параметр `-Version` является псевдонимом параметра `-MinimumVersion`. Когда модуль PackageManagement ищет подходящий пакет с минимальной версией 1.0, он возвращает последнюю версию. Такое поведение является нормальным в большинстве случаев, так как обычно требуется найти именно последнюю версию. Но в случае с `Uninstall-Package` ситуация иная.
-    
-**Решение**. Полностью удалить псевдоним `-Version` в PackageManagement (так называемом OneGet) и PowerShellGet. 
+
+**Решение**. Полностью удалить псевдоним `-Version` в PackageManagement (так называемом OneGet) и PowerShellGet.
 
 ### <a name="multiple-prompts-for-bootstrapping-the-nuget-provider"></a>Несколько запросов на начальную загрузку поставщика NuGet
 
-**Ситуация**. При первом выполнении командлета `Find-Module`, `Install-Module` или других командлетов PackageManagement на компьютере модуль PackageManagement пытается выполнить начальную загрузку поставщика NuGet. Связано это с тем, что поставщик PowershellGet также использует поставщик NuGet для скачивания модулей PowerShell. Затем модуль PackageManagement запрашивает у пользователя разрешение на установку поставщика NuGet. После того как пользователь разрешает начальную загрузку, устанавливается последняя версия поставщика NuGet. 
-    
+**Ситуация**. При первом выполнении командлета `Find-Module`, `Install-Module` или других командлетов PackageManagement на компьютере модуль PackageManagement пытается выполнить начальную загрузку поставщика NuGet. Связано это с тем, что поставщик PowershellGet также использует поставщик NuGet для скачивания модулей PowerShell. Затем модуль PackageManagement запрашивает у пользователя разрешение на установку поставщика NuGet. После того как пользователь разрешает начальную загрузку, устанавливается последняя версия поставщика NuGet.
+
 Но если на компьютере установлена старая версия поставщика NuGet, она иногда может загружаться первой в сеанс PowerShell (и в PackageManagement возникает состояние гонки). Но модуль PowerShellGet требует, чтобы работала последняя версия поставщика NuGet, поэтому он еще раз запрашивает начальную загрузку поставщика NuGet у модуля PackageManagement. Это приводит к выводу нескольких запросов на начальную загрузку поставщика NuGet.
 
 **Решение**. В WMF 5.1 модуль PackageManagement теперь загружает последнюю версию поставщика NuGet во избежание вывода нескольких запросов на начальную загрузку поставщика NuGet.
@@ -68,4 +68,3 @@ Find-Package -Source <SourceWithCredential> -Credential (Get-Credential)
 ``` PowerShell
 Find-Package -Source http://www.nuget.org/api/v2/ -Proxy http://www.myproxyserver.com -ProxyCredential (Get-Credential)
 ```
-

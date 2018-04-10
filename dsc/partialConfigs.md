@@ -1,19 +1,20 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Частичные конфигурации службы настройки требуемого состояния PowerShell"
-ms.openlocfilehash: 4401ea80cffd09f4b92c9fcca16d5dcad7f6a327
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Частичные конфигурации службы настройки требуемого состояния PowerShell
+ms.openlocfilehash: cd2812724c2279a7effc4739f23193c1dc836ce5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>Частичные конфигурации службы настройки требуемого состояния PowerShell
 
 >Область применения: Windows PowerShell 5.0 и более поздних версий.
 
-В PowerShell 5.0 служба настройки требуемого состояния (DSC) разрешает доставлять конфигурации фрагментами и из нескольких источников. Локальный диспетчер конфигураций (LCM) на целевом узле объединяет фрагменты перед тем, как применить их в качестве единой конфигурации. Эта возможность позволяет разделять конфигурацию между командами или отдельными пользователями. Например, если несколько команд разработчиков совместно работают над службой, возможно, каждая из них хочет создать конфигурацию для управления своей частью службы. Каждую из этих конфигураций можно извлекать с разных опрашивающих серверов и добавлять на разных этапах разработки. Частичные конфигурации позволяют разным пользователям или командам контролировать различные аспекты настройки узлов без координации изменений в едином документе конфигурации. Например, одна команда может отвечать за развертывание виртуальной машины и операционной системы, тогда как другая — развертывать другие приложения и службы в этой виртуальной машине. С частичными конфигурациями каждая команда может создать собственную конфигурацию без излишних сложностей.
+В PowerShell 5.0 служба настройки требуемого состояния (DSC) разрешает доставлять конфигурации фрагментами и из нескольких источников. Локальный диспетчер конфигураций (LCM) на целевом узле объединяет фрагменты перед тем, как применить их в качестве единой конфигурации. Эта возможность позволяет разделять конфигурацию между командами или отдельными пользователями.
+Например, если несколько команд разработчиков совместно работают над службой, возможно, каждая из них хочет создать конфигурацию для управления своей частью службы. Каждую из этих конфигураций можно извлекать с разных опрашивающих серверов и добавлять на разных этапах разработки. Частичные конфигурации позволяют разным пользователям или командам контролировать различные аспекты настройки узлов без координации изменений в едином документе конфигурации. Например, одна команда может отвечать за развертывание виртуальной машины и операционной системы, тогда как другая — развертывать другие приложения и службы в этой виртуальной машине. С частичными конфигурациями каждая команда может создать собственную конфигурацию без излишних сложностей.
 
 Вы можете использовать частичные конфигурации в режиме принудительной отправки, в режиме запроса или в сочетании.
 
@@ -21,7 +22,8 @@ ms.lasthandoff: 03/15/2018
 Чтобы использовать частичные конфигурации в режиме принудительной отправки, настройте LCM на целевом узле для получения частичных конфигураций. Каждая частичная конфигурация должна принудительно отправляться на целевой узел с использованием командлета Publish-DSCConfiguration. Затем целевой узел добавляет частичную конфигурацию в единую. Применить конфигурацию можно, вызвав командлет [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx).
 
 ### <a name="configuring-the-lcm-for-push-mode-partial-configurations"></a>Настройка LCM для частичных конфигураций в режиме принудительной отправки
-Чтобы настроить LCM для частичных конфигураций в режиме принудительной отправки, создайте конфигурацию **DSCLocalConfigurationManager** с одним блоком **PartialConfiguration** для каждой частичной конфигурации. Дополнительные сведения о настройке LCM см. в разделе [Настройка локального диспетчера конфигураций в Windows](https://technet.microsoft.com/library/mt421188.aspx). В следующем примере показана конфигурация LCM, в которой ожидаются две частичные конфигурации: та, которая развертывает ОС, и та, которая развертывает и настраивает SharePoint.
+Чтобы настроить LCM для частичных конфигураций в режиме принудительной отправки, создайте конфигурацию **DSCLocalConfigurationManager** с одним блоком **PartialConfiguration** для каждой частичной конфигурации. Дополнительные сведения о настройке LCM см. в разделе [Настройка локального диспетчера конфигураций в Windows](https://technet.microsoft.com/library/mt421188.aspx).
+В следующем примере показана конфигурация LCM, в которой ожидаются две частичные конфигурации: та, которая развертывает ОС, и та, которая развертывает и настраивает SharePoint.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -29,7 +31,7 @@ configuration PartialConfigDemo
 {
     Node localhost
     {
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description = 'Configuration to add the SharePoint service account to the Administrators group.'
@@ -42,7 +44,7 @@ configuration PartialConfigDemo
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 **RefreshMode** для каждой частичной конфигурации имеет значение Push. Имена блоков **PartialConfiguration** (в этом случае ServiceAccountConfig и SharePointConfig) должны точно совпадать с именами конфигураций, отправляемых на целевой узел.
@@ -62,26 +64,26 @@ PS C:\PartialConfigTest> Get-ChildItem -Recurse
     Directory: C:\PartialConfigTest
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
-d-----        8/11/2016   1:55 PM                ServiceAccountConfig                                                                                                                  
-d-----       11/17/2016   4:14 PM                SharePointConfig                                                                                                                                    
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/11/2016   1:55 PM                ServiceAccountConfig
+d-----       11/17/2016   4:14 PM                SharePointConfig
 
 
     Directory: C:\PartialConfigTest\ServiceAccountConfig
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
--a----        8/11/2016   2:02 PM           2034 TestVM.mof                                                                                                                                
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        8/11/2016   2:02 PM           2034 TestVM.mof
 
 
     Directory: C:\DscTests\SharePointConfig
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
--a----       11/17/2016   4:14 PM           1930 TestVM.mof                                                                                                                                     
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/17/2016   4:14 PM           1930 TestVM.mof
 ```
 
 Публикация и запуск конфигураций выполняются следующим образом:
@@ -91,8 +93,8 @@ PS C:\PartialConfigTest> Publish-DscConfiguration .\ServiceAccountConfig -Comput
 PS C:\PartialConfigTest> Publish-DscConfiguration .\SharePointConfig -ComputerName 'TestVM'
 PS C:\PartialConfigTest> Start-DscConfiguration -UseExisting -ComputerName 'TestVM'
 
-Id     Name            PSJobTypeName   State         HasMoreData     Location             Command                  
---     ----            -------------   -----         -----------     --------             -------                  
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
 17     Job17           Configuratio... Running       True            TestVM            Start-DscConfiguration...
 ```
 
@@ -106,7 +108,8 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 
 Чтобы настроить в LCM опрос частичных конфигураций с опрашивающего сервера, определите опрашивающий сервер в блоке **ConfigurationRepositoryWeb** (для опрашивающего HTTP-сервера) или **ConfigurationRepositoryShare** (для опрашивающего SMB-сервера). Затем создайте блоки **PartialConfiguration**, которые ссылаются на опрашивающий сервер, используя свойство **ConfigurationSource**. Кроме того, вам потребуется создать блок **параметров**, чтобы указать, что LCM использует режим запросов, и задать **ConfigurationNames** или **ConfigurationID** для опрашивающего сервера и целевого узла в целях определения конфигураций. В следующей метаконфигурации задан опрашивающий HTTP-сервер с именем CONTOSO-PullSrv и две частичные конфигурации, использующие этот опрашивающий сервер.
 
-Дополнительные сведения о настройке LCM с использованием **ConfigurationNames** см. в разделе [Настройка опрашивающего клиента с помощью имен конфигурации](pullClientConfigNames.md). Дополнительные сведения о настройке LCM с использованием **ConfigurationID** см. в разделе [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md).
+Дополнительные сведения о настройке LCM с использованием **ConfigurationNames** см. в разделе [Настройка опрашивающего клиента с помощью имен конфигурации](pullClientConfigNames.md).
+Дополнительные сведения о настройке LCM с использованием **ConfigurationID** см. в разделе [Настройка опрашивающего клиента с помощью идентификатора конфигурации](pullClientConfigID.md).
 
 #### <a name="configuring-the-lcm-for-pull-mode-configurations-using-configuration-names"></a>Настройка LCM для конфигураций режима запросов с использованием имен конфигурации
 
@@ -125,26 +128,26 @@ Configuration PartialConfigDemoConfigNames
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
-            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38
             ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
-        }     
-        
-        PartialConfiguration ServiceAccountConfig 
+        }
+
+        PartialConfiguration ServiceAccountConfig
         {
             Description                     = "ServiceAccountConfig"
-            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv") 
+            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
         }
- 
+
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
             DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
         }
-   
+
 }
-``` 
+```
 
 #### <a name="configuring-the-lcm-for-pull-mode-configurations-using-configurationid"></a>Настройка LCM для конфигураций режима запросов с использованием ConfigurationID
 
@@ -158,15 +161,15 @@ configuration PartialConfigDemoConfigID
         {
             RefreshMode                     = 'Pull'
             ConfigurationID                 = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins            = 30 
+            RefreshFrequencyMins            = 30
             RebootNodeIfNeeded              = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            
+
         }
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description                     = 'Configuration for the Base OS'
@@ -182,7 +185,7 @@ configuration PartialConfigDemoConfigID
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 Вы можете извлечь частичные конфигурации более чем из одного опрашивающего сервера — потребуется только определить каждый опрашивающий сервер, а затем сослаться на соответствующий опрашивающий сервер в каждом блоке **PartialConfiguration**.
@@ -191,11 +194,13 @@ PartialConfigDemo
 
 ### <a name="naming-and-placing-the-configuration-documents-on-the-pull-server-configurationnames"></a>Именование и размещение документов конфигурации на опрашивающем сервере (ConfigurationNames)
 
-Документы частичной конфигурации необходимо разместить в папке, указанной как **ConfigurationPath**, в файле `web.config` для опрашивающего сервера (обычно `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 
+Документы частичной конфигурации необходимо разместить в папке, указанной как **ConfigurationPath**, в файле `web.config` для опрашивающего сервера (обычно `C:\Program Files\WindowsPowerShell\DscService\Configuration`).
 
 #### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-51"></a>Именование документов конфигурации на опрашивающем сервере в PowerShell 5.1
 
-Если вы запрашиваете только одну частичную конфигурацию на отдельном опрашивающем сервере, документ конфигурации может иметь любое имя. Если вы запрашиваете с опрашивающего сервера несколько частичных конфигураций, документ конфигурации можно назвать `<ConfigurationName>.mof`, где _ConfigurationName_ — имя частичной конфигурации, или `<ConfigurationName>.<NodeName>.mof`, где _ConfigurationName_ — имя частичной конфигурации, а _NodeName_ — имя целевого узла. Это позволяет запрашивать конфигурации с опрашивающего сервера DSC службы автоматизации Azure.
+Если вы запрашиваете только одну частичную конфигурацию на отдельном опрашивающем сервере, документ конфигурации может иметь любое имя.
+Если вы запрашиваете с опрашивающего сервера несколько частичных конфигураций, документ конфигурации можно назвать `<ConfigurationName>.mof`, где _ConfigurationName_ — имя частичной конфигурации, или `<ConfigurationName>.<NodeName>.mof`, где _ConfigurationName_ — имя частичной конфигурации, а _NodeName_ — имя целевого узла.
+Это позволяет запрашивать конфигурации с опрашивающего сервера DSC службы автоматизации Azure.
 
 
 #### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-50"></a>Именование документов конфигурации на опрашивающем сервере в PowerShell 5.0
@@ -228,7 +233,8 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 
 ## <a name="partial-configurations-in-mixed-push-and-pull-modes"></a>Частичные конфигурации в смешанных режимах принудительной отправки и запросов
 
-Кроме того, вы можете совместить режимы принудительной отправки и запросов для частичных конфигураций Это значит, что у вас может быть одна частичная конфигурация, запрашиваемая с опрашивающего сервера, тогда как для другой частичной конфигурации выполняется принудительная отправка. Укажите режим обновления для каждой частичной конфигурации, как описано в предыдущих разделах. Например, в следующей метаконфигурации описывается один и тот же пример с частичной конфигурацией `ServiceAccountConfig` в режиме запросов и частичной конфигурацией `SharePointConfig` в режиме принудительной отправки.
+Кроме того, вы можете совместить режимы принудительной отправки и запросов для частичных конфигураций Это значит, что у вас может быть одна частичная конфигурация, запрашиваемая с опрашивающего сервера, тогда как для другой частичной конфигурации выполняется принудительная отправка. Укажите режим обновления для каждой частичной конфигурации, как описано в предыдущих разделах.
+Например, в следующей метаконфигурации описывается один и тот же пример с частичной конфигурацией `ServiceAccountConfig` в режиме запросов и частичной конфигурацией `SharePointConfig` в режиме принудительной отправки.
 
 ### <a name="mixed-push-and-pull-modes-using-configurationnames"></a>Смешанные режимы принудительной отправки и запросов с использованием ConfigurationNames
 
@@ -247,27 +253,27 @@ Configuration PartialConfigDemoConfigNames
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
-            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38
             ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
-        }     
-        
-        PartialConfiguration ServiceAccountConfig 
+        }
+
+        PartialConfiguration ServiceAccountConfig
         {
             Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
-            RefreshMode                     = 'Pull' 
+            RefreshMode                     = 'Pull'
         }
- 
+
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
             DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Push'
         }
-   
+
 }
-``` 
+```
 
 ### <a name="mixed-push-and-pull-modes-using-configurationid"></a>Смешанные режимы принудительной отправки и запросов с использованием ConfigurationID
 
@@ -281,15 +287,15 @@ configuration PartialConfigDemo
         {
             RefreshMode             = 'Pull'
             ConfigurationID         = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins    = 30 
+            RefreshFrequencyMins    = 30
             RebootNodeIfNeeded      = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
             ServerURL               = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            
+
         }
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description             = 'Configuration for the Base OS'
@@ -304,7 +310,7 @@ configuration PartialConfigDemo
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 Обратите внимание, что режим **RefreshMode**, указанный в блоке "Параметры", — это "Режим запросов", а режим **RefreshMode** для частичной конфигурации `SharePointConfig` — "Режим принудительной отправки".
@@ -335,7 +341,7 @@ Configuration ServiceAccountConfig
                                   'admins@example.domain'
             Ensure              = 'Present'
             Credential          = $Credential
-            
+
         }
 
         WindowsFeature Telnet
@@ -372,10 +378,9 @@ Configuration SharePointConfig
 }
 SharePointConfig
 ```
-##<a name="see-also"></a>См. также 
+##<a name="see-also"></a>См. также
 
 **Основные понятия**
-[Опрашивающие серверы настройки требуемого состояния Windows PowerShell](pullServer.md) 
+[Опрашивающие серверы настройки требуемого состояния Windows PowerShell](pullServer.md)
 
-[Настройка локального диспетчера конфигураций Windows](https://technet.microsoft.com/library/mt421188.aspx) 
-
+[Настройка локального диспетчера конфигураций Windows](https://technet.microsoft.com/library/mt421188.aspx)

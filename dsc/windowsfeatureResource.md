@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Ресурс WindowsFeature в DSC"
-ms.openlocfilehash: 3dd4a9c6f11b0c76054ca3e95796cab8e709a7c6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Ресурс WindowsFeature в DSC
+ms.openlocfilehash: e22f40d5a30b470bc322bd7fa3a065e6806d5cd5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-windowsfeature-resource"></a>Ресурс WindowsFeature в DSC
 
@@ -32,23 +32,22 @@ WindowsFeature [string] #ResourceName
 
 ## <a name="properties"></a>Свойства
 
-|  Свойство  |  Описание   | 
-|---|---| 
-| Name| Указывает имя роли или компонента, которые необходимо добавить или удалить. Это свойство аналогично свойству __Name__ командлета [Get-WindowsFeature](/powershell/module/servermanager/Get-WindowsFeature) и не является отображаемым именем роли или компонента.| 
-| Учетные данные| Указывает учетные данные для добавления или удаления роли или компонента.| 
-| Ensure| Указывает, добавляется или удаляется роль или компонент. Чтобы добавить роль или компонент, установите это свойство равным Present, чтобы удалить — равным Absent.| 
-| IncludeAllSubFeature| Присвойте этому свойству значение __$true__ для синхронизации состояния всех необходимых дополнительных компонентов с состоянием компонента, указанного в свойстве __Name__.| 
-| LogPath| Указывает путь к файлу журнала, в котором поставщик ресурсов должен вести журнал работы.| 
-| DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.| 
-| Источник| Указывает расположение исходного файла для установки, если он необходим.| 
+|  Свойство  |  Описание   |
+|---|---|
+| Name| Указывает имя роли или компонента, которые необходимо добавить или удалить. Это свойство аналогично свойству __Name__ командлета [Get-WindowsFeature](/powershell/module/servermanager/Get-WindowsFeature) и не является отображаемым именем роли или компонента.|
+| Учетные данные| Указывает учетные данные для добавления или удаления роли или компонента.|
+| Ensure| Указывает, добавляется или удаляется роль или компонент. Чтобы добавить роль или компонент, установите это свойство равным Present, чтобы удалить — равным Absent.|
+| IncludeAllSubFeature| Присвойте этому свойству значение __$true__ для синхронизации состояния всех необходимых дополнительных компонентов с состоянием компонента, указанного в свойстве __Name__.|
+| LogPath| Указывает путь к файлу журнала, в котором поставщик ресурсов должен вести журнал работы.|
+| DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.|
+| Источник| Указывает расположение исходного файла для установки, если он необходим.|
 
 ## <a name="example"></a>Пример
 ```powershell
 WindowsFeature RoleExample
 {
-    Ensure = "Present" 
+    Ensure = "Present"
     # Alternatively, to ensure the role is uninstalled, set Ensure to "Absent"
-    Name = "Web-Server" # Use the Name property from Get-WindowsFeature  
+    Name = "Web-Server" # Use the Name property from Get-WindowsFeature
 }
 ```
-

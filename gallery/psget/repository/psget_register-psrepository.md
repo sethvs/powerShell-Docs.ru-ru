@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Register-PSRepository
-ms.openlocfilehash: badac5dc1157bbfa79058630c5c2f260d2151bd8
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 7a7d1bf56a87161f6ec735399b15b19f317282b6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="register-psrepository"></a>Register-PSRepository
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="description"></a>Описание
 
-Командлет Register-PSRepository регистрирует веб-репозиторий с модулями PowerShell. После регистрации репозитория вы можете ссылаться на него из командлетов Find-Module, Install-Module и Publish-Module. Зарегистрированный репозиторий становится репозиторием по умолчанию в командлетах Find-Module и Install-Module. 
+Командлет Register-PSRepository регистрирует веб-репозиторий с модулями PowerShell. После регистрации репозитория вы можете ссылаться на него из командлетов Find-Module, Install-Module и Publish-Module. Зарегистрированный репозиторий становится репозиторием по умолчанию в командлетах Find-Module и Install-Module.
 
 Информация о зарегистрированных репозиториях привязана к конкретному пользователю. Они не регистрируются в контексте всей системы.
 
@@ -33,7 +33,8 @@ Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ## <a name="example-commands"></a>Примеры команд
 
 ### <a name="register-a-powershell-repository"></a>Регистрация репозитория PowerShell
-Вы можете настроить PowerShellGet на работу с внутренними репозиториями. После регистрации репозитория командлеты Find-Module и Install-Module можно настроить на работу с ним.
+Вы можете настроить PowerShellGet на работу с внутренними репозиториями.
+После регистрации репозитория командлеты Find-Module и Install-Module можно настроить на работу с ним.
 
 ```powershell
 # Register a default repository
@@ -114,4 +115,3 @@ ScriptPublishLocation : https://customgallery.cloudapp.net/api/v2/package/
 ProviderOptions : {}
 
 ```
-

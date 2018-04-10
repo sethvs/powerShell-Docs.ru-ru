@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-23
-keywords: "powershell,командлет"
-title: "Устранение неполадок с доступом в Windows PowerShell Web Access"
-ms.openlocfilehash: 6e51df3f4c6ac196c855ad918a91394d02c7d75e
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.date: 08/23/2017
+keywords: powershell,командлет
+title: Устранение неполадок с доступом в Windows PowerShell Web Access
+ms.openlocfilehash: ef476d8e386e5380cb2c9dda69180dfce8748bf4
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Устранение неполадок с доступом в Windows PowerShell Web Access
 
@@ -130,7 +130,7 @@ ComputerGroup | имя\_сервера\\группа\_компьютеров<br/
 Правила авторизации не поддерживают IPv6-адреса в форме имени домена.
 
 Чтобы указать конечный компьютер с помощью IPv6-адреса, используйте в правиле авторизации исходный IPv6-адрес (содержащий двоеточия).
-IPv6-адреса в форме имени домена и в числовой форме (с двоеточиями) поддерживаются в качестве имени конечного компьютера на странице входа в Windows PowerShell Web Access, но не в правилах авторизации. 
+IPv6-адреса в форме имени домена и в числовой форме (с двоеточиями) поддерживаются в качестве имени конечного компьютера на странице входа в Windows PowerShell Web Access, но не в правилах авторизации.
 
 Дополнительные сведения об IPv6-адресах см. в статье [Принцип работы IPv6](https://technet.microsoft.com/library/cc781672(v=ws.10).aspx).
 

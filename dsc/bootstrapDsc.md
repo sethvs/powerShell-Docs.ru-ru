@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Настройка виртуальных машин при начальной загрузке с помощью DSC"
-ms.openlocfilehash: ff06aafa6db49d93a9b42e38ac7c3e9a11657bd5
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Настройка виртуальных машин при начальной загрузке с помощью DSC
+ms.openlocfilehash: e6ff83b9a09f93277904c80e8e52f3db5e818739
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 >Область применения: Windows PowerShell 5.0
 
@@ -90,7 +90,8 @@ Configuration SampleIISInstall
     Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-7. Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC. После первоначальной загрузки и установки операционной системы будут установлены службы IIS.
+7. Создайте виртуальную машину с помощью VHD, на который установлен документ MOF DSC.
+После первоначальной загрузки и установки операционной системы будут установлены службы IIS.
 Это можно проверить, вызвав командлет [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx).
 
 ## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a>Добавление метаконфигурации DSC в VHD
@@ -203,4 +204,3 @@ configuration PullClientBootstrap
 - [Раздел реестра DSCAutomationHostEnabled](DSCAutomationHostEnabled.md)
 - [Настройка локального диспетчера конфигураций (LCM)](metaConfig.md)
 - [Настройка опрашивающего веб-сервера DSC](pullServer.md)
-

@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Uninstall-Script
-ms.openlocfilehash: 41f2b88ee81cf9f8c1a8c415ed658f29f4f08c3b
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 3d35235d001063784226dbbdb60595c5efee928d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="uninstall-script"></a>Uninstall-Script
 
@@ -73,4 +73,3 @@ VERBOSE: Performing the operation "Uninstall-Script" on target "Version '2.5.0-a
 VERBOSE: Successfully uninstalled the script 'Required-Script1' from script base 'C:\Users\manikb\Documents\WindowsPowerShell\Scripts'.
 
 ```
-

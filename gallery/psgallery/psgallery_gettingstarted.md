@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
-keywords: "коллекции,powershell,командлет,psgallery"
-title: "psgallery_начало_работы"
-ms.openlocfilehash: 2117712b0081db4a21f8480b458a499ed84dc512
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: коллекции,powershell,командлет,psgallery
+title: psgallery_начало_работы
+ms.openlocfilehash: 599b148e141ba4205a7c774581e737a5d54bfae1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-started-with-the-powershell-gallery"></a>Приступая к работе с коллекцией PowerShell
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/15/2018
 
 Кроме того, можно выполнить `Install-PackageProvider -Name NuGet -Force` для автоматизации скачивания и установки поставщика NuGet.
 
-  
+
 Если ваша версия NuGet младше 2.8.5.201, вам необходимо выполнить следующие командлеты PowerShell для установки последней версии NuGet и переключения на нее.
 
 1.  `Install-PackageProvider NuGet -MinimumVersion '2.8.5.201' -Force`
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/15/2018
 
 Дополнительные сведения см. в разделе <http://oneget.org/>.
 
-  
+
 Примечание. Из-за изменений в форматах упаковки мы рекомендуем установить последнюю версию PowerShellGet и PackageManagement для установки недавно обновленных компонентов. PowerShellGet включен в Windows 10. Подробности см. [здесь](http://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409).
 PowerShellGet также включен в платформу Windows Management Framework (WMF) 5.0, которую можно скачать [здесь](http://go.microsoft.com/fwlink/?LinkId=398175).
 
@@ -118,4 +118,3 @@ CurrentUser` скрипт будет установлен в каталог `$en
 Чтобы узнать, какие модули вы установили из коллекции PowerShell, выполните командлет [Get-InstalledModule](https://go.microsoft.com/fwlink/?LinkId=526863). Эта команда перечисляет все модули в системе, установленные непосредственно из коллекции PowerShell.
 
 Аналогично, чтобы узнать, какие скрипты были установлены из коллекции PowerShell, выполните командлет [Get-InstalledScript](https://go.microsoft.com/fwlink/?LinkId=619790). Эта команда перечисляет все скрипты в системе, установленные непосредственно из коллекции PowerShell.
-

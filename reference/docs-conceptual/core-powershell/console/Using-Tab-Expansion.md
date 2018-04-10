@@ -1,15 +1,16 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Расширение по клавише TAB"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Расширение по клавише TAB
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
-ms.openlocfilehash: 8412bd97a95719f07b16c6671d3b8801bbfab8e3
-ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
+ms.openlocfilehash: 3d047bf0691c8a304d7637aa50fba6ae99709a82
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-tab-expansion"></a>Расширение по клавише TAB
+
 Оболочки командной строки часто позволяют автоматически завершать длинные имена файлов или команд, что ускоряет ввод и позволяет использовать подсказки. Windows PowerShell позволяет завершать имена файлов и командлетов нажатием клавиши **TAB**.
 
 > [!NOTE]
@@ -45,4 +46,3 @@ PS> Get-Content C:\windows\actsetup.log
 
 > [!NOTE]
 > Единственным ограничением этого процесса является то, что символы табуляции принимаются за попытки завершения слова. При копировании и вставке примеров команд в консоль PowerShell убедитесь, что пример не содержит символы табуляции. В противном случае результаты будут непредсказуемыми и почти наверняка будут отличаться от требуемых.
-

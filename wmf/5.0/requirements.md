@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 510e1baa2933932cfd4c3bcb4e0973f3eb8095f3
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 7e24bb4ee4d0658b0619f7f008e3740f647f124f
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="system-requirements"></a>Системные требования
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 03/15/2018
 Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1) содержат встроенные PowerShell 2.0, WinRM и WMI. Пакеты WMF 3.0 и WMF 4.0, которые обновляют эти встроенные компоненты, были выпущены после выпуска Windows Server 2008 R2 с пакетом обновления 1 (SP1) и Windows 7 с пакетом обновления 1 (SP1). При установке или удалении пакетов WMF 3.0 и WMF 4.0 были выявлены некоторые проблемы при следующих вариантах обновления:
 
 - Встроенные методы --> WMF 4.0.
-- Встроенные методы --> WMF 3.0--> WMF4.0. 
+- Встроенные методы --> WMF 3.0--> WMF4.0.
 
 Все эти проблемы были устранены в пакетах WMF 4.0. Таким образом, для установки WMF 5.0 в системе Windows Server 2008 R2 с пакетом обновления 1 (SP1) или Windows 7 с пакетом обновления 1 (SP1) в ней должен быть установлен WMF 4.0. Ниже приведены конкретные проблемы, которые могут возникнуть при установке WMF 4.0 перед обновлением до WMF 5.0.
 
@@ -96,4 +96,3 @@ wusa /uninstall /kb:3134760
 3.  Щелкните **Просмотр установленных обновлений**.
 
 4.  Выберите **Windows Management Framework 5.0** в списке установленных обновлений. Это соответствует *KB3134758*, *KB3134759* или *KB3134760*. Щелкните **Удалить**.
-

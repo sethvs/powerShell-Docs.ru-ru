@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
-keywords: "powershell,командлет"
-ms.date: 2016-12-12
-title: "проверка pswaauthorizationrule"
+keywords: powershell,командлет
+ms.date: 12/12/2016
+title: проверка pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: fb2937397616160c70b056e412e42fb8ff4c2f27
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: ed6d56b2f3c4ee4ac410cdaadda312bffe506ee9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="test-pswaauthorizationrule"></a>Test-PswaAuthorizationRule
 
@@ -47,7 +47,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Задает имя проверяемого компьютера.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |
@@ -60,7 +60,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Указывает имя конфигурации сеанса Windows PowerShell (также известной как конечная точка или пространство выполнения) для проверки.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -73,7 +73,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Указывает URI подключения для проверки.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |
@@ -86,7 +86,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Указывает объект **PSCredential** для учетной записи пользователя, который предполагается использовать для проверки правил авторизации Windows PowerShell Web Access. Если этот параметр не добавлен, командлет будет использовать учетную запись текущего пользователя. Чтобы получить объект **PSCredential**, который требуется для удаленной проверки правил авторизации, запустите командлет [Get-Credential](http://go.microsoft.com/fwlink/?LinkID=293936).
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -99,7 +99,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Задает набор правил для проверки. Если этот параметр не указан, командлет проверяет соответствие всем правилам авторизации.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -112,7 +112,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Задает имя проверяемого пользователя.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |

@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
-keywords: "коллекции,powershell,командлет,psgallery"
-title: "psgallery_обращение_к_владельцам_элементов"
-ms.openlocfilehash: 3d238ed918fcbd1b87fcc6eabf640ac72dd8fc3e
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: коллекции,powershell,командлет,psgallery
+title: psgallery_обращение_к_владельцам_элементов
+ms.openlocfilehash: bf27c97fb66d2056f1972f5e097efaabedc35bb3
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="contacting-item-owners"></a>Обращение к владельцам элементов
 
@@ -16,4 +16,3 @@ ms.lasthandoff: 06/12/2017
 В строке меню слева вы найдете ссылку для связи с владельцами.
 При щелчке ссылки откроется новая страница.
 Отсюда можно отправить сообщение.
-

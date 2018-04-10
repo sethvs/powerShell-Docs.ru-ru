@@ -1,20 +1,22 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Управление текущим расположением"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Управление текущим расположением
 ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
-ms.openlocfilehash: cbdebb84b3191e3bd549a1cf344cbeefaa91a23c
-ms.sourcegitcommit: c5251755c4442487f99ff74fadf7e37bbf039089
+ms.openlocfilehash: 8d529bf4a85553b95a9cab2739016859662486f2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="managing-current-location"></a>Управление текущим расположением
+
 При навигации по системам папок в проводнике у вас обычно есть определенное рабочее расположение, т. е. текущая открытая папка. Элементами в текущей папке можно легко управлять, щелкая их. Когда в интерфейсе командной строки (например, Cmd.exe) открыта папка, в которой находится определенный файл, вы можете получить к нему доступ, указав короткое имя, а не вводить весь путь к файлу. Текущий каталог называется рабочим.
 
 Windows PowerShell использует существительное **Location** для ссылки на рабочий каталог и реализует семейство командлетов для просмотра расположения и управления им.
 
 ### <a name="getting-your-current-location-get-location"></a>Получение текущего расположения (Get-Location)
+
 Чтобы определить путь к текущему каталогу, введите команду **Get-Location**.
 
 ```
@@ -28,16 +30,18 @@ C:\Documents and Settings\PowerUser
 > Командлет Get-Location аналогичен команде **pwd** в оболочке BASH. Командлет Set-Location аналогичен команде **cd** в Cmd.exe.
 
 ### <a name="setting-your-current-location-set-location"></a>Настройка текущего расположения (Set-Location)
+
 Команда **Get-Location** используется с командой **Set-Location**. Команда **Set-Location** позволяет вам указать расположение текущего каталога.
 
-```
-PS> Set-Location -Path C:\Windows
+```powershell
+Set-Location -Path C:\Windows
 ```
 
 Обратите внимание, что после ввода команды вы не получите прямого отклика о действии команды. Большинство команд Windows PowerShell, выполняющих действия, практически не создают выходных данных, так как выходные данные не всегда полезны. Чтобы проверить успешность внесения изменения в каталог при вводе команды **Set-Location**, укажите параметр **-PassThru** при вводе команды **Set-Location**.
 
 ```
 PS> Set-Location -Path C:\Windows -PassThru
+
 Path
 ----
 C:\WINDOWS
@@ -49,7 +53,7 @@ C:\WINDOWS
 
 Например, если вы находитесь в папке **C:\\Windows**, точка (**.**) представляет **C:\\Windows**, а две точки (**..**) представляют **C:**. Текущее расположение можно изменить на корень диска C: путем ввода следующей команды:
 
-```powershell
+```
 PS> Set-Location -Path .. -PassThru
 
 Path
@@ -79,19 +83,20 @@ HKLM:\
 
 Вы можете ввести Set-Location или использовать любой из встроенных псевдонимов Windows PowerShell для Set-Location (cd, chdir, sl). Например:
 
-```
+```powershell
 cd -Path C:\Windows
 ```
 
-```
+```powershell
 chdir -Path .. -PassThru
 ```
 
-```
+```powershell
 sl -Path HKLM:\SOFTWARE -PassThru
 ```
 
 ### <a name="saving-and-recalling-recent-locations-push-location-and-pop-location"></a>Сохранение и отзыв последних расположений (Push-Location и Pop-Location)
+
 При изменении расположения полезно отслеживать свое предыдущее расположение и иметь возможность вернуться к нему. Командлет **Push-Location** в Windows PowerShell создает упорядоченный журнал ("стек") путей к каталогам, которые вы открывали, чтобы можно было вернуться по нему на шаг назад, используя дополнительный командлет **Pop-Location**.
 
 Например, Windows PowerShell обычно запускается в корневом каталоге пользователя.
@@ -109,14 +114,14 @@ C:\Documents and Settings\PowerUser
 
 Чтобы передать текущее расположение в стек, а затем переместить его в папку локальных параметров, введите:
 
-```
-PS> Push-Location -Path "Local Settings"
+```powershell
+Push-Location -Path "Local Settings"
 ```
 
 После этого можно передать расположение локальных параметров в стек и переместить его в папку Temp, введя:
 
-```
-PS> Push-Location -Path Temp
+```powershell
+Push-Location -Path Temp
 ```
 
 Чтобы убедиться, что каталоги изменены, введите команду **Get-Location**.
@@ -152,13 +157,13 @@ C:\Documents and Settings\PowerUser
 
 Кроме того, можно использовать командлеты расположения с сетевыми путями. Если у вас есть сервер FS01 с общей папкой Public, можно изменить расположение, введя
 
-```
+```powershell
 Set-Location \\FS01\Public
 ```
 
 или
 
-```
+```powershell
 Push-Location \\FS01\Public
 ```
 
@@ -172,4 +177,3 @@ Set-Location : Cannot find path 'D:\' because it does not exist.
 ```
 
 В интерфейсе командной строки проводник неудобно использовать для просмотра свободных физических дисков. Также в проводнике будут показаны не все диски PowerShell. Windows PowerShell предоставляет набор команд для управления дисками Windows PowerShell, о которых речь пойдет далее.
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 4d32ced8e75042f494477408424b97be8958854e
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 1f165afbcd8fe8dc5f72cc7ea557d21ce2884e91
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="nonewline-parameter"></a>Параметр NoNewLine
 **Out-File**, **Add-Content** и **Set-Content** теперь имеют новый параметр **–NoNewline**, который просто пропускает перевод на новую строку после выходных данных.
@@ -38,4 +38,3 @@ a single
 
 sentence.
 ```
-

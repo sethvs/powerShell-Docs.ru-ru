@@ -1,4 +1,4 @@
-# <a name="ws-management-wsman-remoting-in-powershell-core"></a>Удаленное взаимодействие с WS-Management (WSMan) в PowerShell Core 
+# <a name="ws-management-wsman-remoting-in-powershell-core"></a>Удаленное взаимодействие с WS-Management (WSMan) в PowerShell Core
 
 ## <a name="instructions-to-create-a-remoting-endpoint"></a>Инструкции по созданию конечной точки удаленного взаимодействия
 
@@ -28,19 +28,19 @@
 
 #### <a name="executed-by-the-instance-of-powershell-that-it-will-register"></a>Выполнение экземпляром PowerShell, где он будет зарегистрирован
 
-``` powershell
+```powershell
 Install-PowerShellRemoting.ps1
 ```
 
 #### <a name="executed-by-another-instance-of-powershell-on-behalf-of-the-instance-that-it-will-register"></a>Выполнение экземпляром PowerShell, отличным от того, где он будет зарегистрирован
 
-``` powershell
+```powershell
 <path to powershell>\Install-PowerShellRemoting.ps1 -PowerShellHome "<absolute path to the instance's $PSHOME>"
 ```
 
 Пример:
 
-``` powershell
+```powershell
 Set-Location -Path 'C:\Program Files\PowerShell\6.0.0\'
 .\Install-PowerShellRemoting.ps1 -PowerShellHome "C:\Program Files\PowerShell\6.0.0\"
 ```
@@ -51,7 +51,7 @@ Set-Location -Path 'C:\Program Files\PowerShell\6.0.0\'
 
 Создайте сеанс PowerShell с новой конечной точкой PowerShell, указав `-ConfigurationName "some endpoint name"`. Чтобы подключиться к экземпляру PowerShell из примера выше, используйте одну из следующих команд:
 
-``` powershell
+```powershell
 New-PSSession ... -ConfigurationName "powershell.6.0.0"
 Enter-PSSession ... -ConfigurationName "powershell.6.0.0"
 ```

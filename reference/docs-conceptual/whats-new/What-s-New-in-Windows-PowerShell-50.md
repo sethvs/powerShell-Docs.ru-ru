@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Новые возможности Windows PowerShell 5.0"
-ms.openlocfilehash: 3a412b35c593c99fb8ea8307b12ccc05871863f4
-ms.sourcegitcommit: e2360ac94fe4deb0ed0f5c8c8d9b293551ec8030
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Новые возможности Windows PowerShell 5.0
+ms.openlocfilehash: f1134a37e7027b00c948ce1db186a21dc5a311c6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="whats-new-in-windows-powershell-50"></a>Новые возможности Windows PowerShell 5.0
 Платформа Windows PowerShell 5.0 включает несколько важных новых функций, которые расширяют возможности ее использования, а также упрощают управление средами на базе Windows.
@@ -14,7 +14,7 @@ ms.lasthandoff: 10/05/2017
 Windows PowerShell 5.0 обеспечивает обратную совместимость. Командлеты, поставщики, модули, оснастки, сценарии, функции и профили, разработанные для Windows PowerShell 4.0, Windows PowerShell 3.0 и Windows PowerShell 2.0, обычно работают в Windows PowerShell 5.0 без изменений.
 
 # <a name="installing-windows-powershell"></a>Установка Windows PowerShell
-Windows PowerShell 5.0 устанавливается по умолчанию в Windows Server 2016 Technical Preview и Windows 10. 
+Windows PowerShell 5.0 устанавливается по умолчанию в Windows Server 2016 Technical Preview и Windows 10.
 
 Чтобы установить Windows PowerShell 5.0 в системе Windows Server 2012 R2, Windows 8.1 Корпоративная или Windows 8.1 Профессиональная, скачайте и установите [Windows Management Framework 5.0](http://aka.ms/wmf5download). Перед тем как устанавливать Windows Management Framework 5.0, прочтите сведения о скачивании и убедитесь, что все требования к системе выполнены.
 
@@ -471,7 +471,7 @@ Windows PowerShell 3.0 включает приведенные ниже нов�
 - [Поддержка запуска от имени и общего узла](#runas-and-shared-host-support)
 - [Улучшения в обработке специальных символов](#special-character-handling-improvements)
 
-### <a name="windows-powershell-workflow"></a>Рабочий процесс Windows PowerShell
+### <a name="windows-powershell-workflow"></a>рабочий процесс Windows PowerShell
 Рабочие процессы Windows PowerShell привносят возможности Windows Workflow Foundation в Windows PowerShell. Рабочие процессы можно записывать на языке XAML или Windows PowerShell и запускать их так же, как командлеты. Командлет [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) получает команды рабочих процессов, а [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) получает справку для рабочих процессов.
 
 Рабочие процессы — это последовательности длительных, повторяющихся, частых, параллелизуемых, прерываемых, приостанавливаемых и перезапускаемых действий управления несколькими компьютерами. Действие рабочих процессов можно возобновить после намеренного или случайного прерывания работы, например отключения от сети, перезапуска Windows или сбоя питания.
@@ -713,4 +713,3 @@ Windows PowerShell 3.0 включает поддержку функций за�
 ## <a name="see-also"></a>См. также
 - [about_Windows_PowerShell_5.0](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_windows_powershell_5.0?view=powershell-5.0)
 - [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107116)
-

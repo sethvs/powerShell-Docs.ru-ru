@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Общие сведения о конвейере Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Общие сведения о конвейере Windows PowerShell
 ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
-ms.openlocfilehash: 6d152e52d2fcfb9dd592eb9ac40500615f2186cb
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: c3f1d17432cf3a77c0f5ecae137a4233a28a19d7
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a>Общие сведения о конвейере Windows PowerShell
 Конвейер участвует в работе практически всех аспектов Windows PowerShell. Хотя вы видите текст на экране, Windows PowerShell не передает текст между командами. Вместо этого он передает объекты.
@@ -61,4 +61,3 @@ C:\
 Учитывая, что команда Windows PowerShell может выводить больше сведений, чем отображается в окне консоли, как можно получить непоказанные элементы? Как просмотреть дополнительные данные? И что делать, если требуется просмотреть данные в формате, отличном от стандартного для Windows PowerShell?
 
 В оставшейся части этой главы описано, как определить структуру конкретных объектов Windows PowerShell, выбирая определенные элементы и форматируя их для упрощения отображения, и как отправить эти сведения в альтернативные расположения вывода, такие как файлы и принтеры.
-

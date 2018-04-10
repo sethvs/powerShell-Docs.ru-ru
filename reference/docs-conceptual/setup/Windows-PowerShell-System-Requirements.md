@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Требования к системе для Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Требования к системе для Windows PowerShell
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
-ms.openlocfilehash: 33824eac4de28de97990ffa1ea2500e61e03e847
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: a15b5b33b5296befae833e520cfdfbd41a07b122
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-powershell-system-requirements"></a>Требования к системе для Windows PowerShell
 В этой статье описаны требования к системе для Windows PowerShell 3.0, Windows PowerShell 4.0 и Windows PowerShell 5.0, а также для специальных функций, таких как интегрированная среда сценариев (ISE) Windows PowerShell, команды CIM и рабочие процессы.
@@ -79,7 +79,7 @@ Windows PowerShell — это основанное на консоли прил�
 
 Однако некоторым элементам, например приведенным ниже, графический пользовательский интерфейс необходим. Дополнительные сведения см. в разделе справки для каждого элемента.
 
-- Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
+- Интегрированная среда сценариев (ISE) Windows PowerShell
 
 - Командлеты
 
@@ -125,4 +125,3 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 и Windows PowerShell 4.0 вы
 - [Начало работы с Windows PowerShell](../getting-started/Getting-Started-with-Windows-PowerShell.md)
 - [Установка Windows PowerShell](Installing-Windows-PowerShell.md)
 - [Запуск Windows PowerShell](Starting-Windows-PowerShell.md)
-

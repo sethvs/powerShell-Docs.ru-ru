@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
-title: "psget_справочник_по_командлетам"
-ms.openlocfilehash: adf0cfb8f0a6502ec16452656ae7a840ef4126df
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: коллекция,powershell,командлет,psget
+title: psget_справочник_по_командлетам
+ms.openlocfilehash: 292903a8583fb06ed556fef4c5bc9e10ba441274
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="powershellget-cmdlet-reference"></a>Справочник по командлетам PowerShellGet
 
@@ -37,4 +37,3 @@ ms.lasthandoff: 06/12/2017
 - [Test-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619791)
 - [Update-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619793)
 - [Publish-Script](http://go.microsoft.com/fwlink/?LinkId=619788)
-

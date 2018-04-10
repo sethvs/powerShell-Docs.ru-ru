@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-09
+ms.date: 06/09/2017
 schema: 2.0.0
 keywords: powershell
 title: RequireLicenseAcceptance
-ms.openlocfilehash: 260ccc1ee52d09a640e88203c5644f20f9723d6f
-ms.sourcegitcommit: cd66d4f49ea762a31887af2c72d087b219ddbe10
+ms.openlocfilehash: d78f8cb7f84869880e9a88a0f0407d18dc5c64cb
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="modules-requiring-license-acceptance"></a>Модули, для использования которых требуется принять условия лицензии
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 10/11/2017
 ## <a name="publish-requirements-for-modules"></a>Требования к публикации модулей
 
 Модули, для использования которых нужно принять условия лицензионного соглашения, должны соответствовать следующим требованиям:
-    
+
 - В разделе PSData манифеста модуля для параметра RequireLicenseAcceptance должно быть установлено значение $True.
 - В корневом каталоге модуля должен содержаться файл license.txt.
 - Манифест модуля должен содержать URI лицензии.
@@ -31,13 +31,13 @@ ms.lasthandoff: 10/11/2017
     - **Save-Module:** модуль будет скопирован в систему пользователя.
     - **Install-Module:** модуль будет скопирован в надлежащую папку в системе пользователя (в зависимости от области действия).
     - **Update-Module:** модуль будет обновлен.
-  - Если условия лицензионного соглашения отклоняются: 
+  - Если условия лицензионного соглашения отклоняются:
     - Операция будет отменена.
 - Все командлеты проверяют метаданные (requireLicenseAcceptance и версию формата), которые свидетельствуют о том, что требуется принять условия лицензионного соглашения.
   - Если версия формата клиента ниже 2.0, операция завершится ошибкой. Поступит запрос на обновление клиента.
   - Если модуль опубликован с версией формата ниже 2.0, флаг requireLicenseAcceptance будет игнорироваться.
 
-    
+
  ## <a name="module-dependencies"></a>Зависимости модулей
 - Если при установке, сохранении или обновлении зависимого модуля (или модуля, от которого зависят другие функции) требуется принять условия лицензионного соглашения, примите их (процедура описана выше).
 - Если версия модуля уже указана в локальном каталоге как установленная в системе, пропустите процедуру проверки лицензии.
@@ -59,7 +59,7 @@ PrivateData = @{
         # Flag to indicate whether the module requires explicit user acceptance
         RequireLicenseAcceptance = $true
     } # End of PSData hashtable
-    
+
  } # End of PrivateData hashtable
 ```
 Эта команда позволяет обновить файл манифеста и установить для флага RequireLicenseAcceptance значение true.
@@ -78,7 +78,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 
 ```
 Эта команда предназначена для отображения лицензии в файле license.txt и запроса на принятие условий лицензионного соглашения.
@@ -117,7 +117,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 
 ### <a name="example-6-install-module-with-dependencies-requiring-license-acceptance-and--acceptlicense"></a>Пример 6. Установка модуля с зависимостями, для использования которого требуется принять условия лицензионного соглашения и указать -AcceptLicense
@@ -147,7 +147,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 Эта команда предназначена для отображения лицензии в файле license.txt и запроса на принятие условий лицензионного соглашения.
 
@@ -172,7 +172,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 Эта команда предназначена для отображения лицензии в файле license.txt и запроса на принятие условий лицензионного соглашения.
 

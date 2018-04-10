@@ -1,15 +1,16 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
-ms.openlocfilehash: 3cfeb18babe6b63f0e02da8cf0fd460950f1afce
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 4d4388d889f2178b2cd24cb0f3350aee37327625
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Создание вкладки PowerShell в интегрированной среде сценариев Windows PowerShell
+
 Вкладки в интегрированной среде сценариев (ISE) Windows PowerShell позволяют одновременно создавать и использовать несколько сред выполнения внутри одного приложения.
 Каждая вкладка PowerShell соответствует отдельной среде выполнения или отдельному сеансу.
 
@@ -53,6 +54,5 @@ ms.lasthandoff: 09/08/2017
 
 ## <a name="see-also"></a>См. также
 
-- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
+- [Введение в интегрированную среду сценариев Windows PowerShell](Introducing-the-Windows-PowerShell-ISE.md)
 - [Использование области консоли в интегрированной среде сценариев Windows PowerShell](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
-

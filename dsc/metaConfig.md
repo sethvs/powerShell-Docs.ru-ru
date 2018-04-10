@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-10-11
+ms.date: 10/11/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Настройка локального диспетчера конфигураций"
-ms.openlocfilehash: b8e0749cf2f67e395e9fd8eaf9cde33b97c0cb67
-ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
+keywords: dsc,powershell,конфигурация,установка
+title: Настройка локального диспетчера конфигураций
+ms.openlocfilehash: d5a2584b23abd8eb0f1359bc452d16c7380dbaac
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="configuring-the-local-configuration-manager"></a>Настройка локального диспетчера конфигураций
 

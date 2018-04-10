@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
-keywords: "powershell,командлет"
-ms.date: 2016-12-12
-title: "установка pswawebapplication"
+keywords: powershell,командлет
+ms.date: 12/12/2016
+title: установка pswawebapplication
 ms.technology: powershell
-ms.openlocfilehash: ce4d01fbe8a83924e7023d792c68c903a32e07d4
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: c7f7768a41b6784d8c29afa1fccf0b855160b777
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="install-pswawebapplication"></a>Install-PswaWebApplication
 
@@ -35,7 +35,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 Указывает, что создается тестовый сертификат. Если этот параметр имеет значение true, то командлет создает тестовый сертификат и настраивает веб-приложение Windows PowerShell Web Access для использования сертификата для HTTPS-запросов. Если этот параметр имеет значение false, то ни сертификат, ни привязка не создаются. Задайте значение false, если для Windows PowerShell Web Access используется другой сертификат.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -48,7 +48,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 Указывает имя веб-приложения. Отображается как последняя часть URL-адреса Windows PowerShell Web Access.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -61,7 +61,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 Задает имя веб-сайта веб-сервера (IIS) для установки этого веб-приложения Windows PowerShell Web Access.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -74,7 +74,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 Запрос на подтверждение перед выполнением командлета.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |
@@ -87,7 +87,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 Показывает, что произойдет при запуске командлета.
 Командлет не запущен.
 
-|||  
+|||
 |-|-|
 | Требуется?                            | false                                |
 | Указать положение?                            | с именем                                |

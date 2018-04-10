@@ -1,22 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 668a5b20add58ff5e23f35d6cebddc39c64ce926
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 89f0deaece27e2d207dfb820d4df80e427c9cb94
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installation-instructions"></a>Инструкции по установке
 
 Скачайте подходящий пакет для своей операционной системы и архитектуры:
 
-| Операционная система       | Архитектура | Имя пакета              | 
-|------------------------|--------------|---------------------------| 
-| Windows Server 2012 R2 | x64      | [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) | 
-| Windows Server 2012    | x64      | [W2K12-KB3134759-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717506) | 
+| Операционная система       | Архитектура | Имя пакета              |
+|------------------------|--------------|---------------------------|
+| Windows Server 2012 R2 | x64      | [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) |
+| Windows Server 2012    | x64      | [W2K12-KB3134759-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717506) |
 | Windows Server 2008 R2 | x64      | [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504) |
 | Windows 8.1            | x64          | [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) |
 | Windows 8.1            | x86          | [Win8.1-KB3134758-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717963) |
@@ -30,7 +30,7 @@ ms.lasthandoff: 06/12/2017
 
 2. Дважды щелкните этот файл для его запуска.
 
-**Установка WMF 5.0 из командной строки:** 
+**Установка WMF 5.0 из командной строки:**
 
 1. После скачивания подходящего пакета для архитектуры вашего компьютера откройте окно командной строки с повышенными правами (используйте "Запуск от имени администратора"). В установке основных серверных компонентов для Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с пакетом обновления 1 (SP1) командная строка по умолчанию открывается с повышенными правами.
 
@@ -50,5 +50,3 @@ ms.lasthandoff: 06/12/2017
 - Установлен [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855).
 
 *Зависимость от WinRM:* служба настройки требуемого состояния (DSC) Windows PowerShell зависит от WinRM. По умолчанию WinRM не включен в Windows Server 2008 R2 и Windows 7. Чтобы включить WinRM, запустите **Set-WSManQuickConfig** в сеансе с повышенными привилегиями Windows PowerShell.
-
-

@@ -1,18 +1,20 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Сочетания клавиш для интегрированной среды сценариев Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Сочетания клавиш для интегрированной среды сценариев Windows PowerShell
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
-ms.openlocfilehash: 21c4b43b1ab94e2b533413362319ec42ac8a15aa
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: e17fee4cf0cc8ac7aa0bb36acde3b452919312d0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a>Сочетания клавиш для интегрированной среды сценариев Windows PowerShell
+
 Используйте следующие сочетания клавиш для выполнения действий в интегрированной среде скриптов Windows PowerShell®. Интегрированная среда сценариев Windows PowerShell доступна в серверных и клиентских операционных системах Windows, но ее можно установить и в некоторых старых операционных системах Windows в составе [скачиваемого пакета Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881).
 
 ## <a name="keyboard-shortcuts-for-editing-text"></a>Сочетания клавиш для редактирования текста
+
 При редактировании текста можно использовать приведенные ниже сочетания клавиш.
 
 |Действие|Сочетания клавиш|Область использования|
@@ -34,6 +36,7 @@ ms.lasthandoff: 08/03/2017
 |**Отменить**|CTRL+Z|Область сценариев, область команд|
 
 ## <a name="keyboard-shortcuts-for-running-scripts"></a>Сочетания клавиш для выполнения сценариев
+
 При запуске сценариев в области сценариев можно использовать приведенные ниже сочетания клавиш.
 
 |Действие|Сочетание клавиш|
@@ -47,6 +50,7 @@ ms.lasthandoff: 08/03/2017
 |**Переход** (к предыдущему сценарию)|CTRL+SHIFT+TAB. **Примечание.** Переход к предыдущему сценарию работает только в том случае, если открыта всего одна вкладка Windows PowerShell либо открыто несколько вкладок Windows PowerShell и фокус находится на области сценариев.|
 
 ## <a name="keyboard-shortcuts-for-customizing-the-view"></a>Сочетания клавиш для настройки представления
+
 Для настройки представления в интегрированной среде сценариев Windows PowerShell можно использовать приведенные ниже сочетания клавиш. Они доступны во всех областях приложения.
 
 |Действие|Сочетание клавиш|
@@ -63,6 +67,7 @@ ms.lasthandoff: 08/03/2017
 |**Уменьшить**|CTRL+ЗНАК МИНУС|
 
 ## <a name="keyboard-shortcuts-for-debugging-scripts"></a>Сочетания клавиш для отладки сценариев
+
 При отладке сценариев можно использовать приведенные ниже сочетания клавиш.
 
 |Действие|Сочетание клавиш|Область использования|
@@ -93,6 +98,7 @@ ms.lasthandoff: 08/03/2017
 |**Отобразить команды отладки для консоли**|H или ?|Область консоли при отладке сценария|
 
 ## <a name="keyboard-shortcuts-for-windows-powershell-tabs"></a>Сочетания клавиш для вкладок сценариев Windows PowerShell
+
 При работе с вкладками Windows PowerShell можно использовать приведенные ниже сочетания клавиш.
 
 |Действие|Сочетание клавиш|
@@ -103,6 +109,7 @@ ms.lasthandoff: 08/03/2017
 |**Следующая вкладка Windows PowerShell**|CTRL+TAB. Это сочетание клавиш работает только в том случае, если на вкладках Windows PowerShell нет открытых файлов.|
 
 ## <a name="keyboard-shortcuts-for-starting-and-exiting"></a>Сочетания клавиш для запуска и выхода
+
 Для запуска консоли PowerShell (PowerShell.exe) или выхода из интегрированной среды сценариев Windows PowerShell можно использовать приведенные ниже сочетания клавиш.
 
 |Действие|Сочетание клавиш|
@@ -111,5 +118,5 @@ ms.lasthandoff: 08/03/2017
 |**Запуск PowerShell.exe** (консоль Windows PowerShell)|CTRL+SHIFT+P|
 
 ## <a name="see-also"></a>См. также
-- [PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/) (Журнал PowerShell: полный список сочетаний клавиш для интегрированной среды сценариев Windows PowerShell)
 
+- [PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/) (Журнал PowerShell: полный список сочетаний клавиш для интегрированной среды сценариев Windows PowerShell)

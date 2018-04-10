@@ -67,7 +67,7 @@ PowerShell Core выпускается по [лицензии MIT][].
 Сначала установите модуль `WindowsPSModulePath` из коллекции PowerShell:
 
 ```powershell
-# Add `-Scope CurrentUser` if you're installing as non-admin 
+# Add `-Scope CurrentUser` if you're installing as non-admin
 Install-Module WindowsPSModulePath -Force
 ```
 

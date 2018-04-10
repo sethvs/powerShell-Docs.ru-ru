@@ -1,17 +1,14 @@
 ---
+ms.date: 06/12/2017
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,установка
 title: Windows Management Framework (WMF)
-ms.date: 2017-02-14
-keywords: PowerShell, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 749dd8b19592cb5f40a5aed32d28edeb5cb2dfc9
-ms.sourcegitcommit: bb2c52577a519c0599a0b3c961f749fe0df70a45
+ms.openlocfilehash: 715ac6fe5df47066415a65d91a0982fd7070a426
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-management-framework"></a>Windows Management Framework
 
@@ -44,7 +41,7 @@ Windows Management Framework (WMF) — это механизм доставки
 | Версия операционной системы | [WMF 5.1](https://aka.ms/wmf51download) | [WMF 5.0](https://aka.ms/wmf5download) | [WMF 4.0](https://aka.ms/wmf4download) |  [WMF 3.0](https://aka.ms/wmf3download) | [WMF 2.0](https://aka.ms/wmf2download) |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
 | Windows Server 2016 | Входит в комплект поставки |  |  |  |  |
-| Windows 10 | Входит в комплект поставки | Входит в комплект поставки  | | | |  
+| Windows 10 | Входит в комплект поставки | Входит в комплект поставки  | | | |
 | Windows Server 2012 R2| Да | Да | Входит в комплект поставки |  |  |
 | Windows 8.1 | Да | Да |  Входит в комплект поставки |  |  |
 | Windows Server 2012 | Да | Да | Да |  Входит в комплект поставки | |

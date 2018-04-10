@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Основы Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Основы Windows PowerShell
 ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
-ms.openlocfilehash: bd17786d2d8690b89a2d107e0da98ee45f5b2ff7
-ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
+ms.openlocfilehash: b21c6cd84ea29d5e8085ccf8df2a5a9199e1d859
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-powershell-basics"></a>Основы Windows PowerShell
 В графических пользовательских интерфейсах используются общие концепции, знакомые большинству пользователей. Пользователи полагаются на эти привычные интерфейсы для выполнения задач. Операционные системы предлагают пользователю графическое представление элементов, которые можно просматривать, при этом раскрывающиеся меню обычно используются для доступа к конкретной функциональности, а контекстные меню — к контекстной функциональности.

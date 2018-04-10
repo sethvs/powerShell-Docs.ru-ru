@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Использование знакомых имен команд"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Использование знакомых имен команд
 ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
-ms.openlocfilehash: 5e72e721bdb9d48684092344a0169907e7e25d40
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 37fc6dfad5a2f1363254744141dcab1e13aa5066
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-familiar-command-names"></a>Использование знакомых имен команд
 Благодаря механизму *присвоения псевдонима* Windows PowerShell позволяет пользователям ссылаться на команды с помощью альтернативных имен. За счет присвоения псевдонима пользователи, обладающие опытом работы с другими оболочками, могут повторно использовать уже известные им общие имена команд для выполнения схожих операций в Windows PowerShell. Хотя мы не намереваемся подробно рассматривать псевдонимы Windows PowerShell, их можно использовать с самого начала работы с Windows PowerShell.
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/03/2017
 
 |||||
 |-|-|-|-|
-|cat|dir|mount|rm|
+|cat|dir|подключить|rm|
 |cd|echo|move|rmdir|
 |chdir|erase|popd|sleep|
 |clear|h|ps|sort|
@@ -67,4 +67,3 @@ Set-Alias : Alias is not writeable because alias gi is read-only or constant and
 At line:1 char:10
 + Set-Alias  <<<< -Name gi -Value Get-Item
 ```
-

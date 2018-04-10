@@ -1,16 +1,16 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 2c7e718bc518b332cb4303ef73b1bf5c924ca471
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 82b8046d5cbb47300f090ce2ffbf3c279ed19458
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="powershell-module-discovery-install-and-inventory-with-powershellget"></a>Обнаружение, установка и инвентаризация модуля PowerShell с помощью PowerShellGet
- 
+
 PowerShellGet входит в состав этого выпуска WMF:
 -   Find-Module позволяет фильтровать метаданные модуля с помощью параметра -Tag.
 -   Find-Module позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
@@ -60,4 +60,3 @@ Find-Module -Filter RBAC -Repository PSGallery
     -   Get-InstalledModule
     -   Uninstall-Module
     -   Save-Module
-    

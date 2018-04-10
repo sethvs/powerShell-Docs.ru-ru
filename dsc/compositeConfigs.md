@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Вложение конфигураций"
-ms.openlocfilehash: 89badda86707a129909b1c3cc3f79afa0b5f5df6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Вложение конфигураций
+ms.openlocfilehash: 9c6dbce462f7481e5714039a95ae85f85be0072e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="nesting-dsc-configurations"></a>Вложение конфигураций DSC
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 01/17/2018
 Давайте рассмотрим простой пример:
 
 ```powershell
-Configuration FileConfig 
+Configuration FileConfig
 {
     param (
         [Parameter(Mandatory = $true)]
@@ -35,7 +35,7 @@ Configuration FileConfig
            DestinationPath = $CopyTo
            Ensure = 'Present'
        }
-    
+
 }
 
 Configuration NestedFileConfig
@@ -51,10 +51,10 @@ Configuration NestedFileConfig
 }
 ```
 
-В этом примере `FileConfig` принимает два обязательных параметра — **CopyFrom** и **CopyTo**, — которые используются как значения для свойств **SourcePath** и **DestinationPath** в блоке ресурсов `File`. Конфигурация `NestedConfig` вызывает конфигурацию `FileConfig`, как будто это ресурс.
+В этом примере `FileConfig` принимает два обязательных параметра — **CopyFrom** и **CopyTo**, — которые используются как значения для свойств **SourcePath** и **DestinationPath** в блоке ресурсов `File`.
+Конфигурация `NestedConfig` вызывает конфигурацию `FileConfig`, как будто это ресурс.
 Свойства в блоке ресурсов `NestedConfig` (**CopyFrom** и **CopyTo**) — параметры конфигурации `FileConfig`.
 
 ## <a name="see-also"></a>См. также
 
 - [Составные ресурсы: использование DSC как ресурса](authoringResourceComposite.md)
-

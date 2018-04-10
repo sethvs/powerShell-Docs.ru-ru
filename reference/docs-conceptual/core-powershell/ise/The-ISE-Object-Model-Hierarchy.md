@@ -1,15 +1,18 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Иерархия объектной модели интегрированной среды сценариев"
-ms.openlocfilehash: 2df6d40f39dbe14bd3f46a6400cde4a6e91052ef
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Иерархия объектной модели интегрированной среды сценариев
+ms.openlocfilehash: 0159707b1050c412a74da3d3ca02a46cea982556
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="the-ise-object-model-hierarchy"></a>Иерархия объектной модели интегрированной среды сценариев
-В этом разделе демонстрируется иерархия объектов, которые входят в состав интегрированной среды сценариев Windows PowerShell (ISE). Интегрированная среда сценариев Windows PowerShell входит в состав Windows PowerShell 3.0 и Windows PowerShell 4.0. Щелкните объект, чтобы перейти к справочной документации для класса, определяющего объект.
+
+В этом разделе демонстрируется иерархия объектов, которые входят в состав интегрированной среды сценариев Windows PowerShell (ISE).
+Интегрированная среда сценариев Windows PowerShell входит в состав Windows PowerShell 3.0 и Windows PowerShell 4.0.
+Щелкните объект, чтобы перейти к справочной документации для класса, определяющего объект.
 
 ## <a name="psise-object"></a>Объект $psISE
 
@@ -43,8 +46,10 @@ ms.lasthandoff: 09/08/2017
 ## <a name="psisepowershelltabsthe-powershelltabcollection-objectmd"></a>[$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md)
 
 Объект **$PsISE.PowerShellTabs** является экземпляром класса [PowerShellTabCollection](The-PowerShellTabCollection-Object.md).
-Это коллекция всех открытых вкладок PowerShell, представляющих доступные среды выполнения Windows PowerShell на локальном компьютере или на подключенных удаленных компьютерах. Каждый элемент в коллекции является экземпляром класса [PowerShellTab](The-PowerShellTab-Object.md).
+Это коллекция всех открытых вкладок PowerShell, представляющих доступные среды выполнения Windows PowerShell на локальном компьютере или на подключенных удаленных компьютерах.
+Каждый элемент в коллекции является экземпляром класса [PowerShellTab](The-PowerShellTab-Object.md).
 
 ## <a name="see-also"></a>См. также
-- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+
+- [Назначение объектной модели скриптов интегрированной среды скриптов Windows PowerShell](Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)

@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
-keywords: "коллекции,powershell,командлет,psgallery"
-title: "psgallery_вопросы_ответы"
-ms.openlocfilehash: b856c44f3733d4a7c236d901edb391091d9d546e
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: коллекции,powershell,командлет,psgallery
+title: psgallery_вопросы_ответы
+ms.openlocfilehash: f00372d75b3e73bdc1499c3a2c8895bffb0902f9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="frequently-asked-questions"></a>Вопросы и ответы
 
@@ -169,4 +169,3 @@ PowerShellGet можно использовать с любым допустим
 ## <a name="how-do-i-deal-with-an-item-owner-who-is-violating-my-item-license"></a>Что делать с владельцем элемента, который нарушает лицензию на мой элемент?
 
 Мы рекомендуем сообществу PowerShell работать вместе, чтобы разрешать любые споры, возникающие между владельцами одних элементов и владельцами других элементов.  Мы разработали [процесс разрешения спорных вопросов](psgallery_dispute_resolution.md) и просим придерживаться этого процесса до подключения администраторов PowerShellGallery.com.
-

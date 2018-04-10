@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 587f3f592f4aab53c95bbc6d37ea37d7f2364aec
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 6356902193fc6ec651b2f7e53f8885cb59f17542
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="updates-to-fileinfo-object"></a>Изменения объекта FileInfo
 Сведения о версии файла могут вводить пользователя в заблуждение, особенно в случаях, когда файл был исправлен. Этот выпуск WMF 5.0 добавляет новые свойства **FileVersionRaw** и **ProductVersionRaw** сценария для объектов FileInfo. Ниже приведены свойства, отображаемые для powershell.exe (при условии, что $pid является идентификатором процесса PowerShell).
@@ -20,4 +20,3 @@ FileVersionRaw    : 10.0.10586.117
 ProductVersionRaw : 10.0.10586.117
 FileVersion       : 10.0.10586.117 (th2_release.160212-2359)
 ProductVersion    : 10.0.10586.117
-

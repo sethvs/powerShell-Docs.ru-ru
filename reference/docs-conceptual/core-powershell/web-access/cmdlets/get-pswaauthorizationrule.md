@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
-keywords: "powershell,командлет"
-ms.date: 2016-12-12
-title: "получение pswaauthorizationrule"
+keywords: powershell,командлет
+ms.date: 12/12/2016
+title: получение pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: 003195457660a18b9bbed065181b6d8c23835348
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 74c044c329d8b6a305b86c9056a7041fb5fd046b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-pswaauthorizationrule"></a>Get-PswaAuthorizationRule
 
@@ -41,7 +41,7 @@ Get-PswaAuthorizationRule [-RuleName] <String[]> [ <CommonParameters>]
 
 Указывает идентификаторы (ID) правил, которые должен получить этот командлет. Если идентификаторы не указаны, этот командлет возвращает все правила авторизации.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | false                                |
@@ -54,7 +54,7 @@ Get-PswaAuthorizationRule [-RuleName] <String[]> [ <CommonParameters>]
 
 Указывает имена правил авторизации для получения. Этот параметр возвращает все правила, имена которых точно соответствуют именам правил в строках этого массива.
 
-|||  
+|||
 |-|-|
 | Псевдонимы                              | отсутствуют                                 |
 | Требуется?                            | верно                                 |

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Запуск Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Запуск Windows PowerShell
 ms.assetid: 59b649a2-c90c-4cf4-bf95-a740c59148e7
-ms.openlocfilehash: 90f6992f47e62c1775cae216b4012f630e07558f
-ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
+ms.openlocfilehash: b56ddc2f577225646729b99f3a2abcb8cc60d307
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="starting-windows-powershell"></a>Запуск Windows PowerShell
 PowerShell — это библиотека DLL обработчика скриптов, которая внедрена в несколько узлов.  Самый распространенный запускаемый узел — интерактивная командная строка (PowerShell.exe) и интерактивная среда скриптов (PowerShell_ISE.exe).

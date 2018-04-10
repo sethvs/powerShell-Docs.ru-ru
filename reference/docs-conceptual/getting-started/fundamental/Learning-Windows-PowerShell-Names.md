@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Изучение имен Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Изучение имен Windows PowerShell
 ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
-ms.openlocfilehash: 28c821c4a617b6ac775dbdda8ade3d15c3f218c3
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 381aa619a41ccacb2ff3a4cdbc2b75b7f04282d1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="learning-windows-powershell-names"></a>Изучение имен Windows PowerShell
 В большинстве интерфейсов командной строки необходимо уделять значительное время изучению имен команд и их параметров. Проблема заключается в том, что существует очень мало шаблонов имени, поэтому единственным способом изучить команды является запоминание каждой команды и каждого параметра, которые приходится регулярно использовать.
@@ -57,7 +57,7 @@ Cmdlet          Resume-Service                  Resume-Service [-Name] <Stri...
 Cmdlet          Set-Service                     Set-Service [-Name] <String>...
 Cmdlet          Start-Service                   Start-Service [-Name] <Strin...
 Cmdlet          Stop-Service                    Stop-Service [-Name] <String...
-Cmdlet          Suspend-Service                 Suspend-Service [-Name] <Str... 
+Cmdlet          Suspend-Service                 Suspend-Service [-Name] <Str...
 ...
 ```
 
@@ -91,4 +91,3 @@ Function        Clear-Host                      $spaceType = [System.Managem...
 Командлеты ядра Windows PowerShell используют стандартные имена для одинаковых параметров. Хотя использование имен параметров не является принудительным, имеется явная рекомендация по их использованию в целях стандартизации.
 
 Например, рекомендуется именовать параметры, обращающиеся к компьютеру по имени как **ComputerName**, а не как Server (сервер), Host (узел), System (система), Node (узел) или другие общие альтернативные слова. Важными рекомендуемыми именами параметров являются **Force**, **Exclude**, **Include**, **PassThru**, **Path** и **CaseSensitive**.
-

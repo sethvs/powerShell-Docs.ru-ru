@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Краткое руководство по настройке требуемого состояния"
-ms.openlocfilehash: e21017f24db8c90229063895c1a7e4c6f0546d0c
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Краткое руководство по настройке требуемого состояния
+ms.openlocfilehash: 25bcd46bbf62a6ebb727519a65732377363e68c0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/17/2018
 </body>
 ```
 
-Сохраните текст как файл `index.htm` в ранее созданной папке `test`. 
+Сохраните текст как файл `index.htm` в ранее созданной папке `test`.
 
 ## <a name="write-the-configuration"></a>Запись конфигурации
 
@@ -122,7 +122,7 @@ Start-DscConfiguration .\WebsiteTest
 
 ## <a name="test-the-configuration"></a>Тестирование конфигурации
 
-Чтобы проверить применение конфигурации, можно вызвать командлет [Get DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus). 
+Чтобы проверить применение конфигурации, можно вызвать командлет [Get DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus).
 
 Также можно проверить результаты непосредственным образом. В нашем примере для этого нужно перейти к `http://localhost/` в веб-браузере.
 Вы увидите ранее созданную HTML-страницу "Hello World".
@@ -132,6 +132,3 @@ Start-DscConfiguration .\WebsiteTest
 - См. дополнительные сведения о [конфигурации DSC](configurations.md).
 - См. дополнительные сведения о том, как создавать доступные пользовательские [ресурсы DSC](resources.md).
 - Конфигурации DSC и ресурсы доступны в [коллекции PowerShell](https://www.powershellgallery.com/).
-
-
-

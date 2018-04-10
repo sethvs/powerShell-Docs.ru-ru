@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-23
-keywords: "powershell,командлет"
-title: "Удаление Windows PowerShell Web Access"
-ms.openlocfilehash: b6e6a2374e6b4b2be8742019c5f1e4d5b5d1abe3
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.date: 08/23/2017
+keywords: powershell,командлет
+title: Удаление Windows PowerShell Web Access
+ms.openlocfilehash: 22c874d766445dccedd8494097daf16c30fa66ff
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="uninstall-windows-powershell-web-access"></a>Удаление Windows PowerShell Web Access
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 - веб-приложения Windows PowerShell Web Access и
 - компонента Windows PowerShell Web Access
- 
+
 с помощью командлетов Windows PowerShell.
 
 ### <a name="step-1-delete-the-web-application-using-cmdlets"></a>Шаг 1. Удаление веб-приложения с помощью командлетов
@@ -96,9 +96,9 @@ ms.lasthandoff: 09/29/2017
 
 > ![Предупреждение](images/SecurityNote.jpeg)**Note**.
 >
-> Сертификат не удаляется при этой операции удаления. 
+> Сертификат не удаляется при этой операции удаления.
 >
-> Если вы создали самозаверяющий сертификат или использовали тестовый сертификат и хотите удалить его, удалите сертификат в диспетчере служб IIS. 
+> Если вы создали самозаверяющий сертификат или использовали тестовый сертификат и хотите удалить его, удалите сертификат в диспетчере служб IIS.
 
 ### <a name="step-2-uninstall-windows-powershell-web-access-using-the-remove-roles-and-features-wizard"></a>Шаг 2. Удаление Windows PowerShell Web Access с помощью мастера удаления ролей и компонентов
 

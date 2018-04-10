@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Использование переменных для хранения объектов"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Использование переменных для хранения объектов
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
-ms.openlocfilehash: 9a95d421fa2686608a565987c16fecc41c3c6d20
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.openlocfilehash: e52f0a344d0ad13db42b34bed912d584c99b0e30
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-variables-to-store-objects"></a>Использование переменных для хранения объектов
 PowerShell работает с объектами. Можно создавать переменные, главным образом именованные объекты, чтобы сохранять выходные данные для последующего использования. Если вы привыкли работать с переменными в других оболочках, помните, что переменные PowerShell являются объектами, а не текстом.
@@ -97,4 +97,3 @@ C:\WINDOWS
 ```
 
 В PowerShell также можно создавать и изменять переменные среды. Переменные среды из Windows PowerShell соответствует обычным правилам для переменных среды в рамках всей системы Windows.
-

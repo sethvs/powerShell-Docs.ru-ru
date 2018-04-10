@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-09
-keywords: "powershell, cmdlet, командлет, download, скачать, install, установить, setup, установка, windows 10, windows 8.1, windows 8.0, windows 7"
-title: "Установка Windows PowerShell"
-ms.openlocfilehash: dffb6ec11ce265ebc4e6bc91f631650e1af5868d
-ms.sourcegitcommit: 05d576cf107780fa52b2db4a042816be40b00fbc
+ms.date: 08/09/2017
+keywords: powershell, cmdlet, командлет, download, скачать, install, установить, setup, установка, windows 10, windows 8.1, windows 8.0, windows 7
+title: Установка Windows PowerShell
+ms.openlocfilehash: 320b271ce49768f8865c79c5c72749befe306fa4
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installing-windows-powershell"></a>Установка Windows PowerShell
 Windows PowerShell установлен по умолчанию в каждой ОС Windows, начиная с Windows 7 с пакетом обновления 1 (SP1) и Windows Server 2008 R2 с пакетом обновления 1 (SP1).
@@ -45,7 +45,8 @@ Windows 7 с пакетом обновления 1 (SP1) | Щелкните зн
 
 Во всех выпусках Core при входе на сервер открывается окно командной строки Windows.
 
-Введите `powershell` и нажмите клавишу **ВВОД**, чтобы запустить PowerShell в сеансе командной строки. Введите `exit`, чтобы завершить сеанс PowerShell и вернуться к командной строке.
+Введите `powershell` и нажмите клавишу **ВВОД**, чтобы запустить PowerShell в сеансе командной строки.
+Введите `exit`, чтобы завершить сеанс PowerShell и вернуться к командной строке.
 
 ### <a name="windows-server-desktop-editions"></a>Выпуски Windows Server Desktop
 

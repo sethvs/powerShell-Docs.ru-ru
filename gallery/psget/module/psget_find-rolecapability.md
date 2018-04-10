@@ -1,21 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Find-RoleCapability
-ms.openlocfilehash: 77c5b492d9681fa05315401fba410c508af1d13b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 89aacd604d54f6a5e9752790be65cc3bcc77c8e1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="find-rolecapability"></a>Find-RoleCapability
 
 Находит возможности ролей в модулях.
 
 ## <a name="description"></a>Описание
-Командлет Find-RoleCapability находит возможности ролей PowerShell в модулях. Find-RoleCapability ищет модули в зарегистрированных репозиториях. Для каждой возможности роли, найденной командлетом, он возвращает объект PSGetRoleCapabilityInfo. Вы можете передать объект PSGetRoleCapabilityInfo в командлет Install-Module для установки модуля, содержащего эту возможность роли.
+Командлет Find-RoleCapability находит возможности ролей PowerShell в модулях. Find-RoleCapability ищет модули в зарегистрированных репозиториях.
+Для каждой возможности роли, найденной командлетом, он возвращает объект PSGetRoleCapabilityInfo. Вы можете передать объект PSGetRoleCapabilityInfo в командлет Install-Module для установки модуля, содержащего эту возможность роли.
 Возможности ролей PowerShell определяют, какие команды, приложения и т. п. будут доступны пользователю в конечной точке Just Enough Administration (JEA). Возможности ролей определяются файлами с расширением PSRC.
 
 - Командлет Find-RoleCapability позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, RequiredVersion, AllVersions.
@@ -78,4 +79,3 @@ Find-RoleCapability -Filter RBAC
 Find-RoleCapability -Tag Azure, DSC
 
 ```
-

@@ -1,28 +1,29 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Просмотр структуры объектов (Get-Member)"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Просмотр структуры объектов (Get-Member)
 ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
-ms.openlocfilehash: 618f34bca7bfb76ce5d48ada642a687e279c8aad
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: cc93e45e4306b3d623c1d3d1096dd20c1afc59c8
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="viewing-object-structure-get-member"></a>Просмотр структуры объектов (Get-Member)
+
 Поскольку объекты играют ключевую роль в Windows PowerShell, существует несколько собственных команд для работы с произвольными типами объектов. Наиболее важной является команда **Get-Member**.
 
 Объекты, возвращаемые командой, проще всего проанализировать, передав ее выходные данные в командлет **Get-Member**. Командлет **Get-Member** показывает формальное имя типа объекта и полный список его элементов. Количество возвращаемых элементов иногда может быть просто огромным. Например, объект процесса может иметь более ста элементов.
 
 Чтобы просмотреть все элементы объекта процесса и вывести все выходные данные, введите:
 
-```
-PS> Get-Process | Get-Member | Out-Host -Paging
+```powershell
+Get-Process | Get-Member | Out-Host -Paging
 ```
 
 Выходные данные этой команды выглядят следующим образом:
 
-```
+```output
 TypeName: System.Diagnostics.Process
 
 Name                           MemberType     Definition
@@ -68,4 +69,3 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 > Windows PowerShell определяет способ отображения типа объекта с помощью сведений, хранящихся в XML-файлах, имена которых заканчиваются на .format.ps1xml. Данные форматирования для объектов процессов, которые являются объектами System.Diagnostics.Process .NET, хранятся в файле DotNetTypes.format.ps1xml.
 
 Если требуется просмотреть свойства, отличные от отображаемых Windows PowerShell по умолчанию, необходимо самостоятельно отформатировать выходные данные. Это можно сделать с помощью командлетов форматирования.
-

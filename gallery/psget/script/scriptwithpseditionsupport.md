@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
-title: "поддержкавыпусковскриптамиps"
-ms.openlocfilehash: e6994b994cb15903560f3dd89c21383fb2cd367d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: коллекция,powershell,командлет,psget
+title: поддержкавыпусковскриптамиps
+ms.openlocfilehash: 18ce2d729199e0587ef92993db7fec44ef744ec7
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="script-with-compatible-powershell-editions"></a>Сценарии с совместимыми выпусками PowerShell
 Начиная с версии 5.1 доступны различные выпуски среды PowerShell, что означает различные наборы возможностей и совместимость с разными платформами.
@@ -65,4 +65,3 @@ Find-Script -Tag PSEditon_Core
 ## <a name="more-details"></a>Дополнительные подробности
 ### <a name="modules-with-pseditionsmodulemodulewithpseditionsupportmd"></a>[Модули с PSEditions](../module/modulewithpseditionsupport.md)
 ### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[Поддержка PSEditions в коллекции PowerShell](../../psgallery/psgallery_pseditions.md)
-

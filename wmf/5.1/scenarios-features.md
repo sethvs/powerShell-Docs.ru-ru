@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-title: "Новые сценарии и возможности в WMF 5.1"
-ms.openlocfilehash: da3dfb2243c00e3faf637d3dbcb70016cfabb011
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: wmf,powershell,установка
+title: Новые сценарии и возможности в WMF 5.1
+ms.openlocfilehash: f0e50fc87208d6ee9edba9c660b9243621f02bb4
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="new-scenarios-and-features-in-wmf-51"></a>Новые сценарии и возможности в WMF 5.1 #
 
@@ -26,35 +26,41 @@ ms.lasthandoff: 03/15/2018
 - [Фильтрация результатов командлета Get-Module по CompatiblePSEditions]()
 - [Запрет на выполнение сценариев в несовместимых выпусках PowerShell]()
 
-## <a name="catalog-cmdlets"></a>Командлеты для работы с каталогами  
+## <a name="catalog-cmdlets"></a>Командлеты для работы с каталогами
 
-Мы добавили два новых командлета для создания и проверки файлов каталога Windows в модуль [Microsoft.Powershell.Security](https://technet.microsoft.com/library/hh847877.aspx).  
+Мы добавили два новых командлета для создания и проверки файлов каталога Windows в модуль [Microsoft.Powershell.Security](https://technet.microsoft.com/library/hh847877.aspx).
 
-###<a name="new-filecatalog"></a>New-FileCatalog 
+###<a name="new-filecatalog"></a>New-FileCatalog
 --------------------------------
 
-Командлет New-FileCatalog создает файл каталога Windows для набора файлов и папок. Файл каталога содержит хэши для всех файлов, находящихся по указанным путям. Пользователь может распространять набор папок вместе с соответствующим файлом каталога, представляющим этих папки. С помощью файла каталога получатель может проверить, были ли изменены папки с момента создания каталога.    
+Командлет New-FileCatalog создает файл каталога Windows для набора файлов и папок.
+Файл каталога содержит хэши для всех файлов, находящихся по указанным путям.
+Пользователь может распространять набор папок вместе с соответствующим файлом каталога, представляющим этих папки.
+С помощью файла каталога получатель может проверить, были ли изменены папки с момента создания каталога.
 
 ```powershell
 New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersion <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
-Поддерживаются каталоги версий 1 и 2. В версии 1 для создания хэшей файлов используется алгоритм хэширования SHA1, в версии 2 — SHA256. Каталог версии 2 не поддерживается в *Windows Server 2008 R2* и *Windows 7*. На платформах *Windows 8*, *Windows Server 2012* и более поздней версии рекомендуется использовать каталог версии 2.  
+Поддерживаются каталоги версий 1 и 2.
+В версии 1 для создания хэшей файлов используется алгоритм хэширования SHA1, в версии 2 — SHA256.
+Каталог версии 2 не поддерживается в *Windows Server 2008 R2* и *Windows 7*.
+На платформах *Windows 8*, *Windows Server 2012* и более поздней версии рекомендуется использовать каталог версии 2.
 
 ![](../images/NewFileCatalog.jpg)
 
-Следующая команда создает файл каталога. 
+Следующая команда создает файл каталога.
 
-![](../images/CatalogFile1.jpg)  
+![](../images/CatalogFile1.jpg)
 
-![](../images/CatalogFile2.jpg) 
+![](../images/CatalogFile2.jpg)
 
-Для проверки целостности файла каталога (Pester.cat в приведенном выше примере) его нужно подписать с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).   
+Для проверки целостности файла каталога (Pester.cat в приведенном выше примере) его нужно подписать с помощью командлета [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx).
 
 
-###<a name="test-filecatalog"></a>Test-FileCatalog 
+###<a name="test-filecatalog"></a>Test-FileCatalog
 --------------------------------
 
-Командлет Test-FileCatalog проверяет каталог, представляющий набор папок. 
+Командлет Test-FileCatalog проверяет каталог, представляющий набор папок.
 
 ```powershell
 Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-FilesToSkip <string[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -62,7 +68,11 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 
 ![](../images/TestFileCatalog.jpg)
 
-Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*. При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*. Все эти данные можно получить с помощью параметра *-Detailed*. Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) и указав файл каталога. Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*. 
+Этот командлет сравнивает все хэши файлов и их относительные пути в *каталоге* с хэшами и относительными путями на *диске*.
+При обнаружении любого несоответствия между хэшами файлов и путями он возвращает состояние *ValidationFailed*.
+Все эти данные можно получить с помощью параметра *-Detailed*.
+Командлет также отображает состояние подписи каталога в свойстве *Signature*. Подпись также можно определить, вызвав командлет [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) и указав файл каталога.
+Также можно исключить любые файлы из проверки, указав их в параметре *-FilesToSkip*.
 
 
 ## <a name="module-analysis-cache"></a>Кэш анализа модуля ##
@@ -71,13 +81,17 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 По умолчанию этот кэш хранится в файле `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`.
 Кэш обычно считывается при запуске в процессе поиска команды и записывается в фоновом потоке через некоторое время после импорта модуля.
 
-Чтобы изменить расположение кэша по умолчанию, присвойте значение переменной среды `$env:PSModuleAnalysisCachePath` перед запуском PowerShell. Изменения, вносимые в эту переменную среды, влияют только на дочерние процессы. Значение должно быть полным путем (включая имя файла), на создание и запись файлов по которому у среды PowerShell есть разрешение. Чтобы отключить файловый кэш, укажите в качестве этого значения недопустимое расположение, например:
+Чтобы изменить расположение кэша по умолчанию, присвойте значение переменной среды `$env:PSModuleAnalysisCachePath` перед запуском PowerShell.
+Изменения, вносимые в эту переменную среды, влияют только на дочерние процессы.
+Значение должно быть полным путем (включая имя файла), на создание и запись файлов по которому у среды PowerShell есть разрешение.
+Чтобы отключить файловый кэш, укажите в качестве этого значения недопустимое расположение, например:
 
 ```powershell
 $env:PSModuleAnalysisCachePath = 'nul'
 ```
 
-Таким образом задается путь к недопустимому устройству. Если среда PowerShell не может осуществлять запись по указанному пути, ошибка не выводится; сообщения об ошибках можно получить, используя трассировщик:
+Таким образом задается путь к недопустимому устройству.
+Если среда PowerShell не может осуществлять запись по указанному пути, ошибка не выводится; сообщения об ошибках можно получить, используя трассировщик:
 
 ```powershell
 Trace-Command -PSHost -Name Modules -Expression { Import-Module Microsoft.PowerShell.Management -Force }
@@ -94,12 +108,14 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 ##<a name="specifying-module-version"></a>Указание версии модуля
 
-В WMF 5.1 `using module` работает так же, как другие связанные с модулями конструкции в PowerShell. Ранее не было возможности указать определенную версию модуля; при наличии нескольких версий возникала ошибка.
+В WMF 5.1 `using module` работает так же, как другие связанные с модулями конструкции в PowerShell.
+Ранее не было возможности указать определенную версию модуля; при наличии нескольких версий возникала ошибка.
 
 
 В WMF 5.1:
 
-* Вы можете использовать [конструктор ModuleSpecification (Hashtable)](https://msdn.microsoft.com/library/jj136290). Она имеет тот же формат, что и `Get-Module -FullyQualifiedName`.
+* Вы можете использовать [конструктор ModuleSpecification (Hashtable)](https://msdn.microsoft.com/library/jj136290).
+Она имеет тот же формат, что и `Get-Module -FullyQualifiedName`.
 
 **Пример:** `using module @{ModuleName = 'PSReadLine'; RequiredVersion = '1.1'}`
 
@@ -107,7 +123,6 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 
 ##<a name="improvements-to-pester"></a>Усовершенствования Pester
-В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий было добавлено изменение https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которое улучшает работу Pester с Nano Server. 
+В WMF 5.1 версия Pester, распространяемая с PowerShell, была обновлена с 3.3.5 до 3.4.0. Также в репозиторий было добавлено изменение https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e, которое улучшает работу Pester с Nano Server.
 
 Чтобы просмотреть изменения в версиях с 3.3.5 по 3.4.0, откройте файл ChangeLog.md: https://github.com/pester/Pester/blob/master/CHANGELOG.md
-

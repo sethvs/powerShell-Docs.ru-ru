@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Update-ScriptFileInfo
-ms.openlocfilehash: 3af12d2754b7b3c94ac63db8ca6a564c924a2bde
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 3fcbf3a32e74b028501094244df38c631ce18a18
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="update-scriptfileinfo"></a>Update-ScriptFileInfo
 
@@ -102,7 +102,7 @@ PS C:\WINDOWS\system32> $content = @'
 PS C:\WINDOWS\system32>
 PS C:\WINDOWS\system32> Set-Content -Value $content -Path C:\temp\ScriptFileWithoutMetadata.ps1 -Force
 PS C:\WINDOWS\system32> Test-ScriptFileInfo c:\temp\ScriptFileWithoutMetadata.ps1
-Test-ScriptFileInfo : PSScriptInfo is not specified in the script file 'C:\temp\ScriptFileWithoutMetadata.ps1', use the Update-ScriptFileInfo with -Force 
+Test-ScriptFileInfo : PSScriptInfo is not specified in the script file 'C:\temp\ScriptFileWithoutMetadata.ps1', use the Update-ScriptFileInfo with -Force
 or New-ScriptFileInfo cmdlet to add the PSScriptInfo to the script file.
 At line:1 char:1
 + Test-ScriptFileInfo c:\temp\ScriptFileWithoutMetadata.ps1
@@ -112,7 +112,7 @@ At line:1 char:1
 
 PS C:\WINDOWS\system32> # Should Fail
 PS C:\WINDOWS\system32> Update-ScriptFileInfo c:\temp\ScriptFileWithoutMetadata.ps1
-Test-ScriptFileInfo : PSScriptInfo is not specified in the script file 'C:\temp\ScriptFileWithoutMetadata.ps1', use the Update-ScriptFileInfo with -Force 
+Test-ScriptFileInfo : PSScriptInfo is not specified in the script file 'C:\temp\ScriptFileWithoutMetadata.ps1', use the Update-ScriptFileInfo with -Force
 or New-ScriptFileInfo cmdlet to add the PSScriptInfo to the script file.
 At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:4704 char:29
 + ...      $psscriptInfo = Test-ScriptFileInfo -LiteralPath $scriptFilePath
@@ -188,4 +188,3 @@ Function foo
 Foo
 
 ```
-

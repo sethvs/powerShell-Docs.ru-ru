@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Ресурс DSC WindowsPackageCab"
-ms.openlocfilehash: 1d7c8d9bf45d2eda8734daa8877315d219662c75
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Ресурс DSC WindowsPackageCab
+ms.openlocfilehash: af45956c1fe8cffa1d7fd779847eded9e3f6b51e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-windowspackagecab-resource"></a>Ресурс DSC WindowsPackageCab
 
@@ -15,7 +15,7 @@ ms.lasthandoff: 01/17/2018
 
 Ресурс **WindowsPackageCab** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм установки пакетов CAB-файлов Windows на целевом узле или их удаления.
 
-На целевом узле должен быть установлен модуль DISM PowerShell. Дополнительные сведения см. в статье [Use DISM in Windows PowerShell](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-dism-in-windows-powershell-s14) (Использование DISM в Windows PowerShell) 
+На целевом узле должен быть установлен модуль DISM PowerShell. Дополнительные сведения см. в статье [Use DISM in Windows PowerShell](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-dism-in-windows-powershell-s14) (Использование DISM в Windows PowerShell)
 
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,13 +32,13 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="properties"></a>Свойства
 
-|  Свойство  |  Описание   | 
-|---|---| 
-| Name| Указывает имя пакета, для которого требуется обеспечить определенное состояние.| 
+|  Свойство  |  Описание   |
+|---|---|
+| Name| Указывает имя пакета, для которого требуется обеспечить определенное состояние.|
 | Ensure| Указывает, установлен ли пакет. Если это свойство имеет значение Absent, пакет не устанавливается (а если он уже установлен, то удаляется). Если это свойство имеет значение Present (по умолчанию), пакет устанавливается.|
-| путь| Указывает путь к файлу пакета.| 
-| LogPath| Указывает полный путь к папке, где нужно сохранить файл журнала для установки или удаления пакета.| 
-| DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
+| путь| Указывает путь к файлу пакета.|
+| LogPath| Указывает полный путь к папке, где нужно сохранить файл журнала для установки или удаления пакета.|
+| DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".|
 
 ## <a name="example"></a>Пример
 
@@ -76,4 +76,3 @@ Configuration Sample_WindowsPackageCab
     }
 }
 ```
-

@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
-keywords: "коллекции,powershell,командлет,psgallery"
-title: "psgallery_систаксис_поиска"
-ms.openlocfilehash: 409ae607557af760f9cec4e3c54f39e51b5fac18
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: коллекции,powershell,командлет,psgallery
+title: psgallery_систаксис_поиска
+ms.openlocfilehash: 337b4b1e702994fcbc456eb31a2d8632f5220d09
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="gallery-search-syntax"></a>Синтаксис поиска по коллекции
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 06/12/2017
 Фильтр Id — это сопоставление вложенных строк, поэтому при следующем поиске:
 
     Id:"azure"
-    
+
 вы получите такие результаты, как AzureRM.Profile и Azure.Storage;
 
 можно также выполнить поиск с несколькими ключевыми словами в одном поле; вы также можете сочетать разные поля.
@@ -71,7 +71,7 @@ ms.lasthandoff: 06/12/2017
     Functions:"Update-AzureRM"
 
 Чтобы найти все элементы с указанным командлетом:
-    
+
     Cmdlets:"Get-AzureRmEnvironment"
 
 Чтобы найти все элементы с указанным именем ресурса DSC:
@@ -88,8 +88,7 @@ ms.lasthandoff: 06/12/2017
 Наконец, если вы используете поле, которое не поддерживается, например commands, мы просто проигнорируем его и выполним поиск по всем полям. Поэтому следующий запрос
 
     commands:blobs storage
-    
+
 интерпретируется точно так же, как этот запрос:
 
     blobs storage
-

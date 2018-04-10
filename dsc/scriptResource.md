@@ -1,20 +1,20 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Ресурс Script в DSC"
-ms.openlocfilehash: d65a89ceba0b641ccb0ac3dfcc6d5ec1a48dc92a
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Ресурс Script в DSC
+ms.openlocfilehash: 6a39fbd914f9a0bb0f192b7b1f81f404bb6b93c1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-script-resource"></a>Ресурс Script в DSC
 
- 
+
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Ресурс **Script** в DSC Windows PowerShell предоставляет механизм запуска блоков сценариев на целевых узлах. Ресурс `Script` имеет свойства `GetScript`, `SetScript` и `TestScript`. Эти свойства должны быть заданы для блоков сценария, выполняемых на каждом целевом узле. 
+Ресурс **Script** в DSC Windows PowerShell предоставляет механизм запуска блоков сценариев на целевых узлах. Ресурс `Script` имеет свойства `GetScript`, `SetScript` и `TestScript`. Эти свойства должны быть заданы для блоков сценария, выполняемых на каждом целевом узле.
 
 Блок сценария `GetScript` должен возвращать хэш-таблицу, представляющую состояние текущего узла. Хэш-таблица должна содержать только один ключ `Result`, а значение должно иметь тип `String`. Выходные значения этого блока необязательны. DSC не выполняет никаких действий с выходными данными этого блока сценария.
 
@@ -40,12 +40,12 @@ Script [string] #ResourceName
 
 ## <a name="properties"></a>Свойства
 
-|  Свойство  |  Описание   | 
-|---|---| 
-| GetScript| Предоставляет блок сценария Windows PowerShell, который выполняется при вызове командлета [Get-DscConfiguration](https://technet.microsoft.com/library/dn407379.aspx). Этот блок должен возвращать хэш-таблицу. Хэш-таблица должна содержать только один ключ **Result**, а значение должно иметь тип **String**.| 
-| SetScript| Предоставляет блок сценария Windows PowerShell. При вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) в первую очередь выполняется блок **TestScript**. Если блок **TestScript** возвращает **$false**, будет запущен блок **SetScript**. Если блок **TestScript** возвращает **$true**, то блок **SetScript** запущен не будет.| 
-| TestScript| Предоставляет блок сценария Windows PowerShell. Этот блок запускается при вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx). Если он возвращает **$false**, будет запущен блок SetScript. Если он возвращает **$true**, блок SetScript запущен не будет. Кроме того, блок **TestScript** запускается при вызове командлета [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx). Однако в этом случае блок **SetScript** не будет запущен независимо от того, какое значение возвращает блок TestScript. Блок **TestScript** должен вернуть True, если фактическая конфигурация соответствует текущей конфигурации требуемого состояния, и False в противном случае. (Текущей конфигурацией требуемого состояния является последняя конфигурация, активированная на узле, который использует DSC.)| 
-| Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.| 
+|  Свойство  |  Описание   |
+|---|---|
+| GetScript| Предоставляет блок сценария Windows PowerShell, который выполняется при вызове командлета [Get-DscConfiguration](https://technet.microsoft.com/library/dn407379.aspx). Этот блок должен возвращать хэш-таблицу. Хэш-таблица должна содержать только один ключ **Result**, а значение должно иметь тип **String**.|
+| SetScript| Предоставляет блок сценария Windows PowerShell. При вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) в первую очередь выполняется блок **TestScript**. Если блок **TestScript** возвращает **$false**, будет запущен блок **SetScript**. Если блок **TestScript** возвращает **$true**, то блок **SetScript** запущен не будет.|
+| TestScript| Предоставляет блок сценария Windows PowerShell. Этот блок запускается при вызове командлета[Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx). Если он возвращает **$false**, будет запущен блок SetScript. Если он возвращает **$true**, блок SetScript запущен не будет. Кроме того, блок **TestScript** запускается при вызове командлета [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx). Однако в этом случае блок **SetScript** не будет запущен независимо от того, какое значение возвращает блок TestScript. Блок **TestScript** должен вернуть True, если фактическая конфигурация соответствует текущей конфигурации требуемого состояния, и False в противном случае. (Текущей конфигурацией требуемого состояния является последняя конфигурация, активированная на узле, который использует DSC.)|
+| Учетные данные| Указывает учетные данные, используемые для запуска этого сценария, если они необходимы.|
 | DependsOn| Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: `DependsOn = "[ResourceType]ResourceName"`.
 
 ## <a name="example-1"></a>Пример 1
@@ -56,14 +56,14 @@ Configuration ScriptTest
 
     Script ScriptExample
     {
-        SetScript = 
-        { 
+        SetScript =
+        {
             $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
             $sw.WriteLine("Some sample string")
             $sw.Close()
         }
         TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
-        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
+        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }
     }
 }
 ```
@@ -78,11 +78,11 @@ Configuration ScriptTest
 
     Script UpdateConfigurationVersion
     {
-        GetScript = { 
+        GetScript = {
             $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
             return @{ 'Result' = "$currentVersion" }
-        }          
-        TestScript = { 
+        }
+        TestScript = {
             $state = $GetScript
             if( $state['Result'] -eq $using:version )
             {
@@ -92,7 +92,7 @@ Configuration ScriptTest
             Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
             return $false
         }
-        SetScript = { 
+        SetScript = {
             $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
         }
     }
@@ -100,4 +100,3 @@ Configuration ScriptTest
 ```
 
 Этот ресурс записывает версию конфигурации в текстовый файл. Эта версия доступна на клиентском компьютере, но не на узлах, поэтому ее необходимо передать во все блоки сценария ресурса `Script` с помощью области PowerShell `using`. При создании MOF-файла узла значение переменной `$version` считывается из текстового файла на клиентском компьютере. DSC заменяет переменные `$using:version` в каждом блоке сценария значением переменной `$version`.
-

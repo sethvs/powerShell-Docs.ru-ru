@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Установка пакета SDK для Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Установка пакета SDK для Windows PowerShell
 ms.assetid: c3636b45-61aa-4720-85f0-58312c4fc8f9
-ms.openlocfilehash: c6acba828e469e716c80603ec2432176652a7280
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 830b054c2cf2b49d935d3d96b79effa7131f6db2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installing-the-windows-powershell-sdk"></a>Установка пакета SDK для Windows PowerShell
 
@@ -266,4 +266,3 @@ Windows PowerShell 3.0 устанавливается автоматическ�
 Показывает, как перезаписать методы содержимого таким образом, чтобы они поддерживали вызовы командлетов Clear-Content, Get-Content и Set-Content.
 Эти методы должны быть реализованы, когда пользователю требуется управлять содержимым элементов в хранилище данных.
 Класс поставщика в этом примере является производным от класса [NavigationCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.navigationcmdletprovider.aspx) и реализует интерфейс [IContentCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.icontentcmdletprovider.aspx).
-

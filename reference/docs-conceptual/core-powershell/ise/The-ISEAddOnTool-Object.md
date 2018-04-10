@@ -1,32 +1,35 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Объект ISEAddOnTool"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Объект ISEAddOnTool
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-ms.openlocfilehash: b813fcac547c8069e84741081a3ceb00044bab87
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: e091f37601c7a4fdaf5deff8c668b18ee7369e74
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="the-iseaddontool-object"></a>Объект ISEAddOnTool
-  Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command). После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
 
- Каждую надстройку можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
+Объект **ISEAddonTool** — это устанавливаемая надстройка, расширяющая функциональные возможности интегрированной среды сценариев Windows PowerShell. В качестве примера можно привести средство **Commands**, которое отображается, если выбрать **Вид**, а затем **Show Command Add-on** (Показать настройку Command). После этого средство становится доступным за счет манипуляций с различными доступными объектами **ISEAddOnTool**.
 
- Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек. Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-PowerShellTab-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-PowerShellTab-Object.md).
+Каждую надстройку можно связать с вертикальной или горизонтальной панелью. Вертикальная область прикрепляется к правому краю интегрированной среды сценариев Windows PowerShell. Горизонтальная панель прикрепляется к нижнему краю.
+
+Каждая вкладка PowerShell в интегрированной среде сценариев Windows PowerShell может содержать собственный набор установленных надстроек. Доступ к коллекции средств, доступных для выбранной вкладки, или к свойствам одного из объектов **PowerShellTab** в объекте коллекции [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) рассматривается в статьях [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-PowerShellTab-Object.md) и [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-PowerShellTab-Object.md).
 
 ## <a name="methods"></a>Методы
- Для объектов этого класса нет доступных методов интегрированной среды сценариев Windows PowerShell.
+
+Для объектов этого класса нет доступных методов интегрированной среды сценариев Windows PowerShell.
 
 ## <a name="properties"></a>Свойства
 
 ### <a name="control"></a>Элемент
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.
+Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
-```
+Свойство **Control** обеспечивает доступ для чтения ко множеству сведений надстройки Command.
+
+```powershell
 # View the properties of the Commands add-on tool.
 # (assumes that it is visible in the vertical pane)
 $psISE.CurrentVisibleVerticalTool.Control
@@ -134,37 +137,35 @@ TouchesDirectlyOver         : {}
 DependencyObjectType        : System.Windows.DependencyObjectType
 IsSealed                    : False
 Dispatcher                  : System.Windows.Threading.Dispatcher
-
 ```
 
 ### <a name="isvisible"></a>IsVisible
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
- Логическое свойство, которое определяет видимость надстройки в соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или **IsVisible****$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
+Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
-```
+Логическое свойство, которое определяет видимость надстройки в соответствующей области. Если она видна, свойству **IsVisible** можно присвоить значение **$false**, чтобы скрыть средство, или **IsVisible****$true**, чтобы оно отображалось на вкладке PowerShell. Обратите внимание, что к скрытой надстройке нельзя получить доступ с помощью объекта **CurrentVisibleHorizontalTool** или **CurrentVisibleVerticalTool**, а значит, ее нельзя сделать видимой, используя данное свойство объекта.
+
+```powershell
 # Hide the current tool in the vertical tool pane
 $psISE.CurrentVisibleVerticalTool.IsVisible = $false
 # Show the first tool on the currently selected PowerShell tab
-$psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
-
+$psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible = $true
 ```
 
-### <a name="name"></a>Название
-  Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
+### <a name="name"></a>Name
 
- Свойство только для чтения, которое получает имя надстройки.
+Поддерживается в интегрированной среде сценариев Windows PowerShell 3.0 и более поздних версия и отсутствует в более ранних версиях.
 
-```
+Свойство только для чтения, которое получает имя надстройки.
+
+```powershell
 # Gets the name of the visible vertical pane add-on tool.
-$psISE.CurrentVisibleVerticalTool.name
+$psISE.CurrentVisibleVerticalTool.Name
 Commands
-
 ```
 
 ## <a name="see-also"></a>См. также
-- [Объект ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
-- [Объектная модель скриптов интегрированной среды скриптов Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
-- [Справочник по объектной модели интегрированной среды скриптов Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
-- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)
 
+- [Объект ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
+- [Назначение объектной модели скриптов интегрированной среды скриптов Windows PowerShell](Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Иерархия объектной модели интегрированной среды скриптов](The-ISE-Object-Model-Hierarchy.md)

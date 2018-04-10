@@ -1,15 +1,16 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Управление дисками Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Управление дисками Windows PowerShell
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
-ms.openlocfilehash: e2908246bb584291f04b67dc8635caec93d3b72e
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: cfc5418e9d2efb1a786817e1b941d75e22291742
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="managing-windows-powershell-drives"></a>Управление дисками Windows PowerShell
+
 *Диск Windows PowerShell* — это расположение хранилища данных, доступ к которому можно получить так же, как к диску файловой системы в Windows PowerShell. Поставщики Windows PowerShell создают несколько дисков, например диски файловой системы (включая C: и D:), диски реестра (HKCU: и HKLM:) и диск сертификата (Cert:), а вы можете создать собственные диски Windows PowerShell. Эти диски очень полезны, но они доступны только в Windows PowerShell. К ним невозможно получить доступ с помощью других средств Windows, например проводника или Cmd.exe.
 
 Windows PowerShell использует существительное **PSDrive** для команд, которые работают на дисках Windows PowerShell. Для получения списка дисков Windows PowerShell в сеансе Windows PowerShell используйте командлет **Get-PSDrive**.
@@ -39,6 +40,7 @@ Variable   Variable
 
 ```
 PS> Get-Command -Name Get-PSDrive -Syntax
+
 Get-PSDrive [[-Name] <String[]>] [-Scope <String>] [-PSProvider <String[]>] [-V
 erbose] [-Debug] [-ErrorAction <ActionPreference>] [-ErrorVariable <String>] [-
 OutVariable <String>] [-OutBuffer <Int32>]
@@ -58,26 +60,34 @@ D          FileSystem    D:\
 
 Чтобы просмотреть диски Windows PowerShell, представляющие кусты реестра, используйте параметр **PSProvider** для отображения только тех дисков Windows PowerShell, которые поддерживаются поставщиком реестра Windows PowerShell:
 
-<pre>PS> Get-PSDrive -PSProvider Registry
+```
+PS> Get-PSDrive -PSProvider Registry
+
 Name       Provider      Root                                   CurrentLocation
 ----       --------      ----                                   ---------------
 HKCU       Registry      HKEY_CURRENT_USER
-HKLM       Registry      HKEY_LOCAL_MACHINE</pre>
+HKLM       Registry      HKEY_LOCAL_MACHINE
+```
 
 С дисками Windows PowerShell также можно использовать стандартные командлеты расположения:
 
-<pre>PS> Set-Location HKLM:\SOFTWARE
+```
+PS> Set-Location HKLM:\SOFTWARE
 PS> Push-Location .\Microsoft
 PS> Get-Location
+
 Path
 ----
-HKLM:\SOFTWARE\Microsoft</pre>
+HKLM:\SOFTWARE\Microsoft
+```
 
 ### <a name="adding-new-windows-powershell-drives-new-psdrive"></a>Добавление новых дисков Windows PowerShell (New-PSDrive)
+
 Добавить собственные диски Windows PowerShell можно с помощью команды **New-PSDrive**. Чтобы получить синтаксис для команды **New-PSDrive**, введите команду **Get-Command** с параметром **Syntax**.
 
 ```
 PS> Get-Command -Name New-PSDrive -Syntax
+
 New-PSDrive [-Name] <String> [-PSProvider] <String> [-Root] <String> [-Descript
 ion <String>] [-Scope <String>] [-Credential <PSCredential>] [-Verbose] [-Debug
 ] [-ErrorAction <ActionPreference>] [-ErrorVariable <String>] [-OutVariable <St
@@ -110,11 +120,14 @@ Office     FileSystem    C:\Program Files\Microsoft Offic...
 
 Диск Windows PowerShell может упростить множество задач. Например, некоторые наиболее важные разделы в реестре Windows содержат слишком длинные пути, что делает их громоздкими и сложными для запоминания. Критически важные сведения о конфигурации находятся в разделе **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion**. Чтобы просмотреть и изменить элементы в разделе реестра CurrentVersion, можно создать диск Windows PowerShell, корень которого находится в этом разделе, введя:
 
-<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W
+```
+PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W
 indows\CurrentVersion
+
 Name       Provider      Root                                   CurrentLocation
 ----       --------      ----                                   ---------------
-cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
+cvkey      Registry      HKLM\Software\Microsoft\Windows\...
+```
 
 После этого можно изменить расположение на диск **cvkey:** (как и для любого другого диска):
 
@@ -122,26 +135,30 @@ cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
 
 или:
 
-<pre>PS> Set-Location cvkey: -PassThru
+```
+PS> Set-Location cvkey: -PassThru
+
 Path
 ----
-cvkey:\</pre>
+cvkey:\
+```
 
 Командлет New-PsDrive добавляет новый диск только в текущий сеанс Windows PowerShell. Если закрыть окно Windows PowerShell, новый диск будет потерян. Чтобы сохранить диск Windows PowerShell, используйте командлет Export-Console для экспорта текущего сеанса Windows PowerShell, а затем используйте параметр **PSConsoleFile** PowerShell.exe для импорта. Также можно добавить новый диск в профиль Windows PowerShell.
 
 ### <a name="deleting-windows-powershell-drives-remove-psdrive"></a>Удаление дисков Windows PowerShell (Remove-PSDrive)
+
 Диски из Windows PowerShell можно удалить, используя командлет **Remove-PSDrive**. Командлет **Remove-PSDrive** прост в использовании. Чтобы удалить определенный диск Windows PowerShell, необходимо только указать имя диска Windows PowerShell.
 
 Например, если вы добавили диск Windows PowerShell **Office:**, как показано в статье **New-PSDrive**, можно удалить его, введя:
 
-```
-PS> Remove-PSDrive -Name Office
+```powershell
+Remove-PSDrive -Name Office
 ```
 
 Чтобы удалить диск Windows PowerShell **cvkey:**, также показанный в статье **New-PSDrive**, используйте следующую команду:
 
-```
-PS> Remove-PSDrive -Name cvkey
+```powershell
+Remove-PSDrive -Name cvkey
 ```
 
 Удалить диск Windows PowerShell легко, но его невозможно удалить, если он открыт. Например:
@@ -155,5 +172,5 @@ At line:1 char:15
 ```
 
 ### <a name="adding-and-removing-drives-outside-windows-powershell"></a>Добавление и удаление дисков за пределами Windows PowerShell
-Windows PowerShell обнаруживает диски файловой системы, которые добавляются или удаляются в Windows, включая сопоставленные сетевые диски, подключенные USB-накопители и удаленные диски, с помощью команды **net use** или методов **WScript.Network MapNetworkDrive** и **RemoveNetworkDrive** сценария сервера сценариев Windows (WSH).
 
+Windows PowerShell обнаруживает диски файловой системы, которые добавляются или удаляются в Windows, включая сопоставленные сетевые диски, подключенные USB-накопители и удаленные диски, с помощью команды **net use** или методов **WScript.Network MapNetworkDrive** и **RemoveNetworkDrive** сценария сервера сценариев Windows (WSH).

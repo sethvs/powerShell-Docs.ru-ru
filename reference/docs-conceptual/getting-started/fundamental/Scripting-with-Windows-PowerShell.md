@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Работа со сценариями в Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Работа со сценариями в Windows PowerShell
 ms.assetid: c425d27a-bb41-4947-8d73-ba5480bc8ee0
-ms.openlocfilehash: 693d1bb9329dbb280453fc16738eda63c466e156
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 9bb420a3d725d3fa925b79452bbbcc542bf9f4db
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="scripting-with-windows-powershell"></a>Работа со сценариями в Windows PowerShell
 
@@ -23,4 +23,3 @@ Windows PowerShell включает приведенные ниже возмож
 - Упрощенная навигация операционной системы на основе команд, которая позволяет пользователям перемещаться по реестру и другим хранилищам данных, используя те же техники, которые используются для навигации по файловой системе.
 - Обширные возможности операций с объектами. Объектами можно управлять напрямую или отправлять их в другие инструменты или базы данных.
 - Расширяемый интерфейс. Независимые поставщики программного обеспечения и корпоративные разработчики могут создавать пользовательские инструменты и служебные программы для администрирования программного обеспечения.
-

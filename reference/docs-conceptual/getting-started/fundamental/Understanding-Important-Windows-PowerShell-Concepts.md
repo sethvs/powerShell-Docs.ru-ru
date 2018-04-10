@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Основные сведения о важных концепциях Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Основные сведения о важных концепциях Windows PowerShell
 ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
-ms.openlocfilehash: 1ffcfefcc7ffc7c98ba4d1e3ccc9a59cd9b0baac
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 07ceaa2f3e6a192c6281cb4c99aed4c3f66afc7e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="understanding-important-windows-powershell-concepts"></a>Основные сведения о важных концепциях Windows PowerShell
 Структура Windows PowerShell вобрала в себя концепции из многих различных сред. Некоторые из них знакомы пользователям с опытом работы в конкретных оболочках или средах программирования, но очень немногие знают их все. Обзор некоторых из этих концепций поможет лучше разобраться в работе оболочки.
@@ -43,4 +43,3 @@ ms.lasthandoff: 08/03/2017
 Windows PowerShell содержит функции и ключевые слова синтаксиса, которые очень похожи на применяемые в языке C#, так как Windows PowerShell основана на платформе .NET Framework. Знакомство с Windows PowerShell значительно упростит освоение C# (если вам это требуется).
 
 Если вы не программируете на C#, данный аспект не имеет значения. Однако если вы уже знакомы с C#, описанные сходства значительно упрощают изучение Windows PowerShell.
-

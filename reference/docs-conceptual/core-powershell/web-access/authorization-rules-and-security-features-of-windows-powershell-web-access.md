@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-27
-keywords: "powershell,командлет"
-title: "Правила авторизации и средства безопасности Windows PowerShell Web Access"
-ms.openlocfilehash: 19e4aa1bb55178ec2634af0771afe2db5db3423c
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.date: 06/27/2017
+keywords: powershell,командлет
+title: Правила авторизации и средства безопасности Windows PowerShell Web Access
+ms.openlocfilehash: 0e765ae90661a054ca9bae71d0f6d449cccb185d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Правила авторизации и средства безопасности Windows PowerShell Web Access
 

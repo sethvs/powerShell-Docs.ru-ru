@@ -1,21 +1,21 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: ab49a0ae10f9ad32966944a1dcf8125619bde141
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: c9ccd91a791c74682325cb8ee704ac32b9edf284
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="new-built-in-dsc-resources"></a>Новые встроенные ресурсы DSC
 
-WMF 5.0 RTM имеет 4 новых ресурса DSC: 
+WMF 5.0 RTM имеет 4 новых ресурса DSC:
 * WindowsFeatureSet
 * WindowsOptionalFeatureSet
 * ServiceSet
-* ProcessSet 
+* ProcessSet
 
 Они предоставляют простой способ настроить несколько экземпляров с помощью одного вызова ресурса.
 
@@ -37,7 +37,7 @@ WindowsFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="windowsoptionalfeatureset"></a>WindowsOptionalFeatureSet 
+## <a name="windowsoptionalfeatureset"></a>WindowsOptionalFeatureSet
 
 ```powershell
 # Get the syntax of WindowsOptionalFeatureSet resource
@@ -56,7 +56,7 @@ WindowsOptionalFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="serviceset"></a>ServiceSet 
+## <a name="serviceset"></a>ServiceSet
 
 ```powershell
 # Get the syntax of ServiceSet resource
@@ -74,7 +74,7 @@ ServiceSet [String] #ResourceName
 }
 ```
 
-## <a name="processset"></a>ProcessSet 
+## <a name="processset"></a>ProcessSet
 
 ```powershell
 # Get the syntax of ProcessSet resource
@@ -92,4 +92,3 @@ ProcessSet [String] #ResourceName
     [WorkingDirectory = [String]]
 }
 ```
-

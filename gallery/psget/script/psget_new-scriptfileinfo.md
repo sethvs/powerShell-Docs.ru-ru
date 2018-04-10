@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: New-ScriptFileInfo
-ms.openlocfilehash: 9aed0e16f2dec3681ca4b58595aae8d4972a3808
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 2b19421111cd3daef9f7a953cc59223a38fcb79c
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="new-scriptfileinfo"></a>New-ScriptFileInfo
 
@@ -37,7 +37,7 @@ New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
 ### <a name="new-scriptfileinfo-cmdlet"></a>Командлет New-ScriptFileInfo
-Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д. 
+Командлет New-ScriptFileInfo позволяет создать файл сценария с такими метаданными, как Version, Guid, Author, Description и т. д.
 
 ```powershell
 # Create a new script file with minimum required metadata values
@@ -73,11 +73,11 @@ Version Name Author Description
 
 # Add function and workflow to the script file
 Add-Content -Path C:\ScriptSharingDemo\Demo-Script.ps1 -Value @"
-   
+
     Function Demo-ScriptFunction { 'Demo-ScriptFunction' }
-   
+
     Workflow Demo-ScriptWorkflow { 'Demo-ScriptWorkflow' }
-   
+
     Demo-ScriptFunction
     Demo-ScriptWorkflow
 "@
@@ -118,11 +118,11 @@ New-ScriptFileInfo -Path 'C:\ScriptSharingDemo\Demo-ScriptWithCompletePSScriptIn
 
 # Add function and workflow to the script file
 Add-Content -Path 'C:\ScriptSharingDemo\Demo-ScriptWithCompletePSScriptInfo.ps1' -Value @"
-   
+
     Function Demo-ScriptFunction { 'Demo-ScriptFunction' }
-   
+
     Workflow Demo-ScriptWorkflow { 'Demo-ScriptWorkflow' }
-   
+
     Demo-ScriptFunction
     Demo-ScriptWorkflow
 "@
@@ -192,4 +192,3 @@ DefinedCommands : {Demo-ScriptFunction, Demo-ScriptWorkflow}
 DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
-

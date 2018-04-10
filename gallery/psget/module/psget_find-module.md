@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Find-Module
-ms.openlocfilehash: 65c466909c007ed08c3fa978f78483983b00ba73
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 03dff4454a31638df564568ef51eec158685c8e9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="find-module"></a>Find-Module
 Находит в коллекции модули, соответствующие указанному условию.
@@ -21,7 +21,7 @@ ms.lasthandoff: 12/05/2017
 - Find-Module позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.
   - Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).
   - Эти параметры версии допускаются только с единственным именем модуля без каких-либо подстановочных знаков.
-  - Если параметр RequiredVersion не указан, командлет Find-Module возвращает последнюю версию модуля не ниже указанной минимальной версии или последнюю версию модуля, если минимальная версия не указана. 
+  - Если параметр RequiredVersion не указан, командлет Find-Module возвращает последнюю версию модуля не ниже указанной минимальной версии или последнюю версию модуля, если минимальная версия не указана.
   - Если параметр RequiredVersion указан, Find-Module возвращает только версию модуля, которая точно совпадает с указанной версией.
 - Find-Module позволяет фильтровать метаданные модуля с помощью параметра -Tag.
 - Find-Module позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
@@ -54,7 +54,7 @@ Find-Module -Name AzureRM*
 # Find all versions of a module
 Find-Module -Name PSReadline -AllVersions
 
-# Find a module with -MinimumVersion. 
+# Find a module with -MinimumVersion.
 # With MinimumVersion we can find a module whose version is greate than or equal to the specified MinimumVersion value.
 Find-Module -Name PSReadline -MinimumVersion 1.0.0.12
 
@@ -142,4 +142,3 @@ PackageManagementProvider  : NuGet
 AdditionalMetadata         : {downloadCount, description, copyright, FileList...}
 
 ```
-

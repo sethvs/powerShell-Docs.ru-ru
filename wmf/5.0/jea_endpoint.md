@@ -1,22 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: c3645a6ba83081bd5ac31a13af0f67f6538db22a
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 9065315ef39129e6a28234d972fe350fd5e7e11d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="creating-and-connecting-to-a-jea-endpoint"></a>Создание конечной точки JEA и подключение к ней
 Чтобы создать конечную точку JEA, необходимо создать и зарегистрировать специально настроенный файл конфигурации сеанса PowerShell. Для этого можно воспользоваться командлетом **New-PSSessionConfigurationFile**.
 
 ```powershell
-New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -TranscriptDirectory "C:\ProgramData\JEATranscripts" -RunAsVirtualAccount -RoleDefinitions @{ 'CONTOSO\NonAdmin_Operators' = @{ RoleCapabilities = 'Maintenance' }} -Path "$env:ProgramData\JEAConfiguration\Demo.pssc" 
+New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -TranscriptDirectory "C:\ProgramData\JEATranscripts" -RunAsVirtualAccount -RoleDefinitions @{ 'CONTOSO\NonAdmin_Operators' = @{ RoleCapabilities = 'Maintenance' }} -Path "$env:ProgramData\JEAConfiguration\Demo.pssc"
 ```
 
-В результате получается файл конфигурации сеанса, который выглядит следующим образом: 
+В результате получается файл конфигурации сеанса, который выглядит следующим образом:
 ```powershell
 @{
 
@@ -52,7 +52,7 @@ RoleDefinitions = @{
     'CONTOSO\NonAdmin_Operators' = @{
         'RoleCapabilities' = 'Maintenance' } }
 
-} 
+}
 ```
 При создании конечной точки JEA необходимо настроить следующие параметры команды (и соответствующие ключи в файле):
 1.  Установите для SessionType значение RestrictedRemoteServer.
@@ -64,7 +64,7 @@ RoleDefinitions = @{
 Поле RoleDefinitions определяет, какие группы имеют доступ к отдельным возможностям роли.  Возможность роли — это файл, который определяет набор возможностей, предоставляемых подключающимся пользователям.  Возможности роли можно создать с помощью команды **New-PSRoleCapabilityFile**.
 
 ```powershell
-New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc" 
+New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc"
 ```
 
 Она создает шаблон возможности роли, имеющий следующий вид:
@@ -128,7 +128,7 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 # Assemblies to load when applied to a session
 # AssembliesToLoad = 'System.Web', 'System.OtherAssembly, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
 
-} 
+}
 
 ```
 Для использования в конфигурации сеанса JEA возможности роли следует сохранить как допустимый модуль PowerShell в каталоге RoleCapabilities. При необходимости модуль может иметь несколько файлов возможностей роли.
@@ -138,7 +138,7 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 Наконец, завершив настройку конфигурации сеанса и соответствующих возможностей роли, зарегистрируйте эту конфигурацию сеанса и создайте конечную точку, запустив **Register-PSSessionConfiguration**.
 
 ```powershell
-Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc" 
+Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc"
 ```
 
 ## <a name="connect-to-a-jea-endpoint"></a>Подключение к конечной точке JEA
@@ -148,4 +148,3 @@ Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfi
 Enter-PSSession -ConfigurationName Maintenance -ComputerName localhost
 ```
 После подключения к сеансу JEA вы сможете выполнять только те команды, которые входят в число разрешенных для доступных вам возможностей роли. При попытке запустить любую другую команду возникает ошибка.
-

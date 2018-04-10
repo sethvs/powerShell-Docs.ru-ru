@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Использование ресурсов с несколькими версиями"
-ms.openlocfilehash: 5ca4eadfe23a4675e1b81b86d4274d7f113228fe
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Использование ресурсов с несколькими версиями
+ms.openlocfilehash: 9e5b989be3f33fb9151f76cecb6d5f700b1e36c9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-resources-with-multiple-versions"></a>Использование ресурсов с несколькими версиями
 
@@ -62,7 +62,7 @@ configuration VersionTest
             DomainAdministratorCredential = Get-Credential
         }
      }
-}     
+}
 ```
 
 >Примечание. Параметр ModuleVersion ключевого слова Import-DscResource недоступен в PowerShell 4.0. В PowerShell 4.0 версию модуля можно задать, передав объект спецификации модуля в параметр ModuleName ключевого слова Import-DscResource. Объект спецификации модуля представляет собой хэш-таблицу, содержащую ключи ModuleName и RequiredVersion. Например:
@@ -81,7 +81,7 @@ configuration VersionTest
             DomainAdministratorCredential = Get-Credential
         }
      }
-}     
+}
 ```
 
 Этот способ также будет работать в PowerShell 5.0, однако рекомендуется использовать параметр **ModuleVersion**.
@@ -89,4 +89,3 @@ configuration VersionTest
 ## <a name="see-also"></a>См. также:
 * [Конфигурации DSC](configurations.md)
 * [Ресурсы DSC](resources.md)
-

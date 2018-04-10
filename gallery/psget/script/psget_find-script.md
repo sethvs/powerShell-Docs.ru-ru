@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
-keywords: "коллекция,powershell,командлет,psget"
+keywords: коллекция,powershell,командлет,psget
 title: Find-Script
-ms.openlocfilehash: df62a9934d8013d37bd0083c03f90fa7fa05ac0c
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 1f5076d94015c0b1041591144f1f0fe36819204b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="find-script"></a>Find-Script
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 12/05/2017
 - Find-Script позволяет выполнять фильтрацию с помощью параметров версии: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.
   - Эти параметры являются взаимоисключающими (кроме MinmimumVersion и MaximumVersion).
   - Эти параметры версии допускаются только с единственным именем сценария без каких-либо подстановочных знаков.
-  - Если параметр RequiredVersion не указан, командлет Find-Script возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана. 
+  - Если параметр RequiredVersion не указан, командлет Find-Script возвращает последнюю версию сценария не ниже указанной минимальной версии или последнюю версию сценария, если минимальная версия не указана.
   - Если параметр RequiredVersion указан, Find-Script возвращает только версию сценария, которая точно совпадает с указанной версией.
 - Find-Script позволяет фильтровать метаданные сценария с помощью параметра -Tag.
 - Find-Script позволяет фильтровать язык поиска для определенного репозитория с помощью параметра -Filter.
@@ -61,7 +61,7 @@ Find-Script -Name *Azure*
 # Find all versions of a script
 Find-Script -Name Connect-O365 -AllVersions
 
-# Find a script with -MinimumVersion. 
+# Find a script with -MinimumVersion.
 # With MinimumVersion we can find a script whose version is greate than or equal to the specified MinimumVersion value.
 Find-Script Connect-O365 -MinimumVersion 1.4
 
@@ -155,4 +155,3 @@ Cmdlet                         {}
 
 
 ```
-

@@ -1,15 +1,16 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Использование области консоли в интегрированной среде сценариев Windows PowerShell"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Использование области консоли в интегрированной среде сценариев Windows PowerShell
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
-ms.openlocfilehash: 59e97bbc12269d855c4f3715171636647d4cc634
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 5bbbdd3b1f0324ff1a4f2298459f58640c4dc9a6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="how-to-use-the-console-pane-in-the-windows-powershell-ise"></a>Использование области консоли в интегрированной среде сценариев Windows PowerShell
+
 Область консоли в интегрированной среде сценариев (ISE) Windows PowerShell работает точно так же, как окно автономной консоли Windows PowerShell ISE.
 
 Для выполнения команды в области консоли введите команду и нажмите клавишу ВВОД. Чтобы ввести несколько команд, которые необходимо выполнить последовательно, нажимайте между ними клавиши SHIFT+ВВОД. Сведения о вводе команд см. в статье [Использование заполнения нажатием клавиши TAB в области сценариев и области консоли](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).
@@ -25,5 +26,5 @@ ms.lasthandoff: 09/08/2017
 - Очистите весь текст в области консоли. Чтобы очистить область консоли, щелкните значок **Очистить область консоли** на панели инструментов или выполните команду **Clear-Host** (можно использовать ее псевдоним **cls**).
 
 ## <a name="see-also"></a>См. также
-- [Использование интегрированной среды сценариев Windows PowerShell](Using-the-Windows-PowerShell-ISE.md)
 
+- [Введение в интегрированную среду сценариев Windows PowerShell](Introducing-the-Windows-PowerShell-ISE.md)

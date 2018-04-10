@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: ad1d19eeb70a19cd3d1493b9a09b115af755feb4
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 66ceea383b78b2654caa4f1de16a30beea0e7fd3
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="desired-state-configuration-dsc-known-issues-and-limitations"></a>Известные проблемы и ограничения настройки требуемого состояния (DSC)
 
@@ -30,7 +30,7 @@ Start-DscConfiguration и другие командлеты DSC могут за�
 ```
 
 **Решение.** Удалите DSCEngineCache.mof, выполнив следующую команду в сеансе PowerShell с повышенными правами ("Запуск от имени администратора"):
-    
+
 ```powershell
 Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 ```
@@ -151,7 +151,7 @@ Start-DscConfiguration -UseExisting -CimSession $session
 **Решение.** Отсутствует.
 
 
-<a name="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC 
+<a name="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>Переменные и функции, определенные в области $script основанного на классе ресурса DSC, не сохраняются между несколькими вызовами ресурса DSC
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Несколько последовательных вызовов Start-DSCConfiguration завершаются ошибкой, если конфигурация использует любой ресурс на основе класса, у которого переменные или функции определены в области $script.
@@ -184,7 +184,7 @@ Get-DscResource -Synta отражает PsDscRunAsCredential неправиль�
 
 Ресурс DSC WindowsOptionalFeature недоступен в Windows 7. Он требует наличия модуля и командлетов DISM, которые доступны только в Windows 8 и более поздних выпусках.
 
-<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a>Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось   
+<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a>Для ресурсов DSC на основе классов командлет Import-DscResource -ModuleVersion может не работать, как ожидалось
 ------------------------------------------------------------------------------------------
 Если у узла компиляции нескольких версий модуля ресурса DSC на основе класса, `Import-DscResource -ModuleVersion` не может получить указанную версию и вызывает следующую ошибку компиляции.
 
@@ -198,16 +198,16 @@ At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
 ```
 
 **Решение**. Импортируйте требуемую версию, определив объект *ModuleSpecification* для `-ModuleName` с ключом `RequiredVersion`, указанным следующим образом:
-``` PowerShell  
-Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
-```  
+``` PowerShell
+Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}
+```
 
 <a name="some-dsc-resources-like-registry-resource-may-start-to-take-a-long-time-to-process-the-request"></a>Для обработки запросов некоторым ресурсам DSC, например ресурсу реестра, может требоваться много времени.
 --------------------------------------------------------------------------------------------------------------------------------
 
 **Решение 1.** Создайте запланированную задачу, которая периодически очищает папку.
-``` PowerShell 
-$env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis 
+``` PowerShell
+$env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis
 ```
 
 **Решение 2.** Измените конфигурацию DSC так, чтобы очистка папки *CommandAnalysis* выполнялась в конце конфигурации.
@@ -226,7 +226,7 @@ Configuration $configName
         ValueData = $Node.RegisteredOwnerData
     }
     #
-    # Script to delete the config 
+    # Script to delete the config
     #
     script DeleteCommandAnalysisCache
     {
@@ -237,4 +237,3 @@ Configuration $configName
     }
 }
 ```
-

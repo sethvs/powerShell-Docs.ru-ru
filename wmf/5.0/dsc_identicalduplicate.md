@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: d3a625d05eaf4e7448b4abf90499f6a94e2f7718
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: d5ba6a5c5ba8ff54a4f4d6ba07cf04124baf65ef
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a>Поддержка идентичных повторяющихся ресурсов в конфигурации
 
@@ -52,7 +52,7 @@ Configuration WebApplication
 }
 ```
 
-Если бы в предыдущих выпусках имелся конфликт между экземплярами WindowsFeature FE_IIS и WindowsFeature Worker_IIS, пытающимися проверить установку роли "Веб-сервер", компиляция завершилась бы сбоем. Обратите внимание, что в этих двух конфигурациях *все* настраиваемые свойства идентичны. И именно благодаря идентичности *всех* свойств в этих двух ресурсах компиляция теперь выполняется успешно. 
+Если бы в предыдущих выпусках имелся конфликт между экземплярами WindowsFeature FE_IIS и WindowsFeature Worker_IIS, пытающимися проверить установку роли "Веб-сервер", компиляция завершилась бы сбоем. Обратите внимание, что в этих двух конфигурациях *все* настраиваемые свойства идентичны. И именно благодаря идентичности *всех* свойств в этих двух ресурсах компиляция теперь выполняется успешно.
 
 Если же какие-либо свойства между двумя ресурсами не совпадают, они не считаются идентичными и компиляция завершается ошибкой:
 
@@ -96,4 +96,3 @@ Configuration WebApplication
 ```
 
 Эта конфигурация, которая очень похожа на предыдущую, завершается с ошибкой, поскольку ресурсы WindowsFeature FE_IIS и WindowsFeature Worker_IIS больше не совпадают, а значит конфликтуют.
-
