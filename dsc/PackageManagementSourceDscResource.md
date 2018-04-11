@@ -1,19 +1,19 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Ресурс PackageManagementSource DSC"
-ms.openlocfilehash: 1c904c70369a75802484c3c0520df63602760361
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Ресурс PackageManagementSource DSC
+ms.openlocfilehash: 8c0cb5a3b0a019ddb5ed995406f499298103b07c
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-packagemanagementsource-resource"></a>Ресурс PackageManagementSource DSC
 
 > Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Ресурс **PackageManagementSource** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм регистрации или ее отмены для источников управления пакетами на целевом узле. **Источники управления пакетами, зарегистрированные этим способом, регистрируются в контексте системы, доступной для учетной записи системы или подсистемы DSC.** Для этого ресурса требуется модуль **PackageManagement**: http://PowerShellGallery.com.
+Ресурс **PackageManagementSource** в службе настройки требуемого состояния Windows PowerShell (DSC) предоставляет механизм регистрации или ее отмены для источников управления пакетами на целевом узле. **Источники управления пакетами, зарегистрированные этим способом, регистрируются в контексте системы, доступной для учетной записи системы или подсистемы DSC.** Для этого ресурса требуется модуль **PackageManagement**, доступный из http://PowerShellGallery.com.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,14 +30,14 @@ PSModule [string] #ResourceName
 ```
 
 ## <a name="properties"></a>Свойства
-|  Свойство  |  Описание   | 
-|---|---| 
-| Name| Указывает имя источника пакета, который будет зарегистрирован в системе или регистрация которого будет отменена.| 
-| Ensure| Определяет, будет ли зарегистрирован источник пакета или его регистрация будет отменена.| 
-| InstallationPolicy| Определяет, доверяете ли вы источнику пакета. Одно из двух значений: "Untrusted", "Trusted".| 
-| ProviderName| Указывает имя поставщика OneGet, с помощью которого вы можете взаимодействовать с источником пакета.| 
-| SourceUri| Указывает URI источника пакета.| 
-| SourceCredential| Предоставляет доступ к пакету в удаленном источнике.| 
+|  Свойство  |  Описание   |
+|---|---|
+| Name| Указывает имя источника пакета, который будет зарегистрирован в системе или регистрация которого будет отменена.|
+| Ensure| Определяет, будет ли зарегистрирован источник пакета или его регистрация будет отменена.|
+| InstallationPolicy| Определяет, доверяете ли вы источнику пакета. Одно из двух значений: "Untrusted", "Trusted".|
+| ProviderName| Указывает имя поставщика OneGet, с помощью которого вы можете взаимодействовать с источником пакета.|
+| SourceUri| Указывает URI источника пакета.|
+| SourceCredential| Предоставляет доступ к пакету в удаленном источнике.|
 
 ## <a name="example"></a>Пример
 
@@ -45,15 +45,14 @@ PSModule [string] #ResourceName
 
 ```powershell
 Configuration PackageManagementSourceTest
-{    
+{
     PackageManagementSource SourceRepository
     {
-        Ensure      = "Present" 
-        Name        = "MyNuget" 
-        ProviderName= "Nuget" 
-        SourceUri   = "http://nuget.org/api/v2/"   
-        InstallationPolicy ="Trusted" 
+        Ensure      = "Present"
+        Name        = "MyNuget"
+        ProviderName= "Nuget"
+        SourceUri   = "http://nuget.org/api/v2/"
+        InstallationPolicy ="Trusted"
     }
 }
 ```
-

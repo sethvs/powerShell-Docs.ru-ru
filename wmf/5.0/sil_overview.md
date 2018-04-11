@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
-ms.openlocfilehash: 4a2dfd651f1c74e7441e5f5e357c1c26453adc07
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+keywords: wmf,powershell,установка
+ms.openlocfilehash: 4db2237678649c23729bd1f41bf88f1b9f8f0eef
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="software-inventory-logging-sil"></a>Инвентаризация программного обеспечения (SIL)
 
@@ -20,4 +20,3 @@ ms.lasthandoff: 06/12/2017
 Ни один фрагмент этих данных не передается в корпорацию Майкрософт в процессе работы компонента. Компонент ведения журнала инвентаризации программного обеспечения и предоставляемые им функции предназначены исключительно для использования владельцем и администраторами лицензированного серверного программного обеспечения.
 
 Дополнительные сведения и документацию о командлетах для инвентаризации программного обеспечения см. в интернет-ресурсах по Windows Server 2012 R2 по адресу <http://technet.microsoft.com/library/dn383584.aspx>.
-

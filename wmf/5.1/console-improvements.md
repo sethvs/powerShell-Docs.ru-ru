@@ -1,17 +1,14 @@
 ---
-title: "Усовершенствования консоли в WMF 5.1"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: fc0c78f59a2c4cda5c6aad625a5eaf5121485bad
-ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
+ms.date: 06/12/2017
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,установка
+title: Усовершенствования консоли в WMF 5.1
+ms.openlocfilehash: 2abc02010c6c1d9f7fc617e9831b2d1243e0a3ee
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="console-improvements-in-wmf-51"></a>Усовершенствования консоли в WMF 5.1#
 
@@ -24,7 +21,8 @@ ms.contentlocale: ru-RU
 В Windows 10 реализована поддержка [escape-последовательностей VT100](https://msdn.microsoft.com/en-us/library/windows/desktop/mt638032(v=vs.85).aspx).
 При расчете ширины таблиц PowerShell игнорирует некоторые escape-последовательности форматирования VT100.
 
-В PowerShell также появился новый интерфейс API, который можно использовать при форматировании кода для определения наличия поддержки VT100. Например:
+В PowerShell также появился новый интерфейс API, который можно использовать при форматировании кода для определения наличия поддержки VT100.
+Например:
 
 ```
 if ($host.UI.SupportsVirtualTerminal)
@@ -40,16 +38,18 @@ else
 Вот полный [пример](https://gist.github.com/lzybkr/dcb973dccd54900b67783c48083c28f7), который можно использовать для выделения совпадений в результатах выполнения командлета Select-String.
 Сохраните пример в файле с именем `MatchInfo.format.ps1xml`. Чтобы использовать его, в своем профиле или другом месте выполните команду `Update-FormatData -Prepend MatchInfo.format.ps1xml`.
 
-Имейте в виду, что escape-последовательности VT100 поддерживаются начиная с юбилейного обновления Windows 10. В более ранних системах они не поддерживаются.   
+Имейте в виду, что escape-последовательности VT100 поддерживаются начиная с юбилейного обновления Windows 10. В более ранних системах они не поддерживаются.
 
 ### <a name="vi-mode-support-in-psreadline"></a>Поддержка режима vi в PSReadline
 
 В [PSReadline](https://github.com/lzybkr/PSReadLine) добавлена поддержка режима vi. Чтобы включить режим vi, выполните команду `Set-PSReadlineOption -EditMode Vi`.
 
-### <a name="redirected-stdin-with-interactive-input"></a>Перенаправленный поток stdin с интерактивным вводом 
+### <a name="redirected-stdin-with-interactive-input"></a>Перенаправленный поток stdin с интерактивным вводом
 
 В предыдущих версиях среду PowerShell требовалось запускать с помощью команды `powershell -File -`, если поток stdin перенаправлялся и необходимо было вводить команды в интерактивном режиме.
 
-В WMF 5.1 этот сложный для обнаружения вариант больше не требуется. PowerShell можно запустить без параметров, например `powershell`.
+В WMF 5.1 этот сложный для обнаружения вариант больше не требуется.
+PowerShell можно запустить без параметров, например `powershell`.
 
-Обратите внимание на то, что PSReadline в настоящее время не поддерживает перенаправленный поток stdin, а встроенные возможности редактирования в командной строке с перенаправленным потоком stdin крайне ограничены, например не работают клавиши со стрелками. В будущих версиях PSReadline эта проблема должна быть решена.   
+Обратите внимание на то, что PSReadline в настоящее время не поддерживает перенаправленный поток stdin, а встроенные возможности редактирования в командной строке с перенаправленным потоком stdin крайне ограничены, например не работают клавиши со стрелками.
+В будущих версиях PSReadline эта проблема должна быть решена.

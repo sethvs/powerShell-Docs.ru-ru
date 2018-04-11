@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод ResourceSet класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: 3486ef559102929f8d05994a4bf6e45d49a0c140
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: b5f437a123bd38df21f30d11e71d2c3b36bc9f3a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="resourceset-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceSet класса MSFT_DSCLocalConfigurationManager
 
@@ -28,17 +28,13 @@ uint32 ResourceSet(
 <a name="parameters"></a>Параметры
 ----------
 
-*ResourceType* \[in\]  
-Имя вызываемого ресурса.
+*ResourceType* \[in\] Имя вызываемого ресурса.
 
-*ModuleName* \[in\]  
-Имя модуля, содержащего вызываемый ресурс.
+*ModuleName* \[in\] Имя модуля, содержащего вызываемый ресурс.
 
-*resourceProperty* \[in\]  
-Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
+*resourceProperty* \[in\] Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
 
-*RebootRequired* \[out\]  
-В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
+*RebootRequired* \[out\] В выходных данных это свойство имеет значение **true**, если целевой узел необходимо перезагрузить.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -60,10 +56,3 @@ uint32 ResourceSet(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
- 
-
- 
-
-
-

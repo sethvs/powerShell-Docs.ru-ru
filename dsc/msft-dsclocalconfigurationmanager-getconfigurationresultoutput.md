@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: f6106bb28dc20004b5bbb6df2d8e719cf0c453f0
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: f4c2ddaa37cdafeff1a442f3f1fa656788a1c6c8
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
 
@@ -27,14 +27,11 @@ uint32 GetConfigurationResultOutput(
 <a name="parameters"></a>Параметры
 ----------
 
-*jobId* \[in\]  
-Идентификатор задания, для которого необходимо получить выходные данные.
+*jobId* \[in\] Идентификатор задания, для которого необходимо получить выходные данные.
 
-*resumeOutputBookmark* \[in\]  
-Указывает, что выходные данные должны быть продолжением от предыдущей закладки.
+*resumeOutputBookmark* \[in\] Указывает, что выходные данные должны быть продолжением от предыдущей закладки.
 
-*output* \[out\]  
-Выходные данные для указанного задания.
+*output* \[out\] Выходные данные для указанного задания.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -56,10 +53,3 @@ uint32 GetConfigurationResultOutput(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
- 
-
- 
-
-
-

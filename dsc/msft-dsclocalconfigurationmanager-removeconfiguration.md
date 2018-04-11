@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: fed45836293adedbce18f01cfe53cdfa1a474975
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: e0ae8a50212b70841d210d7b2d666a2855218d1a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="removeconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод RemoveConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -26,8 +26,7 @@ uint32 RemoveConfiguration(
 <a name="parameters"></a>Параметры
 ----------
 
-*Stage* \[in\]  
-Указывает, какой документ конфигурации необходимо удалить. Допустимы следующие значения:
+*Stage* \[in\] Указывает, какой документ конфигурации необходимо удалить. Допустимы следующие значения:
 
 |Значение |Описание |
 |:--- |:---|
@@ -35,8 +34,7 @@ uint32 RemoveConfiguration(
 |**2** | Документ **ожидающей** конфигурации (pending.mof).  |
 |**4** | Документ **предыдущей** конфигурации (previous.mof). |
 
-*Force* \[in\]  
-Значение **true** для принудительного удаления конфигурации.
+*Force* \[in\] **true** для принудительного удаления конфигурации.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -58,11 +56,3 @@ uint32 RemoveConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-

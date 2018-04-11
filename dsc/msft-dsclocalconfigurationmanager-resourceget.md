@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод ResourceGet класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: 2c055b3fab468f85c9e2f91cf1eaf1a4353b4660
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+keywords: dsc,powershell,конфигурация,установка
+title: Метод ResourceGet класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: 3fd7ae54eb3ae782156dc4619ee0b6905dfb1212
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="resourceget-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод ResourceGet класса MSFT_DSCLocalConfigurationManager
 
@@ -28,17 +28,13 @@ uint32 ResourceGet(
 <a name="parameters"></a>Параметры
 ----------
 
-*ResourceType* \[in\]  
-Имя вызываемого ресурса.
+*ResourceType* \[in\] Имя вызываемого ресурса.
 
-*ModuleName* \[in\]  
-Имя модуля, содержащего вызываемый ресурс.
+*ModuleName* \[in\] Имя модуля, содержащего вызываемый ресурс.
 
-*resourceProperty* \[in\]  
-Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
+*resourceProperty* \[in\] Указывает имя свойства ресурса и его значение в хэш-таблице как ключ и значение соответственно. Используйте командлет [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) для обнаружения свойств ресурсов и их типов.
 
-*configurations* \[out\]  
-Выходные данные содержат встроенный экземпляр конфигураций.
+*configurations* \[out\] Выходные данные содержат встроенный экземпляр конфигураций.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -60,11 +56,3 @@ uint32 ResourceGet(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-

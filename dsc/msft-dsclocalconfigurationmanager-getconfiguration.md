@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: 60f4b49575dbb28ce74af0500e6982ec5d2e7a66
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: 07d7db9dcc4288e6b72d5df37d82e44eb6f72ad2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод GetConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -26,11 +26,9 @@ uint32 GetConfiguration(
 <a name="parameters"></a>Параметры
 ----------
 
-*configurationData* \[in\]  
-Указывает передаваемые данные конфигурации.
+*configurationData* \[in\] Указывает передаваемые данные конфигурации.
 
-*configurations* \[out\]  
-Выходные данные содержат встроенный экземпляр конфигураций.
+*configurations* \[out\] Выходные данные содержат встроенный экземпляр конфигураций.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -52,9 +50,3 @@ uint32 GetConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
- 
-
- 
-
-
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
-keywords: "dsc,powershell,конфигурация,установка"
-title: "Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager"
-ms.openlocfilehash: fa34a583af7c3fd46d99307d582973410e4c0e31
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+keywords: dsc,powershell,конфигурация,установка
+title: Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
+ms.openlocfilehash: 9fe41fa806a6abff1d36dadd0c041a5cf0e78caf
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="enabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>Метод EnableDebugConfiguration класса MSFT_DSCLocalConfigurationManager
 
@@ -25,8 +25,7 @@ uint32 EnableDebugConfiguration(
 <a name="parameters"></a>Параметры
 ----------
 
-*BreakAll* \[in\]  
-Устанавливает точку останова в каждой строке в сценарии ресурса.
+*BreakAll* \[in\] Устанавливает точку останова в каждой строке в сценарии ресурса.
 
 ## <a name="return-value"></a>Возвращаемое значение
 ------------
@@ -48,9 +47,3 @@ uint32 EnableDebugConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
- 
-
- 
-
-
-

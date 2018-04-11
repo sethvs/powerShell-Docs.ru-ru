@@ -1,15 +1,15 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
-keywords: "wmf,powershell,установка"
+keywords: wmf,powershell,установка
 contributor: ryanpu
-title: "Улучшения Just Enough Administration (JEA)"
-ms.openlocfilehash: 2811b4deb3f4fca513791c7389ee5f9f877dbfe8
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: Улучшения Just Enough Administration (JEA)
+ms.openlocfilehash: c80472fa4372331bf2cf9ab0b7513021354d1408
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="improvements-to-just-enough-administration-jea"></a>Улучшения Just Enough Administration (JEA)
 
@@ -50,7 +50,7 @@ Copy-Item -Path User:\SampleFile.txt -Destination . -FromSession $jeasession
 
 В некоторых случаях для выполнения задачи пользователем в сеансе JEA может потребоваться доступ к ресурсам за пределами локального компьютера.
 Если в сеансе JEA настроено использование виртуальной учетной записи, любые попытки подключиться к таким ресурсам будут отображаться как полученные из удостоверения локального компьютера, а не из виртуальной учетной записи или от подключенного пользователя.
-В TP5 включена поддержка работы JEA в контексте [групповой учетной записи управляемой службы](https://technet.microsoft.com/ru-ru/library/jj128431(v=ws.11\).aspx), что упрощает доступ к сетевым ресурсам благодаря использованию удостоверения домена.
+В TP5 включена поддержка работы JEA в контексте [Group Managed Service Account] (https://technet.microsoft.com/en-us/library/jj128431(v=ws.11\).aspx), что значительно облегчает доступ к сетевым ресурсам с использованием идентификатора домена.
 
 Чтобы настроить работу сеанса JEA в учетной записи gMSA, используйте следующий новый ключ в PSSC-файле:
 
@@ -93,4 +93,3 @@ RequiredGroups = @{ And = 'elevated-jea', @{ Or = '2FA-logon', 'smartcard-logon'
 ## <a name="fixed-virtual-accounts-are-now-supported-on-windows-server-2008-r2"></a>Исправлено: виртуальные учетные записи теперь поддерживаются в Windows Server 2008 R2
 Теперь в WMF 5.1 вы можете использовать виртуальные учетные записи в Windows Server 2008 R2, включив согласованные конфигурации и паритет функций в Windows Server 2008 R2 — 2016.
 Виртуальные учетные записи по-прежнему не поддерживаются при использовании JEA в Windows 7.
-
