@@ -1,18 +1,20 @@
 ---
-ms.date: 2017-06-05
-keywords: "powershell,командлет"
-title: "Работа с разделами реестра"
+ms.date: 06/05/2017
+keywords: powershell,командлет
+title: Работа с разделами реестра
 ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a
-ms.openlocfilehash: e7c16fe5f03330da3ea8f60b141d9e35eed474b9
-ms.sourcegitcommit: cd5a1f054cbf9eb95c5242a995f9741e031ddb24
+ms.openlocfilehash: a9d08f2f6b5803980dec45a4e266ad66879c8c8d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="working-with-registry-keys"></a>Работа с разделами реестра
+
 Поскольку разделы реестра представляют собой элементы на дисках Windows PowerShell, работа с ними очень похожа на работу с файлами и папками. Одно важное различие заключается в том, что каждый элемент реестрового диска Windows PowerShell представляет собой контейнер, как и папка на диске файловой системы. Однако записи реестра и связанные с ними значения являются свойствами элементов, а не отдельными элементами.
 
 ### <a name="listing-all-subkeys-of-a-registry-key"></a>Получение всех подразделов раздела реестра
+
 Показать все элементы, непосредственно содержащиеся в разделе реестра, можно с помощью командлета **Get-ChildItem**. Для отображения скрытых и системных элементов добавьте необязательный параметр **Force**. Например, эта команда отображает элементы, непосредственно расположенные на диске HKCU: Windows PowerShell, который соответствует кусту реестра HKEY_CURRENT_USER.
 
 ```
@@ -35,7 +37,7 @@ SKC  VC Name                           Property
 
 Указать этот путь в реестре можно также, задав имя поставщика реестра с последующей строкой "**::**". Полное имя поставщика реестра имеет вид **Microsoft.PowerShell.Core\\Registry**, но может быть сокращено до **Registry**. Любая из следующих команд выводит содержимое элементов, непосредственно расположенных внутри HKCU:
 
-```
+```powershell
 Get-ChildItem -Path Registry::HKEY_CURRENT_USER
 Get-ChildItem -Path Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER
 Get-ChildItem -Path Registry::HKCU
@@ -45,53 +47,57 @@ Get-ChildItem HKCU:
 
 Эти команды выводят только элементы, содержащиеся на диске непосредственно, так же как и команда **DIR** оболочки Cmd.exe или команда **ls** оболочки UNIX Для показа вложенных элементов необходимо указать параметр **Recurse**. Для вывода всех разделов в HKCU используется следующая команда (эта операция может занять очень продолжительное время):
 
-```
+```powershell
 Get-ChildItem -Path hkcu:\ -Recurse
 ```
 
 Командлет **Get-ChildItem** позволяет выполнять сложные операции фильтрации с помощью параметров **Path**, **Filter**, **Include** и **Exclude**, но обычно осуществляется лишь фильтрация по имени. Сложную фильтрацию на основе других свойств элементов можно выполнить с помощью командлета **Where-Object**. Следующая команда находит все разделы в HKCU:\\Software, у которых не более одного подраздела и ровно четыре значения:
 
-```
+```powershell
 Get-ChildItem -Path HKCU:\Software -Recurse | Where-Object -FilterScript {($_.SubKeyCount -le 1) -and ($_.ValueCount -eq 4) }
 ```
 
 ### <a name="copying-keys"></a>Копирование разделов
+
 Копирование выполняется с помощью командлета **Copy-Item**. Следующая команда копирует HKLM:\\SOFTWARE\\Microsoft\\Windows\\ и все его свойства в HKCU:\\, создавая новый раздел с именем "CurrentVersion":
 
-```
+```powershell
 Copy-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion' -Destination hkcu:
 ```
 
 Если изучить этот новый раздел в редакторе реестра или с помощью командлета **Get-ChildItem**, можно увидеть, что в новом расположении отсутствуют копии подразделов, содержавшихся в исходном разделе. Чтобы скопировать все содержимое контейнера, необходимо указать параметр **Recurse**. Копирование в предыдущем примере можно сделать рекурсивным, если использовать следующую команду:
 
-```
+```powershell
 Copy-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion' -Destination hkcu: -Recurse
 ```
 
 Для копирования файловой системы можно использовать и другие доступные средства. В оболочке Windows PowerShell можно использовать любые средства для редактирования реестра (в том числе reg.exe, regini.exe и regedit.exe), а также COM-объекты, поддерживающие редактирование реестра (такие как WScript.Shell и WMI-класс StdRegProv).
 
 ### <a name="creating-keys"></a>Создание разделов
+
 Создание новых разделов в реестре проще, чем создание нового элемента в файловой системе. Поскольку все разделы реестра являются контейнерами, нет необходимости указывать тип элемента. Достаточно указать явный путь, например:
 
-```
+```powershell
 New-Item -Path hkcu:\software_DeleteMe
 ```
 
 Для указания раздела можно также использовать путь на основе имени поставщика:
 
-```
+```powershell
 New-Item -Path Registry::HKCU_DeleteMe
 ```
 
 ### <a name="deleting-keys"></a>Удаление разделов
+
 Удаление элементов в принципе осуществляется одинаково для всех поставщиков. Следующие команды удаляют элементы, не выводя никаких сообщений:
 
-```
+```powershell
 Remove-Item -Path hkcu:\Software_DeleteMe
 Remove-Item -Path 'hkcu:\key with spaces in the name'
 ```
 
 ### <a name="removing-all-keys-under-a-specific-key"></a>Удаление всех разделов внутри определенного раздела
+
 Удалить вложенные элементы можно с помощью командлета **Remove-Item**, однако он потребует подтверждения удаления, если элемент сам что-нибудь содержит. Например, при попытке удаления созданного нами подраздела HKCU:\\CurrentVersion будет отображено следующее:
 
 ```
@@ -107,13 +113,12 @@ parameter was not specified. If you continue, all children will be removed with
 
 Для удаления вложенных элементов без подтверждения следует указать параметр **-Recurse**:
 
-```
+```powershell
 Remove-Item -Path HKCU:\CurrentVersion -Recurse
 ```
 
 Если нужно удалить все элементы в HKCU:\\CurrentVersion, но не сам раздел, вместо этого введите следующее:
 
-```
+```powershell
 Remove-Item -Path HKCU:\CurrentVersion\* -Recurse
 ```
-
