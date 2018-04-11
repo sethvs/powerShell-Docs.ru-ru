@@ -1,121 +1,121 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
-keywords: "коллекции,powershell,командлет,psgallery"
-title: "psgallery_состояние"
-ms.openlocfilehash: af6111d3c511273571bd978c6d0e7447726c2917
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+keywords: коллекции,powershell,командлет,psgallery
+title: psgallery_состояние
+ms.openlocfilehash: 08d09ce83b5133598152186e12fc8ced90c36a88
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 04/09/2018
 ---
-<a name="powershell-gallery-status"></a><span data-ttu-id="37366-103">Состояние коллекции PowerShell</span><span class="sxs-lookup"><span data-stu-id="37366-103">PowerShell Gallery Status</span></span>
+<a name="powershell-gallery-status"></a><span data-ttu-id="bc8b1-103">Состояние коллекции PowerShell</span><span class="sxs-lookup"><span data-stu-id="bc8b1-103">PowerShell Gallery Status</span></span>
 =========================
-## <a name="10102017---powershell-gallery-unavailable-for-2-hours-101017"></a><span data-ttu-id="37366-104">10.10.2017 коллекция PowerShell была недоступна в течение двух часов.</span><span class="sxs-lookup"><span data-stu-id="37366-104">10/10/2017 - PowerShell Gallery unavailable for 2 hours 10/10/17</span></span>
+## <a name="10102017---powershell-gallery-unavailable-for-2-hours-101017"></a><span data-ttu-id="bc8b1-104">10.10.2017 коллекция PowerShell была недоступна в течение двух часов.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-104">10/10/2017 - PowerShell Gallery unavailable for 2 hours 10/10/17</span></span>
 
-<span data-ttu-id="37366-105">__Сводка об инциденте.__ 10.10.2017 около 17:00 (по тихоокеанскому времени) в работе коллекции PowerShell возникла высокая задержка, которая привела к временным проблемам с подключением.</span><span class="sxs-lookup"><span data-stu-id="37366-105">__Summary of Impact__: The PowerShell Gallery experienced a period of very high latency, resulting in intermittent connection issues, beginning approximately 5pm (PDT) 10/10/17.</span></span> <span data-ttu-id="37366-106">Для устранения этой проблемы веб-сайт на два часа был переведен в автономный режим (начиная примерно с 22:00 по тихоокеанскому времени).</span><span class="sxs-lookup"><span data-stu-id="37366-106">While resolving the issue, the site was taken offline for 2 hours starting approximately 10pm (PDT).</span></span> <span data-ttu-id="37366-107">Работа веб-сайта была возобновлена незадолго до полуночи 10.10.2017.</span><span class="sxs-lookup"><span data-stu-id="37366-107">The site was restored shortly before midnight 10/10/2017.</span></span> 
- 
-<span data-ttu-id="37366-108">__Основная причина.__ Причина высокой задержки все еще выясняется.</span><span class="sxs-lookup"><span data-stu-id="37366-108">__Root Cause__: The root cause of the high latency is still being investigated.</span></span>
+<span data-ttu-id="bc8b1-105">__Сводка об инциденте.__ 10.10.2017 около 17:00 (по тихоокеанскому времени) в работе коллекции PowerShell возникла высокая задержка, которая привела к временным проблемам с подключением.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-105">__Summary of Impact__: The PowerShell Gallery experienced a period of very high latency, resulting in intermittent connection issues, beginning approximately 5pm (PDT) 10/10/17.</span></span> <span data-ttu-id="bc8b1-106">Для устранения этой проблемы веб-сайт на два часа был переведен в автономный режим (начиная примерно с 22:00 по тихоокеанскому времени).</span><span class="sxs-lookup"><span data-stu-id="bc8b1-106">While resolving the issue, the site was taken offline for 2 hours starting approximately 10pm (PDT).</span></span> <span data-ttu-id="bc8b1-107">Работа веб-сайта была возобновлена незадолго до полуночи 10.10.2017.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-107">The site was restored shortly before midnight 10/10/2017.</span></span>
 
-<span data-ttu-id="37366-109">__Решение.__ Для решения проблемы веб-службы были переведены в автономный режим. Затем их работа была возобновлена.</span><span class="sxs-lookup"><span data-stu-id="37366-109">__Resolution__: The web services had to be taken offline and restored in order to address the primary issue.</span></span> 
+<span data-ttu-id="bc8b1-108">__Основная причина.__ Причина высокой задержки все еще выясняется.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-108">__Root Cause__: The root cause of the high latency is still being investigated.</span></span>
 
-<span data-ttu-id="37366-110">__Дальнейшие действия.__ Причина неполадки все еще выясняется.</span><span class="sxs-lookup"><span data-stu-id="37366-110">__Next Steps__: The root cause for the original issue is being investigated.</span></span>
+<span data-ttu-id="bc8b1-109">__Решение.__ Для решения проблемы веб-службы были переведены в автономный режим. Затем их работа была возобновлена.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-109">__Resolution__: The web services had to be taken offline and restored in order to address the primary issue.</span></span>
 
-## <a name="06012017---deploy-to-azure-automation-currently-unavailable"></a><span data-ttu-id="37366-111">01.06.2017. Развертывание в службу автоматизации Azure сейчас недоступно</span><span class="sxs-lookup"><span data-stu-id="37366-111">06/01/2017 - Deploy to Azure Automation Currently Unavailable</span></span>
+<span data-ttu-id="bc8b1-110">__Дальнейшие действия.__ Причина неполадки все еще выясняется.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-110">__Next Steps__: The root cause for the original issue is being investigated.</span></span>
 
-<span data-ttu-id="37366-112">__Сводка по влиянию.__ Сейчас развертывание элементов с зависимостями из коллекции PowerShell в службу автоматизации Azure недоступно.</span><span class="sxs-lookup"><span data-stu-id="37366-112">__Summary of Impact__: Deploying items with dependencies to Azure Automation from the PowerShell Gallery is currently unavailable.</span></span>  <span data-ttu-id="37366-113">Импорт элементов из коллекции PowerShell изнутри службы автоматизации Azure все еще доступен.</span><span class="sxs-lookup"><span data-stu-id="37366-113">Importing items from the PowerShell Gallery from inside Azure Automation is still available.</span></span>  
- 
-<span data-ttu-id="37366-114">__Основная причина.__ Элементы с зависимостями от других элементов, ранее развернутые в службу автоматизации Azure, не будут развертываться в эту службу.</span><span class="sxs-lookup"><span data-stu-id="37366-114">__Root Cause__: Items that have dependencies on others, and have been previously deployed to Azure Automation, will not be deployed to Azure Automation.</span></span> <span data-ttu-id="37366-115">Инженеры обнаружили проблему с тем, как создаются шаблоны ARM для элементов с зависимостями для функции развертывания в службу автоматизации Azure.</span><span class="sxs-lookup"><span data-stu-id="37366-115">Engineers have identified an issue with how ARM templates are generated for items with dependencies for the Deploy to Azure Automation functionality.</span></span>
+## <a name="06012017---deploy-to-azure-automation-currently-unavailable"></a><span data-ttu-id="bc8b1-111">01.06.2017. Развертывание в службу автоматизации Azure сейчас недоступно</span><span class="sxs-lookup"><span data-stu-id="bc8b1-111">06/01/2017 - Deploy to Azure Automation Currently Unavailable</span></span>
 
-<span data-ttu-id="37366-116">__Решение.__ Инженеры работают над устранением проблемы.</span><span class="sxs-lookup"><span data-stu-id="37366-116">__Resolution__: Engineers are working to resolve issue.</span></span>  <span data-ttu-id="37366-117">Текущее решение для пользователей — импортировать элемент из коллекции PowerShell изнутри службы автоматизации Azure.</span><span class="sxs-lookup"><span data-stu-id="37366-117">The current workaround for users is to import the item from the PowerShell Gallery from inside Azure Automation.</span></span> 
+<span data-ttu-id="bc8b1-112">__Сводка по влиянию.__ Сейчас развертывание элементов с зависимостями из коллекции PowerShell в службу автоматизации Azure недоступно.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-112">__Summary of Impact__: Deploying items with dependencies to Azure Automation from the PowerShell Gallery is currently unavailable.</span></span>  <span data-ttu-id="bc8b1-113">Импорт элементов из коллекции PowerShell изнутри службы автоматизации Azure все еще доступен.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-113">Importing items from the PowerShell Gallery from inside Azure Automation is still available.</span></span>
 
-<span data-ttu-id="37366-118">__Дальнейшие действия.__ Инженеры вскоре выпустят исправление.</span><span class="sxs-lookup"><span data-stu-id="37366-118">__Next Steps__: Engineers will release the fix shortly.</span></span>  <span data-ttu-id="37366-119">Тем временем используйте рекомендуемое решение.</span><span class="sxs-lookup"><span data-stu-id="37366-119">In the meantime, please use the recommended workaround.</span></span> 
+<span data-ttu-id="bc8b1-114">__Основная причина.__ Элементы с зависимостями от других элементов, ранее развернутые в службу автоматизации Azure, не будут развертываться в эту службу.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-114">__Root Cause__: Items that have dependencies on others, and have been previously deployed to Azure Automation, will not be deployed to Azure Automation.</span></span> <span data-ttu-id="bc8b1-115">Инженеры обнаружили проблему с тем, как создаются шаблоны ARM для элементов с зависимостями для функции развертывания в службу автоматизации Azure.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-115">Engineers have identified an issue with how ARM templates are generated for items with dependencies for the Deploy to Azure Automation functionality.</span></span>
 
+<span data-ttu-id="bc8b1-116">__Решение.__ Инженеры работают над устранением проблемы.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-116">__Resolution__: Engineers are working to resolve issue.</span></span>  <span data-ttu-id="bc8b1-117">Текущее решение для пользователей — импортировать элемент из коллекции PowerShell изнутри службы автоматизации Azure.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-117">The current workaround for users is to import the item from the PowerShell Gallery from inside Azure Automation.</span></span>
 
-## <a name="04112017---users-unable-to-log-in-with-azure-active-directory-aad-accounts"></a><span data-ttu-id="37366-120">11.04.2017 г. — пользователи не могут выполнить вход с помощью учетных записей Azure Active Directory (AAD)</span><span class="sxs-lookup"><span data-stu-id="37366-120">04/11/2017 - Users unable to log in with Azure Active Directory (AAD) accounts</span></span>
-
-<span data-ttu-id="37366-121">__Сводка по влиянию__. Некоторым пользователям не удалось выполнить вход в коллекцию PowerShell с помощью учетных записей Azure AD.</span><span class="sxs-lookup"><span data-stu-id="37366-121">__Summary of Impact__: Some users were unable to log in to the PowerShell Gallery using Azure AD Accounts.</span></span> 
- 
-<span data-ttu-id="37366-122">__Причина__. Во время обновления было пропущено изменение параметра для безопасного взаимодействия с AAD.</span><span class="sxs-lookup"><span data-stu-id="37366-122">__Root Cause__: During an update to interact more securely with AAD, a setting change was missed.</span></span> <span data-ttu-id="37366-123">В процессе тестирования с целью обнаружения изменений определенные типы учетных записей AAD не использовались, что не повлияло на развертывание.</span><span class="sxs-lookup"><span data-stu-id="37366-123">The testing done to validate the change did not include certain types of AAD accounts, so the deployment proceeded.</span></span>
-
-<span data-ttu-id="37366-124">__Решение__. Инженерам удалось определить упущенный параметр, и проблема была устранена.</span><span class="sxs-lookup"><span data-stu-id="37366-124">__Resolution__: Engineers identified the missing setting and corrected the problem.</span></span> 
-
-<span data-ttu-id="37366-125">__Дальнейшие действия__. Планируется последующая доработка тестирования для расширения набора типов учетных записей AAD.</span><span class="sxs-lookup"><span data-stu-id="37366-125">__Next Steps__: We will be modifying our testing to include a broader set of AAD account types.</span></span>
-
-## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a><span data-ttu-id="37366-126">27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов</span><span class="sxs-lookup"><span data-stu-id="37366-126">03/27/2017 - RESOLVED: Unable to see individual module and script pages</span></span>
-
-<span data-ttu-id="37366-127">__Сводка по влиянию__. Прямые ссылки на отдельные страницы модулей и скриптов на сайте https://www.powershellgallery.com были недоступны.</span><span class="sxs-lookup"><span data-stu-id="37366-127">__Summary of Impact__: Direct links to individual module and script pages on https://www.powershellgallery.com were broken.</span></span> <span data-ttu-id="37366-128">Это было актуально для всех регионов.</span><span class="sxs-lookup"><span data-stu-id="37366-128">This was being reported across all the regions.</span></span> <span data-ttu-id="37366-129">Это не повлияло на командлеты PowerShellGet: Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt по-прежнему работали.</span><span class="sxs-lookup"><span data-stu-id="37366-129">This did not impact any of the PowerShellGet cmdlets ie., Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt continued to work.</span></span>
-
-<span data-ttu-id="37366-130">__Причина__. Инженеры определили причину как проблему при включении кнопок социальных сетей (например, Facebook) на страницу.</span><span class="sxs-lookup"><span data-stu-id="37366-130">__Root Cause__: Engineers identified the cause as an issue bringing up social media buttons like Facebook onto the page.</span></span>  
-
-<span data-ttu-id="37366-131">__Решение__. Инженеры исправили проблему, отключив сведения о числе подключений через Facebook.</span><span class="sxs-lookup"><span data-stu-id="37366-131">__Resolution__: Engineers fixed the problem by disabling the Facebook count information.</span></span>
-
-<span data-ttu-id="37366-132">__Дальнейшие действия__. Мы открыли обращение о внутреннем отслеживании, чтобы исправить использование API Facebook.</span><span class="sxs-lookup"><span data-stu-id="37366-132">__Next Steps__: We opened an internal tracking issue to fix our usage of Facebook API.</span></span>
-
-## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a><span data-ttu-id="37366-133">15.12.2016 — не удается отправить сообщения электронной почты через веб-сайт PowerShellGallery</span><span class="sxs-lookup"><span data-stu-id="37366-133">12/15/2016 - Unable to send emails via PowerShellGallery website</span></span>
-
-<span data-ttu-id="37366-134">__Сводка по влиянию__. Между 13.12.2016 и 15.12.2016 все сообщения, отправленные через функции "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", не были получены администраторами коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="37366-134">__Summary of Impact__: Between 12/13/2016 and 12/15/2016, any messages sent via Contact Owners, Manage Owners, Contact Support, or Report Abuse were not received by the PowerShell Gallery Administrators.</span></span>  
-<span data-ttu-id="37366-135">__Первопричина__. Инженеры выявили, что причина состояла в проблеме проверки подлинности на SMTP-сервере.</span><span class="sxs-lookup"><span data-stu-id="37366-135">__Root Cause__: Engineers identified the cause as an authentication issue with the SMTP server.</span></span>  
-<span data-ttu-id="37366-136">__Решение__. Инженеры смогли устранить проблему проверки подлинности и восстановить подключение к SMTP-серверу.</span><span class="sxs-lookup"><span data-stu-id="37366-136">__Resolution__: Engineers were able to resolve the authentication issue and restore connection to the SMTP server.</span></span>  
-<span data-ttu-id="37366-137">__Дальнейшие действия__. Если вы использовали ссылки "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", чтобы отправить почту по адресу cgadmin@microsoft.com в это время, и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="37366-137">__Next Steps__: If you used the Contact Owners, Manage Owners, Contact Support, or Report Abuse links to send mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="37366-138">Приносим извинения за причиненные неудобства.</span><span class="sxs-lookup"><span data-stu-id="37366-138">We apologize for the inconvenience.</span></span>  
+<span data-ttu-id="bc8b1-118">__Дальнейшие действия.__ Инженеры вскоре выпустят исправление.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-118">__Next Steps__: Engineers will release the fix shortly.</span></span>  <span data-ttu-id="bc8b1-119">Тем временем используйте рекомендуемое решение.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-119">In the meantime, please use the recommended workaround.</span></span>
 
 
+## <a name="04112017---users-unable-to-log-in-with-azure-active-directory-aad-accounts"></a><span data-ttu-id="bc8b1-120">11.04.2017 г. — пользователи не могут выполнить вход с помощью учетных записей Azure Active Directory (AAD)</span><span class="sxs-lookup"><span data-stu-id="bc8b1-120">04/11/2017 - Users unable to log in with Azure Active Directory (AAD) accounts</span></span>
 
-## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a><span data-ttu-id="37366-139">10.08.2016 — устранена ошибка: не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="37366-139">8/10/2016 - Resolved: Unable to send emails to cgadmin@microsoft.com</span></span>
+<span data-ttu-id="bc8b1-121">__Сводка по влиянию__. Некоторым пользователям не удалось выполнить вход в коллекцию PowerShell с помощью учетных записей Azure AD.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-121">__Summary of Impact__: Some users were unable to log in to the PowerShell Gallery using Azure AD Accounts.</span></span>
 
-<span data-ttu-id="37366-140">__Сводка по влиянию__. С 05.08.2016 по 10.08.2016 клиентам не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com или использовать функцию "Обратная связь".</span><span class="sxs-lookup"><span data-stu-id="37366-140">__Summary of Impact__: Between 8/5/2016 and 8/10/2016, customers were unable to send emails to cgadmin@microsoft.com, or use the Contact Us feature.</span></span>  
-<span data-ttu-id="37366-141">__Первопричина__. Инженеры выявили, что причина состояла в изменении конфигурации учетной записи электронной почты.</span><span class="sxs-lookup"><span data-stu-id="37366-141">__Root Cause__: Engineers identified the cause as a configuration change of the email account.</span></span>  
-<span data-ttu-id="37366-142">__Решение__. Инженеры устранили проблему в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="37366-142">__Resolution__: Engineers worked to resolve the configuration issue.</span></span>  
-<span data-ttu-id="37366-143">__Дальнейшие действия__. Если вы использовали ссылку "Обратная связь" или отправляли почту по адресу cgadmin@microsoft.com в это время и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="37366-143">__Next Steps__: If you used the Contact Us link or sent mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="37366-144">Благодарим за терпение.</span><span class="sxs-lookup"><span data-stu-id="37366-144">Thank you for your patience.</span></span>
+<span data-ttu-id="bc8b1-122">__Причина__. Во время обновления было пропущено изменение параметра для безопасного взаимодействия с AAD.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-122">__Root Cause__: During an update to interact more securely with AAD, a setting change was missed.</span></span>
+<span data-ttu-id="bc8b1-123">В процессе тестирования с целью обнаружения изменений определенные типы учетных записей AAD не использовались, что не повлияло на развертывание.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-123">The testing done to validate the change did not include certain types of AAD accounts, so the deployment proceeded.</span></span>
+
+<span data-ttu-id="bc8b1-124">__Решение__. Инженерам удалось определить упущенный параметр, и проблема была устранена.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-124">__Resolution__: Engineers identified the missing setting and corrected the problem.</span></span>
+
+<span data-ttu-id="bc8b1-125">__Дальнейшие действия__. Планируется последующая доработка тестирования для расширения набора типов учетных записей AAD.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-125">__Next Steps__: We will be modifying our testing to include a broader set of AAD account types.</span></span>
+
+## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a><span data-ttu-id="bc8b1-126">27.03.2017 — устранено. Не видны отдельные страницы модулей и скриптов</span><span class="sxs-lookup"><span data-stu-id="bc8b1-126">03/27/2017 - RESOLVED: Unable to see individual module and script pages</span></span>
+
+<span data-ttu-id="bc8b1-127">__Сводка по влиянию__. Прямые ссылки на отдельные страницы модулей и скриптов на https://www.powershellgallery.com недействительны.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-127">__Summary of Impact__: Direct links to individual module and script pages on https://www.powershellgallery.com were broken.</span></span> <span data-ttu-id="bc8b1-128">Это было актуально для всех регионов.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-128">This was being reported across all the regions.</span></span> <span data-ttu-id="bc8b1-129">Это не повлияло на командлеты PowerShellGet: Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt по-прежнему работали.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-129">This did not impact any of the PowerShellGet cmdlets ie., Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt continued to work.</span></span>
+
+<span data-ttu-id="bc8b1-130">__Причина__. Инженеры определили причину как проблему при включении кнопок социальных сетей (например, Facebook) на страницу.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-130">__Root Cause__: Engineers identified the cause as an issue bringing up social media buttons like Facebook onto the page.</span></span>
+
+<span data-ttu-id="bc8b1-131">__Решение__. Инженеры исправили проблему, отключив сведения о числе подключений через Facebook.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-131">__Resolution__: Engineers fixed the problem by disabling the Facebook count information.</span></span>
+
+<span data-ttu-id="bc8b1-132">__Дальнейшие действия__. Мы открыли обращение о внутреннем отслеживании, чтобы исправить использование API Facebook.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-132">__Next Steps__: We opened an internal tracking issue to fix our usage of Facebook API.</span></span>
+
+## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a><span data-ttu-id="bc8b1-133">15.12.2016 — не удается отправить сообщения электронной почты через веб-сайт PowerShellGallery</span><span class="sxs-lookup"><span data-stu-id="bc8b1-133">12/15/2016 - Unable to send emails via PowerShellGallery website</span></span>
+
+<span data-ttu-id="bc8b1-134">__Сводка по влиянию__. Между 13.12.2016 и 15.12.2016 все сообщения, отправленные через функции "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", не были получены администраторами коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-134">__Summary of Impact__: Between 12/13/2016 and 12/15/2016, any messages sent via Contact Owners, Manage Owners, Contact Support, or Report Abuse were not received by the PowerShell Gallery Administrators.</span></span>
+<span data-ttu-id="bc8b1-135">__Первопричина__. Инженеры выявили, что причина состояла в проблеме проверки подлинности на SMTP-сервере.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-135">__Root Cause__: Engineers identified the cause as an authentication issue with the SMTP server.</span></span>
+<span data-ttu-id="bc8b1-136">__Решение__. Инженеры смогли устранить проблему проверки подлинности и восстановить подключение к SMTP-серверу.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-136">__Resolution__: Engineers were able to resolve the authentication issue and restore connection to the SMTP server.</span></span>
+<span data-ttu-id="bc8b1-137">__Дальнейшие действия__. Если вы использовали ссылки "Связаться с владельцами", "Управление владельцами", "Обратитесь в службу поддержки" или "Сообщение о нарушении", чтобы отправить почту по адресу cgadmin@microsoft.com в это время, и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-137">__Next Steps__: If you used the Contact Owners, Manage Owners, Contact Support, or Report Abuse links to send mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="bc8b1-138">Приносим извинения за причиненные неудобства.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-138">We apologize for the inconvenience.</span></span>
 
 
 
-## <a name="7132016---download-items-failed"></a><span data-ttu-id="37366-145">13.07.2016 — сбой скачивания элементов</span><span class="sxs-lookup"><span data-stu-id="37366-145">7/13/2016 - Download Items Failed</span></span>
+## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a><span data-ttu-id="bc8b1-139">10.08.2016 — устранена ошибка: не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-139">8/10/2016 - Resolved: Unable to send emails to cgadmin@microsoft.com</span></span>
 
-<span data-ttu-id="37366-146">__Сводка по влиянию__. С 11.07.2016 по 13.07.2016 у ряда клиентов возникали проблемы со скачиванием элементов из коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="37366-146">__Summary of Impact__: Between 7/11/2016 and 7/13/2016, a subset of customers experienced issues downloading items from the PowerShell Gallery.</span></span> <span data-ttu-id="37366-147">Скорее всего, проблема проявлялась в виде следующего сообщения об ошибке, возвращаемого из Install-Module/Install-Script и Save-Module/Save-Script.</span><span class="sxs-lookup"><span data-stu-id="37366-147">The issue likely manifested itself in the following error message returned from Install-Module/Install-Script and Save-Module/Save-Script:</span></span>
+<span data-ttu-id="bc8b1-140">__Сводка по влиянию__. С 05.08.2016 по 10.08.2016 клиентам не удавалось отправлять электронные письма по адресу cgadmin@microsoft.com или использовать функцию "Обратная связь".</span><span class="sxs-lookup"><span data-stu-id="bc8b1-140">__Summary of Impact__: Between 8/5/2016 and 8/10/2016, customers were unable to send emails to cgadmin@microsoft.com, or use the Contact Us feature.</span></span>
+<span data-ttu-id="bc8b1-141">__Первопричина__. Инженеры выявили, что причина состояла в изменении конфигурации учетной записи электронной почты.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-141">__Root Cause__: Engineers identified the cause as a configuration change of the email account.</span></span>
+<span data-ttu-id="bc8b1-142">__Решение__. Инженеры устранили проблему в конфигурации.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-142">__Resolution__: Engineers worked to resolve the configuration issue.</span></span>
+<span data-ttu-id="bc8b1-143">__Дальнейшие действия__. Если вы использовали ссылку "Обратная связь" или отправляли почту по адресу cgadmin@microsoft.com в это время и не получили ответа, повторите попытку.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-143">__Next Steps__: If you used the Contact Us link or sent mail to cgadmin@microsoft.com during this time and we have not responded, please try again.</span></span> <span data-ttu-id="bc8b1-144">Благодарим за терпение.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-144">Thank you for your patience.</span></span>
+
+
+
+## <a name="7132016---download-items-failed"></a><span data-ttu-id="bc8b1-145">13.07.2016 — сбой скачивания элементов</span><span class="sxs-lookup"><span data-stu-id="bc8b1-145">7/13/2016 - Download Items Failed</span></span>
+
+<span data-ttu-id="bc8b1-146">__Сводка по влиянию__. С 11.07.2016 по 13.07.2016 у ряда клиентов возникали проблемы со скачиванием элементов из коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-146">__Summary of Impact__: Between 7/11/2016 and 7/13/2016, a subset of customers experienced issues downloading items from the PowerShell Gallery.</span></span> <span data-ttu-id="bc8b1-147">Скорее всего, проблема проявлялась в виде следующего сообщения об ошибке, возвращаемого из Install-Module/Install-Script и Save-Module/Save-Script.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-147">The issue likely manifested itself in the following error message returned from Install-Module/Install-Script and Save-Module/Save-Script:</span></span>
 
 ```powershell
-PS C:\> Install-Module xStorage 
-PackageManagement\Install-Package : Package 'xStorage' failed to be installed because: 
-End of Central Directory record could not be found. At C:\Program 
-Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1375 char:21 + ... 
-$null = PackageManagement\Install-Package @PSBoundParameters + 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + CategoryInfo : InvalidResult: 
-(xStorage:String) [Install-Package], Exception + FullyQualifiedErrorId : Package '{0}' 
-failed to be installed because: {1},Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage 
+PS C:\> Install-Module xStorage
+PackageManagement\Install-Package : Package 'xStorage' failed to be installed because:
+End of Central Directory record could not be found. At C:\Program
+Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1375 char:21 + ...
+$null = PackageManagement\Install-Package @PSBoundParameters +
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + CategoryInfo : InvalidResult:
+(xStorage:String) [Install-Package], Exception + FullyQualifiedErrorId : Package '{0}'
+failed to be installed because: {1},Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
 ```
 
-<span data-ttu-id="37366-148">__Предварительная первопричина__. Инженеры выявили проблему в сети доставки содержимого Azure (CDN), развернутой для коллекции PowerShell 11.07.2016.</span><span class="sxs-lookup"><span data-stu-id="37366-148">__Preliminary root cause__: Engineers identified an issue with Azure Content Deliver Network (CDN), which was deployed to the PowerShell Gallery on 7/11/2016.</span></span>  
-<span data-ttu-id="37366-149">__Устранение рисков__. Инженеры отключили Azure CDN в коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="37366-149">__Mitigation__: Engineers disabled Azure CDN in the PowerShell Gallery.</span></span>  
-<span data-ttu-id="37366-150">__Дальнейшие действия__. Мы находимся в процессе поиска первопричины и разрабатываем решение, чтобы предотвратить появление проблемы в будущем.</span><span class="sxs-lookup"><span data-stu-id="37366-150">__Next Steps__: Investigate the underlying root cause and developing a solution to prevent future occurrences.</span></span>
+<span data-ttu-id="bc8b1-148">__Предварительная первопричина__. Инженеры выявили проблему в сети доставки содержимого Azure (CDN), развернутой для коллекции PowerShell 11.07.2016.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-148">__Preliminary root cause__: Engineers identified an issue with Azure Content Deliver Network (CDN), which was deployed to the PowerShell Gallery on 7/11/2016.</span></span>
+<span data-ttu-id="bc8b1-149">__Устранение рисков__. Инженеры отключили Azure CDN в коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-149">__Mitigation__: Engineers disabled Azure CDN in the PowerShell Gallery.</span></span>
+<span data-ttu-id="bc8b1-150">__Дальнейшие действия__. Мы находимся в процессе поиска первопричины и разрабатываем решение, чтобы предотвратить появление проблемы в будущем.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-150">__Next Steps__: Investigate the underlying root cause and developing a solution to prevent future occurrences.</span></span>
 
 
-## <a name="5192016---download-items-failed"></a><span data-ttu-id="37366-151">19.05.2016 — сбой скачивания элементов</span><span class="sxs-lookup"><span data-stu-id="37366-151">5/19/2016 - Download Items Failed</span></span>
-<span data-ttu-id="37366-152">__Сводка по влиянию__. С 17.05.2016 по 19.05.2016 у ряда клиентов возникали проблемы со скачиванием элементов из коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="37366-152">__Summary of Impact__: Between 5/17/2016 and 5/19/2016, a subset of customers experienced issues downloading items from the PowerShell Gallery.</span></span> <span data-ttu-id="37366-153">Скорее всего, проблема проявлялась в виде следующего сообщения об ошибке, возвращаемого из Install-Module/Install-Script и Save-Module/Save-Script.</span><span class="sxs-lookup"><span data-stu-id="37366-153">The issue likely manifested itself in the following error message returned from Install-Module/Install-Script and Save-Module/Save-Script:</span></span>
+## <a name="5192016---download-items-failed"></a><span data-ttu-id="bc8b1-151">19.05.2016 — сбой скачивания элементов</span><span class="sxs-lookup"><span data-stu-id="bc8b1-151">5/19/2016 - Download Items Failed</span></span>
+<span data-ttu-id="bc8b1-152">__Сводка по влиянию__. С 17.05.2016 по 19.05.2016 у ряда клиентов возникали проблемы со скачиванием элементов из коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-152">__Summary of Impact__: Between 5/17/2016 and 5/19/2016, a subset of customers experienced issues downloading items from the PowerShell Gallery.</span></span> <span data-ttu-id="bc8b1-153">Скорее всего, проблема проявлялась в виде следующего сообщения об ошибке, возвращаемого из Install-Module/Install-Script и Save-Module/Save-Script.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-153">The issue likely manifested itself in the following error message returned from Install-Module/Install-Script and Save-Module/Save-Script:</span></span>
 
 ```powershell
 VERBOSE: Hash for package 'AzureRM.OperationalInsights' does not match hash provided from the server.
 VERBOSE: InstallPackageLocal' - name='AzureRM.OperationalInsights', version='1.0.8',
 destination='C:\Users\jbritt\AppData\Local\Temp\2\1741355729'
-WARNING: Package 'AzureRM.OperationalInsights' failed to be installed because: 
-End of Central Directory record could not be found. 
-WARNING: Dependent Package 'AzureRM.OperationalInsights' failed to install. 
-WARNING: Package 'AzureRM' failed to install. 
-VERBOSE: Module 'AzureRM.Network' was saved successfully. 
-VERBOSE: Saving the dependency module 'AzureRM.NotificationHubs' with version '1.0.8' for the 
-module 'AzureRM'. 
-VERBOSE: Module 'AzureRM.NotificationHubs' was saved successfully. 
-PackageManagement\Save-Package : Unable to save the module 'AzureRM'. At C:\Program 
-Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1187 char:21 + 
-$null = PackageManagement\Save-Package @PSBoundParameters + 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + 
-CategoryInfo : InvalidOperation: (Microsoft.Power...ets.SavePackage:SavePackage) 
+WARNING: Package 'AzureRM.OperationalInsights' failed to be installed because:
+End of Central Directory record could not be found.
+WARNING: Dependent Package 'AzureRM.OperationalInsights' failed to install.
+WARNING: Package 'AzureRM' failed to install.
+VERBOSE: Module 'AzureRM.Network' was saved successfully.
+VERBOSE: Saving the dependency module 'AzureRM.NotificationHubs' with version '1.0.8' for the
+module 'AzureRM'.
+VERBOSE: Module 'AzureRM.NotificationHubs' was saved successfully.
+PackageManagement\Save-Package : Unable to save the module 'AzureRM'. At C:\Program
+Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1187 char:21 +
+$null = PackageManagement\Save-Package @PSBoundParameters +
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+CategoryInfo : InvalidOperation: (Microsoft.Power...ets.SavePackage:SavePackage)
 [Save-Package], Exception + FullyQualifiedErrorId : ProviderFailToDownloadFile,
-Microsoft.PowerShell.PackageManagement.Cmdlets.SavePackage 
+Microsoft.PowerShell.PackageManagement.Cmdlets.SavePackage
 ```
 
-<span data-ttu-id="37366-154">__Предварительная первопричина__. Инженеры обнаружили сбой в базовом поставщике сети доставки содержимого Azure (CDN), развернутой для коллекции PowerShell 17.05.2016.</span><span class="sxs-lookup"><span data-stu-id="37366-154">__Preliminary root cause__: Engineers identified an outage in the underlying provider of Azure Content Deliver Network (CDN), which was deployed to the PowerShell Gallery on 5/17/2016.</span></span>  
-<span data-ttu-id="37366-155">__Устранение рисков__. Инженеры отключили Azure CDN в коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="37366-155">__Mitigation__: Engineers disabled Azure CDN in the PowerShell Gallery.</span></span>  
-<span data-ttu-id="37366-156">__Дальнейшие действия__. Мы находимся в процессе поиска первопричины и разрабатываем решение, чтобы предотвратить появление проблемы в будущем.</span><span class="sxs-lookup"><span data-stu-id="37366-156">__Next Steps__: Investigate the underlying root cause and developing a solution to prevent future occurrences.</span></span>
-
+<span data-ttu-id="bc8b1-154">__Предварительная первопричина__. Инженеры обнаружили сбой в базовом поставщике сети доставки содержимого Azure (CDN), развернутой для коллекции PowerShell 17.05.2016.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-154">__Preliminary root cause__: Engineers identified an outage in the underlying provider of Azure Content Deliver Network (CDN), which was deployed to the PowerShell Gallery on 5/17/2016.</span></span>
+<span data-ttu-id="bc8b1-155">__Устранение рисков__. Инженеры отключили Azure CDN в коллекции PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-155">__Mitigation__: Engineers disabled Azure CDN in the PowerShell Gallery.</span></span>
+<span data-ttu-id="bc8b1-156">__Дальнейшие действия__. Мы находимся в процессе поиска первопричины и разрабатываем решение, чтобы предотвратить появление проблемы в будущем.</span><span class="sxs-lookup"><span data-stu-id="bc8b1-156">__Next Steps__: Investigate the underlying root cause and developing a solution to prevent future occurrences.</span></span>
