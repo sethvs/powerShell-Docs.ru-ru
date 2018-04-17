@@ -3,11 +3,11 @@ ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,конфигурация,установка
 title: Ресурс Registry в DSC
-ms.openlocfilehash: fcd24b1dd729dbb0abd697a4a628dce01fdd5422
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 98e9a6251cb4e55443498bd770b4c563c25c7509
+ms.sourcegitcommit: ece1794c94be4880a2af5a2605ed4721593643b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dsc-registry-resource"></a>Ресурс Registry в DSC
 
@@ -22,7 +22,7 @@ Registry [string] #ResourceName
 {
     Key = [string]
     ValueName = [string]
-    [ Ensure = [string] { Enable | Disable }  ]
+    [ Ensure = [string] { Present | Absent }  ]
     [ Force =  [bool]   ]
     [ Hex = [bool] ]
     [ DependsOn = [string[]] ]
