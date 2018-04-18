@@ -26,7 +26,7 @@
 
 SSH должен быть установлен на всех компьютерах.
 Вам нужно установить клиент (ssh.exe) и сервер (sshd.exe), чтобы можно было поэкспериментировать с удаленным обращением к компьютерам и с них.
-Для Windows нужно установить [Win32 OpenSSH из GitHub](https://github.com/PowerShell/Win32-OpenSSH/releases).
+Для Windows нужно установить [Win32 OpenSSH] из GitHub.
 Для Linux нужно установить SSH (включая сервер sshd) в соответствии с используемой платформой.
 Вам также потребуется новая версия сборки или пакета PowerShell с GitHub, где есть функция удаленного взаимодействия SSH.
 Подсистемы SSH используются для запуска процесса PowerShell на удаленном компьютере, поэтому сервер SSH нужно настроить соответствующим образом.
@@ -34,30 +34,40 @@ SSH должен быть установлен на всех компьютер�
 
 ## <a name="setup-on-windows-machine"></a>Установка на компьютере с Windows
 
-1. [Установите последнюю версию PowerShell Core для Windows][]
+1. Установите последнюю версию [PowerShell Core для Windows]
     - Чтобы узнать о наличии поддержки удаленного взаимодействия SSH, просмотрите набор параметров для New-PSSession.
+
     ```powershell
     PS> Get-Command New-PSSession -syntax
     New-PSSession [-HostName] <string[]> [-Name <string[]>] [-UserName <string>] [-KeyFilePath <string>] [-SSHTransport] [<CommonParameters>]
     ```
-1. Установите последнюю версию сборки [Win32 OpenSSH] из GitHub, используя инструкции по [установке].
+
+1. Установите последнюю версию сборки [Win32 OpenSSH] из GitHub, используя [инструкции по установке].
 1. Измените файл sshd_config в том расположении, куда вы установили Win32 OpenSSH.
     - Включите проверку подлинности с помощью пароля:
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - Добавьте запись подсистемы PowerShell, замените `c:/program files/powershell/6.0.0/pwsh.exe` на правильный путь к версии, которую хотите использовать:
-    ```none
+
+    ```
     Subsystem    powershell c:/program files/powershell/6.0.0/pwsh.exe -sshs -NoLogo -NoProfile
     ```
+
     - При необходимости включите проверку подлинности на основе ключа:
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. Перезапустите службу sshd.
+
     ```powershell
     Restart-Service sshd
     ```
+    
 1. Добавьте путь установки OpenSSH в свою переменную пути Env.
     - Это нужно сделать в соответствии с `C:\Program Files\OpenSSH\`.
     - Это позволяет найти ssh.exe.
@@ -66,24 +76,33 @@ SSH должен быть установлен на всех компьютер�
 
 1. Установите последнюю сборку [PowerShell для Linux] из GitHub.
 1. При необходимости установите [Ubuntu SSH].
+
     ```bash
     sudo apt install openssh-client
     sudo apt install openssh-server
     ```
+
 1. Измените файл sshd_config в расположении /etc/ssh.
     - Включите проверку подлинности с помощью пароля:
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - Добавьте запись подсистемы PowerShell:
-    ```none
+
+    ```
     Subsystem powershell /usr/bin/pwsh -sshs -NoLogo -NoProfile
     ```
+
     - При необходимости включите проверку подлинности на основе ключа:
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. Перезапустите службу sshd.
+
     ```bash
     sudo service sshd restart
     ```
@@ -98,22 +117,31 @@ SSH должен быть установлен на всех компьютер�
       - Разрешите доступ соответствующим пользователям.
 1. Измените файл `sshd_config` в расположении `/private/etc/ssh/sshd_config`.
     - Используйте привычный вам редактор или следующую команду:
+
     ```bash
     sudo nano /private/etc/ssh/sshd_config
     ```
+
     - Включите проверку подлинности с помощью пароля:
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - Добавьте запись подсистемы PowerShell:
-    ```none
+
+    ```
     Subsystem powershell /usr/local/bin/powershell -sshs -NoLogo -NoProfile
     ```
+
     - При необходимости включите проверку подлинности на основе ключа:
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. Перезапустите службу sshd.
+
     ```bash
     sudo launchctl stop com.openssh.sshd
     sudo launchctl start com.openssh.sshd
@@ -213,9 +241,9 @@ GitCommitId                    v6.0.0-alpha.17
 
 1. Команда sudo не работает во входящем удаленном сеансе на компьютер Linux.
 
-[PowerShell for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
-[Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH
-[установке]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
+[PowerShell Core для Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
+[Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH/releases
+[инструкции по установке]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
 [PowerShell для Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
 [Ubuntu SSH]: https://help.ubuntu.com/lts/serverguide/openssh-server.html
-[PowerShell для MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012
+[PowerShell для MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/macos.md#macos-1012
