@@ -31,7 +31,7 @@
 ####  [Использование переменных для хранения объектов](getting-started/fundamental/Using-Variables-to-Store-Objects.md)
 ####  [Информация о Windows PowerShell](getting-started/fundamental/About-Windows-PowerShell.md)
 ####  [Интегрированная среда скриптов Windows PowerShell (ISE)](getting-started/fundamental/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)
-####  [Основные сведения о важных концепциях Windows PowerShell (ISE)](getting-started/fundamental/Understanding-Important-Windows-PowerShell-Concepts.md)
+####  [Основные сведения о важных концепциях Windows PowerShell](getting-started/fundamental/Understanding-Important-Windows-PowerShell-Concepts.md)
 ####  [Основные сведения о конвейере PowerShell](getting-started/fundamental/Understanding-the-Windows-PowerShell-Pipeline.md)
 ####  [Использование знакомых имен команд](getting-started/fundamental/Using-Familiar-Command-Names.md)
 ####  [Конвейер объектов](getting-started/fundamental/Object-Pipeline.md)
