@@ -3,15 +3,18 @@ ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,конфигурация,установка
 title: Использование сервера отчетов DSC
-ms.openlocfilehash: e239414dc30c7458c509392792d4775d04f2311a
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 49e022d3c3c1e117eac4cb3c874ca8dcfe628237
+ms.sourcegitcommit: ece1794c94be4880a2af5a2605ed4721593643b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-a-dsc-report-server"></a>Использование сервера отчетов DSC
 
 > Область применения: Windows PowerShell 5.0
+
+> [!IMPORTANT]
+> Опрашивающий сервер (компонент Windows *служба DSC*) — поддерживаемый компонент Windows Server, но реализация новых функций и возможностей для него не планируется. Рекомендуется начать перенос управляемых клиентов на [Azure Automation DSC](/azure/automation/automation-dsc-getting-started) (включает возможности опрашивающего сервера в Windows Server) или на одно из решений сообщества, указанных [в следующем списке](pullserver.md#community-solutions-for-pull-service).
 
 >**Примечание**. Сервер отчетов, описанный в этой статье, недоступен в PowerShell 4.0.
 
