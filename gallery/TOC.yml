@@ -47,6 +47,8 @@
           href: psgallery/psgallery_requires_license_acceptance.md
         - name: Запрос на принятие условий лицензии при развертывании в службе автоматизации Azure
           href: psgallery/psgallery_deploy_to_azure_automation_requireLicenseAcceptance.md
+        - name: "Соответствие коллекции\_PowerShell регламенту\_GDPR"
+          href: psgallery/psgallery_gdpr_dsr.md
 - name: PowerShellGet
   href: psget/overview.md
   items:

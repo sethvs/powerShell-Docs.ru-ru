@@ -11,6 +11,8 @@
               href: setup/Installing-PowerShell-Core-on-Windows.md
             - name: Установка PowerShell Core в macOS и Linux
               href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
+            - name: "PowerShell\_Core для\_ARM"
+              href: PowerShell-Core-on-ARM.md
         - name: Windows PowerShell
           href: ''
           items:
@@ -72,7 +74,7 @@
         - name: ISE
           href: core-powershell/ise/introducing-the-windows-powershell-ise.md
           items:
-            - name: Интегрированная среда сценариев Windows PowerShell Windows PowerShell (ISE)
+            - name: Интегрированная среда сценариев (ISE) Windows PowerShell
               href: getting-started/fundamental/windows-powershell-integrated-scripting-environment--ise-.md
             - name: Использование интегрированной среды сценариев Windows PowerShell
               href: ''
