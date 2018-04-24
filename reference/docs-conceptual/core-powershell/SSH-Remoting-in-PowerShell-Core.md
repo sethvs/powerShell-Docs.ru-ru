@@ -34,13 +34,13 @@ SSH должен быть установлен на всех компьютер�
 
 ## <a name="setup-on-windows-machine"></a>Установка на компьютере с Windows
 
-1. [Установите последнюю версию PowerShell Core для Windows][]
+1. Установите последнюю версию [PowerShell Core для Windows]
     - Чтобы узнать о наличии поддержки удаленного взаимодействия SSH, просмотрите набор параметров для New-PSSession.
     ```powershell
     PS> Get-Command New-PSSession -syntax
     New-PSSession [-HostName] <string[]> [-Name <string[]>] [-UserName <string>] [-KeyFilePath <string>] [-SSHTransport] [<CommonParameters>]
     ```
-1. Установите последнюю версию сборки [Win32 OpenSSH] из GitHub, используя инструкции по [установке].
+1. Установите последнюю версию сборки [Win32 OpenSSH] из GitHub, используя [инструкции по установке].
 1. Измените файл sshd_config в том расположении, куда вы установили Win32 OpenSSH.
     - Включите проверку подлинности с помощью пароля:
     ```none
@@ -215,7 +215,7 @@ GitCommitId                    v6.0.0-alpha.17
 
 [PowerShell for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
 [Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH
-[установке]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
+[инструкции по установке]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
 [PowerShell для Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
 [Ubuntu SSH]: https://help.ubuntu.com/lts/serverguide/openssh-server.html
 [PowerShell для MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012
