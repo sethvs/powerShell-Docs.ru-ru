@@ -588,10 +588,10 @@ brew cask install powershell
 
 ```sh
 brew update
-brew cask reinstall powershell
+brew cask upgrade powershell
 ```
 
-> Примечание. Сейчас из-за [этой проблемы в Cask](https://github.com/caskroom/homebrew-cask/issues/29301) для обновления требуется переустановка.
+> Примечание. Приведенные выше команды можно вызвать из узла PowerShell (pwsh), но затем потребуется выйти из оболочки PowerShell и повторно войти в нее, чтобы завершить обновление и обновить значения в таблице $PSVersionTable.
 
 [brew]: http://brew.sh/
 [cask]: https://caskroom.github.io/
